@@ -1,1 +1,93 @@
-[]
+[
+  {
+    "d": "2026-10-16",
+    "j": "CA",
+    "w": "San Francisco Mayor Lurie",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "San Francisco mayor signs 45-day citywide data center development pause",
+    "b": "Mayor Daniel Lurie signed a Board of Supervisors-approved ordinance, authored by Supervisor Shamann Walton, pausing data center development citywide for 45 days while the Planning Department studies impacts and drafts controls.",
+    "s": [
+      [
+        "SF Standard",
+        "https://sfstandard.com/2026/10/16/mayor-lurie-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Short pause in a small market, but signals possible permanent controls.",
+    "pl": [
+      [
+        "San Francisco",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-10-17T12:25:35.368Z"
+  },
+  {
+    "d": "2026-10-13",
+    "j": "TX",
+    "w": "Hood County Commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "denied",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Hood County rejects scaled-back Comanche Circle data center deal and denies appeal",
+    "b": "Commissioners voted 3-1 against a settlement shrinking the Sailfish project from about 2,523 to 1,375 acres, then unanimously denied the developer's permit appeal. Residents cited water and wildlife concerns; the developer warned of a lawsuit.",
+    "s": [
+      [
+        "The Cool Down",
+        "https://www.thecooldown.com/green-tech/hood-county-rejects-data-center-deal/"
+      ]
+    ],
+    "im": -2,
+    "iw": "Large project blocked; litigation possible but approval now unlikely.",
+    "pl": [
+      [
+        "Hood County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-10-17T12:25:35.629Z"
+  },
+  {
+    "d": "2026-10-13",
+    "j": "TX",
+    "w": "Denton City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting",
+      "water"
+    ],
+    "t": "Denton tightens zoning rules for data centers with permits, buffers and cooling limits",
+    "b": "The council voted 4-0 to confine data centers to industrial and public-facility zones, require specific-use permits, a 300-foot setback, utility studies, closed-loop or free-air cooling, and prior PUC and ERCOT approvals before reaching the agenda.",
+    "s": [
+      [
+        "Denton Record-Chronicle",
+        "https://dentonrc.com/news/council-amends-development-code-to-make-it-tougher-to-build-a-data-center-in-denton/article_ea8be9ab-c200-4f86-a3ff-8e4971008b4e.html"
+      ]
+    ],
+    "im": -1,
+    "iw": "Added approvals, buffers and cooling requirements raise cost and delay.",
+    "pl": [
+      [
+        "Denton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-10-17T12:25:35.689Z"
+  }
+]
