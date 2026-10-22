@@ -25,6 +25,8 @@ own Claude account, on their own branches. Read this before changing anything.
 | `scripts/update.mjs` | Alternative updater that uses the paid API (manual only) |
 | `.github/workflows/update.yml` | Daily job: Claude Code searches the web on the owner's plan |
 | `.github/prompts/find-updates.md` | Instructions the daily job follows |
+| `.github/workflows/backfill-west-coast.yml` | Manual job: searches past news for one West Coast state at a time |
+| `.github/prompts/backfill-west-coast.md` | Instructions the backfill job follows |
 | `CONTRIBUTING.md` | Human guide for the team |
 
 ## Data model (don't break these)

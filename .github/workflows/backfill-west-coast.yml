@@ -1,0 +1,111 @@
+name: Backfill West Coast history (Claude subscription)
+
+# Manual-only job that searches PAST news for one West Coast state at a time.
+# Uses the same CLAUDE_CODE_OAUTH_TOKEN secret and plan usage as the daily job.
+# Always opens a pull request for review (never publishes directly).
+
+on:
+  workflow_dispatch:
+    inputs:
+      state:
+        description: "State to search"
+        type: choice
+        options: [CA, NV, OR, WA, HI, AK]
+        required: true
+      beat:
+        description: "Beat to focus on (all = every beat)"
+        type: choice
+        options: [all, federal, state, local, politics]
+        default: all
+      since:
+        description: "Earliest event date, YYYY-MM-DD"
+        default: "2025-01-01"
+        required: true
+      until:
+        description: "Latest event date, YYYY-MM-DD (blank = today)"
+        default: ""
+        required: false
+      max_items:
+        description: "Max items to return (1-30)"
+        default: "30"
+        required: true
+      max_turns:
+        description: "Max Claude turns (more turns = more searches = more plan usage)"
+        default: "100"
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: load-watch-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check inputs and build the prompt
+        env:
+          ST: ${{ inputs.state }}
+          BEAT: ${{ inputs.beat }}
+          SINCE: ${{ inputs.since }}
+          UNTIL_IN: ${{ inputs.until }}
+          MAX: ${{ inputs.max_items }}
+          TURNS: ${{ inputs.max_turns }}
+        run: |
+          set -euo pipefail
+          TODAY=$(date -u +%F)
+          UNTIL="${UNTIL_IN:-$TODAY}"
+          for x in "$SINCE" "$UNTIL"; do
+            [[ "$x" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "Bad date: $x"; exit 1; }
+          done
+          [[ "$SINCE" < "$UNTIL" || "$SINCE" == "$UNTIL" ]] || { echo "since must be on or before until"; exit 1; }
+          [[ "$MAX" =~ ^[0-9]+$ ]] && (( MAX >= 1 && MAX <= 30 )) || { echo "max_items must be 1-30 (merge.mjs checks at most 30)"; exit 1; }
+          [[ "$TURNS" =~ ^[0-9]+$ ]] && (( TURNS >= 10 && TURNS <= 200 )) || { echo "max_turns must be 10-200"; exit 1; }
+          case "$ST" in
+            CA) NAME=California;; NV) NAME=Nevada;; OR) NAME=Oregon;;
+            WA) NAME=Washington;; HI) NAME=Hawaii;; AK) NAME=Alaska;;
+            *) echo "Unknown state"; exit 1;;
+          esac
+          # merge.mjs drops items older than LOOKBACK_DAYS; widen it to cover the backfill window.
+          DAYS=$(( ( $(date -u +%s) - $(date -u -d "$SINCE" +%s) ) / 86400 + 2 ))
+          echo "LOOKBACK_DAYS=$DAYS" >> "$GITHUB_ENV"
+          sed -e "s/{{TODAY}}/$TODAY/g" -e "s/{{SINCE}}/$SINCE/g" -e "s/{{UNTIL}}/$UNTIL/g" \
+              -e "s/{{STATE}}/$ST/g" -e "s/{{STATE_NAME}}/$NAME/g" -e "s/{{BEAT}}/$BEAT/g" \
+              -e "s/{{MAX}}/$MAX/g" .github/prompts/backfill-west-coast.md > .github/prompts/.run.md
+
+      - name: Let Claude search the web
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: "Follow the instructions in .github/prompts/.run.md exactly."
+          claude_args: >-
+            --allowedTools "WebSearch,WebFetch,Read,Write"
+            --max-turns ${{ inputs.max_turns }}
+
+      - name: Check and merge what Claude found
+        run: |
+          rm -f .github/prompts/.run.md
+          node scripts/merge.mjs
+
+      - name: Open a pull request for review
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/backfill-${{ inputs.state }}-${{ inputs.beat }}-${{ inputs.since }}
+          delete-branch: true
+          add-paths: updates.json
+          commit-message: "Load Watch backfill: ${{ inputs.state }} ${{ inputs.beat }} from ${{ inputs.since }}"
+          title: "Backfill ${{ inputs.state }} (${{ inputs.beat }}) from ${{ inputs.since }} for review"
+          body-path: update-summary.md
+          labels: auto-update, backfill
