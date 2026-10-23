@@ -472,7 +472,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09",
+  "d": "2026-09-01",
   "j": "ME",
   "w": "Gorham Town Council",
   "lv": "local",
@@ -482,11 +482,15 @@
    "siting"
   ],
   "t": "Gorham moves toward a permanent data center ban",
-  "b": "Councilors unanimously sent the proposal to the planning board; a temporary moratorium is already in place.",
+  "b": "Councilors unanimously asked the planning board to hold a hearing on a permanent ban. A 180-day moratorium adopted 7–0 in June is in place, and no data center has been proposed in town.",
   "s": [
    [
-    "Data Centers: Daily Notes",
-    "https://writing.strisker.com/data-centers-daily-notes-september-07-2026/"
+    "Portland Press Herald",
+    "https://www.pressherald.com/2026/09/03/gorham-weighing-action-on-ice-cooperation-data-centers-and-ai-cameras/"
+   ],
+   [
+    "WGME",
+    "https://wgme.com/news/local/gorham-officials-consider-permanent-ban-on-data-centers-maine-economy"
    ]
   ],
   "im": -2,
@@ -4308,11 +4312,15 @@
    "siting"
   ],
   "t": "Southaven neighbors file a class action over turbine noise",
-  "b": "Alleges near-constant noise, vibration and property harm.",
+  "b": "Three residents sued xAI, SpaceX and MZX Tech in federal court over gas turbines powering the Colossus data centers, citing near-constant noise and vibration. MZX later offered to buy nearby homes in exchange for releases.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/mississippi/"
+    "Mississippi Free Press",
+    "https://www.mississippifreepress.org/southaven-residents-sue-xai-alleging-near-constant-noise-from-gas-turbines-is-causing-harm/"
+   ],
+   [
+    "Memphis Flyer",
+    "https://www.memphisflyer.com/spacexai-offers-to-buy-southaven-homes-to-help-settle-suit/"
    ]
   ],
   "im": -1,
@@ -5009,12 +5017,16 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Charlotte adopts a 150-day moratorium, the largest US city to do so",
-  "b": "Voted 11–0; approved projects are exempt.",
+  "t": "Charlotte adopts a 150-day data center moratorium",
+  "b": "Voted 11–0; it runs through Nov. 5. Projects already approved, including the PowerHouse campus under construction, are exempt under state law.",
   "s": [
    [
-    "Savrn NC tracker",
-    "https://savrn.com/data-center-moratorium-tracker/north-carolina"
+    "WFAE",
+    "https://www.wfae.org/politics/2026-06-08/charlotte-city-council-approves-150-day-data-center-moratorium"
+   ],
+   [
+    "WBTV",
+    "https://www.wbtv.com/2026/06/09/charlotte-city-council-approves-150-day-moratorium-new-data-centers/"
    ]
   ],
   "im": -1,
@@ -5091,7 +5103,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-10",
+  "d": "2026-09-28",
   "j": "NC",
   "w": "Forsyth County",
   "lv": "local",
@@ -5101,11 +5113,15 @@
    "moratorium"
   ],
   "t": "Forsyth County rejects a six-month moratorium",
-  "b": "Voted 5–2 after the county attorney warned of litigation, pointing to the challenge that undid Chatham County's pause.",
+  "b": "Voted 5–2 after the county attorney warned of litigation, citing a developer's win against Chatham County's pause. Commissioner Dan Besse, who drafted it, said it would apply only to new proposals.",
   "s": [
    [
-    "NC Data Center Newsletter",
-    "https://ncdatacenters.substack.com/p/raleigh-and-beaufort-county-pause"
+    "WFDD",
+    "https://www.wfdd.org/politics-government/2026-10-01/forsyth-rejects-data-center-moratorium-proposal-over-legal-concerns"
+   ],
+   [
+    "Winston-Salem Chronicle",
+    "https://wschronicle.com/government/forsyth-data-center-moratorium-rejected-besse-proposal/"
    ]
   ],
   "im": 1,
@@ -5129,12 +5145,12 @@
   "ty": [
    "siting"
   ],
-  "t": "Forsyth denies rezoning for the Project Iron Spur campus",
-  "b": "Voted 5–2 against the 129-acre hyperscale site in Rural Hall.",
+  "t": "Forsyth denies a Rural Hall data center rezoning 5–2",
+  "b": "The vote applied to the Rural Hall-area application only and did not bar data centers generally.",
   "s": [
    [
-    "Savrn NC tracker",
-    "https://savrn.com/data-center-moratorium-tracker/north-carolina"
+    "Winston-Salem Chronicle",
+    "https://wschronicle.com/government/forsyth-data-center-moratorium-rejected-besse-proposal/"
    ]
   ],
   "im": -2,
@@ -5159,11 +5175,15 @@
    "moratorium"
   ],
   "t": "Greensboro pauses data centers over 10 MW for 180 days",
-  "b": "Voted 8–0; runs through Feb. 14, 2027.",
+  "b": "Voted 8–0 with one recusal; it runs through Feb. 14, 2027. The council lengthened it from 120 days after public comment, and permitted projects are exempt.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/north-carolina"
+    "City of Greensboro",
+    "https://www.greensboro-nc.gov/Home/Components/News/News/22889/36"
+   ],
+   [
+    "FOX8 WGHP",
+    "https://myfox8.com/news/north-carolina/greensboro/greensboro-establishes-180-day-data-center-moratorium/"
    ]
   ],
   "im": -1,
@@ -5188,11 +5208,15 @@
    "moratorium"
   ],
   "t": "Alamance County adopts a one-year pause on 10 MW projects",
-  "b": "Unanimous, after it grew from a six-month proposal.",
+  "b": "Unanimous, for unincorporated areas. It grew from a six-month proposal after more than 23 residents spoke in favor.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/north-carolina"
+    "Elon News Network",
+    "https://www.elonnewsnetwork.com/article/2026/08/alamance-county-commissioners-pass-one-year-data-center-moratorium"
+   ],
+   [
+    "FOX8 WGHP",
+    "https://myfox8.com/news/north-carolina/alamance/alamance-county-commissioners-approve-1-year-data-center-moratorium/"
    ]
   ],
   "im": -1,
@@ -5207,7 +5231,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-08-25",
+  "d": "2026-08-24",
   "j": "NC",
   "w": "Durham County",
   "lv": "local",
@@ -5217,11 +5241,15 @@
    "moratorium"
   ],
   "t": "Durham County pauses large data centers through May 2027",
-  "b": "Voted 4–1, aligning with the city; small closed-loop projects without diesel generators are exempt.",
+  "b": "Voted 4–1, aligning with the city. Facilities under 100,000 sq ft with closed-loop cooling and no diesel generators are exempt; Commissioner Nida Allam voted no over that carve-out.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/north-carolina"
+    "WUNC",
+    "https://www.wunc.org/environment/2026-08-26/durham-county-data-center-moratorium"
+   ],
+   [
+    "Durham County",
+    "https://dconc.gov/DurhamCo-News/From-the-Desk-to-the-County-Manager-August-28-2026.htm"
    ]
   ],
   "im": -1,
@@ -5236,7 +5264,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09-15",
+  "d": "2026-09-14",
   "j": "NC",
   "w": "Statesville and Waxhaw",
   "lv": "local",
@@ -5246,11 +5274,15 @@
    "moratorium"
   ],
   "t": "Statesville and Waxhaw adopt data center pauses",
-  "b": "Statesville's 180-day pause exempts the existing Compass project; Waxhaw adopted 12 months in August.",
+  "b": "Statesville's unanimous 180-day pause took effect Sept. 14 and exempts the approved Compass campus on Stamey Farm Road. Waxhaw unanimously adopted 12 months on Aug. 11 with no proposal pending.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/north-carolina"
+    "WBTV",
+    "https://www.wbtv.com/2026/09/15/statesville-unanimously-approves-180-day-moratorium-data-centers-what-we-know/"
+   ],
+   [
+    "WBTV",
+    "https://www.wbtv.com/2026/08/13/town-waxhaw-unanimously-approved-12-month-moratorium-data-centers/"
    ]
   ],
   "im": -1,
@@ -5322,25 +5354,25 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-02",
+  "d": "2026-09-17",
   "j": "NC",
   "w": "Chatham County",
   "lv": "local",
   "k": "action",
-  "st": "failed",
+  "st": "pause",
   "ty": [
    "moratorium"
   ],
-  "t": "Chatham County's moratorium is undone by a developer's challenge",
-  "b": "The one-year pause froze a 750 MW Eco TIP West project, which sued.",
+  "t": "Chatham County's moratorium stands, but a judge exempts Eco TIP's 750 MW project",
+  "b": "The February pause runs to Feb. 11, 2027. A judge granted Eco TIP West summary judgment, letting its $11 million Moncure project proceed and leaving the county open to damages.",
   "s": [
    [
-    "Savrn NC tracker",
-    "https://savrn.com/data-center-moratorium-tracker/north-carolina"
+    "NC Newsline",
+    "https://ncnewsline.com/2026/09/22/judge-rules-chatham-county-data-center-can-proceed-despite-moratorium/"
    ],
    [
-    "NC Data Center Newsletter",
-    "https://ncdatacenters.substack.com/p/raleigh-and-beaufort-county-pause"
+    "Carolina Journal",
+    "https://www.carolinajournal.com/judge-allows-chatham-data-center-to-proceed-despite-moratorium/"
    ]
   ],
   "im": 1,
@@ -7083,7 +7115,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-03",
+  "d": "2026-03-23",
   "j": "MS",
   "w": "Clarksdale",
   "lv": "local",
@@ -7093,11 +7125,15 @@
    "siting"
   ],
   "t": "Clarksdale conditionally rezones 648 acres for a possible hyperscale campus",
-  "b": "No developer agreement or project approval had been announced by mid-July.",
+  "b": "Conditions include a $5 million impact fee, water caps and a 1,000-foot residential buffer. No developer has been named, and residents have challenged the notice process in court.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/mississippi/"
+    "Mississippi Today",
+    "https://mississippitoday.org/2026/03/24/clarksdale-data-center-rezoning/"
+   ],
+   [
+    "Capital B",
+    "https://capitalbnews.org/data-center-clarksdale-mississippi/"
    ]
   ],
   "im": 1,
@@ -10004,12 +10040,20 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Kings Mountain pauses data centers after a second proposal, then extends a year",
-  "b": "The 182-day pause passed 5–2 in February; on Aug. 25 the council extended it into late August 2027.",
+  "t": "Kings Mountain pauses data centers, then extends the pause a year",
+  "b": "The six-month pause passed 5–2 in February. On Aug. 25 the council extended it to Aug. 24, 2027, citing a pending state bill, SB 730.",
   "s": [
    [
-    "Savrn tracker",
-    "https://savrn.com/data-center-moratorium-tracker/north-carolina"
+    "Queen City News",
+    "https://www.qcnews.com/news/u-s/north-carolina/kings-mountain/kings-mountain-leaders-pause-potential-data-center-projects-amid-community-concerns/"
+   ],
+   [
+    "Queen City News",
+    "https://www.qcnews.com/news/u-s/north-carolina/cleveland-county/kings-mountain-votes-to-extend-data-center-moratorium/"
+   ],
+   [
+    "City of Kings Mountain",
+    "https://www.cityofkm.com/842/Understanding-Data-Centers"
    ]
   ],
   "im": -1,
@@ -26134,7 +26178,7 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-09",
+  "d": "2026-08-26",
   "j": "MI",
   "w": "Wixom",
   "lv": "local",
@@ -26145,11 +26189,15 @@
    "water"
   ],
   "t": "Wixom swaps its moratorium for strict data center zoning",
-  "b": "Ended the pause early with a 1,500-foot setback from homes, schools and parks, a well-water ban and required sound studies. A developer is pursuing a federal suit over the pause.",
+  "b": "Rules adopted Aug. 26 set a 1,500-foot setback, required sound studies and water-use standards, ending the six-month pause early by Sept. 6. Developer Wixom Industrial One is suing over the pause in federal court.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/michigan"
+    "The Detroit News",
+    "https://www.detroitnews.com/story/news/local/oakland-county/2026/08/30/wixom-moves-forward-with-data-center-restrictions-as-lawsuit-looms/91475277007/"
+   ],
+   [
+    "City of Wixom",
+    "https://www.wixomgov.org/departments/construction-development-services-building/data-center-moratorium-ordinance"
    ]
   ],
   "im": -1,
@@ -26164,7 +26212,7 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-09",
+  "d": "2026-09-01",
   "j": "MI",
   "w": "Zeeland Township",
   "lv": "local",
@@ -26174,11 +26222,11 @@
    "moratorium"
   ],
   "t": "Zeeland Township pauses data centers and energy facilities for a year",
-  "b": "Adopted during the township's master plan update.",
+  "b": "Unanimous. It repealed and replaced a March data center pause, adding energy facilities, while the township updates its master plan and challenges a state solar-siting law in court.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/michigan"
+    "FOX 17",
+    "https://www.fox17online.com/news/local-news/holland-zeeland-grand-haven/zeeland-township-approves-new-data-center-and-energy-facility-moratorium-to-protect-local-planning"
    ]
   ],
   "im": -1,
@@ -26193,7 +26241,7 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-08-11",
+  "d": "2026-08",
   "j": "MI",
   "w": "Pere Marquette Charter Township",
   "lv": "local",
@@ -26202,12 +26250,16 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Pere Marquette Township adopts a one-year data center moratorium, 7–0",
-  "b": "Allen Park adopted a six-month emergency pause in June, and Clinton County a 12-month pause in April.",
+  "t": "Pere Marquette Township adopts a one-year data center moratorium",
+  "b": "The township board took up a one-year pause in July with no proposal pending, and the planning commission backed a zoning version in August so it could take effect by September.",
   "s": [
    [
-    "Programs.com tracker",
-    "https://programs.com/resources/data-center-moratoriums-tracker/"
+    "Ludington Daily News",
+    "https://www.shorelinemedia.net/ludington_daily_news/community/pere-marquette-township-advances-data-center-moratorium/article_95274dae-7b03-461a-968d-1af5fd613a39.html"
+   ],
+   [
+    "Ludington Daily News",
+    "https://www.shorelinemedia.net/ludington_daily_news/pm-planning-commission-approves-text-amendment-for-moratorium/article_5bb236f7-a447-4faf-b374-7175b8f6a3d4.html"
    ]
   ],
   "im": -1,
@@ -26216,14 +26268,6 @@
    [
     "Pere Marquette Charter Township",
     "township"
-   ],
-   [
-    "Allen Park",
-    "city"
-   ],
-   [
-    "Clinton County",
-    "county"
    ]
   ],
   "auto": false,
@@ -26623,7 +26667,7 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-10",
+  "d": "2026-10-05",
   "j": "ME",
   "w": "Old Town",
   "lv": "local",
@@ -26633,11 +26677,11 @@
    "moratorium"
   ],
   "t": "Old Town adopts a six-month data center moratorium in industrial zones",
-  "b": "Retroactive to Sept. 8.",
+  "b": "Unanimous and retroactive to Sept. 8; data centers are already barred in other zones. Councilors want any permanent zoning ban put to a referendum, possibly in June 2027.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/"
+    "Bangor Daily News",
+    "https://www.bangordailynews.com/2026/10/05/bangor/bangor-government/old-town-passes-data-center-ban/"
    ]
   ],
   "im": -1,
