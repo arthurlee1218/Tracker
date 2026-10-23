@@ -43,6 +43,8 @@ async function linkStatus(url) {
   } catch (e) { return "broken:" + (e.name === "TimeoutError" ? "timeout" : "unreachable"); }
 }
 
+// Data center trackers, digests and AI-generated summaries. Keep in sync with CLAUDE.md.
+const TRACKERS = /(^|\.)(datacenterbans\.com|savrn\.com|servercountry\.org|multistate\.us|writing\.strisker\.com|programs\.com|nearbydatacenters\.org|ailawsbystate\.com|dcmap\.us|brockovichdatacenter\.com|aigridwatch\.com|electricchoice\.com|interconnectedcapital\.com|datacenterscouts\.com|datacentersexposed\.com|insidethedatacenter\.com|datacenterdebate\.org|compute-atlas\.com|citizenportal\.ai|ncdatacenters\.substack\.com|mlq\.ai|scorepropertygroup\.com)$/;
 function shape(o) {
   if (!o || typeof o !== "object") return [null, "not an object"];
   const d = String(o.d || "");
@@ -58,6 +60,11 @@ function shape(o) {
   const s = (Array.isArray(o.s) ? o.s : []).filter(x => Array.isArray(x) && /^https:\/\//.test(String(x[1])))
     .map(x => [String(x[0]).slice(0, 60), String(x[1])]);
   if (!s.length) return [null, "no https source"];
+  // Other trackers and AI-written digests are leads, not sources: cite the news or official record they point to.
+  const isTracker = u => { try { return TRACKERS.test(new URL(u).hostname.replace(/^www\./, "")); } catch { return false; } };
+  const real = s.filter(x => !isTracker(x[1]));
+  if (!real.length) return [null, "only cites other trackers"];
+  s.splice(0, s.length, ...real);
   if (!o.t || !o.b) return [null, "missing text"];
   const im = Number.isInteger(o.im) && o.im >= -2 && o.im <= 2 ? o.im : undefined;
   const pl = (Array.isArray(o.pl) ? o.pl : []).filter(x => Array.isArray(x) && x[0] && PT.includes(x[1]))
