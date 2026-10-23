@@ -4888,11 +4888,19 @@
    "moratorium"
   ],
   "t": "DeKalb extends its data center moratorium again",
-  "b": "In place since 2025, it was extended another 100 days.",
+  "b": "In place since July 2025, it was extended 5–2 for 100 days, through Sept. 30. On June 23 the board rejected the county's draft data center rules.",
   "s": [
    [
-    "Savrn Georgia tracker",
-    "https://savrn.com/data-center-moratorium-tracker/georgia"
+    "Decaturish",
+    "https://www.decaturish.com/news/dekalb/dekalb-county-commission-extends-data-center-moratorium/article_82ccbd17-710e-493b-a062-e56b071f754f.html"
+   ],
+   [
+    "Atlanta News First",
+    "https://www.atlantanewsfirst.com/2026/06/09/dekalb-county-extends-data-center-moratorium/"
+   ],
+   [
+    "DeKalb County",
+    "https://engagedekalb.dekalbcountyga.gov/data-center-text-amendment"
    ]
   ],
   "im": -1,
@@ -5689,7 +5697,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2025-06",
+  "d": "2025-07-01",
   "j": "FL",
   "w": "Florida Legislature",
   "lv": "state",
@@ -5698,12 +5706,16 @@
   "ty": [
    "tax"
   ],
-  "t": "Florida's 2025 tax package rolls back the data center sales tax exemption",
-  "b": "Part of HB 7031.",
+  "t": "Florida's 2025 tax package limits the data center sales tax break to 100 MW-plus sites",
+  "b": "HB 7031 extended the exemption's application window by 10 years but, from Aug. 1, 2025, limited it to data centers with at least 100 MW of IT load, ending it for smaller facilities.",
   "s": [
    [
-    "Savrn Florida tracker",
-    "https://savrn.com/data-center-moratorium-tracker/florida"
+    "Florida House final bill analysis",
+    "https://www.flhouse.gov/Sections/Documents/loaddoc.aspx?FileName=h7031z1.WMC.DOCX&DocumentType=Analysis&BillNumber=7031&Session=2025"
+   ],
+   [
+    "Greenberg Traurig",
+    "https://www.gtlaw.com/en/insights/2025/6/florida-legislature-passes-bill-to-end-sales-tax-exemption-for-sub-100-mw-data-centers"
    ]
   ],
   "im": -1,
@@ -5825,7 +5837,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09-22",
+  "d": "2026-09-21",
   "j": "FL",
   "w": "Wakulla County",
   "lv": "local",
@@ -5836,11 +5848,15 @@
    "siting"
   ],
   "t": "Wakulla County bans data centers outright",
-  "b": "Unanimous, for unincorporated areas.",
+  "b": "Unanimous, for unincorporated areas. Staff said zoning already excluded data centers; the ordinance makes it explicit.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/florida"
+    "WCTV",
+    "https://www.wctv.tv/2026/09/22/wakulla-county-commissioners-approve-ordinance-prohibiting-data-centers/"
+   ],
+   [
+    "WTXL",
+    "https://www.wtxl.com/news/local-news/in-your-neighborhood/wakulla-county/happening-tonight-wakulla-county-moves-to-ban-data-centers-with-new-ordinance-proposal"
    ]
   ],
   "im": -2,
@@ -5855,7 +5871,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09-23",
+  "d": "2026-09-22",
   "j": "FL",
   "w": "North Port",
   "lv": "local",
@@ -5865,11 +5881,15 @@
    "moratorium"
   ],
   "t": "North Port adopts an 18-month data center moratorium",
-  "b": "Passed 3–2, exempting a roughly 900,000-square-foot project already proposed.",
+  "b": "Passed 3–2. A pending 896,000 sq ft application can keep moving through review but can't get final approval during the pause; the two no votes wanted it stopped outright.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/florida"
+    "Sarasota Magazine",
+    "https://www.sarasotamagazine.com/news-and-profiles/2026/09/north-port-data-center-moratorium-deep-park"
+   ],
+   [
+    "WINK News",
+    "https://www.winknews.com/news/state/north-port-approves-pause-on-data-center-development/article_63820957-94de-4532-88e7-e2f8973cff34.html"
    ]
   ],
   "im": -2,
@@ -5894,11 +5914,11 @@
    "moratorium"
   ],
   "t": "Marion County pauses data centers of 50 MW or more for a year",
-  "b": "Alachua County's planning commission backed a similar 12-month pause the same day.",
+  "b": "Approved 4–1, then adopted 5–0. Commissioner Kathy Bryant dissented because she wanted smaller facilities covered too.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/florida"
+    "352today",
+    "https://352today.com/news/257752-marion-county-pauses-large-commercial-data-centers-for-a-year-with-a-50-megawatt-cutoff-on-who-still-gets-through/"
    ]
   ],
   "im": -1,
@@ -5927,8 +5947,12 @@
   "b": "Unanimous, ahead of a Nov. 3 vote to write it into the city charter.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/florida"
+    "FOX 35",
+    "https://www.fox35orlando.com/news/edgewater-approves-ban-ai-data-centers-orange-county-weighs-moratorium"
+   ],
+   [
+    "Hometown News Volusia",
+    "https://www.hometownnewsvolusia.com/news/local/edgewater-adopts-permanent-ban-on-data-centers/article_9a718778-7bc3-59d8-8062-70a490201810.html"
    ]
   ],
   "im": -2,
@@ -5976,7 +6000,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-07",
+  "d": "2026-07-08",
   "j": "FL",
   "w": "Sarasota County and Lakeland",
   "lv": "local",
@@ -5986,11 +6010,15 @@
    "moratorium"
   ],
   "t": "Sarasota County and Lakeland adopt one-year pauses",
-  "b": "Lakeland's took effect after a final reading Aug. 3.",
+  "b": "Sarasota County voted 5–0 on July 8 to pause hyperscale projects until July 2027. Lakeland's 4–3 vote on Aug. 3 covers users of 50 MW or more, including sites outside the city seeking its utilities.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/florida"
+    "Suncoast Searchlight",
+    "https://suncoastsearchlight.org/sarasota-county-blocks-hyperscale-data-centers/"
+   ],
+   [
+    "LkldNow",
+    "https://www.lkldnow.com/lakeland-approves-one-year-moratorium-on-data-centers/"
    ]
   ],
   "im": -1,
@@ -6056,11 +6084,15 @@
    "moratorium"
   ],
   "t": "Jackson County pauses AI data centers before any are proposed",
-  "b": "A one-year pause to research impacts and draft rules.",
+  "b": "Unanimous, with no project proposed. On June 9 the board rescinded it in favor of an outright ban, adopted June 23.",
   "s": [
    [
-    "Savrn Florida tracker",
-    "https://savrn.com/data-center-moratorium-tracker/florida"
+    "WCTV",
+    "https://www.wctv.tv/2026/05/26/jackson-county-commissioners-vote-moratorium-ai-data-centers/"
+   ],
+   [
+    "WJHG",
+    "https://www.wjhg.com/2026/06/09/jackson-county-strikes-down-ai-data-centers-with-ban/"
    ]
   ],
   "im": -1,
@@ -6075,7 +6107,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-08-27",
+  "d": "2026-06-10",
   "j": "FL",
   "w": "Tallahassee City Commission",
   "lv": "local",
@@ -6084,12 +6116,16 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Tallahassee rejects an AI data center ban 3–2",
-  "b": "Commissioners said existing zoning already excludes such facilities.",
+  "t": "Tallahassee rejects a data center moratorium 3–2",
+  "b": "The city manager said the comprehensive plan and zoning already keep data centers out. Commissioner Jeremy Matlow, who proposed the pause, disputed that reading.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/florida"
+    "WCTV",
+    "https://www.wctv.tv/2026/06/11/amid-commission-debate-city-manager-says-tallahassee-cannot-currently-support-data-center/"
+   ],
+   [
+    "WTXL",
+    "https://www.wtxl.com/downtown-tallahassee/leon-county-moves-to-pause-large-scale-data-centers-city-commission-rejects-similar-motion"
    ]
   ],
   "im": 0,
@@ -6104,25 +6140,25 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09",
+  "d": "2026-09-01",
   "j": "FL",
-  "w": "Indiantown and Taylor County",
+  "w": "Indiantown Village Council",
   "lv": "local",
   "k": "action",
   "st": "failed",
   "ty": [
    "moratorium"
   ],
-  "t": "Indiantown and Taylor County reject data center pauses",
-  "b": "Indiantown's council voted 4–1 and fired its village manager the same night.",
+  "t": "Indiantown rejects a data center pause 4–1 pending new legal advice",
+  "b": "Council members wanted new counsel to vet the language after the village attorney resigned. They fired the village manager the same night.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/florida"
+    "WQCS",
+    "https://www.wqcs.org/wqcs-news/2026-09-02/indiantown-council-delays-data-center-moratorium-fires-village-manager"
    ],
    [
-    "Savrn Florida tracker",
-    "https://savrn.com/data-center-moratorium-tracker/florida"
+    "CBS12",
+    "https://cbs12.com/news/local/data-center-debate-ends-with-village-managers-termination-in-indiantown"
    ]
   ],
   "im": 1,
@@ -6131,17 +6167,13 @@
    [
     "Indiantown",
     "city"
-   ],
-   [
-    "Taylor County",
-    "county"
    ]
   ],
   "auto": false,
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-08",
+  "d": "2026-08-06",
   "j": "FL",
   "w": "Escambia County",
   "lv": "local",
@@ -6151,12 +6183,16 @@
    "moratorium",
    "siting"
   ],
-  "t": "Escambia County bans large data centers and targets mid-size ones",
-  "b": "A July resolution barred them as principal uses and an August ban covered large facilities. A pause on 10 to 50 MW projects is in the works.",
+  "t": "Escambia County bans large data centers and drops a separate moratorium",
+  "b": "A July resolution declared data centers not a permitted use, and an Aug. 6 ordinance, passed 4–1, banned large-scale ones in unincorporated areas. In September the board took no action on a moratorium, saying they were already banned.",
   "s": [
    [
-    "Data Centers: Weekly Briefing",
-    "https://writing.strisker.com/data-centers-weekly-briefing-september-7-10-2026/"
+    "WEAR",
+    "https://weartv.com/news/local/escambia-county-commissioners-vote-to-block-large-scale-data-centers-in-unincorporated-areas"
+   ],
+   [
+    "NorthEscambia.com",
+    "https://www.northescambia.com/2026/09/escambia-commissioners-stand-firm-on-existing-data-center-ban-take-no-action-on-moratorium"
    ]
   ],
   "im": -2,
@@ -9989,7 +10025,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-01",
+  "d": "2026-07-07",
   "j": "FL",
   "w": "Bay County Commission",
   "lv": "local",
@@ -9998,12 +10034,16 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Bay County pauses data centers through January 2027",
-  "b": "The moratorium was among the first in a Florida wave that later reached more than a dozen counties.",
+  "t": "Bay County pauses data centers over 5 MW for six months",
+  "b": "Commissioners cut staff's proposed 50 MW threshold to 5 MW. They can add six more months if permanent rules aren't ready; no applications had been filed.",
   "s": [
    [
-    "Savrn tracker",
-    "https://savrn.com/data-center-moratorium-tracker/florida"
+    "WJHG",
+    "https://www.wjhg.com/2026/07/08/bay-county-approves-six-month-moratorium-ai-data-centers/"
+   ],
+   [
+    "WJHG",
+    "https://www.wjhg.com/2026/06/03/red-flag-data-centers-bay-county-starts-research-ahead-possible-moratorium/"
    ]
   ],
   "im": -1,
@@ -26383,11 +26423,15 @@
    "moratorium"
   ],
   "t": "Washington County, Florida, adopts a one-year data center moratorium",
-  "b": "Unanimous; it halts applications in unincorporated areas, exempting only small server rooms under 250 kW.",
+  "b": "Unanimous; it halts applications in unincorporated areas. Equipment incidental to a property's main use that fills no more than 5% of its floor area is exempt.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/florida"
+    "Washington County News",
+    "https://washingtoncounty.news/2026/08/21/county-approves-one-year-moratorium-on-data-center-applications/"
+   ],
+   [
+    "WMBB",
+    "https://www.mypanhandle.com/news/local-news/washington-county/washington-county-sets-1-year-moratorium-on-data-centers/"
    ]
   ],
   "im": -1,
@@ -26412,12 +26456,24 @@
    "moratorium",
    "siting"
   ],
-  "t": "Walton, Flagler, Madison and DeSoto counties and Pensacola restrict data centers",
-  "b": "Walton banned them in every zoning district in June. Madison, DeSoto (exempting a pending 800-acre project), Pensacola and Flagler adopted one-year pauses in July and August.",
+  "t": "Walton County bans data centers; DeSoto, Pensacola and Flagler adopt pauses",
+  "b": "Walton banned data centers and large-load centers outright June 9, 5–0. DeSoto adopted a moratorium in early July, Pensacola gave first approval July 16 to a one-year pause on 50 MW-plus projects, and Flagler adopted a one-year pause Aug. 3.",
   "s": [
    [
-    "Programs.com tracker",
-    "https://programs.com/resources/data-center-moratoriums-tracker/"
+    "WJHG",
+    "https://www.wjhg.com/2026/06/10/walton-county-adopts-ordinance-prohibiting-data-large-load-centers/"
+   ],
+   [
+    "WGCU",
+    "https://www.wgcu.org/government-politics/2026-07-09/sarasota-county-blocks-hyperscale-data-centers-for-at-least-one-year-desoto-earlier-made-similar-move"
+   ],
+   [
+    "WEAR",
+    "https://weartv.com/news/local/escambia-county-passes-one-year-moratorium-on-large-scale-data-centers-as-debate-grows"
+   ],
+   [
+    "Palm Coast Observer",
+    "https://www.observerlocalnews.com/news/2026/aug/03/flagler-county-approves-one-year-data-center-moratorium/"
    ]
   ],
   "im": -1,
@@ -26428,20 +26484,16 @@
     "county"
    ],
    [
-    "Flagler County",
-    "county"
-   ],
-   [
-    "Madison County",
-    "county"
-   ],
-   [
     "DeSoto County",
     "county"
    ],
    [
     "Pensacola",
     "city"
+   ],
+   [
+    "Flagler County",
+    "county"
    ]
   ],
   "auto": false,
@@ -27592,5 +27644,39 @@
   ],
   "auto": false,
   "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-06-23",
+  "j": "FL",
+  "w": "Jackson County",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "moratorium",
+   "siting"
+  ],
+  "t": "Jackson County bans data centers in unincorporated areas",
+  "b": "The unanimous ordinance replaced a one-year pause amid opposition to a proposed AI data center near Compass Lake. Commissioners also removed a provision that would have allowed exceptions.",
+  "s": [
+   [
+    "Jackson County Times",
+    "https://www.jacksoncountytimes.news/local-news/jackson-county-commissioners-approve-data-center-ban-after-third-public-hearing"
+   ],
+   [
+    "WMBB",
+    "https://www.mypanhandle.com/news/local-news/jackson-county/jackson-county-implements-a-full-ban-on-data-centers/"
+   ]
+  ],
+  "im": -2,
+  "iw": "County ban",
+  "pl": [
+   [
+    "Jackson County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
  }
 ]
