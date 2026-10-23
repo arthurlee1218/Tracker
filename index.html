@@ -141,6 +141,25 @@ a:hover{text-decoration-thickness:2px}
 .entry.up{background:var(--surface)}
 .e-date .up-k{display:block;font-family:var(--body);font-size:12px;font-weight:600;color:var(--volt-ink);letter-spacing:.02em}
 .e-place{display:block;font-weight:500;font-size:13px;color:var(--ink-3)}
+.tally-btn{display:block;width:100%;text-align:left;background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer}
+.tally-btn b{text-decoration:underline;text-decoration-style:dotted;text-decoration-thickness:2px;text-underline-offset:4px}
+.tally-btn:hover b{color:var(--rules)}
+.tally-btn[disabled]{cursor:default}.tally-btn[disabled] b{text-decoration:none}
+.tally-btn[aria-expanded="true"] b{color:var(--volt-ink)}
+.tally-hint{display:block;margin-top:2px;font-weight:600;color:var(--rules)}
+.local-list{margin-top:14px;border-top:1px solid var(--rule);padding-top:10px}
+.local-list h3{font-size:15px;font-weight:600}
+.local-list h3 small{font-weight:400;color:var(--ink-3);margin-left:4px}
+.local-list p{font-size:14px;margin-top:2px}
+.local-list ul{list-style:none;max-height:320px;overflow-y:auto;margin-top:8px;border:1px solid var(--rule-soft);background:var(--surface-2)}
+.local-list li+li{border-top:1px solid var(--rule-soft)}
+.local-list li button{display:block;width:100%;text-align:left;background:none;border:0;font:inherit;color:var(--ink);padding:7px 10px;cursor:pointer}
+.local-list li button:hover{background:var(--surface)}
+.ll-name{display:block;font-weight:600;font-size:15px}
+.ll-meta{display:block;font-size:13px;color:var(--ink-2)}
+.entry.flash{animation:flash 2.4s ease-out}
+@keyframes flash{0%,40%{background:var(--proposed-bg);box-shadow:inset 4px 0 0 var(--volt)}100%{background:transparent;box-shadow:none}}
+@media (prefers-reduced-motion: reduce){.entry.flash{animation:none;box-shadow:inset 4px 0 0 var(--volt)}}
 .places{margin-top:16px;border-top:1px solid var(--rule);padding-top:10px}
 .places h3{font-size:15px;font-weight:600;margin-bottom:6px}
 .places ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
@@ -1421,7 +1440,7 @@ function meter(v){
 }
 const TYL={moratorium:"Moratorium or pause",cost:"Who pays for power",tax:"Tax incentives",water:"Water",siting:"Siting and local control",permitting:"Permitting",disclosure:"Disclosure"};
 
-const state={sel:null,q:"",lv:"",ty:"",st:"",k:"",im:"",pl:""};
+const state={sel:null,q:"",lv:"",ty:"",st:"",k:"",im:"",pl:"",lt:""};
 const TODAY=(()=>{const n=new Date();return n.getFullYear()+"-"+String(n.getMonth()+1).padStart(2,"0")+"-"+String(n.getDate()).padStart(2,"0");})();
 const isUp=e=>e.d.length===10&&e.d>TODAY;
 const PTL={county:"County",city:"City or town",township:"Township",tribal:"Tribal nation"};
@@ -1476,9 +1495,11 @@ function renderPanel(){
         <div><b>${inForcePauses}</b><small>logged pauses in force at any level</small></div>
         <div><b>${new Set(E.flatMap(e=>(e.pl||[]).map(([n])=>e.j+"|"+n))).size}</b><small>counties, cities, townships and tribal nations logged</small></div>
         <div><b>${E.filter(isUp).length}</b><small>scheduled votes and deadlines still ahead</small></div>
-        ${(()=>{const t=localTally(localStatus());return `<div><b>${t.ban.all}</b><small>counties, cities and towns logged with a data center ban</small></div><div><b>${t.pause.all}</b><small>more logged with a moratorium or pause</small></div>`;})()}
+        ${tallyBtn("ban",localTally(localStatus()).ban.all,"counties, cities and towns logged with a data center ban")}${tallyBtn("pause",localTally(localStatus()).pause.all,"more logged with a moratorium or pause")}
       </div>
+      ${localList(localStatus(),true)}
       <p style="font-size:15px">Select a state on the map to see its story and filter the list.</p>`;
+    bindLocal(p);
     return;
   }
   const ab=state.sel, info=ST[ab], s=info?info.s:"none";
@@ -1489,8 +1510,9 @@ function renderPanel(){
     <p style="font-size:15px">${n?`${n} ${n===1?"entry":"entries"} below, plus federal actions that apply everywhere.`:""}</p>
     ${(()=>{const list=localStatus().filter(p=>p.j===ab);if(!list.length)return "";const t=localTally(list);
       const part=x=>[x.county?plural(x.county,"county","counties"):"",x.other?plural(x.other,"city or town","cities and towns"):""].filter(Boolean).join(" and ")||"None logged";
-      return `<div class="tally local-tally"><div><b>${t.ban.all}</b><small>with a data center ban: ${part(t.ban)}</small></div><div><b>${t.pause.all}</b><small>with a moratorium or pause: ${part(t.pause)}</small></div></div>
-      <p style="font-size:14px;color:var(--ink-3);margin-top:8px">Counts places logged here; some pauses may have expired since, and more towns may have acted. Pick a place below to see its entries.</p>`;})()}
+      return `<div class="tally local-tally">${tallyBtn("ban",t.ban.all,"with a data center ban: "+part(t.ban))}${tallyBtn("pause",t.pause.all,"with a moratorium or pause: "+part(t.pause))}</div>
+      ${localList(list,false)}
+      <p style="font-size:14px;color:var(--ink-3);margin-top:8px">Counts places logged here; some pauses may have expired since, and more towns may have acted. Click a number to list them.</p>`;})()}
     ${(()=>{const sc=E.filter(e=>e.j===ab&&typeof e.im==="number");if(!sc.length)return "";
       const avg=sc.reduce((t,e)=>t+e.im,0)/sc.length, r=Math.max(-2,Math.min(2,Math.round(avg)));
       const nh=sc.filter(e=>e.im<0).length, nt=sc.filter(e=>e.im>0).length;
@@ -1501,6 +1523,7 @@ function renderPanel(){
       return `<div class="places"><h3>Counties, cities and townships</h3><ul>${arr.map(([k,v])=>`<li><button type="button" data-pl="${esc(k)}" aria-pressed="${state.pl===k}">${esc(v.n)}<small>${v.c}</small></button></li>`).join("")}</ul></div>`;})()}
     <div class="clear"><button type="button" class="btn-quiet" id="clearSel">Show all states</button></div>`;
   $("#clearSel").addEventListener("click",()=>select(null));
+  bindLocal(p);
   p.querySelectorAll("[data-pl]").forEach(b=>b.addEventListener("click",()=>{state.pl=state.pl===b.dataset.pl?"":b.dataset.pl;$("#f-place").value=state.pl;renderPanel();renderEntries();}));
 }
 
@@ -1542,7 +1565,7 @@ function renderEntries(){
   const row=e=>{
     const where=e.j==="US"||e.lv==="state"?esc(e.w):`${esc(e.w)}, ${esc(e.j)}`;
     const pt=(e.pl||[]).length?[...new Set(e.pl.map(([,t])=>PTL[t]))].join(" · "):"";
-    return `<li class="entry${e.k==="politics"?" pol":""}${e.fresh?" fresh":""}${isUp(e)?" up":""}"><details><summary>
+    return `<li class="entry${e.k==="politics"?" pol":""}${e.fresh?" fresh":""}${isUp(e)?" up":""}" data-t="${esc(e.t)}"><details><summary>
       <span class="e-date">${isUp(e)?'<span class="up-k">Upcoming</span>':""}${fmt(e.d)}</span>
       <span class="e-where">${where}${pt?`<span class="e-place">${esc(pt)}</span>`:""}</span>
       <span class="e-title">${esc(e.t)}${e.fresh?'<span class="fresh-mark">New, unverified</span>':(e.auto?'<span class="fresh-mark" style="color:var(--ink-3)">Auto-found</span>':"")}</span>
@@ -1567,8 +1590,8 @@ function localStatus(){
   E.filter(e=>(e.lv==="local"||e.lv==="tribal")&&e.k==="action"&&(e.pl||[]).length)
    .sort((a,b)=>key(a.d).localeCompare(key(b.d)))
    .forEach(e=>e.pl.forEach(([n,t])=>{const k=e.j+"|"+n, cur=m[k]||(m[k]={n,t,j:e.j,st:""});
-     if(isBanEntry(e)) cur.st="ban";
-     else if(e.st==="pause"&&cur.st!=="ban") cur.st="pause";
+     if(isBanEntry(e)){cur.st="ban";cur.e=e;}
+     else if(e.st==="pause"&&cur.st!=="ban"){cur.st="pause";cur.e=e;}
      else if(cur.st==="pause"&&(e.st==="failed"||(e.st==="in-force"&&/\b(swaps?|replaces?|ends?|lifts?|lifted)\b/i.test(e.t)&&/moratorium|pause/i.test(e.t)))) cur.st="";}));
   return Object.values(m).filter(x=>x.st);
 }
@@ -1577,6 +1600,35 @@ function localTally(list){
   return {ban:c("ban"),pause:c("pause")};
 }
 const plural=(n,a,b)=>`${n} ${n===1?a:b}`;
+const LTL={ban:"Places with a data center ban",pause:"Places with a moratorium or pause"};
+function tallyBtn(kind,n,label){
+  return `<div><button type="button" class="tally-btn" data-lt="${kind}" aria-expanded="${state.lt===kind}" ${n?"":"disabled"}><b>${n}</b><small>${label}${n?`<span class="tally-hint">${state.lt===kind?"Hide list":"Show list"}</span>`:""}</small></button></div>`;
+}
+function localList(list,national){
+  const kind=state.lt; if(!kind) return "";
+  const items=list.filter(x=>x.st===kind).sort((a,b)=>(national?(NAMES[a.j]||a.j).localeCompare(NAMES[b.j]||b.j):0)||a.n.localeCompare(b.n));
+  if(!items.length) return "";
+  const li=x=>`<li><button type="button" data-goto="${esc(x.j+"|"+x.n)}" data-t="${esc(x.e.t)}"><span class="ll-name">${esc(x.n)}${national?`, ${esc(x.j)}`:""}</span><span class="ll-meta">${esc(PTL[x.t]||x.t)} · ${fmt(x.e.d)} · ${esc(x.e.t)}</span></button></li>`;
+  return `<div class="local-list"><h3>${LTL[kind]} <small>${items.length}</small></h3><p>Each links to the entry that set its status. Open it to check the source.</p><ul>${items.map(li).join("")}</ul></div>`;
+}
+function bindLocal(p){
+  p.querySelectorAll("[data-lt]").forEach(b=>b.addEventListener("click",()=>{state.lt=state.lt===b.dataset.lt?"":b.dataset.lt;renderPanel();}));
+  p.querySelectorAll("[data-goto]").forEach(b=>b.addEventListener("click",()=>goToEntry(b.dataset.goto,b.dataset.t)));
+}
+function goToEntry(k,title){
+  const j=k.split("|")[0];
+  if(state.sel!==j) select(j);
+  // clear other filters so the entry can't be hidden
+  state.q=state.lv=state.ty=state.st=state.k=state.im="";
+  ["#q","#f-kind","#f-level","#f-type","#f-status","#f-impact"].forEach(id=>$(id).value="");
+  state.pl=k; fillPlaces(); renderPanel(); renderEntries(); showTab("actions",false);
+  const li=[...document.querySelectorAll("#entries .entry")].find(x=>x.dataset.t===title);
+  if(!li) return;
+  li.querySelector("details").open=true;
+  li.classList.remove("flash"); void li.offsetWidth; li.classList.add("flash");
+  li.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"});
+  li.querySelector("summary").focus({preventScroll:true});
+}
 function paintCounts(){
   const c={};E.forEach(e=>{if(e.j!=="US")c[e.j]=(c[e.j]||0)+1;});
   [...map.children].forEach(t=>{const ab=t.dataset.ab,n=c[ab]||0,s=t.dataset.s;
