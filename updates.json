@@ -26769,5 +26769,944 @@
   ],
   "auto": false,
   "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08-11",
+  "j": "WA",
+  "w": "Yakima County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "water"
+  ],
+  "t": "Yakima County adopts a six-month data center moratorium",
+  "b": "Unanimous; no land use or building permits for data centers in unincorporated areas while the county studies water, power, health and farm impacts. No applications had been filed.",
+  "s": [
+   [
+    "Yakima Herald-Republic",
+    "https://www.yakimaherald.com/news/local/government/yakima-county-commissioners-pass-six-month-data-center-moratorium/article_997dbbc7-7fe0-476a-9d92-73179f958bf7.html"
+   ],
+   [
+    "Sunnyside Sun",
+    "https://www.sunnysidesun.com/news/county-commissioners-impose-six-month-data-center-moratorium/article_b3e45c42-7780-4ca2-99ec-82e43383618e.html"
+   ]
+  ],
+  "im": -1,
+  "iw": "Preemptive county pause",
+  "pl": [
+   [
+    "Yakima County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-08-25",
+  "j": "WA",
+  "w": "Pierce County",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Pierce County bars new data centers over 10 MW for a year",
+  "b": "An emergency ordinance covers new and expanded facilities in unincorporated areas around Tacoma, running to August 2027 unless lifted.",
+  "s": [
+   [
+    "AI Grid Watch",
+    "https://aigridwatch.com/communities/pierce-county-wa"
+   ],
+   [
+    "Common Dreams",
+    "https://www.commondreams.org/news/wa-state-data-center-moratorium"
+   ]
+  ],
+  "im": -1,
+  "iw": "County pause near a major metro",
+  "pl": [
+   [
+    "Pierce County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-10-14",
+  "j": "WA",
+  "w": "Grant County PUD",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "cost"
+  ],
+  "t": "Grant PUD proposes separate, higher rate classes for data centers in 2027",
+  "b": "Data centers used about 37% of Grant County's electricity in 2025. New High Density Compute classes would pay 4.5 to 4.8 cents per kWh under a growth-pays-for-growth approach; budget hearings are Oct. 27.",
+  "s": [
+   [
+    "The Star (Grand Coulee)",
+    "https://www.grandcoulee.com/story/2026/10/14/news/grant-pud-proposes-rate-increases-new-charges-for-data-centers/19638.html"
+   ],
+   [
+    "Grant PUD",
+    "https://www.grantpud.org/blog/data-center-faqs"
+   ]
+  ],
+  "im": -1,
+  "iw": "Higher power costs in the Quincy hub",
+  "pl": [
+   [
+    "Grant County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-03",
+  "j": "WA",
+  "w": "Utilities and Transportation Commission",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "cost"
+  ],
+  "t": "Washington regulators open a review of large-load interconnection and tariffs",
+  "b": "Docket UE-260162 is a commission-led workshop series on how big loads connect and pay. Public utilities argue a statewide model would undercut local commissions.",
+  "s": [
+   [
+    "Washington UTC filing",
+    "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=127&year=2026&docketNumber=260162"
+   ]
+  ],
+  "im": 0,
+  "iw": "Rules still being shaped",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-07-07",
+  "j": "OR",
+  "w": "Oregon Public Utility Commission",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "Oregon regulators raise PGE's data center rates 29.7% under the POWER Act",
+  "b": "A May 7 order created a separate class for loads over 20 MW with long contracts, exit fees and clean-energy conditions. Residential rates fell 1.3%. A Pacific Power decision is due later this year.",
+  "s": [
+   [
+    "OPB",
+    "https://www.opb.org/article/2026/07/07/oregon-data-center-general-electric-rate-hikes/"
+   ],
+   [
+    "Utility Dive",
+    "https://www.utilitydive.com/news/oregon-puc-approves-pges-large-load-tariff-framework-for-data-centers/821361/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Much higher power costs",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-08-03",
+  "j": "OR",
+  "w": "Oregon Democratic lawmakers",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Oregon Democrats plan a three-year moratorium bill for 2027",
+  "b": "Sens. Jeff Golden and Courtney Neron Misslin and Reps. Lesly Muñoz and Farrah Chaichi will propose it, citing energy and water demand, farmland loss and tax breaks.",
+  "s": [
+   [
+    "Portland Tribune",
+    "https://portlandtribune.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Possible long statewide pause",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-09-11",
+  "j": "OR",
+  "w": "Data Center Advisory Committee",
+  "lv": "state",
+  "k": "politics",
+  "st": "statement",
+  "ty": [
+   "tax",
+   "disclosure"
+  ],
+  "t": "Kotek's data center advisers publish findings but no recommendations yet",
+  "b": "The preliminary report found about 9,000 acres proposed for data centers and questioned generous tax breaks; roughly 90% of comments opposed more data centers. Final recommendations come after the election.",
+  "s": [
+   [
+    "Oregon Capital Chronicle",
+    "https://oregoncapitalchronicle.com/2026/09/16/nine-months-in-koteks-data-center-advisory-committee-shares-many-questions-few-answers/"
+   ],
+   [
+    "Oregon Department of Energy",
+    "https://www.oregon.gov/energy/get-involved/Documents/2026-09-10-DCAC-Preliminary-Learnings.pdf"
+   ]
+  ],
+  "im": -1,
+  "iw": "Points toward tighter oversight",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-09-14",
+  "j": "OR",
+  "w": "Woodburn City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Woodburn adopts a 120-day data center moratorium",
+  "b": "Unanimous, with no pending applications. Verrus had explored a site in the city but says it has no near-term plans there.",
+  "s": [
+   [
+    "OPB",
+    "https://www.opb.org/article/2026/09/15/woodburn-moratorium-new-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "City pause",
+  "pl": [
+   [
+    "Woodburn",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-09-21",
+  "j": "OR",
+  "w": "Salem City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "water"
+  ],
+  "t": "Salem's moratorium blocks Verrus's $5.1 billion Mill Creek campus until January",
+  "b": "The 120-day pause runs through Jan. 19 and can be extended. Verrus had applied for a 600,000 sq ft first phase days before the city began the process; residents cited the Santiam River water supply.",
+  "s": [
+   [
+    "Salem Reporter",
+    "https://www.salemreporter.com/2026/09/22/city-attorney-salem-data-center-moratorium-means-verrus-cant-build-until-it-expires/"
+   ],
+   [
+    "KPTV",
+    "https://www.kptv.com/2026/09/22/salem-pauses-data-center-projects-4-months/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Large project on hold",
+  "pl": [
+   [
+    "Salem",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-10-20",
+  "j": "OR",
+  "w": "Umatilla City Council",
+  "lv": "local",
+  "k": "politics",
+  "st": "statement",
+  "ty": [
+   "moratorium",
+   "tax"
+  ],
+  "t": "Umatilla declares an emergency over Kotek's data center permit pause",
+  "b": "Eastern Oregon officials say the pause costs them fees and infrastructure money. Hermiston says Amazon canceled several planned campuses, and a Morrow County commissioner called it executive overreach.",
+  "s": [
+   [
+    "OPB",
+    "https://www.opb.org/article/2026/10/22/oregon-counties-cities-data-centers-could-cost-millions/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Local pushback against the state pause",
+  "pl": [
+   [
+    "Umatilla",
+    "city"
+   ],
+   [
+    "Hermiston",
+    "city"
+   ],
+   [
+    "Morrow County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-10-22",
+  "j": "OR",
+  "w": "Clackamas County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Clackamas County adopts a 120-day data center moratorium",
+  "b": "Unanimous, after two public hearings, covering unincorporated areas while staff draft rules.",
+  "s": [
+   [
+    "Clackamas County",
+    "https://www.clackamas.us/news/2026-10-22/clackamas-county-commissioners-unanimously-approve-temporary-data-center-moratorium"
+   ],
+   [
+    "OPB",
+    "https://www.opb.org/article/2026/08/05/clackamas-county-to-consider-data-center-moratorium/"
+   ]
+  ],
+  "im": -1,
+  "iw": "County pause near Portland",
+  "pl": [
+   [
+    "Clackamas County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-09-17",
+  "j": "CA",
+  "w": "Los Angeles County",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "water"
+  ],
+  "t": "Los Angeles County pauses hyperscale data centers in unincorporated areas",
+  "b": "The planning director froze approvals pending a permanent ban sought by Supervisor Hilda Solis. The board postponed its Oct. 6 vote on that ban after heavy public comment.",
+  "s": [
+   [
+    "Hoodline",
+    "https://hoodline.com/2026/09/la-county-freezes-giant-ai-data-centers-as-solis-pushes-permanent-ban/"
+   ],
+   [
+    "CalMatters",
+    "https://calmatters.org/economy/technology/2026/10/california-data-centers-hit-with-local-regulation-flood/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Pause in the largest county",
+  "pl": [
+   [
+    "Los Angeles County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-10-06",
+  "j": "CA",
+  "w": "San Francisco Board of Supervisors",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "San Francisco adopts a 45-day citywide data center moratorium, 11–0",
+  "b": "An urgency ordinance covering new data centers, expansions and power upgrades while the city revisits 20-year-old rules.",
+  "s": [
+   [
+    "Holland & Knight",
+    "https://www.hklaw.com/en/insights/publications/2026/10/pause-or-playbook-how-bay-area-cities-are-responding-to-data-center"
+   ],
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "City pause",
+  "pl": [
+   [
+    "San Francisco",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-10",
+  "j": "CA",
+  "w": "San Jose City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "San Jose rejects a moratorium and upholds a data center in an Nvidia building",
+  "b": "The council voted 8–0 to deny a labor-led appeal. Draft standards for 20 MW-plus projects go to the council in December; Santa Clara also chose new rules over a pause.",
+  "s": [
+   [
+    "San Jose Inside",
+    "https://www.sanjoseinside.com/news/san-jose-santa-clara-avoid-moves-taken-by-other-ca-cities-to-pull-plug-on-new-data-centers/"
+   ],
+   [
+    "Holland & Knight",
+    "https://www.hklaw.com/en/insights/publications/2026/10/pause-or-playbook-how-bay-area-cities-are-responding-to-data-center"
+   ]
+  ],
+  "im": 1,
+  "iw": "Silicon Valley stays open, with rules",
+  "pl": [
+   [
+    "San Jose",
+    "city"
+   ],
+   [
+    "Santa Clara",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-10",
+  "j": "CA",
+  "w": "Gilroy City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Gilroy extends its moratorium, stalling a second Amazon data center",
+  "b": "The September 45-day pause was extended while the city writes zoning, water, noise and energy standards. Amazon's first campus there is under construction.",
+  "s": [
+   [
+    "San Jose Inside",
+    "https://www.sanjoseinside.com/news/san-jose-santa-clara-avoid-moves-taken-by-other-ca-cities-to-pull-plug-on-new-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Blocks a large expansion",
+  "pl": [
+   [
+    "Gilroy",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-09",
+  "j": "CA",
+  "w": "Palm Springs City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Palm Springs extends its data center moratorium to August 2028",
+  "b": "The 22-month extension of an August urgency ordinance is the maximum state law allows.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/california"
+   ],
+   [
+    "Savrn California tracker",
+    "https://savrn.com/data-center-moratorium-tracker/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "Two-year city pause",
+  "pl": [
+   [
+    "Palm Springs",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-06-03",
+  "j": "CA",
+  "w": "Indio City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Indio adopts an urgency moratorium and moves toward a permanent ban",
+  "b": "The 45-day pause was extended 90 days, and staff were told to draft a ban.",
+  "s": [
+   [
+    "Savrn California tracker",
+    "https://savrn.com/data-center-moratorium-tracker/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "Likely permanent ban",
+  "pl": [
+   [
+    "Indio",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-05-19",
+  "j": "CA",
+  "w": "Brawley City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Brawley pauses data centers over 50 MW or 250,000 sq ft, 3–2",
+  "b": "Smaller server rooms and telecom hubs are exempt while the city drafts standards.",
+  "s": [
+   [
+    "Savrn California tracker",
+    "https://savrn.com/data-center-moratorium-tracker/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "City pause",
+  "pl": [
+   [
+    "Brawley",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-09-16",
+  "j": "CA",
+  "w": "Northern California towns",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Arcata, Angels Camp and Calaveras County adopt urgency data center moratoriums",
+  "b": "Arcata voted unanimously Sept. 16; Angels Camp voted 5–0 in August, followed by Calaveras County for unincorporated areas. Eureka also has a pause.",
+  "s": [
+   [
+    "Savrn California tracker",
+    "https://savrn.com/data-center-moratorium-tracker/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "Spreading small pauses",
+  "pl": [
+   [
+    "Arcata",
+    "city"
+   ],
+   [
+    "Angels Camp",
+    "city"
+   ],
+   [
+    "Calaveras County",
+    "county"
+   ],
+   [
+    "Eureka",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-08",
+  "j": "CA",
+  "w": "Southern California cities",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Escondido and Lake Elsinore adopt 45-day data center pauses",
+  "b": "Part of a wave of at least 26 California resolutions, moratoriums or bans since June, by one advocacy group's count.",
+  "s": [
+   [
+    "Savrn California tracker",
+    "https://savrn.com/data-center-moratorium-tracker/california"
+   ],
+   [
+    "CalMatters",
+    "https://calmatters.org/economy/technology/2026/10/california-data-centers-hit-with-local-regulation-flood/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Short city pauses",
+  "pl": [
+   [
+    "Escondido",
+    "city"
+   ],
+   [
+    "Lake Elsinore",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-07-16",
+  "j": "CA",
+  "w": "California Public Utilities Commission",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "cost"
+  ],
+  "t": "California regulators tighten terms for Google's 250 MW PG&E hookup as Rule 30 stays open",
+  "b": "A draft resolution approves the agreement but caps refunds and ties network upgrade costs to the pending Rule 30 decision on transmission-level service. PG&E and advocates reached a partial settlement in May.",
+  "s": [
+   [
+    "CPUC draft resolution",
+    "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M607/K718/607718746.PDF"
+   ],
+   [
+    "Stoel Rives",
+    "https://www.stoel.com/insights/publications/cpuc-weighs-cost-recovery-for-interconnection-of-large-load-including-data-centers"
+   ]
+  ],
+  "im": -1,
+  "iw": "More upfront cost for big loads",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-06-26",
+  "j": "NV",
+  "w": "Bureau of Land Management",
+  "lv": "federal",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "permitting",
+   "siting"
+  ],
+  "t": "BLM approves the first data center on federal public land, near Boulder City",
+  "b": "It amended a 2023 solar right-of-way for Townsite Solar 2 instead of doing a new environmental review. The plan includes four buildings, a 70 MW battery and gas or biodiesel backup on desert tortoise habitat.",
+  "s": [
+   [
+    "KTNV",
+    "https://www.ktnv.com/news/environmental-groups-file-federal-appeal-against-data-center-planned-just-outside-boulder-city"
+   ],
+   [
+    "Las Vegas Sun",
+    "https://lasvegassun.com/news/2026/sep/01/environmental-groups-win-stay-in-fight-over-data-c/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Opens public land to data centers",
+  "pl": [
+   [
+    "Boulder City",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-09-01",
+  "j": "NV",
+  "w": "Interior Board of Land Appeals",
+  "lv": "federal",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Federal appeals board halts the Boulder City data center on public land",
+  "b": "A judge found the city and environmental groups likely to prove BLM skipped required review. In October the board let BLM take the approval back for further review, which the city opposed while legal questions remain.",
+  "s": [
+   [
+    "Las Vegas Sun",
+    "https://lasvegassun.com/news/2026/sep/01/environmental-groups-win-stay-in-fight-over-data-c/"
+   ],
+   [
+    "Boulder City Review",
+    "https://bouldercityreview.com/news/blm-to-reconsider-boulder-city-data-center-application-on-federal-land-131874/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Project stalled, precedent at risk",
+  "pl": [
+   [
+    "Boulder City",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-09",
+  "j": "US",
+  "w": "Rep. Dina Titus (D-NV)",
+  "lv": "federal",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Titus bill would require full environmental review for data centers on public land",
+  "b": "The Public Lands Accountability Act would bar shortcut approvals like the Boulder City right-of-way change. Neither industry nor environmental groups endorsed it.",
+  "s": [
+   [
+    "KTNV",
+    "https://www.ktnv.com/news/bureau-of-land-management-asks-court-to-revisit-boulder-city-data-center-approval"
+   ],
+   [
+    "Boulder City Review",
+    "https://bouldercityreview.com/news/blm-asks-judge-to-set-aside-boulder-city-data-center-approval-131686/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Slower federal-land path",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-09-17",
+  "j": "NV",
+  "w": "Public Utilities Commission of Nevada",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Nevada approves 362 MW of private gas plants for Tract's Storey County data centers",
+  "b": "The first gas plants approved specifically for Nevada data centers would run two to three years until NV Energy can serve the sites. They still need air and county permits; critics say they sidestep the renewable standard.",
+  "s": [
+   [
+    "Nevada Current",
+    "https://nevadacurrent.com/2026/09/18/public-utility-commission-approves-gas-plants-to-power-data-centers/"
+   ],
+   [
+    "Las Vegas Review-Journal",
+    "https://www.reviewjournal.com/business/energy/nevada-data-center-growth-drives-approval-of-temporary-gas-plants-3890109/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Faster power for big campuses",
+  "pl": [
+   [
+    "Storey County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-10",
+  "j": "NV",
+  "w": "Switch",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Switch is behind a proposed 510 MW gas plant at the Tahoe Reno Industrial Center",
+  "b": "Filed with regulators in June by Nexus Fulcrum LLC; Switch disclosed it is the intended owner and buyer of the power.",
+  "s": [
+   [
+    "NVBEX",
+    "https://nevbex.com/2026/10/21/switch-natural-gas-power-plant-tahoe-reno/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Self-supplied power for growth",
+  "pl": [
+   [
+    "Storey County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-05-16",
+  "j": "AK",
+  "w": "Alaska Legislature",
+  "lv": "state",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "cost"
+  ],
+  "t": "Alaska's data center ratepayer bill passes the Senate but dies in the House",
+  "b": "SB 250 would have required commission-approved contracts making data centers bear their own costs, plus decommissioning plans. The Senate passed it 14–5; the sponsor plans to try again.",
+  "s": [
+   [
+    "Davis Wright Tremaine",
+    "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps"
+   ],
+   [
+    "Alaska Public Media",
+    "https://alaskapublic.org/news/politics/elections/2026-09-21/where-do-alaskas-four-governor-candidates-stand-on-data-centers"
+   ]
+  ],
+  "im": 1,
+  "iw": "No cost rules for now",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-05-12",
+  "j": "AK",
+  "w": "Alaska Department of Natural Resources",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "siting"
+  ],
+  "t": "Alaska backs leasing a square mile of North Slope land for a giant data center",
+  "b": "A preliminary best-interest finding supports a 50-year lease for Stak Energy's $500 million campus, which could need 1 to 3 GW of power from North Slope gas. Federal wetlands permits are still needed.",
+  "s": [
+   [
+    "Alaska Beacon",
+    "https://alaskabeacon.com/2026/05/14/a-huge-data-center-could-rise-on-alaskas-north-slope/"
+   ],
+   [
+    "Davis Wright Tremaine",
+    "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps"
+   ]
+  ],
+  "im": 1,
+  "iw": "State land offered",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-09-08",
+  "j": "AK",
+  "w": "Alaska governor race",
+  "lv": "state",
+  "k": "politics",
+  "st": "campaign",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Kreiss-Tomkins backs a data center moratorium; Bronson calls himself a big believer",
+  "b": "The Democrat wants a pause until lawmakers pass a framework. Gov. Dunleavy, who is term-limited, has courted the industry.",
+  "s": [
+   [
+    "Alaska Public Media",
+    "https://alaskapublic.org/news/politics/elections/2026-09-21/where-do-alaskas-four-governor-candidates-stand-on-data-centers"
+   ]
+  ],
+  "im": -1,
+  "iw": "Candidates split",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
+ },
+ {
+  "d": "2026-07-07",
+  "j": "HI",
+  "w": "Hawaii County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "siting"
+  ],
+  "t": "Hawaii County advances a bill to keep industrial-scale data centers off the island",
+  "b": "Bill 170 would define data centers separately from small data processing sites and make them not permitted. A committee forwarded it 8–0; planning commissions are reviewing it, one with an unfavorable vote.",
+  "s": [
+   [
+    "Hawaii Public Radio",
+    "https://www.hawaiipublicradio.org/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers"
+   ],
+   [
+    "Hawaii Tribune-Herald",
+    "https://www.hawaiitribune-herald.com/2026/10/02/hawaii-news/data-centers-debate-continues-at-county-level/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Possible island-wide ban",
+  "pl": [
+   [
+    "Hawaii County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23 (West Coast)"
  }
 ]
