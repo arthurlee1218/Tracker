@@ -1,4 +1,4 @@
-# Load Watch
+# Data Center Watch
 
 A tracker of U.S. data center laws, pauses, ballot fights and campaign politics.
 `index.html` is the whole site. `updates.json` holds items added automatically.
@@ -38,7 +38,7 @@ file to change what it looks for.
 5. **Let Actions open pull requests:** Settings → Actions → General → Workflow
    permissions → "Read and write permissions" and tick "Allow GitHub Actions to
    create and approve pull requests."
-6. **Test it:** Actions tab → "Update Load Watch (Claude subscription)" → Run
+6. **Test it:** Actions tab → "Update Data Center Watch (Claude subscription)" → Run
    workflow. A pull request should appear within about 10–20 minutes.
 
 Treat the token like a password. Anyone with it can use your Claude plan. If it
