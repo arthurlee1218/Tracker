@@ -1095,11 +1095,11 @@
    "moratorium"
   ],
   "t": "West Haven adopts a one-year data center moratorium",
-  "b": "Unanimous; incidental server rooms are exempt.",
+  "b": "Unanimous; server rooms incidental to a building's main use are exempt. Mayor Dorinda Borer proposed it.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/connecticut/"
+    "New Haven Register",
+    "https://www.pressreader.com/usa/new-haven-register/20260612/281509347878506"
    ]
   ],
   "im": -1,
@@ -1496,7 +1496,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-05",
+  "d": "2026-05-06",
   "j": "CT",
   "w": "Connecticut General Assembly",
   "lv": "state",
@@ -1507,11 +1507,15 @@
    "cost"
   ],
   "t": "Bills to end data center incentives and set large-load rules die",
-  "b": "SB 245 stalled in Finance; HB 5469 died on the House calendar. No statewide moratorium was enacted.",
+  "b": "SB 245 would have ended data center tax incentives; HB 5469 would have regulated data centers drawing power from plants like Millstone. Lawmakers said interest faded as high power costs deterred developers.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/connecticut/"
+    "CT Mirror",
+    "https://ctmirror.org/2026/05/11/ct-2026-bills-that-didnt-pass/"
+   ],
+   [
+    "Connecticut General Assembly: SB 245",
+    "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB00245&which_year=2026"
    ]
   ],
   "im": 0,
@@ -1534,8 +1538,12 @@
   "b": "The posted text sets 12 months; some coverage describes two years.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/connecticut/"
+    "Town of Morris moratorium text",
+    "https://municipal-documents.s3.amazonaws.com/uploads/Morris-CT/planning-zoning-commission/documents/generals/153088/Morris%20-%20Moratorium%20Battery%20Energy%20Storage%20Systems%20&%20Data%20Centers.pdf"
+   ],
+   [
+    "CT Insider",
+    "https://www.yahoo.com/news/us/articles/why-one-connecticut-town-approved-100000211.html"
    ]
   ],
   "im": -1,
@@ -4550,7 +4558,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-03",
+  "d": "2026-03-03",
   "j": "AL",
   "w": "Birmingham City Council",
   "lv": "local",
@@ -4560,11 +4568,19 @@
    "moratorium"
   ],
   "t": "Birmingham pauses data centers over 20 MW for six months",
-  "b": "Unanimous; DC Blox and the Nebius AI factory are exempt.",
+  "b": "Unanimous. Applications already under review, including Nebius's AI factory in Oxmoor Valley and a DC Blox expansion, are exempt. Zoning rules passed in June take effect when the pause ends.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/alabama"
+    "WBRC",
+    "https://www.wbrc.com/2026/03/04/birmingham-city-council-votes-pause-new-data-center-applications-six-months/"
+   ],
+   [
+    "ABC 33/40",
+    "https://abc3340.com/news/local/ai-factory-planned-for-oxmoor-valley-neighborhood-exempt-from-data-center-moratorium"
+   ],
+   [
+    "Birmingham Times",
+    "https://www.birminghamtimes.com/2026/06/birmingham-city-council-votes-6-3-to-pass-new-regulations-for-data-centers/"
    ]
   ],
   "im": -1,
@@ -4637,12 +4653,20 @@
   "ty": [
    "siting"
   ],
-  "t": "Alabama counties ask for zoning power over data centers",
-  "b": "Most counties can't zone, so rural projects need no local vote. The group wants the legislature to act in 2027.",
+  "t": "Alabama counties oppose data-center-only zoning power and seek broader authority",
+  "b": "The county commissions association voted unanimously against zoning power limited to one industry and asked for a broader look at county land-use authority. Most of the 67 counties can't zone, so they can't pause data centers.",
   "s": [
    [
-    "Nearby Data Centers",
-    "https://nearbydatacenters.org/al/"
+    "Alabama Daily News",
+    "https://aldailynews.com/new-resolution-says-county-commissions-dont-want-specific-power-to-regulate-data-centers/"
+   ],
+   [
+    "Alabama Political Reporter",
+    "https://www.alreporter.com/2026/08/25/acca-calls-for-review-of-planning-and-zoning-authority-as-data-center-debate-looms-large/"
+   ],
+   [
+    "ACCA resolution",
+    "https://assets.informz.net/ACCA/data/images/Land%20Use%20Resolution.pdf"
    ]
   ],
   "im": -1,
@@ -6484,11 +6508,15 @@
    "moratorium"
   ],
   "t": "Pulaski County rejects a 12-month moratorium",
-  "b": "Voted 10–3 amid disputes over exempting AVAIO's $6 billion Wrightsville project.",
+  "b": "Voted 10–3 with one present. Justices also rejected, 8–6, an amendment exempting the first phase of AVAIO Digital's Wrightsville project.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/arkansas"
+    "KARK",
+    "https://www.kark.com/news/politics/data-center-moratorium-voted-down-by-pulaski-county-quorum-court/"
+   ],
+   [
+    "Arkansas Times",
+    "https://arktimes.com/arkansas-blog/2026/07/28/quorum-court-rejects-moratorium-critics-called-a-free-pass-for-avaio-digital"
    ]
   ],
   "im": 1,
@@ -6503,7 +6531,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09-24",
+  "d": "2026-09-25",
   "j": "AR",
   "w": "Pulaski County Judge",
   "lv": "local",
@@ -6513,11 +6541,15 @@
    "siting"
   ],
   "t": "Pulaski County judge vetoes data center rules",
-  "b": "The quorum court passed conditional-use rules 11–4; an override needs nine votes.",
+  "b": "The quorum court passed conditional-use rules 11–4. Hyde cited legal and financial risk to the county; an override needs nine of 15 votes.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/arkansas"
+    "Arkansas Democrat-Gazette",
+    "https://www.nwaonline.com/news/2026/sep/25/pulaski-county-judge-barry-hyde-vetoes-ordinance/"
+   ],
+   [
+    "Arkansas Advocate",
+    "https://arkansasadvocate.com/2026/09/28/official-vetoes-proposed-new-regulations-on-data-centers-in-arkansas-most-populous-county/"
    ]
   ],
   "im": 1,
@@ -6545,8 +6577,12 @@
   "b": "The rules would require conditional use permits, setbacks and noise caps with no AVAIO carve-out.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/arkansas"
+    "THV11",
+    "https://www.thv11.com/article/news/politics/pulaski-county-passes-controversial-ordinance-regulating-high-density-digital-infrastructure/91-9dc037a3-ff99-4d29-8c33-b242a2254d0a"
+   ],
+   [
+    "KATV",
+    "https://katv.com/news/local/pulaski-countys-first-data-center-ordinance-awaits-judges-signature-no-avaio-carve-out-debate-industrial-land-permits-power-grid-requirements"
    ]
   ],
   "im": -1,
@@ -6575,8 +6611,12 @@
   "b": "Runs through Aug. 31, 2031, citing water supply strain; no project had been proposed.",
   "s": [
    [
-    "Savrn Arkansas tracker",
-    "https://savrn.com/data-center-moratorium-tracker/arkansas"
+    "White River Now",
+    "https://www.whiterivernow.com/2026/08/11/independence-county-quorum-court-places-5-year-moratorium-on-data-centers/"
+   ],
+   [
+    "Arkansas Advocate",
+    "https://arkansasadvocate.com/2026/08/11/outside-of-little-rock-arkansas-counties-and-cities-move-ahead-on-data-center-moratoriums/"
    ]
   ],
   "im": -2,
@@ -6601,11 +6641,19 @@
    "moratorium"
   ],
   "t": "Madison County adopts a three-year moratorium",
-  "b": "Voted 8–0; Union and Carroll counties adopted one-year pauses in June and Russellville six months in July.",
+  "b": "Voted 8–0 for a pause through Aug. 31, 2029. Union and Carroll counties adopted one-year pauses in June and Russellville six months in July.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/arkansas"
+    "KNWA",
+    "https://www.nwahomepage.com/northwest-arkansas-news/madison-county-approves-three-year-data-center-moratorium/"
+   ],
+   [
+    "Madison County Record",
+    "https://mcrecordonline.com/stories/measure-effective-immediately-after-jps-vote-8-0-for-approval,148654"
+   ],
+   [
+    "Arkansas Advocate",
+    "https://arkansasadvocate.com/2026/08/11/outside-of-little-rock-arkansas-counties-and-cities-move-ahead-on-data-center-moratoriums/"
    ]
   ],
   "im": -2,
@@ -25781,7 +25829,7 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-08-25",
+  "d": "2026-08-26",
   "j": "CA",
   "w": "Coachella City Council",
   "lv": "local",
@@ -25791,11 +25839,15 @@
    "siting"
   ],
   "t": "Coachella permanently bans data centers",
-  "b": "The third Riverside County city to do so, after Perris and Desert Hot Springs.",
+  "b": "The Coachella Valley's first permanent ban took effect Sept. 25, after backlash over a canceled campus deal with a Stronghold Power Systems subsidiary. Accessory server rooms are exempt.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/california"
+    "KESQ",
+    "https://kesq.com/news/2026/08/25/coachella-city-council-passes-permanent-ban-on-data-centers/"
+   ],
+   [
+    "Riverside Record",
+    "https://riversiderecord.org/coachella-palm-springs-data-center-ban-moratorium/"
    ]
   ],
   "im": -1,
@@ -25803,14 +25855,6 @@
   "pl": [
    [
     "Coachella",
-    "city"
-   ],
-   [
-    "Perris",
-    "city"
-   ],
-   [
-    "Desert Hot Springs",
     "city"
    ]
   ],
@@ -25829,11 +25873,15 @@
    "siting"
   ],
   "t": "Fresno begins drafting a 10-year citywide data center ban",
-  "b": "The council voted 7–0 to start drafting the ban.",
+  "b": "The 7–0 vote directs staff to draft the ban, which would become permanent after 10 years unless a later council changes it. Mayor Jerry Dyer co-sponsored it.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/california"
+    "The Business Journal",
+    "https://thebusinessjournal.com/fresno-data-center-ban-council-safeguards/"
+   ],
+   [
+    "KMPH",
+    "https://kmph.com/news/local/fresno-moves-forward-with-citywide-data-center-ban-future-council-votes-city-zoning-city-council-voted-unanimously-southeast-development-area"
    ]
   ],
   "im": -1,
@@ -25858,11 +25906,15 @@
    "siting"
   ],
   "t": "Calexico bans data centers through its zoning code",
-  "b": "The 3–0 amendment formalizes that data centers are not a permitted use, after a June moratorium.",
+  "b": "The 3–0 amendment makes data centers a prohibited use. In July the council had passed on a temporary moratorium in favor of a permanent ban.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/california"
+    "Calexico Chronicle",
+    "https://calexicochronicle.com/2026/09/18/calexico-enacts-permanent-data-center-ban/"
+   ],
+   [
+    "Beyond Borders News",
+    "https://beyondbordersnews.com/calexico-moves-toward-permanent-citywide-ban-on-new-data-centers/"
    ]
   ],
   "im": -1,
@@ -25887,11 +25939,15 @@
    "moratorium"
   ],
   "t": "Tulare County extends its data center moratorium by 10 months",
-  "b": "The 5–0 vote extends an August 45-day pause while staff weigh permits or a ban. On Sept. 30 the board formally opposed data center development, 3–2.",
+  "b": "The 5–0 vote extends an Aug. 18 pause to August 2027 while staff draft permanent rules. The same day, supervisors voted 3–2 to formally oppose data centers in the county.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/california"
+    "The Sun-Gazette",
+    "https://thesungazette.com/article/news/2026/09/23/county-board-upholds-temporary-ban-on-data-centers/"
+   ],
+   [
+    "The Business Journal",
+    "https://thebusinessjournal.com/tulare-county-data-center-moratorium/"
    ]
   ],
   "im": -1,
@@ -25916,15 +25972,15 @@
    "moratorium"
   ],
   "t": "Oakland adopts a 45-day emergency data center moratorium",
-  "b": "Unanimous, making it California's largest city to pause. Mendocino County extended its own urgency ordinance through August 2028 the same day, exempting facilities under 3 MW.",
+  "b": "Unanimous. The pause followed a developer's plan to turn part of a downtown office building into a data center. San Francisco supervisors approved their own 45-day pause the same week.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/"
+    "The Oaklandside",
+    "https://oaklandside.org/2026/10/07/oakland-data-center-moratorium-approved/"
    ],
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/california"
+    "KTVU",
+    "https://www.ktvu.com/news/oakland-city-council-approves-45-day-moratorium-new-data-centers"
    ]
   ],
   "im": -1,
@@ -25933,10 +25989,6 @@
    [
     "Oakland",
     "city"
-   ],
-   [
-    "Mendocino County",
-    "county"
    ]
   ],
   "auto": false,
@@ -25954,15 +26006,15 @@
    "permitting"
   ],
   "t": "Imperial County reinstates its moratorium after a court loss",
-  "b": "Supervisors unanimously restored a temporary emergency pause after a judge struck the earlier one. A separate ruling halted a nearly 1 million sq ft complex approved without environmental review; the developer plans to appeal.",
+  "b": "Supervisors voted 5–0 to repeal the struck ordinances and adopt a new 45-day pause with added findings, citing a Sept. 10 ruling that requires full environmental review of the Imperial Data Center project. Two supervisors want a public vote.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/"
+    "KPBS",
+    "https://www.kpbs.org/news/environment/2026/10/08/two-imperial-county-supervisors-press-for-special-election-on-data-centers"
    ],
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/california"
+    "Calexico Chronicle",
+    "https://calexicochronicle.com/2026/10/07/county-board-adopts-second-45-day-data-center-moratorium/"
    ]
   ],
   "im": -1,
@@ -27071,7 +27123,7 @@
   "by": "Claude research, Oct 23 (West Coast)"
  },
  {
-  "d": "2026-09",
+  "d": "2026-09-30",
   "j": "CA",
   "w": "Palm Springs City Council",
   "lv": "local",
@@ -27084,12 +27136,12 @@
   "b": "The 22-month extension of an August urgency ordinance is the maximum state law allows.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/california"
+    "Palm Springs Post",
+    "https://thepalmspringspost.com/palm-springs-extends-data-center-moratorium-to-2028/"
    ],
    [
-    "Savrn California tracker",
-    "https://savrn.com/data-center-moratorium-tracker/california"
+    "NBC Palm Springs",
+    "https://www.nbcpalmsprings.com/local-and-community/2026/10/01/palm-springs-extends-data-center-ban-nearly-two-years"
    ]
   ],
   "im": -1,
@@ -27114,11 +27166,15 @@
    "moratorium"
   ],
   "t": "Indio adopts an urgency moratorium and moves toward a permanent ban",
-  "b": "The 45-day pause was extended 90 days, and staff were told to draft a ban.",
+  "b": "Adopted with no application pending. On Oct. 7 the council unanimously extended it a final time, to Oct. 16, 2027, while staff write permanent rules.",
   "s": [
    [
-    "Savrn California tracker",
-    "https://savrn.com/data-center-moratorium-tracker/california"
+    "Riverside Record",
+    "https://riversiderecord.org/coachella-palm-springs-data-center-ban-moratorium/"
+   ],
+   [
+    "Hoodline",
+    "https://hoodline.com/2026/10/indio-locks-down-data-center-ban-through-2027-over-water-power-fears/"
    ]
   ],
   "im": -1,
@@ -27142,12 +27198,12 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Brawley pauses data centers over 50 MW or 250,000 sq ft, 3–2",
-  "b": "Smaller server rooms and telecom hubs are exempt while the city drafts standards.",
+  "t": "Brawley pauses large-scale data centers, 3–2",
+  "b": "The council dropped a proposed one-year term while the city writes rules; its zoning code doesn't define data centers. Members Grass and Kelley voted no.",
   "s": [
    [
-    "Savrn California tracker",
-    "https://savrn.com/data-center-moratorium-tracker/california"
+    "Calexico Chronicle",
+    "https://calexicochronicle.com/2026/05/27/brawley-and-imperial-speak-on-data-center-moratoriums/"
    ]
   ],
   "im": -1,
@@ -27172,11 +27228,19 @@
    "moratorium"
   ],
   "t": "Arcata, Angels Camp and Calaveras County adopt urgency data center moratoriums",
-  "b": "Arcata voted unanimously Sept. 16; Angels Camp voted 5–0 in August, followed by Calaveras County for unincorporated areas. Eureka also has a pause.",
+  "b": "Arcata voted unanimously Sept. 16. Angels Camp voted 5–0 on Aug. 18, and Calaveras County supervisors followed 4–0 on Aug. 25 for unincorporated areas.",
   "s": [
    [
-    "Savrn California tracker",
-    "https://savrn.com/data-center-moratorium-tracker/california"
+    "Lost Coast Outpost",
+    "https://lostcoastoutpost.com/2026/sep/17/all-right-s-it-no-more-data-centers-while-said-arc/"
+   ],
+   [
+    "myMotherLode",
+    "https://mymotherlode.com/news/local/11078696/angels-camp-approves-temporary-data-center-moratorium.html"
+   ],
+   [
+    "Calaveras Enterprise",
+    "https://www.calaverasenterprise.com/articles/news/data-center-moratorium-approved-by-supervisors/"
    ]
   ],
   "im": -1,
@@ -27193,10 +27257,6 @@
    [
     "Calaveras County",
     "county"
-   ],
-   [
-    "Eureka",
-    "city"
    ]
   ],
   "auto": false,
