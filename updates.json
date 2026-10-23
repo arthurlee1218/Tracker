@@ -257,11 +257,15 @@
    "moratorium"
   ],
   "t": "Butternuts adopts a data center moratorium",
-  "b": "Unanimous vote in Otsego County.",
+  "b": "Unanimous vote in Otsego County, alongside a battery storage moratorium, after a Sept. 9 hearing on one-year pauses. Note: no news story found; the vote is reported only in Citizen Portal's AI-written meeting summary, and the town's own site lists the hearing.",
   "s": [
    [
     "Citizen Portal",
-    "https://citizenportal.ai/articles/10592330/New-York/Otsego-County/Butternuts/Board-imposes-moratorium-on-data-center-development"
+    "https://citizenportal.ai/articles/10592330/new-york/otsego-county/butternuts/board-imposes-moratorium-on-data-center-development"
+   ],
+   [
+    "Town of Butternuts",
+    "https://www.townofbutternuts.org/"
    ]
   ],
   "im": -1,
@@ -513,21 +517,25 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09",
+  "d": "2026-10-19",
   "j": "RI",
   "w": "Hopkinton Town Council",
   "lv": "local",
   "k": "action",
-  "st": "pause",
+  "st": "in-force",
   "ty": [
-   "moratorium"
+   "siting"
   ],
-  "t": "Hopkinton imposes a 60-day emergency pause",
-  "b": "Unanimous, while the planning board drafts a permanent zoning amendment.",
+  "t": "Hopkinton bans data centers in every zoning district",
+  "b": "The council voted 5–0 for the permanent ban after a 60-day emergency moratorium in September; there are no current plans for a data center in town.",
   "s": [
    [
-    "Citizen Portal",
-    "https://citizenportal.ai/articles/9794380/Rhode-Island/Washington-County/Hopkinton/Hopkinton-council-adopts-60-day-emergency-moratorium-on-data-center-applications"
+    "The Westerly Sun",
+    "https://www.thewesterlysun.com/news/hopkinton-council-unanimously-approves-data-center-ban/article_4e0734e2-96d2-42f9-8354-b115ee5f97b8.html"
+   ],
+   [
+    "Uprise RI",
+    "https://upriseri.com/article/recap-hopkinton-council-bans-data-centers-tables-building-committee-ads/"
    ]
   ],
   "im": -1,
@@ -1351,8 +1359,16 @@
   "b": "Covers facilities of 20 MW and up and asks regulators to keep costs off other ratepayers. Recommitted to committee in May; the narrower one-year bill passed instead.",
   "s": [
    [
-    "AI Laws by State",
-    "https://www.ailawsbystate.com/blog/data-center-moratorium-by-state-2026"
+    "NY Senate: S9144A",
+    "https://www.nysenate.gov/legislation/bills/2025/S9144/amendment/A"
+   ],
+   [
+    "DCD",
+    "https://www.datacenterdynamics.com/en/news/three-year-data-center-moratorium-considered-in-new-york-state/"
+   ],
+   [
+    "NY Senate: one-year bill passes",
+    "https://www.nysenate.gov/newsroom/press-releases/2026/kristen-gonzalez/ny-state-senator-kristen-gonzalez-passes-data-center"
    ]
   ],
   "im": -1,
@@ -2759,8 +2775,12 @@
   "b": "HB 1739 would have offered property tax deals and business tax credits, conditioned on paying grid costs and joining demand response. It was found inexpedient to legislate on a voice vote.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/new-hampshire/"
+    "LegiScan: HB 1739",
+    "https://legiscan.com/NH/bill/HB1739/2026"
+   ],
+   [
+    "Business NH Magazine",
+    "https://www.businessnhmagazine.com/article/should-nh-restrict-large-data-centers"
    ]
   ],
   "im": 0,
@@ -3180,7 +3200,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2025",
+  "d": "2025-06-05",
   "j": "NH",
   "w": "New Hampshire Legislature",
   "lv": "state",
@@ -3189,12 +3209,16 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Bill to repeal towns' temporary moratorium power fails",
-  "b": "SB 163 would have repealed RSA 674:23, the law towns use to adopt temporary building moratoriums. Its defeat left that authority in place as data center fights reached New Hampshire towns.",
+  "t": "Bill to repeal towns' temporary moratorium power is tabled",
+  "b": "SB 163 would have repealed RSA 674:23, the law towns use to adopt temporary building moratoriums. It passed the Senate, but the House laid it on the table in June 2025, leaving that authority in place as data center fights reached New Hampshire towns.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/new-hampshire/"
+    "LegiScan: SB 163",
+    "https://legiscan.com/NH/text/SB163/id/3074855"
+   ],
+   [
+    "RSA 674:23",
+    "https://gc.nh.gov/rsa/html/lxiv/674/674-23.htm"
    ]
   ],
   "im": 0,
@@ -3672,7 +3696,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09",
+  "d": "2026-09-08",
   "j": "US",
   "w": "Rep. Suhas Subramanyam (D)",
   "lv": "federal",
@@ -3682,11 +3706,15 @@
    "cost"
   ],
   "t": "Data Center Fair Share Act would tie highway funds to data center tariffs",
-  "b": "States would need tariffs making data centers cover their own energy infrastructure.",
+  "b": "Rep. Suhas Subramanyam's H.R. 10322 would make utilities recover the full cost of grid upgrades from customers of 100 MW or more, and withhold federal highway funds from states that don't adopt the standard.",
   "s": [
    [
-    "Data Center Debate",
-    "https://datacenterdebate.org/states/virginia/"
+    "Congress.gov: H.R. 10322",
+    "https://www.congress.gov/bill/119th-congress/house-bill/10322/all-info"
+   ],
+   [
+    "Law Commentary",
+    "https://www.lawcommentary.com/articles/virginia-suhas-subramanyam-data-center-plan-highway-funds"
    ]
   ],
   "im": -1,
@@ -3755,7 +3783,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026",
+  "d": "2026-03-14",
   "j": "WV",
   "w": "West Virginia Senate",
   "lv": "state",
@@ -3765,11 +3793,15 @@
    "siting"
   ],
   "t": "Bill to restore local control over data centers stalls",
-  "b": "SB 658, backed by Tucker County residents, never moved. Leaders said changes were premature.",
+  "b": "SB 658, backed by Tucker County residents, never left committee before the session ended. House Speaker Roger Hanshaw said changes to the 2025 law were premature.",
   "s": [
    [
-    "MultiState",
-    "https://www.multistate.us/insider/2026/3/3/local-government-data-center-oversight-becomes-flashpoint-in-state-capitols"
+    "LegiScan: SB 658",
+    "https://legiscan.com/WV/bill/SB658/2026"
+   ],
+   [
+    "Mountain State Spotlight",
+    "https://mountainstatespotlight.org/2026/06/16/tucker-county-panel-discussion/"
    ]
   ],
   "im": 1,
@@ -4122,7 +4154,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-03",
+  "d": "2026-03-11",
   "j": "TN",
   "w": "Tennessee General Assembly",
   "lv": "state",
@@ -4133,11 +4165,15 @@
    "permitting"
   ],
   "t": "Tennessee bills on permits and usage reporting fail",
-  "b": "Including a proposal requiring large facilities to devote half their computing to public benefit.",
+  "b": "Bills on registration, water permits and usage reporting, and one requiring large facilities to devote half their computing to public benefit, died in committee. The only one to pass made data centers of 50 MW or more pay for their own grid upgrades.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/tennessee/"
+    "Tennessee Lookout",
+    "https://tennesseelookout.com/2026/04/28/tennessee-bill-gives-data-centers-ability-to-self-power-with-limited-regulation/"
+   ],
+   [
+    "LegiScan: HB 2061",
+    "https://legiscan.com/TN/bill/HB2061/2025"
    ]
   ],
   "im": 1,
@@ -4180,7 +4216,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-08",
+  "d": "2026-10-12",
   "j": "TN",
   "w": "Rutherford County",
   "lv": "local",
@@ -4189,12 +4225,16 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Rutherford County committee backs a six-month pause",
-  "b": "Contingent on legal review and full commission approval.",
+  "t": "Rutherford County planners recommend a one-year data center pause",
+  "b": "The planning commission unanimously recommended a 12-month moratorium on new data center applications in unincorporated areas, doubling the six-month pause a committee backed in August. No applications are pending; it now goes to the full commission.",
   "s": [
    [
-    "Citizen Portal",
-    "https://citizenportal.ai/articles/8938204/tennessee/school-districts/rutherford-county/committee-approves-6month-moratorium-on-data-centers-pending-legal-review"
+    "Murfreesboro.com",
+    "https://murfreesboro.com/rutherford-county-one-year-data-center-moratorium-commission-hearing/"
+   ],
+   [
+    "MTSU Sidelines",
+    "https://mtsusidelines.com/2026/10/15/rutherford-county-commission-considering-a-12-month-moratorium-on-ai-data-center/"
    ]
   ],
   "im": -1,
@@ -4219,11 +4259,15 @@
    "siting"
   ],
   "t": "Montgomery County advances data center setbacks and limits",
-  "b": "Approved 17–4: 500-foot residential setbacks plus noise, site size and utility capacity rules, returning in November.",
+  "b": "Approved 17–4 after raising residential setbacks from 100 to 500 feet, with limits on noise, site size and utility capacity. Because of the amendment the rules go back to the planning commission before returning in November.",
   "s": [
    [
-    "Data Centers: Daily Notes",
-    "https://writing.strisker.com/data-centers-daily-notes-october-20-2026/"
+    "Clarksville Now",
+    "https://clarksvillenow.com/local/montgomery-county-oks-tight-limits-on-future-data-center-setbacks-noise-water-power-use/"
+   ],
+   [
+    "WKRN",
+    "https://www.wkrn.com/news/local-news/clarksville/montgomery-county-commission-weighs-regulations-for-data-centers/"
    ]
   ],
   "im": -1,
@@ -5093,7 +5137,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-11-05",
+  "d": "2026-10-26",
   "j": "NC",
   "w": "Charlotte City Council",
   "lv": "local",
@@ -5102,12 +5146,16 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Charlotte's moratorium expires unless extended",
-  "b": "City staff recommended extending it after a survey found 78% community opposition.",
+  "t": "Charlotte votes Oct. 26 on extending its moratorium to October 2027",
+  "b": "The 150-day pause expires Nov. 5. Staff and a task force recommend extending it up to 11 months after a survey found 78% of respondents opposed; unions urged the council to let it lapse.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/north-carolina"
+    "WFAE",
+    "https://www.wfae.org/energy-environment/2026-10-12/ahead-of-data-center-vote-city-council-hears-from-residents-who-want-ban-extended-and-workers-who-want-it-lifted"
+   ],
+   [
+    "WBT",
+    "https://wbt.com/1650881/charlotte-city-council-sets-oct-12-hearing-on-data-center-moratorium-extension/"
    ]
   ],
   "im": -1,
@@ -7229,8 +7277,12 @@
   "b": "HB 4045 would have ended the income tax exemption for certain data center projects after 2026 and created a development fund tied to large fee-in-lieu deals. It died on the House calendar.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/mississippi/"
+    "Mississippi Legislature: HB 4045",
+    "https://billstatus.ls.state.ms.us/documents/2026/html/HB/4000-4099/HB4045IN.htm"
+   ],
+   [
+    "Mississippi Legislature: bill history",
+    "https://billstatus.ls.state.ms.us/2026/pdf/history/HB/HB4045.xml"
    ]
   ],
   "im": 0,
@@ -9983,7 +10035,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-04-01",
+  "d": "2026-03-14",
   "j": "WV",
   "w": "Gov. Morrisey",
   "lv": "state",
@@ -9993,11 +10045,15 @@
    "cost"
   ],
   "t": "West Virginia makes certified data centers pay county fire and ambulance fees",
-  "b": "HB 5168, effective June 12, also entitles certified microgrids and data centers to county fire and police protection.",
+  "b": "HB 5168, mainly a permanent EMS funding bill, also requires certified microgrids and high impact data centers to pay county fire and ambulance fees, and entitles them to county fire and police protection.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/west-virginia/"
+    "WV Legislature: enrolled HB 5168",
+    "https://www.wvlegislature.gov/Bill_Text_HTML/2026_SESSIONS/RS/bills/hb5168%20sub1%20enr.pdf"
+   ],
+   [
+    "West Virginia Watch",
+    "https://westvirginiawatch.com/2026/03/13/senate-approves-bill-to-create-permanent-funding-source-for-ems-for-the-first-time-in-wv/"
    ]
   ],
   "im": -1,
@@ -10206,7 +10262,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026",
+  "d": "2026-04-20",
   "j": "TN",
   "w": "Bradley County Commission",
   "lv": "local",
@@ -10216,11 +10272,15 @@
    "siting"
   ],
   "t": "Bradley County limits data centers to special-impact zones with 3,000-foot buffers",
-  "b": "The unanimous rules also cap property-line noise at 60 decibels; the only such zone at the time was a landfill.",
+  "b": "The 14–0 vote left the county landfill as the only qualifying site. Developer SDCL sued in September to void the rules, saying they bar its planned campus near Walker Valley High School.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/tennessee/"
+    "WDEF",
+    "https://www.wdef.com/bradley-county-passes-strict-new-regulations-against-data-centers/"
+   ],
+   [
+    "Chattanooga Times Free Press",
+    "https://www.timesfreepress.com/news/2026/sep/21/global-firm-sues-bradley-county-to-build-300-acre/"
    ]
   ],
   "im": -2,
@@ -20439,17 +20499,21 @@
   "w": "Warren County Commissioners",
   "lv": "local",
   "k": "action",
-  "st": "pending",
+  "st": "pause",
   "ty": [
    "moratorium",
    "siting"
   ],
-  "t": "Warren County directs prosecutor to draft a data center moratorium",
-  "b": "Commissioners asked the prosecutor's office to draft a temporary moratorium after noting the county's rural zoning code has no definitions or rules for hyperscale facilities. A vote on the draft had not been scheduled.",
+  "t": "Warren County, Ohio, adopts a six-month data center moratorium",
+  "b": "Commissioners voted unanimously for the pause in county-controlled areas while zoning codes are reviewed and an Ohio EPA water study is finished in November. Clearcreek and Hamilton townships already have yearlong pauses.",
   "s": [
    [
-    "Data Centers Weekly Briefing (citing Warren County Post)",
-    "https://writing.strisker.com/data-centers-weekly-briefing-september-21-24-2026/"
+    "Journal-News",
+    "https://www.journal-news.com/local/warren-county-enacts-6-month-moratorium-on-new-data-centers/article_9b0a7d8f-7ce7-5238-a355-2b1903b14b78.html"
+   ],
+   [
+    "Warren County Post",
+    "https://warrencountypost.com/g/lebanon-oh/n/391312/warren-county-commissioners-consider-moratorium-data-centers"
    ]
   ],
   "im": -1,
@@ -21449,8 +21513,8 @@
   "b": "Supervisors adopted Resolution 26-13, effective immediately, barring construction starts, building permits and conditional use permits for data centers for up to 12 months or until the county adopts new zoning rules addressing infrastructure and environmental concerns.",
   "s": [
    [
-    "Citizen Portal",
-    "https://citizenportal.ai/articles/9420716/nebraska/nance-county/nance-county-board-imposes-12-month-moratorium-on-data-center-development"
+    "Nance County board minutes",
+    "https://nancecountyne.gov/wp-content/uploads/sites/40/2026/08/Minutes-of-Supervisors-mtg-August-11th-2026.pdf"
    ]
   ],
   "im": -2,
@@ -25893,8 +25957,12 @@
   "b": "After tabling a moratorium twice over legal doubts, the county adopted a 180-day review period through year-end covering the approvals it controls: abatements, development agreements and variances.",
   "s": [
    [
-    "SCORE Property Group",
-    "https://scorepropertygroup.com/insights/texas-data-center-moratoriums-by-county-2026/"
+    "Austin American-Statesman",
+    "https://www.statesman.com/business/technology/article/hays-county-data-center-approval-pause-22316813.php"
+   ],
+   [
+    "KUT",
+    "https://www.kut.org/energy-environment/2026-06-23/hays-county-tx-data-centers-water-review-board"
    ]
   ],
   "im": -1,
@@ -25909,7 +25977,7 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-07",
+  "d": "2026-07-27",
   "j": "TX",
   "w": "Austin County",
   "lv": "local",
@@ -25919,11 +25987,15 @@
    "moratorium"
   ],
   "t": "Austin County pauses AI data centers and battery storage projects",
-  "b": "The countywide moratorium west of Houston is framed as time to study impacts, not a permanent ban.",
+  "b": "Unanimous countywide moratorium west of Houston, framed as time to set standards rather than a ban. CleanSpark had urged the county not to delay its planned 285 MW campus near Sealy.",
   "s": [
    [
-    "MultiState",
-    "https://www.multistate.us/insider/2026/8/19/the-local-fight-over-data-centers-a-texas-case-study"
+    "KWHI",
+    "https://kwhi.com/2026/07/28/austin-co-commissioners-enact-moratorium-on-data-centers-battery-energy-storage-systems/"
+   ],
+   [
+    "Austin County News Online",
+    "https://austincountynewsonline.com/austin-county-residents-commissioners-and-cleanspark-debate-proposed-data-center-and-bess-moratorium/"
    ]
   ],
   "im": -1,
@@ -26458,21 +26530,25 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-10",
+  "d": "2026-10-20",
   "j": "TN",
   "w": "Morristown",
   "lv": "local",
   "k": "action",
-  "st": "pending",
+  "st": "in-force",
   "ty": [
    "siting"
   ],
-  "t": "Morristown advances its first data center zoning rules",
-  "b": "Part of a shift in Tennessee from pauses toward permanent standards.",
+  "t": "Morristown adopts its first data center zoning rules, 6–1",
+  "b": "Data centers are limited to heavy industrial zones with review, 500 feet from homes, schools and government buildings, with all equipment indoors. The council chose rules over a moratorium; Hamblen County has a separate one-year pause.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/"
+    "WVLT",
+    "https://www.wvlt.tv/2026/10/20/morristown-consider-limits-how-where-data-centers-are-built-operated/"
+   ],
+   [
+    "WATE",
+    "https://www.wate.com/news/hamblen-county-news/city-plans-ai-datacenter-zoning/"
    ]
   ],
   "im": 0,
@@ -26672,7 +26748,7 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-08",
+  "d": "2026-08-03",
   "j": "NY",
   "w": "Town of Tonawanda",
   "lv": "local",
@@ -26682,11 +26758,15 @@
    "moratorium"
   ],
   "t": "Town of Tonawanda pauses data centers of 20 MW or more for a year",
-  "b": "Mirrors the governor's statewide pause at a lower threshold.",
+  "b": "Unanimous vote. It mirrors the governor's statewide pause at a lower threshold and covers the stalled 300 MW proposal at the former Tonawanda Coke site, which never filed a complete application.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/new-york"
+    "Spectrum News",
+    "https://spectrumlocalnews.com/nys/buffalo/news/2026/08/04/despite-statewide-pause--town-of-tonawanda-passes-data-center-moratorium-"
+   ],
+   [
+    "Buffalo Toronto Public Media",
+    "https://www.btpm.org/local/2026-08-04/tonawanda-town-board-passes-data-center-moratorium"
    ]
   ],
   "im": -1,
@@ -26748,11 +26828,15 @@
    "moratorium"
   ],
   "t": "Potsdam holds a hearing on a 12-month large data center moratorium",
-  "b": "Proposed after nearby Massena declined a pause, clearing the way for a roughly 400 MW project.",
+  "b": "Proposed two days after nearby Massena voted 3–2 against a pause, clearing the way for a roughly 400 MW project. It would cover data centers of 20 MW or 50,000 sq ft and crypto mines of 5 MW.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/new-york"
+    "North Country Now",
+    "https://northcountrynow.com/stories/potsdam-town-board-eyes-12-month-moratorium-on-large-data-centers,392132"
+   ],
+   [
+    "WCAX (Massena)",
+    "https://www.wcax.com/2026/09/17/massena-town-board-votes-down-data-center-moratorium/"
    ]
   ],
   "im": -1,
