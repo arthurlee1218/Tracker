@@ -3449,15 +3449,15 @@
    "siting"
   ],
   "t": "QTS terminates the 2,100-acre Digital Gateway near Manassas",
-  "b": "A judge voided the rezonings in 2025 over flawed hearing notices, and an appeals court agreed in March.",
+  "b": "QTS withdrew its Virginia Supreme Court petitions, the last effort to revive rezonings that courts voided over flawed hearing notices. Compass and Prince William County had already dropped out.",
   "s": [
    [
-    "Inside the Datacenter",
-    "https://insidethedatacenter.com/articles/virginia-data-centers/"
+    "InsideNoVa",
+    "https://www.insidenova.com/news/prince_william/update-digital-gateway-data-center-project-dies-after-final-developer-drops-appeal/article_54179299-2733-4b4d-8fef-db4024cc8f54.html"
    ],
    [
-    "Data Center Debate",
-    "https://datacenterdebate.org/states/virginia/"
+    "Virginia Business",
+    "https://virginiabusiness.com/prince-william-digital-gateway-data-center-project-officially-dies/"
    ]
   ],
   "im": -2,
@@ -3535,24 +3535,24 @@
   "w": "Fauquier County",
   "lv": "local",
   "k": "action",
-  "st": "pending",
+  "st": "denied",
   "ty": [
    "siting"
   ],
-  "t": "Fauquier planners recommend denying a 900 MW Remington campus",
-  "b": "The developers of the six-building project are now asking the town of Remington to annex the land.",
+  "t": "Developers pull the 900 MW Remington Innovation Campus hours before review",
+  "b": "The six-building, three-substation plan, partly on land owned by Supervisor Daron Culbertson, was withdrawn the morning planners were to take it up. It was the third major Remington-area application pulled in a month.",
   "s": [
    [
-    "Inside the Datacenter",
-    "https://insidethedatacenter.com/articles/virginia-data-centers/"
+    "FauquierNow",
+    "https://www.fauquiernow.com/news/applicants-including-supervisor-daron-culbertson-pull-data-center-rezoning-proposal-60f7c5a0"
    ],
    [
-    "Data Center Debate",
-    "https://datacenterdebate.org/states/virginia/"
+    "Piedmont Environmental Council",
+    "https://www.pecva.org/region/fauquier/remington-innovation-campus-set-for-planning-commission-review/"
    ]
   ],
   "im": -1,
-  "iw": "Large project in trouble",
+  "iw": "Application withdrawn",
   "pl": [
    [
     "Fauquier County",
@@ -5080,11 +5080,19 @@
    "moratorium"
   ],
   "t": "Raleigh pauses approvals for data centers over 5 MW",
-  "b": "Voted 7–1; Beaufort County adopted a one-year pause the same week.",
+  "b": "Voted 7–1 for a six-month pause on major data centers; facilities of 10,000 sq ft or less drawing 5 MW or less are exempt. It runs to April 6, 2027. Advocates wanted 32 months, and the vote followed a withdrawn proposal on Jones Sausage Road.",
   "s": [
    [
-    "NC Data Center Newsletter",
-    "https://ncdatacenters.substack.com/p/raleigh-and-beaufort-county-pause"
+    "WUNC",
+    "https://www.wunc.org/politics/2026-10-07/raleigh-council-data-center-moratorium-opposition"
+   ],
+   [
+    "WRAL",
+    "https://www.wral.com/news/local/raleigh-weighs-six-month-data-center-pause-as-advocates-demand-more-time-october-2026/"
+   ],
+   [
+    "City of Raleigh",
+    "https://raleighnc.gov/news/next-steps-raleighs-temporary-data-center-pause"
    ]
   ],
   "im": -1,
@@ -5093,10 +5101,6 @@
    [
     "Raleigh",
     "city"
-   ],
-   [
-    "Beaufort County",
-    "county"
    ]
   ],
   "auto": false,
@@ -25533,11 +25537,19 @@
    "permitting"
   ],
   "t": "Reno becomes Nevada's first city to pause data center permits",
-  "b": "Voted 6–1 for a temporary moratorium on new construction permits, exempting four pipeline projects. On June 1 it extended the pause through Aug. 31, 2027, or until new rules pass.",
+  "b": "Voted 6–1 for a pending moratorium on new conditional use permits, exempting four projects already in the pipeline. On June 1 it voted 6–1 again to extend the pause through Aug. 31, 2027, or until new rules pass.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/nevada"
+    "GovTech / TNS",
+    "https://www.govtech.com/artificial-intelligence/reno-nev-is-first-in-state-to-pause-data-center-development"
+   ],
+   [
+    "Nevada Current",
+    "https://nevadacurrent.com/2026/06/03/reno-city-council-extends-data-center-moratorium-promises-effort-is-not-political/"
+   ],
+   [
+    "KUNR",
+    "https://www.kunr.org/local-stories/2026-06-05/reno-city-council-extends-data-center-moratorium-into-2027"
    ]
   ],
   "im": -1,
@@ -25552,7 +25564,7 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-07-22",
+  "d": "2026-07-21",
   "j": "NV",
   "w": "Henderson City Council",
   "lv": "local",
@@ -25562,11 +25574,15 @@
    "moratorium"
   ],
   "t": "Henderson rejects a 180-day data center moratorium",
-  "b": "The council chose case-by-case development agreements instead, with the mayor noting existing codes predate many current concerns.",
+  "b": "The council chose individually negotiated development agreements instead, with standards on water, power, noise and distance from homes. The city attorney said code changes would last longer than a pause; Henderson has no pending applications.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/nevada"
+    "Nevada Current",
+    "https://nevadacurrent.com/briefs/henderson-city-council-reject-data-center-moratorium/"
+   ],
+   [
+    "Las Vegas Sun",
+    "https://lasvegassun.com/news/2026/jul/22/henderson-council-opts-for-strict-development-agre/"
    ]
   ],
   "im": 1,
@@ -26469,21 +26485,29 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-10-08",
+  "d": "2026-10-22",
   "j": "NJ",
-  "w": "Senate committee",
+  "w": "New Jersey Senate",
   "lv": "state",
   "k": "action",
   "st": "pending",
   "ty": [
    "disclosure"
   ],
-  "t": "New Jersey bill to void data center NDAs clears a Senate committee",
-  "b": "S4304 would void nondisclosure agreements that hide data center development plans. Advanced 4–1.",
+  "t": "New Jersey Senate passes a bill voiding data center NDAs, 38–0",
+  "b": "S4304 would bar data center applicants from agreements with approving authorities, municipal agencies or land sellers that conceal plans or block public review. It cleared the Community and Urban Affairs Committee 4–1 on Oct. 1; the Assembly version, A2774, is still in committee.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/"
+    "NJ Urban News",
+    "https://njurbannews.com/2026/10/08/bill-targets-data-center-secrecy/"
+   ],
+   [
+    "ROI-NJ",
+    "https://www.roi-nj.com/2026/10/23/industry/energy-utilities/senate-passes-greenstein-stack-bill-to-increase-transparency-in-development-of-data-centers/"
+   ],
+   [
+    "LegiScan: S4304",
+    "https://legiscan.com/NJ/bill/S4304/2026"
    ]
   ],
   "im": -1,
@@ -26609,7 +26633,7 @@
   "by": "Claude research, Oct 23"
  },
  {
-  "d": "2026-09-30",
+  "d": "2026-09-29",
   "j": "NY",
   "w": "Buffalo Common Council",
   "lv": "local",
@@ -26618,12 +26642,20 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Buffalo advances a two-year data center moratorium with a task force",
-  "b": "The council amended the proposal to create a nine-member task force and delayed the final vote about two weeks.",
+  "t": "Buffalo approves a two-year data center pause, pending a local law",
+  "b": "The council's resolution covers data centers of 20 MW or more and crypto mining, amended to create a nine-member task force to draft rules. City lawyers say a local law is needed to make it binding, and Mayor Ryan is reviewing it.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/new-york"
+    "Spectrum News",
+    "https://spectrumlocalnews.com/nys/buffalo/news/2026/09/30/buffalo-data-center-moratorium"
+   ],
+   [
+    "WGRZ",
+    "https://www.wgrz.com/article/news/local/buffalo-common-council-approves-two-year-pause-on-new-data-centers-in-the-city/71-51ad3928-19ee-4be8-8930-cbef84cb3850"
+   ],
+   [
+    "Buffalo News",
+    "https://buffalonews.com/news/local/government-politics/article_91819ba9-0f04-486c-bf39-870a1b503673.html"
    ]
   ],
   "im": -1,
