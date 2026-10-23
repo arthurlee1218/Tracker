@@ -205,6 +205,25 @@ a:hover{text-decoration-thickness:2px}
 .gap h4{font-size:17px;font-weight:600}
 .gap p{color:var(--ink-2);font-size:16px;margin-top:3px}
 
+/* ── Project tracker ────────────────────────────── */
+.project-filters{grid-template-columns:repeat(4,minmax(170px,1fr))}
+.project-table-wrap{overflow-x:auto;border-top:1px solid var(--ink)}
+.project-table{width:100%;min-width:860px;border-collapse:collapse;font-size:15px}
+.project-table th{font-family:var(--display);font-size:16px;text-align:left;font-weight:600;color:var(--ink-2);padding:10px 8px;border-bottom:1px solid var(--rule)}
+.project-table td{padding:13px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
+.project-name{min-width:190px;font-weight:600}
+.project-name a{color:var(--ink)}
+.project-place{color:var(--ink-2);font-size:14px}
+.project-size{font-family:var(--display);font-size:20px;font-weight:600;white-space:nowrap}
+.project-status{display:inline-block;font-size:13px;font-weight:600;padding:2px 8px;border:1px solid var(--rule);border-radius:3px;white-space:nowrap}
+.project-status.approved{background:var(--local-bg);color:var(--local);border-color:var(--local)}
+.project-status.pending{background:var(--proposed-bg);color:var(--volt-ink);border-color:var(--proposed)}
+.project-status.paused{background:var(--pause-bg);color:var(--pause);border-color:var(--pause)}
+.project-status.denied,.project-status.withdrawn,.project-status.cancelled{background:var(--none);color:var(--ink-2)}
+.project-status.permitted{background:var(--rules-bg);color:var(--rules);border-color:var(--rules)}
+.project-note{min-width:270px;max-width:390px;color:var(--ink-2)}
+.project-meta{color:var(--ink-3);font-size:13px;white-space:nowrap}
+
 /* ── Other trackers ────────────────────────────── */
 .trk{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1.6fr);gap:16px;padding:14px 4px;border-bottom:1px solid var(--rule);align-items:baseline}
 .trk-head{font-size:14px;color:var(--ink-3);border-bottom:2px solid var(--ink);padding-bottom:6px}
@@ -219,6 +238,7 @@ footer p{max-width:90ch;margin-bottom:6px}
 
 @media (max-width:900px){
   .hero{grid-template-columns:1fr}
+  .project-filters{grid-template-columns:1fr 1fr}
   .cols,.gaps{grid-template-columns:1fr}
   .filters{grid-template-columns:1fr 1fr}
   .filters .q{grid-column:1/-1}
@@ -278,6 +298,7 @@ footer p{max-width:90ch;margin-bottom:6px}
 
 <nav class="tabs" role="tablist" aria-label="Sections">
   <button class="tab" role="tab" aria-selected="true" aria-controls="v-actions" id="t-actions" data-v="actions">Laws, actions &amp; politics<span class="c" id="c-actions"></span></button>
+  <button class="tab" role="tab" aria-selected="false" aria-controls="v-projects" id="t-projects" data-v="projects" tabindex="-1">Data center projects<span class="c" id="c-projects"></span></button>
   <button class="tab" role="tab" aria-selected="false" aria-controls="v-politics" id="t-politics" data-v="politics" tabindex="-1">Campaigns &amp; polls</button>
   <button class="tab" role="tab" aria-selected="false" aria-controls="v-next" id="t-next" data-v="next" tabindex="-1">Coming up</button>
   <button class="tab" role="tab" aria-selected="false" aria-controls="v-trackers" id="t-trackers" data-v="trackers" tabindex="-1">Other trackers<span class="c" id="c-trackers"></span></button>
@@ -304,6 +325,7 @@ footer p{max-width:90ch;margin-bottom:6px}
   <ul class="entries" id="entries"></ul>
 </section>
 
+<section class="view" id="v-projects" role="tabpanel" aria-labelledby="t-projects" hidden></section>
 <section class="view" id="v-politics" role="tabpanel" aria-labelledby="t-politics" hidden></section>
 <section class="view" id="v-next" role="tabpanel" aria-labelledby="t-next" hidden></section>
 <section class="view" id="v-trackers" role="tabpanel" aria-labelledby="t-trackers" hidden></section>
@@ -1137,6 +1159,22 @@ const GAPS=[
 {h:"Tribal and preemption fights",p:"Tribal nations in Oklahoma are acting on their own lands, while Texas lawmakers and courts in California and Mississippi are testing how far local bans can go. Both fronts are thinly covered."}
 ];
 
+// ── NAMED PROJECTS (collated from sourced entries above) ──
+const PROJECTS=[
+  {n:"Project Marvel",j:"AL",place:"Bessemer",developer:"QTS",mw:1200,type:"hyperscale",status:"approved",d:"2026-04-13",note:"Rezoned 700 acres for a 1,200 MW campus; council members who backed it later lost reelection.",u:"https://energyandpolicy.org/alabama-power-data-center-contracts-redacted/"},
+  {n:"Google campus",j:"MI",place:"Van Buren Township",developer:"Google",mw:1000,type:"hyperscale",status:"approved",d:"2026-10-14",note:"Site plan approved 5–1 near Detroit Metro Airport; a 20-year DTE power contract was already approved.",u:"https://writing.strisker.com/data-centers-daily-notes-october-15-2026/"},
+  {n:"Hyperion",j:"LA",place:"Richland Parish",developer:"Meta",mw:4500,type:"hyperscale",status:"approved",d:"2026-09",note:"Regulators approved dedicated gas plants for the expansion; about 5.3 GW of supply is in the filing set.",u:"https://insidethedatacenter.com/articles/louisiana-data-centers/"},
+  {n:"Remington",j:"VA",place:"Fauquier County",developer:"Fundamental Data",mw:900,type:"hyperscale",status:"pending",d:"2026-09-17",note:"Planners recommended denial of the six-building campus; annexation is still under consideration.",u:"https://insidethedatacenter.com/articles/virginia-data-centers/"},
+  {n:"Dulles Cloud South",j:"VA",place:"Prince William County",developer:"Not reported",acreage:2000,type:"campus",status:"denied",d:"2026-07-07",note:"County supervisors unanimously denied the plan amendment for the 43 million-square-foot proposal.",u:"https://wtop.com/prince-william-county/2026/07/prince-william-co-supervisors-deny-2000-acre-dulles-south-data-center-plans/"},
+  {n:"Digital Gateway",j:"VA",place:"Manassas",developer:"QTS",mw:null,acreage:2100,type:"campus",status:"withdrawn",d:"2026-04",note:"QTS terminated the largest proposed corridor after county plans moved from by-right to special review.",u:"https://insidethedatacenter.com/articles/virginia-data-centers/"},
+  {n:"Wildcat Ridge",j:"PA",place:"Archbald",developer:"Archbald 1 LLC",mw:null,acreage:578,type:"campus",status:"denied",d:"2026-10-21",note:"Fourteen-building proposal denied unanimously after nine hearings; an appeal is expected.",u:"https://www.wvia.org/news/local/2026-10-21/archbald-council-unanimously-denies-zoning-for-hyperscale-data-center-campus-in-borough"},
+  {n:"Project Sail",j:"GA",place:"Coweta County",developer:"Not reported",mw:null,acreage:null,type:"hyperscale",status:"pending",d:"2026-06-16",note:"An estimated $17 billion proposal prompted a 180-day moratorium and a petition in the county.",u:"https://citizenportal.ai/articles/10358673/Georgia/Coweta-County/Coweta-commissioners-approve-180day-moratorium-on-datacenter-landuse-actions"},
+  {n:"CyrusOne Lee",j:"NC",place:"Lee County",developer:"CyrusOne",mw:90,type:"campus",status:"permitted",d:"2026-09",note:"County permits were issued with no incentive package; the project is described as vested.",u:"https://ncdatacenters.substack.com/p/raleigh-and-beaufort-county-pause"},
+  {n:"Sanford Woods",j:"ME",place:"Sanford",developer:"Not reported",mw:null,acreage:1000,type:"campus",status:"paused",d:"2026-05-19",note:"A local pause blocks review of the roughly 1,000-acre campus along the Mousam River.",u:"https://mainemorningstar.com/2026/05/20/local-officials-look-to-pause-data-center-development-after-state-moratorium-veto/"},
+  {n:"Project Flash",j:"VA",place:"Franklin County",developer:"Not reported",mw:null,acreage:null,type:"campus",status:"cancelled",d:"2026-09",note:"The proposed Franklin County campus was cancelled after the county imposed a moratorium.",u:"https://www.datacenterbans.com/state/virginia"},
+  {n:"Ranalli campus",j:"NY",place:"Lysander",developer:"Ranalli",mw:300,type:"campus",status:"paused",d:"2026-07",note:"The six-month pause followed opposition to the proposed campus in Onondaga County.",u:"https://savrn.com/data-center-moratorium-tracker/new-york"}
+];
+
 // ── OTHER TRACKERS (meta-catalog, à la the original) ──
 const TRK=[
 {n:"Ballotpedia: data center ballot measures",o:"Ballotpedia (nonprofit)",sc:"Local and statewide measures, 2026",w:"The reference count for what's on the ballot and how measures qualified.",u:"https://ballotpedia.org/Data_center-related_ballot_measures,_2026"},
@@ -1357,6 +1395,54 @@ async function loadPublished(){
   }catch(err){ /* opened as a file or inside Claude: no updates.json */ }
 }
 loadPublished();
+
+// ── Project tracker ────────────────────────────
+const projectStatusLabels={approved:"Approved",pending:"Under review",paused:"Paused",denied:"Denied",withdrawn:"Withdrawn",cancelled:"Cancelled",permitted:"Permitted"};
+const projectState={q:"",j:"",size:"",status:"",type:""};
+function projectSize(p){return p.mw?`${p.mw>=1000?(p.mw/1000).toLocaleString(undefined,{maximumFractionDigits:2})+" GW":p.mw+" MW"}`:(p.acreage?`${p.acreage.toLocaleString()} acres`:"Size unreported");}
+function renderProjects(){
+  const rows=PROJECTS.filter(p=>{
+    if(projectState.j&&p.j!==projectState.j)return false;
+    if(projectState.status&&p.status!==projectState.status)return false;
+    if(projectState.type&&p.type!==projectState.type)return false;
+    if(projectState.size){
+      if(projectState.size==="unknown"&&p.mw!==null)return false;
+      if(projectState.size==="small"&&(p.mw===null||p.mw>=250))return false;
+      if(projectState.size==="mid"&&(p.mw===null||p.mw<250||p.mw>=1000))return false;
+      if(projectState.size==="large"&&(p.mw===null||p.mw<1000))return false;
+    }
+    const hay=(p.n+" "+p.place+" "+p.developer+" "+p.note+" "+(NAMES[p.j]||p.j)+" "+projectStatusLabels[p.status]).toLowerCase();
+    return projectState.q.split(/\s+/).every(w=>hay.includes(w));
+  }).sort((a,b)=>b.d.localeCompare(a.d)||a.n.localeCompare(b.n));
+  $("#project-count").textContent=`${rows.length} of ${PROJECTS.length} projects`;
+  $("#project-reset").disabled=!projectState.q&&!projectState.j&&!projectState.size&&!projectState.status&&!projectState.type;
+  $("#project-rows").innerHTML=rows.length?rows.map(p=>`<tr>
+    <td class="project-name"><a href="${esc(p.u)}" target="_blank" rel="noopener">${esc(p.n)}</a><div class="project-place">${esc(p.place)}, ${p.j}</div></td>
+    <td><div class="project-size">${esc(projectSize(p))}</div><div class="project-meta">${p.mw?"reported power":"source gives no MW estimate"}</div></td>
+    <td><span class="project-status ${p.status}">${projectStatusLabels[p.status]}</span></td>
+    <td class="project-note">${esc(p.note)}<div class="project-meta">Developer: ${esc(p.developer)} · ${esc(p.type)}</div></td>
+    <td><time datetime="${esc(p.d)}">${fmt(p.d)}</time></td>
+  </tr>`).join(""):'<tr><td colspan="5" class="empty">No projects match these filters.</td></tr>';
+}
+const projectStates=[...new Set(PROJECTS.map(p=>p.j))].sort((a,b)=>(NAMES[a]||a).localeCompare(NAMES[b]||b));
+$("#v-projects").innerHTML=`
+  <p class="sub" style="color:var(--ink-2);max-width:72ch;margin-bottom:16px">Named projects collected from entries in this tracker. Size is shown only when the cited source reports it; acreage and power capacity are not interchangeable. Status reflects the latest cited milestone, not a claim of current operations.</p>
+  <div class="filters project-filters">
+    <div><label for="project-state">State</label><select id="project-state"><option value="">All states</option>${projectStates.map(j=>`<option value="${j}">${esc(NAMES[j]||j)}</option>`).join("")}</select></div>
+    <div><label for="project-size">Reported power</label><select id="project-size"><option value="">Any size</option><option value="small">Under 250 MW</option><option value="mid">250 MW–&lt;1 GW</option><option value="large">1 GW or more</option><option value="unknown">Size unreported</option></select></div>
+    <div><label for="project-status">Project status</label><select id="project-status">${Object.keys(projectStatusLabels).map(s=>`<option value="${s}">${projectStatusLabels[s]}</option>`).join("")}</select></div>
+    <div><label for="project-type">Type</label><select id="project-type"><option value="">All types</option><option value="hyperscale">Hyperscale</option><option value="campus">Campus</option></select></div>
+  </div>
+  <div class="result-line"><span id="project-count"></span><button type="button" class="btn-quiet" id="project-reset">Clear filters</button></div>
+  <div class="project-table-wrap"><table class="project-table"><thead><tr><th>Project</th><th>Reported size</th><th>Status</th><th>Latest milestone</th><th>Milestone date</th></tr></thead><tbody id="project-rows"></tbody></table></div>`;
+$("#project-status").insertAdjacentHTML("afterbegin",'<option value="">Any status</option>');
+$("#project-state").addEventListener("change",ev=>{projectState.j=ev.target.value;renderProjects();});
+$("#project-size").addEventListener("change",ev=>{projectState.size=ev.target.value;renderProjects();});
+$("#project-status").addEventListener("change",ev=>{projectState.status=ev.target.value;renderProjects();});
+$("#project-type").addEventListener("change",ev=>{projectState.type=ev.target.value;renderProjects();});
+$("#project-reset").addEventListener("click",()=>{projectState.q=projectState.j=projectState.size=projectState.status=projectState.type="";["project-state","project-size","project-status","project-type"].forEach(id=>$("#"+id).value="");renderProjects();});
+$("#c-projects").textContent=PROJECTS.length;
+renderProjects();
 
 // ── Politics ──────────────────────────────────
 $("#v-politics").innerHTML=`
