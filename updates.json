@@ -6722,6 +6722,4188 @@
   "by": "Claude research, Oct 22"
  },
  {
+  "d": "2026-09",
+  "j": "KY",
+  "w": "Woodford County Fiscal Court",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Woodford County becomes the first Kentucky county to ban data centers permanently",
+  "b": "The unanimous vote was tied to farmland preservation and local opposition, with the judge-executive pointing to a fight in neighboring Mercer County as a warning.",
+  "s": [
+   [
+    "When In Your State",
+    "https://wheninyourstate.com/kentucky/kentucky-data-center-debate-moves-from-local-bans-to-statewide-regulation/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Permanent county ban",
+  "pl": [
+   [
+    "Woodford County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-08-20",
+  "j": "TN",
+  "w": "Tennessee Valley Authority",
+  "lv": "federal",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "TVA creates a data center rate class with higher rates and upfront commitments",
+  "b": "Approved at a Memphis board meeting, it raises data center rates about 10% on average over three years and requires capacity commitments to fund transmission and connections, so households don't foot the bill.",
+  "s": [
+   [
+    "WREG",
+    "https://wreg.com/news/local/tva-oks-electric-rate-change-for-data-centers/"
+   ],
+   [
+    "LandGate",
+    "https://www.landgate.com/news/tva-s-new-data-center-rate-is-a-warning-for-site-selection-teams"
+   ],
+   [
+    "WVLT",
+    "https://www.wvlt.tv/2026/05/27/tva-proposes-new-rate-class-data-centers-protect-customer-power-bills/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Higher rates for big users",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-08-13",
+  "j": "KY",
+  "w": "Louisville Metro Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Louisville adopts a six-month pause on new data center applications",
+  "b": "The pause covers specified rezoning, conditional-use and development-plan applications while the city writes rules, amid opposition to a planned hyperscale facility in West Louisville.",
+  "s": [
+   [
+    "Nearby Data Centers",
+    "https://nearbydatacenters.org/ky/"
+   ],
+   [
+    "When In Your State",
+    "https://wheninyourstate.com/kentucky/kentucky-data-center-debate-moves-from-local-bans-to-statewide-regulation/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Six-month city pause",
+  "pl": [
+   [
+    "Louisville",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-07-07",
+  "j": "TN",
+  "w": "Knoxville City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Knoxville pauses large data centers for a year",
+  "b": "The emergency ordinance halts permits and construction for data centers needing 10 MW or more while planners write zoning rules, since the city code doesn't define the use.",
+  "s": [
+   [
+    "City of Knoxville",
+    "https://www.knoxvilletn.gov/news/2026/cc_approves_waterfront_plan_data_ctr_moratorium"
+   ],
+   [
+    "WIVK",
+    "https://www.wivk.com/2026/07/06/55270/"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year city pause",
+  "pl": [
+   [
+    "Knoxville",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-06-22",
+  "j": "TN",
+  "w": "Knox County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Knox County adopts a one-year data center moratorium, 10–0",
+  "b": "The pause runs through June 30, 2027, or until the county adopts data center rules. Knoxville followed with its own pause in July.",
+  "s": [
+   [
+    "WVLT",
+    "https://www.wvlt.tv/2026/06/23/data-center-builds-one-year-delay-knox-county-votes-adopt-one-year-moratorium/"
+   ],
+   [
+    "WATE",
+    "https://www.wate.com/news/knox-county-news/knox-county-data-center-moratorium/"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year county pause",
+  "pl": [
+   [
+    "Knox County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-06",
+  "j": "TN",
+  "w": "East Tennessee counties",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "siting"
+  ],
+  "t": "Anderson, Morgan and Loudon counties pause data centers; Blount sets strict rules",
+  "b": "Anderson and Morgan adopted two-year pauses and Loudon a six-month one. Blount limits data centers to industrial zones, 5,000 feet from homes, schools and churches, with a 60-decibel cap.",
+  "s": [
+   [
+    "WVLT",
+    "https://www.wvlt.tv/2026/08/13/knox-co-zoning-commission-approves-recommendation-one-year-moratorium-data-centers/"
+   ],
+   [
+    "WIVK",
+    "https://www.wivk.com/2026/07/06/55270/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Regional wave of limits",
+  "pl": [
+   [
+    "Anderson County",
+    "county"
+   ],
+   [
+    "Morgan County",
+    "county"
+   ],
+   [
+    "Loudon County",
+    "county"
+   ],
+   [
+    "Blount County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-05-22",
+  "j": "KY",
+  "w": "Mason County Fiscal Court",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Mason County rezones about 2,080 acres for a proposed data center campus",
+  "b": "The vote moved 28 properties north of Germantown Road to rural industrial zoning after the county adopted rules for data centers in unincorporated areas.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/kentucky/"
+   ],
+   [
+    "Nearby Data Centers",
+    "https://nearbydatacenters.org/ky/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Land cleared for a large campus",
+  "pl": [
+   [
+    "Mason County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-04-09",
+  "j": "MS",
+  "w": "NAACP, Young, Gifted & Green and Safe and Sound Coalition",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Groups appeal Mississippi's permit for 41 xAI turbines in Southaven",
+  "b": "SELC filed the appeal of the March 10 permit, which does not cover the temporary turbines already running at the site.",
+  "s": [
+   [
+    "Commercial Appeal (Yahoo)",
+    "https://www.yahoo.com/news/articles/groups-appeal-permit-allowing-xai-224654745.html"
+   ]
+  ],
+  "im": -1,
+  "iw": "Permit under challenge",
+  "pl": [
+   [
+    "Southaven",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-04",
+  "j": "AL",
+  "w": "Gov. Ivey",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax"
+  ],
+  "t": "Alabama cuts new data center tax breaks to 20 years",
+  "b": "HB 399 caps abatements granted from 2027 at 20 years unless operators sign community investment deals, and makes 100 MW-plus sites pay state sales and non-school property taxes once open.",
+  "s": [
+   [
+    "Alabama Political Reporter",
+    "https://www.alreporter.com/2026/04/10/alabama-senate-sends-bill-to-limit-data-center-tax-breaks-to-governor/"
+   ],
+   [
+    "LegiScan",
+    "https://legiscan.com/AL/bill/HB399/2026"
+   ],
+   [
+    "Compute Law Blog",
+    "https://computelaw.blog/incentives-map/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Smaller tax breaks",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-04",
+  "j": "AL",
+  "w": "Bessemer City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Bessemer rezones 914 more acres, expanding Project Marvel to about 1,600",
+  "b": "QTS, owned by Blackstone funds, later confirmed it is behind the 18-building, 1,200 MW campus. The extra land is for wider buffers and layout flexibility.",
+  "s": [
+   [
+    "Compute Atlas",
+    "https://www.compute-atlas.com/facilities/qts-marvel-bessemer-al"
+   ],
+   [
+    "ABC 33/40",
+    "https://abc3340.com/news/abc-3340-news-iteam/planning-zoning-commission-recommends-rezoning-914-acres-for-data-center-in-bessemer-project-marvel-logistic-land-investments-meeting-tuesday-updated-plans-northern-beltline-data-center-development-jefferson-county-concerns-follow-up"
+   ]
+  ],
+  "im": 1,
+  "iw": "Larger campus approved",
+  "pl": [
+   [
+    "Bessemer",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-03",
+  "j": "MS",
+  "w": "Clarksdale",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Clarksdale conditionally rezones 648 acres for a possible hyperscale campus",
+  "b": "No developer agreement or project approval had been announced by mid-July.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/mississippi/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Land readied for a campus",
+  "pl": [
+   [
+    "Clarksdale",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-02-25",
+  "j": "MS",
+  "w": "Mississippi House",
+  "lv": "state",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "tax"
+  ],
+  "t": "Bill to end a Mississippi data center income tax break dies",
+  "b": "HB 4045 would have ended the income tax exemption for certain data center projects after 2026 and created a development fund tied to large fee-in-lieu deals. It died on the House calendar.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/mississippi/"
+   ]
+  ],
+  "im": 0,
+  "iw": "Incentives unchanged",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-02-17",
+  "j": "MS",
+  "w": "Southaven residents",
+  "lv": "local",
+  "k": "politics",
+  "st": "protest",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Hundreds pack a Southaven hearing; every speaker opposes xAI's turbine permit",
+  "b": "Residents described health problems and constant noise they blame on the plant during the hearing on 41 permanent turbines, which regulators approved weeks later.",
+  "s": [
+   [
+    "Action News 5",
+    "https://www.actionnews5.com/2026/02/18/residents-oppose-xai-southaven-turbines-permit-mdeq-hearing/"
+   ],
+   [
+    "Mississippi Free Press",
+    "https://www.mississippifreepress.org/xai-faces-fierce-opposition-over-southaven-mississippi-power-plant-permit/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Organized opposition",
+  "pl": [
+   [
+    "Southaven",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-01-13",
+  "j": "KY",
+  "w": "Meade County Fiscal Court",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Meade County adopts a 12-month data center moratorium",
+  "b": "The ordinance followed the county's October rejection of a 138-acre data center rezoning and directs planners to study impacts.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/kentucky/"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year county pause",
+  "pl": [
+   [
+    "Meade County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026",
+  "j": "TN",
+  "w": "Sweetwater",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Sweetwater limits data centers to heavy industrial zones with a 60-decibel cap",
+  "b": "The ordinance also requires five-acre lots and setbacks of 150 to 200 feet, rising to 500 feet next to homes.",
+  "s": [
+   [
+    "WVLT",
+    "https://www.wvlt.tv/2026/05/27/tva-proposes-new-rate-class-data-centers-protect-customer-power-bills/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Strict local rules",
+  "pl": [
+   [
+    "Sweetwater",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026",
+  "j": "AL",
+  "w": "Alabama Republican primary voters",
+  "lv": "state",
+  "k": "politics",
+  "st": "campaign",
+  "ty": [
+   "cost"
+  ],
+  "t": "Two Alabama utility commissioners lose GOP primaries amid anger over power bills",
+  "b": "Jeremy Oden and Chip Beeker lost after widespread outcry over high electric bills, as data centers became a top election issue. Only Cynthia Almond will keep her seat next year.",
+  "s": [
+   [
+    "Inside Climate News",
+    "https://insideclimatenews.org/news/07102026/alabama-data-center-rules-loophole/"
+   ],
+   [
+    "Alabama Reflector",
+    "https://alabamareflector.com/2026/10/07/public-service-commission-green-lights-new-process-for-agreements-for-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Pressure on regulators",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-12-15",
+  "j": "TN",
+  "w": "NAACP and Young, Gifted & Green",
+  "lv": "local",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Memphis pollution board dismisses the appeal of xAI's turbine permit, 6–1",
+  "b": "SELC's July appeal argued the permit ignored xAI's unpermitted turbines and misread the Clean Air Act. The board found the case moot because most turbines had been removed.",
+  "s": [
+   [
+    "The Daily Helmsman",
+    "https://www.dailyhelmsman.com/article/bnpb2osipyk4krq-20251216"
+   ],
+   [
+    "SELC",
+    "https://www.selc.org/press-release/groups-appeal-permit-for-xais-south-memphis-data-center-decisions-around-unpermitted-methane-gas-turbines/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Permit stands",
+  "pl": [
+   [
+    "Memphis",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-12-03",
+  "j": "AL",
+  "w": "Alabama PSC",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "Alabama freezes power rates through 2027 and approves solar for a Meta data center",
+  "b": "The 3–0 vote delayed the Lindsay Hill gas plant charge to 2028 and approved two Baldwin County solar farms serving Meta. Critics said the freeze postpones costs rather than avoiding them.",
+  "s": [
+   [
+    "Nearby Data Centers",
+    "https://nearbydatacenters.org/al/"
+   ],
+   [
+    "Inside Climate News",
+    "https://insideclimatenews.org/news/19082026/alabama-power-proposed-data-centers-utility-bills/"
+   ]
+  ],
+  "im": 0,
+  "iw": "Rates frozen, data center supply added",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-11-16",
+  "j": "AL",
+  "w": "Bessemer residents",
+  "lv": "local",
+  "k": "politics",
+  "st": "protest",
+  "ty": [
+   "siting",
+   "water"
+  ],
+  "t": "Residents rally against Project Marvel days before Bessemer's rezoning vote",
+  "b": "Speakers at the Legacy YMCA cited noise, diesel generator pollution, heavy water use and a rare fish, the Birmingham darter, and said officials hadn't answered their questions.",
+  "s": [
+   [
+    "ABC 33/40",
+    "https://abc3340.com/news/local/bessemer-residents-rally-against-project-marvel-data-center-ahead-of-crucial-vote"
+   ]
+  ],
+  "im": -1,
+  "iw": "Organized opposition",
+  "pl": [
+   [
+    "Bessemer",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-10-28",
+  "j": "KY",
+  "w": "Kentucky PSC",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "Kentucky regulators let LG&E/KU build $3 billion in gas plants for data centers",
+  "b": "The PSC approved two new units for an expected 1,470 MW of load growth but rejected a special cost-recovery mechanism and barred construction if the forecast demand doesn't materialize.",
+  "s": [
+   [
+    "Louisville Public Media",
+    "https://www.lpm.org/news/2025-10-28/kentucky-regulators-grant-lg-e-ku-permission-to-build-power-plants-for-future-data-centers"
+   ]
+  ],
+  "im": 1,
+  "iw": "Supply added with safeguards",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-08-19",
+  "j": "TN",
+  "w": "Memphis City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax"
+  ],
+  "t": "Memphis steers 25% of xAI's property taxes to nearby neighborhoods",
+  "b": "The ordinance covers both Colossus sites and a planned water recycling plant, capped at $100 million for projects within five miles. A bid to raise the share to 75% failed.",
+  "s": [
+   [
+    "Commercial Appeal (Yahoo)",
+    "https://www.yahoo.com/news/articles/memphis-city-council-approves-xai-002119574.html"
+   ],
+   [
+    "Local Memphis",
+    "https://www.localmemphis.com/article/news/local/city-council-passes-ordinance-to-allow-xai-property-tax-revenue-to-benefit-community/522-e9ff10e3-35fd-463b-824a-4599d8925793"
+   ]
+  ],
+  "im": 0,
+  "iw": "Community benefit, no new limits",
+  "pl": [
+   [
+    "Memphis",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-08-04",
+  "j": "KY",
+  "w": "Kentucky advocates",
+  "lv": "state",
+  "k": "politics",
+  "st": "protest",
+  "ty": [
+   "cost"
+  ],
+  "t": "Advocates rally at Kentucky PSC as LG&E/KU seeks gas plants for data centers",
+  "b": "Outside the hearing, critics said the proposed tariff for 100 MW-plus users, which requires paying for 80% of contracted energy for 15 years, only protects customers if the data centers get built.",
+  "s": [
+   [
+    "Louisville Public Media",
+    "https://www.lpm.org/news/2025-08-28/lg-e-says-3b-expansion-will-protect-kentucky-ratepayers-from-data-center-costs-others-are-doubtful"
+   ]
+  ],
+  "im": -1,
+  "iw": "Pushback on utility plans",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-08",
+  "j": "MS",
+  "w": "MS Dept. of Environmental Quality",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Mississippi lets xAI run temporary gas turbines in Southaven without permits",
+  "b": "After an xAI affiliate bought a former Duke Energy plant in July, regulators treated its turbines for Colossus 2 as exempt temporary units. The count reached 27 by December, and neighbors complained of noise.",
+  "s": [
+   [
+    "Commercial Appeal (AOL)",
+    "https://www.aol.com/articles/xai-southaven-power-plant-operating-100534201.html"
+   ],
+   [
+    "Mississippi Free Press",
+    "https://www.mississippifreepress.org/xai-faces-fierce-opposition-over-southaven-mississippi-power-plant-permit/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Power without permits",
+  "pl": [
+   [
+    "Southaven",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-08",
+  "j": "AL",
+  "w": "Alabama PSC",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "Regulators let Alabama Power buy a $622 million gas plant for data center demand",
+  "b": "The Lindsay Hill plant in Autauga County was bought to meet growth driven largely by data centers. A later rate freeze pushed the roughly $3.32 monthly customer charge for it to 2028.",
+  "s": [
+   [
+    "Inside Climate News",
+    "https://insideclimatenews.org/news/19082026/alabama-power-proposed-data-centers-utility-bills/"
+   ],
+   [
+    "Server Country",
+    "https://servercountry.org/power/alabama/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Supply added for data centers",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-07-02",
+  "j": "TN",
+  "w": "Shelby County Health Department",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Shelby County permits 15 gas turbines at xAI's Memphis data center",
+  "b": "xAI had installed as many as 35 turbines without permits over the prior year. The department also ruled that temporary turbines need no permit, a stance critics said opened a loophole.",
+  "s": [
+   [
+    "SELC",
+    "https://www.selc.org/press-release/memphis-health-leaders-grant-air-permit-for-xai-data-center/"
+   ],
+   [
+    "Tennessee Lookout",
+    "https://tennesseelookout.com/briefs/naacp-others-appeal-xai-turbine-permits-for-memphis-data-center/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Permanent on-site power approved",
+  "pl": [
+   [
+    "Memphis",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-04-14",
+  "j": "AL",
+  "w": "Bessemer residents",
+  "lv": "local",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "siting"
+  ],
+  "t": "Residents' lawsuit briefly halts Bessemer's Project Marvel rezoning",
+  "b": "A judge's April order blocked a council vote over inadequate public notice, and the city restarted the process. The council approved the rezoning in November, and the suit was later dismissed.",
+  "s": [
+   [
+    "Inside Climate News",
+    "https://insideclimatenews.org/news/11052025/bessemer-alabama-proposed-data-center/"
+   ],
+   [
+    "al.com (Yahoo)",
+    "https://www.yahoo.com/news/politics/articles/bessemer-mayor-faces-runoff-data-150559407.html"
+   ]
+  ],
+  "im": 1,
+  "iw": "Challenge ended",
+  "pl": [
+   [
+    "Bessemer",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-02",
+  "j": "AL",
+  "w": "Bessemer Mayor Kenneth Gulley",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "disclosure"
+  ],
+  "t": "Bessemer officials sign a secrecy agreement with Project Marvel's developer",
+  "b": "The mayor, city attorney and chief of staff agreed not to share developer names, site plans or studies. The city released the agreement in July 2026 after environmental groups threatened to sue.",
+  "s": [
+   [
+    "Nearby Data Centers",
+    "https://nearbydatacenters.org/al/"
+   ],
+   [
+    "Energy and Policy Institute",
+    "https://energyandpolicy.org/alabama-power-data-center-contracts-redacted/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Secrecy shields the developer",
+  "pl": [
+   [
+    "Bessemer",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-01-09",
+  "j": "MS",
+  "w": "Mississippi Development Authority",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax"
+  ],
+  "t": "Mississippi offers tax breaks for Compass's $10 billion Meridian campus",
+  "b": "State certification brings 10-year income and franchise tax exemptions and sales tax breaks on construction materials and equipment, plus a $4 million legislative site grant. Mississippi Power will supply about 500 MW.",
+  "s": [
+   [
+    "Governor's office",
+    "https://governorreeves.ms.gov/compass-datacenters-project-generates-10-billion-investment-in-lauderdale-county/"
+   ],
+   [
+    "DCD",
+    "https://www.datacenterdynamics.com/en/news/compass-to-invest-10-billion-in-mississippi-data-center-campus/"
+   ]
+  ],
+  "im": 1,
+  "iw": "State incentives for a hyperscale campus",
+  "pl": [
+   [
+    "Meridian",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-11-03",
+  "j": "GA",
+  "w": "Georgia voters",
+  "lv": "state",
+  "k": "politics",
+  "st": "campaign",
+  "ty": [
+   "cost"
+  ],
+  "t": "Control of Georgia's utility regulator is on the Nov. 3 ballot",
+  "b": "Hubbard faces Fitz Johnson again, and two newcomers vie for a second seat; Democratic wins in both would flip the commission to a 3–2 majority. Candidates in both parties say data centers must pay their own way.",
+  "s": [
+   [
+    "Ballotpedia News",
+    "https://news.ballotpedia.org/2026/08/10/partisan-control-of-georgia-public-service-commission-at-stake-in-november-election/"
+   ]
+  ],
+  "im": 0,
+  "iw": "Could reshape data center rate decisions",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-10-07",
+  "j": "FL",
+  "w": "Palm Beach County zoning staff",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Staff approval nearly triples data center space at the Project Tango site",
+  "b": "Using existing master-plan rights, the county's Development Review Officer raised allowed data center space from about 200,000 to nearly 700,000 sq ft, weeks after commissioners adopted a moratorium.",
+  "s": [
+   [
+    "Boca Raton Tribune",
+    "https://www.bocaratontribune.com/bocaratonnews/2026/10/administrative-approval-paves-way-for-700000-square-foot-data-center/"
+   ],
+   [
+    "Yahoo News",
+    "https://www.yahoo.com/news/us/articles/palm-beach-county-approves-additional-154232114.html"
+   ]
+  ],
+  "im": 1,
+  "iw": "Project advances despite the pause",
+  "pl": [
+   [
+    "Palm Beach County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-09-17",
+  "j": "MD",
+  "w": "Gov. Moore",
+  "lv": "state",
+  "k": "politics",
+  "st": "statement",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Moore says he would sign a statewide data center moratorium",
+  "b": "He told Punchbowl News he would sign a moratorium or ban if lawmakers sent one, a week after his campaign declined to say whether he supported a pause.",
+  "s": [
+   [
+    "Maryland Bay News",
+    "https://mdbaynews.com/2026/09/23/wes-moore-maryland-data-center-review-dashboard/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Statewide pause now possible",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-09-14",
+  "j": "MD",
+  "w": "Frederick County Executive Jessica Fitzwater",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Frederick County rejects a development agreement for the Frederick Digital Campus",
+  "b": "Fitzwater also extended the county's pause on new data center applications to July 1, 2027. The campus is Maryland's only approved hyperscale project.",
+  "s": [
+   [
+    "Maryland Bay News",
+    "https://mdbaynews.com/2026/09/23/wes-moore-maryland-data-center-review-dashboard/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Setback for the state's only hyperscale campus",
+  "pl": [
+   [
+    "Frederick County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-08-26",
+  "j": "DE",
+  "w": "Gov. Matt Meyer",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "Delaware makes data centers pay their own grid costs under PSC-approved contracts",
+  "b": "HB 233 requires facilities of 50 MW or more to win commission approval of service agreements of at least 10 years and bars hookups until a separate rate class exists. Data centers without their own power would be cut first in a blackout.",
+  "s": [
+   [
+    "WHYY",
+    "https://whyy.org/articles/data-center-legislation-delaware/"
+   ],
+   [
+    "Delaware Public Media",
+    "https://www.delawarepublic.org/show/the-green/2026-06-05/new-bill-updates-effort-to-shield-delawareans-from-high-electric-rates-tied-to-data-centers"
+   ],
+   [
+    "Spotlight Delaware",
+    "https://spotlightdelaware.org/2026/07/16/delaware-general-assembly-roundup-energy-and-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Full-cost contracts required",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-08-26",
+  "j": "DE",
+  "w": "Gov. Matt Meyer",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "Delaware requires big data centers to supply their own power within 10 years",
+  "b": "HB 445 makes large energy users generate or secure all the electricity they use; those that can't at the start must follow a ramp-up plan reaching 100% within a decade.",
+  "s": [
+   [
+    "Delaware Public Media",
+    "https://www.delawarepublic.org/politics-government/2026-08-28/slate-of-energy-bills-get-governor-meyers-signature"
+   ],
+   [
+    "WDEL",
+    "https://www.wdel.com/business/delaware-house-passes-bill-requiring-separate-utility-rate-for-data-centers/article_94bb2f3f-c5dc-5663-a5fa-aecc2909aa22.html"
+   ]
+  ],
+  "im": -1,
+  "iw": "Bring-your-own-power mandate",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-08-26",
+  "j": "DE",
+  "w": "Gov. Matt Meyer",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax"
+  ],
+  "t": "Delaware bars new data centers from job-based tax credits",
+  "b": "HB 310 keeps new large-load facilities from claiming state tax incentives tied to the jobs they create.",
+  "s": [
+   [
+    "Spotlight Delaware",
+    "https://spotlightdelaware.org/2026/07/16/delaware-general-assembly-roundup-energy-and-data-centers/"
+   ],
+   [
+    "Delaware Public Media",
+    "https://www.delawarepublic.org/politics-government/2026-08-28/slate-of-energy-bills-get-governor-meyers-signature"
+   ]
+  ],
+  "im": -1,
+  "iw": "Loss of job tax credits",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-07-28",
+  "j": "MD",
+  "w": "Montgomery County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "siting"
+  ],
+  "t": "Montgomery County passes an 18-month moratorium and blocks data centers over 25 MW",
+  "b": "The unanimous vote codifies and extends Elrich's six-month June order and covers the proposed Dickerson campus at a retired coal plant, whose developer had appealed the executive order.",
+  "s": [
+   [
+    "Montgomery County",
+    "https://www.montgomerycountymd.gov/news/council-approves-18-month-data-center-moratorium-places-limitations-data-center-development"
+   ],
+   [
+    "The Banner",
+    "https://www.thebanner.com/politics-power/local-government/montgomery-county-data-center-moratorium-passes-JGFIVPQ3UZDYFMBU2WV2DD5CMQ/"
+   ],
+   [
+    "Food & Water Watch",
+    "https://www.foodandwaterwatch.org/2026/07/28/montgomery-county-md-unanimously-passes-18-month-moratorium-on-hyperscale-data-centers/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Long pause plus a size cap",
+  "pl": [
+   [
+    "Montgomery County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-07-15",
+  "j": "FL",
+  "w": "Palm Beach County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Palm Beach County rejects the Project Tango AI campus, 5–1",
+  "b": "After a 12-hour hearing, commissioners denied without prejudice a bid to expand the Loxahatchee site to 3.6 million sq ft near homes and an elementary school. The developer has sued.",
+  "s": [
+   [
+    "CBS12",
+    "https://cbs12.com/news/local/project-tango-developer-plan-revised-for-controversial-ai-data-center-ahead-of-vote"
+   ],
+   [
+    "Boca Raton Tribune",
+    "https://www.bocaratontribune.com/bocaratonnews/2026/10/administrative-approval-paves-way-for-700000-square-foot-data-center/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Hyperscale expansion rejected",
+  "pl": [
+   [
+    "Palm Beach County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-07-07",
+  "j": "MD",
+  "w": "Prince George's County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Prince George's adopts a two-year pause on hyperscale data centers",
+  "b": "The pause can end early if the county adopts a zoning framework for the facilities.",
+  "s": [
+   [
+    "Data Center Bans tracker",
+    "https://www.datacenterbans.com/state/maryland"
+   ]
+  ],
+  "im": -1,
+  "iw": "Two-year county pause",
+  "pl": [
+   [
+    "Prince George's County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-07",
+  "j": "SC",
+  "w": "York County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "York County pauses new data centers, but QTS's $8 billion campus is exempt",
+  "b": "The moratorium spares the nine vested site plans for QTS's campus, where the first building has topped out.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/south-carolina/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Pause with a big exemption",
+  "pl": [
+   [
+    "York County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-06-01",
+  "j": "MD",
+  "w": "Howard County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Howard County halts new data centers through November 2027",
+  "b": "The council unanimously passed CB31-2026, the S.M.A.R.T. Siting Act, which also creates a task force of up to 11 members to study impacts.",
+  "s": [
+   [
+    "Data Center Bans tracker",
+    "https://www.datacenterbans.com/state/maryland"
+   ]
+  ],
+  "im": -1,
+  "iw": "County pause into late 2027",
+  "pl": [
+   [
+    "Howard County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-06",
+  "j": "SC",
+  "w": "Stream Data Centers",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Stream cancels its Marion County data center, citing too little power",
+  "b": "The developer said it could not secure enough electricity for the planned campus.",
+  "s": [
+   [
+    "Post and Courier",
+    "https://www.postandcourier.com/spartanburg/news/spartanburg-county-council-data-center-moratorium-northmark/article_ac402d07-de2f-4e55-9d28-b4dbcdb570e0.html"
+   ],
+   [
+    "Server Country",
+    "https://servercountry.org/policy/south-carolina/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Power shortage stops a project",
+  "pl": [
+   [
+    "Marion County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-05-12",
+  "j": "MD",
+  "w": "Gov. Moore",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost",
+   "disclosure"
+  ],
+  "t": "Utility RELIEF Act widens Maryland's data center tariff and creates a registry",
+  "b": "The law lowers the large-load threshold to 25 MW at 60% utilization, makes data centers pay for their grid upgrades and PJM-assigned capacity costs, and requires them to register with the PSC and disclose water and power plans.",
+  "s": [
+   [
+    "Governor's office",
+    "https://governor.maryland.gov/news/press-releases/governor-moore-signs-landmark-legislation-lower-energy-costs-maryland-families-and-strengthen"
+   ],
+   [
+    "CCAN Action Fund",
+    "https://ccanactionfund.org/every-single-thing-in-the-utility-relief-act/"
+   ],
+   [
+    "Maryland Matters",
+    "https://marylandmatters.org/2026/05/12/moore-signs-utility-relief-act/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Wider cost rules and disclosure",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-03-10",
+  "j": "DE",
+  "w": "New Castle County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "water"
+  ],
+  "t": "New Castle County adopts its first data center zoning rules, 12–0",
+  "b": "Data centers are limited to industrial zones, need 1,000-foot setbacks from homes unless a noise study allows 500, must meet a 55 dB(A) noise cap and can't use open-loop cooling without reclaimed water. Projects already filed are exempt.",
+  "s": [
+   [
+    "Delaware LIVE",
+    "https://delawarelive.com/new-castle-county-council-approves-new-data-center-rules-but-wont-apply-them-to-existing-projects/"
+   ],
+   [
+    "WHYY",
+    "https://whyy.org/articles/new-castle-county-delaware-data-center-zoning/"
+   ],
+   [
+    "Sierra Club Delaware",
+    "https://www.sierraclub.org/delaware/blog/2026/05/ongoing-legislation-and-data-centers-approaching-development-clear-conscience"
+   ]
+  ],
+  "im": -1,
+  "iw": "New limits, but not on pending projects",
+  "pl": [
+   [
+    "New Castle County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-02-05",
+  "j": "WV",
+  "w": "Tucker United",
+  "lv": "local",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Tucker County groups lose their appeal of the Ridgeline power plant permit",
+  "b": "The Air Quality Board upheld the permit but required continued air monitoring. In August an appeals court ruled it lacked jurisdiction, leaving a possible state Supreme Court appeal.",
+  "s": [
+   [
+    "WV MetroNews",
+    "https://wvmetronews.com/2026/02/07/air-quality-board-sides-with-developers-of-tucker-county-data-center/"
+   ],
+   [
+    "West Virginia Watch",
+    "https://westvirginiawatch.com/2026/08/27/wv-intermediate-court-dismisses-environmental-groups-challenges-to-fundamental-data-permit/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Permit stands for now",
+  "pl": [
+   [
+    "Tucker County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-02",
+  "j": "DE",
+  "w": "DNREC",
+  "lv": "state",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "permitting",
+   "siting"
+  ],
+  "t": "Delaware rules half of Project Washington violates the Coastal Zone Act",
+  "b": "Regulators cited 516 diesel backup generators and the risk of fuel spills into the Delaware River and Bay. The Coastal Zone Industrial Control Board upheld the decision in late March.",
+  "s": [
+   [
+    "Spotlight Delaware",
+    "https://spotlightdelaware.org/2026/03/19/new-data-center-regulations-go-into-effect-but-not-for-del-city-proposal/"
+   ],
+   [
+    "WDEL",
+    "https://www.wdel.com/news/new-castle-county-council-approves-data-center-guidelines/article_5dfd728e-7547-486f-953d-b6203f24a44b.html"
+   ],
+   [
+    "Sierra Club Delaware",
+    "https://www.sierraclub.org/delaware/blog/2026/05/ongoing-legislation-and-data-centers-approaching-development-clear-conscience"
+   ]
+  ],
+  "im": -2,
+  "iw": "Blocks the state's largest proposal",
+  "pl": [
+   [
+    "Delaware City",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-12",
+  "j": "MD",
+  "w": "Maryland General Assembly",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "disclosure"
+  ],
+  "t": "Lawmakers override Moore's veto of a state data center impact study",
+  "b": "Moore vetoed the study in May 2025; the Senate overrode him 44–0 and the House 109–21 in a December special session. The report, due Sept. 1, 2026, was still overdue weeks later.",
+  "s": [
+   [
+    "Maryland Bay News",
+    "https://mdbaynews.com/2026/09/23/wes-moore-maryland-data-center-review-dashboard/"
+   ],
+   [
+    "Maryland Daily Record",
+    "https://thedailyrecord.com/2026/09/10/data-centers-wes-moore-dan-cox-maryland/"
+   ]
+  ],
+  "im": 0,
+  "iw": "Study, not rules",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-12",
+  "j": "SC",
+  "w": "Colleton County residents",
+  "lv": "local",
+  "k": "politics",
+  "st": "protest",
+  "ty": [
+   "siting",
+   "water"
+  ],
+  "t": "About 400 turn out against a 1,000 MW data center near the ACE Basin",
+  "b": "Eagle Rock Partners' proposal followed a November rule change letting the zoning board approve data centers in one vote. The developer didn't reapply, and residents sued over the rule.",
+  "s": [
+   [
+    "Post and Courier",
+    "https://www.postandcourier.com/rising-waters/data-center-colleton-county-zoning/article_7e2de544-6b94-4578-885a-1150ed570bf2.html"
+   ]
+  ],
+  "im": -1,
+  "iw": "Opposition stalled the project",
+  "pl": [
+   [
+    "Colleton County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-11-25",
+  "j": "VA",
+  "w": "State Corporation Commission",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "Virginia regulators create a data center rate class with 14-year contracts",
+  "b": "Starting in 2027, Dominion customers of 25 MW or more must pay at least 85% of contracted transmission and distribution demand and 60% of generation demand, post collateral and owe exit fees if they leave early.",
+  "s": [
+   [
+    "Virginia SCC",
+    "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html"
+   ],
+   [
+    "Loudoun Now",
+    "https://www.loudounnow.com/news/scc-approves-new-data-center-rate-class-for-dominion/article_02d5fa0c-1ed8-4771-b57d-c24765739854.html"
+   ]
+  ],
+  "im": -1,
+  "iw": "Minimum bills for big users",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-11-20",
+  "j": "FL",
+  "w": "Florida PSC",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "Florida regulators approve FPL's large-load tariffs for data centers",
+  "b": "The 2026–2029 rate deal makes data centers fund new generation and substations, post collateral and sign 20-year contracts with minimum bills. A developers' group had warned FPL's first version would drive projects out of its territory.",
+  "s": [
+   [
+    "Daily Energy Insider",
+    "https://dailyenergyinsider.com/news/53987-florida-power-light-outlines-current-compliance-with-state-data-center-law/"
+   ],
+   [
+    "Central Florida Public Media",
+    "https://www.cfpublic.org/politics/2025-11-20/psc-oks-fpl-deal-that-increases-base-rate-in-parts-of-florida"
+   ],
+   [
+    "FEIA filing (PSC)",
+    "https://www.floridapsc.com/pscfiles/library/filings/2025/06999-2025/06999-2025.pdf"
+   ]
+  ],
+  "im": -1,
+  "iw": "Data centers fund their own generation",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-11-04",
+  "j": "GA",
+  "w": "Georgia voters",
+  "lv": "state",
+  "k": "politics",
+  "st": "campaign",
+  "ty": [
+   "cost"
+  ],
+  "t": "Democrats flip two Georgia PSC seats amid anger over power bills",
+  "b": "Alicia Johnson and Peter Hubbard won about 63% each, the party's first non-federal statewide wins in nearly 20 years. Hubbard had published an analysis arguing data center rate discounts shift costs onto households.",
+  "s": [
+   [
+    "PBS News",
+    "https://www.pbs.org/newshour/politics/georgia-democrats-win-big-over-gop-incumbents-in-2-statewide-utility-regulator-races"
+   ],
+   [
+    "Georgia Recorder",
+    "https://georgiarecorder.com/2025/11/04/democrat-alicia-johnson-appears-to-defeat-longtime-georgia-utility-regulator/"
+   ],
+   [
+    "Ballotpedia News",
+    "https://news.ballotpedia.org/2026/08/10/partisan-control-of-georgia-public-service-commission-at-stake-in-november-election/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Tougher regulators on costs",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-11-03",
+  "j": "NC",
+  "w": "Edgecombe County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Edgecombe County writes data centers into its zoning code after Tarboro's rejection",
+  "b": "Commissioners updated the county's Unified Development Ordinance on Nov. 3 to cover data centers.",
+  "s": [
+   [
+    "WRAL",
+    "https://www.wral.com/news/local/central-north-carolina-data-center-plans-april-2026/"
+   ]
+  ],
+  "im": -1,
+  "iw": "New local rules",
+  "pl": [
+   [
+    "Edgecombe County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-10",
+  "j": "DE",
+  "w": "Delaware Public Service Commission",
+  "lv": "state",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "cost"
+  ],
+  "t": "Delaware regulators pause new large-load hookups while they write a tariff",
+  "b": "Acting on a Sept. 3 petition from the Public Advocate and commission staff, the PSC opened a large-load tariff docket and paused interconnection of new large loads such as data centers in Delmarva Power's territory.",
+  "s": [
+   [
+    "State of Delaware",
+    "https://news.delaware.gov/2025/10/14/delaware-psc-opens-docket-for-large-load-tariff-pauses-interconnections/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Utility-wide pause on new large loads",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-10",
+  "j": "DE",
+  "w": "Starwood Digital Ventures",
+  "lv": "local",
+  "k": "politics",
+  "st": "statement",
+  "ty": [
+   "siting"
+  ],
+  "t": "Project Washington's developer signs a union labor deal ahead of county hearings",
+  "b": "The agreement with 20 local building trades unions gave Starwood a key ally as New Castle County weighed new data center rules and a rezoning the project still needs.",
+  "s": [
+   [
+    "Spotlight Delaware",
+    "https://spotlightdelaware.org/2025/10/29/delaware-data-center-labor-agreeement/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Labor support for the project",
+  "pl": [
+   [
+    "New Castle County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-09-16",
+  "j": "MD",
+  "w": "Prince George's County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Prince George's County pauses data center permits for 180 days",
+  "b": "CR-98-2025 froze permits and subdivision plans while a county task force weighed costs and benefits, alongside an executive order from County Executive Aisha Braveboy. The county adopted a longer pause in 2026.",
+  "s": [
+   [
+    "Maryland Association of Counties",
+    "https://conduitstreet.mdcounties.org/2025/09/24/prince-georges-pauses-data-center-approvals-amid-policy-review/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Six-month county pause",
+  "pl": [
+   [
+    "Prince George's County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-09-15",
+  "j": "NC",
+  "w": "Statesville City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Statesville rezones 330 acres for a Compass data center campus, 8–0",
+  "b": "The council approved the farmland rezoning despite neighborhood opposition, in what backers called the largest potential private investment in Iredell County. A year later the city paused new data centers.",
+  "s": [
+   [
+    "Governing (Charlotte Observer)",
+    "https://www.governing.com/infrastructure/north-carolina-city-approves-massive-data-center-despite-local-opposition"
+   ]
+  ],
+  "im": 1,
+  "iw": "Large campus approved",
+  "pl": [
+   [
+    "Statesville",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-09-08",
+  "j": "NC",
+  "w": "Tarboro Town Council",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Tarboro rejects a 300 MW data center, 6–1",
+  "b": "The 52-acre plan included on-site generation and battery storage. Energy Storage Solutions sued, then settled in 2026 and said it would not build in Tarboro.",
+  "s": [
+   [
+    "WRAL",
+    "https://www.wral.com/news/local/data-center-power-grid-tarboro-climate-september-2025/"
+   ],
+   [
+    "DCD",
+    "https://www.datacenterdynamics.com/en/news/developers-to-appeal-data-center-rejection-in-tarboro-north-carolina/"
+   ],
+   [
+    "TMCnet",
+    "https://insight.tmcnet.com/insight/energy-storage-solutions-drops-19-2-billion-north-carolina-data-center-msb2js80"
+   ]
+  ],
+  "im": -2,
+  "iw": "Project rejected and abandoned",
+  "pl": [
+   [
+    "Tarboro",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-09",
+  "j": "GA",
+  "w": "Pike, Lamar, Troup and Clayton counties",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Pike, Lamar, Troup and Clayton counties and LaGrange pause data centers",
+  "b": "The September wave brought Georgia to eight local moratoriums since March. Lamar acted after Amazon Web Services bought 985 acres there for $270 million.",
+  "s": [
+   [
+    "GPB",
+    "https://www.gpb.org/news/2025/10/22/wave-of-data-center-ordinances-sweep-through-ga-counties-how-strict-are-they"
+   ],
+   [
+    "Savrn tracker",
+    "https://savrn.com/data-center-moratorium-tracker/georgia"
+   ]
+  ],
+  "im": -1,
+  "iw": "Wave of local pauses",
+  "pl": [
+   [
+    "Pike County",
+    "county"
+   ],
+   [
+    "Lamar County",
+    "county"
+   ],
+   [
+    "Troup County",
+    "county"
+   ],
+   [
+    "Clayton County",
+    "county"
+   ],
+   [
+    "LaGrange",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-08-13",
+  "j": "WV",
+  "w": "West Virginia DEP",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "permitting"
+  ],
+  "t": "West Virginia approves the air permit for Tucker County's Ridgeline power plant",
+  "b": "The DEP classified Fundamental Data's off-grid gas plant as a minor source despite more than 1,600 mostly opposed comments, and let parts of the application stay confidential.",
+  "s": [
+   [
+    "News and Sentinel",
+    "https://www.newsandsentinel.com/news/business/2025/09/groups-appeal-permit-decision-for-tucker-county-data-center/"
+   ],
+   [
+    "Mountain State Spotlight",
+    "https://mountainstatespotlight.org/2025/11/25/tucker-co-data-center-air-quality-permit/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Power plant cleared to proceed",
+  "pl": [
+   [
+    "Tucker County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-08",
+  "j": "DE",
+  "w": "Gov. Matt Meyer",
+  "lv": "state",
+  "k": "politics",
+  "st": "statement",
+  "ty": [
+   "siting",
+   "cost"
+  ],
+  "t": "Gov. Meyer calls the 1.2 GW Delaware City data center a nonstarter",
+  "b": "Starwood Digital Ventures' Project Washington would cover about 6 million sq ft near Delaware City and draw about 1.2 GW. Meyer said he would do everything he could to keep so large a power user out of the state.",
+  "s": [
+   [
+    "Delaware Public Media",
+    "https://www.delawarepublic.org/politics-government/2025-08-19/mega-del-city-data-center-awaits-state-level-approval-county-officials-still-have-concerns"
+   ]
+  ],
+  "im": -1,
+  "iw": "Governor opposes the state's biggest proposal",
+  "pl": [
+   [
+    "Delaware City",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-07-08",
+  "j": "GA",
+  "w": "DeKalb County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "DeKalb County adopts a 100-day data center moratorium, 4–3",
+  "b": "Planning staff had told developers data centers were allowed on some light-industrial sites. The board extended the pause in December and again in 2026, and a developer has sued.",
+  "s": [
+   [
+    "Decaturish",
+    "https://www.decaturish.com/business/dekalb-county-commission-approves-data-center-moratorium/article_7c42f850-bef9-4e51-a1ae-426810f83bb5.html"
+   ],
+   [
+    "WABE",
+    "https://www.wabe.org/dekalb-county-sued-over-moratorium-on-new-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "County pause, repeatedly extended",
+  "pl": [
+   [
+    "DeKalb County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-05-02",
+  "j": "VA",
+  "w": "Gov. Youngkin",
+  "lv": "state",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "siting",
+   "disclosure"
+  ],
+  "t": "Youngkin vetoes Virginia's data center site assessment bill",
+  "b": "HB 1601 and SB 1449 would have required noise studies within 500 feet of homes and schools for 100 MW projects and let localities demand reviews of effects on water, farmland, parks, historic sites and forests.",
+  "s": [
+   [
+    "Cardinal News",
+    "https://cardinalnews.org/2025/05/06/youngkin-vetoes-bill-that-would-have-required-site-assessments-for-data-centers/"
+   ],
+   [
+    "Veto message (LIS)",
+    "https://lis.virginia.gov/bill-details/20251/HB1601/text/HB1601VG"
+   ]
+  ],
+  "im": 1,
+  "iw": "No new state review requirements",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-05",
+  "j": "MD",
+  "w": "Gov. Moore",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "Maryland's Next Generation Energy Act creates a large-load tariff for data centers",
+  "b": "New users of 100 MW or more at 80% utilization must pay a separate tariff covering the grid costs they impose. The 2026 RELIEF Act later widened it to smaller data centers.",
+  "s": [
+   [
+    "CCAN Action Fund",
+    "https://ccanactionfund.org/every-single-thing-in-the-utility-relief-act/"
+   ],
+   [
+    "Maryland Daily Record",
+    "https://thedailyrecord.com/2026/09/10/data-centers-wes-moore-dan-cox-maryland/"
+   ],
+   [
+    "RTO Insider",
+    "https://www.rtoinsider.com/135507-maryland-psc-moves-ahead-large-load-tariff-rule/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Separate rates for big users",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-05",
+  "j": "GA",
+  "w": "Coweta County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Coweta County pauses data centers for 180 days after approving Project Peach",
+  "b": "Weeks after a 3–2 vote rezoned 320 acres for the $1 billion Project Peach, commissioners paused new projects as a $17 billion Project Sail drew a 1,750-signature petition.",
+  "s": [
+   [
+    "Atlanta Journal-Constitution",
+    "https://www.ajc.com/news/business/coweta-county-issues-moratorium-to-pause-data-center-projects/2J464ISZIVB4VMFSBXZXNVHZXE/"
+   ],
+   [
+    "GPB",
+    "https://www.gpb.org/news/2025/10/22/wave-of-data-center-ordinances-sweep-through-ga-counties-how-strict-are-they"
+   ]
+  ],
+  "im": -1,
+  "iw": "Six-month county pause",
+  "pl": [
+   [
+    "Coweta County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-04-13",
+  "j": "WV",
+  "w": "Tucker County residents",
+  "lv": "local",
+  "k": "politics",
+  "st": "protest",
+  "ty": [
+   "siting"
+  ],
+  "t": "About 300 pack a Davis meeting on Tucker County's data center power plant",
+  "b": "Residents of the tourism towns of Davis and Thomas, blindsided by Fundamental Data's plan that March, pressed for details on pollution, noise and the end use of the power.",
+  "s": [
+   [
+    "Charleston Gazette-Mail",
+    "https://www.wvgazettemail.com/news/energy_and_environment/tucker-county-dep-permit-appeal-among-signs-of-data-center-linked-project-opposition/article_5c661b36-9d1d-4daa-ab56-971165677a85.html"
+   ],
+   [
+    "West Virginia Watch",
+    "https://westvirginiawatch.com/2026/08/27/wv-intermediate-court-dismisses-environmental-groups-challenges-to-fundamental-data-permit/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Organized local opposition",
+  "pl": [
+   [
+    "Tucker County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-03-18",
+  "j": "VA",
+  "w": "Loudoun County Board of Supervisors",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Loudoun ends by-right approval for new data centers",
+  "b": "The 7–2 vote requires a special exception with public hearings for every new data center. A separate 5–4 resolution grandfathered applications filed before Feb. 12 that sit more than 500 feet from homes.",
+  "s": [
+   [
+    "Loudoun Now",
+    "https://www.loudounnow.com/news/by-right-data-centers-eliminated-in-loudoun-existing-applications-grandfathered/article_130515be-0478-11f0-ab4f-7771b6b47f71.html"
+   ],
+   [
+    "McGuireWoods",
+    "https://www.mcguirewoods.com/client-resources/alerts/2025/4/loudoun-county-eliminates-by-right-use-for-data-centers-increasing-development-hurdles/"
+   ],
+   [
+    "Virginia Business",
+    "https://virginiabusiness.com/loudoun-supervisors-propose-terminating-data-centers-grandfather-provisions/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Every new project needs a public vote",
+  "pl": [
+   [
+    "Loudoun County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-03",
+  "j": "GA",
+  "w": "Douglas County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Douglas County adopts a 90-day data center moratorium",
+  "b": "Metro Atlanta's first pause responded to a cluster of pending data center projects.",
+  "s": [
+   [
+    "Atlanta Journal-Constitution",
+    "https://www.ajc.com/news/business/coweta-county-issues-moratorium-to-pause-data-center-projects/2J464ISZIVB4VMFSBXZXNVHZXE/"
+   ],
+   [
+    "GovTech",
+    "https://www.govtech.com/products/second-atlanta-area-government-hits-pause-on-data-centers"
+   ]
+  ],
+  "im": -1,
+  "iw": "Short county pause",
+  "pl": [
+   [
+    "Douglas County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2024-09",
+  "j": "GA",
+  "w": "Atlanta City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Atlanta bars new data centers from the BeltLine overlay district",
+  "b": "Council members cited soaring data center growth, energy use of up to 730 MW and water scarcity when they barred the facilities from the 22-mile BeltLine area.",
+  "s": [
+   [
+    "GPB",
+    "https://www.gpb.org/news/2025/10/22/wave-of-data-center-ordinances-sweep-through-ga-counties-how-strict-are-they"
+   ]
+  ],
+  "im": -1,
+  "iw": "Ban in the city's core",
+  "pl": [
+   [
+    "Atlanta",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2024-05",
+  "j": "MD",
+  "w": "Gov. Moore",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Maryland eases permitting for data center backup generators",
+  "b": "Moore predicted at the May 2024 signing that the Critical Infrastructure Streamlining Act would give the industry a major boost in Maryland.",
+  "s": [
+   [
+    "Maryland Bay News",
+    "https://mdbaynews.com/2026/09/23/wes-moore-maryland-data-center-review-dashboard/"
+   ],
+   [
+    "Maryland Daily Record",
+    "https://thedailyrecord.com/2026/09/10/data-centers-wes-moore-dan-cox-maryland/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Faster generator approvals",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2020",
+  "j": "MD",
+  "w": "Maryland",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax"
+  ],
+  "t": "Maryland's 2020 sales tax exemption for data center equipment stays in place",
+  "b": "SB 397 passed 45–0 and 123–6 and took effect without Gov. Hogan's signature. A 2026 repeal bill, HB 560, drew 21 Democratic sponsors and a hearing but no committee vote.",
+  "s": [
+   [
+    "Maryland Bay News",
+    "https://mdbaynews.com/2026/09/23/wes-moore-maryland-data-center-review-dashboard/"
+   ],
+   [
+    "Maryland Daily Record",
+    "https://thedailyrecord.com/2026/09/10/data-centers-wes-moore-dan-cox-maryland/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Valuable tax break survives a repeal push",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-10-19",
+  "j": "NC",
+  "w": "Fayetteville City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Fayetteville schedules a hearing on a data center moratorium after a 6–4 vote",
+  "b": "The divided council also voted to keep drafting regulations; the city has debated the issue for months, and Cumberland County's pause does not cover city limits.",
+  "s": [
+   [
+    "CityView",
+    "https://www.cityviewnc.com/stories/fayetteville-may-get-data-center-moratorium-after-all/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Pause under consideration",
+  "pl": [
+   [
+    "Fayetteville",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-10-07",
+  "j": "VA",
+  "w": "Stafford County Board of Supervisors",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "water"
+  ],
+  "t": "Stafford approves the Accokeek Center data center campus, 4–3",
+  "b": "The rezoning allows about 590,000 sq ft on 121 acres with roughly $6.4 million in developer contributions and limits on water use, despite a crowd opposed to the project.",
+  "s": [
+   [
+    "Data Center Frontier",
+    "https://www.datacenterfrontier.com/site-selection/article/55409955/virginias-new-data-center-bargain-power-permits-and-the-right-to-build"
+   ],
+   [
+    "Fredericksburg Free Press",
+    "https://www.fredericksburgfreepress.com/2026/10/08/crowd-in-stafford-county-decries-accockeek-data-center-campus-but-supervisors-ok-it/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Campus approved with conditions",
+  "pl": [
+   [
+    "Stafford County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-10",
+  "j": "VA",
+  "w": "Gov. Spanberger",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "cost"
+  ],
+  "t": "Spanberger's energy plan asks data centers to cover the cost increases they cause",
+  "b": "The long-term plan, unveiled with her budget, also leans on solar and storage and needs legislation in 2027; Republicans said it would raise costs.",
+  "s": [
+   [
+    "NBC Washington",
+    "https://www.nbcwashington.com/news/local/virginias-governor-announces-plans-to-address-high-energy-costs/4162577/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Proposed cost shift to data centers",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-09-29",
+  "j": "VA",
+  "w": "Virginia DEQ",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "water",
+   "permitting"
+  ],
+  "t": "Virginia cites Google's first Chesterfield data center site for seven runoff violations",
+  "b": "The notice documents sediment discharges between December 2025 and August 2026 affecting thousands of feet of stream channel and about 1.4 acres of wetlands; Google blamed heavy rain.",
+  "s": [
+   [
+    "WRIC",
+    "https://www.wric.com/news/local-news/chesterfield-county/google-data-center-project-violations/"
+   ],
+   [
+    "Data Center Debate",
+    "https://datacenterdebate.org/states/virginia/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Enforcement underway",
+  "pl": [
+   [
+    "Chesterfield County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-09-29",
+  "j": "GA",
+  "w": "Lovejoy City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Lovejoy bans data centers citywide",
+  "b": "The ban followed opposition to Stillwater Development's proposed 3.5 million sq ft campus near schools and repealed a permit path that would have allowed them.",
+  "s": [
+   [
+    "Data Center Bans tracker",
+    "https://www.datacenterbans.com/state/georgia"
+   ]
+  ],
+  "im": -2,
+  "iw": "Citywide ban",
+  "pl": [
+   [
+    "Lovejoy",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-09",
+  "j": "VA",
+  "w": "Virginia DEQ",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Virginia proposes a record $2.5 million penalty for a Microsoft data center",
+  "b": "A June 2025 substation failure left the Leesburg site running 62 diesel generators for a week, pushing it past permit limits. Microsoft agreed to fund expanded air monitoring; public comment closed Oct. 14.",
+  "s": [
+   [
+    "Potomac Local",
+    "https://www.potomaclocal.com/2026/09/16/news-links-sept-16-2026/"
+   ],
+   [
+    "When In Your State",
+    "https://wheninyourstate.com/virginia/virginia-deq-proposes-2-5m-penalty-against-microsofts-leesburg-data-center/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Costly generator limits",
+  "pl": [
+   [
+    "Leesburg",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-09",
+  "j": "NC",
+  "w": "Piedmont and coastal towns",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Holly Springs, Spring Hope, Boiling Spring Lakes, Hillsborough and Southport pause data centers",
+  "b": "Spring Hope acted in May; Holly Springs, Boiling Spring Lakes and Hillsborough in June; and Southport on Sept. 10 with no project proposed.",
+  "s": [
+   [
+    "North State Journal",
+    "https://nsjonline.com/article/2026/08/data-center-moratoriums-spreading/"
+   ],
+   [
+    "Savrn tracker",
+    "https://savrn.com/data-center-moratorium-tracker/north-carolina"
+   ]
+  ],
+  "im": -1,
+  "iw": "More local pauses",
+  "pl": [
+   [
+    "Holly Springs",
+    "city"
+   ],
+   [
+    "Spring Hope",
+    "city"
+   ],
+   [
+    "Boiling Spring Lakes",
+    "city"
+   ],
+   [
+    "Hillsborough",
+    "city"
+   ],
+   [
+    "Southport",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-09",
+  "j": "GA",
+  "w": "Georgia cities and counties",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Marietta, Walker County, Forest Park and Americus adopt data center pauses",
+  "b": "Walker County began with a 30-day pause on July 10, Marietta's runs through Dec. 31, Forest Park approved 90 days and Americus 30 days on Sept. 24.",
+  "s": [
+   [
+    "Data Center Bans tracker",
+    "https://www.datacenterbans.com/state/georgia"
+   ],
+   [
+    "Nearby Data Centers",
+    "https://nearbydatacenters.org/ga/"
+   ]
+  ],
+  "im": -1,
+  "iw": "More local pauses",
+  "pl": [
+   [
+    "Marietta",
+    "city"
+   ],
+   [
+    "Walker County",
+    "county"
+   ],
+   [
+    "Forest Park",
+    "city"
+   ],
+   [
+    "Americus",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-09",
+  "j": "KY",
+  "w": "Mercer County Fiscal Court",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Mercer County rejects rules that would have allowed hyperscale data centers",
+  "b": "The unanimous voice vote blocked siting next to a coal plant near Shaker Village of Pleasant Hill; nearby Burgin is weighing annexation for a hyperscale project.",
+  "s": [
+   [
+    "Kentucky Lantern",
+    "https://kentuckylantern.com/2026/10/12/demands-bans-and-moratoriums-catch-up-on-kentucky-data-center-news/"
+   ],
+   [
+    "When In Your State",
+    "https://wheninyourstate.com/kentucky/kentucky-data-center-debate-moves-from-local-bans-to-statewide-regulation/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Hyperscale siting blocked",
+  "pl": [
+   [
+    "Mercer County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-09",
+  "j": "AL",
+  "w": "Sen. Sam Givhan (R)",
+  "lv": "state",
+  "k": "politics",
+  "st": "poll",
+  "ty": [
+   "siting"
+  ],
+  "t": "Senator's poll finds 55% of his Madison County district oppose more data centers",
+  "b": "Givhan's survey of his Huntsville-area district came as north Alabama debates new data centers under TVA's new data center rates.",
+  "s": [
+   [
+    "Huntsville Business Journal",
+    "https://huntsvillebusinessjournal.com/news/2026/09/23/are-more-data-centers-coming-to-north-alabama-what-local-leaders-are-saying/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Local opposition measured",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-08-28",
+  "j": "MD",
+  "w": "Calvert County",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Calvert County pauses data center site plans after Amazon drops its project",
+  "b": "Amazon withdrew its Calvert Technology Center plan in early August following voter backlash in the June primary; the six-month moratorium took effect Aug. 28.",
+  "s": [
+   [
+    "Sue Data Centers (cancelled projects)",
+    "https://suedatacenters.org/data-centers/cancelled"
+   ]
+  ],
+  "im": -1,
+  "iw": "Six-month county pause",
+  "pl": [
+   [
+    "Calvert County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-08-27",
+  "j": "NC",
+  "w": "Cary Town Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Cary adopts an 18-month data center pause",
+  "b": "Staff will study power demand, water use, noise and site design, with the council expected to revisit the issue in February 2028.",
+  "s": [
+   [
+    "WRAL",
+    "https://www.wral.com/news/local/central-north-carolina-data-center-plans-april-2026/"
+   ]
+  ],
+  "im": -1,
+  "iw": "18-month town pause",
+  "pl": [
+   [
+    "Cary",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-08",
+  "j": "NC",
+  "w": "Western North Carolina towns",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Asheville, Woodfin, Franklin and Jackson County pause data centers",
+  "b": "Woodfin acted in May, Asheville unanimously in June, Franklin in July and Jackson County on Aug. 18, each for about a year.",
+  "s": [
+   [
+    "North State Journal",
+    "https://nsjonline.com/article/2026/08/data-center-moratoriums-spreading/"
+   ],
+   [
+    "Savrn tracker",
+    "https://savrn.com/data-center-moratorium-tracker/north-carolina"
+   ]
+  ],
+  "im": -1,
+  "iw": "Regional wave of pauses",
+  "pl": [
+   [
+    "Asheville",
+    "city"
+   ],
+   [
+    "Woodfin",
+    "city"
+   ],
+   [
+    "Franklin",
+    "city"
+   ],
+   [
+    "Jackson County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-08",
+  "j": "AL",
+  "w": "Alabama Power",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "cost",
+   "disclosure"
+  ],
+  "t": "Alabama Power files data center contracts with key terms blacked out",
+  "b": "Filings for Meta- and Nebius-linked projects hide contract length, power amounts, prices and minimum bills, though the utility says each deal covers its own costs.",
+  "s": [
+   [
+    "Energy and Policy Institute",
+    "https://energyandpolicy.org/alabama-power-data-center-contracts-redacted/"
+   ],
+   [
+    "Nearby Data Centers",
+    "https://nearbydatacenters.org/al/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Secrecy over terms",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-07-21",
+  "j": "DE",
+  "w": "Kent County Levy Court",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "water",
+   "disclosure"
+  ],
+  "t": "Kent County adopts data center rules with a 55-decibel cap, 7–0",
+  "b": "The ordinance limits where facilities can go, requires plans for water, power, cooling and cleanup, and orders removal within 180 days after a year of disuse.",
+  "s": [
+   [
+    "Technical.ly",
+    "https://technical.ly/civics/delaware-county-adopts-new-zoning-for-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "New county limits",
+  "pl": [
+   [
+    "Kent County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-07-08",
+  "j": "GA",
+  "w": "Douglas County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Douglas County rejects a 4.4 million sq ft campus near Villa Rica, 4–1",
+  "b": "The EdgeConneX-linked plan for about 700 acres had shrunk from an earlier 11-building proposal; the planning commission recommended denial and residents played noise demonstrations.",
+  "s": [
+   [
+    "DCD",
+    "https://www.datacenterdynamics.com/en/news/county-officials-deny-data-center-zoning-request-in-georgia/"
+   ],
+   [
+    "AI GridWatch",
+    "https://aigridwatch.com/communities/douglas-county-ga"
+   ]
+  ],
+  "im": -2,
+  "iw": "Project rejected",
+  "pl": [
+   [
+    "Douglas County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-07",
+  "j": "KY",
+  "w": "Kentucky counties",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Nelson and Boyd counties pause data centers; Georgetown backs a Scott County pause",
+  "b": "Boyd's six-month moratorium, adopted July 9, exempts the already-planned Muskie campus.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/kentucky/"
+   ]
+  ],
+  "im": -1,
+  "iw": "More local pauses",
+  "pl": [
+   [
+    "Nelson County",
+    "county"
+   ],
+   [
+    "Boyd County",
+    "county"
+   ],
+   [
+    "Georgetown",
+    "city"
+   ],
+   [
+    "Scott County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-06-16",
+  "j": "KY",
+  "w": "Bowling Green City Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "water"
+  ],
+  "t": "Bowling Green adopts data center standards after rejecting a moratorium",
+  "b": "Ordinance BG2026-6 sets rules on energy and water demand, noise, light, setbacks and site design.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/kentucky/"
+   ],
+   [
+    "Kentucky League of Cities",
+    "https://www.klc.org/News/13328/cities-vary-responses-to-data-center-interest"
+   ]
+  ],
+  "im": -1,
+  "iw": "New city rules",
+  "pl": [
+   [
+    "Bowling Green",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-06-15",
+  "j": "NC",
+  "w": "Cumberland County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Cumberland County pauses data centers for six months, 7–0",
+  "b": "The ban on site plan reviews and permits runs to Dec. 15 while staff write rules on water, power, noise and distance from homes, schools and Fort Bragg.",
+  "s": [
+   [
+    "CityView",
+    "https://www.cityviewnc.com/stories/cumberland-county-enacts-6-month-data-center-moratorium/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Six-month county pause",
+  "pl": [
+   [
+    "Cumberland County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-06-15",
+  "j": "NC",
+  "w": "Durham City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Durham extends its data center pause to a full year",
+  "b": "The council first passed a 60-day moratorium on May 4, then unanimously added 10 months; Durham County later matched it through May 2027.",
+  "s": [
+   [
+    "WRAL",
+    "https://www.wral.com/news/local/central-north-carolina-data-center-plans-april-2026/"
+   ],
+   [
+    "WFAE",
+    "https://www.wfae.org/2026-08-26/durham-county-data-center-moratorium"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year city pause",
+  "pl": [
+   [
+    "Durham",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-06",
+  "j": "TN",
+  "w": "Nashville residents",
+  "lv": "local",
+  "k": "politics",
+  "st": "protest",
+  "ty": [
+   "siting"
+  ],
+  "t": "Hundreds of thousands sign a petition against a data center near the Nashville Zoo",
+  "b": "More than 150 people also spoke against proposals near the zoo and Fisk University at a June planning meeting, before the city paused data center permits.",
+  "s": [
+   [
+    "WJHL",
+    "https://www.wjhl.com/news/it-doesnt-feel-fair-inside-tennessees-growing-battle-over-data-centers/"
+   ],
+   [
+    "Tennessee Lookout",
+    "https://tennesseelookout.com/2026/06/15/local-tennessee-officials-are-putting-data-center-plans-on-ice-to-consider-regulations/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Mass opposition",
+  "pl": [
+   [
+    "Nashville",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-05-28",
+  "j": "KY",
+  "w": "Daviess County Fiscal Court",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Daviess County adopts a 12-month data center moratorium",
+  "b": "Residents pushed for the pause after news of a hyperscale project planned at an idled aluminum mill in neighboring Hancock County.",
+  "s": [
+   [
+    "Kentucky Lantern",
+    "https://kentuckylantern.com/2026/06/08/some-kentucky-counties-and-cities-are-hitting-pause-on-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year county pause",
+  "pl": [
+   [
+    "Daviess County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-05-20",
+  "j": "KY",
+  "w": "Cave City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Cave City pauses data centers for a year; a developer sues",
+  "b": "Kentucky Industrial Alliance, which had filed plans for 318 acres, sued June 8; the Kentucky League of Cities is helping fund the city's defense.",
+  "s": [
+   [
+    "Kentucky League of Cities",
+    "https://www.klc.org/News/13328/cities-vary-responses-to-data-center-interest"
+   ],
+   [
+    "Bowling Green Daily News",
+    "https://bgdailynews.com/2026/06/24/with-court-hearings-pending-simpson-barren-data-center-applicants-stake-out-positions/"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year city pause",
+  "pl": [
+   [
+    "Cave City",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-05",
+  "j": "NC",
+  "w": "Harnett County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Harnett County adopts a one-year data center moratorium",
+  "b": "The pause came amid a Triangle-area wave that also reached Cumberland, Durham and Wake County towns.",
+  "s": [
+   [
+    "WFAE",
+    "https://www.wfae.org/2026-08-26/durham-county-data-center-moratorium"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year county pause",
+  "pl": [
+   [
+    "Harnett County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-05",
+  "j": "FL",
+  "w": "Citrus County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Citrus County pauses data centers for a year; Deltona later drops its 800-acre plan",
+  "b": "The 5–0 vote covers data center rezonings and permits. Deltona withdrew its Holder Industrial Park applications in June after the planning commission rejected the land-use change.",
+  "s": [
+   [
+    "FOX 13",
+    "https://www.fox13news.com/news/citrus-county-data-center-proposal-withdrawn-resident-backlash-hearings-canceled"
+   ],
+   [
+    "Bay News 9",
+    "https://baynews9.com/fl/tampa/news/2026/06/18/citrus-county-planning-and-development-commission-vote-down-on-holder-industrial-park-plan"
+   ],
+   [
+    "Citrus County Chronicle",
+    "https://www.chronicleonline.com/news/local/county-backs-pause-on-data-centers-temporary-moratorium-gives-county-time-to-gather-information/article_98795fb9-6580-5f53-97a3-10a3b68b6711.html"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year county pause",
+  "pl": [
+   [
+    "Citrus County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-05",
+  "j": "KY",
+  "w": "Simpson County Judge-Executive Mason Barnes",
+  "lv": "local",
+  "k": "politics",
+  "st": "statement",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Simpson County's top official backs a statewide data center moratorium",
+  "b": "Barnes said no Kentucky community is ready for a data center as his county fights TenKey's project in court.",
+  "s": [
+   [
+    "WKYU",
+    "https://www.wkyufm.org/news/2026-05-11/a-data-center-insider-wants-to-halt-their-construction-in-kentucky"
+   ]
+  ],
+  "im": -1,
+  "iw": "Local official seeks state pause",
+  "pl": [
+   [
+    "Simpson County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-04-20",
+  "j": "NC",
+  "w": "Vance County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Vance County rezones land along U.S. 158 for a possible Natelli data center",
+  "b": "Natelli later filed plans for a 900 MW campus near Henderson, the state's largest active proposal.",
+  "s": [
+   [
+    "WRAL",
+    "https://www.wral.com/business/technology/central-north-carolina-data-center-plans-april-2026/"
+   ],
+   [
+    "Apollo Technical",
+    "https://www.apollotechnical.com/data-centers-in-north-carolina/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Land opened for a large campus",
+  "pl": [
+   [
+    "Vance County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-04-14",
+  "j": "NC",
+  "w": "Apex Town Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Apex adopts a one-year data center moratorium after a 250 MW plan is withdrawn",
+  "b": "Natelli had pulled its New Hill Digital Campus beside the Harris nuclear plant on March 5, citing the town's zoning deliberations.",
+  "s": [
+   [
+    "WRAL",
+    "https://www.wral.com/news/local/central-north-carolina-data-center-plans-april-2026/"
+   ],
+   [
+    "DCD",
+    "https://www.datacenterdynamics.com/en/news/developer-withdraws-proposal-for-250mw-data-center-in-apex-north-carolina/"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year town pause",
+  "pl": [
+   [
+    "Apex",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-04-14",
+  "j": "FL",
+  "w": "Fort Meade City Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Fort Meade approves a 20-year deal for a 4.4 million sq ft hyperscale campus",
+  "b": "Florida's commerce secretary called the project fundamentally flawed. Residents sued in May and started recall petitions, and the campus still needs a regional water permit.",
+  "s": [
+   [
+    "Bay News 9",
+    "https://baynews9.com/fl/tampa/news/2026/04/15/fort-meade-data-center-approved-despite-residents-concerns"
+   ],
+   [
+    "WFLA",
+    "https://www.wfla.com/news/polk-county/state-pushes-back-on-polk-county-ai-data-center-approval-fundamentally-flawed/"
+   ],
+   [
+    "Florida Data Centers",
+    "https://floridadatacenters.org/polk-county"
+   ]
+  ],
+  "im": 1,
+  "iw": "Largest Florida approval",
+  "pl": [
+   [
+    "Fort Meade",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-04-13",
+  "j": "NC",
+  "w": "Wendell Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Wendell pauses data centers through the end of 2026",
+  "b": "The town acted with no data center proposed, citing undefined uses in its development ordinance; the pause also covers crypto mining.",
+  "s": [
+   [
+    "Town of Wendell",
+    "https://townofwendellnc.gov/departments/planning/data_center_moratorium.php"
+   ],
+   [
+    "WRAL",
+    "https://www.wral.com/business/technology/central-north-carolina-data-center-plans-april-2026/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Town pause",
+  "pl": [
+   [
+    "Wendell",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-04-01",
+  "j": "WV",
+  "w": "Gov. Morrisey",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost"
+  ],
+  "t": "West Virginia makes certified data centers pay county fire and ambulance fees",
+  "b": "HB 5168, effective June 12, also entitles certified microgrids and data centers to county fire and police protection.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/west-virginia/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Small new local fees",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-03-31",
+  "j": "VA",
+  "w": "Virginia Court of Appeals",
+  "lv": "state",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Appeals court upholds the voiding of the Digital Gateway rezoning",
+  "b": "The unanimous ruling affirmed that the county's advertising defects voided the approvals and also sided with the American Battlefield Trust's separate suit. Prince William had spent more than $1.6 million defending the project.",
+  "s": [
+   [
+    "Prince William Times",
+    "https://www.princewilliamtimes.com/localnews/breaking-digital-gateway-suffers-another-blow-in-court/article_fc1732f8-5fe0-4d27-a602-167cf21ebb7f.html"
+   ],
+   [
+    "InsideNoVa",
+    "https://www.insidenova.com/news/prince_william/update-second-ruling-voids-digital-gateway-data-center-project-in-prince-william/article_846b8581-c99e-4f00-bb67-512c78952773.html"
+   ]
+  ],
+  "im": -2,
+  "iw": "Approvals remain void",
+  "pl": [
+   [
+    "Prince William County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-03-03",
+  "j": "KY",
+  "w": "Franklin Planning and Zoning Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Franklin planners approve TenKey's data center plan after a heated meeting",
+  "b": "The unanimous vote cleared a preliminary plan for three 200,000 sq ft buildings with on-site gas power. A citizens group sued in April, and TenKey is suing Simpson County over its permit ordinance.",
+  "s": [
+   [
+    "WKU Herald",
+    "https://wkuherald.com/92431/news/data-center-dilemma/"
+   ],
+   [
+    "Bowling Green Daily News",
+    "https://bgdailynews.com/2026/06/24/with-court-hearings-pending-simpson-barren-data-center-applicants-stake-out-positions/"
+   ],
+   [
+    "Server Country",
+    "https://servercountry.org/policy/kentucky/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Preliminary plan approved",
+  "pl": [
+   [
+    "Franklin",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-02-26",
+  "j": "WV",
+  "w": "Gov. Morrisey",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "tax"
+  ],
+  "t": "West Virginia certifies its first high-impact data center, Penzance's $4 billion Berkeley campus",
+  "b": "The Bedington campus cleared the 90 MW threshold and is the first certified under the 2025 law that strips local zoning control and sends most new property tax revenue to the state.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/west-virginia/"
+   ],
+   [
+    "Commercial Builders registry",
+    "https://commercialbuildersandcontractors.com/data-center-construction-projects/"
+   ]
+  ],
+  "im": 1,
+  "iw": "First state certification",
+  "pl": [
+   [
+    "Berkeley County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-02",
+  "j": "NC",
+  "w": "Kings Mountain City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Kings Mountain pauses data centers after a second proposal, then extends a year",
+  "b": "The 182-day pause passed 5–2 in February; on Aug. 25 the council extended it into late August 2027.",
+  "s": [
+   [
+    "Savrn tracker",
+    "https://savrn.com/data-center-moratorium-tracker/north-carolina"
+   ]
+  ],
+  "im": -1,
+  "iw": "Extended city pause",
+  "pl": [
+   [
+    "Kings Mountain",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-01-08",
+  "j": "MS",
+  "w": "Gov. Tate Reeves",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax"
+  ],
+  "t": "Mississippi waives taxes for xAI's $20 billion Southaven data center",
+  "b": "Reeves called it the largest economic development project in state history. The state waives sales, corporate income and franchise taxes, and Southaven and DeSoto County offer fee-in-lieu deals.",
+  "s": [
+   [
+    "Governor's office",
+    "https://governorreeves.ms.gov/tech-leader-xai-investing-more-than-20-billion-in-southaven/"
+   ],
+   [
+    "Associated Press (Yahoo)",
+    "https://finance.yahoo.com/news/elon-musks-xai-build-20-230542629.html"
+   ]
+  ],
+  "im": 1,
+  "iw": "Sweeping tax breaks",
+  "pl": [
+   [
+    "Southaven",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-01",
+  "j": "FL",
+  "w": "Bay County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Bay County pauses data centers through January 2027",
+  "b": "The moratorium was among the first in a Florida wave that later reached more than a dozen counties.",
+  "s": [
+   [
+    "Savrn tracker",
+    "https://savrn.com/data-center-moratorium-tracker/florida"
+   ]
+  ],
+  "im": -1,
+  "iw": "County pause",
+  "pl": [
+   [
+    "Bay County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026",
+  "j": "TN",
+  "w": "Bradley County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Bradley County limits data centers to special-impact zones with 3,000-foot buffers",
+  "b": "The unanimous rules also cap property-line noise at 60 decibels; the only such zone at the time was a landfill.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/tennessee/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Effective ban outside one site",
+  "pl": [
+   [
+    "Bradley County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-12-23",
+  "j": "MD",
+  "w": "Frederick County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Frederick County draws a larger data center zone than its planners advised",
+  "b": "The council's map adds land around Quantum Frederick and the former Eastalco smelter, against a planning commission call to limit it to approved acreage. Residents launched a referendum petition.",
+  "s": [
+   [
+    "WYPR",
+    "https://www.wypr.org/wypr-news/2025-12-24/frederick-county-council-passes-map-for-data-center-development"
+   ],
+   [
+    "Sugarloaf Alliance",
+    "https://www.sugarloaf-alliance.com/content/2026-01-14-overturn-the-overlay-zone-vote"
+   ]
+  ],
+  "im": 1,
+  "iw": "More land for data centers",
+  "pl": [
+   [
+    "Frederick County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-12",
+  "j": "NC",
+  "w": "Gates County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Gates County adopts a data center moratorium",
+  "b": "It came as a wave of local pauses built across North Carolina; more than 20 jurisdictions had pauses or bans by April 2026.",
+  "s": [
+   [
+    "GPU Lease Index tracker",
+    "https://gpuleaseindex.com/readiness/nc-data-center-moratoriums"
+   ]
+  ],
+  "im": -1,
+  "iw": "County pause",
+  "pl": [
+   [
+    "Gates County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-11-20",
+  "j": "GA",
+  "w": "Georgia Department of Community Affairs",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "disclosure"
+  ],
+  "t": "Georgia requires regional impact reviews for large data centers",
+  "b": "Since November 2025, big data center proposals must go through a state Development of Regional Impact review with a public comment period.",
+  "s": [
+   [
+    "Nearby Data Centers",
+    "https://nearbydatacenters.org/ga/"
+   ]
+  ],
+  "im": -1,
+  "iw": "More review for big projects",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-11-04",
+  "j": "VA",
+  "w": "Abigail Spanberger (D)",
+  "lv": "state",
+  "k": "politics",
+  "st": "campaign",
+  "ty": [
+   "cost"
+  ],
+  "t": "Spanberger wins Virginia's governorship promising data centers will pay their fair share",
+  "b": "She won 57–43 as Democrats took full control of state government, after a campaign in which rising power bills and data center growth were central themes.",
+  "s": [
+   [
+    "Technical.ly",
+    "https://technical.ly/civics/spanberger-data-center-regulation-virginia/"
+   ],
+   [
+    "E&E News",
+    "https://www.eenews.net/articles/with-data-center-fights-tearing-apart-towns-virginians-cast-ballots/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Tougher stance expected",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-10-21",
+  "j": "KY",
+  "w": "Franklin residents",
+  "lv": "local",
+  "k": "politics",
+  "st": "protest",
+  "ty": [
+   "siting"
+  ],
+  "t": "Franklin residents protest a proposed AI data center at a planning meeting",
+  "b": "The fight over TenKey's plan for three 200,000 sq ft buildings with on-site gas power has since moved to court.",
+  "s": [
+   [
+    "WKYU",
+    "https://www.wkyufm.org/news/2026-05-11/a-data-center-insider-wants-to-halt-their-construction-in-kentucky"
+   ]
+  ],
+  "im": -1,
+  "iw": "Organized opposition",
+  "pl": [
+   [
+    "Franklin",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-10-07",
+  "j": "NC",
+  "w": "Matthews developers",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Developers withdraw the Project Accelerate data center in Matthews",
+  "b": "The five-building plan on 123 acres along East John Street drew fierce opposition over power use, taxes and noise before a scheduled Oct. 13 vote.",
+  "s": [
+   [
+    "WCNC",
+    "https://www.wcnc.com/article/news/local/matthews/matthews-nc-data-center-proposal-withdrawn-10-7-2025/275-f6ae7992-f0aa-4173-8c3c-010922f050bc"
+   ],
+   [
+    "Baxtel",
+    "https://baxtel.com/data-center/project-accelerate"
+   ]
+  ],
+  "im": -1,
+  "iw": "Project withdrawn",
+  "pl": [
+   [
+    "Matthews",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-10",
+  "j": "VA",
+  "w": "Winsome Earle-Sears (R)",
+  "lv": "state",
+  "k": "politics",
+  "st": "statement",
+  "ty": [
+   "cost"
+  ],
+  "t": "Earle-Sears says data centers are here to stay, blaming clean energy rules for bills",
+  "b": "The Republican nominee for governor backed Youngkin's push for more data centers and an all-of-the-above energy policy, while Spanberger said developers must pay their fair share.",
+  "s": [
+   [
+    "Semafor",
+    "https://www.semafor.com/article/10/13/2025/as-electricity-bills-rise-candidates-in-both-parties-blame-data-centers"
+   ],
+   [
+    "VPM",
+    "https://www.vpm.org/elections/2025-10-28/election-2025-data-centers-earle-sears-spanberger-dominion-clean-virginia"
+   ]
+  ],
+  "im": 1,
+  "iw": "Pro-growth stance",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-09-02",
+  "j": "MD",
+  "w": "Frederick County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Frederick County confines data centers to a special overlay zone, 5–2",
+  "b": "Data centers and their substations may only be built where the overlay is applied, after a June law cut eligible land from about 5,000 acres to 4,200.",
+  "s": [
+   [
+    "GovTech (Frederick News-Post)",
+    "https://www.govtech.com/products/frederick-county-md-to-create-special-data-center-zone"
+   ],
+   [
+    "WYPR",
+    "https://www.wypr.org/wypr-news/2025-10-23/frederick-county-planning-commission-wants-limits-data-center-development"
+   ]
+  ],
+  "im": -1,
+  "iw": "Data centers confined to one zone",
+  "pl": [
+   [
+    "Frederick County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-08-19",
+  "j": "MS",
+  "w": "Mississippi Development Authority",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax"
+  ],
+  "t": "Mississippi grants tax breaks for AVAIO's $6 billion Brandon campus",
+  "b": "MDA approved the data center tax exemption, and Rankin County and Brandon are adding infrastructure upgrades and local incentives for the 175-acre Taurus site.",
+  "s": [
+   [
+    "AVAIO Digital",
+    "https://www.avaiodigital.com/updates/avaio-digital-to-build-new-ai-ready-6-billion-data-center-hub-in-brandon-mississippi"
+   ],
+   [
+    "The Mississippi Independent",
+    "https://msindy.org/p/mississippis-data-center-boom-and"
+   ]
+  ],
+  "im": 1,
+  "iw": "State and local incentives",
+  "pl": [
+   [
+    "Brandon",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-08-13",
+  "j": "NC",
+  "w": "Tract",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Tract drops its $30 billion Mooresville data center after community backlash",
+  "b": "The plan for land owned by Dale Earnhardt's widow drew opposition over water and power use; the mayor said no other data center requests were active.",
+  "s": [
+   [
+    "NBC News",
+    "https://www.nbcnews.com/news/us-news/dale-earnhardt-widow-data-center-backs-off-mooresville-north-carolina-rcna224827"
+   ]
+  ],
+  "im": -2,
+  "iw": "Project withdrawn",
+  "pl": [
+   [
+    "Mooresville",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-08-07",
+  "j": "VA",
+  "w": "Prince William Circuit Court",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Judge voids the Prince William Digital Gateway rezoning",
+  "b": "Judge Kimberly Irving ruled the county's notices for the December 2023 hearings broke state and county law, halting the 2,100-acre, 37-building corridor. An appeals court later barred construction during the appeal.",
+  "s": [
+   [
+    "WTOP",
+    "https://wtop.com/prince-william-county/2025/08/judge-voids-digital-gateway-rezoning-in-prince-william-county/"
+   ],
+   [
+    "Northern Virginia Magazine",
+    "https://northernvirginiamag.com/news/2025/08/11/judge-blocks-prince-william-digital-gateway-data-center-project/"
+   ],
+   [
+    "WTOP (Nov. 2025)",
+    "https://wtop.com/prince-william-county/2025/11/digital-gateway-data-center-builders-barred-from-beginning-construction-until-legal-challenge-plays-out/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Largest proposed corridor halted",
+  "pl": [
+   [
+    "Prince William County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-08-05",
+  "j": "GA",
+  "w": "Monroe County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Monroe County rejects a 900-acre data center campus near Bolingbroke",
+  "b": "The unanimous vote followed a planning board recommendation to deny the 1.1 GW proposal after hundreds of residents in red shirts turned out.",
+  "s": [
+   [
+    "GovTech (Macon Telegraph)",
+    "https://www.govtech.com/products/monroe-county-ga-officials-shoot-down-new-data-center"
+   ],
+   [
+    "GPB",
+    "https://www.gpb.org/news/2025/07/29/monroe-county-data-center-loses-zoning-vote-in-face-of-community-opposition"
+   ]
+  ],
+  "im": -2,
+  "iw": "Project rejected",
+  "pl": [
+   [
+    "Monroe County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-06-18",
+  "j": "VA",
+  "w": "Fauquier County Planning Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Fauquier planners recommend denying the Gigaland campus near Remington, 4–1",
+  "b": "The seven-building, 2.2 million sq ft plan was later withdrawn twice, most recently in August 2026, and two other Remington-area data center applications were pulled within a month.",
+  "s": [
+   [
+    "Piedmont Environmental Council",
+    "https://www.pecva.org/region/fauquier/planning-commission-recommends-denial-of-gigaland-data-center-project-in-remington-but-it-could-still-get-approved/"
+   ],
+   [
+    "InsideNoVa",
+    "https://www.insidenova.com/news/business/convergent-data-center-application-in-fauquier-pulled-in-favor-of-residential-development/article_00158de0-b82e-4051-b2e1-f3c5f1ab6055.html"
+   ],
+   [
+    "FauquierNow",
+    "https://www.fauquiernow.com/news/applicants-including-supervisor-daron-culbertson-pull-data-center-rezoning-proposal-60f7c5a0"
+   ]
+  ],
+  "im": -1,
+  "iw": "Proposals withdrawn",
+  "pl": [
+   [
+    "Fauquier County",
+    "county"
+   ],
+   [
+    "Remington",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-06-04",
+  "j": "NC",
+  "w": "Richmond County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax",
+   "disclosure"
+  ],
+  "t": "Richmond County approves secret tax breaks for Amazon's $10 billion campus",
+  "b": "Commissioners rezoned and sold county land and approved 20-year property tax breaks for the unnamed Project Blue Marlin without disclosing it was a data center until Amazon was announced.",
+  "s": [
+   [
+    "NC Newsline",
+    "https://ncnewsline.com/2026/08/06/inside-the-secretive-deal-for-a-10-billion-data-center-in-rural-north-carolina/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Generous incentives, little disclosure",
+  "pl": [
+   [
+    "Richmond County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-06",
+  "j": "SC",
+  "w": "York County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "York County raises height limits for QTS's $8 billion data center campus",
+  "b": "QTS said lower-water cooling systems needed taller buildings. The change followed a 2023 fee-in-lieu deal at a reduced 4% assessment with extra credits over 40 years.",
+  "s": [
+   [
+    "York County",
+    "https://www.yorkcountysc.gov/1313/Data-Centers"
+   ],
+   [
+    "SC Daily Gazette",
+    "https://scdailygazette.com/2026/03/10/data-center-proposals-on-the-decline-according-to-sc-utility-companies/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Accommodates a hyperscale campus",
+  "pl": [
+   [
+    "York County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-06",
+  "j": "FL",
+  "w": "Fort Meade City Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "tax"
+  ],
+  "t": "Fort Meade rezones 1,164 acres for data centers with a $150 million tax break",
+  "b": "The June 2025 approvals for Stonebridge's campus on former phosphate land include a 10-year tax break tied to more than $2.6 billion in planned investment.",
+  "s": [
+   [
+    "Central FL Business News",
+    "https://centralflbusinessnews.com/florida-website-marketing/central-fl-fort-meade-lands-2-6-billion-data-center/"
+   ],
+   [
+    "Propmodo",
+    "https://propmodo.com/florida-data-center-plan-advances-amid-local-backlash/"
+   ],
+   [
+    "Florida Data Centers",
+    "https://floridadatacenters.org/polk-county"
+   ]
+  ],
+  "im": 1,
+  "iw": "Rezoning and tax break",
+  "pl": [
+   [
+    "Fort Meade",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-05-13",
+  "j": "GA",
+  "w": "Atlas Development",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Atlas withdraws its Bartow County data center campus after planners recommend denial",
+  "b": "The withdrawal came the day before the county's sole commissioner was to rule; the planning commission had voted 6–1 against it in April.",
+  "s": [
+   [
+    "Sue Data Centers (cancelled projects)",
+    "https://suedatacenters.org/data-centers/cancelled"
+   ]
+  ],
+  "im": -1,
+  "iw": "Project withdrawn",
+  "pl": [
+   [
+    "Bartow County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-04-15",
+  "j": "VA",
+  "w": "Pittsylvania County Board of Supervisors",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Pittsylvania rejects Balico's gas-powered data center campus, 6–1",
+  "b": "The board first refused Balico's request to withdraw, so the developer cannot refile a similar plan for a year. The original proposal paired 84 data centers with a 3,500 MW gas plant.",
+  "s": [
+   [
+    "Cardinal News",
+    "https://cardinalnews.org/2025/04/16/pittsylvania-rejects-data-center-project-that-has-dominated-county-conversation-for-6-months/"
+   ],
+   [
+    "SELC",
+    "https://www.selc.org/press-release/pittsylvania-board-of-supervisors-denies-balico-rezoning-application/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Project rejected",
+  "pl": [
+   [
+    "Pittsylvania County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-03-29",
+  "j": "MS",
+  "w": "Mississippi Legislature",
+  "lv": "state",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "tax",
+   "cost"
+  ],
+  "t": "Bills to rewrite Mississippi's data center tax rules and power contracts die",
+  "b": "HB 1239 died in conference and SB 3168 in committee; HB 1184, which would have allowed special large-customer power contracts, also died.",
+  "s": [
+   [
+    "Nearby Data Centers",
+    "https://nearbydatacenters.org/ms/"
+   ],
+   [
+    "Data Center Record",
+    "https://datacenterrecord.org/states/ms"
+   ]
+  ],
+  "im": 0,
+  "iw": "Rules unchanged",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-03",
+  "j": "SC",
+  "w": "Spartanburg County Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax"
+  ],
+  "t": "Spartanburg County backs incentives for the $2.8 billion Valara data center",
+  "b": "County records list about 27 expected but not required jobs. The site later sought to expand on-site gas generation from about 50 MW to 450 MW, prompting state and court challenges.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/south-carolina/"
+   ],
+   [
+    "Post and Courier",
+    "https://www.postandcourier.com/spartanburg/news/spartanburg-county-council-data-center-moratorium-northmark/article_ac402d07-de2f-4e55-9d28-b4dbcdb570e0.html"
+   ]
+  ],
+  "im": 1,
+  "iw": "Tax incentive approved",
+  "pl": [
+   [
+    "Spartanburg County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025-03",
+  "j": "WV",
+  "w": "Berkeley County Planning Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Berkeley County planners approve a concept plan for two data center buildings",
+  "b": "The project spans Berkeley and Jefferson counties; the March approval covered the Berkeley portion.",
+  "s": [
+   [
+    "Mountain State Spotlight",
+    "https://mountainstatespotlight.org/2025/07/17/west-virginia-data-centers-explained/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Early approval",
+  "pl": [
+   [
+    "Berkeley County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025",
+  "j": "MD",
+  "w": "Maryland Department of the Environment",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "permitting"
+  ],
+  "t": "Maryland approves 172 diesel backup generators for Aligned's Frederick campus",
+  "b": "The approval came after the 2024 streamlining law exempted backup generators from the state's power plant certificate, the requirement that had earlier stalled the project.",
+  "s": [
+   [
+    "Nature Forward",
+    "https://natureforward.org/quantum-frederick-frederick-county-md-maryland-data-center-series-pt-3/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Backup power approved",
+  "pl": [
+   [
+    "Frederick County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025",
+  "j": "GA",
+  "w": "Twiggs County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Twiggs County rezones land for a data center despite opposition",
+  "b": "Residents have sued, alleging the county broke its own rules in approving the rezoning.",
+  "s": [
+   [
+    "GPB",
+    "https://www.gpb.org/news/2025/10/14/google-drops-42-million-on-monroe-county-land-for-data-center-what-we-know"
+   ]
+  ],
+  "im": 1,
+  "iw": "Rezoning approved",
+  "pl": [
+   [
+    "Twiggs County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2025",
+  "j": "WV",
+  "w": "West Virginia DEP",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "permitting"
+  ],
+  "t": "West Virginia approves air permits for the Adams Fork data center power plants",
+  "b": "TransGas plans off-grid gas plants and an ammonia plant in Mingo County to power data centers; residents later sued in federal court.",
+  "s": [
+   [
+    "Sierra Club West Virginia",
+    "https://www.sierraclub.org/west-virginia/blog/2026/06/data-centers-mountain-state-dividing-spoils"
+   ],
+   [
+    "Mountain State Spotlight",
+    "https://mountainstatespotlight.org/2025/07/17/west-virginia-data-centers-explained/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Power plants permitted",
+  "pl": [
+   [
+    "Mingo County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2024-09",
+  "j": "VA",
+  "w": "Fairfax County Board of Supervisors",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Fairfax County tightens data center zoning with setbacks and Metro buffers",
+  "b": "The September 2024 amendments require fully enclosed equipment, 200-foot setbacks from homes and a one-mile buffer from Metrorail stations. Only applications complete before July 16, 2024, were grandfathered.",
+  "s": [
+   [
+    "Bean, Kinney & Korman",
+    "https://www.beankinney.com/data-center-infrastructure-under-siege-lessons-from-virginias-digital-gateway-decision/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Tighter rules in a core market",
+  "pl": [
+   [
+    "Fairfax County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 22"
+ },
+ {
   "d": "2026-11-03",
   "j": "CO",
   "w": "Littleton City Council",
