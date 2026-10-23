@@ -27975,5 +27975,555 @@
   ],
   "auto": false,
   "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-03-25",
+  "j": "OK",
+  "w": "Tulsa City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Tulsa pauses new data center approvals through the end of 2026",
+  "b": "The unanimous pause runs about nine months, cut from a proposed year, with planning office updates every 60 days. Both phases of Project Anthem in east Tulsa, the first a Meta campus, are exempt.",
+  "s": [
+   [
+    "Tulsa Flyer",
+    "https://tulsaflyer.org/2026/03/25/government/post/tulsa-will-pause-new-data-center-construction-for-9-months-after-council-vote/"
+   ],
+   [
+    "KJRH",
+    "https://www.kjrh.com/news/local-news/in-depth-data-center-proposals-across-green-country"
+   ]
+  ],
+  "im": -1,
+  "iw": "City pause with project exemptions",
+  "pl": [
+   [
+    "Tulsa",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-03-30",
+  "j": "OK",
+  "w": "Beale Infrastructure",
+  "lv": "local",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Beale withdraws Project Atlas in Coweta, Oklahoma",
+  "b": "The developer pulled its rezoning for the 270-acre, four-phase campus after planners voted 4–1 in January to recommend denial and residents spent months pressing city leaders. It gave no reason.",
+  "s": [
+   [
+    "Tulsa Flyer",
+    "https://tulsaflyer.org/2026/03/30/news/post/developer-pulls-out-of-project-atlas-data-center/"
+   ],
+   [
+    "KRMG",
+    "https://krmg.com/2026/03/31/beale-infrastructure-pulls-application-for-project-atlas-in-coweta/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Project withdrawn",
+  "pl": [
+   [
+    "Coweta",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-04-21",
+  "j": "OK",
+  "w": "Oklahoma City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Oklahoma City pauses data center rezonings and permits through 2026",
+  "b": "The unanimous emergency ordinance ends sooner if zoning rules pass and includes an appeal process. Two pending rezonings are exempt.",
+  "s": [
+   [
+    "City of Oklahoma City",
+    "https://www.okc.gov/News-articles/Oklahoma-City-Council-approves-moratorium-on-new-data-centers"
+   ],
+   [
+    "KGOU",
+    "https://www.kgou.org/politics-and-government/2026-04-22/oklahoma-city-leaders-approve-data-center-moratorium"
+   ]
+  ],
+  "im": -1,
+  "iw": "City pause",
+  "pl": [
+   [
+    "Oklahoma City",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-05-19",
+  "j": "OK",
+  "w": "Oklahoma City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Oklahoma City narrows its pause to data centers above 75 MW",
+  "b": "The 7–2 amendment came after data center workers packed City Hall. It also exempts two named projects, which two councilors said raised questions of favoritism.",
+  "s": [
+   [
+    "Oklahoma City Free Press",
+    "https://freepressokc.com/city-councils-data-center-exemptions-raise-questions-of-favoritism/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Smaller projects can apply again",
+  "pl": [
+   [
+    "Oklahoma City",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-05-14",
+  "j": "OK",
+  "w": "Oklahoma Legislature",
+  "lv": "state",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Oklahoma's proposed statewide data center moratorium dies without a vote",
+  "b": "Sen. Kendal Sacchieri's SB 1488 would have paused data centers of 100 MW or more until Nov. 2029 while the Corporation Commission studied water, rates and siting. It never got a committee vote; she has since sought an interim study.",
+  "s": [
+   [
+    "Oklahoma Senate",
+    "https://oksenate.gov/press-releases/senator-sacchieri-files-legislation-address-unknown-impacts-data-centers-oklahoma"
+   ],
+   [
+    "Oklahoma Energy Today",
+    "https://okenergytoday.com/2026/07/data-centers-to-face-studies-in-oklahoma-legislature/"
+   ]
+  ],
+  "im": 0,
+  "iw": "Bill failed",
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-07-20",
+  "j": "TX",
+  "w": "El Paso City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "water",
+   "tax"
+  ],
+  "t": "El Paso requires council approval and 300-foot buffers for big data centers",
+  "b": "The unanimous framework requires a special permit for hyperscale centers, 300 feet from homes, schools and parks, plus water and energy plans. In May the city stopped offering incentives. Meta's campus under construction is unaffected.",
+  "s": [
+   [
+    "El Paso Matters",
+    "https://elpasomatters.org/2026/07/20/meta-data-center-el-paso-texas-policy-framework-rules-city-council/"
+   ],
+   [
+    "City of El Paso",
+    "https://www.elpasotexas.gov/assets/Press-Releases/2026.07.20-NEWS-RELEASE_City-Adopts-Data-Center-Policy-Framework.docx.pdf"
+   ]
+  ],
+  "im": -1,
+  "iw": "Special permit and buffers",
+  "pl": [
+   [
+    "El Paso",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-29",
+  "j": "TX",
+  "w": "San Antonio City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "siting"
+  ],
+  "t": "San Antonio votes Oct. 29 on data center zoning, not a pause",
+  "b": "Only four council members backed a 90-to-180-day moratorium in August. The rules would limit data centers to industrial or heavy commercial zones, keep them 500 feet from homes and require council authorization.",
+  "s": [
+   [
+    "San Antonio Current",
+    "https://www.sacurrent.com/news/san-antonio-news/san-antonio-city-council-debates-data-center-moratorium-stricter-development-rules/"
+   ],
+   [
+    "KSAT",
+    "https://www.ksat.com/news/local/2026/10/19/dist-6-councilman-encouraging-public-input-on-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "New siting limits",
+  "pl": [
+   [
+    "San Antonio",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-11-04",
+  "j": "TX",
+  "w": "Brownsville City Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Brownsville's 90-day data center moratorium faces a final vote Nov. 4",
+  "b": "Commissioners unanimously passed a first reading Oct. 7 after three hearings state law requires. The pause would cover the city and its extraterritorial jurisdiction and could be extended once while a task force studies data centers.",
+  "s": [
+   [
+    "MyRGV",
+    "https://myrgv.com/local-news/2026/10/08/brownsville-data-center-moratorium-passes-first-vote/"
+   ],
+   [
+    "Texas Border Business",
+    "https://texasborderbusiness.com/brownsville-city-commissions-second-public-hearing-regarding-data-center-moratorium/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Proposed city pause",
+  "pl": [
+   [
+    "Brownsville",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-15",
+  "j": "HI",
+  "w": "Hawaii County planning commissions",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "siting"
+  ],
+  "t": "Hawaii County planning commissions split on the Bill 170 data center ban",
+  "b": "Windward planners voted 5–1 against it as too vague; Leeward planners unanimously backed it and suggested a moratorium. The bill returns to the County Council. No data center has applied.",
+  "s": [
+   [
+    "West Hawaii Today",
+    "https://www.westhawaiitoday.com/2026/10/16/top-news/leeward-planning-commission-oks-bill-aimed-at-banning-data-centers/"
+   ],
+   [
+    "Honolulu Star-Advertiser",
+    "https://www.staradvertiser.com/2026/10/03/hawaii-news/hawaii-county-considers-curbing-ai-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Island-wide ban advancing",
+  "pl": [
+   [
+    "Hawaii County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-09",
+  "j": "HI",
+  "w": "Hawaii State Energy Office",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "cost",
+   "water"
+  ],
+  "t": "Hawaii's energy office begins a working group on data centers",
+  "b": "It follows legislative resolutions on data center costs and reports to lawmakers in 2027. The state energy officer says Hawaii lacks the bandwidth and cheap power developers want.",
+  "s": [
+   [
+    "Honolulu Civil Beat",
+    "https://www.civilbeat.org/2026/10/big-island-wants-to-ban-big-data-centers-once-they-agree-on-what-they-are/"
+   ],
+   [
+    "Hawaii Legislature: HCR 206",
+    "https://data.capitol.hawaii.gov/sessions/session2026/bills/HCR206_HD1_.pdf"
+   ]
+  ],
+  "im": 0,
+  "iw": "Study only",
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-03-03",
+  "j": "VT",
+  "w": "Royalton voters",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Royalton voters ban AI and crypto data centers for five years",
+  "b": "Approved on Town Meeting Day, making Royalton the first Vermont town to block data centers.",
+  "s": [
+   [
+    "Seven Days",
+    "https://www.sevendaysvt.com/news/constructiondevelopment/absent-state-action-vermont-towns-move-to-block-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Five-year town ban",
+  "pl": [
+   [
+    "Royalton",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08-31",
+  "j": "VT",
+  "w": "Morristown Select Board",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Morristown, Vermont, adopts a two-year interim ban on data centers",
+  "b": "The unanimous interim bylaw covers data centers and other high-impact uses while planners write permanent rules. No project has been proposed. It's the third Vermont town to act since the governor's veto of statewide rules.",
+  "s": [
+   [
+    "Seven Days",
+    "https://www.sevendaysvt.com/news/constructiondevelopment/absent-state-action-vermont-towns-move-to-block-data-centers/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Two-year town pause",
+  "pl": [
+   [
+    "Morristown",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-02",
+  "j": "VT",
+  "w": "Vermont Public poll",
+  "lv": "state",
+  "k": "politics",
+  "st": "poll",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "About two-thirds of Vermonters back a statewide ban on large data centers",
+  "b": "The Vermont Public poll comes after Gov. Phil Scott vetoed a bill to regulate large data centers, saying existing rules are enough.",
+  "s": [
+   [
+    "Vermont Public",
+    "https://www.vermontpublic.org/local-news/2026-10-02/roughly-two-thirds-vermonters-support-statewide-ban-large-data-centers-poll"
+   ]
+  ],
+  "im": 0,
+  "iw": "Poll",
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-03",
+  "j": "AK",
+  "w": "Anchorage Assembly",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "cost"
+  ],
+  "t": "Anchorage adds data centers to its zoning code, 10–2",
+  "b": "No large data center has been proposed. Projects now face public review and must show utilities can supply the power.",
+  "s": [
+   [
+    "Anchorage Daily News",
+    "https://www.adn.com/alaska-news/anchorage/2026/03/27/anchorage-assembly-preemptively-adopts-data-center-regulations/"
+   ]
+  ],
+  "im": -1,
+  "iw": "New review step",
+  "pl": [
+   [
+    "Anchorage",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-03-17",
+  "j": "AK",
+  "w": "Mat-Su Borough Assembly",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Mat-Su Assembly overrides a veto to court a data center developer",
+  "b": "The 6–1 vote sets a two-year partnership with Terra Energy Center to find a large power user for borough land near Port MacKenzie or Big Lake, an anchor customer for a proposed coal plant.",
+  "s": [
+   [
+    "Alaska Public Media",
+    "https://alaskapublic.org/news/environment/2026-03-19/assembly-overrides-veto-advances-data-center-related-partnership"
+   ]
+  ],
+  "im": 1,
+  "iw": "Borough courting projects",
+  "pl": [
+   [
+    "Matanuska-Susitna Borough",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-09-09",
+  "j": "AK",
+  "w": "Alaska Senate Resources Committee",
+  "lv": "state",
+  "k": "politics",
+  "st": "statement",
+  "ty": [
+   "siting"
+  ],
+  "t": "Senators question a 20,000-acre land transfer for possible Mat-Su data centers",
+  "b": "Five committee members said the state's plan to give the land to AIDEA is too vague to judge, and a legislative attorney flagged legal issues. Chair Cathy Giessel backs a moratorium until lawmakers set rules.",
+  "s": [
+   [
+    "Alaska Beacon",
+    "https://alaskabeacon.com/2026/09/16/alaska-senators-question-legality-of-state-land-transfer-for-possible-mat-su-data-centers/"
+   ],
+   [
+    "Anchorage Daily News",
+    "https://www.adn.com/politics/alaska-legislature/2026/09/15/lawmakers-raise-legal-concerns-over-mat-su-industrial-park-and-proposed-land-transfer/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Could stall a state-backed site",
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08-24",
+  "j": "NC",
+  "w": "Davidson County Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Davidson County deadlocks 3–3 on a data center pause",
+  "b": "The six-month moratorium failed on a tie after a public hearing. The county currently treats data centers as warehouses and has had inquiries but no formal applications.",
+  "s": [
+   [
+    "Davidson Local",
+    "https://www.davidsonlocal.com/news/4x8dnij67jq81i6aguer6ip6jfa3h8"
+   ],
+   [
+    "WUNC",
+    "https://www.wunc.org/2026-09-29/davidson-commissioners-remain-divided-on-data-centers-but-will-revisit-potential-moratorium"
+   ]
+  ],
+  "im": 0,
+  "iw": "Pause rejected",
+  "pl": [
+   [
+    "Davidson County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-26",
+  "j": "NC",
+  "w": "Davidson County Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Davidson County holds a hearing on a four-month data center pause",
+  "b": "Commissioners voted 4–2 on Sept. 28 to bring back a shorter moratorium. The chair opposed it, saying projects would move to neighboring counties.",
+  "s": [
+   [
+    "WUNC",
+    "https://www.wunc.org/2026-09-29/davidson-commissioners-remain-divided-on-data-centers-but-will-revisit-potential-moratorium"
+   ],
+   [
+    "The Dispatch via Yahoo",
+    "https://www.yahoo.com/news/us/articles/davidson-county-votes-hold-public-174456594.html"
+   ]
+  ],
+  "im": -1,
+  "iw": "Proposed county pause",
+  "pl": [
+   [
+    "Davidson County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
  }
 ]
