@@ -295,7 +295,7 @@ footer p{max-width:90ch;margin-bottom:6px}
       <span><i class="sw local"></i>Local and ballot fights</span>
       <span><i class="sw none"></i>Not tracked yet</span>
     </div>
-    <p class="map-note">Each state is colored by its strongest action. A state with a binding cost law and a failed moratorium bill shows as binding. Small numbers count the entries logged for that state.<span id="local-counts"></span></p>
+    <p class="map-note">Each state is colored by its strongest action. A state with a binding cost law and a failed moratorium bill shows as binding. Small numbers count the entries logged for that state.</p>
   </div>
   <aside class="panel" id="panel" aria-live="polite"></aside>
 </section>
@@ -1081,7 +1081,7 @@ const PLX={
 "7–0 vote halts new data centers through Jan 31, 2028":[["Anne Arundel County","county"]],
 "One-year moratorium on large data centers":[["Baltimore City","city"]],
 "Protests erupt as Memphis council delays its moratorium vote":[["Memphis","city"]],
-"First Texas city to exclude data centers from every zoning district":[["San Marcos","city"],["Hill County","county"]],
+"First Texas city to exclude data centers from every zoning district":[["San Marcos","city"]],
 "Court sets aside county moratorium":[["Imperial County","county"]],
 "120-day pause in unincorporated areas":[["Pima County","county"]],
 "Nine-month moratorium":[["Camden County","county"]],
@@ -1476,6 +1476,7 @@ function renderPanel(){
         <div><b>${inForcePauses}</b><small>logged pauses in force at any level</small></div>
         <div><b>${new Set(E.flatMap(e=>(e.pl||[]).map(([n])=>e.j+"|"+n))).size}</b><small>counties, cities, townships and tribal nations logged</small></div>
         <div><b>${E.filter(isUp).length}</b><small>scheduled votes and deadlines still ahead</small></div>
+        ${(()=>{const t=localTally(localStatus());return `<div><b>${t.ban.all}</b><small>counties, cities and towns logged with a data center ban</small></div><div><b>${t.pause.all}</b><small>more logged with a moratorium or pause</small></div>`;})()}
       </div>
       <p style="font-size:15px">Select a state on the map to see its story and filter the list.</p>`;
     return;
@@ -1486,6 +1487,10 @@ function renderPanel(){
     <div class="status-line"><i class="sw ${s}" style="vertical-align:-2px;margin-right:6px"></i>${esc(SLABEL[s])}</div>
     <p>${info?esc(info.t):"Nothing logged here yet. That may mean quiet, or that this tracker hasn't caught up. Check the other trackers tab for local coverage."}</p>
     <p style="font-size:15px">${n?`${n} ${n===1?"entry":"entries"} below, plus federal actions that apply everywhere.`:""}</p>
+    ${(()=>{const list=localStatus().filter(p=>p.j===ab);if(!list.length)return "";const t=localTally(list);
+      const part=x=>[x.county?plural(x.county,"county","counties"):"",x.other?plural(x.other,"city or town","cities and towns"):""].filter(Boolean).join(" and ")||"None logged";
+      return `<div class="tally local-tally"><div><b>${t.ban.all}</b><small>with a data center ban: ${part(t.ban)}</small></div><div><b>${t.pause.all}</b><small>with a moratorium or pause: ${part(t.pause)}</small></div></div>
+      <p style="font-size:14px;color:var(--ink-3);margin-top:8px">Counts places logged here; some pauses may have expired since, and more towns may have acted. Pick a place below to see its entries.</p>`;})()}
     ${(()=>{const sc=E.filter(e=>e.j===ab&&typeof e.im==="number");if(!sc.length)return "";
       const avg=sc.reduce((t,e)=>t+e.im,0)/sc.length, r=Math.max(-2,Math.min(2,Math.round(avg)));
       const nh=sc.filter(e=>e.im<0).length, nt=sc.filter(e=>e.im>0).length;
@@ -1553,22 +1558,32 @@ function renderEntries(){
   const head=(t,n,sub)=>`<li class="group-h" role="presentation">${t}<small>${n} ${n===1?"item":"items"}${sub?" · "+sub:""}</small></li>`;
   ul.innerHTML=(up.length?head("Coming up",up.length,"scheduled votes and deadlines, soonest first")+up.map(row).join("")+(past.length?head("What has happened",past.length,"newest first"):""):"")+past.map(row).join("");
 }
-// Counties, cities, townships and tribal nations with a local pause or ban, from tagged places
-function paintLocalCounts(){
-  const isBan=e=>e.st==="in-force"&&/\b(bans?|banned|bars|prohibits?|excludes?)\b/i.test(e.t)&&!/groundwater|cooling|residential|overlay|agricultural|beltline/i.test(e.t);
-  const paused=new Set(),banned=new Set();
-  E.filter(e=>(e.lv==="local"||e.lv==="tribal")&&e.k==="action").forEach(e=>(e.pl||[]).forEach(([n])=>{const k=e.j+"|"+n;if(isBan(e))banned.add(k);else if(e.st==="pause")paused.add(k);}));
-  [...banned].forEach(k=>paused.delete(k));
-  const el=$("#local-counts"); if(!el) return;
-  el.textContent=` Locally, ${banned.size.toLocaleString()} counties, cities, townships and tribal nations logged here ban data centers outright or nearly so, and ${paused.size.toLocaleString()} more have adopted pauses. Other trackers count more, since many towns are logged as a group; New Jersey alone has passed over 100 bans.`;
+// Current local status of each tagged place (county, city, township, tribal nation).
+// Walks each place's official actions by date: a ban or a pause sets its status,
+// and a later failed, rescinded or replaced-by-rules action clears a pause. Other entries leave it unchanged.
+const isBanEntry=e=>e.st==="in-force"&&/\b(bans?|banned|bars|prohibits?|excludes?)\b/i.test(e.t)&&!/groundwater|cooling|residential|overlay|agricultural|beltline/i.test(e.t);
+function localStatus(){
+  const m={};
+  E.filter(e=>(e.lv==="local"||e.lv==="tribal")&&e.k==="action"&&(e.pl||[]).length)
+   .sort((a,b)=>key(a.d).localeCompare(key(b.d)))
+   .forEach(e=>e.pl.forEach(([n,t])=>{const k=e.j+"|"+n, cur=m[k]||(m[k]={n,t,j:e.j,st:""});
+     if(isBanEntry(e)) cur.st="ban";
+     else if(e.st==="pause"&&cur.st!=="ban") cur.st="pause";
+     else if(cur.st==="pause"&&(e.st==="failed"||(e.st==="in-force"&&/\b(swaps?|replaces?|ends?|lifts?|lifted)\b/i.test(e.t)&&/moratorium|pause/i.test(e.t)))) cur.st="";}));
+  return Object.values(m).filter(x=>x.st);
 }
+function localTally(list){
+  const c=st=>{const x=list.filter(p=>p.st===st);return {county:x.filter(p=>p.t==="county").length,other:x.filter(p=>p.t!=="county").length,all:x.length};};
+  return {ban:c("ban"),pause:c("pause")};
+}
+const plural=(n,a,b)=>`${n} ${n===1?a:b}`;
 function paintCounts(){
   const c={};E.forEach(e=>{if(e.j!=="US")c[e.j]=(c[e.j]||0)+1;});
   [...map.children].forEach(t=>{const ab=t.dataset.ab,n=c[ab]||0,s=t.dataset.s;
     t.innerHTML=esc(ab)+(n?'<span class="n" aria-hidden="true">'+n+"</span>":"");
     t.setAttribute("aria-label",(NAMES[ab]||ab)+": "+SLABEL[s]+(n?", "+n+" entries":""));});
   Object.keys(countBy).forEach(k=>delete countBy[k]);Object.assign(countBy,c);
-  paintLocalCounts();
+
 }
 function fillPlaces(){
   const sel=$("#f-place"), byState={};
@@ -1736,7 +1751,7 @@ function syncTheme(){const d=document.documentElement.dataset.theme==="dark";tb.
 tb.addEventListener("click",()=>{const d=document.documentElement.dataset.theme!=="dark";
   if(d)document.documentElement.dataset.theme="dark";else delete document.documentElement.dataset.theme;
   try{localStorage.setItem("lw-theme",d?"dark":"light");}catch(e){} syncTheme();});
-syncTheme();fillPlaces();paintLocalCounts();
+syncTheme();fillPlaces();
 renderPanel();renderEntries();
 })();
 </script>
