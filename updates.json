@@ -4859,11 +4859,15 @@
    "moratorium"
   ],
   "t": "Bulloch County rejects an outright ban 4–3 but keeps its pause",
-  "b": "The moratorium runs through Dec. 31 while the county writes regulations.",
+  "b": "Chairman David Bennett broke a 3–3 tie against the ban. The moratorium still runs through Dec. 31, and commissioners formed a 21-member citizen working group on regulations.",
   "s": [
    [
-    "Savrn Georgia tracker",
-    "https://savrn.com/data-center-moratorium-tracker/georgia"
+    "Statesboro Herald",
+    "https://www.statesboroherald.com/local/county-commission-by-4-3-vote-with-chairs-tiebreaker-kills-proposal-for-data-center-ban/"
+   ],
+   [
+    "WSAV",
+    "https://www.wsav.com/news/local-news/bulloch-county-commissioners-deny-data-center-ban-in-narrow-vote/"
    ]
   ],
   "im": -1,
@@ -4925,11 +4929,15 @@
    "moratorium"
   ],
   "t": "Augusta extends its pause, but QTS's campus stays exempt",
-  "b": "The original 49-day pause was extended 60 days with three public hearings.",
+  "b": "Unanimous. The 49-day June pause was extended 60 days with three public hearings, and the QTS campus already under construction stays exempt. In October the commission adopted permanent rules 6–5.",
   "s": [
    [
-    "Savrn Georgia tracker",
-    "https://savrn.com/data-center-moratorium-tracker/georgia"
+    "WRDW",
+    "https://www.wrdw.com/2026/07/21/augusta-leaders-extend-moratorium-new-data-centers/"
+   ],
+   [
+    "Hot Augusta",
+    "https://hotaugusta.com/2026/10/08/augusta-commission-approves-data-center-ordinance-in-6-5-vote/"
    ]
   ],
   "im": -1,
@@ -6958,15 +6966,19 @@
    "siting"
   ],
   "t": "Mason County rezones about 2,080 acres for a proposed data center campus",
-  "b": "The vote moved 28 properties north of Germantown Road to rural industrial zoning after the county adopted rules for data centers in unincorporated areas.",
+  "b": "The vote moved 28 properties north of Germantown Road to rural industrial zoning for an unnamed company's six-building campus. In October the county approved a development agreement with Meta, revealed as the user.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/kentucky/"
+    "City of Maysville",
+    "https://www.cityofmaysvilleky.gov/departments/codes_department/data_center.php"
    ],
    [
-    "Nearby Data Centers",
-    "https://nearbydatacenters.org/ky/"
+    "DCD",
+    "https://www.datacenterdynamics.com/en/news/2000-acre-land-parcel-rezoned-for-data-center-use-in-mason-county-kentucky/"
+   ],
+   [
+    "WKYT",
+    "https://www.wkyt.com/2026/10/14/mason-county-approves-hyperscale-data-center-deal-with-meta/"
    ]
   ],
   "im": 1,
@@ -7167,11 +7179,15 @@
    "moratorium"
   ],
   "t": "Meade County adopts a 12-month data center moratorium",
-  "b": "The ordinance followed the county's October rejection of a 138-acre data center rezoning and directs planners to study impacts.",
+  "b": "The ordinance pauses permits and site plans for data centers while the county updates its zoning and comprehensive plan. It followed the county's October rejection of a 138-acre data center rezoning.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/kentucky/"
+    "Meade County",
+    "https://www.meadeky.gov/m/newsflash/Home/Detail/145"
+   ],
+   [
+    "Louisville Public Media",
+    "https://www.lpm.org/news/2025-10-31/kentucky-regulators-approve-power-co-ops-rates-terms-for-future-data-centers"
    ]
   ],
   "im": -1,
@@ -7875,11 +7891,15 @@
    "moratorium"
   ],
   "t": "Prince George's adopts a two-year pause on hyperscale data centers",
-  "b": "The pause can end early if the county adopts a zoning framework for the facilities.",
+  "b": "Passed 7–1 with three abstentions. It bars planning review of hyperscale applications and ends early if the council adopts comprehensive data center legislation.",
   "s": [
    [
-    "Data Center Bans tracker",
-    "https://www.datacenterbans.com/state/maryland"
+    "Maryland Matters",
+    "https://marylandmatters.org/2026/07/08/prince-georges-county-extends-pause-on-hyperscale-data-center-development/"
+   ],
+   [
+    "The Banner",
+    "https://www.thebanner.com/politics-power/local-government/prince-georges-county-council-data-center-moratorium-CKGTDP5ZNFBFRNF3NGTTA5UARI/"
    ]
   ],
   "im": -1,
@@ -7936,8 +7956,12 @@
   "b": "The council unanimously passed CB31-2026, the S.M.A.R.T. Siting Act, which also creates a task force of up to 11 members to study impacts.",
   "s": [
    [
-    "Data Center Bans tracker",
-    "https://www.datacenterbans.com/state/maryland"
+    "The Banner",
+    "https://www.thebanner.com/politics-power/local-government/howard-county-data-center-development-suspended-7VP3IZDJBZHKLK6MF6YR2SIVR4/"
+   ],
+   [
+    "Howard County",
+    "https://www.howardcountymd.gov/News070626"
    ]
   ],
   "im": -1,
@@ -8991,7 +9015,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09-29",
+  "d": "2026-09-28",
   "j": "GA",
   "w": "Lovejoy City Council",
   "lv": "local",
@@ -9001,11 +9025,15 @@
    "siting"
   ],
   "t": "Lovejoy bans data centers citywide",
-  "b": "The ban followed opposition to Stillwater Development's proposed 3.5 million sq ft campus near schools and repealed a permit path that would have allowed them.",
+  "b": "The ban came after Stillwater Development withdrew its 3.5 million sq ft, 1.25 GW campus near two schools in August. The ordinance also repealed a permit path that could have allowed data centers.",
   "s": [
    [
-    "Data Center Bans tracker",
-    "https://www.datacenterbans.com/state/georgia"
+    "Atlanta News First",
+    "https://www.atlantanewsfirst.com/2026/09/29/city-lovejoy-passes-ordinance-banning-data-center-construction/"
+   ],
+   [
+    "WABE",
+    "https://www.wabe.org/400-acre-data-center-proposal-withdrawn-in-lovejoy-city-council-to-revise-zoning-policies/"
    ]
   ],
   "im": -2,
@@ -9107,16 +9135,24 @@
   "ty": [
    "moratorium"
   ],
-  "t": "Marietta, Walker County, Forest Park and Americus adopt data center pauses",
-  "b": "Walker County began with a 30-day pause on July 10, Marietta's runs through Dec. 31, Forest Park approved 90 days and Americus 30 days on Sept. 24.",
+  "t": "Marietta, Walker County and Forest Park adopt data center pauses",
+  "b": "Marietta's July 8 pause runs through Dec. 31 but didn't cover a pending 18 MW project approved 5–2 in August. Walker County's 30-day July pause was extended 180 days Aug. 6, and Forest Park approved 90 days Aug. 31.",
   "s": [
    [
-    "Data Center Bans tracker",
-    "https://www.datacenterbans.com/state/georgia"
+    "Atlanta Community Press Collective",
+    "https://atlpresscollective.com/2026/07/11/marietta-data-center/"
    ],
    [
-    "Nearby Data Centers",
-    "https://nearbydatacenters.org/ga/"
+    "East Cobb News",
+    "https://eastcobbnews.com/marietta-city-council-approves-data-center-off-delk-road/"
+   ],
+   [
+    "Walker County",
+    "https://walkercountyga.gov/2026/08/07/board-delays-budget-vote-enacts-180-day-moratorium-on-data-centers/"
+   ],
+   [
+    "Clayton News",
+    "https://www.news-daily.com/news/forest-park-council-passes-90-day-data-center-moratorium/article_ccfd2184-acbb-445f-8fa5-fe46a172a9f0.html"
    ]
   ],
   "im": -1,
@@ -9132,10 +9168,6 @@
    ],
    [
     "Forest Park",
-    "city"
-   ],
-   [
-    "Americus",
     "city"
    ]
   ],
@@ -9386,38 +9418,38 @@
  {
   "d": "2026-07",
   "j": "KY",
-  "w": "Kentucky counties",
+  "w": "Boyd and Greenup counties",
   "lv": "local",
   "k": "action",
   "st": "pause",
   "ty": [
    "moratorium"
   ],
-  "t": "Nelson and Boyd counties pause data centers; Georgetown backs a Scott County pause",
-  "b": "Boyd's six-month moratorium, adopted July 9, exempts the already-planned Muskie campus.",
+  "t": "Boyd and Greenup counties pause data centers but exempt the Muskie campus",
+  "b": "Both six-month moratoriums exclude EastPark Industrial Park, where TeraWulf plans a campus of more than 1 GW. Boyd's judge-executive said exempting the park would otherwise impose on its other member counties.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/kentucky/"
+    "WOWK",
+    "https://www.wowktv.com/news/kentucky/boyd-county-ky/boyd-county-approves-six-month-moratorium-on-new-data-centers-terawulf-project-exempt/"
+   ],
+   [
+    "The Herald-Dispatch",
+    "https://www.herald-dispatch.com/news/data-center-moratorium-excludes-ongoing-project-in-boyd-county/article_09dbecb2-0127-4481-bc06-127dcd6ccfac.html"
+   ],
+   [
+    "The Independent",
+    "https://www.dailyindependent.com/news/greenup-county-places-moratorium-on-data-centers-hall-on-terawulf-not-included-in-the-pause/article_085b0070-ecdb-412f-90a6-f3ab60ae11f9.html"
    ]
   ],
   "im": -1,
   "iw": "More local pauses",
   "pl": [
    [
-    "Nelson County",
-    "county"
-   ],
-   [
     "Boyd County",
     "county"
    ],
    [
-    "Georgetown",
-    "city"
-   ],
-   [
-    "Scott County",
+    "Greenup County",
     "county"
    ]
   ],
@@ -10160,11 +10192,15 @@
    "disclosure"
   ],
   "t": "Georgia requires regional impact reviews for large data centers",
-  "b": "Since November 2025, big data center proposals must go through a state Development of Regional Impact review with a public comment period.",
+  "b": "The state community affairs board unanimously added data centers to regional impact reviews: 500,000 sq ft and up in most of Georgia, 300,000 in metro Atlanta's urban and suburban areas. Developers must estimate water and power needs; reviews are advisory.",
   "s": [
    [
-    "Nearby Data Centers",
-    "https://nearbydatacenters.org/ga/"
+    "The Current GA",
+    "https://thecurrentga.org/2025/11/21/georgia-board-approves-new-review-process-for-large-data-centers/"
+   ],
+   [
+    "Georgia DCA rule synopsis",
+    "https://dca.georgia.gov/document/document/dri-rules-non-arc-synopsis-2025/download"
    ]
   ],
   "im": -1,
@@ -27673,6 +27709,39 @@
   "pl": [
    [
     "Jackson County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-07-06",
+  "j": "GA",
+  "w": "Franklin County Board of Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Franklin County, Georgia, adopts a data center moratorium",
+  "b": "On the county attorney's advice, commissioners adopted a pause slightly shorter than the six months they had discussed. A commissioner had drafted an ordinance banning data centers outright.",
+  "s": [
+   [
+    "92.1 WLHR",
+    "https://921wlhr.com/franklin-boc-approves-moratorium-on-data-centers/"
+   ],
+   [
+    "92.1 WLHR",
+    "https://921wlhr.com/intergovernmental-agreements-data-centers-on-franklin-boc-agenda-tonight/"
+   ]
+  ],
+  "im": -1,
+  "iw": "County pause",
+  "pl": [
+   [
+    "Franklin County",
     "county"
    ]
   ],
