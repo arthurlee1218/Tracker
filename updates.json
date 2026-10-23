@@ -229,11 +229,15 @@
    "moratorium"
   ],
   "t": "Harvie calls for a data center moratorium in his race against Fitzpatrick",
-  "b": "A new TV ad in the Bucks County House race marks a shift in his position.",
+  "b": "His first general-election TV ad, a shift from his earlier call for strict rules. As a county commissioner he voted in 2020 for a tax break on the Falls Township site that became Amazon's data center; Fitzpatrick backs transparency and ratepayer bills but not a pause.",
   "s": [
    [
-    "AI GridWatch",
-    "https://aigridwatch.com/states/pennsylvania"
+    "Philadelphia Inquirer",
+    "https://www.inquirer.com/politics/election/bob-harvie-ai-data-centers-stance-tv-ad-20260910.html"
+   ],
+   [
+    "WHYY",
+    "https://whyy.org/articles/brian-fitzpatrick-bob-harvie-data-center-ad-congressional-race/"
    ]
   ],
   "im": -1,
@@ -395,21 +399,25 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09",
+  "d": "2026-09-17",
   "j": "PA",
   "w": "Springhill Township",
   "lv": "local",
   "k": "action",
-  "st": "pause",
+  "st": "in-force",
   "ty": [
    "moratorium"
   ],
-  "t": "Springhill Township bars new data center and power plant applications",
-  "b": "A temporary ban while it writes setback and noise rules, prompted by interest in 800 acres near Gans.",
+  "t": "Springhill Township adopts data center and power plant rules",
+  "b": "Supervisors unanimously limited data centers and their power plants to conditional uses in industrial zones, after a Sept. 3 resolution barred applications in the meantime. The push began when power producer Nadara disclosed a purchase option on 800 acres near Gans; no application has been filed.",
   "s": [
    [
-    "Data Centers: Weekly Briefing",
-    "https://writing.strisker.com/data-centers-weekly-briefing-september-7-10-2026/"
+    "Herald-Standard",
+    "https://www.heraldstandard.com/news/local_news/2026/sep/19/springhill-township-adopts-data-center-power-generation-ordinances/"
+   ],
+   [
+    "Herald-Standard (Sept. 5)",
+    "https://www.heraldstandard.com/news/local_news/2026/sep/05/springhill-township-postpones-votes-on-data-center-power-plant-ordinances/"
    ]
   ],
   "im": -1,
@@ -573,11 +581,19 @@
    "moratorium"
   ],
   "t": "Orangetown pauses data centers and battery storage for six months",
-  "b": "Residents objected that the pause doesn't reach DataBank's proposed second facility, already under environmental review near Lake Tappan.",
+  "b": "The 180-day moratorium exempts applications filed before July 1, so DataBank's proposed second building near Lake Tappan, already under a full environmental impact study, goes on. Residents objected to the carve-out.",
   "s": [
    [
-    "Savrn NY tracker",
-    "https://savrn.com/data-center-moratorium-tracker/new-york"
+    "Town of Orangetown: Local Law 5",
+    "https://www.orangetown.com/local-law-5-2026-temporary-town-wide-moratorium-battery-energy-storage-systems-and-data-storage-facilities-data-centers-adopted-8-25-2026/"
+   ],
+   [
+    "WAMC",
+    "https://www.wamc.org/news/2026-08-27/hudson-valley-residents-dissatisfied-with-data-center-moratorium"
+   ],
+   [
+    "Westfair",
+    "https://westfaironline.com/computers/orangetown-imposes-data-center-moratorium-that-wont-affect-databank-expansion/"
    ]
   ],
   "im": -1,
@@ -1356,11 +1372,19 @@
    "moratorium"
   ],
   "t": "Lysander adopts a six-month pause amid a 300 MW campus fight",
-  "b": "Unanimous vote in Onondaga County following opposition to the proposed Ranalli campus. Several neighboring towns reportedly followed with one-year pauses.",
+  "b": "Unanimous vote in Onondaga County after more than 1,800 residents petitioned against Ranalli Super DC's 300 MW grid request for a 124-acre site; no application has been filed. Clay and Manlius later adopted one-year pauses. The pause expires Nov. 7.",
   "s": [
    [
-    "Savrn NY tracker",
-    "https://savrn.com/data-center-moratorium-tracker/new-york"
+    "Rockefeller Institute",
+    "https://www.rockinst.org/blog/updates-on-the-cloud-more-moratoriums-on-data-centers/"
+   ],
+   [
+    "CNY Signal",
+    "https://cnysignal.com/lysander-data-center-water-rules-july-17-committee/"
+   ],
+   [
+    "Town of Lysander timeline",
+    "https://lysanderny.gov/sites/default/files/2026-06/tol_data_center_info_updates_6-1-26.pdf"
    ]
   ],
   "im": -1,
@@ -1404,7 +1428,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-05",
+  "d": "2026-05-13",
   "j": "NY",
   "w": "Town of Oneonta",
   "lv": "local",
@@ -1414,11 +1438,15 @@
    "moratorium"
   ],
   "t": "Oneonta pauses data centers and crypto mining for a year",
-  "b": "Unanimous 12-month moratorium in Otsego County.",
+  "b": "Unanimous 12-month moratorium in Otsego County after more than 700 residents petitioned against Eco-Yotta's proposal on County Road 9, which will no longer be processed. The supervisor hopes to follow with a ban.",
   "s": [
    [
-    "Savrn NY tracker",
-    "https://savrn.com/data-center-moratorium-tracker/new-york"
+    "The Daily Star",
+    "https://www.thedailystar.com/news/local_news/oneonta-town-board-passes-one-year-data-center-moratorium/article_a68f1baa-9dec-4ac5-8bae-3dd86ba53b1c.html"
+   ],
+   [
+    "WBNG",
+    "https://www.wbng.com/2026/05/15/oneonta-town-board-approves-12-month-moratorium-ai-data-centers-crypto-mining-facilities/"
    ]
   ],
   "im": -1,
@@ -2010,7 +2038,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026",
+  "d": "2026-04-14",
   "j": "PA",
   "w": "Olyphant Borough Council",
   "lv": "local",
@@ -2020,11 +2048,15 @@
    "moratorium"
   ],
   "t": "Olyphant halts new data centers for six months",
-  "b": "Voted 4–3 while it drafts an ordinance, as proposals cluster across Lackawanna County.",
+  "b": "Council voted 4–3 against a zoning amendment that would have limited data centers to about 1,000 industrial acres near the Triboro Industrial Park, then opened a 180-day curative amendment to rewrite it. No application is pending.",
   "s": [
    [
-    "Brockovich AI Data Center Reporting",
-    "https://www.brockovichdatacenter.com/community-and-legislation.html"
+    "WNEP",
+    "https://www.wnep.com/article/news/local/lackawanna-county/olyphant-passes-six-month-pause-on-data-center-development-lackawanna-county/523-fba1655e-d7aa-42a2-bca3-60e56f7ad458"
+   ],
+   [
+    "FOX56",
+    "https://fox56.com/news/local/olyphant-council-rejects-data-center-zoning-plan-then-opens-180-day-curative-amendment"
    ]
   ],
   "im": -1,
@@ -3472,7 +3504,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-08",
+  "d": "2026-08-16",
   "j": "VA",
   "w": "Franklin County",
   "lv": "local",
@@ -3481,12 +3513,20 @@
   "ty": [
    "siting"
   ],
-  "t": "Project Flash campus in Franklin County is cancelled",
-  "b": "Developer talks failed after more than 40 speakers opposed it.",
+  "t": "Project Flash, Crusoe's proposed Franklin County data center, is dropped",
+  "b": "Residents found the project through public records requests: a 50–100 MW campus at the county's Summit View Business Park near Rocky Mount. A supervisor told a community meeting it would not proceed, but warned nothing stops another proposal.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/virginia"
+    "WDBJ",
+    "https://www.wdbj7.com/2026/08/17/data-center-proposal-dropped-franklin-county/"
+   ],
+   [
+    "WSET",
+    "https://wset.com/news/local/franklin-county-data-center-project-is-no-longer-moving-forward-project-flash-rocky-mount-virginia-august-2026"
+   ],
+   [
+    "DCD",
+    "https://www.datacenterdynamics.com/en/news/crusoe-linked-to-potential-data-center-project-in-franklin-county-virginia/"
    ]
   ],
   "im": -1,
@@ -3501,7 +3541,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-09",
+  "d": "2026-09-08",
   "j": "VA",
   "w": "Christiansburg Town Council",
   "lv": "local",
@@ -3511,11 +3551,15 @@
    "siting"
   ],
   "t": "Christiansburg ends by-right data centers",
-  "b": "Voted 6–0 to require conditional use permits in industrial zones.",
+  "b": "Voted 6–0 to require conditional use permits for data centers in the general industrial zone, where they had been allowed by right. The mayor said it could slow or halt applications; planners will refine the town's definition.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/virginia"
+    "Cardinal News",
+    "https://cardinalnews.org/2026/09/10/christiansburg-ups-requirements-for-any-future-data-center/"
+   ],
+   [
+    "Christiansburg council agenda",
+    "https://www.christiansburg.org/ArchiveCenter/ViewFile/Item/2847"
    ]
   ],
   "im": -1,
@@ -3577,11 +3621,19 @@
    "water"
   ],
   "t": "Federal suit over Amazon's Louisa site moves forward",
-  "b": "A neighbor alleges brown tap water, dust and noise from the Northeast Creek campus.",
+  "b": "A federal judge let neighbor Austin Newsom's private nuisance claim proceed, rejecting Amazon's argument that brown tap water, noise, dust and light from the Northeast Creek construction were insubstantial; a separate injunction claim was dismissed.",
   "s": [
    [
-    "Inside the Datacenter",
-    "https://insidethedatacenter.com/articles/virginia-data-centers/"
+    "Virginia Mercury",
+    "https://virginiamercury.com/2026/07/28/brown-water-dust-and-loud-noises-louisa-homeowner-sues-amazon-over-data-center-construction/"
+   ],
+   [
+    "Virginia Lawyers Weekly",
+    "https://valawyersweekly.com/2026/08/04/data-center-construction-nuisance-suit-western-district-virginia/"
+   ],
+   [
+    "29 News",
+    "https://www.29news.com/2026/07/23/louisa-homeowners-lawsuit-over-amazon-data-center-moves-forward-federal-court/"
    ]
   ],
   "im": -1,
@@ -5393,19 +5445,23 @@
  {
   "d": "2026-07-13",
   "j": "NC",
-  "w": "Stokes and Davidson counties",
+  "w": "Stokes County Commissioners",
   "lv": "local",
   "k": "action",
   "st": "failed",
   "ty": [
    "moratorium"
   ],
-  "t": "Stokes and Davidson counties reject data center pauses",
-  "b": "Stokes advanced the Project Delta rezoning instead.",
+  "t": "Stokes County rejects a data center pause, 3–2",
+  "b": "Commissioners overrode their planning board's call for a six-month moratorium and adopted data center rules instead. They later approved the Project Delta rezoning on Sept. 14, again 3–2.",
   "s": [
    [
-    "Data Center Moratoriums",
-    "https://www.datacenterbans.com/state/north-carolina"
+    "WFDD",
+    "https://www.wfdd.org/politics-government/2026-07-14/stokes-commission-rejects-six-month-data-center-moratorium"
+   ],
+   [
+    "WFMY",
+    "https://www.wfmynews2.com/article/news/local/stokes-county-commissioners-reject-data-center-moratorium-project-delta-looms/83-dd17b48a-79f1-442c-a13c-afca1868db37"
    ]
   ],
   "im": 1,
@@ -5414,17 +5470,13 @@
    [
     "Stokes County",
     "county"
-   ],
-   [
-    "Davidson County",
-    "county"
    ]
   ],
   "auto": false,
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-10",
+  "d": "2026-09-25",
   "j": "NC",
   "w": "Lee County",
   "lv": "local",
@@ -5434,11 +5486,15 @@
    "siting"
   ],
   "t": "Lee County permits a 90 MW CyrusOne data center",
-  "b": "The county says the project is vested and offered no incentives.",
+  "b": "The Sanford-Lee County planning department issued a construction permit for the 300,000 sq ft first phase on Lower Moncure Road, developed by PointOne and Helix Ventures and to be owned by CyrusOne. Residents had demanded a pause; commissioners have not adopted one.",
   "s": [
    [
-    "NC Data Center Newsletter",
-    "https://ncdatacenters.substack.com/p/raleigh-and-beaufort-county-pause"
+    "The Rant",
+    "https://rantnc.com/2026/09/29/planning-department-issues-data-center-permit/"
+   ],
+   [
+    "NC Newsline",
+    "https://ncnewsline.com/2026/07/15/lee-county-residents-demand-pause-on-data-center-claiming-deception/"
    ]
   ],
   "im": 1,
@@ -5479,20 +5535,28 @@
  },
  {
   "d": "2026-10-19",
-  "j": "NC",
-  "w": "Boone Town Council",
+  "j": "IA",
+  "w": "Boone City Council",
   "lv": "local",
   "k": "action",
   "st": "in-force",
   "ty": [
    "siting"
   ],
-  "t": "Boone signs an agreement with Lightedge for a possible data center",
-  "b": "A step toward hosting a facility in a region full of pauses.",
+  "t": "Boone, Iowa, approves Lightedge's data center site plan and a water cap",
+  "b": "The council approved a site plan for two 125,000 sq ft colocation buildings and an agreement capping water use at 75,000 gallons a month with no city tax incentives. Lightedge came to Boone after Ames delayed its decision to May 2027; Boone isn't final among its sites.",
   "s": [
    [
-    "Data Centers: Daily Notes",
-    "https://writing.strisker.com/data-centers-daily-notes-october-20-2026/"
+    "Ames Tribune",
+    "https://www.yahoo.com/news/articles/boone-approves-plan-two-125-154853817.html"
+   ],
+   [
+    "KWBG",
+    "https://kwbg.com/council-receives-site-plan-for-lightedge-project/"
+   ],
+   [
+    "Ames Tribune (Sept.)",
+    "https://www.yahoo.com/news/us/articles/boone-lands-lightedge-data-center-143215132.html"
    ]
   ],
   "im": 1,
@@ -7954,7 +8018,7 @@
   "by": "Claude research, Oct 22"
  },
  {
-  "d": "2026-07",
+  "d": "2026-07-13",
   "j": "SC",
   "w": "York County Council",
   "lv": "local",
@@ -7963,12 +8027,16 @@
   "ty": [
    "moratorium"
   ],
-  "t": "York County pauses new data centers, but QTS's $8 billion campus is exempt",
-  "b": "The moratorium spares the nine vested site plans for QTS's campus, where the first building has topped out.",
+  "t": "York County pauses new data centers for nine months, but QTS's campus is exempt",
+  "b": "Unanimous vote for a pause running into April 2027. QTS's nine site plans near Lake Wylie were approved earlier, so the county treats them as vested.",
   "s": [
    [
-    "Server Country",
-    "https://servercountry.org/policy/south-carolina/"
+    "York County",
+    "https://www.yorkcountysc.gov/1313/Data-Centers"
+   ],
+   [
+    "Fort Mill Sun",
+    "https://www.fortmillsun.com/2026/07/14/york-county-council-approves-nine-month-data-center-moratorium/"
    ]
   ],
   "im": -1,
