@@ -260,7 +260,7 @@ footer p{max-width:90ch;margin-bottom:6px}
     <p class="dek">Data center laws, pauses, executive orders, ballot fights and campaign politics across the United States. Pick a state to filter everything below.</p>
   </div>
   <div class="reading" aria-label="Last updated">
-    <strong>Verified Oct 16, 2026</strong>
+    <strong>Verified Oct 22, 2026</strong>
     <span id="reading-sub">Federal, state, county, city and tribal</span>
     <button type="button" class="theme-btn" id="themeBtn" aria-pressed="false">Dark mode</button>
   </div>
@@ -337,44 +337,53 @@ const SLABEL={pause:"Statewide pause in force",rules:"Binding new rules, 2025–
 
 // State status + one-paragraph summary
 const ST={
-NY:{s:"pause",t:"First statewide permitting pause, by executive order. Hochul's EO 62 freezes discretionary state environmental approvals for data centers of 50 MW and up while regulators study impacts. A broader legislative moratorium (20 MW) passed in June and sits on her desk until Dec 31."},
-TX:{s:"pause",t:"The biggest reversal of the year. Gov. Abbott, who called Texas the epicenter of AI development in 2025, froze new grid approvals pending an ERCOT audit in August, then halted state environmental permits in September. Cities and counties that tried their own pauses have been sued or rescinded them."},
-VA:{s:"rules",t:"The largest market wrote the densest package: a first-in-the-nation tax on data center electricity use, cost-allocation rules for loads of 25 MW and up, tighter generator and water rules, and a regulator order making data centers pay for dedicated transmission. The sales tax exemption survived, for now."},
+AL:{s:"rules",t:"A state law effective Oct. 1 makes regulators test whether contracts with data centers of 150 MW and up cover their full cost, and the PSC now votes on them publicly. Towns from Birmingham to Fort Payne have paused, and Bessemer voters ousted council members who approved the 1,200 MW Project Marvel."},
+AR:{s:"local",t:"No statewide rules, and a 2023 law limits how far cities can restrict data centers. Counties have adopted some of the longest pauses in the country, five years in Independence County, while Little Rock twice rejected a moratorium on 4–4 ties."},
+AZ:{s:"rules",t:"A June law lets regulators set minimum bills and contract terms for very large customers, and the budget stopped new data center sales tax exemptions until mid-2029. The attorney general is challenging utility deals for Project Blue, and Pima County paused development outside Tucson."},
 CA:{s:"rules",t:"Seven laws signed Sept 21 covering grid cost tariffs, water supply assessments, energy and noise reporting, labor standards and an end to blanket CEQA exemptions. No moratorium. Most provisions start Jan 1, 2027."},
-PA:{s:"rules",t:"Gov. Shapiro turned his voluntary GRID standards into binding permit conditions by executive order in August: projects of 25 MW and up must sign a consent order, pay their full grid costs and win local approval before state permits issue. House committees are advancing cost and interconnection bills."},
-SD:{s:"rules",t:"Statewide moratorium talk ended in a local-control law. Two companion bills signed in March let counties and towns regulate or ban data centers."},
-IN:{s:"rules",t:"HB 1210 makes data centers that take the state sales tax exemption share part of the savings with local governments. Indianapolis paused new permits through the end of 2027."},
-FL:{s:"rules",t:"DeSantis signed a law in May meant to stop utilities from passing data center costs to homes and small businesses, and a July state law preserved county power over large facilities. A wave of county pauses followed this fall: Palm Beach, Manatee and Leon, with Martin close behind. Edgewater voters decide a charter ban in November."},
-LA:{s:"rules",t:"Gov. Landry's June executive order conditions the data center sales tax exemption on a ratepayer and community protection framework."},
+CO:{s:"local",t:"Lawmakers killed both a data center incentive bill and a large-load regulation bill in May, so the action is local: Denver, Mesa County and more than a dozen other jurisdictions have paused. Regulators are reviewing Xcel's data center tariff."},
+CT:{s:"local",t:"No new state rules. Bills to end the 2021 data center tax break and set large-load rules died, though Gov. Lamont says the state is the wrong place for massive AI campuses. West Haven and Morris have paused, and New Haven is weighing a pause."},
+FL:{s:"rules",t:"The Florida Hyperscale Data Center Act, signed in May, makes facilities of 50 MW and up pay their full cost of service and preserves local power to say no; utilities filed data center rates by Oct. 1. More than 20 counties and cities have since paused or banned, including outright bans in Volusia, Wakulla and Escambia counties."},
+GA:{s:"rules",t:"Regulators let Georgia Power charge data centers over 100 MW for grid costs, but the legislature again left the sales tax break, now projected at $2.5 billion a year, intact. Dozens of counties have paused, and two Public Service Commission seats are on the Nov. 3 ballot."},
+IA:{s:"local",t:"A data center reporting and tariff bill died without a floor vote, leaving the action to counties and cities, several of which have paused."},
+ID:{s:"rules",t:"2026 laws require regulator-approved contracts for new loads of 50 MW and up and restrict consumptive water cooling at new data centers. A bill to narrow data center tax breaks died."},
+IL:{s:"rules",t:"Gov. Pritzker ordered the state to stop processing new data center incentive agreements in June and is pressing for his POWER Act in the fall session. Regulators let ComEd scale deposits for large loads, and more than a dozen communities have paused or hold advisory votes Nov. 3."},
+IN:{s:"rules",t:"HB 1210 makes data centers share tax savings with local governments, and regulators have approved large-load contracts for Google and Amazon campuses. Indianapolis paused permits through 2027; Fort Wayne rejected a pause."},
+KS:{s:"rules",t:"Regulators approved Evergy's large-load tariff with minimum bills and collateral in 2025. Emporia and El Dorado vote Nov. 3 on some of the strictest local bans in the country."},
+KY:{s:"rules",t:"Gov. Beshear's August executive order bars passing data center costs to other ratepayers, after lawmakers stripped similar protections from a bill. Regulators must approve co-op data center contracts. Meta is behind a 1.2 GW Mason County proposal, and Lexington and Oldham County have paused."},
+LA:{s:"rules",t:"The region's most pro-development state: a 20-year tax break, fast-tracked gas plants for Meta's Hyperion campus, and a 3–1 regulator vote to keep Meta's power and jobs data secret. New Orleans bars data centers until mid-2027, and two regulator seats are on the Nov. 3 ballot."},
+MA:{s:"rules",t:"Gov. Healey paused the data center sales tax exemption in June, and Executive Order 658 bars state permits without local approval and a community benefits agreement. Holyoke banned data centers; Lowell, Westfield and Mansfield have paused or set rules."},
 MD:{s:"rules",t:"A 2025 rate negotiation law is on the books, an emergency statewide moratorium stalled, and the governor created a task force in September to review every project of 25 MW or more. Counties are the real action: Harford banned data centers outright, and Anne Arundel, Baltimore County and Baltimore City have paused."},
-OR:{s:"pause",t:"Effectively a statewide pause. On Oct. 9 Gov. Kotek told regulators to stop issuing air and water permits for new or expanded data centers until July 1, 2027, after pausing state land deals in September. The 2025 POWER Act already puts large loads in their own rate class. Both governor candidates now back a statewide moratorium."},
-MA:{s:"rules",t:"Gov. Healey's September executive order requires local community benefits agreements before state permitting."},
-OH:{s:"rules",t:"Regulators and a 2025 law put data centers on their own tariff, but 2026 bills on tax breaks and NDAs stalled. Ohio now leads the country in local ballot measures, and a volunteer-run statewide ban amendment is aiming for 2027."},
-UT:{s:"rules",t:"One of the first states to enact a large-load cost law alongside Ohio and California, per MultiState's comparison."},
-MN:{s:"rules",t:"Created a separate water permitting requirement for data centers in 2025. A statewide moratorium bill was among those that did not advance in 2026."},
-SC:{s:"rules",t:"Enacted a rate negotiation law in 2025. A 2026 moratorium bill did not pass."},
+ME:{s:"proposed",t:"Came closest to the first statutory statewide moratorium before Gov. Mills vetoed LD 307 to protect a project in Jay. Since then more than ten towns, including Sanford, Bangor and Brunswick, have paused, and three towns vote on bans or pauses Nov. 3."},
+MI:{s:"proposed",t:"Senate bills would impose a one-year statewide moratorium, and Attorney General Nessel is challenging DTE's data center contracts. Kalamazoo, Lansing, Flint and other towns have paused, while Van Buren Township approved Google's 1 GW campus."},
+MN:{s:"rules",t:"Regulators approved Xcel's very large customer tariff with stiffer exit terms in May, and the 2026 session added no new restrictions. The attorney general opposes Xcel's Google power deal as filed, and about ten local governments have paused."},
+MO:{s:"local",t:"No state action logged yet, but about a dozen counties and cities have paused, including Pettis County for up to two years."},
+MS:{s:"local",t:"No statewide limits; a 2024 law gave data centers sweeping tax breaks. The fight centers on xAI's gas turbines in Southaven: a state permit, a NAACP Clean Air Act suit a judge let proceed, and a neighbors' noise suit. Jackson paused approvals in July."},
+MT:{s:"rules",t:"The 2025 Right to Compute Act limits government restrictions on data centers, and a 2025 law extended property tax incentives to 2037. Missoula County adopted the state's first moratorium in July, and a legislative committee is drafting ratepayer protections."},
+NC:{s:"local",t:"More than 30 jurisdictions have paused, including Charlotte, Raleigh, Durham and Greensboro, though a court challenge undid Chatham County's pause. Duke Energy filed a large-load tariff settlement with tech companies in October, and regulators denied a Duke gas plant over uncertain data center demand."},
+ND:{s:"proposed",t:"The House refused to take up a data center permitting moratorium in a September special session, and the Senate killed a ban on nondisclosure agreements. Lawmakers are drafting a 2027 bill on power, water and decommissioning."},
 NE:{s:"rules",t:"Gov. Pillen's July executive order set up a data center task force on water and environmental impacts, with recommendations due to lawmakers by 2027."},
-ME:{s:"proposed",t:"Came closest to the first statutory statewide moratorium. LD 307 passed both chambers, Gov. Mills vetoed it in April to protect a project in Jay, and the override failed. Towns such as Old Town have since enacted their own pauses."},
-GA:{s:"proposed",t:"The legislature let moratorium and limiting bills die, so the fight moved to counties (Camden County paused for nine months) and to two Public Service Commission seats on the November ballot. Georgia has seen more data center ad spending than any other state."},
-MI:{s:"proposed",t:"Lawmakers floated a statewide pause into 2027 while towns acted alone: Gibraltar paused for a year and Augusta Township voters rejected a data center rezoning by roughly nine to one."},
-NH:{s:"proposed",t:"Gov. Ayotte, one of three Republican governors who did not sign Trump's ratepayer pledge, says she will propose a multi-year statewide moratorium in her next budget."},
-OK:{s:"proposed",t:"Bills to pause construction and end incentives were introduced. The Cherokee Nation and the Cheyenne and Arapaho Tribes have both barred large data centers on tribal lands."},
-VT:{s:"proposed",t:"S.205 proposed a moratorium on AI data center construction until July 2030."},
-WI:{s:"proposed",t:"A statewide moratorium bill failed, and four Republicans now propose repealing the sales tax break. Milwaukee voted for a one-year pause in October, joining Madison and Dane and Manitowoc counties. Port Washington voters required a public vote before big incentive deals, and Janesville votes on a similar rule in November."},
-NJ:{s:"proposed",t:"Moratorium bills are pending and county-level opposition is spreading in the New York suburbs."},
-RI:{s:"proposed",t:"Listed among states where a statewide moratorium bill was introduced in 2026."},
-IL:{s:"local",t:"Gov. Pritzker announced a two-year suspension of incentives for new projects in February but rejected a statewide moratorium, preferring legislation in 2027. Seven communities hold advisory votes in November."},
-KS:{s:"local",t:"Emporia and El Dorado voters face some of the strictest local measures in the country, including a 10 MW threshold and a ten-year ban."},
+NH:{s:"proposed",t:"The House killed a one-year statewide ban in March, but Gov. Ayotte now opposes any data center in the state and plans a multi-year moratorium in her next budget; House Democrats want 24 months. A utility study eyes a large load at Bow's former coal plant."},
+NJ:{s:"rules",t:"A July law puts data centers of 50 MW and up in their own rate class, and an August law requires twice-yearly water and energy reports. Advocates count about 110 towns that have banned data centers, and a developer is suing Monroe Township for $300 million."},
+NM:{s:"local",t:"The fight is over Project Jupiter in Doña Ana County: the state supreme court rejected challenges in September, while the attorney general contests its air permit and gas pipeline review ahead of a Dec. 7 permit hearing. Several local governments have paused."},
 NV:{s:"local",t:"Boulder City votes on whether to allow data centers in a land transfer area, one of the few measures that would open the door rather than close it. A federal land approval there came without local input."},
-AZ:{s:"rules",t:"The state budget stopped new data center sales tax exemption applications from July 2026 to mid-2029. Pima County adopted a 120-day pause on Sept. 22, exempting the Project Blue campus that drew the original backlash."},
-TN:{s:"local",t:"Nashville paused permits until Dec. 1. Memphis votes on a 12-month moratorium Oct. 20 and Shelby County is weighing its own. xAI faces litigation over gas turbines powering its facilities near the Mississippi line."},
-CO:{s:"local",t:"Denver paused new applications until May 2027 and Mesa County adopted a 12-month pause."},
-AL:{s:"local",t:"A summer wave of town-level moratoriums, including Anniston, Chelsea, Pinson and Prichard."},
-MS:{s:"local",t:"Olive Branch passed and quickly overturned a moratorium after a developer sued. Southaven residents are fighting unpermitted turbines."},
-AR:{s:"local",t:"Little Rock is weighing an 18-month hyperscale pause."},
-NC:{s:"local",t:"Orange County paused large data centers for a year in April. Guilford County is weighing a 180-day pause."},
-KY:{s:"local",t:"Lexington paused data center permits in June while it writes zoning rules. Oldham County extended its moratorium indefinitely in late 2025."},
-WA:{s:"local",t:"Snohomish County paused projects as small as 2 MW in June, and Skamania County adopted a moratorium in August."}
+NY:{s:"pause",t:"First statewide permitting pause, by executive order. Hochul's EO 62 freezes discretionary state environmental approvals for data centers of 50 MW and up while regulators study impacts. A broader legislative moratorium (20 MW) passed in June and sits on her desk until Dec 31. More than a dozen towns, from Brookhaven to Allegany, have also paused or banned data centers."},
+OH:{s:"rules",t:"Regulators and a 2025 law put data centers on their own tariff, Gov. DeWine halted review of new data center tax exemption requests in May, and regulators tightened AEP Ohio's terms. Ohio leads the country in local ballot measures, and a statewide ban amendment is aiming for 2027."},
+OK:{s:"proposed",t:"Bills to pause construction and end incentives were introduced. The Cherokee Nation and the Cheyenne and Arapaho Tribes have both barred large data centers on tribal lands."},
+OR:{s:"pause",t:"Effectively a statewide pause. On Oct. 9 Gov. Kotek told regulators to stop issuing air and water permits for new or expanded data centers until July 1, 2027, after pausing state land deals in September. The 2025 POWER Act already puts large loads in their own rate class. Both governor candidates now back a statewide moratorium."},
+PA:{s:"rules",t:"Gov. Shapiro turned his voluntary GRID standards into binding permit conditions by executive order in August: projects of 25 MW and up must sign a consent order, pay their full grid costs and win local approval before state permits issue. House committees are advancing cost and interconnection bills. The House voted 197–5 to repeal the data center sales tax break, and Archbald denied two hyperscale campuses this year."},
+RI:{s:"local",t:"All six data center bills died in June, and none proposed a statewide moratorium. Smithfield banned data centers in every zone, and Westerly and Hopkinton have paused."},
+SC:{s:"rules",t:"A 2025 law adds ratepayer protections, but 2026 permitting and moratorium bills died. Spartanburg County froze projects over 65 MW, and a settlement bans data centers in most of Colleton County's ACE Basin."},
+SD:{s:"rules",t:"Statewide moratorium talk ended in a local-control law. Two companion bills signed in March let counties and towns regulate or ban data centers."},
+TN:{s:"rules",t:"A 2026 law makes data centers of 50 MW and up pay for grid upgrades but lets them build their own power. Memphis rejected an 18-month moratorium on a tie, then passed a 135-day pause; Nashville, McMinnville and others have paused."},
+TX:{s:"pause",t:"The biggest reversal of the year. Gov. Abbott, who called Texas the epicenter of AI development in 2025, froze new grid approvals pending an ERCOT audit in August, then halted state environmental permits in September. Cities and counties that tried their own pauses have been sued or rescinded them."},
+UT:{s:"rules",t:"Gov. Cox's May executive order sets a higher bar for large data centers, and lawmakers are studying a bill to define them. Fights over the Stratos project's water and discharge permits are ongoing, and several local governments have paused."},
+VA:{s:"rules",t:"The largest market wrote the densest package: a first-in-the-nation tax on data center electricity use, cost-allocation rules for loads of 25 MW and up, tighter generator and water rules, and a regulator order making data centers pay for dedicated transmission. The sales tax exemption survived, for now. Locally, Prince William ended by-right approvals, QTS terminated the Digital Gateway, and Loudoun votes Nov. 17 on a 12-month pause. Moratorium bills are filed for 2027."},
+VT:{s:"proposed",t:"S.205's moratorium on AI data centers never left committee, and the House upheld Gov. Scott's veto of a separate data center deployment bill."},
+WA:{s:"local",t:"Snohomish County paused projects as small as 2 MW in June, and Skamania County adopted a moratorium in August."},
+WI:{s:"rules",t:"Regulators approved Meta's Beaver Dam power deal with conditions and ordered a standard tariff, and a settlement commits the DNR to a statewide impact study. A statewide moratorium bill failed, Republicans propose repealing the sales tax break, and Milwaukee voted for a one-year pause."},
+WV:{s:"rules",t:"The 2025 Power Generation and Consumption Act strips counties of power over certified data centers and their private power plants, and sends most of their property tax to the state. Efforts to restore local control stalled in 2026."},
+WY:{s:"rules",t:"Gov. Gordon's June executive order sets state expectations for data centers, and regulators rejected an attempt to treat a data center power project as a non-utility. A committee narrowly killed a bill exempting some generators from utility rules."}
 };
 
 // level: federal | state | local | tribal
@@ -509,8 +518,8 @@ s:[["Data Center Moratoriums weekly","https://www.datacenterbans.com/"]]},
 {d:"2026-06-16",j:"MD",w:"Baltimore City",lv:"local",st:"pause",ty:["moratorium"],t:"One-year moratorium on large data centers",
 b:"Mayor Brandon Scott signed a one-year pause on data centers projected to use 10 MW or more, proposed by Council President Zeke Cohen. It also orders a city study of energy, infrastructure and job effects.",
 s:[["dcmap.us","https://dcmap.us/insights/policy/"],["S&P Global","https://www.spglobal.com/energy/en/technology-ai-research-insights/blogs/new-data-center-legislation-roundup-april-2026"]]},
-{d:"2026-10-20",j:"TN",w:"Memphis",lv:"local",st:"pending",ty:["moratorium"],t:"Memphis council votes on its 12-month moratorium",
-b:"Scheduled after the council postponed an earlier vote 7–5 when protests disrupted the meeting. Shelby County is separately weighing a pause for areas outside the city.",
+{d:"2026-10-06",j:"TN",w:"Memphis",lv:"local",k:"politics",st:"protest",ty:["moratorium"],t:"Protests erupt as Memphis council delays its moratorium vote",
+b:"Police cleared the chamber after a 7–5 vote to postpone the decision two weeks. The council later rejected an 18-month pause and passed a 135-day one.",
 s:[["Data Center Moratoriums weekly","https://www.datacenterbans.com/"]]},
 {d:"2026-06-16",j:"TX",w:"San Marcos",lv:"local",st:"in-force",ty:["moratorium","siting"],t:"First Texas city to exclude data centers from every zoning district",
 b:"Passed 4–3. Earlier, Hill County adopted a county moratorium and rescinded it after a developer sued for $100 million. State lawmakers have since moved to limit city bans.",
@@ -767,7 +776,7 @@ const IMPACT=[
 [-1,"Would raise costs and limit incentives and secrecy"],
 [-2,"Long countywide halt in a key East Coast market"],
 [-2,"Citywide pause on large facilities"],
-[-1,"A year-long pause in Memphis is on the table"],
+[-1,"Visible opposition in a major hub"],
 [-2,"Excludes data centers from every zone in a Texas city"],
 [1,"A court lifted a local pause"],
 [-1,"Short pause, and the marquee projects are exempt"],
@@ -884,7 +893,7 @@ b:"An 8–0 vote denied the plan amendment for what would have been the county's
 s:[["WTOP","https://wtop.com/prince-william-county/2026/07/prince-william-co-supervisors-deny-2000-acre-dulles-south-data-center-plans/"],["Virginia Mercury","https://virginiamercury.com/2026/07/09/after-digital-gateway-project-fails-prince-william-supervisors-reject-dulles-cloud-south-data-center-proposal/"]],
 im:-2,iw:"Largest proposed project in the county killed",pl:[["Prince William County","county"]]},
 {d:"2026-09-15",j:"VA",w:"Loudoun County",lv:"local",st:"pending",ty:["moratorium"],t:"Loudoun moves toward a 12-month pause on new data center applications",
-b:"The heart of Data Center Alley voted to pause board action on legislative data center and some substation applications while it rewrites its rules. By-right projects continue. A formal resolution was expected in October.",
+b:"The heart of Data Center Alley voted to pause board action on legislative data center and some substation applications while it rewrites its rules. By-right projects continue. The final vote was deferred to Nov. 17.",
 s:[["McGuireWoods","https://www.mcguirewoods.com/client-resources/alerts/2026/9/virginia-data-centers-fast-changing-landscape-what-developers-need-to-know/"]],
 im:-2,iw:"A pause in the world's densest data center market",pl:[["Loudoun County","county"]]},
 {d:"2026-08-19",j:"VA",w:"Chesapeake",lv:"local",st:"in-force",ty:["siting","water"],t:"Chesapeake limits data centers to conditional uses and bans groundwater use",
@@ -1049,7 +1058,7 @@ im:-1,iw:"Short pause in an established hub",pl:[["Hillsboro","city"]]}
 const PLX={
 "7–0 vote halts new data centers through Jan 31, 2028":[["Anne Arundel County","county"]],
 "One-year moratorium on large data centers":[["Baltimore City","city"]],
-"Memphis council votes on its 12-month moratorium":[["Memphis","city"]],
+"Protests erupt as Memphis council delays its moratorium vote":[["Memphis","city"]],
 "First Texas city to exclude data centers from every zoning district":[["San Marcos","city"],["Hill County","county"]],
 "Court sets aside county moratorium":[["Imperial County","county"]],
 "120-day pause in unincorporated areas":[["Pima County","county"]],
@@ -1106,20 +1115,23 @@ const POLLS=[
 
 // ── COMING UP (chronological) ───────────────────
 const NEXT=[
-{w:"Oct 19, 2026",t:"Texas TCEQ reports to Abbott on its permit freeze.",big:false},
-{w:"Oct 20, 2026",t:"Memphis City Council votes on its 12-month moratorium. Loudoun County's formal vote on a 12-month pause is also expected in October.",big:false},
-{w:"Oct 27, 2026",t:"Martin County, Florida, holds its final vote on a one-year moratorium.",big:false},
+{w:"Oct 27, 2026",t:"Martin County, Florida, holds its final vote on a one-year moratorium, and Pulaski County, Arkansas, may vote to override its judge's veto of data center rules.",big:false},
 {w:"Oct 31, 2026",t:"Lexington's data center pause expires unless the council extends it.",big:false},
-{w:"Nov 3, 2026",t:"Election Day: 36 governor races, the Ohio Senate race, two Georgia PSC seats, and 35+ local data center measures led by Ohio.",big:true},
+{w:"Nov 3, 2026",t:"Election Day: 36 governor races, the Ohio Senate race, Public Service Commission seats in Georgia and Louisiana, and 35+ local data center measures from Ohio to Maine.",big:true},
+{w:"Nov 5, 2026",t:"Charlotte's 150-day moratorium expires unless extended; city staff recommended extending it.",big:false},
 {w:"November 2026",t:"Virginia work group reports on data center taxation ahead of the 2027 session.",big:false},
 {w:"By Nov 16, 2026",t:"PJM targets its FERC filing for a flexible large-load service model.",big:false},
+{w:"Nov 17, 2026",t:"Loudoun County's final vote on a 12-month pause in the world's densest data center market.",big:true},
 {w:"Nov 21, 2026",t:"Meriwether County, Georgia's extended moratorium ends.",big:false},
 {w:"Dec 1, 2026",t:"Nashville's data center permit pause ends.",big:false},
-{w:"December 2026",t:"ERCOT's target for finishing the Texas audit. Grid approvals stay frozen until then.",big:false},
+{w:"Dec 7, 2026",t:"Air permit hearing for New Mexico's Project Jupiter in Sunland Park.",big:false},
+{w:"December 2026",t:"ERCOT's target for finishing the Texas audit, and Louisiana regulators' expected vote on gas plants for Meta's Hyperion expansion.",big:false},
 {w:"Dec 13 and 24, 2026",t:"Coweta County, Georgia, and Snohomish County, Washington, pauses expire unless renewed.",big:false},
-{w:"Dec 31, 2026",t:"Hochul's deadline to sign or veto the Responsible Data Center Development Act. Inaction is a pocket veto.",big:true},
-{w:"Jan 1, 2027",t:"Most of California's seven data center laws take effect; 2027 sessions open with incentive repeal fights in Texas and Virginia.",big:false},
-{w:"July 1, 2027",t:"Oregon's state land pause ends. Ohio ban amendment organizers need 413,488 signatures by about this time for the Nov 2027 ballot.",big:false},
+{w:"Dec 31, 2026",t:"Hochul's deadline to sign or veto the Responsible Data Center Development Act; inaction is a pocket veto. Massachusetts must also set its clean-energy payment for data centers.",big:true},
+{w:"Jan 1, 2027",t:"Most of California's seven data center laws take effect, and 2027 sessions open with moratorium bills in Virginia and Georgia and incentive fights in Texas.",big:false},
+{w:"Jan 29, 2027",t:"Maine's state recommendations on large data centers are due.",big:false},
+{w:"May 2027",t:"PJM's first capacity auction without the price cap.",big:false},
+{w:"July 1, 2027",t:"Oregon's permit and state land pauses end. Ohio ban amendment organizers need 413,488 signatures by about this time for the Nov 2027 ballot.",big:false},
 {w:"June 30, 2028",t:"Virginia's consumption tax sunsets unless extended.",big:false}
 ];
 const GAPS=[
@@ -1146,7 +1158,10 @@ const TRK=[
 {n:"AI Laws by State: data center regulation",o:"Independent",sc:"State laws by category",w:"Organizes enacted laws into cost, water, disclosure, siting and noise.",u:"https://www.ailawsbystate.com/blog/data-center-regulation-by-state-2026"},
 {n:"FERC large-load docket RM26-4",o:"Federal Energy Regulatory Commission",sc:"Federal interconnection rules",w:"Primary source for the federal grid fight and the six regional show-cause dockets.",u:"https://www.ferc.gov/rm26-4"},
 {n:"The Impact Project governor tracker",o:"The Impact Project",sc:"143 governor candidates in 36 states",w:"Where candidates stand on pauses, as summarized in Heatmap.",u:"https://heatmap.news/ideas/2026-governors-data-centers"},
-{n:"Stop Ohio Data Centers",o:"Advocacy (Ohio)",sc:"Ohio bills, petition, county alerts",w:"Advocacy site, but the best single page on Ohio's statewide amendment and related bills.",u:"https://stopohiodatacenters.org/ohio-data-center-ban-petition"}
+{n:"Stop Ohio Data Centers",o:"Advocacy (Ohio)",sc:"Ohio bills, petition, county alerts",w:"Advocacy site, but the best single page on Ohio's statewide amendment and related bills.",u:"https://stopohiodatacenters.org/ohio-data-center-ban-petition"},
+{n:"Data Center Census",o:"Independent",sc:"State-by-state moratorium records",w:"Each record quotes its source; flags pauses that have expired.",u:"https://datacentercensus.com/moratoriums/new-york"},
+{n:"Server Country",o:"Independent",sc:"State policy profiles for all 50 states",w:"Detailed bill histories, incentive terms and statuses checked against legislature records.",u:"https://servercountry.org/policy/connecticut/"},
+{n:"AI GridWatch",o:"Independent",sc:"Moratoriums, projects and candidates by state",w:"Combines local actions with power-use data and candidate records.",u:"https://aigridwatch.com/states/pennsylvania"}
 ];
 </script>
 <script>
@@ -1408,7 +1423,7 @@ async function loadPublished(){
   try{
     const r=await fetch("updates.json",{cache:"no-store"}); if(!r.ok) return;
     const arr=await r.json(); if(!Array.isArray(arr)||!arr.length) return;
-    const items=arr.map(o=>{const c=clean(o); if(!c) return null; c.fresh=false; c.auto=o.auto!==false; c.added=o.added; if(o.by) c.by=String(o.by).slice(0,40); return c;}).filter(Boolean).filter(x=>!isDupe(x));
+    const items=arr.map(o=>{const c=clean(o); if(!c) return null; c.fresh=false; c.auto=o.auto!==false; c.added=o.added; if(o.by) c.by=String(o.by).slice(0,40); return c;}).filter(Boolean).filter(x=>!E.some(e=>norm(e.t)===norm(x.t)));
     E.push(...items); paintCounts(); renderEntries(); renderPanel();
     const last=arr.map(o=>o.added||"").sort().pop();
     if(last){ $("#reading-sub").textContent="Auto-updated "+new Date(last).toLocaleDateString([], {month:"short",day:"numeric",year:"numeric"}); }
