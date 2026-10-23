@@ -34,4 +34,4 @@ Each item:
        (every local or tribal item names its place(s); use [] for state and federal items)}
 ```
 
-Rules: only cite URLs you actually opened. The date `d` is when the event happened. For a scheduled vote, use the scheduled date; the site shows future dates as "Coming up." Skip anything already in the tracker. If nothing new turned up, write `[]`.
+Rules: only cite URLs you actually opened. Cite news reporting or official records (government sites, filings, court documents), never other data center trackers, digests or AI-generated meeting summaries (for example datacenterbans.com, savrn.com, Server Country, MultiState, Citizen Portal). Use a tracker only as a lead, then find and cite the article or record it points to; items whose only sources are trackers are rejected. The date `d` is when the event happened. For a scheduled vote, use the scheduled date; the site shows future dates as "Coming up." Skip anything already in the tracker. If nothing new turned up, write `[]`.
