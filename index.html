@@ -171,11 +171,6 @@ a:hover{text-decoration-thickness:2px}
 .im-key > span{display:inline-flex;align-items:center;gap:7px}
 .panel .climate{margin-top:16px;border-top:1px solid var(--rule);padding-top:10px}
 .panel .climate .im-line{margin:4px 0 0}
-.btn-live{background:var(--ink);color:var(--paper);border:0;font:inherit;font-size:15px;font-weight:600;padding:7px 14px;border-radius:3px;cursor:pointer}
-.btn-live[disabled]{opacity:.6;cursor:progress}
-.live-status{font-size:15px;color:var(--ink-2);margin:-2px 0 12px;max-width:80ch}
-.live-status:empty{display:none}
-.live-status button{background:none;border:0;color:var(--rules);font:inherit;text-decoration:underline;cursor:pointer;padding:0}
 
 /* ── Politics ──────────────────────────────────── */
 .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
@@ -305,8 +300,7 @@ footer p{max-width:90ch;margin-bottom:6px}
       <select id="f-status"><option value="">Any status</option><optgroup label="Official actions"><option value="pause">Pause in force</option><option value="in-force">In force</option><option value="pending">Pending</option><option value="ballot">On the ballot</option><option value="failed">Failed or vetoed</option><option value="denied">Project denied</option><option value="upcoming">Scheduled, not yet happened</option></optgroup><optgroup label="Political noise"><option value="campaign">Campaign</option><option value="poll">Poll</option><option value="statement">Statement</option><option value="protest">Protest</option></optgroup></select></div>
   </div>
   <div class="im-key" aria-hidden="true"><span>Industry impact for data center developers:</span><span>__K-2__ Strong headwind</span><span>__K-1__ Headwind</span><span>__K0__ Mixed</span><span>__K1__ Tailwind</span><span>__K2__ Strong tailwind</span></div>
-  <div class="result-line"><span id="rc"></span><span class="rl-actions"><button class="btn-quiet" id="reset" type="button">Clear filters</button><button class="btn-live" id="live" type="button">Check for new developments</button></span></div>
-  <div class="live-status" id="liveStatus" aria-live="polite"></div>
+  <div class="result-line"><span id="rc"></span><span class="rl-actions"><button class="btn-quiet" id="reset" type="button">Clear filters</button></span></div>
   <ul class="entries" id="entries"></ul>
 </section>
 
@@ -317,7 +311,6 @@ footer p{max-width:90ch;margin-bottom:6px}
 <footer>
   <p>Load Watch is a snapshot compiled from primary sources (governors, legislatures, FERC, Congress.gov) and reporting. Every entry links to where it came from. Status changes fast, so check the source before relying on any entry. This is not legal advice.</p>
   <p>Industry impact scores are this tracker's editorial read of the near-term business effect on data center developers and operators: costs, delays, and whether projects can be built. A headwind is not a claim that a policy is bad, and a tailwind is not an endorsement. Automatically found items are scored by Claude and should be checked.</p>
-  <p>Format inspired by Daniel Kalish's <a href="https://github.com/dkalish42/ai-policy-tracker-tracker" target="_blank" rel="noopener">AI Policy Tracker Tracker</a>.</p>
 </footer>
 </div>
 <script>
@@ -1333,11 +1326,9 @@ $("#f-place").addEventListener("change",ev=>{state.pl=ev.target.value;renderPane
 $("#reset").addEventListener("click",()=>{state.q=state.lv=state.ty=state.st=state.k=state.im=state.pl="";
   ["#q","#f-kind","#f-level","#f-type","#f-status","#f-impact","#f-place"].forEach(id=>$(id).value="");select(null);});
 
-// ── Live updates (works when opened inside Claude) ──────────
-const STORE_KEY="loadwatch-updates";
+// ── Entry validation and the published feed (updates.json) ──
 const OK_LV=new Set(Object.keys(LVL)), OK_TY=new Set(Object.keys(TYL));
 const ACT_ST=new Set(["pause","in-force","pending","ballot","failed","denied"]), POL_ST=new Set(["campaign","poll","statement","protest"]);
-let fetched=[], lastChecked=null;
 const norm=t=>String(t).toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
 function clean(o){
   if(!o||typeof o!=="object")return null;
@@ -1353,71 +1344,6 @@ function clean(o){
   const pl=(Array.isArray(o.pl)?o.pl:[]).filter(x=>Array.isArray(x)&&x[0]&&PTL[x[1]]).map(x=>[String(x[0]).slice(0,60),x[1]]).slice(0,12);
   return {d,j,w:String(o.w||"").slice(0,60),lv,k,st,ty:ty.length?ty:["siting"],t:String(o.t).slice(0,140),b:String(o.b).slice(0,500),s,im,iw:o.iw?String(o.iw).slice(0,140):"",pl,fresh:true};
 }
-const isDupe=o=>E.some(e=>norm(e.t)===norm(o.t)||(e.d===o.d&&e.s.some(x=>o.s.some(y=>y[1]===x[1]))));
-function liveMsg(html){$("#liveStatus").innerHTML=html;const b=$("#clearFetched");if(b)b.addEventListener("click",clearFetched);}
-function summary(){
-  if(!lastChecked&&!fetched.length)return "";
-  const when=lastChecked?new Date(lastChecked).toLocaleString([], {month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}):"";
-  return `${fetched.length} automatically found ${fetched.length===1?"item":"items"} highlighted${when?`, last checked ${when}`:""}. ${fetched.length?'<button type="button" id="clearFetched">Remove them</button>':""}`;
-}
-async function save(){
-  if(!window.storage)return;
-  try{await window.storage.set(STORE_KEY,JSON.stringify({checked:lastChecked,items:fetched.map(({fresh,...r})=>r)}),false);}catch(err){console.error("Storage error:",err);}
-}
-async function loadStored(){
-  if(!window.storage)return;
-  try{const r=await window.storage.get(STORE_KEY,false);
-    if(r&&r.value){const o=JSON.parse(r.value);lastChecked=o.checked||null;
-      fetched=(o.items||[]).map(clean).filter(Boolean).filter(x=>!isDupe(x));E.push(...fetched);
-      paintCounts();renderEntries();liveMsg(summary());}
-  }catch(err){/* nothing stored yet */}
-}
-async function clearFetched(){
-  for(let i=E.length-1;i>=0;i--) if(E[i].fresh) E.splice(i,1);
-  fetched=[];paintCounts();renderEntries();
-  if(window.storage){try{await window.storage.delete(STORE_KEY,false);}catch(err){}}
-  lastChecked=null;liveMsg("Removed. The list is back to the hand-checked entries.");
-}
-const pad=n=>String(n).padStart(2,"0");
-const iso=dt=>dt.getFullYear()+"-"+pad(dt.getMonth()+1)+"-"+pad(dt.getDate());
-async function checkLive(){
-  const btn=$("#live");btn.disabled=true;btn.textContent="Searching…";
-  const today=iso(new Date());
-  const newest=E.filter(e=>e.d.length===10).map(e=>e.d).sort().pop();
-  const base=lastChecked?new Date(lastChecked):new Date(newest+"T12:00:00");
-  base.setDate(base.getDate()-3);const since=iso(base);
-  liveMsg(`Searching the news since ${fmt(since)}. This can take up to a minute.`);
-  const recent=E.slice().sort((a,b)=>key(b.d).localeCompare(key(a.d))).slice(0,70).map(e=>"- "+e.t).join("\n");
-  const prompt=`You maintain a tracker of U.S. data center policy and politics. Today is ${today}.
-Use web search to find up to 6 significant developments dated ${since} or later that are NOT already covered by these existing entries:
-${recent}
-
-Include both official actions (state or federal laws, executive orders, regulator orders, local moratoriums or bans, court rulings, ballot results) and political noise (candidate promises, polls, notable statements by officials, protests). Prefer primary sources and established outlets.
-
-Respond ONLY with a JSON array, no prose and no markdown fences. Each element:
-{"d":"YYYY-MM-DD","j":"two-letter state code, or US for national","w":"who acted, under 6 words","lv":"federal|state|local|tribal","k":"action|politics","st":"for actions: pause|in-force|pending|ballot|failed|denied (denied = a specific project rejected); for politics: campaign|poll|statement|protest","ty":["any of: moratorium,cost,tax,water,siting,permitting,disclosure"],"t":"headline in your own words, under 15 words","b":"summary in your own words, under 45 words, no direct quotes","s":[["publication name","https URL of the article you found"]],"im":"integer from -2 to 2: near-term business impact on data center developers and operators (-2 strong headwind such as a ban or pause, -1 headwind such as new costs or rising opposition, 0 mixed, 1 tailwind, 2 strong tailwind such as faster permits). This is about business impact, not whether the policy is good.","iw":"one-line reason for the impact score, under 15 words","pl":[["county, city, township or tribal nation name","county|city|township|tribal"]] (for local or tribal items; empty array otherwise)}
-Only include items you actually found in search results with a real URL. If nothing new, return [].`;
-  try{
-    const res=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({model:"claude-sonnet-4-6",max_tokens:1000,messages:[{role:"user",content:prompt}],tools:[{type:"web_search_20250305",name:"web_search"}]})});
-    if(!res.ok) throw new Error("HTTP "+res.status);
-    const data=await res.json();
-    const text=(data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("\n").replace(/```json|```/g,"");
-    const m=text.match(/\[[\s\S]*\]/);
-    let arr=[];if(m){try{arr=JSON.parse(m[0]);}catch(err){arr=[];}}
-    const items=(Array.isArray(arr)?arr:[]).map(clean).filter(Boolean).filter(x=>!isDupe(x));
-    E.push(...items);fetched.push(...items);lastChecked=new Date().toISOString();
-    await save();paintCounts();renderEntries();
-    liveMsg(items.length?`Added ${items.length} new ${items.length===1?"item":"items"} at the top of the list. ${items.length===1?"It was":"They were"} found and summarized automatically, so open the sources before relying on them. ${fetched.length?'<button type="button" id="clearFetched">Remove all automatically found items</button>':""}`
-      :`Nothing new turned up since ${fmt(since)}. ${summary()}`);
-  }catch(err){
-    console.error("Live update failed:",err);
-    liveMsg(window.storage===undefined
-      ?"This site updates itself automatically on a schedule. On-demand checks only work in the copy hosted on Claude, where you sign in with your Claude account."
-      :"The search didn't come back with usable results. Wait a minute and try again.");
-  }finally{btn.disabled=false;btn.textContent="Check for new developments";}
-}
-$("#live").addEventListener("click",checkLive);
 // Items published by the scheduled GitHub job (updates.json next to this file)
 async function loadPublished(){
   try{
@@ -1429,7 +1355,7 @@ async function loadPublished(){
     if(last){ $("#reading-sub").textContent="Auto-updated "+new Date(last).toLocaleDateString([], {month:"short",day:"numeric",year:"numeric"}); }
   }catch(err){ /* opened as a file or inside Claude: no updates.json */ }
 }
-loadPublished().then(loadStored);
+loadPublished();
 
 // ── Politics ──────────────────────────────────
 $("#v-politics").innerHTML=`
