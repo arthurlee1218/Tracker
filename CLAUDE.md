@@ -124,6 +124,9 @@ deep navy ink, one amber accent ("volt"), dense data rows. Keep new work consist
 ## Editorial rules
 
 Own words, no long quotes (under 15 words, one per source). Every entry has a
-source, ideally the primary one. Stay neutral; the impact score measures business
+source, ideally the primary one. **Never cite another tracker** (Data Center Moratoriums,
+Savrn, Server Country, MultiState, Programs.com, AI-written meeting summaries and the
+like): use them as leads and cite the news story or official record instead. The
+full list lives in `TRACKERS` in `scripts/merge.mjs`, which rejects tracker-only items. Stay neutral; the impact score measures business
 effect on data center developers, not whether a policy is good. The date is when
 the event happened, not when it was reported.
