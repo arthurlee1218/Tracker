@@ -25225,5 +25225,1549 @@
   "pl": [],
   "auto": false,
   "by": "dkalish42"
+ },
+ {
+  "d": "2026-03-12",
+  "j": "WA",
+  "w": "Washington Legislature",
+  "lv": "state",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "cost",
+   "disclosure",
+   "water"
+  ],
+  "t": "HB 2515's comprehensive data center rules die in the Senate",
+  "b": "Passed the House 51–41 but got no Senate vote. It would have required utility tariffs for facilities over 20 MW, annual energy and water reports, separate cost treatment and rising clean-power requirements.",
+  "s": [
+   [
+    "Davis Wright Tremaine",
+    "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/03/washington-legislature-delays-data-center-bill"
+   ],
+   [
+    "Server Country",
+    "https://servercountry.org/policy/washington/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Cost and clean-power mandates avoided for now",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-03-24",
+  "j": "WA",
+  "w": "Gov. Ferguson",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "permitting",
+   "disclosure"
+  ],
+  "t": "SB 5982 holds data centers to Washington's clean-energy law",
+  "b": "Signed March 24, effective June 11. Brings port districts and large customers that self-generate or buy power outside regulated utilities under the Clean Energy Transformation Act's deadlines and reporting, closing a route for fossil-powered sites.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/washington/"
+   ],
+   [
+    "Davis Wright Tremaine",
+    "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/03/washington-legislature-delays-data-center-bill"
+   ]
+  ],
+  "im": -1,
+  "iw": "Closes off fossil-powered workarounds",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-04-01",
+  "j": "WA",
+  "w": "Gov. Ferguson",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax"
+  ],
+  "t": "Washington narrows its data center sales tax break",
+  "b": "ESSB 6231 ends the exemption for replacement server equipment and refurbishments while keeping it for new construction and original equipment. An earlier version would have repealed far more.",
+  "s": [
+   [
+    "Server Country",
+    "https://servercountry.org/policy/washington/"
+   ],
+   [
+    "GeekWire",
+    "https://www.geekwire.com/2026/washington-state-has-embraced-data-centers-but-now-its-looking-to-set-terms-of-engagement/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Higher costs for existing sites",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-06-09",
+  "j": "WA",
+  "w": "Seattle City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Seattle adopts a one-year moratorium on large data centers",
+  "b": "The council voted 9–0 to freeze new data centers above 20 MVA while it studies impacts, extendable six months. Five large proposals had surfaced in April; applications filed earlier remain vested.",
+  "s": [
+   [
+    "Seattle City Council",
+    "https://council.seattle.gov/2026/06/09/city-council-passes-emergency-data-center-moratorium-and-policy-framework/"
+   ],
+   [
+    "Spokesman-Review",
+    "https://www.spokesman.com/stories/2026/jun/10/seattle-passes-moratorium-on-new-data-centers-amid/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Pause in a major West Coast city",
+  "pl": [
+   [
+    "Seattle",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-06-22",
+  "j": "WA",
+  "w": "Spokane City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Spokane passes a one-year emergency data center moratorium, 6–1",
+  "b": "Halts building permit applications for new data centers. It came weeks after Avista disclosed interest from a 500 MW project, and was amended to cover data centers inside mixed-use sites.",
+  "s": [
+   [
+    "City of Spokane",
+    "https://my.spokanecity.org/news/releases/2026/06/23/spokane-city-council-passes-one-year-moratorium-on-data-centers/"
+   ],
+   [
+    "Spokesman-Review",
+    "https://www.spokesman.com/stories/2026/jun/22/spokane-city-council-approves-yearlong-moratorium-/"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year city pause",
+  "pl": [
+   [
+    "Spokane",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-20",
+  "j": "WA",
+  "w": "Spokane County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Spokane County extends its data center permit pause to June 2027",
+  "b": "Commissioners unanimously extended the halt on accepting and processing data center permits until June 1, 2027, or until rules are adopted. Critics said the work plan still leaves loopholes.",
+  "s": [
+   [
+    "Spokesman-Review",
+    "https://www.spokesman.com/stories/2026/oct/21/spokane-county-commission-extends-halt-on-data-cen/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Longer county pause",
+  "pl": [
+   [
+    "Spokane County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-04",
+  "j": "WA",
+  "w": "Washington AI Resistance and allies",
+  "lv": "state",
+  "k": "politics",
+  "st": "protest",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Rallies at 19 Washington sites demand a statewide data center moratorium",
+  "b": "Hundreds turned out in Seattle, Spokane, Olympia, Walla Walla and elsewhere. A moratorium bill is expected in 2027, though the governor's workgroup favors rules over a pause.",
+  "s": [
+   [
+    "Common Dreams",
+    "https://www.commondreams.org/news/wa-state-data-center-moratorium"
+   ],
+   [
+    "AGC of Washington",
+    "https://www.agcwa.com/prospects-of-a-data-center-moratorium-in-washington/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Builds pressure for a 2027 pause bill",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-13",
+  "j": "WA",
+  "w": "Klickitat County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium",
+   "siting",
+   "disclosure"
+  ],
+  "t": "Klickitat County resists a pause as six hyperscale proposals seek 5.6 GW",
+  "b": "Developers have requested up to 5,655 MW from Bonneville and the county PUD. Commissioners declined a moratorium and are drafting rules for 20 MW-plus sites; Skamania, Benton, Yakima and Hood River counties all paused.",
+  "s": [
+   [
+    "Washington State Standard",
+    "https://washingtonstatestandard.com/2026/10/07/rural-klickitat-county-faces-surge-in-data-center-proposals/"
+   ],
+   [
+    "Columbia Gorge News",
+    "https://www.columbiagorgenews.com/news/klickitat-county-commissioners-still-pondering-data-center-rules/article_2d7f5a70-f644-41db-9605-222f811b0a16.html"
+   ]
+  ],
+  "im": 0,
+  "iw": "No pause yet, rules coming",
+  "pl": [
+   [
+    "Klickitat County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-02-12",
+  "j": "WA",
+  "w": "Port of Walla Walla",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "disclosure"
+  ],
+  "t": "Port of Walla Walla finalizes a $36 million land sale to Amazon",
+  "b": "Commissioners unanimously approved selling about 554 acres at Wallula Gap for a planned 16-building, roughly $4.8 billion campus. An NDA had kept Amazon's identity secret since 2023; the county is reviewing its site plan.",
+  "s": [
+   [
+    "Walla Walla Union-Bulletin",
+    "https://www.union-bulletin.com/news/local/business/port-of-walla-walla-approves-36m-sale-of-property-for-amazon-data-center/article_0830f222-47e3-46c0-9a9f-45557bc8d1db.html"
+   ],
+   [
+    "Washington State Standard",
+    "https://washingtonstatestandard.com/2026/10/06/amazons-walla-walla-data-center-plan-sparks-tension-between-protesters-local-officials/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Land secured for a large campus",
+  "pl": [
+   [
+    "Walla Walla County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-05-14",
+  "j": "NV",
+  "w": "Reno City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "permitting"
+  ],
+  "t": "Reno becomes Nevada's first city to pause data center permits",
+  "b": "Voted 6–1 for a temporary moratorium on new construction permits, exempting four pipeline projects. On June 1 it extended the pause through Aug. 31, 2027, or until new rules pass.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/nevada"
+   ]
+  ],
+  "im": -1,
+  "iw": "Pause in a major market",
+  "pl": [
+   [
+    "Reno",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-07-22",
+  "j": "NV",
+  "w": "Henderson City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Henderson rejects a 180-day data center moratorium",
+  "b": "The council chose case-by-case development agreements instead, with the mayor noting existing codes predate many current concerns.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/nevada"
+   ]
+  ],
+  "im": 1,
+  "iw": "Pause rejected",
+  "pl": [
+   [
+    "Henderson",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08-18",
+  "j": "NV",
+  "w": "Nye County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "moratorium",
+   "siting",
+   "water"
+  ],
+  "t": "Nye County bans data centers in the Pahrump groundwater basin",
+  "b": "Nevada's first outright local ban covers the over-appropriated Basin 162, where Gigawatt Development Partners planned the Manse Technology Campus. It followed a June countywide moratorium; rules for the rest of the county came later.",
+  "s": [
+   [
+    "Nevada Current",
+    "https://nevadacurrent.com/2026/08/20/nye-county-totally-bans-data-centers-in-over-appropriated-water-basin/"
+   ],
+   [
+    "Las Vegas Review-Journal",
+    "https://www.reviewjournal.com/news/politics-and-government/nevada/data-centers-banned-in-pahrump-3866399/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Permanent ban in a large basin",
+  "pl": [
+   [
+    "Nye County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08-26",
+  "j": "NV",
+  "w": "Interim revenue committee",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "tax",
+   "moratorium"
+  ],
+  "t": "Nevada lawmakers draft a bill to end data center tax breaks and pause construction",
+  "b": "The Joint Interim Standing Committee on Revenue voted to draft Sen. Dina Neal's bill for the 2027 session. Nevada has granted about $461 million in expected data center tax breaks over 11 years.",
+  "s": [
+   [
+    "Las Vegas Sun",
+    "https://lasvegassun.com/news/2026/sep/18/lombardo-order-forces-data-center-developers-to-fu/"
+   ],
+   [
+    "Nevada Independent",
+    "https://thenevadaindependent.com/article/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order"
+   ]
+  ],
+  "im": -1,
+  "iw": "Possible end to incentives",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-09-18",
+  "j": "NV",
+  "w": "Gov. Lombardo",
+  "lv": "state",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax",
+   "cost",
+   "water"
+  ],
+  "t": "Lombardo's order makes tax-break seekers pay school taxes and cover power costs",
+  "b": "Executive Order 2026-005 bars abatement applications unless developers pay the Local School Support Tax in full and sign a binding commitment on water, ratepayer costs and grid emergencies. Terms are due Nov. 6.",
+  "s": [
+   [
+    "Nevada Governor's Office",
+    "https://www.gov.nv.gov/press-releases/governor-joe-lombardo-signs-executive-order-placing-guardrails-on-data-center-development-restoring-education-funding/"
+   ],
+   [
+    "Nevada Independent",
+    "https://thenevadaindependent.com/article/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order"
+   ]
+  ],
+  "im": -1,
+  "iw": "Smaller incentives, more conditions",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-09-18",
+  "j": "NV",
+  "w": "Aaron Ford (D)",
+  "lv": "state",
+  "k": "politics",
+  "st": "campaign",
+  "ty": [
+   "tax",
+   "siting"
+  ],
+  "t": "Ford pledges to pause data center tax breaks and let communities say no",
+  "b": "The Democratic nominee called Lombardo's order a last-ditch move and backs a statewide evaporative-cooling ban. Lombardo's camp notes Ford co-sponsored the 2015 abatement law.",
+  "s": [
+   [
+    "Nevada Current",
+    "https://nevadacurrent.com/2026/09/18/lombardo-doubles-down-on-data-centers-offers-trimmed-tax-breaks-commitments-to-wary-public/"
+   ],
+   [
+    "NNBW",
+    "https://www.nnbw.com/news/2026/oct/01/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Challenger favors tighter limits",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-06-04",
+  "j": "TX",
+  "w": "Hill County Commissioners Court",
+  "lv": "local",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Hill County rescinds Texas's first county moratorium after a $100 million suit",
+  "b": "The 3–2 May pause covered unincorporated areas facing eight proposals. RCM Hill, developer of Project Aquila, sued in federal court, and the county swapped the pause for a developer disclosure checklist.",
+  "s": [
+   [
+    "Texas Tribune",
+    "https://www.texastribune.org/2026/06/05/texas-hill-county-moratorium-rescinded-data-centers/"
+   ],
+   [
+    "The Real Deal",
+    "https://therealdeal.com/texas/2026/09/08/data-center-moratoriums-restrictions-bans-throughout-texas/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Shows the legal limits on county pauses",
+  "pl": [
+   [
+    "Hill County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-05",
+  "j": "TX",
+  "w": "Somervell County Commissioners Court",
+  "lv": "local",
+  "k": "politics",
+  "st": "statement",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Somervell County formally opposes new data centers until lawmakers act",
+  "b": "Unanimous resolution after an earlier moratorium proposal failed. It has no binding effect.",
+  "s": [
+   [
+    "Spectrum News",
+    "https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2026/05/19/texas-counties-pushing-back-against-data-centers"
+   ]
+  ],
+  "im": 0,
+  "iw": "Symbolic",
+  "pl": [
+   [
+    "Somervell County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-02",
+  "j": "TX",
+  "w": "Hood County Commissioners Court",
+  "lv": "local",
+  "k": "action",
+  "st": "failed",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Hood County rejects a data center moratorium, 3–2",
+  "b": "A state senator had warned the county off. Van Zandt County separately paused green energy projects the same month.",
+  "s": [
+   [
+    "Baker Botts",
+    "https://www.bakerbotts.com/events/2026/may/data-center-pauses-and-local-bans-in-texas-whats-happening-and-how-to-respond"
+   ],
+   [
+    "SCORE Property Group",
+    "https://scorepropertygroup.com/insights/texas-data-center-moratoriums-by-county-2026/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Pause rejected",
+  "pl": [
+   [
+    "Hood County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-06-23",
+  "j": "TX",
+  "w": "Hays County Commissioners Court",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "tax"
+  ],
+  "t": "Hays County defers abatements and development deals for data centers",
+  "b": "After tabling a moratorium twice over legal doubts, the county adopted a 180-day review period through year-end covering the approvals it controls: abatements, development agreements and variances.",
+  "s": [
+   [
+    "SCORE Property Group",
+    "https://scorepropertygroup.com/insights/texas-data-center-moratoriums-by-county-2026/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Slower county incentives",
+  "pl": [
+   [
+    "Hays County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-07",
+  "j": "TX",
+  "w": "Austin County",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Austin County pauses AI data centers and battery storage projects",
+  "b": "The countywide moratorium west of Houston is framed as time to study impacts, not a permanent ban.",
+  "s": [
+   [
+    "MultiState",
+    "https://www.multistate.us/insider/2026/8/19/the-local-fight-over-data-centers-a-texas-case-study"
+   ]
+  ],
+  "im": -1,
+  "iw": "County pause",
+  "pl": [
+   [
+    "Austin County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08",
+  "j": "TX",
+  "w": "Athens City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Athens bans data centers within city limits, 3–2",
+  "b": "Passed after a long fight with residents who opposed a proposed build.",
+  "s": [
+   [
+    "The Real Deal",
+    "https://therealdeal.com/texas/2026/09/08/data-center-moratoriums-restrictions-bans-throughout-texas/"
+   ]
+  ],
+  "im": -1,
+  "iw": "City ban",
+  "pl": [
+   [
+    "Athens",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-06",
+  "j": "TX",
+  "w": "Lewisville City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Lewisville bars data centers from residential areas and requires special permits",
+  "b": "New applications get two public hearings. North Richland Hills adopted a similar permit rule in July.",
+  "s": [
+   [
+    "The Real Deal",
+    "https://therealdeal.com/texas/2026/09/08/data-center-moratoriums-restrictions-bans-throughout-texas/"
+   ]
+  ],
+  "im": 0,
+  "iw": "More review, not a ban",
+  "pl": [
+   [
+    "Lewisville",
+    "city"
+   ],
+   [
+    "North Richland Hills",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08",
+  "j": "TX",
+  "w": "Fort Worth City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Fort Worth starts the process for a 90-day data center moratorium",
+  "b": "Council members voted in mid-August to initiate the pause; Denton began a similar process the same month.",
+  "s": [
+   [
+    "The Real Deal",
+    "https://therealdeal.com/texas/2026/09/08/data-center-moratoriums-restrictions-bans-throughout-texas/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Possible pause in a major city",
+  "pl": [
+   [
+    "Fort Worth",
+    "city"
+   ],
+   [
+    "Denton",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08-25",
+  "j": "CA",
+  "w": "Coachella City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Coachella permanently bans data centers",
+  "b": "The third Riverside County city to do so, after Perris and Desert Hot Springs.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "Permanent city ban",
+  "pl": [
+   [
+    "Coachella",
+    "city"
+   ],
+   [
+    "Perris",
+    "city"
+   ],
+   [
+    "Desert Hot Springs",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-09-03",
+  "j": "CA",
+  "w": "Fresno City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium",
+   "siting"
+  ],
+  "t": "Fresno begins drafting a 10-year citywide data center ban",
+  "b": "The council voted 7–0 to start drafting the ban.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "Possible long ban in a large city",
+  "pl": [
+   [
+    "Fresno",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-09-16",
+  "j": "CA",
+  "w": "Calexico City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Calexico bans data centers through its zoning code",
+  "b": "The 3–0 amendment formalizes that data centers are not a permitted use, after a June moratorium.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "City ban",
+  "pl": [
+   [
+    "Calexico",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-09-22",
+  "j": "CA",
+  "w": "Tulare County Board of Supervisors",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Tulare County extends its data center moratorium by 10 months",
+  "b": "The 5–0 vote extends an August 45-day pause while staff weigh permits or a ban. On Sept. 30 the board formally opposed data center development, 3–2.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "Long county pause",
+  "pl": [
+   [
+    "Tulare County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-06",
+  "j": "CA",
+  "w": "Oakland City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Oakland adopts a 45-day emergency data center moratorium",
+  "b": "Unanimous, making it California's largest city to pause. Mendocino County extended its own urgency ordinance through August 2028 the same day, exempting facilities under 3 MW.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/"
+   ],
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "Short pause in a large city",
+  "pl": [
+   [
+    "Oakland",
+    "city"
+   ],
+   [
+    "Mendocino County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-06",
+  "j": "CA",
+  "w": "Imperial County Board of Supervisors",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "permitting"
+  ],
+  "t": "Imperial County reinstates its moratorium after a court loss",
+  "b": "Supervisors unanimously restored a temporary emergency pause after a judge struck the earlier one. A separate ruling halted a nearly 1 million sq ft complex approved without environmental review; the developer plans to appeal.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/"
+   ],
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/california"
+   ]
+  ],
+  "im": -1,
+  "iw": "Pause restored, a project halted",
+  "pl": [
+   [
+    "Imperial County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-02-26",
+  "j": "MI",
+  "w": "Reps. Wortz, Fox and Wegela",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium",
+   "permitting"
+  ],
+  "t": "HB 5594–5596 would halt Michigan data center permits until April 2027",
+  "b": "The bipartisan Data Center Regulation Act would bar state and local permits and new operations. It sits in committee, and Gov. Whitmer's office says she would veto any moratorium.",
+  "s": [
+   [
+    "Michigan Legislature",
+    "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5594"
+   ],
+   [
+    "Michigan Advance",
+    "https://michiganadvance.com/briefs/wortz-spearheads-bipartisan-effort-to-halt-data-center-construction-in-michigan/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Statewide pause, unlikely to become law",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-09",
+  "j": "MI",
+  "w": "Wixom",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting",
+   "water"
+  ],
+  "t": "Wixom swaps its moratorium for strict data center zoning",
+  "b": "Ended the pause early with a 1,500-foot setback from homes, schools and parks, a well-water ban and required sound studies. A developer is pursuing a federal suit over the pause.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/michigan"
+   ]
+  ],
+  "im": -1,
+  "iw": "Tough siting rules",
+  "pl": [
+   [
+    "Wixom",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-09",
+  "j": "MI",
+  "w": "Zeeland Township",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Zeeland Township pauses data centers and energy facilities for a year",
+  "b": "Adopted during the township's master plan update.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/michigan"
+   ]
+  ],
+  "im": -1,
+  "iw": "One-year pause",
+  "pl": [
+   [
+    "Zeeland Township",
+    "township"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08-11",
+  "j": "MI",
+  "w": "Pere Marquette Charter Township",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Pere Marquette Township adopts a one-year data center moratorium, 7–0",
+  "b": "Allen Park adopted a six-month emergency pause in June, and Clinton County a 12-month pause in April.",
+  "s": [
+   [
+    "Programs.com tracker",
+    "https://programs.com/resources/data-center-moratoriums-tracker/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Local pauses",
+  "pl": [
+   [
+    "Pere Marquette Charter Township",
+    "township"
+   ],
+   [
+    "Allen Park",
+    "city"
+   ],
+   [
+    "Clinton County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2025-09-22",
+  "j": "TN",
+  "w": "Hawkins County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Hawkins County permanently bans data centers and crypto mines",
+  "b": "Passed 10–2. Crypto company ExoticRidge sued in March 2026, backed by the Beacon Center; the case is a test of local bans in Tennessee.",
+  "s": [
+   [
+    "Tennessee Lookout",
+    "https://tennesseelookout.com/2026/07/30/east-tennessee-cities-are-gearing-up-to-fight-data-center/"
+   ],
+   [
+    "Programs.com tracker",
+    "https://programs.com/resources/data-center-moratoriums-tracker/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Permanent county ban",
+  "pl": [
+   [
+    "Hawkins County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-03-23",
+  "j": "TN",
+  "w": "Washington County Commission",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Washington County, Tennessee, pauses data centers through June 2027",
+  "b": "Passed 13–2 and also covers crypto mining.",
+  "s": [
+   [
+    "Tennessee Lookout",
+    "https://tennesseelookout.com/2026/07/30/east-tennessee-cities-are-gearing-up-to-fight-data-center/"
+   ],
+   [
+    "Programs.com tracker",
+    "https://programs.com/resources/data-center-moratoriums-tracker/"
+   ]
+  ],
+  "im": -1,
+  "iw": "County pause",
+  "pl": [
+   [
+    "Washington County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-07",
+  "j": "TN",
+  "w": "Northeast Tennessee cities",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "siting"
+  ],
+  "t": "Bristol, Johnson City and neighbors pause or restrict data centers",
+  "b": "Bristol adopted a two-year moratorium and Johnson City extended its pause to December. Jonesborough requires 1,500-foot residential buffers, and Kingsport limits data centers to heavy industrial zones.",
+  "s": [
+   [
+    "Tennessee Lookout",
+    "https://tennesseelookout.com/2026/07/30/east-tennessee-cities-are-gearing-up-to-fight-data-center/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Regional pauses and limits",
+  "pl": [
+   [
+    "Bristol",
+    "city"
+   ],
+   [
+    "Johnson City",
+    "city"
+   ],
+   [
+    "Jonesborough",
+    "city"
+   ],
+   [
+    "Kingsport",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10",
+  "j": "TN",
+  "w": "Morristown",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "siting"
+  ],
+  "t": "Morristown advances its first data center zoning rules",
+  "b": "Part of a shift in Tennessee from pauses toward permanent standards.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/"
+   ]
+  ],
+  "im": 0,
+  "iw": "Rules rather than a pause",
+  "pl": [
+   [
+    "Morristown",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-14",
+  "j": "NJ",
+  "w": "New Jersey towns",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "More than 100 New Jersey towns have now banned data centers",
+  "b": "Colts Neck and Cranbury adopted bans in mid-October, pushing advocates' count past 100; Pemberton went first in February. Gov. Sherrill has resisted a statewide moratorium.",
+  "s": [
+   [
+    "Food & Water Watch",
+    "https://www.foodandwaterwatch.org/press/2026/10/20/as-110-new-jersey-municipalities-have-blocked-ai-data-centers-advocates-and-impacted-residents-call-for-statewide-moratorium/"
+   ],
+   [
+    "NJ.com via Yahoo",
+    "https://www.yahoo.com/news/us/articles/more-100-n-j-towns-120145567.html"
+   ]
+  ],
+  "im": -2,
+  "iw": "Most of the state's towns closing off",
+  "pl": [
+   [
+    "Colts Neck",
+    "township"
+   ],
+   [
+    "Cranbury",
+    "township"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-07-10",
+  "j": "NJ",
+  "w": "National Land Developers",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "siting"
+  ],
+  "t": "Developer sues Andover Township over its reversal to a data center ban",
+  "b": "The township had zoned a 100-acre former airport for data centers in 2025, then switched to a ban days after a rowdy meeting. Montgomery, Monroe and Millville also face developer suits.",
+  "s": [
+   [
+    "New Jersey Monitor",
+    "https://newjerseymonitor.com/2026/08/20/nj-data-center-bans-courts/"
+   ]
+  ],
+  "im": 0,
+  "iw": "Tests how far town bans can go",
+  "pl": [
+   [
+    "Andover Township",
+    "township"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-08",
+  "j": "NJ",
+  "w": "Senate committee",
+  "lv": "state",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "disclosure"
+  ],
+  "t": "New Jersey bill to void data center NDAs clears a Senate committee",
+  "b": "S4304 would void nondisclosure agreements that hide data center development plans. Advanced 4–1.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/"
+   ]
+  ],
+  "im": -1,
+  "iw": "More disclosure",
+  "pl": [],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08-20",
+  "j": "FL",
+  "w": "Washington County",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Washington County, Florida, adopts a one-year data center moratorium",
+  "b": "Unanimous; it halts applications in unincorporated areas, exempting only small server rooms under 250 kW.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/florida"
+   ]
+  ],
+  "im": -1,
+  "iw": "County pause",
+  "pl": [
+   [
+    "Washington County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08",
+  "j": "FL",
+  "w": "Florida counties and cities",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "siting"
+  ],
+  "t": "Walton, Flagler, Madison and DeSoto counties and Pensacola restrict data centers",
+  "b": "Walton banned them in every zoning district in June. Madison, DeSoto (exempting a pending 800-acre project), Pensacola and Flagler adopted one-year pauses in July and August.",
+  "s": [
+   [
+    "Programs.com tracker",
+    "https://programs.com/resources/data-center-moratoriums-tracker/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Spreading pauses",
+  "pl": [
+   [
+    "Walton County",
+    "county"
+   ],
+   [
+    "Flagler County",
+    "county"
+   ],
+   [
+    "Madison County",
+    "county"
+   ],
+   [
+    "DeSoto County",
+    "county"
+   ],
+   [
+    "Pensacola",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-08",
+  "j": "NY",
+  "w": "Town of Tonawanda",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Town of Tonawanda pauses data centers of 20 MW or more for a year",
+  "b": "Mirrors the governor's statewide pause at a lower threshold.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/new-york"
+   ]
+  ],
+  "im": -1,
+  "iw": "Town pause",
+  "pl": [
+   [
+    "Town of Tonawanda",
+    "township"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-09-30",
+  "j": "NY",
+  "w": "Buffalo Common Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Buffalo advances a two-year data center moratorium with a task force",
+  "b": "The council amended the proposal to create a nine-member task force and delayed the final vote about two weeks.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/new-york"
+   ]
+  ],
+  "im": -1,
+  "iw": "Possible two-year city pause",
+  "pl": [
+   [
+    "Buffalo",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-11-05",
+  "j": "NY",
+  "w": "Town of Potsdam",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Potsdam holds a hearing on a 12-month large data center moratorium",
+  "b": "Proposed after nearby Massena declined a pause, clearing the way for a roughly 400 MW project.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/state/new-york"
+   ]
+  ],
+  "im": -1,
+  "iw": "Possible town pause",
+  "pl": [
+   [
+    "Potsdam",
+    "township"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10",
+  "j": "ME",
+  "w": "Old Town",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium"
+  ],
+  "t": "Old Town adopts a six-month data center moratorium in industrial zones",
+  "b": "Retroactive to Sept. 8.",
+  "s": [
+   [
+    "Data Center Moratoriums",
+    "https://www.datacenterbans.com/"
+   ]
+  ],
+  "im": -1,
+  "iw": "City pause",
+  "pl": [
+   [
+    "Old Town",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-05",
+  "j": "OR",
+  "w": "City of Hillsboro",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "tax"
+  ],
+  "t": "Hillsboro approves 17 stacked tax breaks just before its moratorium",
+  "b": "Operators applied for successive five-year incentives that could run for decades, a use state officials said they had never seen. Public anger turned the city against its longtime industry.",
+  "s": [
+   [
+    "GovTech",
+    "https://www.govtech.com/artificial-intelligence/hillsboro-ore-moves-to-restrict-land-for-data-centers"
+   ]
+  ],
+  "im": 1,
+  "iw": "Long-running incentives locked in",
+  "pl": [
+   [
+    "Hillsboro",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-07-30",
+  "j": "OR",
+  "w": "Gov. Kotek",
+  "lv": "state",
+  "k": "action",
+  "st": "denied",
+  "ty": [
+   "siting"
+  ],
+  "t": "Kotek blocks state land sale for a $5 billion Salem data center",
+  "b": "Stopped the sale of a 32-acre state parcel at Salem's Mill Creek Corporate Center after residents objected to a California developer's plan.",
+  "s": [
+   [
+    "OPB",
+    "https://www.opb.org/article/2026/07/30/oregon-governor-kotek-state-land-salem-data-center/"
+   ]
+  ],
+  "im": -2,
+  "iw": "Project site lost",
+  "pl": [
+   [
+    "Salem",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
+  "d": "2026-10-20",
+  "j": "OR",
+  "w": "Hillsboro City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "siting"
+  ],
+  "t": "Hillsboro cuts land open to standalone data centers from 6,600 to 608 acres",
+  "b": "Caps include already-approved sites, leaving about 30 acres for new ones. Adds public hearings, limits accessory data centers and a temporary 1,000-foot school buffer. Forest Grove adopted a 120-day pause Oct. 12.",
+  "s": [
+   [
+    "Hillsboro News Times",
+    "https://hillsboronewstimes.com/2026/10/21/hillsboro-city-council-adopts-first-round-of-new-data-center-restrictions/"
+   ],
+   [
+    "KGW",
+    "https://www.kgw.com/article/news/politics/hillsboro-proposes-strict-limits-new-data-centers-reducing-potential-sites/283-dd5fedf6-8dac-48ea-8228-2ddc843f64c2"
+   ]
+  ],
+  "im": -2,
+  "iw": "Little room left in a top Oregon hub",
+  "pl": [
+   [
+    "Hillsboro",
+    "city"
+   ],
+   [
+    "Forest Grove",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
  }
 ]
