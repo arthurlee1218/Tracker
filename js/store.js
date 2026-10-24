@@ -12,5 +12,5 @@ export const TODAY=(()=>{const n=new Date();return n.getFullYear()+"-"+String(n.
 export const isUp=e=>e.d.length===10&&e.d>TODAY;
 export const plKey=(e,n)=>e.j+"|"+n;
 export const SOC_STATES=["WA"];
-export const SOC={data:{},geo:{},geoSel:{c:"",ci:""},vb:[0,0,1000,742],raf:0,drawn:"",
+export const SOC={data:{},geo:{},geoSel:{c:"",ci:""},
   f:{j:"",c:"",ci:"",p:"",st:"",tp:"",tr:"",w:"",age:"",sort:"tr",q:"",n:40}};

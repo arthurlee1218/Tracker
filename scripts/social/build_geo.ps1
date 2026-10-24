@@ -94,7 +94,8 @@ foreach ($c in $counties) {
     $A = $A / 2
     if ([Math]::Abs($A) -gt $bestA -and $A -ne 0) { $bestA = [Math]::Abs($A); $best = @(($cx / (6 * $A)), ($cy / (6 * $A))) }
   }
-  $outC += [ordered]@{ id = $c.id; n = $c.name; d = $d.ToString(); c = @([Math]::Round($best[0], $dec), [Math]::Round($best[1], $dec)); b = @($bx0, $by0, $bx1, $by1) }
+  # outlines are only used here (centroid, and to keep city dots inside their county); the site needs just name, id and centroid
+  $outC += [ordered]@{ id = $c.id; n = $c.name; c = @([Math]::Round($best[0], $dec), [Math]::Round($best[1], $dec)) }
   "{0} {1} pts={2} pathlen={3}" -f $c.id, $c.name, $totalPts, $d.Length
 }
 

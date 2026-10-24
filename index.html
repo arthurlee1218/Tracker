@@ -33,7 +33,6 @@
   <div>
    <div class="mapbar" id="mapbar">
     <nav class="crumbs" id="crumbs" aria-label="Map level"></nav>
-    <div class="vt" role="group" aria-label="Map style"><button type="button" id="vt-map" aria-pressed="true">Map</button><button type="button" id="vt-tiles" aria-pressed="false">Tiles</button></div>
    </div>
    <div id="usbox">
     <div class="map boot" id="map" role="group" aria-label="States by strongest data center action"></div>
@@ -43,34 +42,20 @@
       <span><i class="sw proposed"></i>Statewide pause proposed or failed</span>
       <span><i class="sw local"></i>Local and ballot fights</span>
       <span><i class="sw none"></i>Not tracked yet</span>
-      <span id="dot-key" hidden><i class="sw dot"></i>Dot: county and city sentiment map</span>
+      <span id="dot-key" hidden><i class="sw dot"></i>Dot: county and city tiles</span>
     </div>
     <p class="map-note">Each state is colored by its strongest action. A state with a binding cost law and a failed moratorium bill shows as binding. Small numbers count the entries logged for that state.</p>
    </div>
-   <div id="cmapbox" hidden>
-    <div class="mapwrap">
-     <svg class="cmap-svg" id="cmap" viewBox="0 0 975 610" role="group" aria-label="Map of states and counties, colored by the strongest action or by public sentiment. Scroll to zoom, drag to pan."><g id="g-st"></g><g id="g-slab"></g><g id="g-cty"></g><g id="g-lab"></g><g id="g-city"></g></svg>
-     <div class="zoomctl" role="group" aria-label="Map zoom"><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="zoom-out" aria-label="Zoom out">&minus;</button><button type="button" id="zoom-fit" class="fit" aria-label="Fit the map to the current selection">Fit</button></div>
-    </div>
-    <div class="small-st" id="small-st" role="group" aria-label="Small states and DC"></div>
-    <div class="legend" id="leg-status" aria-hidden="true">
-      <span><i class="sw pause"></i>Statewide pause in force</span>
-      <span><i class="sw rules"></i>Binding new rules, 2025–26</span>
-      <span><i class="sw proposed"></i>Statewide pause proposed or failed</span>
-      <span><i class="sw local"></i>Local and ballot fights</span>
-      <span><i class="sw none"></i>Not tracked yet</span>
-      <span><i class="sw dot"></i>County and city sentiment map</span>
-    </div>
-    <p class="map-note" id="note-status">Each state is colored by its strongest action. A state with a binding cost law and a failed moratorium bill shows as binding. Small numbers count the entries logged for that state. Select a state to zoom in.</p>
-    <div class="legend sent-legend" id="leg-sent" hidden aria-hidden="true">
+   <div id="tilebox" hidden>
+    <div class="tilewrap"><div class="tilegrid" id="tilegrid" role="group" aria-label="Counties or cities as tiles, colored by public sentiment"></div></div>
+    <div class="legend sent-legend" aria-hidden="true">
       <span><i class="sw anti"></i>Mostly against</span>
       <span><i class="sw split"></i>Split</span>
       <span><i class="sw pro"></i>Mostly supportive</span>
       <span><i class="sw few"></i>Fewer than 5 accounts</span>
       <span><i class="sw none"></i>No posts collected</span>
-      <span><i class="sw dotv"></i>City, sized by posts</span>
     </div>
-    <p class="map-note" id="note-sent" hidden>Color shows what individual accounts on Bluesky and Reddit say, counting each account once. It is not a poll: online posters are not a representative sample of residents. Select a county to zoom in, then a city.</p>
+    <p class="map-note" id="tilenote">Each tile is one place, laid out roughly where it sits on the map. Color shows what individual accounts on Bluesky and Reddit say, counting each account once; the small number is the official actions logged there. It is not a poll. Select a county to see its cities.</p>
    </div>
   </div>
   <aside class="panel" id="panel" aria-live="polite"></aside>

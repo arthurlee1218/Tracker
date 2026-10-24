@@ -10,9 +10,8 @@ reads the two JSON files. Nothing here runs in CI.
 | `fetch_threads.ps1` | For Reddit posts you kept, fetches each thread's own RSS to get its real title and comment count (the search feed has neither). Saves each result as it arrives and skips finished threads, because Reddit throttles to roughly one request every 90 seconds once it starts returning 429s. Posts without a count show as "not measured". |
 | `clean_bsky.ps1` | Drops duplicates, outlets, bots, job ads and place-name collisions (other states' Grant County, Marysville KS). Writes a CSV for hand labeling. |
 | `build_social.ps1` | Takes the labeled CSVs and writes `social/<ST>.json`: place assignment, topics, a 14-word excerpt, engagement and the traction percentile. |
-| `build_us.ps1` | Builds `geo/US.json` (state outlines) from us-atlas `states-albers-10m.json`. Run once; it only changes if the map projection changes. |
 | `wa_cities.ps1` | Builds the city list for a state: every incorporated city and town, with coordinates and county, from the Census gazetteer (`2023_Gaz_place_national.txt`) and place-by-county (`national_place_by_county2020.txt`) files. Change the `WA` filter and the `53` state prefix for another state. |
-| `build_geo.ps1` | Builds `geo/<ST>.json` (county outlines and city points) from us-atlas `counties-albers-10m.json` and the CSV from `wa_cities.ps1` (`-CitiesCsv`). Always pass `-National` so the county shapes share the 975x610 frame of `US.json`, which is what makes the zoom seamless. |
+| `build_geo.ps1` | Builds `geo/<ST>.json` (each county's name, id and centroid, and each city's name, county and position) from us-atlas `counties-albers-10m.json` and the CSV from `wa_cities.ps1` (`-CitiesCsv`). The site only uses these positions to lay out the tiles; the county outlines are used here just to compute centroids and keep city positions inside their county. |
 
 ## Labeling step (not scripted)
 

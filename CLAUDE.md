@@ -32,8 +32,7 @@ own Claude account, on their own branches. Read this before changing anything.
 | `data/trackers.json` | Other trackers |
 | `updates.json` | New entries found by the daily job or added by hand. Loaded at runtime |
 | `social/WA.json` | Public sentiment posts for one state (excerpt, link, stance, topics, engagement). Loaded at runtime |
-| `geo/US.json` | State outlines for the national map (975x610 Albers frame, from Census boundaries) |
-| `geo/WA.json` | That state's county outlines and city points, in the same frame as `US.json` |
+| `geo/WA.json` | That state's counties (name, id, centroid) and cities (name, county, position), used only to lay out the tiles |
 | `scripts/social/` | PowerShell collectors and builders that make the two files above (see its README) |
 | `scripts/merge.mjs` | Checks what the daily job found and merges it into `updates.json` |
 | `scripts/update.mjs` | Alternative updater that uses the paid API (manual only) |
@@ -100,7 +99,8 @@ run page code at the top level of a module.
 | `projects.js` | Data center projects tab |
 | `pages.js` | Campaigns and polls, Coming up, Other trackers tabs |
 | `sentiment.js` | Sentiment math (accounts, trend, topics, traction) and the panel blocks |
-| `map.js` | The SVG map: states, counties, cities, zoom, Map/Tiles toggle |
+| `nav.js` | Breadcrumbs, and keeping the page in step with the selected state, county or city |
+| `drill.js` | The drill-down: a state's counties as named tiles, then a county's cities, laid out roughly where they sit |
 | `social.js` | The Public sentiment tab and the loader for `social/` and `geo/` |
 | `shell.js` | Tabs, keyboard shortcuts, theme button |
 
@@ -112,20 +112,19 @@ owns that part of the page, and its startup in that module's `init…()`.
 Separate from the entries above. Official actions, protests, campaigns and polls still go in
 `updates.json` with a news or official source; social posts never do.
 
-- **The map:** the top level is a real US map (`geo/US.json`) colored with the same status palette
-  as the tiles. A Map / Tiles toggle (saved in `localStorage` as `lw-map`) switches to the tile
-  grid; phones default to tiles. The small Northeast states and DC also have chips under the map
-  because their outlines are tiny. Selecting a state zooms to it; a state with sentiment data then
-  shows its counties and cities, and clicking a county or city zooms further. Zoom is one
-  animated `viewBox` change on a single SVG (`#cmap`), so every geo file must use the national
-  975x610 frame (`build_geo.ps1 -National`). Escape steps back up one level. The mouse wheel
-  zooms around the cursor, dragging pans, and the +, minus and Fit buttons do the same without a
-  mouse. Every incorporated city is drawn: cities with posts or logged actions get a marker and a
-  name, the rest a small dot whose name appears when zoomed in (overlapping names are hidden).
-  Dot and label sizes follow one CSS variable (`--k`) so zooming never rewrites individual marks.
-- **Files:** `social/<ST>.json` and `geo/<ST>.json`, loaded at runtime. A state turns on when its
-  code is in `SOC_STATES` in `js/store.js`; its label gets a dot. If `geo/US.json` fails to load,
-  the site falls back to the tile grid.
+- **Drill-down, all tiles:** the top level is the US tile grid (`#map`, one tile per state, colored by
+  strongest action). Selecting a state that has sentiment data replaces it with that state's counties as
+  named tiles; selecting a county shows its cities as tiles (`drill.js`). Each tile is a large click
+  target laid out roughly where the place is (`tileLayout()` puts each place in the free grid cell
+  nearest its real position, and uses fewer columns on narrow screens). Tile fill is the sentiment
+  reading; the small number is the logged official actions. There is no geographic map and no
+  zoom, on purpose: rural counties and small cities were too small to click. Breadcrumbs and Escape
+  step back up one level. The side panel carries the same official context at every level: status
+  (a county or city's own ban or pause, with its date), the latest logged action, the ban and
+  moratorium tally for that place and the cities in it, and the climate-for-developers score,
+  then public sentiment, then the entries logged there. `localBlock()` and `climateBlock()` in
+  `entries.js` build the tally and climate blocks for the state, county and city panels alike.- **Files:** `social/<ST>.json` and `geo/<ST>.json`, loaded at runtime. A state turns on when its
+  code is in `SOC_STATES` in `js/store.js`; its tile gets a dot.
 - **Post keys:** `id`, `p` (`bsky` or `reddit`), `d` date, `w` (`person` or `group`), `st` (`anti`,
   `pro`, `mixed`, `neutral`), `tp` topics (`water power rates tax jobs land noise fire open tribe
   tech pause`), `q` excerpt, `c` county FIPS (empty means statewide), `ci` city, `u` link, `a` hashed
@@ -135,7 +134,7 @@ Separate from the entries above. Official actions, protests, campaigns and polls
 - **Reading it:** the site gives each account one vote per place (its most common stance), shows "too
   few accounts" under 5, and shows a trend only when both 60-day windows have 5 or more accounts. The
   numbers describe people who post, not residents, and the UI says so. Keep that wording.
-- **Colors:** county fills use `color-mix` on `--pause` (against), `--rules` (supportive) and
+- **Colors:** county and city tile fills use `color-mix` on `--pause` (against), `--tail` green (supportive) and
   `--proposed-bg` (split). Color is never the only signal: every county has an aria-label and the
   panel states the reading in words.
 - **Adding a state:** see `scripts/social/README.md`.

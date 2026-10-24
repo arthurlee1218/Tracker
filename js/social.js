@@ -1,7 +1,7 @@
 // social.js: part of Load Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
 import { NAMES, STANCE, TOPL, WHOL } from "./config.js";
 import { match } from "./entries.js";
-import { mapRefresh, selectGeo, socSync } from "./map.js";
+import { navRefresh, selectGeo, socSync } from "./nav.js";
 import { renderPanel, select } from "./panel.js";
 import { cName, engText, trMeter, trTier, TRX } from "./sentiment.js";
 import { map, SOC, SOC_STATES, state } from "./store.js";
@@ -19,7 +19,7 @@ export function buildSocial(){
     <li><b>Place.</b> Assigned from the place named in the post, not from where the author lives. Posts that name no place are listed as statewide.</li>
     <li><b>Stance.</b> Whether the post is for or against data centers in that place, not toward AI in general. Claude read each post and assigned the label; some will be wrong, so open the post to check.</li>
     <li><b>Accounts, not people.</b> Map colors and counts give each account one vote, so a prolific poster cannot swamp a place. Fewer than 5 accounts is shown as too few to read. A trend appears only when both 60-day periods have at least 5 accounts.</li>
-    <li><b>Traction</b> is how a post compares with other posts on the same platform in this collection, among posts with any engagement: High is the top tenth, Notable the next 30%, Some the rest. Bluesky counts likes, reposts and replies; Reddit counts comments (votes are not available), and Reddit threads whose comments have not been counted show as not measured. Tiers are not comparable across platforms in absolute audience.</li>
+    <li><b>Traction</b> is how a post compares with other posts on the same platform in this collection, among posts with any engagement: High is the top tenth, Notable the next 30%, Some the rest. Bluesky counts likes, reposts and replies; Reddit counts comments (votes are not available), and Reddit threads whose comments have not been counted show as not measured. Tiers are not comparable across platforms in absolute audience. On each post the number of filled tiles is the traction and the color is the post's view: green supportive, red against, amber mixed, grey neutral.</li>
     <li><b>Not a poll.</b> People who post online about this are not a sample of residents. For measured opinion, see the polls on the Campaigns and polls tab. News outlets, bots and headline re-posters are left out; protests, campaigns and official actions are in the first tab.</li></ul></details>
   <div class="filters soc-filters">
     <div class="q"><label for="sf-q">Search posts</label><input id="sf-q" type="search" placeholder="Place, topic, words…" autocomplete="off"></div>
@@ -84,17 +84,16 @@ export function renderSocial(){
   ul.innerHTML=list.slice(0,f.n).map(p=>{const t=trTier(p),where=p.c?`${cName(p.j,p.c)}${p.ci?" · "+p.ci:""}`:`${NAMES[p.j]||p.j} · no place named`;
     return `<li class="sp"><div class="sp-top"><span class="sp-date">${fmt(p.d)}</span><span class="sp-where">${esc(where)}</span><span class="stance ${p.st}">${STANCE[p.st]}</span></div>
       <blockquote class="sp-q">“${esc(p.q)}”</blockquote>
-      <div class="sp-meta"><span>${trMeter(t)} ${TRX(t)}${p.x>0?` (${esc(engText(p))})`:""}</span><span>${esc(p.pf)} · ${WHOL[p.w]}</span>
+      <div class="sp-meta"><span>${trMeter(t,p.st)} ${TRX(t)}${p.x>0?` (${esc(engText(p))})`:""}</span><span>${esc(p.pf)} · ${WHOL[p.w]}</span>
         <span class="tags">${(p.tp||[]).filter(k=>k!=="pause").slice(0,3).map(k=>`<span class="tag">${TOPL[k]}</span>`).join("")}</span><a href="${esc(p.u)}" target="_blank" rel="noopener">Open post</a></div></li>`;}).join("");
   $("#soc-more").innerHTML=list.length>f.n?`<button class="btn-quiet" id="soc-more-btn" type="button">Show ${Math.min(40,list.length-f.n)} more of ${list.length-f.n} left</button>`:"";
   if($("#soc-more-btn"))$("#soc-more-btn").addEventListener("click",()=>{f.n+=40;renderSocial();});
 }
 export async function loadSoc(){
-  try{SOC.us=await fetch("geo/US.json").then(r=>r.json());}catch(e){SOC.us=null;}
   await Promise.all(SOC_STATES.map(async ab=>{
     try{const [g,d]=await Promise.all([fetch(`geo/${ab}.json`).then(r=>r.json()),fetch(`social/${ab}.json`).then(r=>r.json())]);SOC.geo[ab]=g;SOC.data[ab]=d;}catch(e){/* no data for this state */}
   }));
-  if(!Object.keys(SOC.data).length){$("#v-social").innerHTML='<p class="empty">Public sentiment data did not load. Open the site through a web server rather than as a file.</p>';mapRefresh();return;}
+  if(!Object.keys(SOC.data).length){$("#v-social").innerHTML='<p class="empty">Public sentiment data did not load. Open the site through a web server rather than as a file.</p>';navRefresh();return;}
   Object.keys(SOC.data).forEach(ab=>{const t=map.querySelector(`[data-ab="${ab}"]`);if(t){t.dataset.soc="1";t.title=(NAMES[ab]||ab)+": county sentiment map";}});
   $("#dot-key").hidden=false;
   buildSocial();

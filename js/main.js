@@ -7,7 +7,8 @@ import { initEntries, renderEntries, fillPlaces } from "./entries.js";
 import { initProjects } from "./projects.js";
 import { initPages } from "./pages.js";
 import { initTabs, initTheme } from "./shell.js";
-import { initMap } from "./map.js";
+import { initNav } from "./nav.js";
+import { initDrill } from "./drill.js";
 import { initSocial } from "./social.js";
 
 try {
@@ -21,7 +22,8 @@ initEntries();
 initProjects();
 initPages();
 initTabs();
-initMap();
+initNav();
+initDrill();
 initSocial();
 initTheme();
 fillPlaces();
