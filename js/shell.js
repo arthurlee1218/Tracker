@@ -1,5 +1,5 @@
 // shell.js: tabs, keyboard shortcuts and the light/dark theme button.
-import { selectGeo } from "./map.js";
+import { selectGeo } from "./nav.js";
 import { select } from "./panel.js";
 import { SOC, state } from "./store.js";
 import { $, key, meter } from "./util.js";

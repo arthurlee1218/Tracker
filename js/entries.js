@@ -3,7 +3,7 @@ import { ACT_ST, IML, LVL, NAMES, OK_LV, OK_TY, POL_ST, PTL, STLBL, TYL } from "
 import { paintCounts, renderPanel, select } from "./panel.js";
 import { showTab } from "./shell.js";
 import { E, isUp, plKey, state } from "./store.js";
-import { $, esc, fmt, key, meter, norm } from "./util.js";
+import { $, esc, fmt, key, meter, norm, plural } from "./util.js";
 
 // ── Entries ───────────────────────────────────
 export function match(e){
@@ -92,7 +92,23 @@ export function bindLocal(p){
   p.querySelectorAll("[data-lt]").forEach(b=>b.addEventListener("click",()=>{state.lt=state.lt===b.dataset.lt?"":b.dataset.lt;renderPanel();}));
   p.querySelectorAll("[data-goto]").forEach(b=>b.addEventListener("click",()=>goToEntry(b.dataset.goto,b.dataset.t)));
 }
-export function goToEntry(k,title){
+// Ban and moratorium tally (with the clickable place lists) for a set of places from localStatus().
+// With showEmpty the tally still appears, at zero, when none of the places has a ban or pause.
+export function localBlock(list,showEmpty){
+  if(!list.length&&!showEmpty) return "";
+  const t=localTally(list);
+  const part=x=>[x.county?plural(x.county,"county","counties"):"",x.other?plural(x.other,"city or town","cities and towns"):""].filter(Boolean).join(" and ")||"None logged";
+  return `<div class="tally local-tally">${tallyBtn("ban",t.ban.all,"with a data center ban: "+part(t.ban))}${tallyBtn("pause",t.pause.all,"with a moratorium or pause: "+part(t.pause))}</div>
+      ${localList(list,false)}
+      <p style="font-size:14px;color:var(--ink-3);margin-top:8px">Counts places logged here; some pauses may have expired since, and more towns may have acted. Click a number to list them.</p>`;
+}
+// "Climate for developers": the average industry-impact score of a set of entries, as the five-cell meter.
+export function climateBlock(list){
+  const sc=list.filter(e=>typeof e.im==="number");if(!sc.length) return "";
+  const avg=sc.reduce((t,e)=>t+e.im,0)/sc.length, r=Math.max(-2,Math.min(2,Math.round(avg)));
+  const nh=sc.filter(e=>e.im<0).length, nt=sc.filter(e=>e.im>0).length;
+  return `<div class="climate"><small style="color:var(--ink-2);font-size:14px">Climate for developers, averaged over ${sc.length} scored ${sc.length===1?"entry":"entries"}</small><div class="im-line">${meter(r)}<span><b>${IML[r]}</b> (${nh} headwind${nh===1?"":"s"}, ${nt} tailwind${nt===1?"":"s"})</span></div></div>`;
+}export function goToEntry(k,title){
   const j=k.split("|")[0];
   if(state.sel!==j) select(j);
   // clear other filters so the entry can't be hidden

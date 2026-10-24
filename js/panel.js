@@ -1,12 +1,12 @@
 // panel.js: part of Load Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
-import { GRID, IML, NAMES, SLABEL } from "./config.js";
-import { bindLocal, fillPlaces, localList, localStatus, localTally, renderEntries, tallyBtn } from "./entries.js";
-import { paintStates, socSync } from "./map.js";
+import { GRID, NAMES, SLABEL } from "./config.js";
+import { bindLocal, climateBlock, fillPlaces, localBlock, localList, localStatus, localTally, renderEntries, tallyBtn } from "./entries.js";
+import { socSync } from "./nav.js";
 import { projectState, renderProjects } from "./projects.js";
 import { bindSoc, renderGeoPanel, socHas, socStateBlock } from "./sentiment.js";
 import { showTab } from "./shell.js";
 import { countBy, D, E, isUp, map, plKey, recount, SOC, state } from "./store.js";
-import { $, esc, meter, plural } from "./util.js";
+import { $, esc } from "./util.js";
 
 export function select(ab){
   if(ab!==state.sel) SOC.geoSel={c:"",ci:""};
@@ -48,15 +48,8 @@ export function renderPanel(){
     <div class="status-line"><i class="sw ${s}" style="vertical-align:-2px;margin-right:6px"></i>${esc(SLABEL[s])}</div>
     <p>${info?esc(info.t):"Nothing logged here yet. That may mean quiet, or that this tracker hasn't caught up. Check the other trackers tab for local coverage."}</p>
     <p style="font-size:15px">${n?`${n} ${n===1?"entry":"entries"} below, plus federal actions that apply everywhere.`:""}</p>
-    ${(()=>{const list=localStatus().filter(p=>p.j===ab);if(!list.length)return "";const t=localTally(list);
-      const part=x=>[x.county?plural(x.county,"county","counties"):"",x.other?plural(x.other,"city or town","cities and towns"):""].filter(Boolean).join(" and ")||"None logged";
-      return `<div class="tally local-tally">${tallyBtn("ban",t.ban.all,"with a data center ban: "+part(t.ban))}${tallyBtn("pause",t.pause.all,"with a moratorium or pause: "+part(t.pause))}</div>
-      ${localList(list,false)}
-      <p style="font-size:14px;color:var(--ink-3);margin-top:8px">Counts places logged here; some pauses may have expired since, and more towns may have acted. Click a number to list them.</p>`;})()}
-    ${(()=>{const sc=E.filter(e=>e.j===ab&&typeof e.im==="number");if(!sc.length)return "";
-      const avg=sc.reduce((t,e)=>t+e.im,0)/sc.length, r=Math.max(-2,Math.min(2,Math.round(avg)));
-      const nh=sc.filter(e=>e.im<0).length, nt=sc.filter(e=>e.im>0).length;
-      return `<div class="climate"><small style="color:var(--ink-2);font-size:14px">Climate for developers, averaged over ${sc.length} scored ${sc.length===1?"entry":"entries"}</small><div class="im-line">${meter(r)}<span><b>${IML[r]}</b> (${nh} headwind${nh===1?"":"s"}, ${nt} tailwind${nt===1?"":"s"})</span></div></div>`;})()}
+    ${localBlock(localStatus().filter(p=>p.j===ab))}
+    ${climateBlock(E.filter(e=>e.j===ab))}
     ${socStateBlock(ab)}
     ${(()=>{const m={};E.filter(e=>e.j===ab).forEach(e=>(e.pl||[]).forEach(([n,t])=>{const k=plKey(e,n);m[k]=m[k]||{n,t,c:0};m[k].c++;}));
       const arr=Object.entries(m).sort((a,b)=>b[1].c-a[1].c||a[1].n.localeCompare(b[1].n));
@@ -73,7 +66,6 @@ export function paintCounts(){
     t.innerHTML=esc(ab)+(n?'<span class="n" aria-hidden="true">'+n+"</span>":"");
     t.setAttribute("aria-label",(NAMES[ab]||ab)+": "+SLABEL[s]+(n?", "+n+" entries":""));});
   Object.keys(countBy).forEach(k=>delete countBy[k]);Object.assign(countBy,c);
-  if(SOC.us) paintStates();
 
 }
 export function initTiles() {
