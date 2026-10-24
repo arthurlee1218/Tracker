@@ -259,6 +259,112 @@ a:hover{text-decoration-thickness:2px}
 footer{border-top:2px solid var(--ink);padding:18px 0 40px;font-size:14px;color:var(--ink-2)}
 footer p{max-width:90ch;margin-bottom:6px}
 
+/* ── Public sentiment: county drill-down map + social tab ───────── */
+.tile[data-soc]::after{content:"";position:absolute;left:5px;top:5px;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.9}
+.sw.dot{background:var(--none);position:relative}
+.sw.dot::after{content:"";position:absolute;left:4px;top:4px;width:6px;height:6px;border-radius:50%;background:var(--none-ink)}
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:2px 4px;font-family:var(--display);font-size:20px;font-weight:600;margin-bottom:10px}
+.crumbs button{background:none;border:0;font:inherit;color:var(--rules);cursor:pointer;padding:2px 4px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.crumbs button:hover{text-decoration-thickness:2px}
+.crumbs .sep{color:var(--ink-3);font-weight:400}
+.crumbs .here{color:var(--ink);padding:2px 4px}
+.cmap-svg{width:100%;height:auto;display:block;background:var(--surface);border:1px solid var(--rule-soft)}
+.mapbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 14px;margin-bottom:10px;min-height:34px}
+.mapbar .crumbs{margin:0}
+.vt{display:inline-flex;border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.vt button{background:var(--surface-2);border:0;color:var(--ink-2);font:inherit;font-size:14px;padding:4px 12px;cursor:pointer}
+.vt button+button{border-left:1px solid var(--rule)}
+.vt button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.cmap-svg .st{fill:var(--none);stroke:var(--paper);stroke-width:1;vector-effect:non-scaling-stroke;stroke-linejoin:round;cursor:pointer;transition:opacity .35s ease}
+.cmap-svg .st[data-s="pause"]{fill:var(--pause)}
+.cmap-svg .st[data-s="rules"]{fill:var(--rules)}
+.cmap-svg .st[data-s="proposed"]{fill:var(--proposed-bg);stroke:var(--proposed);stroke-width:1.6}
+.cmap-svg .st[data-s="local"]{fill:var(--local-bg);stroke:var(--local);stroke-width:1.6}
+.cmap-svg .st:hover{stroke:var(--ink);stroke-width:2}
+.cmap-svg .st[aria-pressed="true"]{stroke:var(--volt);stroke-width:3.5}
+.cmap-svg .st:focus-visible{outline:none;stroke:var(--focus);stroke-width:3.5}
+.cmap-svg.zoomed .st:not([aria-pressed="true"]){opacity:.38}
+.cmap-svg .slab{font-family:var(--display);font-weight:600;fill:var(--ink)}
+.cmap-svg .slab[data-s="pause"],.cmap-svg .slab[data-s="rules"]{fill:#fff;stroke:none}
+.cmap-svg .slab .cn{font-weight:500;font-size:.78em;opacity:.85}
+.cmap-svg .slab .sd{font-size:.7em}
+:root[data-theme="dark"] .cmap-svg .slab[data-s="pause"],:root[data-theme="dark"] .cmap-svg .slab[data-s="rules"]{fill:#0E1820}
+.small-st{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:10px}
+.legend[hidden],.small-st[hidden],.map-note[hidden]{display:none}
+.small-st .ss-l{font-size:14px;color:var(--ink-2);margin-right:6px}
+.tile.mini{aspect-ratio:auto;width:46px;height:34px;font-size:15px;align-items:center;padding:0 5px}
+.tile.mini .n{top:1px;right:3px;font-size:10px}
+@media (max-width:520px){.cmap-svg .slab .cn,.cmap-svg .slab .sd{display:none}}
+@media (prefers-reduced-motion: reduce){.cmap-svg .st{transition:none}}
+.cmap-svg .cty{stroke:var(--paper);stroke-width:1.2;vector-effect:non-scaling-stroke;cursor:pointer;stroke-linejoin:round}
+.cmap-svg .cty:hover{stroke:var(--ink-2);stroke-width:2}
+.cmap-svg .cty[aria-pressed="true"]{stroke:var(--volt);stroke-width:3.5}
+.cmap-svg .cty:focus-visible{outline:none;stroke:var(--focus);stroke-width:3.5}
+.cmap-svg text{font-family:var(--display);font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
+.cmap-svg .cdot{fill:var(--volt);stroke:var(--ink);stroke-width:1.5;vector-effect:non-scaling-stroke;cursor:pointer}
+.cmap-svg .cdot.quiet{fill:var(--surface-2);stroke:var(--ink-3)}
+.cmap-svg .cdot[aria-pressed="true"]{fill:var(--ink);stroke:var(--volt);stroke-width:3}
+.cmap-svg .cdot:focus-visible{outline:none;stroke:var(--focus);stroke-width:3.5}
+.sent-legend .sw.anti{background:color-mix(in srgb,var(--pause) 75%,var(--surface-2))}
+.sent-legend .sw.pro{background:color-mix(in srgb,var(--rules) 75%,var(--surface-2))}
+.sent-legend .sw.split{background:var(--proposed-bg);box-shadow:inset 0 0 0 1px var(--proposed)}
+.sent-legend .sw.few{background:color-mix(in srgb,var(--ink-3) 22%,var(--surface-2));box-shadow:inset 0 0 0 1px var(--rule)}
+.sent-legend .sw.dotv{border-radius:50%;background:var(--volt);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.sent{margin-top:16px;border-top:1px solid var(--rule);padding-top:10px}
+.sent h3{font-size:15px;font-weight:600}
+.sent .sent-read{font-family:var(--display);font-size:26px;font-weight:600;line-height:1.1;margin-top:4px}
+.sent .sent-sub{font-size:14px;color:var(--ink-2);margin-top:2px}
+.vbar{display:flex;height:12px;margin-top:8px;border-radius:2px;overflow:hidden;background:var(--rule-soft);box-shadow:inset 0 0 0 1px var(--rule)}
+.vbar i{display:block;height:100%}
+.vbar .a{background:var(--pause)} .vbar .m{background:var(--proposed)} .vbar .p{background:var(--rules)}
+.vkey{display:flex;flex-wrap:wrap;gap:2px 14px;font-size:14px;color:var(--ink-2);margin-top:6px}
+.vkey b{color:var(--ink);font-weight:600}
+.sent .trend{font-size:15px;margin-top:8px}
+.sent .caveat{font-size:13px;color:var(--ink-3);margin-top:8px}
+.kw{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;list-style:none}
+.kw li{font-size:14px;border:1px solid var(--rule);background:var(--surface-2);padding:2px 9px;border-radius:999px}
+.kw li small{color:var(--ink-3);margin-left:4px}
+.kw li.hot{border-color:var(--volt);box-shadow:inset 0 0 0 1px var(--volt)}
+.kw li.hot small{color:var(--volt-ink);font-weight:600}
+.toppost{display:block;border-top:1px solid var(--rule-soft);padding:8px 0;color:var(--ink);text-decoration:none}
+.toppost:hover q{text-decoration:underline}
+.toppost q{font-size:15px;quotes:"\201C" "\201D"}
+.toppost small{display:block;font-size:13px;color:var(--ink-3);margin-top:2px}
+.officials{list-style:none;margin-top:6px}
+.officials li+li{border-top:1px solid var(--rule-soft)}
+.officials button{display:block;width:100%;text-align:left;background:none;border:0;font:inherit;color:var(--ink);padding:6px 0;cursor:pointer}
+.officials button:hover span.o-t{text-decoration:underline}
+.officials small{display:block;font-size:13px;color:var(--ink-3)}
+.panel .btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn-live{background:var(--ink);color:var(--paper);border:1px solid var(--ink);font:inherit;font-size:15px;padding:6px 12px;border-radius:3px;cursor:pointer}
+.btn-live:hover{background:var(--ink-2)}
+.stance{font-size:13px;font-weight:600;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.stance.anti{background:var(--pause-bg);color:var(--pause)}
+.stance.pro{background:var(--rules-bg);color:var(--rules)}
+.stance.mixed{background:var(--proposed-bg);color:var(--proposed)}
+.stance.neutral{background:var(--none);color:var(--ink-2)}
+.tr{display:inline-grid;grid-template-columns:repeat(3,10px);gap:2px;vertical-align:middle}
+.tr i{height:10px;border-radius:1px;background:var(--rule-soft);box-shadow:inset 0 0 0 1px var(--rule)}
+.tr i.on{background:var(--ink);box-shadow:none}
+.soc-filters{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.soc-method{margin:0 0 16px;max-width:78ch;color:var(--ink-2);font-size:15px}
+.soc-method summary{cursor:pointer;font-weight:600;color:var(--ink)}
+.soc-method ul{margin:8px 0 0 20px}
+.soc-method li{margin-top:4px}
+.posts{list-style:none;border-top:1px solid var(--ink)}
+.sp{border-bottom:1px solid var(--rule);padding:12px 4px}
+.sp-top{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px}
+.sp-date{font-family:var(--display);font-size:17px;color:var(--ink-2);font-weight:500;white-space:nowrap}
+.sp-where{font-weight:600;font-size:15px;color:var(--ink-2)}
+.sp-q{margin:6px 0 8px;font-size:17px;max-width:72ch;border:0;padding:0}
+.sp-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:14px;color:var(--ink-2)}
+.sp-meta a{font-weight:600}
+.sp .tags{margin:0}
+.soc-more{margin:16px 0 0;text-align:center}
+@media (max-width:900px){.soc-filters{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.soc-filters{grid-template-columns:1fr}.crumbs{font-size:18px}}
+@media (prefers-reduced-motion: reduce){.cmap-svg .cty{transition:none}}
+
 @media (max-width:900px){
   .hero{grid-template-columns:1fr}
   .project-filters{grid-template-columns:1fr 1fr}
@@ -306,6 +412,11 @@ footer p{max-width:90ch;margin-bottom:6px}
 
 <section class="hero" aria-label="State map">
   <div>
+   <div class="mapbar" id="mapbar">
+    <nav class="crumbs" id="crumbs" aria-label="Map level"></nav>
+    <div class="vt" role="group" aria-label="Map style"><button type="button" id="vt-map" aria-pressed="true">Map</button><button type="button" id="vt-tiles" aria-pressed="false">Tiles</button></div>
+   </div>
+   <div id="usbox">
     <div class="map boot" id="map" role="group" aria-label="States by strongest data center action"></div>
     <div class="legend" aria-hidden="true">
       <span><i class="sw pause"></i>Statewide pause in force</span>
@@ -313,8 +424,32 @@ footer p{max-width:90ch;margin-bottom:6px}
       <span><i class="sw proposed"></i>Statewide pause proposed or failed</span>
       <span><i class="sw local"></i>Local and ballot fights</span>
       <span><i class="sw none"></i>Not tracked yet</span>
+      <span id="dot-key" hidden><i class="sw dot"></i>Dot: county and city sentiment map</span>
     </div>
     <p class="map-note">Each state is colored by its strongest action. A state with a binding cost law and a failed moratorium bill shows as binding. Small numbers count the entries logged for that state.</p>
+   </div>
+   <div id="cmapbox" hidden>
+    <svg class="cmap-svg" id="cmap" viewBox="0 0 975 610" role="group" aria-label="Map of states and counties, colored by the strongest action or by public sentiment"><g id="g-st"></g><g id="g-slab"></g><g id="g-cty"></g><g id="g-lab"></g><g id="g-city"></g></svg>
+    <div class="small-st" id="small-st" role="group" aria-label="Small states and DC"></div>
+    <div class="legend" id="leg-status" aria-hidden="true">
+      <span><i class="sw pause"></i>Statewide pause in force</span>
+      <span><i class="sw rules"></i>Binding new rules, 2025–26</span>
+      <span><i class="sw proposed"></i>Statewide pause proposed or failed</span>
+      <span><i class="sw local"></i>Local and ballot fights</span>
+      <span><i class="sw none"></i>Not tracked yet</span>
+      <span><i class="sw dot"></i>County and city sentiment map</span>
+    </div>
+    <p class="map-note" id="note-status">Each state is colored by its strongest action. A state with a binding cost law and a failed moratorium bill shows as binding. Small numbers count the entries logged for that state. Select a state to zoom in.</p>
+    <div class="legend sent-legend" id="leg-sent" hidden aria-hidden="true">
+      <span><i class="sw anti"></i>Mostly against</span>
+      <span><i class="sw split"></i>Split</span>
+      <span><i class="sw pro"></i>Mostly supportive</span>
+      <span><i class="sw few"></i>Fewer than 5 accounts</span>
+      <span><i class="sw none"></i>No posts collected</span>
+      <span><i class="sw dotv"></i>City, sized by posts</span>
+    </div>
+    <p class="map-note" id="note-sent" hidden>Color shows what individual accounts on Bluesky and Reddit say, counting each account once. It is not a poll: online posters are not a representative sample of residents. Select a county to zoom in, then a city.</p>
+   </div>
   </div>
   <aside class="panel" id="panel" aria-live="polite"></aside>
 </section>
@@ -322,6 +457,7 @@ footer p{max-width:90ch;margin-bottom:6px}
 <nav class="tabs" role="tablist" aria-label="Sections">
   <button class="tab" role="tab" aria-selected="true" aria-controls="v-actions" id="t-actions" data-v="actions">Laws, actions &amp; politics<span class="c" id="c-actions"></span></button>
   <button class="tab" role="tab" aria-selected="false" aria-controls="v-projects" id="t-projects" data-v="projects" tabindex="-1">Data center projects<span class="c" id="c-projects"></span></button>
+  <button class="tab" role="tab" aria-selected="false" aria-controls="v-social" id="t-social" data-v="social" tabindex="-1">Public sentiment<span class="c" id="c-social"></span></button>
   <button class="tab" role="tab" aria-selected="false" aria-controls="v-politics" id="t-politics" data-v="politics" tabindex="-1">Campaigns &amp; polls</button>
   <button class="tab" role="tab" aria-selected="false" aria-controls="v-next" id="t-next" data-v="next" tabindex="-1">Coming up</button>
   <button class="tab" role="tab" aria-selected="false" aria-controls="v-trackers" id="t-trackers" data-v="trackers" tabindex="-1">Other trackers<span class="c" id="c-trackers"></span></button>
@@ -349,6 +485,7 @@ footer p{max-width:90ch;margin-bottom:6px}
 </section>
 
 <section class="view" id="v-projects" role="tabpanel" aria-labelledby="t-projects" hidden></section>
+<section class="view" id="v-social" role="tabpanel" aria-labelledby="t-social" hidden></section>
 <section class="view" id="v-politics" role="tabpanel" aria-labelledby="t-politics" hidden></section>
 <section class="view" id="v-next" role="tabpanel" aria-labelledby="t-next" hidden></section>
 <section class="view" id="v-trackers" role="tabpanel" aria-labelledby="t-trackers" hidden></section>
@@ -1470,12 +1607,13 @@ requestAnimationFrame(()=>{
 });
 
 function select(ab){
+  if(ab!==state.sel) SOC.geoSel={c:"",ci:""};
   state.sel=ab;
   if(state.pl && ab && !state.pl.startsWith(ab+"|")) state.pl="";
   [...map.children].forEach(t=>t.setAttribute("aria-pressed",t.dataset.ab===ab?"true":"false"));
-  fillPlaces();renderPanel();renderEntries();
+  fillPlaces();renderPanel();renderEntries();socSync();
   if(typeof renderProjects==="function"&&$("#project-state")){projectState.j=ab&&[...$("#project-state").options].some(o=>o.value===ab)?ab:"";$("#project-state").value=projectState.j;renderProjects();}
-  if(ab && $("#t-projects").getAttribute("aria-selected")!=="true") showTab("actions",false);
+  if(ab && !["t-projects","t-social"].some(i=>$("#"+i).getAttribute("aria-selected")==="true")) showTab("actions",false);
 }
 
 // ── Panel ─────────────────────────────────────
@@ -1502,6 +1640,7 @@ function renderPanel(){
     bindLocal(p);
     return;
   }
+  if(socHas(state.sel)&&(SOC.geoSel.c||SOC.geoSel.ci)){renderGeoPanel(p);return;}
   const ab=state.sel, info=ST[ab], s=info?info.s:"none";
   const n=countBy[ab]||0;
   p.innerHTML=`<h2>${esc(NAMES[ab]||ab)}</h2>
@@ -1517,13 +1656,14 @@ function renderPanel(){
       const avg=sc.reduce((t,e)=>t+e.im,0)/sc.length, r=Math.max(-2,Math.min(2,Math.round(avg)));
       const nh=sc.filter(e=>e.im<0).length, nt=sc.filter(e=>e.im>0).length;
       return `<div class="climate"><small style="color:var(--ink-2);font-size:14px">Climate for developers, averaged over ${sc.length} scored ${sc.length===1?"entry":"entries"}</small><div class="im-line">${meter(r)}<span><b>${IML[r]}</b> (${nh} headwind${nh===1?"":"s"}, ${nt} tailwind${nt===1?"":"s"})</span></div></div>`;})()}
+    ${socStateBlock(ab)}
     ${(()=>{const m={};E.filter(e=>e.j===ab).forEach(e=>(e.pl||[]).forEach(([n,t])=>{const k=plKey(e,n);m[k]=m[k]||{n,t,c:0};m[k].c++;}));
       const arr=Object.entries(m).sort((a,b)=>b[1].c-a[1].c||a[1].n.localeCompare(b[1].n));
       if(!arr.length)return "";
       return `<div class="places"><h3>Counties, cities and townships</h3><ul>${arr.map(([k,v])=>`<li><button type="button" data-pl="${esc(k)}" aria-pressed="${state.pl===k}">${esc(v.n)}<small>${v.c}</small></button></li>`).join("")}</ul></div>`;})()}
     <div class="clear"><button type="button" class="btn-quiet" id="clearSel">Show all states</button></div>`;
   $("#clearSel").addEventListener("click",()=>select(null));
-  bindLocal(p);
+  bindLocal(p);bindSoc(p);
   p.querySelectorAll("[data-pl]").forEach(b=>b.addEventListener("click",()=>{state.pl=state.pl===b.dataset.pl?"":b.dataset.pl;$("#f-place").value=state.pl;renderPanel();renderEntries();}));
 }
 
@@ -1635,6 +1775,7 @@ function paintCounts(){
     t.innerHTML=esc(ab)+(n?'<span class="n" aria-hidden="true">'+n+"</span>":"");
     t.setAttribute("aria-label",(NAMES[ab]||ab)+": "+SLABEL[s]+(n?", "+n+" entries":""));});
   Object.keys(countBy).forEach(k=>delete countBy[k]);Object.assign(countBy,c);
+  if(SOC.us) paintStates();
 
 }
 function fillPlaces(){
@@ -1794,8 +1935,299 @@ tabs.forEach((t,i)=>{
 });
 document.addEventListener("keydown",ev=>{
   if(ev.key==="/" && document.activeElement.tagName!=="INPUT"){ev.preventDefault();showTab("actions",false);$("#q").focus();}
-  if(ev.key==="Escape" && state.sel) select(null);
+  if(ev.key==="Escape" && state.sel){ if(SOC.geoSel.ci) selectGeo(SOC.geoSel.c,""); else if(SOC.geoSel.c) selectGeo("",""); else select(null); }
 });
+
+// ── Public sentiment: county and city drill-down, plus the Public sentiment tab ──
+// Data lives in social/<ST>.json (posts: short excerpt, link, stance, topics, engagement) and
+// geo/<ST>.json (county outlines, city points). Add a state by adding its code to SOC_STATES.
+const SOC_STATES=["WA"];
+const SOC={data:{},geo:{},geoSel:{c:"",ci:""},vb:[0,0,1000,742],raf:0,drawn:"",
+  f:{j:"",c:"",ci:"",p:"",st:"",tp:"",tr:"",w:"",age:"",sort:"tr",q:"",n:40}};
+const STANCE={anti:"Against",pro:"Supportive",mixed:"Mixed",neutral:"Neutral"};
+const TOPL={water:"Water",power:"Power and grid",rates:"Utility rates",tax:"Taxes and incentives",jobs:"Jobs and economy",land:"Land and farms",noise:"Noise and pollution",fire:"Wildfire",open:"Transparency",tribe:"Tribal land",tech:"Big Tech and AI",pause:"Moratorium"};
+const TRL=["No engagement yet","Some traction","Notable traction","High traction"];
+const WHOL={person:"Individual account",group:"Organized group"};
+const socHas=ab=>!!(ab&&SOC.data[ab]);
+const cName=(ab,c)=>{const co=SOC.geo[ab].counties.find(x=>x.id===c);return co?co.n+" "+(SOC.geo[ab].suffix||"County"):"";};
+// traction compares a post with other posts on the same platform in this dataset (percentile among posts with any engagement)
+const trTier=p=>p.x<0?-1:(p.x===0?0:(p.tr>=90?3:(p.tr>=60?2:1)));
+const TRX=t=>t<0?"Traction not measured":TRL[t];
+const trMeter=t=>`<span class="tr" role="img" aria-label="${TRX(t)}" title="${TRX(t)}">${[1,2,3].map(i=>`<i class="${t>=i?"on":""}"></i>`).join("")}</span>`;
+const engText=p=>p.p==="bsky"?`${p.e[0]} likes · ${p.e[1]} reposts · ${p.e[2]} replies`:`${p.e[0]} comments`;
+function socPosts(ab,c,ci){return SOC.data[ab].posts.filter(p=>(!c||p.c===c)&&(!ci||p.ci===ci));}
+// One vote per account (its most frequent stance; ties count as mixed); neutral posts carry no vote.
+function voices(posts){
+  const by={};
+  posts.forEach(p=>{if(p.st==="neutral")return;(by[p.a]=by[p.a]||{anti:0,pro:0,mixed:0})[p.st]++;});
+  const o={anti:0,pro:0,mixed:0,n:0,net:0};
+  Object.values(by).forEach(v=>{const k=["anti","pro","mixed"].sort((a,b)=>v[b]-v[a]);o[v[k[0]]===v[k[1]]?"mixed":k[0]]++;o.n++;});
+  o.net=o.n?Math.round(100*(o.pro-o.anti)/o.n):0;
+  return o;
+}
+function readLabel(v){
+  if(!v.n) return "No stated views yet";
+  if(v.n<5) return "Too few accounts to read";
+  return v.net<=-60?"Overwhelmingly against":v.net<=-25?"Mostly against":v.net<25?"Split":v.net<60?"Mostly supportive":"Overwhelmingly supportive";
+}
+// Trend: last 60 days vs the 60 before, only when both windows have at least 5 accounts.
+function trendOf(ab,posts){
+  const end=Date.parse(SOC.data[ab].to),day=864e5;
+  const rec=voices(posts.filter(p=>Date.parse(p.d)>end-60*day)),pri=voices(posts.filter(p=>{const t=Date.parse(p.d);return t<=end-60*day&&t>end-120*day;}));
+  if(rec.n<5||pri.n<5) return null;
+  return {d:rec.net-pri.net,rec,pri};
+}
+function topicsOf(posts){
+  const t={};
+  posts.forEach(p=>(p.tp||[]).forEach(k=>{if(k==="pause")return;const o=t[k]=t[k]||{all:new Set(),a:new Set(),o:new Set()};o.all.add(p.a);if(p.st==="anti")o.a.add(p.a);else if(p.st==="pro"||p.st==="mixed")o.o.add(p.a);}));
+  return Object.entries(t).map(([k,o])=>({k,n:o.all.size,hot:o.a.size>=2&&o.o.size>=2&&Math.min(o.a.size,o.o.size)/Math.max(o.a.size,o.o.size)>=.3})).filter(x=>x.n>=2).sort((a,b)=>b.n-a.n).slice(0,5);
+}
+function fillFor(v){
+  if(!v.n) return "var(--none)";
+  if(v.n<5) return "color-mix(in srgb, var(--ink-3) 22%, var(--surface-2))";
+  if(Math.abs(v.net)<25) return "var(--proposed-bg)";
+  return `color-mix(in srgb, var(${v.net<0?"--pause":"--rules"}) ${Math.round(30+55*Math.min(1,Math.abs(v.net)/100))}%, var(--surface-2))`;
+}
+const topPosts=(posts,k)=>[...posts].sort((a,b)=>b.tr-a.tr||b.x-a.x||b.d.localeCompare(a.d)).filter(p=>p.x>0).slice(0,k);
+
+function sentBlock(ab,posts,scope){
+  const v=voices(posts),tr=trendOf(ab,posts),kw=topicsOf(posts),top=topPosts(posts,3),pct=n=>v.n?Math.round(100*n/v.n):0;
+  const trend=tr?`<p class="trend"><b>${Math.abs(tr.d)<15?"Holding steady":tr.d<0?"Moving more against":"Moving more supportive"}</b> over the last 60 days compared with the 60 before (${tr.pri.net>0?"+":""}${tr.pri.net} to ${tr.rec.net>0?"+":""}${tr.rec.net} on a −100 to +100 scale).</p>`
+    :`<p class="trend">Not enough posts in both periods to show a trend.</p>`;
+  return `<div class="sent"><h3>Public sentiment${scope?" "+esc(scope):""}</h3>
+    <div class="sent-read">${readLabel(v)}</div>
+    <div class="sent-sub">${v.n} ${v.n===1?"account":"accounts"} with a stated view, from ${posts.length} ${posts.length===1?"post":"posts"}${v.n&&v.n<5?". Treat as anecdotes.":""}</div>
+    ${v.n?`<div class="vbar" role="img" aria-label="${v.anti} against, ${v.mixed} mixed, ${v.pro} supportive"><i class="a" style="width:${pct(v.anti)}%"></i><i class="m" style="width:${pct(v.mixed)}%"></i><i class="p" style="width:${pct(v.pro)}%"></i></div>
+    <div class="vkey"><span><b>${v.anti}</b> against</span><span><b>${v.mixed}</b> mixed</span><span><b>${v.pro}</b> supportive</span></div>`:""}
+    ${trend}
+    ${kw.length?`<h3 style="margin-top:12px">What people here bring up</h3><ul class="kw">${kw.map(x=>`<li class="${x.hot?"hot":""}">${TOPL[x.k]}<small>${x.n}${x.hot?" · contested":""}</small></li>`).join("")}</ul>`:""}
+    ${top.length?`<h3 style="margin-top:12px">Most traction</h3>${top.map(p=>`<a class="toppost" href="${esc(p.u)}" target="_blank" rel="noopener"><q>${esc(p.q)}</q><small>${trMeter(trTier(p))} ${TRX(trTier(p))} · ${esc(SOC.data[ab].platforms[p.p])} · ${fmt(p.d)} · ${esc(engText(p))}</small></a>`).join("")}`:""}
+    <p class="caveat">Counts accounts, not people, and only those who posted publicly on the platforms collected. Labels were assigned by Claude and can be wrong.</p></div>`;
+}
+function socStateBlock(ab){
+  if(!socHas(ab)) return "";
+  const posts=SOC.data[ab].posts;
+  return sentBlock(ab,posts,"in "+NAMES[ab])+`<p style="font-size:15px">Select a county on the map to zoom in.</p><div class="btn-row"><button type="button" class="btn-live" data-soc-posts>See all ${posts.length} posts</button></div>`;
+}
+function officialFor(ab,c,ci){
+  const g=SOC.geo[ab],cn=cName(ab,c),cities=new Set(g.cities.filter(x=>x.c===c).map(x=>x.n)),out=[];
+  E.filter(e=>e.j===ab).forEach(e=>{const hit=(e.pl||[]).find(([n,t])=>ci?(t==="city"&&n===ci):(n===cn||(t!=="county"&&cities.has(n))));if(hit)out.push({e,key:ab+"|"+hit[0]});});
+  return out.sort((a,b)=>key(b.e.d).localeCompare(key(a.e.d)));
+}
+function renderGeoPanel(p){
+  const ab=state.sel,s=SOC.geoSel,cn=cName(ab,s.c),nm=s.ci||cn,posts=socPosts(ab,s.c,s.ci),off=officialFor(ab,s.c,s.ci);
+  p.innerHTML=`<h2>${esc(nm)}</h2>
+    <div class="status-line">${esc(NAMES[ab])}${s.ci?" · "+esc(cn):""}</div>
+    ${sentBlock(ab,posts,"")}
+    <div class="sent"><h3>Official record here <small style="font-weight:400;color:var(--ink-3)">${off.length}</small></h3>
+      ${off.length?`<ul class="officials">${off.slice(0,5).map(({e,key:k})=>`<li><button type="button" data-goto="${esc(k)}" data-t="${esc(e.t)}"><span class="o-t">${esc(e.t)}</span><small>${fmt(e.d)} · ${esc(STLBL[e.st])} · ${e.k==="politics"?"Political noise":"Official action"}</small></button></li>`).join("")}</ul>${off.length>5?`<p style="font-size:14px">Plus ${off.length-5} more in the first tab.</p>`:""}`:`<p style="font-size:15px">No actions logged for ${esc(nm)} yet.</p>`}
+    </div>
+    <div class="btn-row"><button type="button" class="btn-live" data-soc-posts>See all ${posts.length} posts</button><button type="button" class="btn-quiet" data-soc-up>Back to ${esc(s.ci?cn:NAMES[ab])}</button></div>`;
+  bindLocal(p);bindSoc(p);
+}
+function bindSoc(p){
+  p.querySelectorAll("[data-soc-posts]").forEach(b=>b.addEventListener("click",()=>{showTab("social",false);$("#t-social").scrollIntoView({block:"start",behavior:"auto"});}));
+  p.querySelectorAll("[data-soc-up]").forEach(b=>b.addEventListener("click",()=>selectGeo(SOC.geoSel.ci?SOC.geoSel.c:"","")));
+}
+
+// ── map: one SVG for states, counties and cities; zoom is a single viewBox change ──
+// geo/US.json holds state outlines and geo/<ST>.json that state's counties and cities, all in the same 975x610 frame.
+const MAPFULL=[0,0,975,610];
+SOC.us=null;
+SOC.mode=(()=>{try{const v=localStorage.getItem("lw-map");if(v==="map"||v==="tiles")return v;}catch(e){}return matchMedia("(max-width:700px)").matches?"tiles":"map";})();
+const SMALL_ST=["NH","VT","MA","RI","CT","NJ","DE","MD","DC"];
+function crumbs(){
+  const ab=state.sel,s=SOC.geoSel,deep=socHas(ab)&&s.c,P=[];
+  if(!ab) P.push(`<span class="here">United States</span>`);
+  else{
+    P.push(`<button type="button" data-up="us">United States</button>`);
+    P.push(deep?`<button type="button" data-up="st">${esc(NAMES[ab])}</button>`:`<span class="here">${esc(NAMES[ab]||ab)}</span>`);
+    if(deep){P.push(s.ci?`<button type="button" data-up="co">${esc(cName(ab,s.c))}</button>`:`<span class="here">${esc(cName(ab,s.c))}</span>`);if(s.ci)P.push(`<span class="here">${esc(s.ci)}</span>`);}
+  }
+  $("#crumbs").innerHTML=P.join('<span class="sep" aria-hidden="true">›</span>');
+}
+function scaleMarks(){
+  const svg=$("#cmap"),w=svg.getBoundingClientRect().width||700,k=SOC.vb[2]/w;
+  svg.querySelectorAll(".cdot").forEach(el=>el.setAttribute("r",(+el.dataset.r)*k));
+  svg.querySelectorAll("text").forEach(el=>{el.setAttribute("font-size",(+el.dataset.fs)*k);el.style.strokeWidth=(3*k)+"px";if(el.dataset.cx){el.setAttribute("x",+el.dataset.cx+(+el.dataset.ox)*k);el.setAttribute("y",+el.dataset.cy+(+el.dataset.oy)*k);}});
+}
+function applyVB(){$("#cmap").setAttribute("viewBox",SOC.vb.map(n=>+n.toFixed(2)).join(" "));scaleMarks();}
+function padVB(b,pad,c=40){
+  const ar=MAPFULL[2]/MAPFULL[3];let bw=(b[2]-b[0])*pad+c,bh=(b[3]-b[1])*pad+c;
+  if(bw/bh<ar) bw=bh*ar;else bh=bw/ar;
+  if(bw>=MAPFULL[2]) return MAPFULL.slice();
+  const x=Math.min(Math.max((b[0]+b[2])/2-bw/2,-70),MAPFULL[2]-bw),y=Math.min(Math.max((b[1]+b[3])/2-bh/2,0),MAPFULL[3]-bh);
+  return [x,y,bw,bh];
+}
+function targetVB(){
+  const ab=state.sel;if(!ab||!SOC.us) return MAPFULL.slice();
+  const st=SOC.us.states.find(x=>x.ab===ab);if(!st) return MAPFULL.slice();
+  if(socHas(ab)&&SOC.geoSel.c){const co=SOC.geo[ab].counties.find(x=>x.id===SOC.geoSel.c);if(co) return padVB(co.b,1.35,12);}
+  return padVB(st.b,1.25);
+}
+function flyTo(vb){
+  cancelAnimationFrame(SOC.raf);clearTimeout(SOC.fin);
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches||$("#cmapbox").hidden){SOC.vb=vb;applyVB();return;}
+  const from=SOC.vb.slice(),t0=performance.now(),ms=520;
+  const step=t=>{const u=Math.min(1,(t-t0)/ms),e=u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2;SOC.vb=from.map((a,i)=>a+(vb[i]-a)*e);applyVB();if(u<1)SOC.raf=requestAnimationFrame(step);};
+  SOC.raf=requestAnimationFrame(step);
+  // animation frames pause in background tabs: always land on the final view
+  SOC.fin=setTimeout(()=>{cancelAnimationFrame(SOC.raf);SOC.vb=vb;applyVB();},ms+150);
+}
+// states: colored by strongest action (same palette as the tiles); the selected one is drawn last so its outline shows
+function paintStates(){
+  if(!SOC.us) return;
+  const sel=state.sel,zoomed=!!sel,list=[...SOC.us.states.filter(s=>s.ab!==sel),...SOC.us.states.filter(s=>s.ab===sel)];
+  $("#cmap").classList.toggle("zoomed",zoomed);
+  const deep=socHas(sel)&&SOC.geoSel.c;
+  $("#g-st").innerHTML=list.map(s=>{const st=(ST[s.ab]&&ST[s.ab].s)||"none",n=countBy[s.ab]||0,lab=`${NAMES[s.ab]||s.n}: ${SLABEL[st]}${n?", "+n+" entries":""}${socHas(s.ab)?", county sentiment map available":""}`;
+    return `<path class="st" data-ab="${s.ab}" data-s="${st}" d="${s.d}" tabindex="${deep?-1:0}" role="button" aria-pressed="${sel===s.ab}" aria-label="${esc(lab)}"><title>${esc(lab)}</title></path>`;}).join("");
+  $("#g-slab").innerHTML=zoomed?"":SOC.us.states.filter(s=>s.b[2]-s.b[0]>=26&&s.b[3]-s.b[1]>=17).map(s=>{const st=(ST[s.ab]&&ST[s.ab].s)||"none",n=countBy[s.ab]||0;
+    return `<text class="slab" data-s="${st}" data-fs="11" x="${s.c[0]}" y="${s.c[1]+3}" text-anchor="middle">${s.ab}${n?`<tspan class="cn" dx="3">${n}</tspan>`:""}${socHas(s.ab)?'<tspan class="sd" dx="3">●</tspan>':""}</text>`;}).join("");
+  $("#small-st").innerHTML=`<span class="ss-l">Small states and DC</span>`+SMALL_ST.map(ab=>{const st=(ST[ab]&&ST[ab].s)||"none",n=countBy[ab]||0;
+    return `<button type="button" class="tile mini" data-ab="${ab}" data-s="${st}" aria-pressed="${sel===ab}" aria-label="${esc((NAMES[ab]||ab)+": "+SLABEL[st]+(n?", "+n+" entries":""))}">${ab}${n?`<span class="n" aria-hidden="true">${n}</span>`:""}</button>`;}).join("");
+  scaleMarks();
+}
+// counties, labels and city dots for the selected state (empty when it has no sentiment data)
+function drawGeo(){
+  const ab=state.sel,sel=SOC.geoSel;
+  if(!socHas(ab)){["#g-cty","#g-lab","#g-city"].forEach(i=>$(i).innerHTML="");return;}
+  const g=SOC.geo[ab],all=SOC.data[ab].posts,byC={},byCi={};
+  all.forEach(p=>{if(p.c)(byC[p.c]=byC[p.c]||[]).push(p);if(p.ci)(byCi[p.ci]=byCi[p.ci]||[]).push(p);});
+  const offCity=n=>E.some(e=>e.j===ab&&(e.pl||[]).some(([x,t])=>t==="city"&&x===n));
+  $("#g-cty").innerHTML=g.counties.map(co=>{const ps=byC[co.id]||[],v=voices(ps),nm=co.n+" "+(g.suffix||"County"),lab=`${nm}: ${readLabel(v)}, ${v.n} ${v.n===1?"account":"accounts"}, ${ps.length} ${ps.length===1?"post":"posts"}`;
+    return `<path class="cty" data-c="${co.id}" d="${co.d}" style="fill:${fillFor(v)}" tabindex="0" role="button" aria-pressed="${sel.c===co.id}" aria-label="${esc(lab)}"><title>${esc(lab)}</title></path>`;}).join("");
+  $("#g-lab").innerHTML=g.counties.filter(co=>(byC[co.id]||[]).length||sel.c===co.id).map(co=>`<text data-fs="${sel.c?15:13}" x="${co.c[0]}" y="${co.c[1]}" text-anchor="middle" ${sel.c&&sel.c!==co.id?'opacity=".55"':""}>${esc(co.n)}</text>`).join("");
+  $("#g-city").innerHTML=g.cities.filter(ct=>(byCi[ct.n]||[]).length||offCity(ct.n)).map(ct=>{const n=(byCi[ct.n]||[]).length,r=n?(sel.c?Math.min(15,5+2.2*Math.sqrt(n)):Math.min(11,4+1.5*Math.sqrt(n))):4.5,show=!sel.c||sel.c===ct.c;
+    return `<circle class="cdot${n?"":" quiet"}" data-ci="${esc(ct.n)}" data-c="${ct.c}" data-r="${r}" cx="${ct.p[0]}" cy="${ct.p[1]}" tabindex="${show?0:-1}" role="button" aria-pressed="${sel.ci===ct.n}" aria-label="${esc(ct.n)}: ${n} ${n===1?"post":"posts"}" ${show?"":'style="display:none"'}><title>${esc(ct.n)}: ${n} ${n===1?"post":"posts"}</title></circle>`
+      +((sel.c===ct.c||n>=4)&&show?`<text data-fs="12" data-cx="${ct.p[0]}" data-cy="${ct.p[1]}" data-ox="${r+4}" data-oy="4">${esc(ct.n)}</text>`:"");}).join("");
+}
+function mapRefresh(){
+  const ab=state.sel,has=socHas(ab),showMap=!!SOC.us&&(SOC.mode==="map"||has);
+  $("#usbox").hidden=showMap;$("#cmapbox").hidden=!showMap;
+  $("#vt-map").setAttribute("aria-pressed",String(SOC.mode==="map"));$("#vt-tiles").setAttribute("aria-pressed",String(SOC.mode==="tiles"));
+  ["#leg-sent","#note-sent"].forEach(i=>$(i).hidden=!has);["#leg-status","#note-status","#small-st"].forEach(i=>$(i).hidden=has);
+  crumbs();
+  if(SOC.us){paintStates();drawGeo();}
+  if(showMap) flyTo(targetVB());
+}
+function socSync(){
+  const ab=state.sel,has=socHas(ab);
+  SOC.f.j=has?ab:"";SOC.f.c=has?SOC.geoSel.c:"";SOC.f.ci=has?SOC.geoSel.ci:"";
+  mapRefresh();fillSocSelects();renderSocial();
+}
+function selectGeo(c,ci){
+  SOC.geoSel={c,ci};SOC.f.c=c;SOC.f.ci=ci;
+  renderPanel();mapRefresh();fillSocSelects();renderSocial();
+}
+function mapPick(el){
+  const t=el.closest&&el.closest(".cdot,.cty,.st,.tile.mini");if(!t) return;
+  if(t.classList.contains("cdot")) selectGeo(t.dataset.c,t.dataset.ci);
+  else if(t.classList.contains("cty")) selectGeo(t.dataset.c,"");
+  else select(state.sel===t.dataset.ab?null:t.dataset.ab);
+}
+$("#cmapbox").addEventListener("click",ev=>mapPick(ev.target));
+$("#cmapbox").addEventListener("keydown",ev=>{if(ev.key==="Enter"||ev.key===" "){const t=ev.target.closest&&ev.target.closest(".cdot,.cty,.st");if(t){ev.preventDefault();mapPick(t);}}});
+$("#crumbs").addEventListener("click",ev=>{const b=ev.target.closest("[data-up]");if(!b) return;const u=b.dataset.up;if(u==="us")select(null);else if(u==="st")selectGeo("","");else selectGeo(SOC.geoSel.c,"");});
+[["vt-map","map"],["vt-tiles","tiles"]].forEach(([id,m])=>$("#"+id).addEventListener("click",()=>{SOC.mode=m;try{localStorage.setItem("lw-map",m);}catch(e){}mapRefresh();}));
+window.addEventListener("resize",()=>{if(!$("#cmapbox").hidden)scaleMarks();});
+
+// ── Public sentiment tab ──
+function buildSocial(){
+  const n=Object.values(SOC.data).reduce((t,d)=>t+d.posts.length,0);
+  $("#c-social").textContent=n;
+  const plat=[...new Set(Object.values(SOC.data).flatMap(d=>Object.keys(d.counts)))];
+  const d0=Object.values(SOC.data)[0];
+  $("#v-social").innerHTML=`
+  <details class="soc-method"><summary>How this works and what it cannot tell you</summary><ul>
+    <li><b>What it is.</b> Public posts about data centers in Washington, ${fmt(d0.from)} to ${fmt(d0.to)}, from ${plat.map(k=>d0.platforms[k]).join(" and ")}. Each shows a short excerpt and links to the original. X (Twitter) is not included: it has no free, usable search and engagement data.</li>
+    <li><b>Place.</b> Assigned from the place named in the post, not from where the author lives. Posts that name no place are listed as statewide.</li>
+    <li><b>Stance.</b> Whether the post is for or against data centers in that place, not toward AI in general. Claude read each post and assigned the label; some will be wrong, so open the post to check.</li>
+    <li><b>Accounts, not people.</b> Map colors and counts give each account one vote, so a prolific poster cannot swamp a place. Fewer than 5 accounts is shown as too few to read. A trend appears only when both 60-day periods have at least 5 accounts.</li>
+    <li><b>Traction</b> is how a post compares with other posts on the same platform in this collection, among posts with any engagement: High is the top tenth, Notable the next 30%, Some the rest. Bluesky counts likes, reposts and replies; Reddit counts comments (votes are not available), and Reddit threads whose comments have not been counted show as not measured. Tiers are not comparable across platforms in absolute audience.</li>
+    <li><b>Not a poll.</b> People who post online about this are not a sample of residents. For measured opinion, see the polls on the Campaigns and polls tab. News outlets, bots and headline re-posters are left out; protests, campaigns and official actions are in the first tab.</li></ul></details>
+  <div class="filters soc-filters">
+    <div class="q"><label for="sf-q">Search posts</label><input id="sf-q" type="search" placeholder="Place, topic, words…" autocomplete="off"></div>
+    <div><label for="sf-j">State</label><select id="sf-j"></select></div>
+    <div><label for="sf-c">County</label><select id="sf-c"></select></div>
+    <div><label for="sf-ci">City</label><select id="sf-ci"></select></div>
+    <div><label for="sf-st">View expressed</label><select id="sf-st"><option value="">Any view</option><option value="anti">Against</option><option value="pro">Supportive</option><option value="mixed">Mixed</option><option value="neutral">Neutral</option></select></div>
+    <div><label for="sf-tp">Topic</label><select id="sf-tp"><option value="">All topics</option>${Object.keys(TOPL).map(k=>`<option value="${k}">${TOPL[k]}</option>`).join("")}</select></div>
+    <div><label for="sf-tr">Traction</label><select id="sf-tr"><option value="">Any</option><option value="1">Some or more</option><option value="2">Notable or high</option><option value="3">High only</option></select></div>
+    <div><label for="sf-p">Platform</label><select id="sf-p"><option value="">All platforms</option>${plat.map(k=>`<option value="${k}">${esc(d0.platforms[k])}</option>`).join("")}</select></div>
+    <div><label for="sf-w">Source</label><select id="sf-w"><option value="">All accounts</option><option value="person">Individuals</option><option value="group">Organized groups</option></select></div>
+    <div><label for="sf-age">When</label><select id="sf-age"><option value="">Whole period</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option></select></div>
+    <div><label for="sf-sort">Sort by</label><select id="sf-sort"><option value="tr">Most traction</option><option value="new">Newest</option></select></div>
+  </div>
+  <div class="result-line"><span id="sc" aria-live="polite"></span><span class="rl-actions"><button class="btn-quiet" id="soc-reset" type="button">Clear filters</button></span></div>
+  <ul class="posts" id="posts"></ul><div class="soc-more" id="soc-more"></div>`;
+  const f=SOC.f,bind=(id,k)=>$("#"+id).addEventListener("change",ev=>{f[k]=ev.target.value;f.n=40;renderSocial();});
+  ["p:p","st:st","tp:tp","tr:tr","w:w","age:age","sort:sort"].forEach(s=>{const [a,b]=s.split(":");bind("sf-"+a,b);});
+  $("#sf-q").addEventListener("input",ev=>{f.q=ev.target.value.trim().toLowerCase();f.n=40;renderSocial();});
+  $("#sf-j").addEventListener("change",ev=>{const v=ev.target.value;if(v!==(state.sel||"")){if(v)select(v);else select(null);}else{f.j=v;}fillSocSelects();renderSocial();});
+  $("#sf-c").addEventListener("change",ev=>{const v=ev.target.value;if(f.j&&v!=="none")selectGeo(v,"");else{f.c=v;f.ci="";fillSocSelects();renderSocial();}});
+  $("#sf-ci").addEventListener("change",ev=>{const v=ev.target.value;if(f.j&&f.c)selectGeo(f.c,v);else{f.ci=v;renderSocial();}});
+  $("#soc-reset").addEventListener("click",()=>{Object.assign(f,{p:"",st:"",tp:"",tr:"",w:"",age:"",sort:"tr",q:"",n:40});["sf-q","sf-st","sf-tp","sf-tr","sf-p","sf-w","sf-age","sf-sort"].forEach(id=>$("#"+id).value=id==="sf-sort"?"tr":"");if(state.sel)select(null);else{f.j=f.c=f.ci="";fillSocSelects();renderSocial();}});
+}
+function fillSocSelects(){
+  if(!$("#sf-j")) return;
+  const f=SOC.f,states=Object.keys(SOC.data);
+  $("#sf-j").innerHTML=`<option value="">All states with data</option>`+states.map(ab=>`<option value="${ab}">${esc(NAMES[ab]||ab)} (${SOC.data[ab].posts.length})</option>`).join("");
+  $("#sf-j").value=f.j;
+  const cs=$("#sf-c"),cis=$("#sf-ci");
+  if(!f.j){cs.innerHTML=`<option value="">Pick a state first</option>`;cs.disabled=true;cis.innerHTML=`<option value="">Pick a county first</option>`;cis.disabled=true;return;}
+  const g=SOC.geo[f.j],posts=SOC.data[f.j].posts,cnt={};let none=0;
+  posts.forEach(p=>{if(p.c)cnt[p.c]=(cnt[p.c]||0)+1;else none++;});
+  cs.disabled=false;
+  cs.innerHTML=`<option value="">All counties</option>`+g.counties.filter(co=>cnt[co.id]).sort((a,b)=>cnt[b.id]-cnt[a.id]).map(co=>`<option value="${co.id}">${esc(co.n)} (${cnt[co.id]})</option>`).join("")+`<option value="none">Statewide or no place named (${none})</option>`;
+  cs.value=f.c;
+  if(!f.c||f.c==="none"){cis.innerHTML=`<option value="">Pick a county first</option>`;cis.disabled=true;return;}
+  const cc={};posts.filter(p=>p.c===f.c&&p.ci).forEach(p=>cc[p.ci]=(cc[p.ci]||0)+1);
+  cis.disabled=false;
+  cis.innerHTML=`<option value="">${Object.keys(cc).length?"All cities and towns":"No city-level posts"}</option>`+Object.keys(cc).sort((a,b)=>cc[b]-cc[a]).map(n=>`<option value="${esc(n)}">${esc(n)} (${cc[n]})</option>`).join("");
+  cis.value=f.ci;
+}
+function renderSocial(){
+  const ul=$("#posts");if(!ul) return;
+  const f=SOC.f,end=Object.values(SOC.data)[0]?Date.parse(Object.values(SOC.data)[0].to):0;
+  let list=[];
+  Object.entries(SOC.data).forEach(([ab,d])=>{if(f.j&&f.j!==ab)return;d.posts.forEach(p=>list.push(Object.assign({j:ab,pf:d.platforms[p.p]},p)));});
+  list=list.filter(p=>{
+    if(f.c==="none"){if(p.c)return false;}else if(f.c&&p.c!==f.c)return false;
+    if(f.ci&&p.ci!==f.ci)return false;
+    if(f.p&&p.p!==f.p)return false;if(f.st&&p.st!==f.st)return false;if(f.w&&p.w!==f.w)return false;
+    if(f.tp&&!(p.tp||[]).includes(f.tp))return false;
+    if(f.tr&&trTier(p)<+f.tr)return false;
+    if(f.age&&(end-Date.parse(p.d))/864e5>+f.age)return false;
+    if(f.q){const hay=(p.q+" "+(p.c?cName(p.j,p.c):"statewide")+" "+p.ci+" "+(p.tp||[]).map(k=>TOPL[k]).join(" ")+" "+STANCE[p.st]).toLowerCase();if(!f.q.split(/\s+/).every(w=>hay.includes(w)))return false;}
+    return true;
+  });
+  list.sort(f.sort==="new"?(a,b)=>b.d.localeCompare(a.d)||b.tr-a.tr:(a,b)=>b.tr-a.tr||b.x-a.x||b.d.localeCompare(a.d));
+  const total=Object.values(SOC.data).reduce((t,d)=>t+d.posts.length,0),acc=new Set(list.map(p=>p.a)).size;
+  $("#sc").textContent=`${list.length} of ${total} posts from ${acc} ${acc===1?"account":"accounts"}`+(f.c&&f.c!=="none"&&f.j?` in ${f.ci?f.ci+", ":""}${cName(f.j,f.c)}`:"");
+  if(!list.length){ul.innerHTML='<li class="empty">No posts match. Try clearing a filter or choosing a wider place.</li>';$("#soc-more").innerHTML="";return;}
+  ul.innerHTML=list.slice(0,f.n).map(p=>{const t=trTier(p),where=p.c?`${cName(p.j,p.c)}${p.ci?" · "+p.ci:""}`:`${NAMES[p.j]||p.j} · no place named`;
+    return `<li class="sp"><div class="sp-top"><span class="sp-date">${fmt(p.d)}</span><span class="sp-where">${esc(where)}</span><span class="stance ${p.st}">${STANCE[p.st]}</span></div>
+      <blockquote class="sp-q">“${esc(p.q)}”</blockquote>
+      <div class="sp-meta"><span>${trMeter(t)} ${TRX(t)}${p.x>0?` (${esc(engText(p))})`:""}</span><span>${esc(p.pf)} · ${WHOL[p.w]}</span>
+        <span class="tags">${(p.tp||[]).filter(k=>k!=="pause").slice(0,3).map(k=>`<span class="tag">${TOPL[k]}</span>`).join("")}</span><a href="${esc(p.u)}" target="_blank" rel="noopener">Open post</a></div></li>`;}).join("");
+  $("#soc-more").innerHTML=list.length>f.n?`<button class="btn-quiet" id="soc-more-btn" type="button">Show ${Math.min(40,list.length-f.n)} more of ${list.length-f.n} left</button>`:"";
+  if($("#soc-more-btn"))$("#soc-more-btn").addEventListener("click",()=>{f.n+=40;renderSocial();});
+}
+async function loadSoc(){
+  try{SOC.us=await fetch("geo/US.json").then(r=>r.json());}catch(e){SOC.us=null;}
+  await Promise.all(SOC_STATES.map(async ab=>{
+    try{const [g,d]=await Promise.all([fetch(`geo/${ab}.json`).then(r=>r.json()),fetch(`social/${ab}.json`).then(r=>r.json())]);SOC.geo[ab]=g;SOC.data[ab]=d;}catch(e){/* no data for this state */}
+  }));
+  if(!Object.keys(SOC.data).length){$("#v-social").innerHTML='<p class="empty">Public sentiment data did not load. Open the site through a web server rather than as a file.</p>';mapRefresh();return;}
+  Object.keys(SOC.data).forEach(ab=>{const t=map.querySelector(`[data-ab="${ab}"]`);if(t){t.dataset.soc="1";t.title=(NAMES[ab]||ab)+": county sentiment map";}});
+  $("#dot-key").hidden=false;
+  buildSocial();
+  socSync();
+  renderPanel();
+}
+$("#v-social").innerHTML='<p class="empty">Loading public sentiment…</p>';
+loadSoc();
 
 document.querySelectorAll(".im-key > span").forEach(sp=>{sp.innerHTML=sp.innerHTML.replace(/__K(-?\d)__/,(m,v)=>meter(+v));});
 const tb=$("#themeBtn");

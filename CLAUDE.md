@@ -21,6 +21,10 @@ own Claude account, on their own branches. Read this before changing anything.
 |---|---|
 | `index.html` | The entire site: styles, markup, data and logic |
 | `updates.json` | New entries (auto-found and hand-added). Loaded at runtime |
+| `social/WA.json` | Public sentiment posts for one state (excerpt, link, stance, topics, engagement). Loaded at runtime |
+| `geo/US.json` | State outlines for the national map (975x610 Albers frame, from Census boundaries) |
+| `geo/WA.json` | That state's county outlines and city points, in the same frame as `US.json` |
+| `scripts/social/` | PowerShell collectors and builders that make the two files above (see its README) |
 | `scripts/merge.mjs` | Checks what the daily job found and merges it into `updates.json` |
 | `scripts/update.mjs` | Alternative updater that uses the paid API (manual only) |
 | `.github/workflows/update.yml` | Daily job: Claude Code searches the web on the owner's plan |
@@ -68,6 +72,35 @@ Rules:
 - `scripts/merge.mjs` finds existing titles in `index.html` with the regex
   `t:"..."`. If you change how entries are written (for example, moving data to a
   separate file), update that regex and the prompt file too.
+
+## Public sentiment layer (Washington first)
+
+Separate from the entries above. Official actions, protests, campaigns and polls still go in
+`updates.json` with a news or official source; social posts never do.
+
+- **The map:** the top level is a real US map (`geo/US.json`) colored with the same status palette
+  as the tiles. A Map / Tiles toggle (saved in `localStorage` as `lw-map`) switches to the tile
+  grid; phones default to tiles. The small Northeast states and DC also have chips under the map
+  because their outlines are tiny. Selecting a state zooms to it; a state with sentiment data then
+  shows its counties and cities, and clicking a county or city zooms further. Zoom is one
+  animated `viewBox` change on a single SVG (`#cmap`), so every geo file must use the national
+  975x610 frame (`build_geo.ps1 -National`). Escape steps back up one level.
+- **Files:** `social/<ST>.json` and `geo/<ST>.json`, loaded at runtime. A state turns on when its
+  code is in `SOC_STATES` in `index.html`; its label gets a dot. If `geo/US.json` fails to load,
+  the site falls back to the tile grid.
+- **Post keys:** `id`, `p` (`bsky` or `reddit`), `d` date, `w` (`person` or `group`), `st` (`anti`,
+  `pro`, `mixed`, `neutral`), `tp` topics (`water power rates tax jobs land noise fire open tribe
+  tech pause`), `q` excerpt, `c` county FIPS (empty means statewide), `ci` city, `u` link, `a` hashed
+  account, `e` raw engagement, `x` engagement score, `tr` percentile 0 to 100 within the platform.
+- **Rules:** excerpt 14 words or fewer plus a link, no handles, no news outlets or bots. Place comes
+  from the place named in the post. Stance is toward data centers in that place.
+- **Reading it:** the site gives each account one vote per place (its most common stance), shows "too
+  few accounts" under 5, and shows a trend only when both 60-day windows have 5 or more accounts. The
+  numbers describe people who post, not residents, and the UI says so. Keep that wording.
+- **Colors:** county fills use `color-mix` on `--pause` (against), `--rules` (supportive) and
+  `--proposed-bg` (split). Color is never the only signal: every county has an aria-label and the
+  panel states the reading in words.
+- **Adding a state:** see `scripts/social/README.md`.
 
 ## Design system
 
