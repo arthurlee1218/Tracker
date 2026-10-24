@@ -117,14 +117,19 @@ Separate from the entries above. Official actions, protests, campaigns and polls
   named tiles; selecting a county shows its cities as tiles (`drill.js`). Each tile is a large click
   target laid out roughly where the place is (`tileLayout()` puts each place in the free grid cell
   nearest its real position, and uses fewer columns on narrow screens). Tile fill is the sentiment
-  reading; the small number is the logged official actions. There is no geographic map and no
+  reading; the small number is the logged official actions.
+  An **Actions / Sentiment** toggle in the map bar (saved in `localStorage` as `lw-view`, default
+  Actions) recolors every level: Actions shows the strongest action (the US tiles by state status; county
+  and city tiles by `placeAction()` in `sentiment.js`: ban or pause in force, a city here has a pause,
+  proposed or pending, other actions, none), Sentiment shows the reading from posts. The legend and
+  note under the map follow the toggle. There is no geographic map and no
   zoom, on purpose: rural counties and small cities were too small to click. Breadcrumbs and Escape
   step back up one level. The side panel carries the same official context at every level: status
   (a county or city's own ban or pause, with its date), the latest logged action, the ban and
   moratorium tally for that place and the cities in it, and the climate-for-developers score,
   then public sentiment, then the entries logged there. `localBlock()` and `climateBlock()` in
   `entries.js` build the tally and climate blocks for the state, county and city panels alike.- **Files:** `social/<ST>.json` and `geo/<ST>.json`, loaded at runtime. A state turns on when its
-  code is in `SOC_STATES` in `js/store.js`; its tile gets a dot.
+  code is in `SOC_STATES` in `js/store.js`; nothing marks the tile, because every state will get county data.
 - **Post keys:** `id`, `p` (`bsky` or `reddit`), `d` date, `w` (`person` or `group`), `st` (`anti`,
   `pro`, `mixed`, `neutral`), `tp` topics (`water power rates tax jobs land noise fire open tribe
   tech pause`), `q` excerpt, `c` county FIPS (empty means statewide), `ci` city, `u` link, `a` hashed

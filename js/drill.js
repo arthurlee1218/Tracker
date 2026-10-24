@@ -1,8 +1,9 @@
 // drill.js: the tile drill-down used in Tiles mode. A state with sentiment data shows its counties as named
 // tiles; selecting a county shows that county's cities as tiles. Tiles sit roughly where the places are on
 // the map, the same idea as the US tile grid, so every place is a large, easy click target.
+import { localStatus } from "./entries.js";
 import { selectGeo } from "./nav.js";
-import { fillFor, officialFor, readLabel, socHas, socPosts, voices } from "./sentiment.js";
+import { fillFor, officialFor, placeAction, readLabel, socHas, socPosts, voices } from "./sentiment.js";
 import { SOC, state } from "./store.js";
 import { $, esc } from "./util.js";
 
@@ -27,21 +28,25 @@ export function tileLayout(items, maxCols){
   return {cols,rows:rws,pos};
 }
 
+const ACTL={pause:"ban or pause in force",partial:"a city here has a pause",pending:"proposed or pending",other:"other actions logged",none:"nothing logged"};
 export function renderDrill(){
   const ab=state.sel,grid=$("#tilegrid");
   if(!socHas(ab)){grid.innerHTML="";return;}
-  const g=SOC.geo[ab],sel=SOC.geoSel,items=sel.c
+  const g=SOC.geo[ab],sel=SOC.geoSel,sent=SOC.view==="sentiment",ls=localStatus().filter(x=>x.j===ab),items=sel.c
     ?g.cities.filter(ct=>ct.c===sel.c).map(ct=>({id:ct.n,name:ct.n,x:ct.p[0],y:ct.p[1],c:sel.c,ci:ct.n}))
     :g.counties.map(co=>({id:co.id,name:co.n,x:co.c[0],y:co.c[1],c:co.id,ci:""}));
   const avail=grid.parentElement.clientWidth||700,lay=tileLayout(items,Math.max(3,Math.floor(avail/84)));
   grid.style.setProperty("--cols",lay.cols);
   grid.style.gridTemplateColumns=`repeat(${lay.cols},minmax(0,1fr))`;
+  grid.setAttribute("aria-label",`Counties or cities as tiles, colored by ${sent?"public sentiment":"the strongest local action"}`);
   grid.innerHTML=items.map((it,i)=>{
-    const ps=socPosts(ab,it.c,it.ci),v=voices(ps),acts=officialFor(ab,it.c,it.ci).length,
+    const ps=socPosts(ab,it.c,it.ci),v=voices(ps),acts=officialFor(ab,it.c,it.ci).length,act=placeAction(ab,it.c,it.ci,ls),
       place=it.ci||`${it.name} ${g.suffix||"County"}`,
-      lab=`${place}: ${readLabel(v)}, ${v.n} ${v.n===1?"account":"accounts"}, ${ps.length} ${ps.length===1?"post":"posts"}, ${acts} logged ${acts===1?"action":"actions"}`,
-      hi=v.n>=5&&Math.abs(v.net)>=60,on=sel.ci?sel.ci===it.ci:false;
-    return `<button type="button" class="dtile" data-c="${it.c}" data-ci="${esc(it.ci)}" data-tone="${hi?"hi":""}" style="grid-column:${lay.pos[i][0]+1};grid-row:${lay.pos[i][1]+1};background:${fillFor(v)}" aria-pressed="${on}" aria-label="${esc(lab)}" title="${esc(lab)}"><span class="dn">${esc(it.name)}</span><span class="dc">${ps.length?`${ps.length} ${ps.length===1?"post":"posts"}`:"no posts"}</span>${acts?`<span class="da" aria-hidden="true">${acts}</span>`:""}</button>`;
+      lab=`${place}: ${ACTL[act]}; ${readLabel(v)}, ${v.n} ${v.n===1?"account":"accounts"}, ${ps.length} ${ps.length===1?"post":"posts"}, ${acts} logged ${acts===1?"action":"actions"}`,
+      hi=sent&&v.n>=5&&Math.abs(v.net)>=60,on=sel.ci?sel.ci===it.ci:false,
+      color=sent?`data-tone="${hi?"hi":""}" style="grid-column:${lay.pos[i][0]+1};grid-row:${lay.pos[i][1]+1};background:${fillFor(v)}"`:`data-a="${act}" style="grid-column:${lay.pos[i][0]+1};grid-row:${lay.pos[i][1]+1}"`,
+      line=sent?(ps.length?`${ps.length} ${ps.length===1?"post":"posts"}`:"no posts"):(acts?`${acts} ${acts===1?"action":"actions"}`:"none logged");
+    return `<button type="button" class="dtile" data-c="${it.c}" data-ci="${esc(it.ci)}" ${color} aria-pressed="${on}" aria-label="${esc(lab)}" title="${esc(lab)}"><span class="dn">${esc(it.name)}</span><span class="dc">${line}</span>${sent&&acts?`<span class="da" aria-hidden="true">${acts}</span>`:""}</button>`;
   }).join("");
 }
 

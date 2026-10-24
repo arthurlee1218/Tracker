@@ -3,7 +3,7 @@ import { GRID, NAMES, SLABEL } from "./config.js";
 import { bindLocal, climateBlock, fillPlaces, localBlock, localList, localStatus, localTally, renderEntries, tallyBtn } from "./entries.js";
 import { socSync } from "./nav.js";
 import { projectState, renderProjects } from "./projects.js";
-import { bindSoc, renderGeoPanel, socHas, socStateBlock } from "./sentiment.js";
+import { bindSoc, fillFor, readLabel, renderGeoPanel, socHas, socStateBlock, voices } from "./sentiment.js";
 import { showTab } from "./shell.js";
 import { countBy, D, E, isUp, map, plKey, recount, SOC, state } from "./store.js";
 import { $, esc } from "./util.js";
@@ -61,12 +61,25 @@ export function renderPanel(){
   p.querySelectorAll("[data-pl]").forEach(b=>b.addEventListener("click",()=>{state.pl=state.pl===b.dataset.pl?"":b.dataset.pl;$("#f-place").value=state.pl;renderPanel();renderEntries();}));
 }
 export function paintCounts(){
-  const c={};E.forEach(e=>{if(e.j!=="US")c[e.j]=(c[e.j]||0)+1;});
-  [...map.children].forEach(t=>{const ab=t.dataset.ab,n=c[ab]||0,s=t.dataset.s;
-    t.innerHTML=esc(ab)+(n?'<span class="n" aria-hidden="true">'+n+"</span>":"");
-    t.setAttribute("aria-label",(NAMES[ab]||ab)+": "+SLABEL[s]+(n?", "+n+" entries":""));});
-  Object.keys(countBy).forEach(k=>delete countBy[k]);Object.assign(countBy,c);
-
+  recount();
+  paintUSTiles();
+}
+// State tiles, colored by the strongest action (Actions view) or by what people post (Sentiment view).
+export function paintUSTiles(){
+  const sent=SOC.view==="sentiment";
+  [...map.children].forEach(t=>{
+    const ab=t.dataset.ab,info=D.ST[ab],base=(info&&info.s)||"none",n=countBy[ab]||0;
+    let badge=n,label=`${NAMES[ab]||ab}: ${SLABEL[base]}${n?`, ${n} entries`:""}`,bg="",tone="";
+    if(sent){
+      const has=socHas(ab),ps=has?SOC.data[ab].posts:[],v=voices(ps);
+      t.dataset.s=has?"sent":"nosent";
+      if(has){bg=fillFor(v);tone=v.n>=5&&Math.abs(v.net)>=60?"hi":"";}
+      badge=ps.length;label=`${NAMES[ab]||ab}: ${has?`${readLabel(v)}, ${v.n} ${v.n===1?"account":"accounts"}, ${ps.length} posts`:"no posts collected"}`;
+    }else t.dataset.s=base;
+    t.style.background=bg;t.dataset.tone=tone;
+    t.innerHTML=esc(ab)+(badge?`<span class="n" aria-hidden="true">${badge}</span>`:"");
+    t.setAttribute("aria-label",label);
+  });
 }
 export function initTiles() {
   recount();
