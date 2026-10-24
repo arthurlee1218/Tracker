@@ -72,6 +72,17 @@ export function officialFor(ab,c,ci){
   E.filter(e=>e.j===ab).forEach(e=>{const hit=(e.pl||[]).find(([n,t])=>ci?(t==="city"&&n===ci):(n===cn||(t!=="county"&&cities.has(n))));if(hit)out.push({e,key:ab+"|"+hit[0]});});
   return out.sort((a,b)=>key(b.e.d).localeCompare(key(a.e.d)));
 }
+// Strongest local action logged for a county or city, for coloring tiles in the Actions view:
+//   pause   its own ban or moratorium is in force      partial  a city in this county has one
+//   pending something proposed, pending or on a ballot  other    other actions logged       none  nothing logged
+export function placeAction(ab,c,ci,ls){
+  const statuses=ls||localStatus().filter(x=>x.j===ab),cn=cName(ab,c);
+  if(statuses.some(x=>ci?(x.t==="city"&&x.n===ci):(x.t==="county"&&x.n===cn))) return "pause";
+  if(!ci){const cities=new Set(SOC.geo[ab].cities.filter(x=>x.c===c).map(x=>x.n));if(statuses.some(x=>x.t!=="county"&&cities.has(x.n))) return "partial";}
+  const acts=officialFor(ab,c,ci).map(x=>x.e).filter(e=>e.k==="action");
+  if(acts.some(e=>e.st==="pending"||e.st==="ballot")) return "pending";
+  return acts.length?"other":"none";
+}
 // Panel for a selected county or city: the same official context as the state panel (status, latest action,
 // ban and moratorium tally, climate for developers), then public sentiment, then the entries logged there.
 export function renderGeoPanel(p){
@@ -87,7 +98,7 @@ export function renderGeoPanel(p){
   else if(off.length){cls="local";label="Actions logged, no ban or pause";}
   const lead=off.find(x=>x.e.k==="action")||off[0];
   p.innerHTML=`<h2>${esc(nm)}</h2>
-    <div style="font-size:14px;color:var(--ink-3);margin-top:2px">${esc(NAMES[ab])}${s.ci?" 路 "+esc(cn):""}</div>
+    <div style="font-size:14px;color:var(--ink-3);margin-top:2px">${esc(NAMES[ab])}${s.ci?" · "+esc(cn):""}</div>
     <div class="status-line"><i class="sw ${cls}" style="vertical-align:-2px;margin-right:6px"></i>${esc(label)}</div>
     <p>${lead?`<b>Latest:</b> ${esc(lead.e.t)}. ${esc(lead.e.b)}`:"Nothing logged here yet. That may mean quiet, or that this tracker hasn't caught up. Check the other trackers tab for local coverage."}</p>
     <p style="font-size:15px">${off.length?`${off.length} ${off.length===1?"entry":"entries"} logged here, listed under Official record below.`:""}</p>
@@ -95,7 +106,7 @@ export function renderGeoPanel(p){
     ${climateBlock(entries)}
     ${sentBlock(ab,posts,"")}
     <div class="sent"><h3>Official record here <small style="font-weight:400;color:var(--ink-3)">${off.length}</small></h3>
-      ${off.length?`<ul class="officials">${off.slice(0,5).map(({e,key:k})=>`<li><button type="button" data-goto="${esc(k)}" data-t="${esc(e.t)}"><span class="o-t">${esc(e.t)}</span><small>${fmt(e.d)} 路 ${esc(STLBL[e.st])} 路 ${e.k==="politics"?"Political noise":"Official action"}</small></button></li>`).join("")}</ul>${off.length>5?`<p style="font-size:14px">Plus ${off.length-5} more in the first tab.</p>`:""}`:`<p style="font-size:15px">No actions logged for ${esc(nm)} yet.</p>`}
+      ${off.length?`<ul class="officials">${off.slice(0,5).map(({e,key:k})=>`<li><button type="button" data-goto="${esc(k)}" data-t="${esc(e.t)}"><span class="o-t">${esc(e.t)}</span><small>${fmt(e.d)} · ${esc(STLBL[e.st])} · ${e.k==="politics"?"Political noise":"Official action"}</small></button></li>`).join("")}</ul>${off.length>5?`<p style="font-size:14px">Plus ${off.length-5} more in the first tab.</p>`:""}`:`<p style="font-size:15px">No actions logged for ${esc(nm)} yet.</p>`}
     </div>
     <div class="btn-row"><button type="button" class="btn-live" data-soc-posts>See all ${posts.length} posts</button><button type="button" class="btn-quiet" data-soc-up>Back to ${esc(s.ci?cn:NAMES[ab])}</button></div>`;
   bindLocal(p);bindSoc(p);

@@ -4,8 +4,8 @@ import { match } from "./entries.js";
 import { navRefresh, selectGeo, socSync } from "./nav.js";
 import { renderPanel, select } from "./panel.js";
 import { cName, engText, trMeter, trTier, TRX } from "./sentiment.js";
-import { map, SOC, SOC_STATES, state } from "./store.js";
-import { $, esc, fmt, key } from "./util.js";
+import { SOC, SOC_STATES, state } from "./store.js";
+import { $, esc, fmt } from "./util.js";
 
 // ── Public sentiment tab ──
 export function buildSocial(){
@@ -94,8 +94,6 @@ export async function loadSoc(){
     try{const [g,d]=await Promise.all([fetch(`geo/${ab}.json`).then(r=>r.json()),fetch(`social/${ab}.json`).then(r=>r.json())]);SOC.geo[ab]=g;SOC.data[ab]=d;}catch(e){/* no data for this state */}
   }));
   if(!Object.keys(SOC.data).length){$("#v-social").innerHTML='<p class="empty">Public sentiment data did not load. Open the site through a web server rather than as a file.</p>';navRefresh();return;}
-  Object.keys(SOC.data).forEach(ab=>{const t=map.querySelector(`[data-ab="${ab}"]`);if(t){t.dataset.soc="1";t.title=(NAMES[ab]||ab)+": county sentiment map";}});
-  $("#dot-key").hidden=false;
   buildSocial();
   socSync();
   renderPanel();

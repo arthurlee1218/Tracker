@@ -33,29 +33,45 @@
   <div>
    <div class="mapbar" id="mapbar">
     <nav class="crumbs" id="crumbs" aria-label="Map level"></nav>
+    <div class="vt" role="group" aria-label="Color the map by"><button type="button" id="vt-actions" aria-pressed="true">Actions</button><button type="button" id="vt-sent" aria-pressed="false">Sentiment</button></div>
    </div>
    <div id="usbox">
     <div class="map boot" id="map" role="group" aria-label="States by strongest data center action"></div>
-    <div class="legend" aria-hidden="true">
-      <span><i class="sw pause"></i>Statewide pause in force</span>
-      <span><i class="sw rules"></i>Binding new rules, 2025–26</span>
-      <span><i class="sw proposed"></i>Statewide pause proposed or failed</span>
-      <span><i class="sw local"></i>Local and ballot fights</span>
-      <span><i class="sw none"></i>Not tracked yet</span>
-      <span id="dot-key" hidden><i class="sw dot"></i>Dot: county and city tiles</span>
-    </div>
-    <p class="map-note">Each state is colored by its strongest action. A state with a binding cost law and a failed moratorium bill shows as binding. Small numbers count the entries logged for that state.</p>
-   </div>
-   <div id="tilebox" hidden>
-    <div class="tilewrap"><div class="tilegrid" id="tilegrid" role="group" aria-label="Counties or cities as tiles, colored by public sentiment"></div></div>
-    <div class="legend sent-legend" aria-hidden="true">
+    <div class="legend sent-legend" id="us-leg-sent" hidden aria-hidden="true">
       <span><i class="sw anti"></i>Mostly against</span>
       <span><i class="sw split"></i>Split</span>
       <span><i class="sw pro"></i>Mostly supportive</span>
       <span><i class="sw few"></i>Fewer than 5 accounts</span>
       <span><i class="sw none"></i>No posts collected</span>
     </div>
-    <p class="map-note" id="tilenote">Each tile is one place, laid out roughly where it sits on the map. Color shows what individual accounts on Bluesky and Reddit say, counting each account once; the small number is the official actions logged there. It is not a poll. Select a county to see its cities.</p>
+    <p class="map-note" id="us-note-sent" hidden>Each state is colored by what individual accounts on Bluesky and Reddit say, counting each account once. Only states with collected posts are colored; the small number counts posts. It is not a poll: online posters are not a representative sample of residents.</p>
+    <div class="legend" id="us-leg-act" aria-hidden="true">
+      <span><i class="sw pause"></i>Statewide pause in force</span>
+      <span><i class="sw rules"></i>Binding new rules, 2025–26</span>
+      <span><i class="sw proposed"></i>Statewide pause proposed or failed</span>
+      <span><i class="sw local"></i>Local and ballot fights</span>
+      <span><i class="sw none"></i>Not tracked yet</span>
+    </div>
+    <p class="map-note" id="us-note-act">Each state is colored by its strongest action. A state with a binding cost law and a failed moratorium bill shows as binding. Small numbers count the entries logged for that state.</p>
+   </div>
+   <div id="tilebox" hidden>
+    <div class="tilewrap"><div class="tilegrid" id="tilegrid" role="group" aria-label="Counties or cities as tiles, colored by public sentiment"></div></div>
+    <div class="legend" id="t-leg-act" aria-hidden="true">
+      <span><i class="sw pause"></i>Ban or pause in force</span>
+      <span><i class="sw partial"></i>A city here has a pause</span>
+      <span><i class="sw proposed"></i>Proposed or pending</span>
+      <span><i class="sw local"></i>Other actions logged</span>
+      <span><i class="sw none"></i>Nothing logged</span>
+    </div>
+    <p class="map-note" id="t-note-act">Each tile is one place, laid out roughly where it sits on the map. Color shows the strongest local action logged there: a data center ban or moratorium in force, something proposed or pending, or other actions. Select a county to see its cities.</p>
+    <div class="legend sent-legend" id="t-leg-sent" aria-hidden="true">
+      <span><i class="sw anti"></i>Mostly against</span>
+      <span><i class="sw split"></i>Split</span>
+      <span><i class="sw pro"></i>Mostly supportive</span>
+      <span><i class="sw few"></i>Fewer than 5 accounts</span>
+      <span><i class="sw none"></i>No posts collected</span>
+    </div>
+    <p class="map-note" id="t-note-sent">Each tile is one place, laid out roughly where it sits on the map. Color shows what individual accounts on Bluesky and Reddit say, counting each account once; the small number is the official actions logged there. It is not a poll. Select a county to see its cities.</p>
    </div>
   </div>
   <aside class="panel" id="panel" aria-live="polite"></aside>
