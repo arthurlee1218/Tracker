@@ -1,8 +1,8 @@
-# Find new developments for Load Watch
+# Find new developments for Data Center Watch
 
 Today's date is {{TODAY}}. Look for developments dated {{SINCE}} or later.
 
-You are updating Load Watch, a tracker of U.S. data center policy and politics.
+You are updating Data Center Watch, a tracker of U.S. data center policy and politics.
 
 1. Read `data/entries.json` (the hand-curated entries) and `updates.json` so you know what is already covered.
 2. Use web search broadly. Run separate searches for each of these beats, from several angles each (different states, outlets, officials, local news):

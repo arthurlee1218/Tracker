@@ -1,4 +1,4 @@
-// config.js: part of Load Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
+// config.js: part of Data Center Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
 
 export const GRID = {AK:[0,0],ME:[10,0],WI:[5,1],VT:[9,1],NH:[10,1],
 WA:[0,2],ID:[1,2],MT:[2,2],ND:[3,2],MN:[4,2],IL:[5,2],MI:[6,2],NY:[8,2],MA:[9,2],

@@ -1,4 +1,4 @@
-// entries.js: part of Load Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
+// entries.js: part of Data Center Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
 import { ACT_ST, IML, LVL, NAMES, OK_LV, OK_TY, POL_ST, PTL, STLBL, TYL } from "./config.js";
 import { paintCounts, renderPanel, select } from "./panel.js";
 import { showTab } from "./shell.js";

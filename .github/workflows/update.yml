@@ -1,4 +1,4 @@
-name: Update Load Watch (Claude subscription)
+name: Update Data Center Watch (Claude subscription)
 
 # Runs Claude Code on your Claude plan (no API billing).
 # Needs the repository secret CLAUDE_CODE_OAUTH_TOKEN, made with `claude setup-token`.
@@ -14,7 +14,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: load-watch-update
+  group: data-center-watch-update
   cancel-in-progress: false
 
 jobs:
@@ -53,11 +53,11 @@ jobs:
         if: ${{ vars.AUTO_PUBLISH != 'true' }}
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: auto/load-watch-updates
+          branch: auto/data-center-watch-updates
           delete-branch: true
           add-paths: updates.json
-          commit-message: "Load Watch: new developments"
-          title: "Load Watch: new developments for review"
+          commit-message: "Data Center Watch: new developments"
+          title: "Data Center Watch: new developments for review"
           body-path: update-summary.md
           labels: auto-update
 
@@ -65,6 +65,6 @@ jobs:
         if: ${{ vars.AUTO_PUBLISH == 'true' }}
         run: |
           if git diff --quiet updates.json; then echo "No changes"; exit 0; fi
-          git config user.name "load-watch-bot"
-          git config user.email "load-watch-bot@users.noreply.github.com"
-          git add updates.json && git commit -m "Load Watch: new developments" && git push
+          git config user.name "data-center-watch-bot"
+          git config user.email "data-center-watch-bot@users.noreply.github.com"
+          git add updates.json && git commit -m "Data Center Watch: new developments" && git push

@@ -1,4 +1,4 @@
-// panel.js: part of Load Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
+// panel.js: part of Data Center Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
 import { GRID, NAMES, SLABEL } from "./config.js";
 import { bindLocal, climateBlock, fillPlaces, localBlock, localList, localStatus, localTally, renderEntries, tallyBtn } from "./entries.js";
 import { socSync } from "./nav.js";

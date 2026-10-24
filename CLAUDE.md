@@ -1,6 +1,6 @@
-# Load Watch: notes for Claude
+# Data Center Watch: notes for Claude
 
-Load Watch is a public tracker of U.S. data center laws, pauses, executive orders,
+Data Center Watch is a public tracker of U.S. data center laws, pauses, executive orders,
 ballot measures and campaign politics. Several teammates work on it, each with their
 own Claude account, on their own branches. Read this before changing anything.
 

@@ -1,4 +1,4 @@
-// social.js: part of Load Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
+// social.js: part of Data Center Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
 import { NAMES, STANCE, TOPL, WHOL } from "./config.js";
 import { match } from "./entries.js";
 import { navRefresh, selectGeo, socSync } from "./nav.js";

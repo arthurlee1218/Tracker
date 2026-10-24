@@ -1,4 +1,4 @@
-// sentiment.js: part of Load Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
+// sentiment.js: part of Data Center Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
 import { NAMES, STLBL, TOPL, TRL } from "./config.js";
 import { bindLocal, climateBlock, localBlock, localStatus } from "./entries.js";
 import { selectGeo } from "./nav.js";

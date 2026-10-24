@@ -2,7 +2,7 @@ param([string]$OutDir, [string]$Only = '')
 $ErrorActionPreference = 'Continue'
 New-Item -ItemType Directory -Force $OutDir | Out-Null
 $cutoff = [DateTimeOffset]::Parse('2026-04-23T00:00:00Z')
-$ua = 'LoadWatch-research/0.1 (public-interest tracker prototype; set a contact address here)'
+$ua = 'DataCenterWatch-research/0.1 (public-interest tracker prototype; set a contact address here)'
 
 function Strip-Html($s) {
   if (-not $s) { return '' }

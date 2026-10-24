@@ -2,7 +2,7 @@
 # so engagement for Reddit is the comment count. Results are appended to a .jsonl file as they arrive, and
 # threads already in that file are skipped, so the script can be stopped and restarted.
 param([string]$Candidates, [string]$Out, [string]$Idx)
-$ua = 'LoadWatch-research/0.1 (public-interest tracker prototype)'
+$ua = 'DataCenterWatch-research/0.1 (public-interest tracker prototype)'
 $keep = $Idx -split ',' | ForEach-Object { [int]$_ }
 $done = @{}
 if (Test-Path $Out) { Get-Content $Out -Encoding utf8 | Where-Object { $_ } | ForEach-Object { $done[[int](($_ | ConvertFrom-Json).idx)] = 1 } }
