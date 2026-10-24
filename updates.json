@@ -219,6 +219,40 @@
   "by": "Claude research, Oct 22"
  },
  {
+  "d": "2026-09-14",
+  "j": "WA",
+  "w": "Walla Walla County Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "moratorium",
+   "siting"
+  ],
+  "t": "Walla Walla commissioners decline a moratorium as Amazon's campus is reviewed",
+  "b": "Residents asked for a one-year pause and an environmental impact statement. The three commissioners said they would not back a countywide moratorium. Review of Amazon's Wallula Gap proposal continues, with public comment open through Oct. 12.",
+  "s": [
+   [
+    "Union-Bulletin",
+    "https://www.union-bulletin.com/news/local/governments/walla-walla-county-commissioners-wont-consider-data-center-moratorium/article_ad58a5a6-ea34-4e28-8624-efe7565870d4.html"
+   ],
+   [
+    "Whitman Wire",
+    "https://whitmanwire.com/news/2026/09/18/amazon-data-center-proposal-progresses-amid-public-unease/"
+   ]
+  ],
+  "im": 1,
+  "iw": "No pause; permitting review continues",
+  "pl": [
+   [
+    "Walla Walla County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
   "d": "2026-09-10",
   "j": "PA",
   "w": "Bob Harvie (D)",
@@ -278,6 +312,41 @@
   ],
   "auto": false,
   "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-09-08",
+  "j": "WA",
+  "w": "Lincoln County Commissioners (WA)",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "water",
+   "siting"
+  ],
+  "t": "Lincoln County, Washington, adopts a six-month pause on data centers and battery storage",
+  "b": "Ordinance 26-02 stops accepting permit applications for data centers and battery storage while zoning is drafted. A standing-room crowd at the Oct. 5 hearing was divided, with water dominating testimony. The pause can run up to a year.",
+  "s": [
+   [
+    "KXLY",
+    "https://www.kxly.com/news/lincoln-county-holds-public-hearing-after-a-6-month-emergency-moratorium-pauses-data-center-permits/article_1657d3c0-e297-41ee-9c6f-63f3cfab52b3.html"
+   ],
+   [
+    "Odessa Record",
+    "https://www.odessarecord.com/story/2026/10/08/news/public-concerned-over-data-centers/18055.html"
+   ]
+  ],
+  "im": -1,
+  "iw": "Permit applications frozen while zoning is drafted",
+  "pl": [
+   [
+    "Lincoln County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
  },
  {
   "d": "2026-09-08",
@@ -616,6 +685,40 @@
   "by": "Claude research, Oct 22"
  },
  {
+  "d": "2026-08-18",
+  "j": "WA",
+  "w": "Grant County Superior Court",
+  "lv": "local",
+  "k": "action",
+  "st": "in-force",
+  "ty": [
+   "cost",
+   "siting"
+  ],
+  "t": "Judge lets Grant PUD seize land for a data center power line",
+  "b": "A Superior Court judge ruled the utility may condemn private land for a 31-mile line serving Quincy's data centers. Owners dispute the appraisals and have appealed. The $260 million project is meant to roughly double power delivered to Quincy.",
+  "s": [
+   [
+    "Spokesman-Review",
+    "https://www.spokesman.com/stories/2026/aug/18/wa-utility-can-take-land-for-data-center-power-lin/"
+   ],
+   [
+    "Capital Press",
+    "https://capitalpress.com/2026/08/13/wa-farmers-fight-grant-county-pud-over-data-center-line-easements/"
+   ]
+  ],
+  "im": 1,
+  "iw": "Clears a path for more power into Quincy",
+  "pl": [
+   [
+    "Grant County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
   "d": "2026-08-10",
   "j": "MA",
   "w": "Middlesex Superior Court",
@@ -677,6 +780,40 @@
   ],
   "auto": false,
   "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-08",
+  "j": "WA",
+  "w": "Rachelle Miller, Spokane County Commission candidate",
+  "lv": "local",
+  "k": "politics",
+  "st": "campaign",
+  "ty": [
+   "moratorium",
+   "siting"
+  ],
+  "t": "Write-in candidate running against data centers reaches the Spokane County ballot",
+  "b": "Miller advanced from the August primary to face Rep. Suzanne Schmidt for the District 4 seat, with data centers as nearly her whole platform. Outlets report different primary vote totals for her.",
+  "s": [
+   [
+    "RANGE Media",
+    "https://www.rangemedia.co/data-center-4th-district-county-commissioner-miller-schmidt/"
+   ],
+   [
+    "Spokesman-Review",
+    "https://www.spokesman.com/stories/2026/sep/14/voters-to-choose-new-county-commissioner-amid-data/"
+   ]
+  ],
+  "im": -1,
+  "iw": "Makes data centers a ballot issue in Spokane County",
+  "pl": [
+   [
+    "Spokane County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
  },
  {
   "d": "2026-08",
@@ -761,6 +898,41 @@
   ],
   "auto": false,
   "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-07-31",
+  "j": "WA",
+  "w": "Cle Elum City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "water",
+   "siting"
+  ],
+  "t": "Cle Elum adopts a six-month emergency pause as a $200M data center plan stirs concern",
+  "b": "The council voted unanimously. Officials are unsure the pause reaches Blue Fern's proposed 20 MW facility, because a 2002 development agreement already covers the site. The city plans an advisory committee.",
+  "s": [
+   [
+    "KOMO News",
+    "https://komonews.com/news/local/cle-elum-adopts-emergency-moratorium-as-200m-ai-data-center-plan-stirs-concerns-computing-facilities-electricity-demand-water-supplies-community-increasing-rates"
+   ],
+   [
+    "Spokesman-Review",
+    "https://www.spokesman.com/stories/2026/aug/05/cle-elum-passed-a-data-center-ban-one-might-be-bui/"
+   ]
+  ],
+  "im": 0,
+  "iw": "Pause may not reach a project with a 2002 agreement",
+  "pl": [
+   [
+    "Cle Elum",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
  },
  {
   "d": "2026-07-27",
@@ -882,6 +1054,41 @@
   "by": "Claude research, Oct 22"
  },
  {
+  "d": "2026-07-13",
+  "j": "WA",
+  "w": "Marysville City Council",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "cost",
+   "siting"
+  ],
+  "t": "Marysville adopts a six-month pause on principal-use data centers",
+  "b": "Ordinance 3381 passed unanimously. It halts land-use applications for facilities whose main purpose is processing data while the city finishes utility plans and rate studies. Residents had raised noise, water and rate worries in June.",
+  "s": [
+   [
+    "HeraldNet",
+    "https://www.heraldnet.com/2026/07/15/marysville-initiates-6-month-moratorium-on-data-centers/"
+   ],
+   [
+    "Marysville Globe",
+    "https://www.marysvilleonline.net/news/city-approves-data-center-moratorium/article_07fd9137-6541-44fa-ae26-551b2e200177.html"
+   ]
+  ],
+  "im": -1,
+  "iw": "Applications frozen while utility rates are studied",
+  "pl": [
+   [
+    "Marysville",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
   "d": "2026-07-07",
   "j": "NJ",
   "w": "Gov. Sherrill",
@@ -976,6 +1183,40 @@
   "by": "Claude research, Oct 22"
  },
  {
+  "d": "2026-06-28",
+  "j": "WA",
+  "w": "Spokane residents",
+  "lv": "local",
+  "k": "politics",
+  "st": "protest",
+  "ty": [
+   "disclosure",
+   "cost"
+  ],
+  "t": "About 30 protest outside Avista headquarters over a Spokane data center",
+  "b": "Demonstrators gathered even after Avista paused talks, still opposing the unnamed 500 MW project. Avista said its top priority is protecting existing customers from any large new load.",
+  "s": [
+   [
+    "KXLY",
+    "https://www.kxly.com/news/protesters-gather-at-avista-hq-to-oppose-data-center-development/article_67af0942-e74a-4b63-acd4-3ea3a8e81617.html"
+   ],
+   [
+    "KHQ",
+    "https://www.khq.com/news/spokane-protesters-push-back-on-proposed-data-center-plan/article_2a10b765-413f-4470-8193-8d6e3ee9a03a.html"
+   ]
+  ],
+  "im": -1,
+  "iw": "Adds public pressure on the utility and county",
+  "pl": [
+   [
+    "Spokane",
+    "city"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
+ },
+ {
   "d": "2026-06-25",
   "j": "PA",
   "w": "Pennsylvania House",
@@ -1056,6 +1297,40 @@
   ],
   "auto": false,
   "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-06-12",
+  "j": "WA",
+  "w": "Avista",
+  "lv": "local",
+  "k": "action",
+  "st": "pending",
+  "ty": [
+   "cost",
+   "disclosure"
+  ],
+  "t": "Avista pauses talks with a 500 MW data center developer after backlash",
+  "b": "The utility had signed a nonbinding deal with an unnamed customer whose load would equal about half its service area. After public pressure over secrecy, it paused negotiations and said it would seek a more transparent process.",
+  "s": [
+   [
+    "Spokesman-Review",
+    "https://www.spokesman.com/stories/2026/jun/12/avista-puts-data-center-negotiations-on-pause/"
+   ],
+   [
+    "KXLY",
+    "https://kxly920.com/2026/06/12/avista-pauses-data-center-energy-request-amid-community-concerns/"
+   ]
+  ],
+  "im": -1,
+  "iw": "A 500 MW customer's talks are on hold",
+  "pl": [
+   [
+    "Spokane County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
  },
  {
   "d": "2026-06-11",
@@ -1169,6 +1444,41 @@
   ],
   "auto": false,
   "by": "Claude research, Oct 22"
+ },
+ {
+  "d": "2026-06-01",
+  "j": "WA",
+  "w": "Skagit County Commissioners",
+  "lv": "local",
+  "k": "action",
+  "st": "pause",
+  "ty": [
+   "moratorium",
+   "water",
+   "siting"
+  ],
+  "t": "Skagit County adopts a six-month pause on new data centers",
+  "b": "Commissioners voted 2-0, with one absent, to stop accepting data center applications in unincorporated areas while permanent rules are written. Officials cited farmland and scarce summer water. The pause can be extended six months.",
+  "s": [
+   [
+    "Cascadia Daily News",
+    "https://www.cascadiadaily.com/2026/jun/01/skagit-county-temporarily-bans-data-centers-to-protect-farmland-water/"
+   ],
+   [
+    "Skagit County",
+    "https://www.skagitcountywa.gov/news/posts/skagit-county-commissioners-adopt-moratorium-on-new-data-centers"
+   ]
+  ],
+  "im": -1,
+  "iw": "No applications can be filed while rules are drafted",
+  "pl": [
+   [
+    "Skagit County",
+    "county"
+   ]
+  ],
+  "auto": false,
+  "by": "Claude research, Oct 23"
  },
  {
   "d": "2026-06",

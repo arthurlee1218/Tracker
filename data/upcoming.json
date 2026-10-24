@@ -1,0 +1,30 @@
+{
+"next": [
+{"w":"Oct 27, 2026","t":"Martin County, Florida, holds its final vote on a one-year moratorium, and Pulaski County, Arkansas, may vote to override its judge's veto of data center rules.","big":false},
+{"w":"Oct 31, 2026","t":"Lexington's data center pause expires unless the council extends it.","big":false},
+{"w":"Nov 3, 2026","t":"Election Day: 36 governor races, the Ohio Senate race, Public Service Commission seats in Georgia and Louisiana, and 35+ local data center measures from Ohio to Maine.","big":true},
+{"w":"Nov 5, 2026","t":"Charlotte's 150-day moratorium expires unless extended; city staff recommended extending it.","big":false},
+{"w":"November 2026","t":"Virginia work group reports on data center taxation ahead of the 2027 session.","big":false},
+{"w":"By Nov 16, 2026","t":"PJM targets its FERC filing for a flexible large-load service model.","big":false},
+{"w":"Nov 17, 2026","t":"Loudoun County's final vote on a 12-month pause in the world's densest data center market.","big":true},
+{"w":"Nov 21, 2026","t":"Meriwether County, Georgia's extended moratorium ends.","big":false},
+{"w":"Dec 1, 2026","t":"Nashville's data center permit pause ends.","big":false},
+{"w":"Dec 7, 2026","t":"Air permit hearing for New Mexico's Project Jupiter in Sunland Park.","big":false},
+{"w":"December 2026","t":"ERCOT's target for finishing the Texas audit, and Louisiana regulators' expected vote on gas plants for Meta's Hyperion expansion.","big":false},
+{"w":"Dec 13 and 24, 2026","t":"Coweta County, Georgia, and Snohomish County, Washington, pauses expire unless renewed.","big":false},
+{"w":"Dec 31, 2026","t":"Hochul's deadline to sign or veto the Responsible Data Center Development Act; inaction is a pocket veto. Massachusetts must also set its clean-energy payment for data centers.","big":true},
+{"w":"Jan 1, 2027","t":"Most of California's seven data center laws take effect, and 2027 sessions open with moratorium bills in Virginia and Georgia and incentive fights in Texas.","big":false},
+{"w":"Jan 29, 2027","t":"Maine's state recommendations on large data centers are due.","big":false},
+{"w":"May 2027","t":"PJM's first capacity auction without the price cap.","big":false},
+{"w":"July 1, 2027","t":"Oregon's permit and state land pauses end. Ohio ban amendment organizers need 413,488 signatures by about this time for the Nov 2027 ballot.","big":false},
+{"w":"June 30, 2028","t":"Virginia's consumption tax sunsets unless extended.","big":false}
+],
+"gaps": [
+{"h":"Nobody agrees on the count","p":"Local moratorium tallies range from 313 (Urban Institute) to 632 jurisdictions taking action (GatherGov) to 933 local actions (Gizmo Warehouse map). The gap is mostly definitions: adopted pauses vs. proposals vs. denials vs. zoning conditions."},
+{"h":"What happens when pauses end","p":"Trackers log the vote but rarely follow up. Of 28 well-documented blocked fights since 2023, one map found 13 still pending or in court and four delayed then built anyway."},
+{"h":"Behind-the-meter power","p":"On-site gas turbines dodge grid queues and, under EPA proposals, some public comment. Texas only closed the gap with a second order. Few trackers follow air permits."},
+{"h":"Pledges without enforcement","p":"The White House pledge covers companies delivering most U.S. power, but enforcement sits with state utility commissions. No one is systematically checking signers' tariffs against their promises."},
+{"h":"Water data","p":"Texas found as few as 28% of data centers answered its water survey. California's new reporting starts in 2027. Consumption, not discharge, is what states are now trying to measure."},
+{"h":"Tribal and preemption fights","p":"Tribal nations in Oklahoma are acting on their own lands, while Texas lawmakers and courts in California and Mississippi are testing how far local bans can go. Both fronts are thinly covered."}
+]
+}
