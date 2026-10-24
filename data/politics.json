@@ -1,0 +1,24 @@
+{
+"races": [
+{"h":"Ohio Senate: Husted (R) vs. Brown (D)","p":"Brown calls Husted the face of data centers in Ohio. Husted led the Senate push for the Ratepayer Protection Act, which failed 57–43. An NRSC memo called data centers the anchor around his neck.","s":["CNN","https://www.cnn.com/2026/09/30/politics/data-centers-affordability-senate"]},
+{"h":"Texas governor: Abbott (R) vs. Hinojosa (D)","p":"Abbott's audit and permit freeze came amid attacks from Hinojosa, who wants an immediate moratorium and a special session to end tax breaks. She predicts the pause will be lifted after the election.","s":["NewsNation","https://www.newsnationnow.com/politics/2026-midterm-elections/2026-midterms-data-centers/"]},
+{"h":"Ohio governor: Ramaswamy (R) vs. Acton (D)","p":"Both back a pause. Acton wants a conditional legislative moratorium; Ramaswamy promises a first-day executive order halting new approvals until lawmakers pass his Ohioans-First law.","s":["CBS News","https://www.cbsnews.com/news/data-center-boom-republicans-2026-midterm-elections/"]},
+{"h":"Pennsylvania governor: Shapiro (D) vs. Garrity (R)","p":"Shapiro went from touting fast permits to his August order requiring local approval before state permits. Garrity wants an open-ended pause so towns can update zoning; at their debate Shapiro said his rules make a moratorium unnecessary.","s":["FOX43","https://www.fox43.com/article/news/politics/elections/josh-shapiro-stacy-garrity-data-centers/521-f9af443e-12cd-4a89-86d0-c5576b8196b1"]},
+{"h":"Georgia Public Service Commission","p":"Two of five seats are on the ballot. Democrats need both to flip the 3–2 Republican majority that sets Georgia Power's rates.","s":["BofA via BigGo","https://finance.biggo.com/news/e0e7b385-5b91-4f35-8296-2039a4c1987f"]},
+{"h":"House races built around data centers","p":"PA-8 (Bresnahan vs. Cognetti); OH-9, where Kaptur's ads hit Merrin over his 2017 vote on Ohio's data center tax break.","s":["Ohio Capital Journal","https://ohiocapitaljournal.com/2026/08/10/ohios-9th-congressional-district-race-the-candidates-records-on-data-centers/"]}
+],
+"tallies": [
+["30+","of 143 tracked governor candidates back a pause, halt or ban (20 Democrats, 10 Republicans)","The Impact Project via Heatmap","https://heatmap.news/ideas/2026-governors-data-centers"],
+["5","states where both major-party governor candidates back a pause: ME, NH, OH, OR, TX","The Impact Project via Heatmap","https://heatmap.news/ideas/2026-governors-data-centers"],
+["$45M","spent on ads mentioning data centers this year, mostly opposed; nearly $13M in Georgia alone","AdImpact via CBS News","https://www.cbsnews.com/news/data-center-boom-republicans-2026-midterm-elections/"],
+["35+","local data center measures on Nov 3 ballots across about eight states; all four decided earlier in 2026 went toward restriction","Ballotpedia","https://news.ballotpedia.org/2026/09/23/ohio-leads-states-in-number-of-local-ballot-measures-on-data-centers-for-2026-2/"]
+],
+"polls": [
+{"l":"Oppose a data center near home","m":"Heatmap Pro / Embold, Aug 2026, registered voters","v":75,"u":"https://heatmap.news/daily/data-center-opposition-poll-collapse"},
+{"l":"Oppose an AI data center in their area","m":"Gallup, March 2026, adults (48% strongly)","v":71,"u":"https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx"},
+{"l":"Oppose building AI data centers in their area","m":"Fox News poll, Sept 2026, voters","v":71,"u":"https://www.foxnews.com/politics/americas-multi-billion-tech-boom-comes-into-focus-7-key-states-put-midterm-test"},
+{"l":"Oppose data centers in or near their community","m":"Emerson, July 2026 (up from 42% in Dec 2025)","v":63,"u":"https://www.yahoo.com/news/politics/articles/polling-shows-majority-americans-oppose-193413526.html"},
+{"l":"Not comfortable with a new data center nearby","m":"Pew Research Center, July–Aug 2026","v":60,"u":"https://www.kunc.org/news/2026-09-25/surveys-over-60-oppose-data-centers-in-their-communities"},
+{"l":"Concerned data centers raise their electric rates","m":"Reuters/Ipsos via Newsweek, 2026. Measures concern, not opposition","v":77,"k":"concern","u":"https://www.newsweek.com/map-shows-states-where-data-centers-are-on-the-ballot-12528253"}
+]
+}

@@ -20,9 +20,9 @@ const until = iso(new Date(Date.now() + 120 * 864e5));
 const norm = t => String(t).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 const sameDoc = (a, b) => a.replace(/[?#].*$/, "").replace(/\/$/, "") === b.replace(/[?#].*$/, "").replace(/\/$/, "");
 
-const html = readFileSync("index.html", "utf8");
+const curated = JSON.parse(readFileSync("data/entries.json", "utf8"));
 const updates = JSON.parse(readFileSync("updates.json", "utf8"));
-const known = new Set([...html.matchAll(/\bt:"((?:[^"\\]|\\.)*)"/g)].map(m => norm(m[1].replace(/\\"/g, '"'))));
+const known = new Set(curated.map(e => norm(e.t)));
 updates.forEach(u => known.add(norm(u.t)));
 
 let candidates = [];

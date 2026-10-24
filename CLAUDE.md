@@ -6,21 +6,31 @@ own Claude account, on their own branches. Read this before changing anything.
 
 ## How the site works
 
-- **Static site, no build step.** `index.html` holds all HTML, CSS and JavaScript.
-  Vercel serves the repo as-is and redeploys on every push to `main`. Don't add
-  frameworks, bundlers, npm dependencies or a build step without the team agreeing
-  in an issue first.
+- **Static site, no build step.** `index.html` is the markup, `styles.css` the styles,
+  `js/` the code (native ES modules, loaded with `<script type="module">`) and `data/`
+  plus `updates.json` the content. Vercel serves the repo as-is and redeploys on every
+  push to `main`. Don't add frameworks, bundlers, npm dependencies or a build step
+  without the team agreeing in an issue first.
 - External scripts, if ever needed, come from `https://cdnjs.cloudflare.com`. Fonts
   load from Google Fonts (Barlow and Barlow Condensed).
 - **Preview locally** with `python3 -m http.server 8000` in the repo root, then open
-  `http://localhost:8000`. Opening `index.html` directly won't load `updates.json`.
+  `http://localhost:8000`. Opening `index.html` directly won't work: modules and the data
+  files need a web server.
 
 ## File map
 
 | Path | Purpose |
 |---|---|
-| `index.html` | The entire site: styles, markup, data and logic |
-| `updates.json` | New entries (auto-found and hand-added). Loaded at runtime |
+| `index.html` | The page markup only (header, map, tabs, filters, footer) |
+| `styles.css` | All styles, with the light and dark theme variables at the top |
+| `js/` | The code, as native ES modules. See "Code map" below |
+| `data/entries.json` | Hand-curated entries, one per line, with impact score and places already attached |
+| `data/states.json` | Each state's map status and one-paragraph summary |
+| `data/projects.json` | Named projects for the Data center projects tab |
+| `data/politics.json` | Races, tallies and polls for the Campaigns and polls tab |
+| `data/upcoming.json` | Dated events and coverage gaps for the Coming up tab |
+| `data/trackers.json` | Other trackers |
+| `updates.json` | New entries found by the daily job or added by hand. Loaded at runtime |
 | `social/WA.json` | Public sentiment posts for one state (excerpt, link, stance, topics, engagement). Loaded at runtime |
 | `geo/US.json` | State outlines for the national map (975x610 Albers frame, from Census boundaries) |
 | `geo/WA.json` | That state's county outlines and city points, in the same frame as `US.json` |
@@ -55,23 +65,47 @@ Entries are objects with short keys:
 
 Rules:
 
-- **New entries go in `updates.json`, not `index.html`.**
-- In `index.html`, actions live in `const E=[...]`, politics in `const P=[...]`, and
-  impact scores for both in `const IMPACT=[...]`, **matched by position** (all of `E`,
-  then all of `P`). Never insert, delete or reorder entries in `E` or `P` without
-  making the same change in `IMPACT`. Editing text in place is fine.
+- **New entries go in `updates.json`.** `data/entries.json` holds the older hand-curated
+  entries; edit one in place, or add a new one to `updates.json` instead.
+- Every entry in `data/entries.json` carries its own `k`, `im`, `iw` and `pl`. There is no
+  separate impact list matched by position any more: change an entry's score by editing
+  that entry. Keep one entry per line so diffs and merges stay small.
 - Dates in the future are treated as scheduled: `isUp()` puts them in a "Coming up" group at the top of the list. Always use the date the event happened, or the scheduled date for a vote.
-- Entries added after the original build live in `const L=[...]` with their own `im`/`iw`, and places for older entries come from `const PLX={...}` keyed by exact title. Both are applied after `IMPACT`.
-- State colors on the map come from `const ST={...}` (status `pause`, `rules`,
+- State colors on the map come from `data/states.json` (status `pause`, `rules`,
   `proposed`, `local`; missing means "not tracked"). Each has a one-paragraph summary.
 - The allowed values above are validated in three places that must stay in sync:
-  `clean()` in `index.html`, `shape()` in `scripts/merge.mjs`, and `clean()` in
+  `clean()` in `js/entries.js`, `shape()` in `scripts/merge.mjs`, and `clean()` in
   `scripts/update.mjs` (including the place types in `PTL` / `PT`). If you add a status, topic or field, update all three, the
-  filter `<select>` options, the label maps (`STLBL`, `TYL`, `LVL`), and
-  `.github/prompts/find-updates.md`.
-- `scripts/merge.mjs` finds existing titles in `index.html` with the regex
-  `t:"..."`. If you change how entries are written (for example, moving data to a
-  separate file), update that regex and the prompt file too.
+  filter `<select>` options in `index.html`, the label maps in `js/config.js` (`STLBL`, `TYL`,
+  `LVL`, `PTL`), and `.github/prompts/find-updates.md`.
+- `scripts/merge.mjs` and `scripts/update.mjs` read the titles in `data/entries.json` and
+  `updates.json` to avoid duplicates. If you move entries again, update both and the prompt file.
+
+## Code map (`js/`)
+
+Native ES modules, no build. Each file only **declares** things; anything that touches the page
+at startup lives in an `init…()` function that `main.js` calls in a fixed order after the data
+has loaded. That keeps circular imports (the map, panel and filters call each other) safe. Don't
+run page code at the top level of a module.
+
+| File | Holds |
+|---|---|
+| `main.js` | Entry point: `await loadData()`, then each `init…()` |
+| `data.js` | Loads `data/*.json` into the store |
+| `store.js` | Shared mutable state: `E` (entries), `D` (other data), `state` (filters), `SOC` (sentiment and map), `countBy` |
+| `config.js` | Constants and label maps: state names and tile grid, status, level, topic and impact labels |
+| `util.js` | `$`, `esc`, `fmt`, `key`, `norm`, `plural`, the impact `meter` |
+| `panel.js` | Tile map, `select()`, the side panel, state counts |
+| `entries.js` | Entry list and filters, local status tallies, `clean()` and the `updates.json` loader |
+| `projects.js` | Data center projects tab |
+| `pages.js` | Campaigns and polls, Coming up, Other trackers tabs |
+| `sentiment.js` | Sentiment math (accounts, trend, topics, traction) and the panel blocks |
+| `map.js` | The SVG map: states, counties, cities, zoom, Map/Tiles toggle |
+| `social.js` | The Public sentiment tab and the loader for `social/` and `geo/` |
+| `shell.js` | Tabs, keyboard shortcuts, theme button |
+
+Adding something: put its data in a JSON file loaded by `data.js`, its code in the module that
+owns that part of the page, and its startup in that module's `init…()`.
 
 ## Public sentiment layer (Washington first)
 
@@ -86,7 +120,7 @@ Separate from the entries above. Official actions, protests, campaigns and polls
   animated `viewBox` change on a single SVG (`#cmap`), so every geo file must use the national
   975x610 frame (`build_geo.ps1 -National`). Escape steps back up one level.
 - **Files:** `social/<ST>.json` and `geo/<ST>.json`, loaded at runtime. A state turns on when its
-  code is in `SOC_STATES` in `index.html`; its label gets a dot. If `geo/US.json` fails to load,
+  code is in `SOC_STATES` in `js/store.js`; its label gets a dot. If `geo/US.json` fails to load,
   the site falls back to the tile grid.
 - **Post keys:** `id`, `p` (`bsky` or `reddit`), `d` date, `w` (`person` or `group`), `st` (`anti`,
   `pro`, `mixed`, `neutral`), `tp` topics (`water power rates tax jobs land noise fire open tribe
@@ -140,8 +174,8 @@ deep navy ink, one amber accent ("volt"), dense data rows. Keep new work consist
 3. Click a state on the map, use each filter, open an entry, and switch tabs.
 4. If you touched `updates.json`, make sure it's valid JSON.
 5. Keep the diff focused on what was asked. Don't reformat or rewrite unrelated
-   parts of `index.html`; it's one big file several people edit, so unrelated
-   changes cause merge conflicts.
+   parts of a file. Several people edit this repo, so unrelated changes cause merge
+   conflicts. The code is split by feature (`js/`), so keep changes in the module that owns them.
 
 ## Git workflow
 

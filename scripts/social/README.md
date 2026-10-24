@@ -50,4 +50,4 @@ absolute audience.
 1. Run `build_geo.ps1 -National` with `-StateFips` and `-StateAb` (edit the city list and the
    `$cityCounty` map inside it first), writing `geo/<ST>.json`.
 2. Collect, clean and label posts, then run `build_social.ps1` with `-StateAb`.
-3. Add the state code to `SOC_STATES` in `index.html`.
+3. Add the state code to `SOC_STATES` in `js/store.js`.

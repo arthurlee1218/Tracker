@@ -1,7 +1,8 @@
 # Data Center Watch
 
 A tracker of U.S. data center laws, pauses, ballot fights and campaign politics.
-`index.html` is the whole site. `updates.json` holds items added automatically.
+`index.html` is the page, `styles.css` the styles, `js/` the code (native ES modules, no build
+step) and `data/` plus `updates.json` the content. `updates.json` holds items added automatically.
 
 ## How automatic updates work
 
@@ -72,6 +73,5 @@ entries. `CLAUDE.md` gives every teammate's Claude Code the project's context.
 
 ## Editing entries
 
-Hand-written entries live in the `E` and `P` arrays in `index.html`, with impact
-scores in `IMPACT` (same order). Auto-found items live in `updates.json`; edit or
-delete them there.
+Hand-written entries live in `data/entries.json`, one per line, each with its own impact
+score and places. Auto-found items live in `updates.json`; edit or delete them there.

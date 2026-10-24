@@ -225,7 +225,7 @@ When a teammate asks for a review:
 1. Open the pull request and click the **Vercel preview** link. Click around in
    light mode, dark mode and phone width.
 2. Look at **Files changed**. You don't need to read every line. Check that the
-   change only touches what it claims to; big unrelated edits to `index.html` cause
+   change only touches what it claims to; big unrelated edits to a shared file cause
    conflicts for everyone else.
 3. Leave comments or click **Review changes → Approve**.
 4. The author (or the owner) clicks **Merge pull request**. The live site updates
@@ -245,9 +245,9 @@ claude
 
 ## 5. Adding entries
 
-New entries go in **`updates.json`**, not `index.html`. (The entries built into
-`index.html` have impact scores in a separate list matched by position, so adding
-them there breaks scores. `CLAUDE.md` explains this to Claude too.)
+New entries go in **`updates.json`**. (The older hand-curated entries are in
+`data/entries.json`; edit those in place, one entry per line. `CLAUDE.md` explains
+this to Claude too.)
 
 The easy way is to ask Claude:
 
@@ -330,8 +330,8 @@ pull request.
 
 - **Never push straight to `main`.** Always use a branch and a pull request.
 - **Keep pull requests focused.** One design change or a handful of entries each.
-  `index.html` is one large file, so two people restyling everything at once will
-  collide. Say in your team chat (or a GitHub Issue) what you're working on.
+  The code is split into `js/` modules and `styles.css`, but two people restyling
+  everything at once will still collide. Say in your team chat (or a GitHub Issue) what you're working on.
 - **Pull before you start** and merge promptly once approved.
 - **Use GitHub Issues** for ideas and bugs, and assign yourself when you pick one up.
 - **Stay consistent with the design system** in `CLAUDE.md`. If you want to change

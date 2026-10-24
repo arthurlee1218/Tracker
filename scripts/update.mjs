@@ -24,7 +24,7 @@ const BEATS = [
   { name: "politics", focus: "political noise: candidate promises, campaign ads, debates, new polls, notable statements by officials or industry, and protests about data centers in U.S. elections" }
 ];
 
-// ── Allowed values (must match index.html) ──
+// ── Allowed values (must match js/config.js and clean() in js/entries.js) ──
 const STATES = "AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY".split(" ");
 const LV = ["federal", "state", "local", "tribal"];
 const TY = ["moratorium", "cost", "tax", "water", "siting", "permitting", "disclosure"];
@@ -33,8 +33,7 @@ const PT = ["county", "city", "township", "tribal"];
 const POL_ST = ["campaign", "poll", "statement", "protest"];
 
 // ── Existing entries, used for dedupe and to tell Claude what we already have ──
-const html = readFileSync("index.html", "utf8");
-const embeddedTitles = [...html.matchAll(/\bt:"((?:[^"\\]|\\.)*)"/g)].map(m => m[1].replace(/\\"/g, '"'));
+const embeddedTitles = JSON.parse(readFileSync("data/entries.json", "utf8")).map(e => e.t);
 const updates = JSON.parse(readFileSync("updates.json", "utf8"));
 const knownTitles = [...embeddedTitles, ...updates.map(u => u.t)];
 

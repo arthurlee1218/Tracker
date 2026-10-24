@@ -4,7 +4,7 @@ Today's date is {{TODAY}}. Look for developments dated {{SINCE}} or later.
 
 You are updating Load Watch, a tracker of U.S. data center policy and politics.
 
-1. Read `index.html` (the `t:"..."` titles in the `E` and `P` arrays) and `updates.json` so you know what is already covered.
+1. Read `data/entries.json` (the hand-curated entries) and `updates.json` so you know what is already covered.
 2. Use web search broadly. Run separate searches for each of these beats, from several angles each (different states, outlets, officials, local news):
    - **Federal:** Congress, White House, FERC, DOE, EPA, federal courts, grid operators (PJM, ERCOT, MISO, SPP)
    - **State:** legislatures, governors' executive orders, utility commissions, state agencies and courts
