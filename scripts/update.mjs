@@ -1,4 +1,4 @@
-// Load Watch updater
+// Data Center Watch updater
 // Asks Claude (via the Anthropic API + its server-side web search tool) to find new
 // data center policy and politics developments anywhere on the web, then validates
 // them and appends them to updates.json. No source list needed: Claude decides what
@@ -46,7 +46,7 @@ const since = iso(new Date(Date.now() - LOOKBACK_DAYS * 864e5));
 
 function prompt(beat) {
   const recent = knownTitles.slice(-120).map(t => "- " + t).join("\n");
-  return `You maintain Load Watch, a tracker of U.S. data center policy and politics. Today is ${today}.
+  return `You maintain Data Center Watch, a tracker of U.S. data center policy and politics. Today is ${today}.
 
 Search the web broadly for developments dated ${since} or later in this area: ${beat.focus}.
 Search from several angles (different states, outlets, officials, local news) rather than one query. Skip anything already covered by these existing entries:

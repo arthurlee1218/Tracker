@@ -36,7 +36,7 @@ if (!Array.isArray(candidates)) candidates = [];
 async function linkStatus(url) {
   try {
     const r = await fetch(url, { method: "GET", redirect: "follow", signal: AbortSignal.timeout(12000),
-      headers: { "user-agent": "Mozilla/5.0 (compatible; LoadWatchLinkCheck/1.0)" } });
+      headers: { "user-agent": "Mozilla/5.0 (compatible; DataCenterWatchLinkCheck/1.0)" } });
     if (r.status < 400) return "ok";
     if ([401, 403, 429].includes(r.status)) return "blocked";
     return "broken:" + r.status;

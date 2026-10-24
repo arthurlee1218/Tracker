@@ -1,4 +1,4 @@
-// util.js: part of Load Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
+// util.js: part of Data Center Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
 import { IML } from "./config.js";
 
 export const $=s=>document.querySelector(s);

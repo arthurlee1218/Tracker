@@ -1,4 +1,4 @@
-// pages.js: part of Load Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
+// pages.js: part of Data Center Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
 import { voices } from "./sentiment.js";
 import { D, state } from "./store.js";
 import { $, esc } from "./util.js";

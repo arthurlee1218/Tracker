@@ -1,4 +1,4 @@
-// store.js: part of Load Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
+// store.js: part of Data Center Watch's browser code (native ES module, no build step). See CLAUDE.md for the module map.
 import { $ } from "./util.js";
 
 // Shared mutable state. Everything else imports these objects and mutates them in place.

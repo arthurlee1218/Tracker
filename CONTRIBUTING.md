@@ -1,6 +1,6 @@
-# Working on Load Watch
+# Working on Data Center Watch
 
-Load Watch tracks U.S. data center laws, pauses, ballot fights and campaign politics.
+Data Center Watch tracks U.S. data center laws, pauses, ballot fights and campaign politics.
 Everyone on the team can redesign the site, add features and add entries, using
 **Claude Code** on their own Mac with their own Claude account. You describe what you
 want in plain English; Claude reads the project, makes the changes, and helps you
@@ -310,7 +310,7 @@ and operators, **not** whether the policy is good:
 ## 6. Reviewing the daily auto-update
 
 Every day around 12:00 UTC, a bot runs Claude to search the web and opens a pull
-request titled **"Load Watch: new developments for review."** Take turns reviewing
+request titled **"Data Center Watch: new developments for review."** Take turns reviewing
 it. For each item:
 
 1. **Open the source.** Does it exist and say what the summary says? Items marked
