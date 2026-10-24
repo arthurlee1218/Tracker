@@ -11,7 +11,7 @@ export const cName=(ab,c)=>{const co=SOC.geo[ab].counties.find(x=>x.id===c);retu
 // traction compares a post with other posts on the same platform in this dataset (percentile among posts with any engagement)
 export const trTier=p=>p.x<0?-1:(p.x===0?0:(p.tr>=90?3:(p.tr>=60?2:1)));
 export const TRX=t=>t<0?"Traction not measured":TRL[t];
-export const trMeter=t=>`<span class="tr" role="img" aria-label="${TRX(t)}" title="${TRX(t)}">${[1,2,3].map(i=>`<i class="${t>=i?"on":""}"></i>`).join("")}</span>`;
+export const trMeter=t=>`<span class="tr" data-t="${t}" role="img" aria-label="${TRX(t)}" title="${TRX(t)}">${[1,2,3].map(i=>`<i class="${t>=i?"on":""}"></i>`).join("")}</span>`;
 export const engText=p=>p.p==="bsky"?`${p.e[0]} likes · ${p.e[1]} reposts · ${p.e[2]} replies`:`${p.e[0]} comments`;
 export function socPosts(ab,c,ci){return SOC.data[ab].posts.filter(p=>(!c||p.c===c)&&(!ci||p.ci===ci));}
 // One vote per account (its most frequent stance; ties count as mixed); neutral posts carry no vote.

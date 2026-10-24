@@ -48,7 +48,10 @@
     <p class="map-note">Each state is colored by its strongest action. A state with a binding cost law and a failed moratorium bill shows as binding. Small numbers count the entries logged for that state.</p>
    </div>
    <div id="cmapbox" hidden>
-    <svg class="cmap-svg" id="cmap" viewBox="0 0 975 610" role="group" aria-label="Map of states and counties, colored by the strongest action or by public sentiment"><g id="g-st"></g><g id="g-slab"></g><g id="g-cty"></g><g id="g-lab"></g><g id="g-city"></g></svg>
+    <div class="mapwrap">
+     <svg class="cmap-svg" id="cmap" viewBox="0 0 975 610" role="group" aria-label="Map of states and counties, colored by the strongest action or by public sentiment. Scroll to zoom, drag to pan."><g id="g-st"></g><g id="g-slab"></g><g id="g-cty"></g><g id="g-lab"></g><g id="g-city"></g></svg>
+     <div class="zoomctl" role="group" aria-label="Map zoom"><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="zoom-out" aria-label="Zoom out">&minus;</button><button type="button" id="zoom-fit" class="fit" aria-label="Fit the map to the current selection">Fit</button></div>
+    </div>
     <div class="small-st" id="small-st" role="group" aria-label="Small states and DC"></div>
     <div class="legend" id="leg-status" aria-hidden="true">
       <span><i class="sw pause"></i>Statewide pause in force</span>

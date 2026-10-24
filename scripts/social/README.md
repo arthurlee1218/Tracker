@@ -11,7 +11,8 @@ reads the two JSON files. Nothing here runs in CI.
 | `clean_bsky.ps1` | Drops duplicates, outlets, bots, job ads and place-name collisions (other states' Grant County, Marysville KS). Writes a CSV for hand labeling. |
 | `build_social.ps1` | Takes the labeled CSVs and writes `social/<ST>.json`: place assignment, topics, a 14-word excerpt, engagement and the traction percentile. |
 | `build_us.ps1` | Builds `geo/US.json` (state outlines) from us-atlas `states-albers-10m.json`. Run once; it only changes if the map projection changes. |
-| `build_geo.ps1` | Builds `geo/<ST>.json` (county outlines and city points) from us-atlas `counties-albers-10m.json`. Always pass `-National` so the county shapes share the 975x610 frame of `US.json`, which is what makes the zoom seamless. |
+| `wa_cities.ps1` | Builds the city list for a state: every incorporated city and town, with coordinates and county, from the Census gazetteer (`2023_Gaz_place_national.txt`) and place-by-county (`national_place_by_county2020.txt`) files. Change the `WA` filter and the `53` state prefix for another state. |
+| `build_geo.ps1` | Builds `geo/<ST>.json` (county outlines and city points) from us-atlas `counties-albers-10m.json` and the CSV from `wa_cities.ps1` (`-CitiesCsv`). Always pass `-National` so the county shapes share the 975x610 frame of `US.json`, which is what makes the zoom seamless. |
 
 ## Labeling step (not scripted)
 
@@ -47,7 +48,7 @@ absolute audience.
 
 ## Adding another state
 
-1. Run `build_geo.ps1 -National` with `-StateFips` and `-StateAb` (edit the city list and the
-   `$cityCounty` map inside it first), writing `geo/<ST>.json`.
+1. Run `wa_cities.ps1` for the state's city list, then `build_geo.ps1 -National -CitiesCsv <that csv>`
+   with `-StateFips` and `-StateAb`, writing `geo/<ST>.json`.
 2. Collect, clean and label posts, then run `build_social.ps1` with `-StateAb`.
 3. Add the state code to `SOC_STATES` in `js/store.js`.
