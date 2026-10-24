@@ -118,7 +118,11 @@ Separate from the entries above. Official actions, protests, campaigns and polls
   because their outlines are tiny. Selecting a state zooms to it; a state with sentiment data then
   shows its counties and cities, and clicking a county or city zooms further. Zoom is one
   animated `viewBox` change on a single SVG (`#cmap`), so every geo file must use the national
-  975x610 frame (`build_geo.ps1 -National`). Escape steps back up one level.
+  975x610 frame (`build_geo.ps1 -National`). Escape steps back up one level. The mouse wheel
+  zooms around the cursor, dragging pans, and the +, minus and Fit buttons do the same without a
+  mouse. Every incorporated city is drawn: cities with posts or logged actions get a marker and a
+  name, the rest a small dot whose name appears when zoomed in (overlapping names are hidden).
+  Dot and label sizes follow one CSS variable (`--k`) so zooming never rewrites individual marks.
 - **Files:** `social/<ST>.json` and `geo/<ST>.json`, loaded at runtime. A state turns on when its
   code is in `SOC_STATES` in `js/store.js`; its label gets a dot. If `geo/US.json` fails to load,
   the site falls back to the tile grid.

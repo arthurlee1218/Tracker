@@ -1,6 +1,6 @@
 # Builds geo/WA.json (county outlines + city points) from the public-domain Census boundaries in us-atlas.
 # Input: counties-albers-10m.json (us-atlas, already Albers-projected for a 975x610 canvas).
-param([string]$In, [string]$Out, [string]$StateFips = '53', [string]$StateAb = 'WA', [double]$Tol = 0, [switch]$National)
+param([string]$In, [string]$Out, [string]$StateFips = '53', [string]$StateAb = 'WA', [double]$Tol = 0, [switch]$National, [string]$CitiesCsv)
 $ErrorActionPreference = 'Stop'
 $topo = Get-Content $In -Raw -Encoding utf8 | ConvertFrom-Json
 $sx = [double]$topo.transform.scale[0]; $sy = [double]$topo.transform.scale[1]
@@ -110,27 +110,17 @@ function Raw($lamDeg, $phiDeg) {
 $cen = Raw -0.6 38.7; $KS = 1300
 function Proj($lon, $lat) { $q = Raw ($lon + 96) $lat; return @((487.5 + $KS * ($q[0] - $cen[0])), (305 - $KS * ($q[1] - $cen[1]))) }
 
-$cities = @(
- @('Seattle',47.6062,-122.3321),@('Spokane',47.6588,-117.4260),@('Tacoma',47.2529,-122.4443),@('Walla Walla',46.0646,-118.3430),
- @('Quincy',47.2343,-119.8526),@('Moses Lake',47.1301,-119.2781),@('Wenatchee',47.4235,-120.3103),@('East Wenatchee',47.4157,-120.2915),
- @('Richland',46.2857,-119.2845),@('Kennewick',46.2112,-119.1372),@('Pasco',46.2396,-119.1006),@('Yakima',46.6021,-120.5059),
- @('Olympia',47.0379,-122.9007),@('Bellingham',48.7519,-122.4787),@('Everett',47.9789,-122.2021),@('Marysville',48.0518,-122.1771),
- @('Mount Vernon',48.4201,-122.3340),@('La Conner',48.3912,-122.4943),@('Sedro-Woolley',48.5040,-122.2371),@('Goldendale',45.8207,-120.8212),
- @('Vancouver',45.6387,-122.6615),@('Bellevue',47.6101,-122.2015),@('Redmond',47.6740,-122.1215),@('Tukwila',47.4740,-122.2610),
- @('Burien',47.4704,-122.3468),@('Federal Way',47.3223,-122.3126),@('Renton',47.4829,-122.2171),@('Liberty Lake',47.6743,-117.1124),
- @('Airway Heights',47.6446,-117.5930),@('Cheney',47.4874,-117.5758),@('Ephrata',47.3171,-119.5537),@('Pullman',46.7298,-117.1817),
- @('Bremerton',47.5673,-122.6326),@('Port Angeles',48.1181,-123.4307),@('Ellensburg',46.9965,-120.5478),@('Bothell',47.7601,-122.2054),
- @('Cle Elum',47.1954,-120.9391),@('Lynnwood',47.8209,-122.3151),@('Kent',47.3809,-122.2348),@('Auburn',47.3073,-122.2285),@('Shelton',47.2151,-123.1007)
-)
-$cityCounty = @{ 'Seattle'='King';'Spokane'='Spokane';'Tacoma'='Pierce';'Walla Walla'='Walla Walla';'Quincy'='Grant';'Moses Lake'='Grant';'Wenatchee'='Chelan';'East Wenatchee'='Douglas';
- 'Richland'='Benton';'Kennewick'='Benton';'Pasco'='Franklin';'Yakima'='Yakima';'Olympia'='Thurston';'Bellingham'='Whatcom';'Everett'='Snohomish';'Marysville'='Snohomish';
- 'Mount Vernon'='Skagit';'La Conner'='Skagit';'Sedro-Woolley'='Skagit';'Goldendale'='Klickitat';'Vancouver'='Clark';'Bellevue'='King';'Redmond'='King';'Tukwila'='King';
- 'Burien'='King';'Federal Way'='King';'Renton'='King';'Liberty Lake'='Spokane';'Airway Heights'='Spokane';'Cheney'='Spokane';'Ephrata'='Grant';'Pullman'='Whitman';
- 'Bremerton'='Kitsap';'Port Angeles'='Clallam';'Ellensburg'='Kittitas';'Bothell'='King';'Lynnwood'='Snohomish';'Kent'='King';'Auburn'='King';'Shelton'='Mason';'Cle Elum'='Kittitas' }
+# Cities come from a CSV (name, lat, lon, counties): the state's incorporated places, from the Census
+# gazetteer and place-by-county files (see wa_cities.ps1). Counties is a ';'-separated list of county FIPS.
 $outCity = @()
-foreach ($c in $cities) {
-  $p = Proj $c[2] $c[1]
-  $co = $counties | Where-Object { $_.name -eq $cityCounty[$c[0]] } | Select-Object -First 1; $cid = $co.id
+foreach ($cr in (Import-Csv $CitiesCsv)) {
+  $p = Proj ([double]$cr.lon) ([double]$cr.lat)
+  $fips = $cr.counties -split ';'
+  # a city in several counties goes in the one its projected point falls in; otherwise the first listed
+  $cid = $null
+  foreach ($f in $fips) { $cand = $counties | Where-Object { $_.id -eq $f } | Select-Object -First 1; foreach ($r in $cand.rings) { if (PtInRing $p[0] $p[1] $r) { $cid = $f; break } }; if ($cid) { break } }
+  if (-not $cid) { $cid = $fips[0] }
+  $co = $counties | Where-Object { $_.id -eq $cid } | Select-Object -First 1
   # coarse 10m outlines can leave coastal/edge cities just outside their county: nudge toward the county's interior
   $big = $null; $bigN = 0; foreach ($r in $co.rings) { if ($r.Count -gt $bigN) { $bigN = $r.Count; $big = $r } }
   $mx = 0; $my = 0; foreach ($q in $big) { $mx += $q[0]; $my += $q[1] }; $mx /= $big.Count; $my /= $big.Count
@@ -142,9 +132,9 @@ foreach ($c in $cities) {
   }
   if ($steps -gt 0) { for ($e = 0; $e -lt 3; $e++) { $p = @(($p[0] + ($mx - $p[0]) * 0.05), ($p[1] + ($my - $p[1]) * 0.05)) } }
   $l = Loc $p
-  $outCity += [ordered]@{ n = $c[0]; p = @([Math]::Round($l[0], $dec), [Math]::Round($l[1], $dec)); c = $cid }
-  "{0,-16} -> county {1}" -f $c[0], $cid
+  $outCity += [ordered]@{ n = $cr.name; p = @([Math]::Round($l[0], $dec), [Math]::Round($l[1], $dec)); c = $cid }
 }
+"cities: $($outCity.Count)"
 $doc = [ordered]@{ state = $StateAb; suffix = 'County'; w = $W; h = $H; counties = $outC; cities = $outCity }
 $doc | ConvertTo-Json -Depth 6 -Compress | Set-Content -Encoding utf8 $Out
 "wrote $Out $((Get-Item $Out).Length) bytes"
