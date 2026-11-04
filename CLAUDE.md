@@ -29,6 +29,7 @@ own Claude account, on their own branches. Read this before changing anything.
 | `data/projects.json` | Named projects for the Data center projects tab |
 | `data/politics.json` | Races, tallies and polls for the Campaigns and polls tab |
 | `data/upcoming.json` | Dated events and coverage gaps for the Coming up tab |
+| `data/election.json` | Nov 3, 2026 results for the Election effects tab: `effects` (what changes), `governors`, `measures` (local ballot measures with vote counts) |
 | `data/trackers.json` | Other trackers |
 | `updates.json` | New entries found by the daily job or added by hand. Loaded at runtime |
 | `social/WA.json` | Public sentiment posts for one state (excerpt, link, stance, topics, engagement). Loaded at runtime |
@@ -98,6 +99,7 @@ run page code at the top level of a module.
 | `entries.js` | Entry list and filters, local status tallies, `clean()` and the `updates.json` loader |
 | `projects.js` | Data center projects tab |
 | `pages.js` | Campaigns and polls, Coming up, Other trackers tabs |
+| `election.js` | Election effects tab: one filter bar over effects, governors and ballot measures; follows the map selection |
 | `sentiment.js` | Sentiment math (accounts, trend, topics, traction) and the panel blocks |
 | `nav.js` | Breadcrumbs, and keeping the page in step with the selected state, county or city |
 | `drill.js` | The drill-down: a state's counties as named tiles, then a county's cities, laid out roughly where they sit |
