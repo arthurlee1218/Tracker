@@ -3,6 +3,7 @@ import { GRID, NAMES, SLABEL } from "./config.js";
 import { bindLocal, climateBlock, fillPlaces, localBlock, localList, localStatus, localTally, renderEntries, tallyBtn } from "./entries.js";
 import { socSync } from "./nav.js";
 import { projectState, renderProjects } from "./projects.js";
+import { syncElectionState } from "./election.js";
 import { bindSoc, fillFor, readLabel, renderGeoPanel, socHas, socStateBlock, voices } from "./sentiment.js";
 import { showTab } from "./shell.js";
 import { countBy, D, E, isUp, map, plKey, recount, SOC, state } from "./store.js";
@@ -15,7 +16,8 @@ export function select(ab){
   [...map.children].forEach(t=>t.setAttribute("aria-pressed",t.dataset.ab===ab?"true":"false"));
   fillPlaces();renderPanel();renderEntries();socSync();
   if(typeof renderProjects==="function"&&$("#project-state")){projectState.j=ab&&[...$("#project-state").options].some(o=>o.value===ab)?ab:"";$("#project-state").value=projectState.j;renderProjects();}
-  if(ab && !["t-projects","t-social"].some(i=>$("#"+i).getAttribute("aria-selected")==="true")) showTab("actions",false);
+  syncElectionState(ab);
+  if(ab && !["t-projects","t-social","t-election"].some(i=>$("#"+i).getAttribute("aria-selected")==="true")) showTab("actions",false);
 }
 // ── Panel ─────────────────────────────────────
 export function renderPanel(){

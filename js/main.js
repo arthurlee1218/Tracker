@@ -10,6 +10,7 @@ import { initTabs, initTheme } from "./shell.js";
 import { initNav } from "./nav.js";
 import { initDrill } from "./drill.js";
 import { initSocial } from "./social.js";
+import { initElection } from "./election.js";
 
 try {
   await loadData();
@@ -20,6 +21,7 @@ try {
 initTiles();
 initEntries();
 initProjects();
+initElection();
 initPages();
 initTabs();
 initNav();
