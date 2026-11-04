@@ -11,6 +11,6 @@ export const state={sel:null,q:"",lv:"",ty:"",st:"",k:"",im:"",pl:"",lt:""};
 export const TODAY=(()=>{const n=new Date();return n.getFullYear()+"-"+String(n.getMonth()+1).padStart(2,"0")+"-"+String(n.getDate()).padStart(2,"0");})();
 export const isUp=e=>e.d.length===10&&e.d>TODAY;
 export const plKey=(e,n)=>e.j+"|"+n;
-export const SOC_STATES=["WA"];
+export const SOC_STATES=["WA","AR","KS","MO","AL"];
 export const SOC={data:{},geo:{},geoSel:{c:"",ci:""},
   f:{j:"",c:"",ci:"",p:"",st:"",tp:"",tr:"",w:"",age:"",sort:"tr",q:"",n:40}};

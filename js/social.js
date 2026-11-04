@@ -12,14 +12,14 @@ export function buildSocial(){
   const n=Object.values(SOC.data).reduce((t,d)=>t+d.posts.length,0);
   $("#c-social").textContent=n;
   const plat=[...new Set(Object.values(SOC.data).flatMap(d=>Object.keys(d.counts)))];
-  const d0=Object.values(SOC.data)[0];
+  const ds=Object.values(SOC.data),PL=Object.assign({},...ds.map(d=>d.platforms)),from=ds.map(d=>d.from).sort()[0],to=ds.map(d=>d.to).sort().pop(),lst=a=>new Intl.ListFormat("en").format(a);
   $("#v-social").innerHTML=`
   <details class="soc-method"><summary>How this works and what it cannot tell you</summary><ul>
-    <li><b>What it is.</b> Public posts about data centers in Washington, ${fmt(d0.from)} to ${fmt(d0.to)}, from ${plat.map(k=>d0.platforms[k]).join(" and ")}. Each shows a short excerpt and links to the original. X (Twitter) is not included: it has no free, usable search and engagement data.</li>
+    <li><b>What it is.</b> Public posts about data centers in ${lst(Object.keys(SOC.data).map(ab=>NAMES[ab]||ab))}, ${fmt(from)} to ${fmt(to)}, from ${lst(plat.map(k=>PL[k]))}. Each shows a short excerpt and links to the original.</li>
     <li><b>Place.</b> Assigned from the place named in the post, not from where the author lives. Posts that name no place are listed as statewide.</li>
     <li><b>Stance.</b> Whether the post is for or against data centers in that place, not toward AI in general. Claude read each post and assigned the label; some will be wrong, so open the post to check.</li>
     <li><b>Accounts, not people.</b> Map colors and counts give each account one vote, so a prolific poster cannot swamp a place. Fewer than 5 accounts is shown as too few to read. A trend appears only when both 60-day periods have at least 5 accounts.</li>
-    <li><b>Traction</b> is how a post compares with other posts on the same platform in this collection, among posts with any engagement: High is the top tenth, Notable the next 30%, Some the rest. Bluesky counts likes, reposts and replies; Reddit counts comments (votes are not available), and Reddit threads whose comments have not been counted show as not measured. Tiers are not comparable across platforms in absolute audience. On each post the number of filled tiles is the traction and the color is the post's view: green supportive, red against, amber mixed, grey neutral.</li>
+    <li><b>Traction</b> is how a post compares with other posts on the same platform in this collection, among posts with any engagement: High is the top tenth, Notable the next 30%, Some the rest. Bluesky and X count likes, reposts and replies; Reddit counts comments, and Reddit threads whose comments have not been counted show as not measured. Tiers are not comparable across platforms in absolute audience. On each post the number of filled tiles is the traction and the color is the post's view: green supportive, red against, amber mixed, grey neutral.</li>
     <li><b>Not a poll.</b> People who post online about this are not a sample of residents. For measured opinion, see the polls on the Elections & polls tab. News outlets, bots and headline re-posters are left out; protests, campaigns and official actions are in the first tab.</li></ul></details>
   <div class="filters soc-filters">
     <div class="q"><label for="sf-q">Search posts</label><input id="sf-q" type="search" placeholder="Place, topic, words…" autocomplete="off"></div>
@@ -29,7 +29,7 @@ export function buildSocial(){
     <div><label for="sf-st">View expressed</label><select id="sf-st"><option value="">Any view</option><option value="anti">Against</option><option value="pro">Supportive</option><option value="mixed">Mixed</option><option value="neutral">Neutral</option></select></div>
     <div><label for="sf-tp">Topic</label><select id="sf-tp"><option value="">All topics</option>${Object.keys(TOPL).map(k=>`<option value="${k}">${TOPL[k]}</option>`).join("")}</select></div>
     <div><label for="sf-tr">Traction</label><select id="sf-tr"><option value="">Any</option><option value="1">Some or more</option><option value="2">Notable or high</option><option value="3">High only</option></select></div>
-    <div><label for="sf-p">Platform</label><select id="sf-p"><option value="">All platforms</option>${plat.map(k=>`<option value="${k}">${esc(d0.platforms[k])}</option>`).join("")}</select></div>
+    <div><label for="sf-p">Platform</label><select id="sf-p"><option value="">All platforms</option>${plat.map(k=>`<option value="${k}">${esc(PL[k])}</option>`).join("")}</select></div>
     <div><label for="sf-w">Source</label><select id="sf-w"><option value="">All accounts</option><option value="person">Individuals</option><option value="group">Organized groups</option></select></div>
     <div><label for="sf-age">When</label><select id="sf-age"><option value="">Whole period</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option></select></div>
     <div><label for="sf-sort">Sort by</label><select id="sf-sort"><option value="tr">Most traction</option><option value="new">Newest</option></select></div>

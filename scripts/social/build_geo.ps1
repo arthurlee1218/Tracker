@@ -1,6 +1,8 @@
 # Builds geo/WA.json (county outlines + city points) from the public-domain Census boundaries in us-atlas.
 # Input: counties-albers-10m.json (us-atlas, already Albers-projected for a 975x610 canvas).
-param([string]$In, [string]$Out, [string]$StateFips = '53', [string]$StateAb = 'WA', [double]$Tol = 0, [switch]$National, [string]$CitiesCsv)
+# -ShiftX moves city points east by that many pixels. The lat/lon projection below lands about 10.4 px west of the us-atlas
+# outlines (checked against St. Louis city, San Francisco and Jackson County MO), so pass -ShiftX 10.4 for new states; WA was built without it.
+param([string]$In, [string]$Out, [string]$StateFips = '53', [string]$StateAb = 'WA', [double]$Tol = 0, [switch]$National, [string]$CitiesCsv, [double]$ShiftX = 0)
 $ErrorActionPreference = 'Stop'
 $topo = Get-Content $In -Raw -Encoding utf8 | ConvertFrom-Json
 $sx = [double]$topo.transform.scale[0]; $sy = [double]$topo.transform.scale[1]
@@ -109,7 +111,7 @@ function Raw($lamDeg, $phiDeg) {
   return @(($r * [Math]::Sin($lam * $n)), ($r0 - $r * [Math]::Cos($lam * $n)))
 }
 $cen = Raw -0.6 38.7; $KS = 1300
-function Proj($lon, $lat) { $q = Raw ($lon + 96) $lat; return @((487.5 + $KS * ($q[0] - $cen[0])), (305 - $KS * ($q[1] - $cen[1]))) }
+function Proj($lon, $lat) { $q = Raw ($lon + 96) $lat; return @((487.5 + $ShiftX + $KS * ($q[0] - $cen[0])), (305 - $KS * ($q[1] - $cen[1]))) }
 
 # Cities come from a CSV (name, lat, lon, counties): the state's incorporated places, from the Census
 # gazetteer and place-by-county files (see wa_cities.ps1). Counties is a ';'-separated list of county FIPS.
