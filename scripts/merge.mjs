@@ -12,9 +12,11 @@ const ACT_ST = ["pause", "in-force", "pending", "ballot", "failed", "denied"];
 const PT = ["county", "city", "township", "tribal"];
 const POL_ST = ["campaign", "poll", "statement", "protest"];
 const LOOKBACK_DAYS = Number(process.env.LOOKBACK_DAYS || 10);
+const MAX_CANDIDATES = 160;   // six search shards x up to 25 items each
 
 const pad = n => String(n).padStart(2, "0");
 const iso = d => `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`;
+const today = iso(new Date());
 const since = iso(new Date(Date.now() - LOOKBACK_DAYS * 864e5));
 const until = iso(new Date(Date.now() + 120 * 864e5));
 const norm = t => String(t).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -49,7 +51,10 @@ function shape(o) {
   if (!o || typeof o !== "object") return [null, "not an object"];
   const d = String(o.d || "");
   if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return [null, "bad date"];
-  if (d < since || d > until) return [null, "outside date window"];
+  // Published date: lets an older event in if it was only reported inside the window.
+  const pd = /^\d{4}-\d{2}-\d{2}$/.test(String(o.pd || "")) ? String(o.pd) : "";
+  if (d > until) return [null, "outside date window"];
+  if (d < since && !(pd && pd >= since && pd <= today)) return [null, "outside date window"];
   const j = String(o.j || "").toUpperCase();
   if (j !== "US" && !STATES.includes(j)) return [null, "bad jurisdiction"];
   const k = o.k === "politics" ? "politics" : "action";
@@ -75,7 +80,7 @@ function shape(o) {
 }
 
 const added = [], rejected = [];
-for (const o of candidates.slice(0, 30)) {
+for (const o of candidates.slice(0, MAX_CANDIDATES)) {
   const [item, why] = shape(o);
   if (!item) { rejected.push(`${o?.t || "?"}: ${why}`); continue; }
   if (known.has(norm(item.t))) { rejected.push(`${item.t}: duplicate title`); continue; }
@@ -85,13 +90,13 @@ for (const o of candidates.slice(0, 30)) {
   const checks = await Promise.all(item.s.map(x => linkStatus(x[1])));
   const keep = item.s.filter((_, i) => checks[i] === "ok" || checks[i] === "blocked");
   if (!keep.length) { rejected.push(`${item.t}: link ${checks.join(", ")}`); continue; }
-  if (!checks.includes("ok")) item.linkCheck = "blocked-by-site";   // flagged in the PR for a closer look
+  if (!checks.includes("ok")) item.linkCheck = "blocked-by-site";   // flagged in the summary for a closer look
   item.s = keep;
   known.add(norm(item.t));
   added.push(item);
 }
 
-console.log(`Added ${added.length}, rejected ${rejected.length}`);
+console.log(`Window ${since}..${today}; ${candidates.length} candidates; added ${added.length}, rejected ${rejected.length}`);
 added.forEach(a => console.log(`  + ${a.d} ${a.j} ${a.t}${a.linkCheck ? "  [site blocks link checks]" : ""}`));
 rejected.forEach(r => console.log("  - " + r));
 
