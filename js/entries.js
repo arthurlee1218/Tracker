@@ -2,6 +2,7 @@
 import { ACT_ST, IML, LVL, NAMES, OK_LV, OK_TY, POL_ST, PTL, STLBL, TYL } from "./config.js";
 import { paintCounts, renderPanel, select } from "./panel.js";
 import { showTab } from "./shell.js";
+import { renderElectionFeed } from "./election.js";
 import { E, isUp, plKey, state } from "./store.js";
 import { $, esc, fmt, key, meter, norm, plural } from "./util.js";
 
@@ -114,7 +115,7 @@ export function climateBlock(list){
   // clear other filters so the entry can't be hidden
   state.q=state.lv=state.ty=state.st=state.k=state.im="";
   ["#q","#f-kind","#f-level","#f-type","#f-status","#f-impact"].forEach(id=>$(id).value="");
-  state.pl=k; fillPlaces(); renderPanel(); renderEntries(); showTab("actions",false);
+  state.pl=k.endsWith("|")?"":k; fillPlaces(); renderPanel(); renderEntries(); showTab("actions",false);
   const li=[...document.querySelectorAll("#entries .entry")].find(x=>x.dataset.t===title);
   if(!li) return;
   li.querySelector("details").open=true;
@@ -149,9 +150,12 @@ export async function loadPublished(){
     const r=await fetch("updates.json",{cache:"no-store"}); if(!r.ok) return;
     const arr=await r.json(); if(!Array.isArray(arr)||!arr.length) return;
     const items=arr.map(o=>{const c=clean(o); if(!c) return null; c.fresh=false; c.auto=o.auto!==false; c.added=o.added; if(o.by) c.by=String(o.by).slice(0,40); return c;}).filter(Boolean).filter(x=>!E.some(e=>norm(e.t)===norm(x.t)));
-    E.push(...items); paintCounts(); renderEntries(); renderPanel();
-    const last=arr.map(o=>o.added||"").sort().pop();
-    if(last){ $("#reading-sub").textContent="Auto-updated "+new Date(last).toLocaleDateString([], {month:"short",day:"numeric",year:"numeric"}); }
+    E.push(...items); paintCounts(); fillPlaces(); renderEntries(); renderPanel(); renderElectionFeed();
+    // Header date: the newest of the last automatic run and the newest event already logged (never a future date).
+    const ran=(arr.map(o=>o.added||"").sort().pop()||"").slice(0,10);
+    const seen=E.filter(e=>e.d.length===10&&!isUp(e)).map(e=>e.d).sort().pop()||"";
+    const last=ran>seen?ran:seen;
+    if(last&&$("#reading-main")) $("#reading-main").textContent="Updated "+fmt(last);
   }catch(err){ /* opened as a file or inside Claude: no updates.json */ }
 }
 export function initEntries() {

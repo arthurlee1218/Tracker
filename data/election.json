@@ -104,5 +104,62 @@
 {"n":48,"p":"Sabattus","j":"ME","co":"Androscoggin County","nm":"Data Center Moratorium","do":"Moratorium on data centers of 10,000 sq ft or 20 MW or more, until May 2027. Not in Ballotpedia's count.","dir":"L","y":1565,"no":791,"rs":"final","u":"https://sabattus.org/election-information","ul":"Town of Sabattus Election Information"},
 {"n":49,"p":"Brownfield","j":"ME","co":"Oxford County","nm":"Question 1","do":"180-day moratorium on data centers of 5,000 sq ft or more. Not in Ballotpedia's count.","dir":"L","rs":"pending","u":"https://www.brownfieldmaine.gov/1196/Past-Town-Warrants-Reports","ul":"Town of Brownfield Warrants & Reports"},
 {"n":50,"p":"Freedom","j":"ME","co":"Waldo County","nm":"Data Center Moratorium","do":"Temporary moratorium on data centers of any size. Not in Ballotpedia's count.","dir":"L","rs":"pending","u":"https://www.freedomme.org/","ul":"Town of Freedom"}
+],
+"tallies": [
+["30+","of 143 tracked governor candidates back a pause, halt or ban (20 Democrats, 10 Republicans)","The Impact Project via Heatmap","https://heatmap.news/ideas/2026-governors-data-centers"],
+["5","states where both major-party governor candidates back a pause: ME, NH, OH, OR, TX","The Impact Project via Heatmap","https://heatmap.news/ideas/2026-governors-data-centers"],
+["$45M","spent on ads mentioning data centers this year, mostly opposed; nearly $13M in Georgia alone","AdImpact via CBS News","https://www.cbsnews.com/news/data-center-boom-republicans-2026-midterm-elections/"],
+["41","local data center measures on Nov. 3 ballots in 10 states; voters sided against data centers in every one with results except Harwood, North Dakota (unofficial)","CNBC, citing Ballotpedia","https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html"]
+],
+"polls": [
+{"l":"Oppose a data center near home","m":"Heatmap Pro / Embold, Aug 2026, registered voters","v":75,"u":"https://heatmap.news/daily/data-center-opposition-poll-collapse"},
+{"l":"Oppose an AI data center in their area","m":"Gallup, March 2026, adults (48% strongly)","v":71,"u":"https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx"},
+{"l":"Oppose building AI data centers in their area","m":"Fox News poll, Sept 2026, voters","v":71,"u":"https://www.foxnews.com/politics/americas-multi-billion-tech-boom-comes-into-focus-7-key-states-put-midterm-test"},
+{"l":"Oppose data centers in or near their community","m":"Emerson, July 2026 (up from 42% in Dec 2025)","v":63,"u":"https://www.yahoo.com/news/politics/articles/polling-shows-majority-americans-oppose-193413526.html"},
+{"l":"Not comfortable with a new data center nearby","m":"Pew Research Center, July–Aug 2026","v":60,"u":"https://www.kunc.org/news/2026-09-25/surveys-over-60-oppose-data-centers-in-their-communities"},
+{"l":"Concerned data centers raise their electric rates","m":"Reuters/Ipsos via Newsweek, 2026. Measures concern, not opposition","v":77,"k":"concern","u":"https://www.newsweek.com/map-shows-states-where-data-centers-are-on-the-ballot-12528253"},
+{"l":"Oppose an AI data center within 10 miles","m":"CNBC All-America Economic Survey, Oct 14-18, 2026, registered voters","v":63,"u":"https://www.cnbc.com/2026/10/24/trump-ai-data-centers-voter-backlash-midterms.html"},
+{"l":"Oppose a data center near home, down from 75% in August","m":"Heatmap Pro / Embold, Oct 2026, registered voters","v":71,"u":"https://heatmap.news/daily/data-center-polling-october-2026"},
+{"l":"Called AI and data centers a crucial or major factor in their vote","m":"NBC exit poll via Time, Nov 3 2026. Measures importance, not opposition","v":56,"k":"concern","u":"https://time.com/article/2026/11/04/midterm-elections-results-ai-industry-data-centers/"}
+],
+"pollNote": "In Virginia, the share of voters comfortable with a new data center nearby fell from 69% in 2023 to 35% in 2026, per The Impact Project's summary of state polling.",
+"voices": [
+{"w":"The White House","t":"says communities that turn data centers away are choosing to be poorer, and has suggested China benefits from the backlash. Its answer on costs is the voluntary ratepayer pledge.","s":["Tom's Hardware","https://www.tomshardware.com/tech-industry/data-centers/trump-says-communities-that-reject-data-centers-want-to-end-up-being-backwards-and-poor-president-claims-china-could-not-be-happier-with-ai-data-center-backlash-in-the-us"]},
+{"w":"Senate Democrats","t":"argue the pledge and the House-passed bill only ask states to consider protections, and want federal mandates instead.","s":["WISN / Hearst","https://www.wisn.com/article/senate-blocks-bill-ratepayer-protection-data-center-electric-costs/73965520"]},
+{"w":"The industry","t":"through the Data Center Coalition, warns that new taxes and rules make states unreliable partners, while dozens of companies publicly endorsed Texas's audit.","s":["Cardinal News","https://cardinalnews.org/2026/06/22/general-assembly-passes-a-budget-consumption-tax-for-data-centers-included/"]},
+{"w":"Organized opposition","t":"has grown fast: Data Center Watch counted 833 local groups in 49 states by March and about $130 billion in projects blocked or delayed in the first quarter.","s":["Washington Times","https://www.washingtontimes.com/news/2026/jul/23/trump-plugs-states-utilities-pledge-big-tech-pay-data-centers-energy/"]}
+],
+"dates": [
+{"w":"Nov 4 to 5, 2026","t":"Brownsville, Texas, holds its final vote on a 90-day moratorium (it needs a three-fourths vote), and Potsdam, New York, holds a hearing on a 12-month pause.","big":false},
+{"w":"Nov 9 to 10, 2026","t":"Warrick County, Indiana, commissioners take up a data center ordinance the plan commission opposed (Nov. 9); a Frederick County, Maryland, judge hears the developer's injunction request against the county pause (Nov. 10).","big":false},
+{"w":"November 2026","t":"Virginia work group reports on data center taxation ahead of the 2027 session.","big":false},
+{"w":"By Nov 16, 2026","t":"PJM targets its FERC filing for a flexible large-load service model.","big":false},
+{"w":"Nov 17, 2026","t":"Loudoun County's final vote on a 12-month pause in the world's densest data center market.","big":true},
+{"w":"Nov 17, 2026","t":"Effingham County, Georgia, returns to the Project Camellia site plan for six data center buildings near Rincon, tabled on Nov. 3.","big":false},
+{"w":"Nov 18, 2026","t":"House Democrats hold leadership elections. Louisiana regulators meet, where the outgoing commissioners are expected to vote on Meta's Hyperion project; other reports put the docket at Dec. 16.","big":false},
+{"w":"Nov 21, 2026","t":"Meriwether County, Georgia's extended moratorium ends.","big":false},
+{"w":"About Nov 24, 2026","t":"Ohio's official canvass of Nov. 3 results, about three weeks after the election. Georgia and other states certify on their own schedules, and Kansas' governor race may go to a recount.","big":false},
+{"w":"Dec 1, 2026","t":"Nashville's data center permit pause ends.","big":false},
+{"w":"Dec 7, 2026","t":"Air permit hearing for New Mexico's Project Jupiter in Sunland Park.","big":false},
+{"w":"Dec 8, 2026","t":"Okaloosa County, Florida, targets a hearing on a 12-month data center moratorium ordinance.","big":false},
+{"w":"Dec 11, 2026","t":"Federal funding deadline, the forcing event for the lame-duck Senate permitting package that would make data centers pay transmission costs tied to their demand.","big":true},
+{"w":"December 2026","t":"ERCOT's target for finishing the Texas audit, and Louisiana regulators' expected vote on gas plants for Meta's Hyperion expansion.","big":false},
+{"w":"Dec 13 and 24, 2026","t":"Coweta County, Georgia, and Snohomish County, Washington, pauses expire unless renewed.","big":false},
+{"w":"Dec 31, 2026","t":"Hochul's deadline to sign or veto the Responsible Data Center Development Act; inaction is a pocket veto. Massachusetts must also set its clean-energy payment for data centers.","big":true},
+{"w":"Jan 1, 2027","t":"Most of California's seven data center laws take effect, and 2027 sessions open with moratorium bills in Virginia and Georgia and incentive fights in Texas.","big":false},
+{"w":"Jan 3, 2027","t":"The new Congress is seated, with Democrats reported to control both chambers and holding subpoena power over AI and energy issues.","big":true},
+{"w":"Jan 19, 2027","t":"Gina Hinojosa takes office as Texas governor. Ohio's Amy Acton, Georgia's Keisha Lance Bottoms and Wisconsin's David Crowley also take office in January; exact dates were not confirmed.","big":true},
+{"w":"Jan 29, 2027","t":"Maine's state recommendations on large data centers are due.","big":false},
+{"w":"May 2027","t":"PJM's first capacity auction without the price cap.","big":false},
+{"w":"July 1, 2027","t":"Oregon's permit and state land pauses end. Ohio ban amendment organizers need 413,488 signatures by about this time for the Nov 2027 ballot.","big":false},
+{"w":"June 30, 2028","t":"Virginia's consumption tax sunsets unless extended.","big":false}
+],
+"gaps": [
+{"h":"Nobody agrees on the count","p":"Local moratorium tallies range from 313 (Urban Institute) to 632 jurisdictions taking action (GatherGov) to 933 local actions (Gizmo Warehouse map). The gap is mostly definitions: adopted pauses vs. proposals vs. denials vs. zoning conditions."},
+{"h":"What happens when pauses end","p":"Trackers log the vote but rarely follow up. Of 28 well-documented blocked fights since 2023, one map found 13 still pending or in court and four delayed then built anyway."},
+{"h":"Behind-the-meter power","p":"On-site gas turbines dodge grid queues and, under EPA proposals, some public comment. Texas only closed the gap with a second order. Few trackers follow air permits."},
+{"h":"Pledges without enforcement","p":"The White House pledge covers companies delivering most U.S. power, but enforcement sits with state utility commissions. No one is systematically checking signers' tariffs against their promises."},
+{"h":"Water data","p":"Texas found as few as 28% of data centers answered its water survey. California's new reporting starts in 2027. Consumption, not discharge, is what states are now trying to measure."},
+{"h":"Tribal and preemption fights","p":"Tribal nations in Oklahoma are acting on their own lands, while Texas lawmakers and courts in California and Mississippi are testing how far local bans can go. Both fronts are thinly covered."}
 ]
 }

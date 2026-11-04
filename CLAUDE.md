@@ -27,9 +27,7 @@ own Claude account, on their own branches. Read this before changing anything.
 | `data/entries.json` | Hand-curated entries, one per line, with impact score and places already attached |
 | `data/states.json` | Each state's map status and one-paragraph summary |
 | `data/projects.json` | Named projects for the Data center projects tab |
-| `data/politics.json` | Races, tallies and polls for the Campaigns and polls tab |
-| `data/upcoming.json` | Dated events and coverage gaps for the Coming up tab |
-| `data/election.json` | Nov 3, 2026 results for the Election effects tab: `effects` (what changes), `governors`, `measures` (local ballot measures with vote counts) |
+| `data/election.json` | Elections & polls tab: `effects` (what the Nov 3, 2026 results change), `governors`, `measures` (local ballot measures with vote counts), plus `tallies`, `polls`, `voices`, `dates` (dates ahead) and `gaps` (coverage gaps). Hand-curated |
 | `data/trackers.json` | Other trackers |
 | `updates.json` | New entries found by the daily job or added by hand. Loaded at runtime |
 | `social/WA.json` | Public sentiment posts for one state (excerpt, link, stance, topics, engagement). Loaded at runtime |
@@ -71,8 +69,26 @@ Rules:
   separate impact list matched by position any more: change an entry's score by editing
   that entry. Keep one entry per line so diffs and merges stay small.
 - Dates in the future are treated as scheduled: `isUp()` puts them in a "Coming up" group at the top of the list. Always use the date the event happened, or the scheduled date for a vote.
-- State colors on the map come from `data/states.json` (status `pause`, `rules`,
-  `proposed`, `local`; missing means "not tracked"). Each has a one-paragraph summary.
+- State colors on the map start from `data/states.json` (status `pause`, `rules`,
+  `proposed`, `local`; missing means "not tracked"), a baseline a person reviewed as of its
+  `_asof` date, with a one-paragraph summary per state. `js/derive.js` then **raises** a state's
+  color from entries dated after `_asof`: a statewide `pause` entry makes it `pause`, a statewide
+  `in-force` entry `rules`, a statewide moratorium that is `pending` or `failed` `proposed`, and
+  any other official action `local`. It never lowers a color, so a pause that ended, or a changed
+  summary paragraph, is an editorial edit: change `states.json` and move `_asof` forward.
+
+## What updates by itself, and what doesn't
+
+The daily job only writes `updates.json`. Everything below is computed in the browser from the entries,
+so a new entry updates it with no further step: the entry list and filters, the tile badges, the state
+panel's ban and pause tallies, "climate for developers" score, places list and "Newest logged" list, the
+national picture numbers, the map colors (via `derive.js`), the header date, and the "latest campaign,
+poll and protest entries" feed on the Elections & polls tab.
+
+Hand-curated and not touched by the job: the state summary paragraphs and `_asof` (`data/states.json`),
+the Elections & polls content (`data/election.json`: effects, governors, ballot measures, polls, framing,
+dates ahead, gaps), the Data center projects tab (`data/projects.json`) and `data/trackers.json`. After a
+big news cycle, review these and bump `_asof`.
 - The allowed values above are validated in three places that must stay in sync:
   `clean()` in `js/entries.js`, `shape()` in `scripts/merge.mjs`, and `clean()` in
   `scripts/update.mjs` (including the place types in `PTL` / `PT`). If you add a status, topic or field, update all three, the
@@ -98,8 +114,9 @@ run page code at the top level of a module.
 | `panel.js` | Tile map, `select()`, the side panel, state counts |
 | `entries.js` | Entry list and filters, local status tallies, `clean()` and the `updates.json` loader |
 | `projects.js` | Data center projects tab |
-| `pages.js` | Campaigns and polls, Coming up, Other trackers tabs |
-| `election.js` | Election effects tab: one filter bar over effects, governors and ballot measures; follows the map selection |
+| `pages.js` | Other trackers tab |
+| `election.js` | Elections & polls tab: one filter bar over results effects, governors and ballot measures (follows the map selection), then polls, framing, dates ahead and gaps, plus a live feed of the newest campaign and poll entries |
+| `derive.js` | A state's effective map status: the `states.json` baseline, raised by entries logged after its `_asof` date |
 | `sentiment.js` | Sentiment math (accounts, trend, topics, traction) and the panel blocks |
 | `nav.js` | Breadcrumbs, and keeping the page in step with the selected state, county or city |
 | `drill.js` | The drill-down: a state's counties as named tiles, then a county's cities, laid out roughly where they sit |
