@@ -2,25 +2,56 @@ name: Update Data Center Watch (Claude subscription)
 
 # Runs Claude Code on your Claude plan (no API billing).
 # Needs the repository secret CLAUDE_CODE_OAUTH_TOKEN, made with `claude setup-token`.
+#
+# How it works:
+#   1. "search" runs one Claude session per shard (federal/politics + five regions),
+#      each with its own turn budget, and saves what it found as an artifact.
+#   2. "publish" combines every shard's finds, checks them with scripts/merge.mjs,
+#      and commits new items straight to main. Nothing waits in a pull request.
+#
+# To backfill a gap: Actions tab > this workflow > Run workflow > set lookback_days (e.g. 16).
 
 on:
   schedule:
-    - cron: "0 12 * * *"      # once a day, 12:00 UTC. Each run uses your plan's usage limits.
+    - cron: "0 0,12 * * *"     # twice a day, 00:00 and 12:00 UTC. Each run uses your plan's usage limits.
   workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "How many days back to search (raise this to backfill a gap)"
+        default: "10"
 
 permissions:
   contents: write
-  pull-requests: write
   id-token: write
 
 concurrency:
   group: data-center-watch-update
   cancel-in-progress: false
 
+env:
+  LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '10' }}
+
 jobs:
-  update:
+  search:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 3          # keeps simultaneous sessions within plan rate limits
+      matrix:
+        include:
+          - shard: federal-politics
+            focus: "the Federal and Politics beats nationwide (Congress, White House, FERC, DOE, EPA, federal courts, PJM/ERCOT/MISO/SPP, campaigns, polls, national statements, protests). Include state or local items only when they are national news."
+          - shard: northeast
+            focus: "State, local and tribal developments in CT, DE, DC, ME, MD, MA, NH, NJ, NY, PA, RI and VT, plus state-level politics there."
+          - shard: southeast
+            focus: "State, local and tribal developments in AL, FL, GA, KY, MS, NC, SC, TN, VA and WV, plus state-level politics there."
+          - shard: south-central
+            focus: "State, local and tribal developments in AR, LA, OK and TX, plus state-level politics there."
+          - shard: midwest
+            focus: "State, local and tribal developments in IL, IN, IA, KS, MI, MN, MO, NE, ND, OH, SD and WI, plus state-level politics there."
+          - shard: west
+            focus: "State, local and tribal developments in AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA and WY, plus state-level politics there."
     steps:
       - uses: actions/checkout@v4
 
@@ -28,11 +59,29 @@ jobs:
         with:
           node-version: 20
 
-      - name: Fill in today's date
+      - name: Build this shard's prompt
+        env:
+          FOCUS: ${{ matrix.focus }}
         run: |
-          TODAY=$(date -u +%F); SINCE=$(date -u -d "4 days ago" +%F)
-          sed -e "s/{{TODAY}}/$TODAY/" -e "s/{{SINCE}}/$SINCE/" .github/prompts/find-updates.md > /tmp/run-prompt.md
-          cp /tmp/run-prompt.md .github/prompts/.run.md
+          python3 - <<'PY'
+          import os, json, datetime
+          today = datetime.datetime.now(datetime.timezone.utc).date()
+          since = today - datetime.timedelta(days=int(os.environ["LOOKBACK_DAYS"]))
+          p = open(".github/prompts/find-updates.md").read()
+          p = (p.replace("{{TODAY}}", today.isoformat())
+                .replace("{{SINCE}}", since.isoformat())
+                .replace("{{FOCUS}}", os.environ["FOCUS"]))
+          open(".github/prompts/.run.md", "w").write(p)
+          # A short list of recent items, so Claude doesn't burn turns reading the 900 KB updates.json.
+          cutoff = (today - datetime.timedelta(days=180)).isoformat()
+          rows = []
+          for f in ("data/entries.json", "updates.json"):
+              for e in json.load(open(f)):
+                  if str(e.get("d", "")) >= cutoff:
+                      rows.append(f'{e.get("d","")} {e.get("j","")} {e.get("t","")}')
+          open(".github/prompts/.known.txt", "w").write("\n".join(sorted(set(rows), reverse=True)) + "\n")
+          print(f"Window {since}..{today}, {len(rows)} known recent items")
+          PY
 
       - name: Let Claude search the web
         uses: anthropics/claude-code-action@v1
@@ -42,29 +91,64 @@ jobs:
           prompt: "Follow the instructions in .github/prompts/.run.md exactly."
           claude_args: >-
             --allowedTools "WebSearch,WebFetch,Read,Write"
-            --max-turns 60
+            --max-turns 100
+
+      - name: Save this shard's finds
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: candidates-${{ matrix.shard }}
+          path: candidates.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+  publish:
+    needs: search
+    if: always()               # publish whatever the shards that succeeded found
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Download every shard's finds
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: candidates-*
+          path: cands
+
+      - name: Combine shards
+        run: |
+          shopt -s nullglob
+          files=(cands/*/candidates.json)
+          echo "Shard files found: ${#files[@]}"
+          : > all.jsonl
+          for f in "${files[@]}"; do
+            sed -e 's/```json//g' -e 's/```//g' "$f" | jq -c 'if type == "array" then . else [] end' >> all.jsonl \
+              || echo "Skipping $f: not valid JSON"
+          done
+          if [ -s all.jsonl ]; then jq -s 'add' all.jsonl > candidates.json; else echo "[]" > candidates.json; fi
+          rm -f all.jsonl
+          echo "Combined candidates: $(jq length candidates.json)"
 
       - name: Check and merge what Claude found
         run: |
-          rm -f .github/prompts/.run.md
           node scripts/merge.mjs
+          cat update-summary.md >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Open a pull request for review
-        if: ${{ vars.AUTO_PUBLISH != 'true' }}
-        uses: peter-evans/create-pull-request@v6
-        with:
-          branch: auto/data-center-watch-updates
-          delete-branch: true
-          add-paths: updates.json
-          commit-message: "Data Center Watch: new developments"
-          title: "Data Center Watch: new developments for review"
-          body-path: update-summary.md
-          labels: auto-update
-
-      - name: Publish directly
-        if: ${{ vars.AUTO_PUBLISH == 'true' }}
+      - name: Publish to main
         run: |
           if git diff --quiet updates.json; then echo "No changes"; exit 0; fi
           git config user.name "data-center-watch-bot"
           git config user.email "data-center-watch-bot@users.noreply.github.com"
-          git add updates.json && git commit -m "Data Center Watch: new developments" && git push
+          git add updates.json
+          git commit -m "Data Center Watch: new developments" -m "$(cat update-summary.md)"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          echo "Push failed after 3 tries"; exit 1
