@@ -1,5 +1,234 @@
 [
   {
+    "d": "2026-10-27",
+    "j": "IA",
+    "w": "Sioux County supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Sioux County lifts moratorium and adopts data center rules",
+    "b": "Supervisors voted to repeal the moratorium and approve regulations. Rules require independent water, power and noise studies, cap sites at 25 megawatts, and make developers pay for utility upgrades. The county can now accept applications.",
+    "s": [
+      [
+        "KTIV",
+        "https://www.ktiv.com/2026/10/28/sioux-county-approves-data-center-rules-votes-lift-moratorium/"
+      ]
+    ],
+    "im": 0,
+    "iw": "Applications reopen, but with studies and a 25 MW cap.",
+    "pl": [
+      [
+        "Sioux County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "by": ""
+  },
+  {
+    "d": "2026-10-27",
+    "j": "NC",
+    "w": "Gov. Stein and AG Jackson",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "cost"
+    ],
+    "t": "NC governor and attorney general urge data centers to help fund new power plants",
+    "b": "Stein called Duke's proposed large-load tariff inadequate and asked the Utilities Commission to make data centers help pay for new generation. Jackson backed the deal as a start and floated a separate rate class. The commission has set no vote date.",
+    "s": [
+      [
+        "NC Newsline",
+        "https://ncnewsline.com/2026/10/27/nc-gov-ag-call-for-data-center-owners-to-help-pay-for-new-power-plants/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Pressure for higher cost allocation to large power users.",
+    "pl": [],
+    "auto": true,
+    "by": ""
+  },
+  {
+    "d": "2026-10-27",
+    "j": "OR",
+    "w": "Washington County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "tax",
+      "disclosure"
+    ],
+    "t": "Washington County, Oregon, adopts resolution opposing large standalone data centers, 3-1",
+    "b": "The resolution bars voluntary easements and county land sales or leases for such projects. It also opposes job-creation incentives and NDAs. It creates no moratorium or ban, and no applications are pending.",
+    "s": [
+      [
+        "Your Oregon News",
+        "https://youroregonnews.com/2026/10/28/washington-county-adopts-data-center-restrictions-in-3-1-vote/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Withholds county help and incentives; no formal ban.",
+    "pl": [
+      [
+        "Washington County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "by": ""
+  },
+  {
+    "d": "2026-10-27",
+    "j": "ID",
+    "w": "Mountain Home City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "permitting"
+    ],
+    "t": "Mountain Home passes emergency moratorium on data center applications and permits",
+    "b": "Idaho law caps the pause at 182 days. It follows a developer's plan for four buildings totaling 3.4 million square feet at Bennett Ranch. Data centers are not a listed use in city zoning.",
+    "s": [
+      [
+        "LocalNews8 (KIFI)",
+        "https://localnews8.com/news/local-news/2026/10/28/mountain-home-city-council-passes-emergency-moratorium-on-data-center-projects/"
+      ]
+    ],
+    "im": -2,
+    "iw": "Applications and permits halted for up to six months.",
+    "pl": [
+      [
+        "Mountain Home",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "by": ""
+  },
+  {
+    "d": "2026-10-26",
+    "j": "IL",
+    "w": "Morgan County Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Morgan County, Illinois, extends its data center moratorium six months",
+    "b": "Commissioners voted unanimously to extend. They want time for public input and expert advice, and to see what the state does after the fall veto session.",
+    "s": [
+      [
+        "WLDS",
+        "https://wlds.com/six-month-moratorium-extension-for-data-centers/"
+      ]
+    ],
+    "im": -2,
+    "iw": "Existing pause extended another six months.",
+    "pl": [
+      [
+        "Morgan County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "by": ""
+  },
+  {
+    "d": "2026-10-22",
+    "j": "NM",
+    "w": "Grant County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Grant County, New Mexico approves one-year data center moratorium",
+    "b": "Commissioners voted 4-1 to bar new data centers and dedicated power, water and transmission infrastructure in unincorporated areas from Nov. 21, 2026 to Nov. 21, 2027, citing a proposed project and thin public notice.",
+    "s": [
+      [
+        "Las Cruces New Mexican",
+        "https://www.santafenewmexican.com/las_cruces/local_news/grant-county-commissioners-approve-data-center-moratorium/article_42d467bc-3f9c-4c2b-b06c-16a512045750.html"
+      ]
+    ],
+    "im": -2,
+    "iw": "One-year ban on new data centers and their supporting infrastructure.",
+    "pl": [
+      [
+        "Grant County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "by": ""
+  },
+  {
+    "d": "2026-10-22",
+    "j": "TN",
+    "w": "Mountain City Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "denied",
+    "ty": [
+      "siting"
+    ],
+    "t": "Mountain City planning commission unanimously rejects data center rezoning request",
+    "b": "The commission voted down a rezoning sought by Blue Sky AI and James Phipps after nearly a dozen residents spoke against it. The mayor said he would not have supported approval either.",
+    "s": [
+      [
+        "WJHL via Yahoo News",
+        "https://www.yahoo.com/news/articles/mountain-city-planning-commission-denies-031453187.html"
+      ]
+    ],
+    "im": -1,
+    "iw": "Proposed site loses local zoning support",
+    "pl": [
+      [
+        "Mountain City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "by": ""
+  },
+  {
+    "d": "2026-10-30",
+    "j": "NJ",
+    "w": "Fairleigh Dickinson University poll",
+    "lv": "state",
+    "k": "politics",
+    "st": "poll",
+    "ty": [
+      "siting",
+      "cost"
+    ],
+    "t": "New Jersey poll finds two-thirds oppose easing data center construction",
+    "b": "A Fairleigh Dickinson poll fielded Oct. 16-22 found 65% of New Jersey voters oppose making data centers easier to build and 25% support it. Concern about big tech and AI shaped views more than electricity prices.",
+    "s": [
+      [
+        "Fairleigh Dickinson University",
+        "https://www.fdu.edu/news/fdu-poll-finds-voters-reject-data-centers-but-not-because-of-electricity-prices/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Strong voter opposition raises political risk for New Jersey siting.",
+    "pl": [],
+    "auto": true,
+    "by": ""
+  },
+  {
     "d": "2026-10-26",
     "j": "NC",
     "w": "Charlotte City Council",
