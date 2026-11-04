@@ -1,5 +1,35 @@
 [
   {
+    "d": "2026-11-18",
+    "j": "TN",
+    "w": "Shelby County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Shelby County Commission defers data center moratorium and rules ordinance to Nov. 18",
+    "b": "On Oct. 26 commissioners postponed a proposed 12-month moratorium and a competing ordinance setting rules for new and existing data centers. Both are now set for the Nov. 18 meeting.",
+    "s": [
+      [
+        "Memphis Flyer",
+        "https://www.memphisflyer.com/shelby-county-commission-defers-voting-on-data-center-related-ordinances/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Pause and rules both remain possible, prolonging uncertainty for developers.",
+    "pl": [
+      [
+        "Shelby County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:58.565Z"
+  },
+  {
     "d": "2026-11-17",
     "j": "VA",
     "w": "Loudoun County",
@@ -672,6 +702,164 @@
     "added": "2026-11-04T12:53:54.771Z"
   },
   {
+    "d": "2026-11-03",
+    "j": "US",
+    "w": "Voters in 10 states",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Voters back data center limits in nearly every Nov. 3 local ballot measure",
+    "b": "A Ballotpedia-based tally found 41 local data center measures in 10 states, with Ohio hosting 21. Voters sided against data centers in all but one, a Harwood, North Dakota charter amendment that was rejected.",
+    "s": [
+      [
+        "CNBC",
+        "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html"
+      ]
+    ],
+    "im": -2,
+    "iw": "Wave of local restrictions and bans passed at the ballot box.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-04T22:06:53.579Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OH",
+    "w": "Ohio voters",
+    "lv": "federal",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost"
+    ],
+    "t": "Sherrod Brown wins Ohio Senate race after ads targeting Husted's data center ties",
+    "b": "Democrat Sherrod Brown was reported elected over Sen. Jon Husted, sponsor of the Ratepayer Protection Act. Brown's campaign made data center buildout and its costs a central theme.",
+    "s": [
+      [
+        "TIME",
+        "https://time.com/article/2026/11/04/midterm-elections-results-ai-industry-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Data center critic replaces a key industry-friendly senator.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-04T22:06:54.649Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "TX",
+    "w": "Texas voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "cost",
+      "tax",
+      "water",
+      "disclosure"
+    ],
+    "t": "Hinojosa wins Texas governor's race after promising a data center approval pause",
+    "b": "The Democrat pledged a moratorium on approvals until lawmakers act in January, plus ending tax subsidies and barring nondisclosure agreements. She takes office Jan. 19. Abbott's own audit-based freeze continues.",
+    "s": [
+      [
+        "Texas Tribune",
+        "https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Incoming governor favors pause and ending subsidies.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-04T22:06:57.697Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "FL",
+    "w": "Okaloosa County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "permitting"
+    ],
+    "t": "Okaloosa commissioners vote 4-1 to draft 12-month data center development stay",
+    "b": "Commissioners directed staff to prepare an ordinance pausing data center development orders for 12 months, with a public hearing targeted for Dec. 8. Separate staff work on water, noise and power rules continues.",
+    "s": [
+      [
+        "Get The Coast",
+        "https://getthecoast.com/okaloosa-commissioners-to-pursue-12-month-data-center-moratorium-ordinance/"
+      ]
+    ],
+    "im": -2,
+    "iw": "A stay on development orders would block new projects for a year.",
+    "pl": [
+      [
+        "Okaloosa County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:58.155Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "KY",
+    "w": "Kentucky local candidates",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting",
+      "tax"
+    ],
+    "t": "Data centers shape local races in six Kentucky counties on Election Day",
+    "b": "Races in Barren, Mercer, Jefferson, Carroll, Simpson and Warren counties turn on moratoriums, annexation for hyperscale sites, and a 50-year sales tax break for data centers. Two developer lawsuits remain pending.",
+    "s": [
+      [
+        "LPM",
+        "https://www.lpm.org/news/2026-11-02/here-are-six-kentucky-counties-where-data-centers-could-factor-into-local-elections"
+      ]
+    ],
+    "im": -1,
+    "iw": "Anti-data-center candidates could tighten local rules if elected.",
+    "pl": [
+      [
+        "Barren County",
+        "county"
+      ],
+      [
+        "Mercer County",
+        "county"
+      ],
+      [
+        "Jefferson County",
+        "county"
+      ],
+      [
+        "Carroll County",
+        "county"
+      ],
+      [
+        "Simpson County",
+        "county"
+      ],
+      [
+        "Warren County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:59.174Z"
+  },
+  {
     "d": "2026-11-02",
     "j": "NC",
     "w": "Mooresville town commissioners",
@@ -699,6 +887,95 @@
     ],
     "auto": true,
     "added": "2026-11-04T12:53:54.593Z"
+  },
+  {
+    "d": "2026-11-02",
+    "j": "SC",
+    "w": "Pickens County Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Pickens County Council gives first reading to six-month data center moratorium",
+    "b": "Council held first reading of a six-month pause on data centers. No date is set for the second reading, and no exemptions were reported. South Carolina has no statewide baseline rules.",
+    "s": [
+      [
+        "FOX Carolina",
+        "https://www.foxcarolina.com/2026/11/03/pickens-county-council-holds-first-reading-six-month-data-center-moratorium/"
+      ]
+    ],
+    "im": -2,
+    "iw": "A pause would halt new data center applications in the county.",
+    "pl": [
+      [
+        "Pickens County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:57.749Z"
+  },
+  {
+    "d": "2026-11-02",
+    "j": "GA",
+    "w": "Bulloch County committee",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Bulloch data center committee asks commissioners to extend moratorium 180 days",
+    "b": "The county's Data Center Committee unanimously asked commissioners to extend the unincorporated-area moratorium, now running through Dec. 31, 2026, by another 180 days. The full board must still act.",
+    "s": [
+      [
+        "WSAV (via Yahoo News)",
+        "https://www.yahoo.com/news/articles/bulloch-county-data-center-committee-022111380.html"
+      ]
+    ],
+    "im": -1,
+    "iw": "Extension would keep new projects on hold into mid-2027.",
+    "pl": [
+      [
+        "Bulloch County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:58.965Z"
+  },
+  {
+    "d": "2026-10-30",
+    "j": "MI",
+    "w": "Delhi Township board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Delhi Township board votes 6-0 to oppose proposed 1 GW Holt data center",
+    "b": "Trustees formally opposed a 423-acre, up-to-1 GW project backed by LEAP and Lighthouse Sustainability, and ended their partnership with LEAP. The site needs rezoning, no application is filed, and a moratorium runs until April.",
+    "s": [
+      [
+        "Bridge Michigan",
+        "https://bridgemi.com/michigan-environment-watch/michigan-township-rejects-data-center-pitch-before-talks-even-begin/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Township opposition makes rezoning unlikely; developers may walk away.",
+    "pl": [
+      [
+        "Delhi Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:56.254Z"
   },
   {
     "d": "2026-10-29",
@@ -734,6 +1011,62 @@
     "by": "Claude research, Oct 23"
   },
   {
+    "d": "2026-10-29",
+    "j": "US",
+    "w": "PJM Interconnection",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "PJM refiles data center backstop procurement plan after FERC rejection",
+    "b": "PJM filed a revised reliability backstop procurement with FERC on Oct. 29, changing cost allocation and collateral rules. Bidding would close March 28, with results May 10. The target size remains uncertain.",
+    "s": [
+      [
+        "Utility Dive",
+        "https://www.utilitydive.com/news/pjm-revised-data-center-backstop-procurement-ferc/873551/"
+      ]
+    ],
+    "im": 0,
+    "iw": "Clarifies cost allocation for large loads but delays procurement.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-04T22:06:54.856Z",
+    "linkCheck": "blocked-by-site"
+  },
+  {
+    "d": "2026-10-29",
+    "j": "AR",
+    "w": "AVAIO Digital",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Developer sues Pulaski County in federal court over new data center rules",
+    "b": "AVAIO's affiliate says the ordinance conflicts with its August site plan approval and federal and state electricity authority, and alleges open-records violations. It seeks to block enforcement. Allegations are unproven.",
+    "s": [
+      [
+        "KATV",
+        "https://katv.com/news/local/data-center-developer-sues-pulaski-county-over-new-regulations"
+      ]
+    ],
+    "im": 0,
+    "iw": "Legal challenge could blunt the rules but outcome is uncertain.",
+    "pl": [
+      [
+        "Pulaski County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:57.525Z"
+  },
+  {
     "d": "2026-10-27",
     "j": "AR",
     "w": "Pulaski County Quorum Court",
@@ -765,6 +1098,130 @@
     ],
     "auto": false,
     "by": "Claude research, Oct 22"
+  },
+  {
+    "d": "2026-10-27",
+    "j": "PA",
+    "w": "Salem Township supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Salem Township expands data center overlay district by more than 3,000 acres",
+    "b": "Supervisors approved the expansion at a special meeting. It covers Glennbrook Group's proposed $1.4 billion Salem 3 project, tied to roughly 4,466 acres, and about 185 acres for Moores 109's Salem 4 project.",
+    "s": [
+      [
+        "FOX 56",
+        "https://fox56.com/news/local/salem-township-approves-expansion-of-data-center-district-by-more-than-3000-acres"
+      ]
+    ],
+    "im": 2,
+    "iw": "Large new area zoned to allow data center campuses.",
+    "pl": [
+      [
+        "Salem Township",
+        "township"
+      ],
+      [
+        "Luzerne County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:57.022Z"
+  },
+  {
+    "d": "2026-10-27",
+    "j": "AR",
+    "w": "Pulaski County Quorum Court",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Pulaski County overrides veto, enacting data center rules 10–4",
+    "b": "The Quorum Court overrode the county judge's veto of Ordinance 26-OR-19, which sets new requirements for large digital infrastructure in unincorporated areas.",
+    "s": [
+      [
+        "KATV",
+        "https://katv.com/news/local/data-center-developer-sues-pulaski-county-over-new-regulations"
+      ]
+    ],
+    "im": -1,
+    "iw": "New siting requirements add cost and uncertainty for developers.",
+    "pl": [
+      [
+        "Pulaski County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:57.456Z"
+  },
+  {
+    "d": "2026-10-27",
+    "j": "OK",
+    "w": "Oklahoma City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Oklahoma City approves zoning for Beltline Energy's roughly 300-acre data center complex",
+    "b": "The council voted 6–3 to approve two planned unit developments exempted from the moratorium, with noise, water-use and height limits. Mayor Holt plans to seek a moratorium extension of at least six months.",
+    "s": [
+      [
+        "Free Press OKC",
+        "https://freepressokc.com/city-council-approves-zoning-for-massive-data-center-in-west-okc/"
+      ]
+    ],
+    "im": 1,
+    "iw": "Hyperscale project cleared despite the city's moratorium.",
+    "pl": [
+      [
+        "Oklahoma City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:57.591Z"
+  },
+  {
+    "d": "2026-10-27",
+    "j": "FL",
+    "w": "Martin County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Martin County gives final 4-0 approval to temporary ban on large AI data centers",
+    "b": "Commissioners voted unanimously for a pause of up to one year on large-scale data centers after residents objected to a proposal near Kanner Highway. An application filed before the initial vote will still be considered.",
+    "s": [
+      [
+        "Vero Patriot (iHeart)",
+        "https://veropatriot.iheart.com/featured/florida-news/content/2026-10-28-another-florida-county-votes-to-approve-data-center-moratorium/"
+      ]
+    ],
+    "im": -2,
+    "iw": "A year-long pause blocks new large projects, though one pending application proceeds.",
+    "pl": [
+      [
+        "Martin County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:58.260Z"
   },
   {
     "d": "2026-10-26",
@@ -864,6 +1321,99 @@
     ],
     "auto": false,
     "by": "Claude research, Oct 23"
+  },
+  {
+    "d": "2026-10-26",
+    "j": "CO",
+    "w": "Aurora City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Aurora council falls one vote short of reviving indefinite data center moratorium",
+    "b": "A 6-5 majority backed bringing back an indefinite pause, but reconsideration needed seven votes, so it failed. The mayor says he will try again. Council also advanced distance rules keeping data centers from homes, with an outright ban within 750 feet.",
+    "s": [
+      [
+        "Denver Gazette",
+        "https://www.denvergazette.com/2026/10/26/aurora-city-council-votes-down-indefinite-data-center-moratorium/"
+      ],
+      [
+        "Sentinel Colorado",
+        "https://sentinelcolorado.com/metro/mayor-coffman-plans-new-moratorium-plan-if-aurora-lawmakers-reject-proposals-again/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Pause failed, but residential setback rules still advancing",
+    "pl": [
+      [
+        "Aurora",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:59.249Z"
+  },
+  {
+    "d": "2026-10-24",
+    "j": "CT",
+    "w": "East Lyme Zoning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "East Lyme zoning commission bans data centers town-wide before any proposal",
+    "b": "The commission voted unanimously to prohibit traditional and AI data centers and accessory uses. The rule took effect Oct. 24. No project had been proposed; officials cited water supply, noise and neighbor impacts. The town can amend the rule later.",
+    "s": [
+      [
+        "WFSB",
+        "https://www.wfsb.com/2026/10/20/east-lyme-zoning-commission-bans-data-centers/"
+      ]
+    ],
+    "im": -2,
+    "iw": "Outright ban on all data centers in the town.",
+    "pl": [
+      [
+        "East Lyme",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:56.354Z"
+  },
+  {
+    "d": "2026-10-23",
+    "j": "MD",
+    "w": "Frederick County Circuit Court",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Judge denies developer's bid to block Frederick County data center moratorium",
+    "b": "A judge refused Quantum Maryland's request for a temporary restraining order, finding no clear immediate irreparable harm. A hearing on a preliminary injunction is set for Nov. 10. The moratorium runs to July 1, 2027. The ruling date is inferred from the report.",
+    "s": [
+      [
+        "Frederick News-Post",
+        "https://www.fredericknewspost.com/news/continuing_coverage/data_centers/judge-denies-restraining-order-in-data-center-lawsuit-against-frederick-county/article_40b3c806-d3ff-5807-b195-4e445d198a73.html"
+      ]
+    ],
+    "im": -1,
+    "iw": "Pause stays in place while developer's legal challenge continues.",
+    "pl": [
+      [
+        "Frederick County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:57.079Z"
   },
   {
     "d": "2026-10-22",
@@ -1001,6 +1551,30 @@
     ],
     "auto": false,
     "by": "Claude research, Oct 23 (West Coast)"
+  },
+  {
+    "d": "2026-10-22",
+    "j": "CT",
+    "w": "Sen. Majority Leader Duff",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Connecticut Senate leader plans statewide data center moratorium bill next session",
+    "b": "Senate Majority Leader Bob Duff said at a Groton press conference he will introduce a statewide pause on new data centers. Minority Leader Stephen Harding said he would back some pause and repeal of the 2021 tax incentive.",
+    "s": [
+      [
+        "CT Mirror",
+        "https://ctmirror.org/2026/10/25/data-centers-artificial-intelligence-ct/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Bipartisan leadership support raises odds of a statewide pause.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-04T22:06:56.836Z"
   },
   {
     "d": "2026-10-21",
@@ -1685,6 +2259,37 @@
     "by": "Claude research, Oct 23 (West Coast)"
   },
   {
+    "d": "2026-10-20",
+    "j": "OR",
+    "w": "Washington County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "disclosure",
+      "siting"
+    ],
+    "t": "Washington County, Oregon, stalls on resolution opposing standalone data centers",
+    "b": "At a work session, commissioners debated a resolution opposing large standalone data centers in unincorporated areas. Proposed add-ons include a workgroup, a ban on staff signing NDAs and a de facto pause. No vote was taken; a possible vote is set for Nov. 10.",
+    "s": [
+      [
+        "Hillsboro News-Times",
+        "https://hillsboronewstimes.com/2026/10/22/washington-county-delays-data-center-resolution-again-as-commissioners-weigh-restrictions/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Possible de facto pause, though no standalone projects are pending",
+    "pl": [
+      [
+        "Washington County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:59.839Z"
+  },
+  {
     "d": "2026-10-19",
     "j": "RI",
     "w": "Hopkinton Town Council",
@@ -1961,6 +2566,66 @@
     ],
     "auto": false,
     "by": "dkalish42"
+  },
+  {
+    "d": "2026-10-19",
+    "j": "IN",
+    "w": "Starke County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Starke County, Indiana, bans commercial data centers in unincorporated areas",
+    "b": "Commissioners approved a Plan Commission ordinance prohibiting commercial data centers, crypto mining and server farms outside Knox, North Judson and Hamlet. It also bars certain water-intensive cooling systems and substations built to serve them.",
+    "s": [
+      [
+        "WKVI",
+        "https://wkvi.com/2026/10/starke-county-commissioners-approve-ban-on-commercial-data-centers/"
+      ]
+    ],
+    "im": -2,
+    "iw": "Outright county ban closes unincorporated land to developers.",
+    "pl": [
+      [
+        "Starke County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:54.974Z"
+  },
+  {
+    "d": "2026-10-19",
+    "j": "MI",
+    "w": "Clinton Township trustees",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Clinton Township, Michigan, adopts 180-day data center moratorium",
+    "b": "Trustees approved a 180-day pause on building data centers while the planning commission drafts rules. The township says no application is pending.",
+    "s": [
+      [
+        "C & G Newspapers",
+        "https://www.candgnews.com/articles/government-news/clinton-township-board-passes-data-center-moratorium/"
+      ]
+    ],
+    "im": -2,
+    "iw": "Pause blocks new data center applications for six months.",
+    "pl": [
+      [
+        "Clinton Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-04T22:06:55.057Z"
   },
   {
     "d": "2026-10-18",
