@@ -420,3 +420,19 @@ footer p{max-width:90ch;margin-bottom:6px}
 #el-sec-gov .el-table th:nth-child(4){width:28%}
 #el-sec-gov .el-table th:nth-child(5){width:8%}
 #el-sec-meas .el-table th:nth-child(2){width:30%}
+.el-cols{margin-top:18px}
+.el-h4{font-family:var(--display);font-size:22px;font-weight:600;margin:6px 0 8px}
+.el-h4 small{font-family:var(--body);font-size:13px;font-weight:400;color:var(--ink-3)}
+.el-feed{list-style:none;margin-top:6px}
+.el-feed li{border-top:1px solid var(--rule);padding:9px 0;font-size:15px;color:var(--ink-2)}
+.el-feed .e-date{font-family:var(--display);font-weight:600;color:var(--ink);margin-right:6px;white-space:nowrap}
+.newest{margin-top:14px;border-top:1px solid var(--rule);padding-top:10px}
+.newest h3{font-size:15px;font-weight:600}
+.newest ul{list-style:none;margin-top:8px;border:1px solid var(--rule-soft);background:var(--surface-2)}
+.newest li+li{border-top:1px solid var(--rule-soft)}
+.newest li button{display:block;width:100%;text-align:left;background:none;border:0;font:inherit;color:var(--ink);padding:7px 10px;cursor:pointer}
+.newest li button:hover{background:var(--surface)}
+.newest .ll-name{display:block;font-size:15px}
+.newest .ll-meta{display:block;font-size:13px;color:var(--ink-3)}
+.auto-note{font-size:14px;color:var(--ink-2);border-left:3px solid var(--volt);padding-left:10px;margin-top:8px}
+.linkish{background:none;border:0;padding:0;font:inherit;color:var(--ink);text-decoration:underline;cursor:pointer;text-align:left}

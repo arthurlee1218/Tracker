@@ -1,9 +1,11 @@
-// election.js: the "Election effects" tab: what the Nov 3, 2026 results change for data centers and AI.
-// Data comes from data/election.json (D.ELECTION): effects (what changes), governors, local ballot measures.
-// One shared filter bar drives all three sections, and the map selection (state.sel) is followed too.
+// election.js: the "Elections & polls" tab. What the Nov 3, 2026 results change for data centers and AI (effects,
+// governors, local ballot measures), plus polls, how each side frames the issue, dates ahead and coverage gaps.
+// Curated content comes from data/election.json (D.ELECTION). One shared filter bar drives the results sections and
+// the map selection (state.sel) is followed too. The "latest campaign entries" feed is built from entries, so it
+// updates when updates.json does.
 import { NAMES } from "./config.js";
-import { D } from "./store.js";
-import { $, esc, fmt, meter, plural } from "./util.js";
+import { D, E, isUp } from "./store.js";
+import { $, esc, fmt, key, meter, plural } from "./util.js";
 
 export const elState = {q:"", view:"", cat:"", j:"", im:"", when:"", res:"", bind:""};
 export const CATL = {governor:"Governors", congress:"Congress and federal", regulator:"Utility regulators", legislature:"State legislatures", local:"Local ballot measures", ai:"AI policy", market:"Markets and industry"};
@@ -95,14 +97,15 @@ function measureRow(m) {
 
 export function renderElection() {
   if (!D.ELECTION || !$("#el-effects")) return;
-  const showE = !elState.view || elState.view === "effects", showG = !elState.view || elState.view === "governors", showM = !elState.view || elState.view === "measures";
-  const E = showE ? effectsRows() : [], G = showG ? governorRows() : [], M = showM ? measureRows() : [];
+  const showE = !elState.view || elState.view === "effects", showG = !elState.view || elState.view === "governors", showM = !elState.view || elState.view === "measures", showP = !elState.view || elState.view === "polls", showD = !elState.view || elState.view === "dates";
+  const EF = showE ? effectsRows() : [], G = showG ? governorRows() : [], M = showM ? measureRows() : [];
   $("#el-sec-effects").hidden = !showE; $("#el-sec-gov").hidden = !showG; $("#el-sec-meas").hidden = !showM;
-  $("#el-effects").innerHTML = E.length ? E.map(effectCard).join("") : '<p class="empty">No effects match these filters.</p>';
+  $("#el-sec-polls").hidden = !showP; $("#el-sec-dates").hidden = !showD;
+  $("#el-effects").innerHTML = EF.length ? EF.map(effectCard).join("") : '<p class="empty">No effects match these filters.</p>';
   $("#el-gov-rows").innerHTML = G.length ? G.map(governorRow).join("") : '<tr><td colspan="5" class="empty">No governor races match these filters.</td></tr>';
   $("#el-meas-rows").innerHTML = M.length ? M.map(measureRow).join("") : '<tr><td colspan="5" class="empty">No measures match these filters.</td></tr>';
   const T = D.ELECTION;
-  $("#el-count").textContent = [showE ? plural(E.length, "effect", "effects") + ` of ${T.effects.length}` : "", showG ? plural(G.length, "governor race", "governor races") + ` of ${T.governors.length}` : "", showM ? plural(M.length, "ballot measure", "ballot measures") + ` of ${T.measures.length}` : ""].filter(Boolean).join(" · ");
+  $("#el-count").textContent = [showE ? plural(EF.length, "effect", "effects") + ` of ${T.effects.length}` : "", showG ? plural(G.length, "governor race", "governor races") + ` of ${T.governors.length}` : "", showM ? plural(M.length, "ballot measure", "ballot measures") + ` of ${T.measures.length}` : ""].filter(Boolean).join(" · ");
   const any = Object.entries(elState).some(([k, v]) => v);
   $("#el-reset").disabled = !any;
   $("#el-mnote").hidden = !(elState.when || elState.im) || !showM;
@@ -117,14 +120,14 @@ export function syncElectionState(ab) {
 export function initElection() {
   const T = D.ELECTION;
   const states = [...new Set([...T.effects, ...T.governors, ...T.measures].map(x => x.j).filter(j => j && j !== "US"))].sort((a, b) => (NAMES[a] || a).localeCompare(NAMES[b] || b));
-  $("#c-election").textContent = "New";
+  $("#c-election").textContent = "";
   $("#v-election").innerHTML = `
     <p class="sub el-lede">${esc(T.lede)}</p>
     <p class="sub el-asof">${esc(T.asof)}</p>
     <div class="tally el-tally" id="el-tiles"></div>
     <div class="filters el-filters">
       <div class="q"><label for="el-q">Search</label><input id="el-q" type="search" placeholder="State, official, topic…" autocomplete="off"></div>
-      <div><label for="el-view">Show</label><select id="el-view"><option value="">Everything</option><option value="effects">What changes</option><option value="governors">Governors</option><option value="measures">Local ballot measures</option></select></div>
+      <div><label for="el-view">Show</label><select id="el-view"><option value="">Everything</option><option value="effects">What changes</option><option value="governors">Governors</option><option value="measures">Local ballot measures</option><option value="polls">Polls and framing</option><option value="dates">Dates and gaps</option></select></div>
       <div><label for="el-cat">Who or what</label><select id="el-cat"><option value="">All areas</option>${Object.entries(CATL).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join("")}</select></div>
       <div><label for="el-j">State</label><select id="el-j"><option value="">All states</option>${states.map(j => `<option value="${j}">${esc(NAMES[j] || j)}</option>`).join("")}</select></div>
       <div><label for="el-im">Effect on developers</label><select id="el-im"><option value="">Any effect</option><option value="neg">Headwinds (any)</option><option value="-2">Strong headwind</option><option value="-1">Headwind</option><option value="0">Mixed or neutral</option><option value="1">Tailwind</option><option value="pos">Tailwinds (any)</option></select></div>
@@ -138,7 +141,18 @@ export function initElection() {
     <section id="el-sec-gov" class="el-sec"><h3>Governors</h3><p class="sub">The races in the pre-election table of data center positions, with winners and what each promised. Governors take office in January 2027 in most states; sitting governors keep their current powers until then.</p>
       <div class="project-table-wrap"><table class="project-table el-table"><thead><tr><th>Race</th><th>Winner</th><th>Where each side stood</th><th>What changes</th><th>Impact</th></tr></thead><tbody id="el-gov-rows"></tbody></table></div></section>
     <section id="el-sec-meas" class="el-sec"><h3>Local ballot measures</h3><p class="sub">Every data center measure on local ballots this fall that this tracker could match to results. Counts are unofficial and several are still coming in. Advisory questions bind no one.</p>
-      <div class="project-table-wrap"><table class="project-table el-table"><thead><tr><th>Place</th><th>Measure</th><th>Vote</th><th>Outcome</th><th>Official results</th></tr></thead><tbody id="el-meas-rows"></tbody></table></div></section>`;
+      <div class="project-table-wrap"><table class="project-table el-table"><thead><tr><th>Place</th><th>Measure</th><th>Vote</th><th>Outcome</th><th>Official results</th></tr></thead><tbody id="el-meas-rows"></tbody></table></div></section>
+    <section id="el-sec-polls" class="el-sec"><h3>Polls and how each side frames it</h3>
+      <p class="sub">Every major poll this year finds majority opposition to a data center nearby. The surveys ask different questions, so read these side by side, not as a trend line.</p>
+      <div class="el-tally" id="el-tallies"></div>
+      <div class="cols el-cols"><div><ul class="bars" id="el-polls"></ul><p class="sub" id="el-pollnote" style="margin-top:12px;font-size:15px"></p></div>
+      <div><h4 class="el-h4">How each side frames it</h4><div id="el-voices"></div></div></div>
+      <h4 class="el-h4">Latest campaign, poll and protest entries <small>(from the tracker's entries, so this updates automatically)</small></h4>
+      <ul class="el-feed" id="el-feed"></ul></section>
+    <section id="el-sec-dates" class="el-sec"><h3>Dates ahead and what trackers miss</h3>
+      <div class="cols el-cols"><div><p class="sub">Deadlines and votes already scheduled, in order. <span id="el-upcount"></span></p><ol class="timeline" id="el-dates"></ol></div>
+      <div><p class="sub">Where coverage is thin across every tracker we checked, this one included.</p><div id="el-gaps"></div></div></div></section>`;
+  renderStatic();
   const bind = (id, f) => $("#" + id).addEventListener("change", ev => { elState[f] = ev.target.value; renderElection(); });
   bind("el-view", "view"); bind("el-cat", "cat"); bind("el-j", "j"); bind("el-im", "im"); bind("el-when", "when"); bind("el-res", "res"); bind("el-bind", "bind");
   $("#el-q").addEventListener("input", ev => { elState.q = ev.target.value.trim().toLowerCase(); renderElection(); });
@@ -146,5 +160,26 @@ export function initElection() {
     Object.keys(elState).forEach(k => elState[k] = ""); ["el-q", "el-view", "el-cat", "el-j", "el-im", "el-when", "el-res", "el-bind"].forEach(id => $("#" + id).value = "");
     renderElection();
   });
-  renderTiles(); renderElection();
+  renderTiles(); renderElection(); renderElectionFeed();
+}
+
+// Polls, framing quotes, dates and gaps: curated in data/election.json, drawn once.
+function renderStatic() {
+  const T = D.ELECTION;
+  $("#el-tallies").innerHTML = T.tallies.map(([n, l, src, u]) => `<div><b>${esc(n)}</b><small>${esc(l)}. <a href="${esc(u)}" target="_blank" rel="noopener">${esc(src)}</a></small></div>`).join("");
+  $("#el-polls").innerHTML = T.polls.map(p => `<li><span class="lbl">${esc(p.l)}<small><a href="${esc(p.u)}" target="_blank" rel="noopener">${esc(p.m)}</a></small></span><span class="val">${p.v}%</span><span class="track" aria-hidden="true"><span class="fill ${esc(p.k || "")}" style="width:${p.v}%;display:block"></span></span></li>`).join("");
+  $("#el-pollnote").textContent = T.pollNote || "";
+  $("#el-voices").innerHTML = T.voices.map(v => `<div class="quote"><b>${esc(v.w)}</b> ${esc(v.t)} <a href="${esc(v.s[1])}" target="_blank" rel="noopener">${esc(v.s[0])}</a></div>`).join("");
+  $("#el-dates").innerHTML = T.dates.map(n => `<li class="${n.big ? "big" : ""}"><div class="when">${esc(n.w)}</div><p>${esc(n.t)}</p></li>`).join("");
+  $("#el-gaps").innerHTML = T.gaps.map(g => `<div class="gap"><h4>${esc(g.h)}</h4><p>${esc(g.p)}</p></div>`).join("");
+}
+
+// The newest campaign, poll, statement and protest entries, straight from the entries (updates.json included).
+// Called again by loadPublished() once the daily job's entries have arrived.
+export function renderElectionFeed() {
+  const ul = $("#el-feed"); if (!ul) return;
+  const rows = E.filter(e => e.k === "politics" && !isUp(e)).sort((a, b) => key(b.d).localeCompare(key(a.d))).slice(0, 10);
+  ul.innerHTML = rows.map(e => `<li><span class="e-date">${fmt(e.d)}</span> <b>${esc(e.w)}${e.j && e.j !== "US" ? `, ${esc(e.j)}` : ""}</b>: ${esc(e.t)} <a href="${esc(e.s[0][1])}" target="_blank" rel="noopener">${esc(e.s[0][0])}</a></li>`).join("") || '<li class="empty">Nothing logged yet.</li>';
+  const n = E.filter(isUp).length;
+  const c = $("#el-upcount"); if (c) c.textContent = n ? `${n} more scheduled ${n === 1 ? "item sits" : "items sit"} at the top of the Laws, actions & politics list under "Coming up".` : "";
 }

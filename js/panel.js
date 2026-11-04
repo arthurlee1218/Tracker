@@ -4,10 +4,11 @@ import { bindLocal, climateBlock, fillPlaces, localBlock, localList, localStatus
 import { socSync } from "./nav.js";
 import { projectState, renderProjects } from "./projects.js";
 import { syncElectionState } from "./election.js";
+import { stateStatus } from "./derive.js";
 import { bindSoc, fillFor, readLabel, renderGeoPanel, socHas, socStateBlock, voices } from "./sentiment.js";
 import { showTab } from "./shell.js";
 import { countBy, D, E, isUp, map, plKey, recount, SOC, state } from "./store.js";
-import { $, esc } from "./util.js";
+import { $, esc, fmt, key } from "./util.js";
 
 export function select(ab){
   if(ab!==state.sel) SOC.geoSel={c:"",ci:""};
@@ -24,7 +25,7 @@ export function renderPanel(){
   const p=$("#panel");
   if(!state.sel){
     const c={pause:0,rules:0,proposed:0,local:0};
-    Object.values(D.ST).forEach(v=>c[v.s]++);
+    Object.keys(D.ST).forEach(a=>{const s=stateStatus(a).s;if(s in c)c[s]++;});
     const inForcePauses=E.filter(e=>e.st==="pause").length;
     const ballots=E.filter(e=>e.st==="ballot").length;
     p.innerHTML=`<h2>The national picture</h2>
@@ -44,12 +45,16 @@ export function renderPanel(){
     return;
   }
   if(socHas(state.sel)&&(SOC.geoSel.c||SOC.geoSel.ci)){renderGeoPanel(p);return;}
-  const ab=state.sel, info=D.ST[ab], s=info?info.s:"none";
+  const ab=state.sel, info=D.ST[ab], st=stateStatus(ab), s=st.s;
   const n=countBy[ab]||0;
   p.innerHTML=`<h2>${esc(NAMES[ab]||ab)}</h2>
     <div class="status-line"><i class="sw ${s}" style="vertical-align:-2px;margin-right:6px"></i>${esc(SLABEL[s])}</div>
     <p>${info?esc(info.t):"Nothing logged here yet. That may mean quiet, or that this tracker hasn't caught up. Check the other trackers tab for local coverage."}</p>
+    ${st.why?`<p class="auto-note">Map color raised automatically by an entry logged after the summary below was last reviewed (${esc(fmt(D.ST_ASOF))}): <button type="button" class="linkish" data-goto="${esc(ab+"|")}" data-t="${esc(st.why.t)}">${esc(st.why.t)}</button></p>`:""}
     <p style="font-size:15px">${n?`${n} ${n===1?"entry":"entries"} below, plus federal actions that apply everywhere.`:""}</p>
+    ${(()=>{const nw=E.filter(e=>e.j===ab&&!isUp(e)).sort((a,b)=>key(b.d).localeCompare(key(a.d))).slice(0,3);
+      if(!nw.length)return "";
+      return `<div class="newest"><h3>Newest logged in ${esc(NAMES[ab]||ab)}</h3><ul>${nw.map(e=>`<li><button type="button" data-goto="${esc(ab+"|")}" data-t="${esc(e.t)}"><span class="ll-name">${esc(e.t)}</span><span class="ll-meta">${esc(fmt(e.d))} · ${esc(e.w)}</span></button></li>`).join("")}</ul></div>`;})()}
     ${localBlock(localStatus().filter(p=>p.j===ab))}
     ${climateBlock(E.filter(e=>e.j===ab))}
     ${socStateBlock(ab)}
@@ -70,7 +75,7 @@ export function paintCounts(){
 export function paintUSTiles(){
   const sent=SOC.view==="sentiment";
   [...map.children].forEach(t=>{
-    const ab=t.dataset.ab,info=D.ST[ab],base=(info&&info.s)||"none",n=countBy[ab]||0;
+    const ab=t.dataset.ab,base=stateStatus(ab).s,n=countBy[ab]||0;
     let badge=n,label=`${NAMES[ab]||ab}: ${SLABEL[base]}${n?`, ${n} entries`:""}`,bg="",tone="";
     if(sent){
       const has=socHas(ab),ps=has?SOC.data[ab].posts:[],v=voices(ps);
@@ -86,7 +91,7 @@ export function paintUSTiles(){
 export function initTiles() {
   recount();
   Object.entries(GRID).forEach(([ab,[c,r]])=>{
-    const s=(D.ST[ab]&&D.ST[ab].s)||"none";
+    const s=stateStatus(ab).s;
     const b=document.createElement("button");
     b.type="button";b.className="tile";b.dataset.ab=ab;b.dataset.s=s;
     b.style.gridColumn=(c+1);b.style.gridRow=(r+1);
