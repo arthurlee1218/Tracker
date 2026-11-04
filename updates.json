@@ -145,6 +145,36 @@
     "by": ""
   },
   {
+    "d": "2026-10-26",
+    "j": "AL",
+    "w": "Trinity Town Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Trinity council tables 184-acre industrial rezoning after residents object",
+    "b": "Residents packed the Monday meeting to oppose rezoning land from agricultural to light and heavy industrial near their homes, partly over fears a data center follows. The council tabled the two ordinances until its next meeting.",
+    "s": [
+      [
+        "WAFF",
+        "https://www.waff.com/2026/10/27/trinity-council-delays-vote-nearly-184-acre-rezoning-request/"
+      ]
+    ],
+    "im": -1,
+    "iw": "A rezoning being marketed for a data center is delayed.",
+    "pl": [
+      [
+        "Trinity",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
+  },
+  {
     "d": "2026-10-22",
     "j": "NM",
     "w": "Grant County Commission",
@@ -5260,6 +5290,36 @@
     "by": "dkalish42"
   },
   {
+    "d": "2026-10-07",
+    "j": "KS",
+    "w": "Seward County commission candidates",
+    "lv": "local",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "water",
+      "siting"
+    ],
+    "t": "Seward County commission candidates split on data centers at forum",
+    "b": "Asked about wind, solar and data centers, challengers Kay Burtzloff and Lizette Avalos-Morales said they oppose data centers over water and aquifer concerns. Incumbents Clay Louderback and Jairo Vazquez stayed open; Vazquez said he would vote no if water is affected.",
+    "s": [
+      [
+        "Leader & Times (Liberal)",
+        "https://liberalfirst.com/index.php/news/1287-do-candidates-support-wind-solar-or-data-centers-in-seward-county"
+      ]
+    ],
+    "im": 0,
+    "iw": "No project proposed locally; water is the stated test.",
+    "pl": [
+      [
+        "Seward County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
+  },
+  {
     "d": "2026-10-06",
     "j": "AL",
     "w": "Alabama PSC",
@@ -5694,6 +5754,36 @@
     ],
     "auto": false,
     "by": "Claude research, Oct 23 (West Coast)"
+  },
+  {
+    "d": "2026-10-06",
+    "j": "AR",
+    "w": "Siloam Springs Board of Directors",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "water"
+    ],
+    "t": "Siloam Springs board passes first reading of six-month data center moratorium",
+    "b": "The city board approved the first reading of an ordinance placing a six-month moratorium on data centers. Final adoption was still to come when the Herald-Leader reported it.",
+    "s": [
+      [
+        "Siloam Springs Herald-Leader",
+        "https://hl.nwaonline.com/news/2026/oct/09/siloam-springs-city-board-approves-first-reading/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Pause pending; only the first reading has passed.",
+    "pl": [
+      [
+        "Siloam Springs",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
   },
   {
     "d": "2026-10-05",
@@ -12873,6 +12963,36 @@
     "by": "Chongwmichael"
   },
   {
+    "d": "2026-08-23",
+    "j": "MO",
+    "w": "Ralls County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Ralls County commissioners sign one-year data center moratorium",
+    "b": "After a packed Sunday meeting, all three commissioners signed a one-year moratorium on data centers and economic development projects, hours after learning a possible data center had applied for power. They want voters to decide, hopefully on the April ballot.",
+    "s": [
+      [
+        "KHQA",
+        "https://www.khqa.com/news/local/ralls-county-data-center-moratorium-in-place-commissioners-want-voters-to-have-their-say/article_dbd40b26-6978-48ef-9d04-15eb918d5b3c.html"
+      ]
+    ],
+    "im": -2,
+    "iw": "County-wide one-year pause on data centers.",
+    "pl": [
+      [
+        "Ralls County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
+  },
+  {
     "d": "2026-08-21",
     "j": "RI",
     "w": "RI Public Utilities Commission",
@@ -16158,6 +16278,40 @@
     ],
     "auto": false,
     "by": "Claude research, Oct 23"
+  },
+  {
+    "d": "2026-07-30",
+    "j": "MO",
+    "w": "City of Hannibal",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "disclosure"
+    ],
+    "t": "Hannibal says no data center chosen, plans request for proposals",
+    "b": "After weeks of social media rumors, the city said it has had several unsolicited inquiries from companies wanting to build a data center and will issue a request for proposals rather than negotiate with one. No company has been selected and no proposal has gone to council.",
+    "s": [
+      [
+        "Hannibal Courier-Post",
+        "https://hannibal.net/2026/08/01/hannibal-officials-say-no-decisions-made-on-rumored-data-center-project/"
+      ],
+      [
+        "Muddy River News",
+        "https://muddyrivernews.com/top-stories/hannibal-city-council-setting-the-record-straight-about-data-centers/20260730222211/"
+      ]
+    ],
+    "im": 0,
+    "iw": "Exploratory; no project or approval yet.",
+    "pl": [
+      [
+        "Hannibal",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
   },
   {
     "d": "2026-07-29",

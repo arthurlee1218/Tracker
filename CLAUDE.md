@@ -30,8 +30,8 @@ own Claude account, on their own branches. Read this before changing anything.
 | `data/election.json` | Elections & polls tab: `effects` (what the Nov 3, 2026 results change), `governors`, `measures` (local ballot measures with vote counts), plus `tallies`, `polls`, `voices`, `dates` (dates ahead) and `gaps` (coverage gaps). Hand-curated |
 | `data/trackers.json` | Other trackers |
 | `updates.json` | New entries found by the daily job or added by hand. Loaded at runtime |
-| `social/WA.json` | Public sentiment posts for one state (excerpt, link, stance, topics, engagement). Loaded at runtime |
-| `geo/WA.json` | That state's counties (name, id, centroid) and cities (name, county, position), used only to lay out the tiles |
+| `social/<ST>.json` | Public sentiment posts for one state (WA, AR, KS, MO, AL so far): excerpt, link, stance, topics, engagement. Loaded at runtime |
+| `geo/<ST>.json` | That state's counties (name, id, centroid, optional `nm` full display name) and cities (name, county, position), used only to lay out the tiles |
 | `scripts/social/` | PowerShell collectors and builders that make the two files above (see its README) |
 | `scripts/merge.mjs` | Checks what the daily job found and merges it into `updates.json` |
 | `scripts/update.mjs` | Alternative updater that uses the paid API (manual only) |
@@ -126,7 +126,7 @@ run page code at the top level of a module.
 Adding something: put its data in a JSON file loaded by `data.js`, its code in the module that
 owns that part of the page, and its startup in that module's `init…()`.
 
-## Public sentiment layer (Washington first)
+## Public sentiment layer (Washington, Arkansas, Kansas, Missouri, Alabama)
 
 Separate from the entries above. Official actions, protests, campaigns and polls still go in
 `updates.json` with a news or official source; social posts never do.
@@ -149,7 +149,7 @@ Separate from the entries above. Official actions, protests, campaigns and polls
   then public sentiment, then the entries logged there. `localBlock()` and `climateBlock()` in
   `entries.js` build the tally and climate blocks for the state, county and city panels alike.- **Files:** `social/<ST>.json` and `geo/<ST>.json`, loaded at runtime. A state turns on when its
   code is in `SOC_STATES` in `js/store.js`; nothing marks the tile, because every state will get county data.
-- **Post keys:** `id`, `p` (`bsky` or `reddit`), `d` date, `w` (`person` or `group`), `st` (`anti`,
+- **Post keys:** `id`, `p` (`bsky`, `reddit` or `x`), `d` date, `w` (`person` or `group`), `st` (`anti`,
   `pro`, `mixed`, `neutral`), `tp` topics (`water power rates tax jobs land noise fire open tribe
   tech pause`), `q` excerpt, `c` county FIPS (empty means statewide), `ci` city, `u` link, `a` hashed
   account, `e` raw engagement, `x` engagement score, `tr` percentile 0 to 100 within the platform.
