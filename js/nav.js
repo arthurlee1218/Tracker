@@ -2,13 +2,13 @@
 import { NAMES } from "./config.js";
 import { renderDrill } from "./drill.js";
 import { paintUSTiles, renderPanel, select } from "./panel.js";
-import { cName, socHas } from "./sentiment.js";
+import { cName, geoHas, geoPending, socHas } from "./sentiment.js";
 import { fillSocSelects, renderSocial } from "./social.js";
 import { SOC, state } from "./store.js";
 import { $, esc } from "./util.js";
 
 export function crumbs(){
-  const ab=state.sel,s=SOC.geoSel,deep=socHas(ab)&&s.c,P=[];
+  const ab=state.sel,s=SOC.geoSel,deep=geoHas(ab)&&s.c,P=[];
   if(!ab) P.push(`<span class="here">United States</span>`);
   else{
     P.push(`<button type="button" data-up="us">United States</button>`);
@@ -17,10 +17,11 @@ export function crumbs(){
   }
   $("#crumbs").innerHTML=P.join('<span class="sep" aria-hidden="true">›</span>');
 }
-// US tiles until a state with sentiment data is selected; then its county tiles, or a county's city tiles.
+// US tiles until a state is selected; then its county tiles, or a county's city tiles (county and city data load when a state is first selected).
 // Every level can be colored by Actions (strongest action) or Sentiment (what people post); the legend follows.
 export function navRefresh(){
-  const has=socHas(state.sel),sent=SOC.view==="sentiment";
+  const has=geoHas(state.sel)||geoPending(state.sel),noSent=!!state.sel&&!socHas(state.sel),sent=SOC.view==="sentiment"&&!noSent;
+  const sb=$("#vt-sent");sb.disabled=noSent;sb.title=noSent?"No public posts collected for this state yet":"";
   $("#usbox").hidden=has;$("#tilebox").hidden=!has;
   $("#vt-actions").setAttribute("aria-pressed",String(!sent));$("#vt-sent").setAttribute("aria-pressed",String(sent));
   ["#us-leg-act","#us-note-act","#t-leg-act","#t-note-act"].forEach(i=>$(i).hidden=sent);

@@ -17,6 +17,9 @@ reads the two JSON files. Nothing here runs in CI.
 | `clean_bsky_states.ps1`, `clean_reddit_states.ps1`, `clean_reddit_api_states.ps1`, `clean_x_states.ps1` | Cleaning for the four states: keep data center posts that name one of them, drop duplicates, outlets, bots and false positives, write a CSV for labeling. |
 | `apply_labels.ps1` | Applies hand labels to a cleaned CSV (a text file of lines like `O 5 6 10`; `G` marks an advocacy group). Unlabeled rows become excluded. |
 | `build_social_states.ps1` | Builds `social/AR.json`, `KS.json`, `MO.json` and `AL.json` from the labeled Bluesky, X and Reddit CSVs. Assigns each post a state, county and city by the first place it names, checking city names against `geo/<ST>.json`. |
+| `collect_x_replies_api.ps1`, `collect_reddit_comments_api.ps1` | For the busiest posts: the replies to X posts (with each author's profile location) and the top-scored comments of Reddit threads. Same environment-variable keys as above. |
+| `replies_to_csv.ps1`, `apply_labels_replies.ps1` | Turn those into a CSV for hand labeling (against, supportive, mixed, neutral; unlabeled rows are X = off topic or noise) and apply the labels. `build_social_states.ps1` reads `x_replies_labeled.csv` and `reddit_comments_labeled.csv`. |
+| `build_geo_all.ps1` | Builds `geo/<ST>.json` for every state that lacks one (calls `wa_cities.ps1` and `build_geo.ps1`), so every state can be drilled into on the map. |
 
 ## Labeling step (not scripted)
 
@@ -58,6 +61,19 @@ Collected May 1 to Nov 4, 2026 from Bluesky (search API), Reddit (redditapis.com
 - **City positions:** `build_geo.ps1 -ShiftX 10.4` corrects a constant eastward offset in the lat/lon projection (it landed about 10.4 px west of the us-atlas outlines). Without it, multi-county cities such as Kansas City and Independence fall outside every county and get put in the wrong one. `geo/WA.json` was built before this and has the offset; rebuilding it with `-ShiftX 10.4` would fix its city positions.
 - **St. Louis city** is its own county-equivalent, so its geo entry carries `nm` (full display name) and the site shows "St. Louis city" rather than a second "St. Louis County".
 - **Reddit traction** still uses comments only (`x` = 3 x comments), to stay comparable with Washington, although the API also returns upvotes.
+
+## Replies, accounts and where people are based
+
+Added Nov 4, 2026 for the Arkansas, Kansas, Missouri and Alabama files (Washington has none of this).
+
+- **Replies and comments (`rc`, `rp`).** Likes and upvotes measure reach, not agreement: a viral post can be mostly argued with. For the 7 most engaged X posts per state we read up to 15 replies each, and for every Reddit thread with 40 or more comments the 6 to 8 top-scored comments. Each parent post gets `rc` = [against, supportive, mixed] counts. The site calls a post **contested** (grey meter, "contested") when at least 5 stance-bearing replies were read and most disagree with the post. Reddit comments are also published as posts (`rp` points at their thread), placed from the thread and its subreddit. X replies are published as posts only when the author's profile names a place in one of the five states, and take the place of the post they answer.
+- **Where accounts are based (`hs`, `hc`, `hci`).** X profile locations such as "Opelika, AL" are matched to `geo/<ST>.json` by `build_social_states.ps1`. A post by an account based in a place also counts toward that place, even when the post is about somewhere else; the place panel says how many accounts that applies to. Only about 85 of 932 posts carry a home place, and none of the four focus towns got more than one account from it. X search cannot filter by profile location, so this signal grows only as more posts are collected.
+- **Reddit traction** now counts upvotes as well as comments for the four new states (`x` = 3 x comments + upvotes; `e` = [comments, upvotes], or [replies, score] for a comment). Washington stays comments-only.
+- **Outlets that slip through.** Accounts such as RT and AF Post look like individuals to the cleaner; they were excluded by hand at build time. Check the busiest accounts in a new build.
+
+## Every state on the map
+
+`geo/<ST>.json` exists for all 50 states and DC (3,139 counties and county equivalents, 19,455 incorporated places), built by `build_geo_all.ps1`, so the Actions view can drill from any state into counties and cities. The site loads a state's file when it is first selected. Limits: only incorporated places are cities (New England and Midwest townships are not), Alaska and Hawaii city positions are approximate (their counties are map insets), Virginia's independent cities are county equivalents named "<name> city", and a few merged-away Virginia places have no tile. States without a `social/<ST>.json` have the Sentiment toggle disabled.
 
 ## Adding another state
 

@@ -31,7 +31,7 @@ own Claude account, on their own branches. Read this before changing anything.
 | `data/trackers.json` | Other trackers |
 | `updates.json` | New entries found by the daily job or added by hand. Loaded at runtime |
 | `social/<ST>.json` | Public sentiment posts for one state (WA, AR, KS, MO, AL so far): excerpt, link, stance, topics, engagement. Loaded at runtime |
-| `geo/<ST>.json` | That state's counties (name, id, centroid, optional `nm` full display name) and cities (name, county, position), used only to lay out the tiles |
+| `geo/<ST>.json` | That state's counties (name, id, centroid, optional `nm` full display name) and cities (name, county, position), used only to lay out the tiles. Built for every state by `scripts/social/build_geo_all.ps1` |
 | `scripts/social/` | PowerShell collectors and builders that make the two files above (see its README) |
 | `scripts/merge.mjs` | Checks what the daily job found and merges it into `updates.json` |
 | `scripts/update.mjs` | Alternative updater that uses the paid API (manual only) |
@@ -132,7 +132,7 @@ Separate from the entries above. Official actions, protests, campaigns and polls
 `updates.json` with a news or official source; social posts never do.
 
 - **Drill-down, all tiles:** the top level is the US tile grid (`#map`, one tile per state, colored by
-  strongest action). Selecting a state that has sentiment data replaces it with that state's counties as
+  strongest action). Selecting any state replaces it (its geo file loads on first selection) with that state's counties as
   named tiles; selecting a county shows its cities as tiles (`drill.js`). Each tile is a large click
   target laid out roughly where the place is (`tileLayout()` puts each place in the free grid cell
   nearest its real position, and uses fewer columns on narrow screens). Tile fill is the sentiment
@@ -148,11 +148,11 @@ Separate from the entries above. Official actions, protests, campaigns and polls
   moratorium tally for that place and the cities in it, and the climate-for-developers score,
   then public sentiment, then the entries logged there. `localBlock()` and `climateBlock()` in
   `entries.js` build the tally and climate blocks for the state, county and city panels alike.- **Files:** `social/<ST>.json` and `geo/<ST>.json`, loaded at runtime. A state turns on when its
-  code is in `SOC_STATES` in `js/store.js`; nothing marks the tile, because every state will get county data.
+  code is in `SOC_STATES` in `js/store.js`, which loads its posts at startup; every state has a geo file, so every state can be drilled into, but states without posts have the Sentiment toggle disabled. Nothing marks the tile.
 - **Post keys:** `id`, `p` (`bsky`, `reddit` or `x`), `d` date, `w` (`person` or `group`), `st` (`anti`,
   `pro`, `mixed`, `neutral`), `tp` topics (`water power rates tax jobs land noise fire open tribe
   tech pause`), `q` excerpt, `c` county FIPS (empty means statewide), `ci` city, `u` link, `a` hashed
-  account, `e` raw engagement, `x` engagement score, `tr` percentile 0 to 100 within the platform.
+  account, `e` raw engagement, `x` engagement score, `tr` percentile 0 to 100 within the platform. Optional: `rc` replies read as [against, supportive, mixed] (X replies, Reddit top comments; the site marks a post contested when most disagree with it), `rp` the post a reply or comment answers, and `hs`/`hc`/`hci` where the account is based (X profile location: state, county FIPS, city), which also counts the post toward that place.
 - **Rules:** excerpt 14 words or fewer plus a link, no handles, no news outlets or bots. Place comes
   from the place named in the post. Stance is toward data centers in that place.
 - **Reading it:** the site gives each account one vote per place (its most common stance), shows "too

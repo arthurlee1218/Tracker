@@ -2,7 +2,7 @@
 # Input: counties-albers-10m.json (us-atlas, already Albers-projected for a 975x610 canvas).
 # -ShiftX moves city points east by that many pixels. The lat/lon projection below lands about 10.4 px west of the us-atlas
 # outlines (checked against St. Louis city, San Francisco and Jackson County MO), so pass -ShiftX 10.4 for new states; WA was built without it.
-param([string]$In, [string]$Out, [string]$StateFips = '53', [string]$StateAb = 'WA', [double]$Tol = 0, [switch]$National, [string]$CitiesCsv, [double]$ShiftX = 0)
+param([string]$In, [string]$Out, [string]$StateFips = '53', [string]$StateAb = 'WA', [double]$Tol = 0, [switch]$National, [string]$CitiesCsv, [double]$ShiftX = 0, [string]$Suffix = 'County')
 $ErrorActionPreference = 'Stop'
 $topo = Get-Content $In -Raw -Encoding utf8 | ConvertFrom-Json
 $sx = [double]$topo.transform.scale[0]; $sy = [double]$topo.transform.scale[1]
@@ -97,7 +97,16 @@ foreach ($c in $counties) {
     if ([Math]::Abs($A) -gt $bestA -and $A -ne 0) { $bestA = [Math]::Abs($A); $best = @(($cx / (6 * $A)), ($cy / (6 * $A))) }
   }
   # outlines are only used here (centroid, and to keep city dots inside their county); the site needs just name, id and centroid
-  $outC += [ordered]@{ id = $c.id; n = $c.name; c = @([Math]::Round($best[0], $dec), [Math]::Round($best[1], $dec)) }
+  if (-not $best) { if ($bx0 -gt 1e8) { Write-Warning "no outline for $($c.id) $($c.name)"; continue }; $best = @((($bx0 + $bx1) / 2), (($by0 + $by1) / 2)) }  # tiny or degenerate outline: use its bounding box center
+  # independent cities (VA, Baltimore, St. Louis), Carson City, DC and Alaska's boroughs and census areas need their own display name
+  $nn = $c.name; $nm = $null
+  if ($c.id -match '^(51[5-8]\d\d|24510|29510)$') { $nn = $c.name + ' city'; $nm = $nn }
+  elseif ($c.id -eq '32510') { $nn = 'Carson City'; $nm = $nn }
+  elseif ($c.id -eq '11001') { $nn = 'District of Columbia'; $nm = $nn }
+  elseif ($StateAb -eq 'AK') { $nm = $c.name }
+  $oc = [ordered]@{ id = $c.id; n = $nn; c = @([Math]::Round($best[0], $dec), [Math]::Round($best[1], $dec)) }
+  if ($nm) { $oc['nm'] = $nm }
+  $outC += $oc
   "{0} {1} pts={2} pathlen={3}" -f $c.id, $c.name, $totalPts, $d.Length
 }
 
@@ -124,6 +133,7 @@ foreach ($cr in (Import-Csv $CitiesCsv)) {
   foreach ($f in $fips) { $cand = $counties | Where-Object { $_.id -eq $f } | Select-Object -First 1; foreach ($r in $cand.rings) { if (PtInRing $p[0] $p[1] $r) { $cid = $f; break } }; if ($cid) { break } }
   if (-not $cid) { $cid = $fips[0] }
   $co = $counties | Where-Object { $_.id -eq $cid } | Select-Object -First 1
+  if (-not $co) { Write-Warning "no county $cid for $($cr.name)"; continue }
   # coarse 10m outlines can leave coastal/edge cities just outside their county: nudge toward the county's interior
   $big = $null; $bigN = 0; foreach ($r in $co.rings) { if ($r.Count -gt $bigN) { $bigN = $r.Count; $big = $r } }
   $mx = 0; $my = 0; foreach ($q in $big) { $mx += $q[0]; $my += $q[1] }; $mx /= $big.Count; $my /= $big.Count
@@ -138,6 +148,6 @@ foreach ($cr in (Import-Csv $CitiesCsv)) {
   $outCity += [ordered]@{ n = $cr.name; p = @([Math]::Round($l[0], $dec), [Math]::Round($l[1], $dec)); c = $cid }
 }
 "cities: $($outCity.Count)"
-$doc = [ordered]@{ state = $StateAb; suffix = 'County'; w = $W; h = $H; counties = $outC; cities = $outCity }
+$doc = [ordered]@{ state = $StateAb; suffix = $Suffix; w = $W; h = $H; counties = $outC; cities = $outCity }
 $doc | ConvertTo-Json -Depth 6 -Compress | Set-Content -Encoding utf8 $Out
 "wrote $Out $((Get-Item $Out).Length) bytes"
