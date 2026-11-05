@@ -89,6 +89,37 @@
     "by": "Claude research, Oct 22"
   },
   {
+    "d": "2026-11-17",
+    "j": "AZ",
+    "w": "Page planning commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Page, Arizona, readies data center code; planning hearing set Nov. 17",
+    "b": "After an Oct. 28 council hearing with no vote, Page's draft code would create data center districts near power lines, require water and energy certificates, neighbor notice and a 55 dBA sound limit.",
+    "s": [
+      [
+        "KJZZ",
+        "https://www.kjzz.org/politics/2026-10-30/communities-across-arizona-consider-stronger-rules-for-data-center-development"
+      ]
+    ],
+    "im": -1,
+    "iw": "New siting, notice and utility-impact requirements add costs and steps.",
+    "pl": [
+      [
+        "Page",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T13:00:43.848Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -178,6 +209,61 @@
     ],
     "auto": false,
     "by": "Claude research, Oct 23"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "US",
+    "w": "Wall Street analysts",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Analysts warn Democratic wins raise risk of data center delays in Ohio, Texas, Georgia",
+    "b": "After the midterms, Morgan Stanley analysts called Ohio governor-elect Acton a major risk to the state's buildout, and Goldman Sachs predicted construction delays in Georgia and Texas. Democrats now hold both chambers, and Sanders and Ocasio-Cortez's moratorium bill faces a likely veto.",
+    "s": [
+      [
+        "TechCrunch",
+        "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Investors now price in more state-level moratoriums and cost rules.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T13:00:41.458Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "KY",
+    "w": "Casey County Fiscal Court",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Casey County, Kentucky adopts 12-month data center moratorium at special meeting",
+    "b": "Casey County's fiscal court approved a one-year moratorium on data centers at a special-called meeting. The vote count was not reported. Lexington and Georgetown have also paused data center decisions.",
+    "s": [
+      [
+        "WKYT",
+        "https://www.wkyt.com/2026/11/04/casey-county-fiscal-court-approves-data-center-moratorium/"
+      ]
+    ],
+    "im": -2,
+    "iw": "One-year county pause blocks new data center projects.",
+    "pl": [
+      [
+        "Casey County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T13:00:42.723Z"
   },
   {
     "d": "2026-11-03",
@@ -1451,6 +1537,83 @@
     "by": "Claude research, Nov 4"
   },
   {
+    "d": "2026-11-03",
+    "j": "US",
+    "w": "AI industry super PACs",
+    "lv": "federal",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "AI super PACs largely lose general-election bets, including $4.8M for South Carolina Senate nominee",
+    "b": "Pro-AI groups spent heavily in primaries but little in the general election. American Mission and Building the Future put $4.8 million behind Darline Graham in South Carolina's Senate race, and she lost. Two other American Mission-backed House candidates also lost.",
+    "s": [
+      [
+        "TechCrunch",
+        "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Industry political spending failed to stem a backlash-driven wave.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T13:00:41.305Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MI",
+    "w": "Michigan voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Benson wins Michigan governor after campaigning for a data center pause with guardrails",
+    "b": "Democrat Jocelyn Benson beat Republican John James. She called for a pause on new data centers until guardrails exist. Reports say the issue kept the race close.",
+    "s": [
+      [
+        "FOX 2 Detroit",
+        "https://www.fox2detroit.com/election/jocelyn-benson-2026-election-governor-john-james-michigan"
+      ]
+    ],
+    "im": -1,
+    "iw": "Incoming governor favors a pause and guardrails on new projects",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T13:00:41.508Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NM",
+    "w": "Doña Ana County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "Project Jupiter critic Daisy Maldonado wins Doña Ana County commission seat",
+    "b": "Democrat Daisy Maldonado, who questions the Santa Teresa data center's water and emissions, took about 60% of unofficial votes for County Commission District 1. A critic of the project now joins the body that oversees its bond deal.",
+    "s": [
+      [
+        "Albuquerque Journal",
+        "https://www.abqjournal.com/news/project-jupiter-opponent-elected-dona-ana-county-commissioner/3155779"
+      ]
+    ],
+    "im": -1,
+    "iw": "Adds a skeptic to the commission overseeing the project's bond agreements.",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T13:00:43.239Z"
+  },
+  {
     "d": "2026-11-02",
     "j": "NY",
     "w": "Hamburg Town Board",
@@ -1655,6 +1818,66 @@
     ],
     "auto": true,
     "added": "2026-11-05T00:55:20.690Z"
+  },
+  {
+    "d": "2026-11-02",
+    "j": "ME",
+    "w": "Westbrook City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Westbrook, Maine council unanimously bans standalone data centers",
+    "b": "Westbrook's council voted unanimously for an ordinance prohibiting standalone data centers. Smaller uses, such as server rooms inside existing businesses, remain allowed. The mayor backed the ban, citing environmental and infrastructure concerns.",
+    "s": [
+      [
+        "NEWS CENTER Maine via Yahoo News",
+        "https://www.yahoo.com/news/articles/maine-towns-vote-overwhelmingly-restrict-160946228.html"
+      ]
+    ],
+    "im": -2,
+    "iw": "Bans new standalone data centers citywide.",
+    "pl": [
+      [
+        "Westbrook",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T13:00:42.324Z"
+  },
+  {
+    "d": "2026-10-31",
+    "j": "NM",
+    "w": "Project Jupiter monitoring committee",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "water",
+      "disclosure"
+    ],
+    "t": "Doña Ana's Project Jupiter monitoring committee holds first meeting and elects chair",
+    "b": "The new 11-member Community Monitoring Committee met for about four hours, elected Lynn Moorer chair, adopted gift rules in its bylaws and began planning public meetings near the site and a list of study topics.",
+    "s": [
+      [
+        "KVIA",
+        "https://kvia.com/news/2026/11/01/dona-ana-countys-project-jupiter-committee-holds-inaugural-meeting-to-lay-groundwork-and-elect-officers/"
+      ]
+    ],
+    "im": 0,
+    "iw": "Adds independent oversight but has no stated power to halt the project.",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T13:00:43.730Z"
   },
   {
     "d": "2026-10-30",
@@ -2449,6 +2672,36 @@
     ],
     "auto": true,
     "added": "2026-11-05T00:55:20.014Z"
+  },
+  {
+    "d": "2026-10-27",
+    "j": "NM",
+    "w": "Doña Ana County commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "disclosure"
+    ],
+    "t": "Doña Ana commissioners authorize breach notice over Project Jupiter's proposed power connection",
+    "b": "Commissioners voted 5-0 to let staff and counsel notify Project Jupiter entities of a potential breach of their bond agreements over a proposed El Paso Electric connection. No breach is established, and the bond authorization stands.",
+    "s": [
+      [
+        "Organ Mountain News",
+        "https://www.organmountainnews.com/dona-ana-county-project-jupiter-irb-breach-notice-2026/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Raises legal friction and uncertainty over the project's power plan.",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T13:00:42.963Z"
   },
   {
     "d": "2026-10-26",
