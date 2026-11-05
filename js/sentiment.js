@@ -4,6 +4,7 @@ import { bindLocal, climateBlock, localBlock, localStatus } from "./entries.js";
 import { selectGeo } from "./nav.js";
 import { showTab } from "./shell.js";
 import { E, SOC, state } from "./store.js";
+import { bindResearch, researchBlock } from "./research.js";
 import { $, esc, fmt, key } from "./util.js";
 
 export const socHas=ab=>!!(ab&&SOC.data[ab]);
@@ -122,13 +123,14 @@ export function renderGeoPanel(p){
     <p>${lead?`<b>Latest:</b> ${esc(lead.e.t)}. ${esc(lead.e.b)}`:"Nothing logged here yet. That may mean quiet, or that this tracker hasn't caught up. Check the other trackers tab for local coverage."}</p>
     <p style="font-size:15px">${off.length?`${off.length} ${off.length===1?"entry":"entries"} logged here, listed under Official record below.`:""}</p>
     ${localBlock(inGeo,true)}
+    ${researchBlock({st:ab,county:s.c?cn:"",city:s.ci||""})}
     ${climateBlock(entries)}
     ${socHas(ab)?sentBlock(ab,posts,""):""}
     <div class="sent"><h3>Official record here <small style="font-weight:400;color:var(--ink-3)">${off.length}</small></h3>
       ${off.length?`<ul class="officials">${off.slice(0,5).map(({e,key:k})=>`<li><button type="button" data-goto="${esc(k)}" data-t="${esc(e.t)}"><span class="o-t">${esc(e.t)}</span><small>${fmt(e.d)} · ${esc(STLBL[e.st])} · ${e.k==="politics"?"Political noise":"Official action"}</small></button></li>`).join("")}</ul>${off.length>5?`<p style="font-size:14px">Plus ${off.length-5} more in the first tab.</p>`:""}`:`<p style="font-size:15px">No actions logged for ${esc(nm)} yet.</p>`}
     </div>
     <div class="btn-row">${socHas(ab)?`<button type="button" class="btn-live" data-soc-posts>See all ${posts.length} posts</button>`:""}<button type="button" class="btn-quiet" data-soc-up>Back to ${esc(s.ci?cn:NAMES[ab])}</button></div>`;
-  bindLocal(p);bindSoc(p);
+  bindLocal(p);bindSoc(p);bindResearch(p,{st:ab,county:s.c?cn:"",city:s.ci||""});
 }
 export function bindSoc(p){
   p.querySelectorAll("[data-soc-posts]").forEach(b=>b.addEventListener("click",()=>{showTab("social",false);$("#t-social").scrollIntoView({block:"start",behavior:"auto"});}));

@@ -5,6 +5,7 @@ import { socSync } from "./nav.js";
 import { projectState, renderProjects } from "./projects.js";
 import { syncElectionState } from "./election.js";
 import { stateStatus } from "./derive.js";
+import { bindResearch, researchBlock } from "./research.js";
 import { bindSoc, fillFor, geoHas, loadGeo, readLabel, renderGeoPanel, socHas, socStateBlock, voices } from "./sentiment.js";
 import { showTab } from "./shell.js";
 import { countBy, D, E, isUp, map, plKey, recount, SOC, state } from "./store.js";
@@ -56,6 +57,7 @@ export function renderPanel(){
     ${(()=>{const nw=E.filter(e=>e.j===ab&&!isUp(e)).sort((a,b)=>key(b.d).localeCompare(key(a.d))).slice(0,3);
       if(!nw.length)return "";
       return `<div class="newest"><h3>Newest logged in ${esc(NAMES[ab]||ab)}</h3><ul>${nw.map(e=>`<li><button type="button" data-goto="${esc(ab+"|")}" data-t="${esc(e.t)}"><span class="ll-name">${esc(e.t)}</span><span class="ll-meta">${esc(fmt(e.d))} · ${esc(e.w)}</span></button></li>`).join("")}</ul></div>`;})()}
+    ${researchBlock({st:ab,county:"",city:""})}
     ${localBlock(localStatus().filter(p=>p.j===ab))}
     ${climateBlock(E.filter(e=>e.j===ab))}
     ${socStateBlock(ab)}
@@ -65,7 +67,7 @@ export function renderPanel(){
       return `<div class="places"><h3>Counties, cities and townships</h3><ul>${arr.map(([k,v])=>`<li><button type="button" data-pl="${esc(k)}" aria-pressed="${state.pl===k}">${esc(v.n)}<small>${v.c}</small></button></li>`).join("")}</ul></div>`;})()}
     <div class="clear"><button type="button" class="btn-quiet" id="clearSel">Show all states</button></div>`;
   $("#clearSel").addEventListener("click",()=>select(null));
-  bindLocal(p);bindSoc(p);
+  bindLocal(p);bindSoc(p);bindResearch(p,{st:ab,county:"",city:""});
   p.querySelectorAll("[data-pl]").forEach(b=>b.addEventListener("click",()=>{state.pl=state.pl===b.dataset.pl?"":b.dataset.pl;$("#f-place").value=state.pl;renderPanel();renderEntries();}));
 }
 export function paintCounts(){
