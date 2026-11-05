@@ -20,6 +20,7 @@ reads the two JSON files. Nothing here runs in CI.
 | `collect_x_replies_api.ps1`, `collect_reddit_comments_api.ps1` | For the busiest posts: the replies to X posts (with each author's profile location) and the top-scored comments of Reddit threads. Same environment-variable keys as above. |
 | `replies_to_csv.ps1`, `apply_labels_replies.ps1` | Turn those into a CSV for hand labeling (against, supportive, mixed, neutral; unlabeled rows are X = off topic or noise) and apply the labels. `build_social_states.ps1` reads `x_replies_labeled.csv` and `reddit_comments_labeled.csv`. |
 | `build_geo_all.ps1` | Builds `geo/<ST>.json` for every state that lacks one (calls `wa_cities.ps1` and `build_geo.ps1`), so every state can be drilled into on the map. |
+| `collect_facebook_search.ps1`, `collect_facebook_comments.ps1`, `collect_facebook_post_details.ps1`, `prepare_facebook.ps1` | Facebook through socialapis.io (token in `FB_API_TOKEN`): keyword search of public posts, ten comments per credit, publish times, and the join into `fb_posts_labeled.csv` and `fb_comments_labeled.csv`. The free plan is 200 credits a month; searches return only 5 or 6 posts and no dates. |
 
 ## Labeling step (not scripted)
 
@@ -57,7 +58,7 @@ absolute audience.
 
 Collected May 1 to Nov 4, 2026 from Bluesky (search API), Reddit (redditapis.com) and X (twitterapis.com); a Mastodon pass found about ten individual posts, too few to add a platform for. Claude read each candidate and assigned the label; pure headline re-posts, candidates and officials were excluded. Counts per state are in the files.
 
-- **The four focus towns have no individual posts on any platform.** Siloam Springs and Benton County AR, Liberal and Seward County KS, Hannibal and Ralls County MO, and Opelika and Lee County AL returned only news outlets, an AI-summary bot and official accounts. Their tiles show "no posts" on purpose; their official actions are in `updates.json`. Seward County NE and Lee County NC also matched searches and were excluded.
+- **The four focus towns, before Facebook:** Bluesky, Reddit, X and Mastodon returned no individual posts about Siloam Springs and Benton County AR, Liberal and Seward County KS, Hannibal and Ralls County MO, or Opelika and Lee County AL, only news outlets, an AI-summary bot and official accounts. Facebook changed that for three of them (see its section below). Seward County NE and Lee County NC also matched searches and were excluded.
 - **City positions:** `build_geo.ps1 -ShiftX 10.4` corrects a constant eastward offset in the lat/lon projection (it landed about 10.4 px west of the us-atlas outlines). Without it, multi-county cities such as Kansas City and Independence fall outside every county and get put in the wrong one. `geo/WA.json` was built before this and has the offset; rebuilding it with `-ShiftX 10.4` would fix its city positions.
 - **St. Louis city** is its own county-equivalent, so its geo entry carries `nm` (full display name) and the site shows "St. Louis city" rather than a second "St. Louis County".
 - **Reddit traction** still uses comments only (`x` = 3 x comments), to stay comparable with Washington, although the API also returns upvotes.
@@ -74,6 +75,17 @@ Added Nov 4, 2026 for the Arkansas, Kansas, Missouri and Alabama files (Washingt
 ## Every state on the map
 
 `geo/<ST>.json` exists for all 50 states and DC (3,139 counties and county equivalents, 19,455 incorporated places), built by `build_geo_all.ps1`, so the Actions view can drill from any state into counties and cities. The site loads a state's file when it is first selected. Limits: only incorporated places are cities (New England and Midwest townships are not), Alaska and Hawaii city positions are approximate (their counties are map insets), Virginia's independent cities are county equivalents named "<name> city", and a few merged-away Virginia places have no tile. States without a `social/<ST>.json` have the Sentiment toggle disabled.
+
+## Facebook (Nov 4, 2026)
+
+Local Facebook groups and pages are where the four focus towns actually talk, and the only source that gave readings for three of them. 12 keyword searches, 44 pages of comments and 14 post lookups (about 120 credits, including 40 wasted on a bad query list) produced 64, 41, 7 and 36 posts and comments for Siloam Springs, Hannibal, Ralls County and Opelika. Facebook posts carry `p` = `fb`; `e` = [reactions, comments] for a post and [reactions, replies] for a comment; `x` = reactions + 2 x replies or comments.
+
+- **What is published as a post:** individuals' own posts, and every labeled comment under them and under local page posts (the Siloam Springs Citizen's Page, the Arkansas Democrat-Gazette, a candidate's page). The page, outlet and candidate posts themselves are not published. Dates for posts come from post details; comments carry their own. Comment links use `?comment_id=`.
+- **Place** is the town or county of the thread, set by hand in `prepare_facebook.ps1`: commenters in a town's group or page are treated as local, which they mostly are but cannot be verified (Facebook gives no location for commenters).
+- **Name collisions found by reading:** "Hannibal data center" also returns Hannibal, Ohio (Monroe County; the Ormet site), "Seward County" returns Nebraska, and one search hit could not be placed. All were left out. Comments that urged burning or blowing up sites were excluded and not quoted.
+- **Liberal and Seward County, KS:** four searches found no data center discussion at all. The only local record is a candidate forum where an incumbent said data centers are "probably not coming here". The empty tile is accurate, not a gap.
+- **Hamlet (myhamlet.com):** blocked automated access (a Vercel security checkpoint on every page, including robots.txt), so it was not used. Citizen Portal summaries are AI-written and not a source.
+- **Not collected:** only the first 40 to 70 comments of the busiest threads (relevance order), and only the first page of each search. More credits would deepen Ralls County in particular, whose threads are small.
 
 ## Adding another state
 

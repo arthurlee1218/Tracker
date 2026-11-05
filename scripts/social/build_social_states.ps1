@@ -5,7 +5,7 @@
 # Each post is assigned to one of the four states, then to a county and city by the first place named
 # in the text. Output keeps a short excerpt (<=14 words) and a link, never the full post, and no handles.
 # Same output format and rules as build_social.ps1 (Washington); geo/<ST>.json supplies the city names.
-param([string]$DataDir, [string]$OutDir, [string]$GeoDir, [string]$To = '2026-11-04')
+param([string]$DataDir, [string]$OutDir, [string]$GeoDir, [string]$To = '2026-11-04', [string]$From = '2026-05-01')
 $ErrorActionPreference = 'Stop'
 $sha = [System.Security.Cryptography.SHA1]::Create()
 function Hash8($s) { $b = $sha.ComputeHash([Text.Encoding]::UTF8.GetBytes("lw-salt|" + $s)); return (($b[0..3] | ForEach-Object { $_.ToString('x2') }) -join '') }
@@ -170,6 +170,20 @@ if (Test-Path $rf) {
     })
   }
 }
+# ---- Facebook: resident posts from local groups and pages (fb_posts_labeled.csv); their comments come further down ----
+$ff = Join-Path $DataDir 'fb_posts_labeled.csv'
+if (Test-Path $ff) {
+  foreach ($r in (Import-Csv $ff)) {
+    if ($r.stance -notin 'O', 'S', 'M', 'N') { continue }
+    if ($r.created.Substring(0, 10) -lt $From) { continue }
+    $ex = Excerpt $r.text
+    if (($ex -split ' ').Count -lt 4) { continue }
+    $tp = @(); foreach ($k in $topics.Keys) { if ($r.text -match $topics[$k]) { $tp += $k } }
+    $cty = $r.county; $city = $r.city
+    if ($city) { $hit = $geoCache[$r.state].cities | Where-Object { $_.n -eq $city } | Select-Object -First 1; if ($hit) { $cty = $hit.c } else { Write-Warning "city not in geo: $($r.state) $city"; $city = '' } }
+    $posts.Add([ordered]@{ _st = $r.state; id = 'f' + $r.post_id; p = 'fb'; d = $r.created.Substring(0, 10); w = 'person'; st = $stanceMap[$r.stance]; tp = $tp; q = $ex; c = $cty; ci = $city; u = $r.url; a = (Hash8 ('fb|' + $r.owner_id)); e = @([int]$r.reactions, [int]$r.comments); fl = '' })
+  }
+}
 $byId = @{}; foreach ($p in $posts) { $byId[$p.id] = $p }
 $rcTally = @{}
 function Tally($pid2, $stance) { if (-not $rcTally.ContainsKey($pid2)) { $rcTally[$pid2] = @(0, 0, 0) }; $i = @{ O = 0; S = 1; M = 2 }[$stance]; if ($null -ne $i) { $rcTally[$pid2][$i]++ } }
@@ -208,13 +222,27 @@ if (Test-Path $sf) {
     $posts.Add([ordered]@{ _st = $loc[0]; id = 'rc' + $r.id; p = 'reddit'; d = $r.created.Substring(0, 10); w = 'person'; st = $stanceMap[$r.stance]; tp = $tp; q = $ex; c = $cty; ci = $city; u = $r.permalink; a = (Hash8 $r.author); sr = $r.thread_sub; e = @([int]$r.replies, [int]$r.score); rp = 'r' + $r.thread; fl = '' })
   }
 }
+$sf = Join-Path $DataDir 'fb_comments_labeled.csv'
+if (Test-Path $sf) {
+  foreach ($r in (Import-Csv $sf)) {
+    if ($r.stance -notin 'O', 'S', 'M') { continue }
+    if ($r.created.Substring(0, 10) -lt $From) { continue }
+    Tally ('f' + $r.post_id) $r.stance
+    $ex = Excerpt $r.text
+    if (($ex -split ' ').Count -lt 4) { continue }
+    $tp = @(); foreach ($k in $topics.Keys) { if ($r.text -match $topics[$k]) { $tp += $k } }
+    $cty = $r.county; $city = $r.city
+    if ($city) { $hit = $geoCache[$r.state].cities | Where-Object { $_.n -eq $city } | Select-Object -First 1; if ($hit) { $cty = $hit.c } else { $city = '' } }
+    $posts.Add([ordered]@{ _st = $r.state; id = 'fc' + $r.cid; p = 'fb'; d = $r.created.Substring(0, 10); w = 'person'; st = $stanceMap[$r.stance]; tp = $tp; q = $ex; c = $cty; ci = $city; u = ($r.post_url + '?comment_id=' + $r.cid); a = (Hash8 ('fb|' + $r.author_id)); e = @([int]$r.reactions, [int]$r.replies); rp = 'f' + $r.post_id; fl = '' })
+  }
+}
 foreach ($k in $rcTally.Keys) { if ($byId.ContainsKey($k)) { $byId[$k]['rc'] = @($rcTally[$k]) } }
-$weights = @{ bsky = @(1, 2, 2); x = @(1, 2, 2); reddit = @(3, 1) }
+$weights = @{ bsky = @(1, 2, 2); x = @(1, 2, 2); reddit = @(3, 1); fb = @(1, 2) }
 New-Item -ItemType Directory -Force $OutDir | Out-Null
 foreach ($s in 'AR','KS','MO','AL') {
   $sp = @($posts | Where-Object { $_._st -eq $s })
   foreach ($p in $sp) { $p.Remove('_st'); $w = $weights[$p.p]; $x = 0; for ($i = 0; $i -lt $p.e.Count; $i++) { $x += $w[$i] * $p.e[$i] }; $p['x'] = $(if ($p.e[0] -lt 0) { -1 } else { $x }) }
-  foreach ($plat in 'bsky', 'x', 'reddit') {
+  foreach ($plat in 'bsky', 'x', 'reddit', 'fb') {
     $grp = @($sp | Where-Object { $_.p -eq $plat })
     $pos = @($grp | Where-Object { $_.x -gt 0 } | ForEach-Object { $_.x } | Sort-Object)
     foreach ($p in $grp) {
@@ -226,7 +254,7 @@ foreach ($s in 'AR','KS','MO','AL') {
   }
   $sp = @($sp | Sort-Object { $_.d } -Descending)
   $cnt = [ordered]@{}; foreach ($p in $sp) { $cnt[$p.p] = 1 + [int]$cnt[$p.p] }
-  $doc = [ordered]@{ state = $s; built = (Get-Date -Format 'yyyy-MM-dd'); from = '2026-05-01'; to = $To; platforms = [ordered]@{ bsky = 'Bluesky'; reddit = 'Reddit'; x = 'X' }; counts = $cnt; posts = $sp }
+  $doc = [ordered]@{ state = $s; built = (Get-Date -Format 'yyyy-MM-dd'); from = $From; to = $To; platforms = [ordered]@{ bsky = 'Bluesky'; reddit = 'Reddit'; x = 'X'; fb = 'Facebook' }; counts = $cnt; posts = $sp }
   $out = Join-Path $OutDir "$s.json"
   [System.IO.File]::WriteAllText($out, ($doc | ConvertTo-Json -Depth 6 -Compress), (New-Object System.Text.UTF8Encoding($false)))
   "{0}: posts {1}  county {2}  city {3}  bytes {4}" -f $s, $sp.Count, @($sp | Where-Object { $_.c }).Count, @($sp | Where-Object { $_.ci }).Count, (Get-Item $out).Length
