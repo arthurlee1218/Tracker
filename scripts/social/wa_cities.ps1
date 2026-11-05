@@ -6,7 +6,7 @@ $rows = @{}
 foreach ($r in $pc) {
   $geoid = $StateFips + $r.PLACEFP
   if (-not $gz.ContainsKey($geoid)) { continue }
-  $name = ($r.PLACENAME -replace ' (city|town)$', '')
+  $name = ($r.PLACENAME -replace ' (city|town|village|borough|municipality|city and borough)( \(balance\))?$', '')
   $cf = $StateFips + $r.COUNTYFP
   if (-not $rows.ContainsKey($geoid)) { $rows[$geoid] = [pscustomobject]@{ name = $name; lat = $gz[$geoid][0]; lon = $gz[$geoid][1]; counties = @($cf) } }
   else { $rows[$geoid].counties += $cf }

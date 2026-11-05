@@ -3,7 +3,7 @@ import { NAMES, STANCE, TOPL, WHOL } from "./config.js";
 import { match } from "./entries.js";
 import { navRefresh, selectGeo, socSync } from "./nav.js";
 import { renderPanel, select } from "./panel.js";
-import { cName, engText, trMeter, trTier, TRX } from "./sentiment.js";
+import { cName, contested, effSt, engText, recText, trMeter, trTier, TRX } from "./sentiment.js";
 import { SOC, SOC_STATES, state } from "./store.js";
 import { $, esc, fmt } from "./util.js";
 
@@ -16,10 +16,10 @@ export function buildSocial(){
   $("#v-social").innerHTML=`
   <details class="soc-method"><summary>How this works and what it cannot tell you</summary><ul>
     <li><b>What it is.</b> Public posts about data centers in ${lst(Object.keys(SOC.data).map(ab=>NAMES[ab]||ab))}, ${fmt(from)} to ${fmt(to)}, from ${lst(plat.map(k=>PL[k]))}. Each shows a short excerpt and links to the original.</li>
-    <li><b>Place.</b> Assigned from the place named in the post, not from where the author lives. Posts that name no place are listed as statewide.</li>
+    <li><b>Place.</b> Assigned from the place named in the post. Posts that name no place are listed as statewide. Where an X account's public profile names where it is based, its posts also count toward that place, because a resident's view of data centers elsewhere still says something about home.</li>
     <li><b>Stance.</b> Whether the post is for or against data centers in that place, not toward AI in general. Claude read each post and assigned the label; some will be wrong, so open the post to check.</li>
     <li><b>Accounts, not people.</b> Map colors and counts give each account one vote, so a prolific poster cannot swamp a place. Fewer than 5 accounts is shown as too few to read. A trend appears only when both 60-day periods have at least 5 accounts.</li>
-    <li><b>Traction</b> is how a post compares with other posts on the same platform in this collection, among posts with any engagement: High is the top tenth, Notable the next 30%, Some the rest. Bluesky and X count likes, reposts and replies; Reddit counts comments, and Reddit threads whose comments have not been counted show as not measured. Tiers are not comparable across platforms in absolute audience. On each post the number of filled tiles is the traction and the color is the post's view: green supportive, red against, amber mixed, grey neutral.</li>
+    <li><b>Traction</b> is how a post compares with other posts on the same platform in this collection, among posts with any engagement: High is the top tenth, Notable the next 30%, Some the rest. Bluesky and X count likes, reposts and replies; Reddit counts comments and upvotes (Washington posts: comments only), and Reddit threads whose comments have not been counted show as not measured. For the busiest posts we also read the replies (X) or top comments (Reddit): where most of them disagree with a post, its meter turns grey and it is marked contested, because likes and upvotes measure reach, not agreement. Tiers are not comparable across platforms in absolute audience. On each post the number of filled tiles is the traction and the color is the post's view: green supportive, red against, amber mixed, grey neutral.</li>
     <li><b>Not a poll.</b> People who post online about this are not a sample of residents. For measured opinion, see the polls on the Elections & polls tab. News outlets, bots and headline re-posters are left out; protests, campaigns and official actions are in the first tab.</li></ul></details>
   <div class="filters soc-filters">
     <div class="q"><label for="sf-q">Search posts</label><input id="sf-q" type="search" placeholder="Place, topic, words…" autocomplete="off"></div>
@@ -82,9 +82,9 @@ export function renderSocial(){
   $("#sc").textContent=`${list.length} of ${total} posts from ${acc} ${acc===1?"account":"accounts"}`+(f.c&&f.c!=="none"&&f.j?` in ${f.ci?f.ci+", ":""}${cName(f.j,f.c)}`:"");
   if(!list.length){ul.innerHTML='<li class="empty">No posts match. Try clearing a filter or choosing a wider place.</li>';$("#soc-more").innerHTML="";return;}
   ul.innerHTML=list.slice(0,f.n).map(p=>{const t=trTier(p),where=p.c?`${cName(p.j,p.c)}${p.ci?" · "+p.ci:""}`:`${NAMES[p.j]||p.j} · no place named`;
-    return `<li class="sp"><div class="sp-top"><span class="sp-date">${fmt(p.d)}</span><span class="sp-where">${esc(where)}</span><span class="stance ${p.st}">${STANCE[p.st]}</span></div>
+    return `<li class="sp"><div class="sp-top"><span class="sp-date">${fmt(p.d)}</span><span class="sp-where">${esc(where)}${p.hci?esc(" · author based in "+p.hci):""}</span><span class="stance ${p.st}">${STANCE[p.st]}</span></div>
       <blockquote class="sp-q">“${esc(p.q)}”</blockquote>
-      <div class="sp-meta"><span>${trMeter(t,p.st)} ${TRX(t)}${p.x>0?` (${esc(engText(p))})`:""}</span><span>${esc(p.pf)} · ${WHOL[p.w]}</span>
+      <div class="sp-meta"><span>${trMeter(t,effSt(p))} ${TRX(t)}${contested(p)?" · contested":""}${p.x>0?` (${esc(engText(p))})`:""}</span>${p.rc?`<span class="rcv">${esc(recText(p))}</span>`:""}<span>${esc(p.pf)} · ${WHOL[p.w]}</span>
         <span class="tags">${(p.tp||[]).filter(k=>k!=="pause").slice(0,3).map(k=>`<span class="tag">${TOPL[k]}</span>`).join("")}</span><a href="${esc(p.u)}" target="_blank" rel="noopener">Open post</a></div></li>`;}).join("");
   $("#soc-more").innerHTML=list.length>f.n?`<button class="btn-quiet" id="soc-more-btn" type="button">Show ${Math.min(40,list.length-f.n)} more of ${list.length-f.n} left</button>`:"";
   if($("#soc-more-btn"))$("#soc-more-btn").addEventListener("click",()=>{f.n+=40;renderSocial();});

@@ -45,6 +45,34 @@ $geo = @(
 $stateWords = [ordered]@{ AR = 'Arkansas|Entergy'; KS = 'Kansas|Evergy|Holscher'; MO = 'Missouri|Ameren|\bMO\b'; AL = 'Alabama|Tuberville' }
 $geoCache = @{}
 foreach ($s in 'AR','KS','MO','AL') { $geoCache[$s] = Get-Content (Join-Path $GeoDir "$s.json") -Raw -Encoding utf8 | ConvertFrom-Json }
+
+# ---- where an account is based: parsed from the public profile location (X only), matched to geo/<ST>.json ----
+$homeStates = [ordered]@{ AL = 'Alabama'; AR = 'Arkansas'; KS = 'Kansas'; MO = 'Missouri'; WA = 'Washington' }
+$cityIdx = @{}; $countyIdx = @{}
+foreach ($s in $homeStates.Keys) {
+  $g = if ($geoCache.ContainsKey($s)) { $geoCache[$s] } else { Get-Content (Join-Path $GeoDir "$s.json") -Raw -Encoding utf8 | ConvertFrom-Json }
+  foreach ($c in $g.cities) { $cityIdx[($c.n.ToLower() + '|' + $s)] = $c }
+  foreach ($c in $g.counties) { $countyIdx[(($c.n.ToLower() + ' county') + '|' + $s)] = $c }
+}
+function ParseHome($loc) {
+  if (-not $loc) { return $null }
+  $t = ([regex]::Replace([string]$loc, '[^\x20-\x7E]+', ' ')).Trim()
+  if ($t.Length -lt 2) { return $null }
+  $st = $null; $idx = -1
+  $m = [regex]::Match($t, '(?<![A-Za-z])(AL|AR|KS|MO|WA)(?![A-Za-z])')
+  if ($m.Success) { $st = $m.Groups[1].Value; $idx = $m.Index }
+  $m2 = [regex]::Match($t, '(?i)\b(Alabama|Arkansas|Kansas|Missouri|Washington State)\b')
+  if ($m2.Success -and (-not $st -or $m2.Index -lt $idx)) { $st = @{ alabama = 'AL'; arkansas = 'AR'; kansas = 'KS'; missouri = 'MO'; 'washington state' = 'WA' }[$m2.Groups[1].Value.ToLower()]; $idx = $m2.Index }
+  if (-not $st) { return $null }
+  $before = $t.Substring(0, $idx).Trim(' ', ',', '/', '|', '-')
+  if ($before) {
+    $cand = ($before -split '[,/|]')[-1].Trim().ToLower() -replace '^(city of|the)\s+', '' -replace '^saint ', 'st. '
+    if ($cityIdx.ContainsKey("$cand|$st")) { $c = $cityIdx["$cand|$st"]; return @($st, $c.c, $c.n) }
+    if ($countyIdx.ContainsKey("$cand|$st")) { $c = $countyIdx["$cand|$st"]; return @($st, $c.id, '') }
+    if ($cityIdx.ContainsKey("$($cand -replace ' county$','')|$st") -and $cand -match ' county$') { }
+  }
+  return @($st, '', '')
+}
 $unresolved = New-Object System.Collections.Generic.List[string]
 function Locate($text, $guess) {
   # guess: '+'-separated candidate states from the cleaner
@@ -110,11 +138,14 @@ foreach ($r in (Import-Csv $sf)) {
     $hit = $geoCache[$loc[0]].cities | Where-Object { $_.n -eq $city } | Select-Object -First 1
     if ($hit) { $cty = $hit.c } else { Write-Warning "city not in geo: $($loc[0]) $city"; $city = '' }
   }
-  $posts.Add([ordered]@{
+  $np = [ordered]@{
     _st = $loc[0]; id = $src[2] + (($r.url -split '/')[-1]); p = $src[1]; d = $r.posted_at.Substring(0, 10); w = $who; st = $stc; tp = $tp
     q = $ex; c = $cty; ci = $city; u = $r.url; a = (Hash8 $r.author)
     e = @([int]$r.likes, [int]$r.reposts, [int]$r.replies); fl = ''
-  })
+  }
+  $hm = if ($src[1] -eq 'x') { ParseHome $r.location } else { $null }
+  if ($hm) { $np['hs'] = $hm[0]; if ($hm[1]) { $np['hc'] = $hm[1] }; if ($hm[2]) { $np['hci'] = $hm[2] } }
+  $posts.Add($np)
 }
 }
 $rf = Join-Path $DataDir 'reddit_labeled.csv'
@@ -135,11 +166,50 @@ if (Test-Path $rf) {
     $posts.Add([ordered]@{
       _st = $loc[0]; id = 'r' + ($r.url -replace '^.*/comments/([a-z0-9]+)/.*$', '$1'); p = 'reddit'; d = $r.posted_at.Substring(0, 10); w = 'person'; st = $stanceMap[$r.stance]; tp = $tp
       q = (Excerpt $src 14); c = $cty; ci = $city; u = $r.url; a = (Hash8 $r.author); sr = $r.subreddit
-      e = @([int]$r.comments); fl = ''
+      e = $(if ($null -ne $r.upvotes -and "$($r.upvotes)" -ne '') { @([int]$r.comments, [int]$r.upvotes) } else { @([int]$r.comments) }); fl = ''
     })
   }
 }
-$weights = @{ bsky = @(1, 2, 2); x = @(1, 2, 2); reddit = @(3) }
+$byId = @{}; foreach ($p in $posts) { $byId[$p.id] = $p }
+$rcTally = @{}
+function Tally($pid2, $stance) { if (-not $rcTally.ContainsKey($pid2)) { $rcTally[$pid2] = @(0, 0, 0) }; $i = @{ O = 0; S = 1; M = 2 }[$stance]; if ($null -ne $i) { $rcTally[$pid2][$i]++ } }
+$sf = Join-Path $DataDir 'x_replies_labeled.csv'
+if (Test-Path $sf) {
+  foreach ($r in (Import-Csv $sf)) {
+    if ($r.stance -notin 'O', 'S', 'M') { continue }
+    $pid2 = 'x' + $r.parent; $par = $byId[$pid2]; if (-not $par) { continue }
+    Tally $pid2 $r.stance
+    $hm = ParseHome $r.location
+    if (-not $hm) { continue }
+    $tx = [System.Net.WebUtility]::HtmlDecode($r.text); $ex = Excerpt $tx
+    if (($ex -split ' ').Count -lt 4) { continue }
+    $tp = @(); foreach ($k in $topics.Keys) { if ($tx -match $topics[$k]) { $tp += $k } }
+    $np = [ordered]@{ _st = $par._st; id = 'x' + $r.id; p = 'x'; d = $r.created.Substring(0, 10); w = 'person'; st = $stanceMap[$r.stance]; tp = $tp; q = $ex; c = $par.c; ci = $par.ci; u = $r.url; a = (Hash8 $r.author); e = @([int]$r.likes, [int]$r.retweets, [int]$r.replies); rp = $pid2; fl = '' }
+    if ($hm[0]) { $np['hs'] = $hm[0]; if ($hm[1]) { $np['hc'] = $hm[1] }; if ($hm[2]) { $np['hci'] = $hm[2] } }
+    $posts.Add($np)
+  }
+}
+$subState = @{ stlouis = 'MO'; missouri = 'MO'; springfieldmo = 'MO'; kansas = 'KS'; arkansas = 'AR'; littlerock = 'AR'; alabama = 'AL'; birmingham = 'AL'; tuscaloosa = 'AL'; montgomery = 'AL'; lawrence = 'KS'; topeka = 'KS'; wichita = 'KS' }
+$subHint = @{ stlouis = 'St. Louis'; springfieldmo = 'Springfield Missouri'; littlerock = 'Little Rock'; birmingham = 'Birmingham Alabama'; tuscaloosa = 'Tuscaloosa'; lawrence = 'Lawrence Kansas'; topeka = 'Topeka'; wichita = 'Wichita' }
+$sf = Join-Path $DataDir 'reddit_comments_labeled.csv'
+if (Test-Path $sf) {
+  foreach ($r in (Import-Csv $sf)) {
+    if ($r.stance -notin 'O', 'S', 'M') { continue }
+    $sub = ([string]$r.thread_sub).ToLower(); $guess = if ($subState.ContainsKey($sub)) { $subState[$sub] } else { $r.st_guess }
+    $hint = if ($subHint.ContainsKey($sub)) { $subHint[$sub] } else { '' }
+    $loc = Locate ($r.thread_title + ' ' + $hint) $guess
+    if (-not $loc) { $unresolved.Add($r.permalink); continue }
+    Tally ('r' + $r.thread) $r.stance
+    $ex = Excerpt $r.body
+    if (($ex -split ' ').Count -lt 4) { continue }
+    $tp = @(); foreach ($k in $topics.Keys) { if ($r.body -match $topics[$k]) { $tp += $k } }
+    $cty = $loc[1]; $city = $loc[2]
+    if ($city) { $hit = $geoCache[$loc[0]].cities | Where-Object { $_.n -eq $city } | Select-Object -First 1; if ($hit) { $cty = $hit.c } else { $city = '' } }
+    $posts.Add([ordered]@{ _st = $loc[0]; id = 'rc' + $r.id; p = 'reddit'; d = $r.created.Substring(0, 10); w = 'person'; st = $stanceMap[$r.stance]; tp = $tp; q = $ex; c = $cty; ci = $city; u = $r.permalink; a = (Hash8 $r.author); sr = $r.thread_sub; e = @([int]$r.replies, [int]$r.score); rp = 'r' + $r.thread; fl = '' })
+  }
+}
+foreach ($k in $rcTally.Keys) { if ($byId.ContainsKey($k)) { $byId[$k]['rc'] = @($rcTally[$k]) } }
+$weights = @{ bsky = @(1, 2, 2); x = @(1, 2, 2); reddit = @(3, 1) }
 New-Item -ItemType Directory -Force $OutDir | Out-Null
 foreach ($s in 'AR','KS','MO','AL') {
   $sp = @($posts | Where-Object { $_._st -eq $s })

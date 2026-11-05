@@ -7,13 +7,31 @@ import { E, SOC, state } from "./store.js";
 import { $, esc, fmt, key } from "./util.js";
 
 export const socHas=ab=>!!(ab&&SOC.data[ab]);
+// County and city tiles exist for any state whose geo/<ST>.json has loaded; sentiment needs social/<ST>.json too.
+export const geoHas=ab=>!!(ab&&SOC.geo[ab]);
+const geoTried={};
+export const geoPending=ab=>geoTried[ab]===1;
+export async function loadGeo(ab){if(!ab||SOC.geo[ab]||geoTried[ab]) return false;geoTried[ab]=1;try{const r=await fetch(`geo/${ab}.json`);if(!r.ok) return false;SOC.geo[ab]=await r.json();return true;}catch(e){return false;}finally{geoTried[ab]=2;}}
 export const cName=(ab,c)=>{const co=SOC.geo[ab].counties.find(x=>x.id===c);return co?(co.nm||co.n+" "+(SOC.geo[ab].suffix||"County")):"";};
 // traction compares a post with other posts on the same platform in this dataset (percentile among posts with any engagement)
 export const trTier=p=>p.x<0?-1:(p.x===0?0:(p.tr>=90?3:(p.tr>=60?2:1)));
 export const TRX=t=>t<0?"Traction not measured":TRL[t];
 export const trMeter=(t,st)=>`<span class="tr" data-st="${st||""}" role="img" aria-label="${TRX(t)}" title="${TRX(t)}">${[1,2,3].map(i=>`<i class="${t>=i?"on":""}"></i>`).join("")}</span>`;
-export const engText=p=>p.p==="bsky"||p.p==="x"?`${p.e[0]} likes · ${p.e[1]} reposts · ${p.e[2]} replies`:`${p.e[0]} comments`;
-export function socPosts(ab,c,ci){return SOC.data[ab].posts.filter(p=>(!c||p.c===c)&&(!ci||p.ci===ci));}
+export const engText=p=>p.p==="bsky"||p.p==="x"?`${p.e[0]} likes · ${p.e[1]} reposts · ${p.e[2]} replies`:(p.e.length>1?(String(p.id).startsWith("rc")?`${p.e[1]} upvotes · ${p.e[0]} replies`:`${p.e[1]} upvotes · ${p.e[0]} comments`):`${p.e[0]} comments`);
+export const platName=k=>({bsky:"Bluesky",reddit:"Reddit",x:"X"})[k]||k;
+// Reception: how the replies (X) or top comments (Reddit) we read stand toward the post. A post whose replies mostly
+// disagree with it is "contested": its traction measures reach, not agreement, so its meter is drawn grey.
+export const recN=p=>p.rc?p.rc[0]+p.rc[1]:0;
+export function contested(p){if(!p.rc||recN(p)<5) return false;return (p.st==="pro"&&p.rc[0]>p.rc[1])||(p.st==="anti"&&p.rc[1]>p.rc[0]);}
+export const effSt=p=>contested(p)?"neutral":p.st;
+export const recText=p=>p.rc?`Replies read: ${p.rc[0]} against · ${p.rc[1]} supportive${p.rc[2]?` · ${p.rc[2]} mixed`:""}`:"";
+// Posts about a place, plus posts by accounts based there (author profile location) that are about other places:
+// a resident's view of data centers elsewhere still says something about the place. Those extra posts carry home:true.
+export function socPosts(ab,c,ci){
+  const own=(SOC.data[ab]?SOC.data[ab].posts:[]).filter(p=>(!c||p.c===c)&&(!ci||p.ci===ci)),ids=new Set(own.map(p=>p.id)),extra=[];
+  Object.values(SOC.data).forEach(d=>d.posts.forEach(p=>{if(p.hs!==ab||ids.has(p.id)||(c&&p.hc!==c)||(ci&&p.hci!==ci)) return;ids.add(p.id);extra.push(Object.assign({},p,{home:true}));}));
+  return own.concat(extra);
+}
 // One vote per account (its most frequent stance; ties count as mixed); neutral posts carry no vote.
 export function voices(posts){
   const by={};
@@ -48,18 +66,19 @@ export function fillFor(v){
 }
 export const topPosts=(posts,k)=>[...posts].sort((a,b)=>b.tr-a.tr||b.x-a.x||b.d.localeCompare(a.d)).filter(p=>p.x>0).slice(0,k);
 
+const homeNote=posts=>{const n=new Set(posts.filter(p=>p.home).map(p=>p.a)).size;return n?`<div class="sent-sub">${n} of these ${n===1?"accounts is":"accounts are"} based here and posting about other places.</div>`:"";};
 export function sentBlock(ab,posts,scope){
   const v=voices(posts),tr=trendOf(ab,posts),kw=topicsOf(posts),top=topPosts(posts,3),pct=n=>v.n?Math.round(100*n/v.n):0;
   const trend=tr?`<p class="trend"><b>${Math.abs(tr.d)<15?"Holding steady":tr.d<0?"Moving more against":"Moving more supportive"}</b> over the last 60 days compared with the 60 before (${tr.pri.net>0?"+":""}${tr.pri.net} to ${tr.rec.net>0?"+":""}${tr.rec.net} on a −100 to +100 scale).</p>`
     :`<p class="trend">Not enough posts in both periods to show a trend.</p>`;
   return `<div class="sent"><h3>Public sentiment${scope?" "+esc(scope):""}</h3>
     <div class="sent-read">${readLabel(v)}</div>
-    <div class="sent-sub">${v.n} ${v.n===1?"account":"accounts"} with a stated view, from ${posts.length} ${posts.length===1?"post":"posts"}${v.n&&v.n<5?". Treat as anecdotes.":""}</div>
+    <div class="sent-sub">${v.n} ${v.n===1?"account":"accounts"} with a stated view, from ${posts.length} ${posts.length===1?"post":"posts"}${v.n&&v.n<5?". Treat as anecdotes.":""}</div>${homeNote(posts)}
     ${v.n?`<div class="vbar" role="img" aria-label="${v.anti} against, ${v.mixed} mixed, ${v.pro} supportive"><i class="a" style="width:${pct(v.anti)}%"></i><i class="m" style="width:${pct(v.mixed)}%"></i><i class="p" style="width:${pct(v.pro)}%"></i></div>
     <div class="vkey"><span><b>${v.anti}</b> against</span><span><b>${v.mixed}</b> mixed</span><span><b>${v.pro}</b> supportive</span></div>`:""}
     ${trend}
     ${kw.length?`<h3 style="margin-top:12px">What people here bring up</h3><ul class="kw">${kw.map(x=>`<li class="${x.hot?"hot":""}">${TOPL[x.k]}<small>${x.n}${x.hot?" · contested":""}</small></li>`).join("")}</ul>`:""}
-    ${top.length?`<h3 style="margin-top:12px">Most traction</h3>${top.map(p=>`<a class="toppost" href="${esc(p.u)}" target="_blank" rel="noopener"><q>${esc(p.q)}</q><small>${trMeter(trTier(p),p.st)} ${TRX(trTier(p))} · ${esc(SOC.data[ab].platforms[p.p])} · ${fmt(p.d)} · ${esc(engText(p))}</small></a>`).join("")}`:""}
+    ${top.length?`<h3 style="margin-top:12px">Most traction</h3>${top.map(p=>`<a class="toppost" href="${esc(p.u)}" target="_blank" rel="noopener"><q>${esc(p.q)}</q><small>${trMeter(trTier(p),effSt(p))} ${TRX(trTier(p))}${contested(p)?" · contested":""} · ${esc(platName(p.p))} · ${fmt(p.d)} · ${esc(engText(p))}${p.rc?" · "+esc(recText(p)):""}${p.home?" · based here":""}</small></a>`).join("")}`:""}
     <p class="caveat">Counts accounts, not people, and only those who posted publicly on the platforms collected. Labels were assigned by Claude and can be wrong.</p></div>`;
 }
 export function socStateBlock(ab){
@@ -104,11 +123,11 @@ export function renderGeoPanel(p){
     <p style="font-size:15px">${off.length?`${off.length} ${off.length===1?"entry":"entries"} logged here, listed under Official record below.`:""}</p>
     ${localBlock(inGeo,true)}
     ${climateBlock(entries)}
-    ${sentBlock(ab,posts,"")}
+    ${socHas(ab)?sentBlock(ab,posts,""):""}
     <div class="sent"><h3>Official record here <small style="font-weight:400;color:var(--ink-3)">${off.length}</small></h3>
       ${off.length?`<ul class="officials">${off.slice(0,5).map(({e,key:k})=>`<li><button type="button" data-goto="${esc(k)}" data-t="${esc(e.t)}"><span class="o-t">${esc(e.t)}</span><small>${fmt(e.d)} · ${esc(STLBL[e.st])} · ${e.k==="politics"?"Political noise":"Official action"}</small></button></li>`).join("")}</ul>${off.length>5?`<p style="font-size:14px">Plus ${off.length-5} more in the first tab.</p>`:""}`:`<p style="font-size:15px">No actions logged for ${esc(nm)} yet.</p>`}
     </div>
-    <div class="btn-row"><button type="button" class="btn-live" data-soc-posts>See all ${posts.length} posts</button><button type="button" class="btn-quiet" data-soc-up>Back to ${esc(s.ci?cn:NAMES[ab])}</button></div>`;
+    <div class="btn-row">${socHas(ab)?`<button type="button" class="btn-live" data-soc-posts>See all ${posts.length} posts</button>`:""}<button type="button" class="btn-quiet" data-soc-up>Back to ${esc(s.ci?cn:NAMES[ab])}</button></div>`;
   bindLocal(p);bindSoc(p);
 }
 export function bindSoc(p){
