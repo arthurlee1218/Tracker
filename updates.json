@@ -120,6 +120,67 @@
     "added": "2026-11-05T13:00:43.848Z"
   },
   {
+    "d": "2026-11-16",
+    "j": "NC",
+    "w": "Pitt County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "permitting"
+    ],
+    "t": "Pitt County sets Nov. 16 hearing on temporary data center moratorium",
+    "b": "Commissioners voted unanimously to schedule a public hearing on a temporary data center moratorium. The planning director cited missing standards for electrical load, noise, generator air quality and water use. Length of the pause is not yet set.",
+    "s": [
+      [
+        "WITN",
+        "https://www.witn.com/2026/10/20/pitt-county-hold-public-hearing-data-center-moratorium/"
+      ]
+    ],
+    "im": -2,
+    "iw": "A pause would block new applications while rules are written",
+    "pl": [
+      [
+        "Pitt County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:28:50.677Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "TX",
+    "w": "Lubbock City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting",
+      "permitting"
+    ],
+    "t": "Lubbock holds first hearing on 90-day large data center moratorium",
+    "b": "Lubbock's council holds the first of two required hearings on a 90-day pause on rezoning, permitting and annexation applications for large-scale data centers. The second hearing is Dec. 10. Council began the process Sept. 22.",
+    "s": [
+      [
+        "Lubbock Lights",
+        "https://lubbocklights.com/ledger-2026-11-05/"
+      ]
+    ],
+    "im": -2,
+    "iw": "Pause would halt new large data center applications in Lubbock.",
+    "pl": [
+      [
+        "Lubbock",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:28:49.577Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -176,6 +237,36 @@
     ],
     "auto": false,
     "by": "Claude research, Oct 23"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "SD",
+    "w": "Rapid City planning staff",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Rapid City staff ask to delay data center ordinance vote to Dec. 10",
+    "b": "Community Development staff will ask the Planning Commission to hold off on the data center ordinance until Dec. 10 to revise it after about 940 survey responses. Revised rules will return to the public before commission and council review.",
+    "s": [
+      [
+        "KOTA",
+        "https://www.kotatv.com/2026/11/05/rapid-city-staff-recommend-delaying-data-center-ordinance-dec-10-revisions/"
+      ]
+    ],
+    "im": 0,
+    "iw": "Rules delayed and likely tightened; timing uncertain for developers.",
+    "pl": [
+      [
+        "Rapid City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:28:48.669Z"
   },
   {
     "d": "2026-11-04",
@@ -264,6 +355,34 @@
     ],
     "auto": true,
     "added": "2026-11-05T13:00:42.723Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "TX",
+    "w": "Governor-elect Hinojosa, Gov. Abbott",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "tax",
+      "water",
+      "disclosure",
+      "cost"
+    ],
+    "t": "Hinojosa's win could extend Texas data center approval freeze into 2027 session",
+    "b": "After Hinojosa's victory, her pledge of a ban on data center approvals until lawmakers act could keep Abbott's grid and permit freezes in place. She also wants union hiring, water protection, no NDAs and an end to tax breaks. Abbott also plans to pursue ending the breaks.",
+    "s": [
+      [
+        "Texas Tribune",
+        "https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Prolonged pause and possible loss of tax breaks raise uncertainty for developers.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:28:49.386Z"
   },
   {
     "d": "2026-11-03",
@@ -1614,6 +1733,256 @@
     "added": "2026-11-05T13:00:43.239Z"
   },
   {
+    "d": "2026-11-03",
+    "j": "IL",
+    "w": "Morgan County voters",
+    "lv": "local",
+    "k": "action",
+    "st": "ballot",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Morgan County, Illinois, voters back data center restrictions in advisory vote, 88%",
+    "b": "An advisory question on data center restrictions passed 88% to 12% in Morgan County, where the board has repeatedly extended a moratorium. The result is unofficial and does not bind the county.",
+    "s": [
+      [
+        "Duane Morris Government Strategies",
+        "https://statecapitallobbyist.com/artificial-intelligence-ai/data-centers/data-centers-on-the-ballot-where-things-stand/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Strong advisory signal for limits; non-binding.",
+    "pl": [
+      [
+        "Morgan County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:28:48.517Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "PA",
+    "w": "Pennsylvania 8th District voters",
+    "lv": "federal",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "Cognetti beats Bresnahan in PA-8, a district with heavy data center proposals",
+    "b": "Democrat Paige Cognetti, who wants to end the sales tax exemption for data center developers, unseated Republican Rob Bresnahan, who had pushed a local-control bill. The AP called it election night; the district includes Archbald, a data center hotspot. Results unofficial.",
+    "s": [
+      [
+        "Spotlight PA",
+        "https://www.spotlightpa.org/news/2026/11/pennsylvania-election-results-tenth-congressional-district-paige-cognetti-rob-bresnahan-elections/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Winner backs ending the developer tax exemption; raises tax-break risk.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:28:49.156Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "PA",
+    "w": "Pennsylvania 1st District voters",
+    "lv": "federal",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Harvie, who called for a data center moratorium, ousts Fitzpatrick in PA-1",
+    "b": "Bucks County Commissioner Bob Harvie, a Democrat who campaigned for a data center moratorium, defeated five-term Republican Brian Fitzpatrick, who favored resident input on siting. Margin not given in the cited reports; results unofficial.",
+    "s": [
+      [
+        "CBS Philadelphia",
+        "https://www.cbsnews.com/philadelphia/news/fitzpatrick-harvie-pennsylvania-election-results/"
+      ],
+      [
+        "WHYY",
+        "https://whyy.org/articles/election-2026-pennsylvania-congress-winners/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Moratorium advocate wins a swing seat, adding political pressure.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:28:49.278Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "SC",
+    "w": "South Carolina voters",
+    "lv": "federal",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Annie Andrews wins South Carolina Senate seat after calling for two-year data center moratorium",
+    "b": "Democrat Annie Andrews beat Republican Darline Graham, having made local control central and urged a two-year moratorium. The report says her win does not itself halt South Carolina projects; local pauses stay in place and a statewide pause needs further action.",
+    "s": [
+      [
+        "WSOC-TV",
+        "https://www.wsoctv.com/news/local/data-center-debate-continues-south-carolina-after-andrews-victory/RMMHTFFSIBCJJCWXEIMGKWMPWI/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Senator favoring moratorium and local veto adds long-run federal headwind",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:28:49.667Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MS",
+    "w": "Jackson City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Jackson councilman moves to rescind data center moratorium; meeting erupts and recesses",
+    "b": "Councilman Kenneth Stokes introduced an ordinance to end Jackson's 183-day data center pause, arguing for the revenue. The meeting recessed after a heated clash with protesters. It was an introduction only, so no vote was taken; it is expected at a later meeting.",
+    "s": [
+      [
+        "WLBT",
+        "https://www.wlbt.com/2026/11/03/i-cut-that-b-out-council-meeting-recessed-after-it-descends-into-chaos/"
+      ]
+    ],
+    "im": 1,
+    "iw": "Move to lift the pause would reopen approvals if passed",
+    "pl": [
+      [
+        "Jackson",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:28:51.074Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "AZ",
+    "w": "Arizona voters, Corporation Commission",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost"
+    ],
+    "t": "Democrats lead Arizona Corporation Commission race, which sets utility rates, in unofficial returns",
+    "b": "Democrats Clara Pratte and Jonathon Hill led Republicans Kevin Thompson and Ralph Heap in unofficial returns, which would end all-Republican control of the utility regulator. Thompson had clashed with them over utility bills and data center growth. Counts are partial.",
+    "s": [
+      [
+        "Arizona Capitol Times",
+        "https://azcapitoltimes.com/news/2026/11/03/democrats-lead-in-corporation-commission-race/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Regulator that sets utility rates may shift toward ratepayer protection.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:28:51.536Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OR",
+    "w": "Oregon voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "permitting"
+    ],
+    "t": "Kotek wins reelection in Oregon; both finalists had backed a statewide data center pause",
+    "b": "AP called the governor's race for Democrat Tina Kotek over Christine Drazan, unofficial and partial at about 52% to 45%. Both had said they favor a data center moratorium, so her state permit pause, in place to July 2027, continues under the same governor.",
+    "s": [
+      [
+        "OPB",
+        "https://www.opb.org/article/2026/11/03/oregon-governors-race-election-results-kotek-drazan/"
+      ],
+      [
+        "OPB",
+        "https://www.opb.org/article/2026/10/13/oregon-data-centers-technology-amazon-tina-kotek/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Governor who ordered the permit pause stays in office; pause likely to continue",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:28:51.659Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "AK",
+    "w": "Alaska voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Kreiss-Tomkins, who backs a data center moratorium, leads Alaska governor's race, pending ranked-choice count",
+    "b": "Democrat Jonathan Kreiss-Tomkins had about 49% of first-choice votes to Bernadette Wilson's 29%, unofficial. Ranked-choice tallying is set for Nov. 18, and Wilson says she will overtake him. He earlier pledged a temporary ban; the Mat-Su land transfer decision is pending.",
+    "s": [
+      [
+        "Alaska Public Media",
+        "https://alaskapublic.org/news/politics/elections/2026-11-03/democrat-jonathan-kreiss-tomkins-leads-in-alaska-governors-race"
+      ],
+      [
+        "Anchorage Daily News",
+        "https://www.adn.com/alaska-news/mat-su/2026/10/26/decision-on-land-transfer-for-mat-su-industrial-park-could-come-before-new-governor-is-sworn-in/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Possible moratorium-backing governor from Dec. 7, though result not final",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:28:52.418Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "WA",
+    "w": "West Richland City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "West Richland moratorium fails 3–3, but council adopts interim data center limits",
+    "b": "Council deadlocked on a six-month moratorium, then voted 6–0 for interim rules barring data centers from light industrial zones, banning crypto mining and ending a noise exemption. Residents wanted a full pause as Amazon's plans advance.",
+    "s": [
+      [
+        "NBC Right Now",
+        "https://www.nbcrightnow.com/news/west-richland-crowd-presses-for-data-center-pause-during-tense-council-meeting/article_a169b0a3-941a-4f48-836c-27f96db0ec27.html"
+      ]
+    ],
+    "im": -1,
+    "iw": "Zoning limits narrow sites, though no pause was adopted",
+    "pl": [
+      [
+        "West Richland",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:28:52.818Z"
+  },
+  {
     "d": "2026-11-02",
     "j": "NY",
     "w": "Hamburg Town Board",
@@ -2702,6 +3071,31 @@
     ],
     "auto": true,
     "added": "2026-11-05T13:00:42.963Z"
+  },
+  {
+    "d": "2026-10-27",
+    "j": "AK",
+    "w": "Alaska DNR, AIDEA",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Alaska land transfer for Mat-Su industrial park faces lawsuit; decision may precede new governor",
+    "b": "DNR's commissioner called approval before the Dec. 7 inauguration possible but said survey, appeals and a suit by Forrer and Eastman may delay it. The roughly 20,000 acres near Houston list data centers among possible uses.",
+    "s": [
+      [
+        "Anchorage Daily News",
+        "https://www.adn.com/alaska-news/mat-su/2026/10/26/decision-on-land-transfer-for-mat-su-industrial-park-could-come-before-new-governor-is-sworn-in/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Legal and political uncertainty over land for possible data center use",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:28:52.775Z"
   },
   {
     "d": "2026-10-26",
