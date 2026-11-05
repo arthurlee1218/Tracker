@@ -4,7 +4,7 @@ name: Update Data Center Watch (Claude subscription)
 # Needs the repository secret CLAUDE_CODE_OAUTH_TOKEN, made with `claude setup-token`.
 #
 # How it works:
-#   1. "search" runs one Claude session per shard (federal/politics + five regions),
+#   1. "search" runs one Claude session per shard (federal/politics + seven regions),
 #      each with its own turn budget, and saves what it found as an artifact.
 #   2. "publish" combines every shard's finds, checks them with scripts/merge.mjs,
 #      and commits new items straight to main. Nothing waits in a pull request.
@@ -41,17 +41,29 @@ jobs:
       matrix:
         include:
           - shard: federal-politics
+            states: "US"
             focus: "the Federal and Politics beats nationwide (Congress, White House, FERC, DOE, EPA, federal courts, PJM/ERCOT/MISO/SPP, campaigns, polls, national statements, protests). Include state or local items only when they are national news."
           - shard: northeast
+            states: "CT DE DC ME MD MA NH NJ NY PA RI VT"
             focus: "State, local and tribal developments in CT, DE, DC, ME, MD, MA, NH, NJ, NY, PA, RI and VT, plus state-level politics there."
           - shard: southeast
+            states: "AL FL GA KY MS NC SC TN VA WV"
             focus: "State, local and tribal developments in AL, FL, GA, KY, MS, NC, SC, TN, VA and WV, plus state-level politics there."
           - shard: south-central
+            states: "AR LA OK TX"
             focus: "State, local and tribal developments in AR, LA, OK and TX, plus state-level politics there."
-          - shard: midwest
-            focus: "State, local and tribal developments in IL, IN, IA, KS, MI, MN, MO, NE, ND, OH, SD and WI, plus state-level politics there."
-          - shard: west
-            focus: "State, local and tribal developments in AK, AZ, CA, CO, HI, ID, MT, NV, NM, OR, UT, WA and WY, plus state-level politics there."
+          - shard: midwest-lakes
+            states: "IL IN MI MN OH WI"
+            focus: "State, local and tribal developments in IL, IN, MI, MN, OH and WI, plus state-level politics there."
+          - shard: midwest-plains
+            states: "IA KS MO NE ND SD"
+            focus: "State, local and tribal developments in IA, KS, MO, NE, ND and SD, plus state-level politics there."
+          - shard: west-pacific
+            states: "AK CA HI OR WA"
+            focus: "State, local and tribal developments in AK, CA, HI, OR and WA, plus state-level politics there."
+          - shard: west-mountain
+            states: "AZ CO ID MT NV NM UT WY"
+            focus: "State, local and tribal developments in AZ, CO, ID, MT, NV, NM, UT and WY, plus state-level politics there."
     steps:
       - uses: actions/checkout@v4
 
@@ -62,6 +74,7 @@ jobs:
       - name: Build this shard's prompt
         env:
           FOCUS: ${{ matrix.focus }}
+          STATES: ${{ matrix.states }}
         run: |
           python3 - <<'PY'
           import os, json, datetime
@@ -81,6 +94,24 @@ jobs:
                       rows.append(f'{e.get("d","")} {e.get("j","")} {e.get("t","")}')
           open(".github/prompts/.known.txt", "w").write("\n".join(sorted(set(rows), reverse=True)) + "\n")
           print(f"Window {since}..{today}, {len(rows)} known recent items")
+          # Open threads in this shard's area: tracked items whose outcome may not be logged yet
+          # (votes, ballot measures, campaigns, statements, polls, pauses, scheduled dates).
+          # Claude searches for what happened next, even when the outcome story never says "data center".
+          area = set(os.environ["STATES"].split())
+          cut = (today - datetime.timedelta(days=120)).isoformat()
+          open_st = {"pending", "ballot", "campaign", "statement", "poll", "pause"}
+          threads = []
+          for f in ("data/entries.json", "updates.json"):
+              for e in json.load(open(f)):
+                  d, j = str(e.get("d", "")), e.get("j", "")
+                  if not ((j in area) or ("US" in area and e.get("lv") == "federal")):
+                      continue
+                  if d >= cut and (e.get("st") in open_st or e.get("k") == "politics" or d > today.isoformat()):
+                      where = ", ".join(p[0] for p in (e.get("pl") or []) if p)
+                      threads.append(f'{d} {j} [{e.get("st","")}] {e.get("t","")}' + (f" ({where})" if where else ""))
+          threads = sorted(set(threads), reverse=True)[:200]
+          open(".github/prompts/.threads.txt", "w").write(("\n".join(threads) if threads else "(none)") + "\n")
+          print(f"{len(threads)} open threads for {sorted(area)}")
           PY
 
       - name: Let Claude search the web

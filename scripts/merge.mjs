@@ -12,7 +12,7 @@ const ACT_ST = ["pause", "in-force", "pending", "ballot", "failed", "denied"];
 const PT = ["county", "city", "township", "tribal"];
 const POL_ST = ["campaign", "poll", "statement", "protest"];
 const LOOKBACK_DAYS = Number(process.env.LOOKBACK_DAYS || 10);
-const MAX_CANDIDATES = 160;   // six search shards x up to 25 items each
+const MAX_CANDIDATES = 320;   // eight search shards x up to 40 items each
 
 const pad = n => String(n).padStart(2, "0");
 const iso = d => `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`;
