@@ -60,6 +60,31 @@
     "added": "2026-11-04T22:06:58.565Z"
   },
   {
+    "d": "2026-11-18",
+    "j": "LA",
+    "w": "Louisiana Public Service Commission",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting",
+      "cost"
+    ],
+    "t": "Utility regulators set Nov. 18 final vote on Meta's Hyperion data center power plan",
+    "b": "The commission is expected to take its final vote on Entergy's power plans for Meta's Richland Parish data center at its monthly meeting. The vote falls after the Nov. 3 election but before the two newly elected Republican commissioners take office.",
+    "s": [
+      [
+        "WWNO",
+        "https://www.wwno.org/politics/2026-11-03/louisiana-psc-election-results-hilferty-wins-district-1-seat-atkins-wins-in-district-5"
+      ]
+    ],
+    "im": 0,
+    "iw": "Approval would help Meta, but outcome and conditions remain uncertain.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:10.555Z"
+  },
+  {
     "d": "2026-11-17",
     "j": "VA",
     "w": "Loudoun County",
@@ -383,6 +408,62 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-05T22:28:49.386Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "KS",
+    "w": "Holscher and Masterson",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "tax",
+      "siting"
+    ],
+    "t": "Kansas governor's race stays unsettled; Holscher, who backs a data center pause, leads narrowly",
+    "b": "Unofficial counts put Democrat Holscher ahead by about 7,000 votes. She would stop approving new data centers until guardrails exist; Republican Masterson has not conceded and cites tax revenue. A recount request is due Nov. 17. Results are unofficial and incomplete.",
+    "s": [
+      [
+        "Kansas Reflector",
+        "https://kansasreflector.com/2026/11/04/kansas-governors-race-deadlocked-between-republican-ty-masterson-democrat-cindy-holscher/"
+      ]
+    ],
+    "im": -1,
+    "iw": "A pause-backing governor could slow approvals, but the count is unresolved",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:09.566Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "ME",
+    "w": "Scarborough Town Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Scarborough council unanimously bans standalone data centers in all zoning districts",
+    "b": "The council amended zoning so standalone data centers are not allowed anywhere in town, effective immediately, following a 180-day moratorium passed in June. Accessory server rooms remain permitted. Leaders cited electricity, water and noise concerns.",
+    "s": [
+      [
+        "Portland Press Herald",
+        "https://www.pressherald.com/2026/11/04/scarborough-council-votes-unanimously-to-ban-data-centers/"
+      ]
+    ],
+    "im": -2,
+    "iw": "Permanent townwide ban closes a coastal Maine market to developers.",
+    "pl": [
+      [
+        "Scarborough",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:45:09.898Z"
   },
   {
     "d": "2026-11-03",
@@ -1983,6 +2064,531 @@
     "added": "2026-11-05T22:28:52.818Z"
   },
   {
+    "d": "2026-11-03",
+    "j": "MN",
+    "w": "Pine Island, Hermantown, Monticello voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "Data center opponents win Pine Island and Hermantown races; Monticello mayor survives narrowly",
+    "b": "Pine Island elected a first-time mayor who opposed Google's project by about two-thirds. Hermantown seated two anti-project newcomers, ousting an incumbent who approved it. Monticello's mayor won by about 40 votes; an incumbent was beaten by a skeptic. Results are unofficial.",
+    "s": [
+      [
+        "MPR News",
+        "https://www.mprnews.org/story/2026/11/04/data-centers-potent-political-issue-in-midterms"
+      ]
+    ],
+    "im": -1,
+    "iw": "Local officials now more hostile to projects still seeking approval or review",
+    "pl": [
+      [
+        "Pine Island",
+        "city"
+      ],
+      [
+        "Hermantown",
+        "city"
+      ],
+      [
+        "Monticello",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:45:07.931Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "WI",
+    "w": "Wisconsin voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax",
+      "moratorium"
+    ],
+    "t": "Democrats flip Wisconsin Senate and Assembly, joining governor-elect Crowley in a trifecta",
+    "b": "Unofficial AP counts give Democrats 18 of 33 Senate seats and 53 of 99 Assembly seats. With Crowley, who backs a data center pause and tax-break repeal, they could pass such bills. The cited report does not mention data centers.",
+    "s": [
+      [
+        "WPR",
+        "https://www.wpr.org/news/wisconsin-assembly-senate-election-results-2026"
+      ]
+    ],
+    "im": -1,
+    "iw": "Single-party control makes repeal of tax breaks and a pause likelier",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:08.688Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MN",
+    "w": "Minnesota voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "DFL wins both Minnesota legislative chambers in unofficial results",
+    "b": "AP called at least 37 of 67 Senate seats and 77 House seats for the DFL, ending a tied House. Two Senate races face recounts. The cited report does not mention data centers; the result bears on 2027 data center bills.",
+    "s": [
+      [
+        "CBS Minnesota",
+        "https://www.cbsnews.com/minnesota/news/minnesota-legislature-balance-of-power-2026-house-senate-control/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Unified DFL control eases passage of data center limits and tax changes",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:08.877Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OH",
+    "w": "Ohio voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax",
+      "moratorium"
+    ],
+    "t": "Ohio Republicans lose House supermajority as Democrats gain seats; Senate supermajority holds",
+    "b": "Unofficial results show 52 Republicans and 42 Democrats in the House with five races open, below the 60 needed to override vetoes. Republicans keep a Senate supermajority. Governor-elect Acton backs a conditional data center moratorium; the report does not mention data centers.",
+    "s": [
+      [
+        "Ohio Capital Journal",
+        "https://ohiocapitaljournal.com/2026/11/04/ohio-democrats-break-republican-supermajority-in-the-ohio-house/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Acton's conditional pause can no longer be overridden by House Republicans alone",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:08.907Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MI",
+    "w": "Michigan voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost",
+      "moratorium"
+    ],
+    "t": "Democrats win Michigan trifecta; AG-elect Savit vows to keep challenging utility data center contracts",
+    "b": "Benson won governor and Democrats hold both legislative chambers. Attorney General-elect Savit said he will continue Nessel's ratepayer interventions, including DTE's Saline and Van Buren data center contracts. Seat counts were not given; results are unofficial.",
+    "s": [
+      [
+        "Planet Detroit",
+        "https://planetdetroit.org/2026/11/election-2026-michigan-data-centers-dte/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Continued state scrutiny of utility contracts and friendlier ground for limits",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:09.010Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "IA",
+    "w": "Iowa voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax",
+      "cost",
+      "disclosure"
+    ],
+    "t": "Rob Sand wins Iowa governor's race after pledging to end data center tax breaks",
+    "b": "Unofficial results show Democrat Sand winning with over 55%. He proposed ending state tax breaks for large data centers and has said they should not raise utility bills. Republicans keep both legislative chambers, so any change needs GOP votes.",
+    "s": [
+      [
+        "Iowa Public Radio",
+        "https://www.iowapublicradio.org/political-news/2026-11-03/2026-iowa-governor-election-results"
+      ]
+    ],
+    "im": -1,
+    "iw": "Incentive repeal pledge faces a GOP legislature; uncertainty over future tax breaks",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:09.195Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "ME",
+    "w": "Peru, Wiscasset, Wells voters",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Peru, Wiscasset and Wells voters approve data center moratoriums by wide margins",
+    "b": "Election-week local ballots passed temporary pauses: Peru 578–182 (180 days), Wiscasset 1,363–713 (six months), Wells 5,818–1,282 (180 days, facilities of 100,000 sq ft or more). A proposed North Berwick ban over 25,000 sq ft failed, 738–1,698.",
+    "s": [
+      [
+        "Maine Morning Star (via Yahoo News)",
+        "https://www.yahoo.com/news/articles/several-maine-towns-approve-data-210823454.html"
+      ]
+    ],
+    "im": -2,
+    "iw": "Three more Maine towns pause new data center applications for months.",
+    "pl": [
+      [
+        "Peru",
+        "township"
+      ],
+      [
+        "Wiscasset",
+        "township"
+      ],
+      [
+        "Wells",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:45:09.678Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "CT",
+    "w": "Connecticut voters, legislature",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "tax"
+    ],
+    "t": "Connecticut Democrats win record legislative majorities, veto-proof in both chambers",
+    "b": "Unofficial results: Democrats may hold 33 of 36 Senate seats and 116 House seats, clearing two-thirds in both chambers. Lamont won a third term. This bears on a statewide data center moratorium and tax-break repeal, both pressed by Democrats; recounts pending.",
+    "s": [
+      [
+        "WTNH",
+        "https://www.wtnh.com/news/elections/connecticut-democrats-win-historic-state-senate-majority/"
+      ],
+      [
+        "NBC Connecticut",
+        "https://www.nbcconnecticut.com/news/local/democrats-see-historic-wins-in-connecticut-state-legislature/3792682/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Veto-proof majorities make a statewide pause or tax-break repeal more passable.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:10.016Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NH",
+    "w": "New Hampshire voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "New Hampshire Democrats surge in legislature as Ayotte wins second term",
+    "b": "Unofficial: Democrats lead the House 292–107 and claim a supermajority, AP forecasts a 15–9 Senate, and they retook the Executive Council. Ayotte won, and both she and Democrats back a data center moratorium, though House Democrats want 24 months and she plans a budget one.",
+    "s": [
+      [
+        "New Hampshire Public Radio",
+        "https://www.nhpr.org/nh-news/2026-11-04/democrats-sweep-nh-newhampshire-state-house-executive-council-majorities-legislature-election"
+      ]
+    ],
+    "im": -1,
+    "iw": "Legislature leaning toward a longer statewide pause than the governor's plan.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:10.369Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OK",
+    "w": "Oklahoma voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Mazzei wins Oklahoma governor's race over Munson, who promised a data center moratorium",
+    "b": "Republican Mike Mazzei won with Democrat Cyndi Munson near 46%. Mazzei backs data centers with local approval, self-supplied power and closed-loop cooling; Munson pledged a day-one moratorium. Democrats gained House seats but Republicans keep a supermajority. Results are unofficial.",
+    "s": [
+      [
+        "Oklahoma Watch",
+        "https://oklahomawatch.org/2026/11/03/republicans-sweep-oklahomas-statewide-offices-democrats-find-a-silver-lining-in-the-legislature/"
+      ],
+      [
+        "News 9",
+        "https://www.news9.com/oklahoma-elections/oklahoma-data-center-mike-mazzei-cyndi-munson"
+      ]
+    ],
+    "im": 1,
+    "iw": "Statewide moratorium avoided; Mazzei's conditions still add some requirements.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:10.657Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NC",
+    "w": "North Carolina voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "cost"
+    ],
+    "t": "Democrats win NC House, Republicans lose Senate veto-proof majority in unofficial results",
+    "b": "Unofficial returns show Democrats flipping at least 16 House seats and gaining four in the Senate, ending Republican veto-proof power. Statewide data center pause or cost bills now face a divided legislature. Counts are unofficial; recounts pending.",
+    "s": [
+      [
+        "WUNC",
+        "https://www.wunc.org/politics/2026-11-03/democrats-take-majority-nc-house"
+      ]
+    ],
+    "im": -1,
+    "iw": "Divided legislature raises odds of state data center cost and siting rules.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:11.228Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "GA",
+    "w": "Georgia voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "tax",
+      "cost"
+    ],
+    "t": "Democrats flip Georgia House while Republicans narrowly hold Senate 29-27",
+    "b": "Unofficial returns give Democrats 91 of 180 House seats, their first majority in 22 years; Republicans keep the Senate. Pause and tax-break repeal bills filed for 2027 now have a friendlier House. Some races remain within recount margins.",
+    "s": [
+      [
+        "Atlanta News First",
+        "https://www.atlantanewsfirst.com/2026/11/04/georgia-democrats-flip-state-house-republicans-hold-senate-majority/"
+      ]
+    ],
+    "im": -1,
+    "iw": "House flip improves chances for pause and incentive-repeal bills.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:11.690Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "WV",
+    "w": "Mason County voters",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "tax"
+    ],
+    "t": "Mason County voters renew school levy tied to data center tax windfall",
+    "b": "Voters passed the school excess levy renewal 3,479 to 3,107 in unofficial returns. Under state law, the levy lets schools keep an estimated $90 million a year from two data centers planned in the county, per the state treasurer.",
+    "s": [
+      [
+        "WSAZ",
+        "https://www.wsaz.com/2026/11/04/voters-approve-mason-county-board-education-levy/"
+      ]
+    ],
+    "im": 1,
+    "iw": "Levy passage preserves local tax payoff that supports hosting projects.",
+    "pl": [
+      [
+        "Mason County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:45:11.824Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "UT",
+    "w": "Box Elder County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "Box Elder County gets two new commissioners after Stratos data center backlash",
+    "b": "Commissioners Lee Perry and Boyd Bingham, who voted to let MIDA create the Stratos project area, lost June primaries. Republican Vance Smith led anti-Stratos independent Alan Williams about 62% to 38% in unofficial returns; Nathan Tueller ran unopposed.",
+    "s": [
+      [
+        "Utah Public Radio",
+        "https://www.upr.org/utah-news/2026-11-05/stratos-data-center-box-elder-county-commission-election"
+      ]
+    ],
+    "im": -1,
+    "iw": "Commission that approved Stratos area is replaced; local resistance may grow.",
+    "pl": [
+      [
+        "Box Elder County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:45:12.142Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "CO",
+    "w": "Colorado voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost",
+      "tax",
+      "siting"
+    ],
+    "t": "Weiser wins Colorado governor race, names data centers his first legislative priority",
+    "b": "Attorney General Phil Weiser led Victor Marx about 61% to 33% in unofficial returns. He says data centers should pay for their own power and not be forced on communities, but he is open to incentives in just transition areas.",
+    "s": [
+      [
+        "Colorado Sun",
+        "https://coloradosun.com/2026/11/03/colorado-governor-election-results/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Governor-elect wants own-power rule but stays open to incentives.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:12.591Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "CO",
+    "w": "Colorado voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting",
+      "cost"
+    ],
+    "t": "Colorado Democrats win legislative supermajorities as data center bills return in 2027",
+    "b": "Democrats flipped seven seats and appear to hold two-thirds margins in both chambers, with some races still leads. Both 2026 data center bills died in committee; Sen. Cathy Kipp has filed a new bill and expects more in 2027. Results are unofficial.",
+    "s": [
+      [
+        "Colorado Politics",
+        "https://www.coloradopolitics.com/2026/11/04/7-colorado-legislative-seats-flipped-as-democrats-gain-supermajority/"
+      ],
+      [
+        "Colorado Politics",
+        "https://www.coloradopolitics.com/2026/10/30/autonomous-mind-data-center-fight-heads-back-to-colorado-capitol/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Larger Democratic majorities raise odds of data center rules passing in 2027.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:12.647Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NV",
+    "w": "Nevada voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "Aaron Ford defeats Gov. Lombardo, who had courted data center developers",
+    "b": "The AP projected Democrat Ford the winner. Ford has pledged to pause data center tax breaks and let communities say no, and he attacked Lombardo over a state-federal deal easing approval of data centers on public land. Results are unofficial.",
+    "s": [
+      [
+        "Fox 5 Las Vegas",
+        "https://www.fox5vegas.com/2026/11/04/nevada-election-results-democrats-take-early-lead-key-statewide-races/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Incoming governor favors pausing tax breaks and stricter siting.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:12.733Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NM",
+    "w": "New Mexico voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Haaland elected New Mexico governor after pledging a data center moratorium",
+    "b": "Democrat Deb Haaland won with roughly 57% in unofficial results over Republican Gregg Hull, who opposed a pause. She names a moratorium on large data centers, paired with legislative guardrails, as a day-one priority. Mechanism was not specified.",
+    "s": [
+      [
+        "Yahoo News (Source NM)",
+        "https://www.yahoo.com/news/politics/articles/mexico-governor-elect-makes-first-030225840.html"
+      ]
+    ],
+    "im": -2,
+    "iw": "Governor-elect backs a pause on large data centers.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:13.106Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OR",
+    "w": "Oregon voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Oregon Democrats on track to widen legislative supermajorities before a data center pause bill",
+    "b": "Unofficial returns show Democrats winning about 39 of 60 House and 19 of 30 Senate seats, keeping three-fifths margins. Democratic lawmakers plan a three-year moratorium bill on large data centers for the 2027 session. Counts are early and could shift.",
+    "s": [
+      [
+        "OPB",
+        "https://www.opb.org/article/2026/11/03/oregon-democrats-appear-on-track-to-expand-supermajority/"
+      ],
+      [
+        "Oregon Capital Chronicle",
+        "https://oregoncapitalchronicle.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Larger majorities ease passage of a planned three-year pause bill.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-05T22:45:13.351Z"
+  },
+  {
     "d": "2026-11-02",
     "j": "NY",
     "w": "Hamburg Town Board",
@@ -2679,6 +3285,35 @@
     ],
     "auto": true,
     "added": "2026-11-05T00:55:20.459Z"
+  },
+  {
+    "d": "2026-10-28",
+    "j": "WY",
+    "w": "Prometheus Hyperscale",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting"
+    ],
+    "t": "Prometheus drops $500 million Natrona County data center campus before filing a permit",
+    "b": "Prometheus Hyperscale abandoned its 1.5-gigawatt plan at Falls Ranch east of Casper without explanation. Commissioners say neighborhood opposition likely played a part; Advance Casper cited grid and utility capacity limits. The county had taken no vote.",
+    "s": [
+      [
+        "Cap City News",
+        "https://capcity.news/latest-news/2026/10/28/prometheus-hyperscale-drops-plans-for-500m-data-center-campus-in-natrona-county/"
+      ]
+    ],
+    "im": -1,
+    "iw": "A planned campus is cancelled amid local opposition and grid limits.",
+    "pl": [
+      [
+        "Natrona County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-05T22:45:13.323Z"
   },
   {
     "d": "2026-10-27",
