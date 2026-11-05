@@ -37,6 +37,9 @@ own Claude account, on their own branches. Read this before changing anything.
 | `scripts/update.mjs` | Alternative updater that uses the paid API (manual only) |
 | `.github/workflows/update.yml` | Daily job: Claude Code searches the web on the owner's plan |
 | `.github/prompts/find-updates.md` | Instructions the daily job follows |
+| `.github/workflows/update-projects.yml` | Daily job that refreshes existing rows of `data/projects.json` (same Claude plan token) |
+| `.github/prompts/refresh-projects.md` | Instructions the projects job follows |
+| `scripts/merge-projects.mjs` | Checks what the projects job found and applies it to `data/projects.json` |
 | `CONTRIBUTING.md` | Human guide for the team |
 
 ## Data model (don't break these)
@@ -85,10 +88,15 @@ panel's ban and pause tallies, "climate for developers" score, places list and "
 national picture numbers, the map colors (via `derive.js`), the header date, and the "latest campaign,
 poll and protest entries" feed on the Elections & polls tab.
 
-Hand-curated and not touched by the job: the state summary paragraphs and `_asof` (`data/states.json`),
+Hand-curated and not touched by the daily job: the state summary paragraphs and `_asof` (`data/states.json`),
 the Elections & polls content (`data/election.json`: effects, governors, ballot measures, polls, framing,
-dates ahead, gaps), the Data center projects tab (`data/projects.json`) and `data/trackers.json`. After a
-big news cycle, review these and bump `_asof`.
+dates ahead, gaps) and `data/trackers.json`. After a big news cycle, review these and bump `_asof`.
+
+The Data center projects tab (`data/projects.json`) has its own daily job, `update-projects.yml`. It updates the
+status, date, note and sources of projects already listed (`scripts/merge-projects.mjs` rejects anything without a
+newer date, an allowed status and a working non-tracker source) and never adds projects, so add new ones by hand.
+The allowed statuses are validated in `merge-projects.mjs`, `js/projects.js` (`projectStatusLabels`) and
+`.github/prompts/refresh-projects.md`; the tracker blocklist is shared with `scripts/merge.mjs`. Keep them in sync.
 - The allowed values above are validated in three places that must stay in sync:
   `clean()` in `js/entries.js`, `shape()` in `scripts/merge.mjs`, and `clean()` in
   `scripts/update.mjs` (including the place types in `PTL` / `PT`). If you add a status, topic or field, update all three, the
