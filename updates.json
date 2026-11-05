@@ -1,5 +1,97 @@
 [
   {
+    "d": "2026-03-20",
+    "j": "MO",
+    "w": "Hannibal Board of Public Works",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Hannibal utility board seeks large-load power customers for city-owned tech park",
+    "b": "Hannibal's Board of Public Works, for the city, issued an RFP offering up to 100 MW of retail power at Lakeside Technology Park, naming data centers as one target use. Proposals were due May 15. No public report says whether any were received.",
+    "s": [
+      [
+        "Hannibal Regional Economic Development Council",
+        "https://hredc.com/news/now-open-100-mw-power-opportunity-in-the-hannibal-region/"
+      ],
+      [
+        "Hannibal Board of Public Works (RFP document)",
+        "https://hredc.com/wp-content/uploads/2026/04/Final-RFP_100-MW_Hannibal-MO-complete.pdf"
+      ],
+      [
+        "Hannibal Board of Public Works (April 20 minutes)",
+        "https://www.hannibalbpw.org/wp-content/uploads/2026/06/Minutes-April-20-2026.pdf"
+      ]
+    ],
+    "im": 1,
+    "iw": "City-owned site with power and fiber offered to developers; outcome unknown.",
+    "pl": [
+      [
+        "Hannibal",
+        "city"
+      ]
+    ],
+    "auto": false,
+    "by": "Claude research, Nov 5"
+  },
+  {
+    "d": "2026-08-20",
+    "j": "MO",
+    "w": "Ralls County Electric Co-op CEO",
+    "lv": "local",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting"
+    ],
+    "t": "Ralls County electric co-op says it can serve only data centers under 30 MW",
+    "b": "At a county information meeting, co-op manager Lynn Hodges said developers had made preliminary contact but no power or membership request existed. He said the co-op cannot serve large data centers, only small ones under 30 megawatts.",
+    "s": [
+      [
+        "WGEM",
+        "https://www.wgem.com/2026/08/20/ralls-county-commissioners-hold-public-discussion-about-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Local power supplier limits project size in Ralls County.",
+    "pl": [
+      [
+        "Ralls County",
+        "county"
+      ]
+    ],
+    "auto": false,
+    "by": "Claude research, Nov 5"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MO",
+    "w": "Missouri voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [],
+    "t": "Missouri Democrats end House Republican supermajority, 95-68 in preliminary count",
+    "b": "Democrats gained 16 House seats and flipped two Senate seats, so Republicans cannot override Gov. Kehoe's vetoes alone. Amendment 6 passed with about 60 percent, raising the bar to change voter-approved laws. Coverage opened does not mention data centers. Results unofficial.",
+    "s": [
+      [
+        "KRCG",
+        "https://krcgtv.com/news/local/missouri-republicans-suffer-biggest-electoral-setback-in-a-generation"
+      ],
+      [
+        "KY3",
+        "https://www.ky3.com/2026/11/04/missouri-democrats-break-republican-supermajority-with-largest-house-gain-since-1974/"
+      ]
+    ],
+    "im": 0,
+    "iw": "No stated data center link; more bipartisan bargaining on 2027 bills likely.",
+    "pl": [],
+    "auto": false,
+    "by": "Claude research, Nov 5"
+  },
+  {
     "d": "2026-11-03",
     "j": "KS",
     "w": "Seward County voters",
@@ -18110,8 +18202,8 @@
       "siting",
       "disclosure"
     ],
-    "t": "Hannibal says no data center chosen, plans request for proposals",
-    "b": "After weeks of social media rumors, the city said it has had several unsolicited inquiries from companies wanting to build a data center and will issue a request for proposals rather than negotiate with one. No company has been selected and no proposal has gone to council.",
+    "t": "Hannibal says no data center chosen, favors request-for-proposals route",
+    "b": "After weeks of social media rumors, the city said it has had several unsolicited inquiries from companies wanting to build a data center and favors a request-for-proposals process over negotiating with one. The utility board had already issued a large-load power RFP for Lakeside Technology Park on March 20; the coverage does not say whether the statement meant it. No company was selected and nothing had gone to council.",
     "s": [
       [
         "Hannibal Courier-Post",
