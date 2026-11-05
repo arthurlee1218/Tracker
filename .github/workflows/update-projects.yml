@@ -1,0 +1,143 @@
+name: Refresh data center projects (Claude subscription)
+
+# Keeps the "Data center projects" tab (data/projects.json) current. Runs Claude Code on your Claude plan.
+# Uses the same repository secret as update.yml: CLAUDE_CODE_OAUTH_TOKEN.
+#
+# How it works:
+#   1. "search" runs one Claude session per group of states. Each reads that group's open projects
+#      (oldest milestone first), searches for anything newer, and saves what changed as an artifact.
+#   2. "publish" combines the finds, checks them with scripts/merge-projects.mjs (existing project,
+#      newer date, allowed status, a source link that loads and isn't another tracker) and commits
+#      the changed rows straight to main.
+# It only updates projects already in the file. New projects are still added by hand.
+
+on:
+  schedule:
+    - cron: "30 6 * * *"       # daily at 06:30 UTC, away from update.yml (00:00 and 12:00)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: data-center-watch-projects
+  cancel-in-progress: false
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 2          # keeps simultaneous sessions within plan rate limits
+      matrix:
+        include:
+          - shard: west-south
+            states: "AK AL AR AZ CA CO CT DC DE FL GA HI IA ID"
+            focus: "projects in AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA and ID."
+          - shard: central
+            states: "IL IN KS KY LA MA MD ME MI MN"
+            focus: "projects in IL, IN, KS, KY, LA, MA, MD, ME, MI and MN."
+          - shard: plains-east
+            states: "MO MS MT NC ND NE NH NJ NM"
+            focus: "projects in MO, MS, MT, NC, ND, NE, NH, NJ and NM."
+          - shard: north-west
+            states: "NV NY OH OK OR PA RI SC SD TN TX UT VA VT WA WI WV WY"
+            focus: "projects in NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV and WY."
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build this shard's prompt and project list
+        env:
+          FOCUS: ${{ matrix.focus }}
+          STATES: ${{ matrix.states }}
+        run: |
+          python3 - <<'PY'
+          import os, json, datetime
+          today = datetime.datetime.now(datetime.timezone.utc).date()
+          p = open(".github/prompts/refresh-projects.md").read()
+          p = p.replace("{{TODAY}}", today.isoformat()).replace("{{FOCUS}}", os.environ["FOCUS"])
+          open(".github/prompts/.run.md", "w").write(p)
+          states = set(os.environ["STATES"].split())
+          done = {"denied", "withdrawn", "cancelled", "operating"}
+          rows = [r for r in json.load(open("data/projects.json"))
+                  if r.get("j") in states and r.get("status") not in done]
+          rows.sort(key=lambda r: str(r.get("d", "")))      # stalest first
+          rows = rows[:45]                                   # fits one session's turn budget
+          keys = ("n", "j", "place", "developer", "status", "d", "note", "u")
+          with open(".github/prompts/.projects.jsonl", "w") as f:
+              for r in rows:
+                  f.write(json.dumps({k: r.get(k) for k in keys}, ensure_ascii=False) + "\n")
+          print(f"{len(rows)} projects to check")
+          PY
+
+      - name: Let Claude search the web
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: "Follow the instructions in .github/prompts/.run.md exactly."
+          claude_args: >-
+            --allowedTools "WebSearch,WebFetch,Read,Write"
+            --max-turns 100
+
+      - name: Save this shard's finds
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-candidates-${{ matrix.shard }}
+          path: project-candidates.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+  publish:
+    needs: search
+    if: always()               # publish whatever the shards that succeeded found
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Download every shard's finds
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: project-candidates-*
+          path: cands
+
+      - name: Combine shards
+        run: |
+          shopt -s nullglob
+          files=(cands/*/project-candidates.json)
+          echo "Shard files found: ${#files[@]}"
+          : > all.jsonl
+          for f in "${files[@]}"; do
+            sed -e 's/```json//g' -e 's/```//g' "$f" | jq -c 'if type == "array" then . else [] end' >> all.jsonl \
+              || echo "Skipping $f: not valid JSON"
+          done
+          if [ -s all.jsonl ]; then jq -s 'add' all.jsonl > project-candidates.json; else echo "[]" > project-candidates.json; fi
+          rm -f all.jsonl
+          echo "Combined candidates: $(jq length project-candidates.json)"
+
+      - name: Check and apply what Claude found
+        run: |
+          node scripts/merge-projects.mjs
+          cat project-update-summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish to main
+        run: |
+          if git diff --quiet data/projects.json; then echo "No changes"; exit 0; fi
+          git config user.name "data-center-watch-bot"
+          git config user.email "data-center-watch-bot@users.noreply.github.com"
+          git add data/projects.json
+          git commit -m "Data Center Watch: project updates" -m "$(cat project-update-summary.md)"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          echo "Push failed after 3 tries"; exit 1
