@@ -1,0 +1,186 @@
+name: Research one place (deep research or analysis)
+
+# Started by the "Deep research" and "Analysis" buttons on the site (through api/research.js), or by hand from
+# the Actions tab. Runs Claude Code on your Claude plan, for one state, county or city only.
+#   mode "deep":     searches that place in depth and adds new entries to updates.json (checked by scripts/merge.mjs)
+#   mode "analysis": writes a siting brief to reports/<id>.md and lists it in reports/index.json
+# Needs the same repository secret as the daily job: CLAUDE_CODE_OAUTH_TOKEN.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "deep = find new entries, analysis = write a brief"
+        required: true
+        default: deep
+        type: choice
+        options: [deep, analysis]
+      state:
+        description: "Two-letter state code, e.g. KS"
+        required: true
+      county:
+        description: "County name with its suffix, e.g. Seward County (leave empty for a state or a city only)"
+        default: ""
+      city:
+        description: "City name, e.g. Liberal (leave empty for a state or county)"
+        default: ""
+      lookback_days:
+        description: "Deep research only: how far back to search"
+        default: "365"
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: research-${{ inputs.mode }}-${{ inputs.state }}-${{ inputs.county }}-${{ inputs.city }}
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build the prompt for this place
+        env:
+          MODE: ${{ inputs.mode }}
+          STATE: ${{ inputs.state }}
+          COUNTY: ${{ inputs.county }}
+          CITY: ${{ inputs.city }}
+          LOOKBACK: ${{ inputs.lookback_days }}
+        run: |
+          python3 - <<'PY'
+          import os, re, json, datetime, sys
+          mode, state = os.environ["MODE"], os.environ["STATE"].upper()
+          county, city = os.environ["COUNTY"].strip(), os.environ["CITY"].strip()
+          name = re.compile(r"^[A-Za-z0-9 .'’\-&]{1,60}$")
+          if not re.fullmatch(r"[A-Z]{2}", state) or (county and not name.match(county)) or (city and not name.match(city)):
+              sys.exit("Bad place input")
+          lookback = int(os.environ.get("LOOKBACK") or 365) if mode == "deep" else 365
+          today = datetime.datetime.now(datetime.timezone.utc).date()
+          since = today - datetime.timedelta(days=lookback)
+          place = ", ".join(x for x in (city, county, state) if x)
+          scope = "city" if city else ("county" if county else "state")
+
+          def base(n):
+              return re.sub(r"\s+(county|parish|borough|census area|municipality)$", "", n.strip(), flags=re.I).lower()
+
+          rows = []
+          for f in ("data/entries.json", "updates.json"):
+              for e in json.load(open(f)):
+                  if e.get("j") != state:
+                      continue
+                  names = [str(p[0]).lower() for p in (e.get("pl") or []) if p]
+                  text = (e.get("t", "") + " " + e.get("b", "")).lower()
+                  if city:
+                      hit = city.lower() in names or re.search(r"\b" + re.escape(city.lower()) + r"\b", text)
+                  elif county:
+                      hit = base(county) in [base(n) for n in names] or (base(county) + " county") in text
+                  else:
+                      hit = True
+                  if hit:
+                      rows.append(e)
+          rows.sort(key=lambda e: str(e.get("d", "")), reverse=True)
+          limit = 400 if scope == "state" else 120
+          rows = rows[:limit]
+
+          # What the tracker already has, so Claude skips it (deep) or builds on it (analysis).
+          with open(".github/prompts/.known.txt", "w") as k:
+              k.write("\n".join(f'{e.get("d","")} {e.get("j","")} {e.get("t","")}' for e in rows) + "\n")
+
+          rec = [f"PLACE: {place} ({scope})", f"Tracker record as of {today}: {len(rows)} entries"
+                 + (" (newest 400 shown)" if scope == "state" and len(rows) == 400 else "") + ".", ""]
+          try:
+              st = json.load(open("data/states.json"))
+              if state in st:
+                  rec += [f"State summary (reviewed {st.get('_asof','?')}): {st[state].get('t','')}", ""]
+          except Exception:
+              pass
+          for e in rows:
+              src = "; ".join(f"{s[0]} {s[1]}" for s in (e.get("s") or [])[:2])
+              pl = ", ".join(str(p[0]) for p in (e.get("pl") or []) if p)
+              rec.append(f'- {e.get("d","")} [{e.get("lv","")}/{e.get("st","")}] {e.get("t","")}' + (f" ({pl})" if pl else "")
+                         + f' :: {e.get("b","")} :: {src}')
+          # Public sentiment, where the tracker has collected it for this state
+          try:
+              soc = json.load(open(f"social/{state}.json"))
+              geo = json.load(open(f"geo/{state}.json"))
+              posts = soc.get("posts", [])
+              if county:
+                  cid = next((c["id"] for c in geo["counties"] if base(c.get("nm") or c["n"]) == base(county) or base(c["n"]) == base(county)), None)
+                  posts = [p for p in posts if p.get("c") == cid] if cid else []
+              if city:
+                  posts = [p for p in posts if p.get("ci", "").lower() == city.lower()]
+              by = {}
+              for p in posts:
+                  by[p.get("st", "?")] = by.get(p.get("st", "?"), 0) + 1
+              topics = {}
+              for p in posts:
+                  for t in p.get("tp", []):
+                      topics[t] = topics.get(t, 0) + 1
+              top = ", ".join(f"{t} {n}" for t, n in sorted(topics.items(), key=lambda x: -x[1])[:6])
+              rec += ["", f"PUBLIC SENTIMENT ({soc.get('from','?')} to {soc.get('to','?')}; Bluesky, Reddit, X and meeting-minute comments; people who post, not residents): "
+                      + (f"{len(posts)} posts; stance counts {by}; top topics {top or 'none'}." if posts else "no posts collected for this place.")
+                      + (" The tracker does not cover Facebook here." if "fb" not in soc.get("counts", {}) else "")]
+          except Exception:
+              rec += ["", "PUBLIC SENTIMENT: the tracker has not collected social posts for this state."]
+          open(".github/prompts/.record.txt", "w").write("\n".join(rec) + "\n")
+
+          tpl = ".github/prompts/deep-research.md" if mode == "deep" else ".github/prompts/place-analysis.md"
+          p = open(tpl).read()
+          for a, b in (("{{TODAY}}", today.isoformat()), ("{{SINCE}}", since.isoformat()), ("{{PLACE}}", place),
+                       ("{{STATE}}", state), ("{{COUNTY}}", county or "none"), ("{{CITY}}", city or "none"), ("{{SCOPE}}", scope)):
+              p = p.replace(a, b)
+          open(".github/prompts/.run.md", "w").write(p)
+          print(f"{mode} for {place}: {len(rows)} tracker entries, window {since}..{today}")
+          PY
+
+      - name: Let Claude research this place
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: "Follow the instructions in .github/prompts/.run.md exactly."
+          claude_args: >-
+            --allowedTools "WebSearch,WebFetch,Read,Write"
+            --max-turns ${{ inputs.mode == 'analysis' && '150' || '120' }}
+
+      - name: Check and merge new entries
+        if: inputs.mode == 'deep'
+        env:
+          LOOKBACK_DAYS: ${{ inputs.lookback_days }}
+          ONLY_STATE: ${{ inputs.state }}
+          ENTRY_BY: "Deep research: ${{ inputs.city }} ${{ inputs.county }} ${{ inputs.state }}"
+        run: |
+          node scripts/merge.mjs
+          cat update-summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Save the report
+        if: inputs.mode == 'analysis'
+        env:
+          STATE: ${{ inputs.state }}
+          COUNTY: ${{ inputs.county }}
+          CITY: ${{ inputs.city }}
+        run: node scripts/save-report.mjs
+
+      - name: Publish to main
+        env:
+          MODE: ${{ inputs.mode }}
+          PLACE: ${{ inputs.city }} ${{ inputs.county }} ${{ inputs.state }}
+        run: |
+          git add updates.json reports
+          if git diff --cached --quiet; then echo "Nothing to publish"; exit 0; fi
+          git config user.name "data-center-watch-bot"
+          git config user.email "data-center-watch-bot@users.noreply.github.com"
+          git commit -m "Data Center Watch: $MODE for $PLACE"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          echo "Push failed after 3 tries"; exit 1

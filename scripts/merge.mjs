@@ -13,6 +13,8 @@ const PT = ["county", "city", "township", "tribal"];
 const POL_ST = ["campaign", "poll", "statement", "protest"];
 const LOOKBACK_DAYS = Number(process.env.LOOKBACK_DAYS || 10);
 const MAX_CANDIDATES = 320;   // eight search shards x up to 40 items each
+const ONLY_STATE = (process.env.ONLY_STATE || "").toUpperCase();   // on-demand research: keep only this state
+const ENTRY_BY = (process.env.ENTRY_BY || "").replace(/\s+/g, " ").trim().slice(0, 60);
 
 const pad = n => String(n).padStart(2, "0");
 const iso = d => `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`;
@@ -83,6 +85,8 @@ const added = [], rejected = [];
 for (const o of candidates.slice(0, MAX_CANDIDATES)) {
   const [item, why] = shape(o);
   if (!item) { rejected.push(`${o?.t || "?"}: ${why}`); continue; }
+  if (ONLY_STATE && item.j !== ONLY_STATE && item.j !== "US") { rejected.push(`${item.t}: outside ${ONLY_STATE}`); continue; }
+  if (ENTRY_BY) item.by = ENTRY_BY;
   if (known.has(norm(item.t))) { rejected.push(`${item.t}: duplicate title`); continue; }
   if ([...updates, ...added].some(u => u.d === item.d && u.s.some(x => item.s.some(y => sameDoc(x[1], y[1]))))) {
     rejected.push(`${item.t}: duplicate source`); continue;

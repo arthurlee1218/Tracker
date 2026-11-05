@@ -40,6 +40,11 @@ own Claude account, on their own branches. Read this before changing anything.
 | `.github/workflows/update-projects.yml` | Daily job that refreshes existing rows of `data/projects.json` (same Claude plan token) |
 | `.github/prompts/refresh-projects.md` | Instructions the projects job follows |
 | `scripts/merge-projects.mjs` | Checks what the projects job found and applies it to `data/projects.json` |
+| `api/research.js` | Vercel serverless function behind the Deep research and Analysis buttons: checks the password and starts `research.yml` |
+| `.github/workflows/research.yml` | On-demand job for one state, county or city: `deep` adds entries to `updates.json`, `analysis` saves a brief to `reports/` |
+| `.github/prompts/deep-research.md`, `place-analysis.md` | Instructions for those two modes |
+| `scripts/save-report.mjs` | Saves the brief Claude wrote and lists it in `reports/index.json` |
+| `reports/` | Siting briefs (`<id>.md`) and `index.json`, shown by `report.html` |
 | `CONTRIBUTING.md` | Human guide for the team |
 
 ## Data model (don't break these)
@@ -105,6 +110,23 @@ The allowed statuses are validated in `merge-projects.mjs`, `js/projects.js` (`p
 - `scripts/merge.mjs` and `scripts/update.mjs` read the titles in `data/entries.json` and
   `updates.json` to avoid duplicates. If you move entries again, update both and the prompt file.
 
+## Deep research and Analysis buttons
+
+Every state, county and city panel has **Deep research** (search that place only and add new entries) and
+**Analysis** (write a siting brief). A click asks for a password and POSTs to `/api/research`
+(`api/research.js`), which starts `.github/workflows/research.yml` on the owner's Claude plan
+(`CLAUDE_CODE_OAUTH_TOKEN`).
+
+- **Deep research** writes entries through `scripts/merge.mjs` with `ONLY_STATE` and `ENTRY_BY` set, so they carry
+  `by: "Deep research: <place>"`. The list marks them "Deep research" and the panel shows which ones are new since
+  the click (`research.js` finds them by that `by` text, so keep it in step with `ENTRY_BY` in `research.yml`).
+- **Analysis** is saved as `reports/<id>.md` and listed in `reports/index.json`; `report.html?r=<id>` shows it with a
+  print or save-as-PDF button. Prompt: `.github/prompts/place-analysis.md`.
+- **Secrets live in Vercel, never in the repo** (it is public): `RESEARCH_PASSWORD` (what readers type) and
+  `GITHUB_DISPATCH_TOKEN` (a fine-grained token for this repository with Actions: read and write). Without them the
+  endpoint answers 503 and the buttons show that. The endpoint does not exist when previewing locally.
+- Only one small serverless function was added; it uses no npm packages, so there is still no build step.
+
 ## Code map (`js/`)
 
 Native ES modules, no build. Each file only **declares** things; anything that touches the page
@@ -130,6 +152,8 @@ run page code at the top level of a module.
 | `drill.js` | The drill-down: a state's counties as named tiles, then a county's cities, laid out roughly where they sit |
 | `social.js` | The Public sentiment tab and the loader for `social/` and `geo/` |
 | `shell.js` | Tabs, keyboard shortcuts, theme button |
+| `research.js` | The Deep research and Analysis block in the state, county and city panels, the password dialog, and watching for results |
+| `report.js` | Used only by `report.html`: a small, escaping Markdown reader for the briefs |
 
 Adding something: put its data in a JSON file loaded by `data.js`, its code in the module that
 owns that part of the page, and its startup in that module's `init…()`.

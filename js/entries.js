@@ -47,7 +47,7 @@ export function renderEntries(){
     return `<li class="entry${e.k==="politics"?" pol":""}${e.fresh?" fresh":""}${isUp(e)?" up":""}" data-t="${esc(e.t)}"><details><summary>
       <span class="e-date">${isUp(e)?'<span class="up-k">Upcoming</span>':""}${fmt(e.d)}</span>
       <span class="e-where">${where}${pt?`<span class="e-place">${esc(pt)}</span>`:""}</span>
-      <span class="e-title">${esc(e.t)}${e.fresh?'<span class="fresh-mark">New, unverified</span>':(e.auto?'<span class="fresh-mark" style="color:var(--ink-3)">Auto-found</span>':"")}</span>
+      <span class="e-title">${esc(e.t)}${e.fresh?'<span class="fresh-mark">New, unverified</span>':(e.auto?(e.by&&e.by.startsWith("Deep research")?'<span class="fresh-mark">Deep research</span>':'<span class="fresh-mark" style="color:var(--ink-3)">Auto-found</span>'):"")}</span>
       <span class="chip ${e.st}">${STLBL[e.st]}</span>
       ${meter(e.im)}
     </summary><div class="e-body">
@@ -149,7 +149,7 @@ export async function loadPublished(){
   try{
     const r=await fetch("updates.json",{cache:"no-store"}); if(!r.ok) return;
     const arr=await r.json(); if(!Array.isArray(arr)||!arr.length) return;
-    const items=arr.map(o=>{const c=clean(o); if(!c) return null; c.fresh=false; c.auto=o.auto!==false; c.added=o.added; if(o.by) c.by=String(o.by).slice(0,40); return c;}).filter(Boolean).filter(x=>!E.some(e=>norm(e.t)===norm(x.t)));
+    const items=arr.map(o=>{const c=clean(o); if(!c) return null; c.fresh=false; c.auto=o.auto!==false; c.added=o.added; if(o.by) c.by=String(o.by).slice(0,60); return c;}).filter(Boolean).filter(x=>!E.some(e=>norm(e.t)===norm(x.t)));
     E.push(...items); paintCounts(); fillPlaces(); renderEntries(); renderPanel(); renderElectionFeed();
     // Header date: the newest of the last automatic run and the newest event already logged (never a future date).
     const ran=(arr.map(o=>o.added||"").sort().pop()||"").slice(0,10);

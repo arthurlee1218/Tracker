@@ -11,6 +11,7 @@ import { initNav } from "./nav.js";
 import { initDrill } from "./drill.js";
 import { initSocial } from "./social.js";
 import { initElection } from "./election.js";
+import { loadReports } from "./research.js";
 
 try {
   await loadData();
@@ -31,3 +32,4 @@ initTheme();
 fillPlaces();
 renderPanel();
 renderEntries();
+loadReports().then(renderPanel);   // reports/index.json, for the Analysis links in each place panel
