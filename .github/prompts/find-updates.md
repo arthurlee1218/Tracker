@@ -13,6 +13,10 @@ You are updating Data Center Watch, a tracker of U.S. data center policy and pol
 
 ## Step 2: close the open threads first
 
+**This step is a checklist, and every line must be worked.** `.threads.txt` has one line per open thread, plus one `STATE-CHECK` line per state in your area. Keep a second file, `coverage.json` in the repository root, with one row per line of `.threads.txt`: `{"ref":"the line's text, or STATE-CHECK XX","searches":2,"outcome":"logged|nothing found|still in the future"}`. Create it right away with every row marked `"outcome":"todo"`, then update each row as you finish it. Do not finish while any row says `todo`. You have about 100 turns and one page fetch is one turn, so a run that ends after a few searches has not done the job: past runs ended after about a minute and missed a county commission result and a legislature's supermajority loss because of it.
+
+A `STATE-CHECK XX` line means: for that state, search for results and decisions from the last {{LOOKBACK}} days on each of (a) the Nov 3, 2026 election: legislature balance and supermajorities, governor, utility or corporation commission, county and city races where data centers were an issue, and ballot measures; (b) county, city and township votes on data center zoning, moratoriums, rezonings and tax abatements; (c) state agency, utility commission and court actions. Use queries like "XX election results county commission", "XX legislature supermajority election results" and "XX data center vote".
+
 Go through `.threads.txt` before any broad searching. For each thread, search for what happened next: the vote result, who won, the certified count, the ruling, whether the bill was signed or vetoed, whether a pause was lifted, extended or made permanent, whether a scheduled meeting happened and what it decided. Spend at most two searches on a thread, and skip ones that are clearly still in the future.
 
 **An outcome counts even when the article never mentions data centers.** Election results, commission votes, court rulings and legislative changes that decide an earlier tracked item belong in the tracker. Example: the tracker logged a forum where county commission challengers said they oppose data centers over water. The later story is a plain list of vote totals showing both challengers won. Log it, and in the summary connect it to the earlier item and name the candidates' data center position. Cite the results article, and add a second source for the position if you have one.
@@ -42,7 +46,7 @@ Also look for items that are significant but do not use the phrase "data center"
 
 Open each article you plan to cite with web fetch to confirm the date and facts. Don't spend more than one fetch on an item you won't cite.
 
-Write **only** the file `candidates.json` in the repository root: a JSON array of up to 40 genuinely new, significant items. Do not edit any other file. Write the file early (after your first few finds) and rewrite it as you go, so that running out of turns never loses what you found.
+Write **only** `candidates.json` (plus the `coverage.json` above) in the repository root. `candidates.json` is a JSON array of up to 40 genuinely new, significant items. Do not edit any other file. Write it early (after your first few finds) and rewrite it as you go, so that running out of turns never loses what you found.
 
 Each item:
 

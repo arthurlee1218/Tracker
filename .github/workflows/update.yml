@@ -83,7 +83,8 @@ jobs:
           p = open(".github/prompts/find-updates.md").read()
           p = (p.replace("{{TODAY}}", today.isoformat())
                 .replace("{{SINCE}}", since.isoformat())
-                .replace("{{FOCUS}}", os.environ["FOCUS"]))
+                .replace("{{FOCUS}}", os.environ["FOCUS"])
+                .replace("{{LOOKBACK}}", os.environ["LOOKBACK_DAYS"]))
           open(".github/prompts/.run.md", "w").write(p)
           # A short list of recent items, so Claude doesn't burn turns reading the 900 KB updates.json.
           cutoff = (today - datetime.timedelta(days=180)).isoformat()
@@ -110,7 +111,12 @@ jobs:
                       where = ", ".join(p[0] for p in (e.get("pl") or []) if p)
                       threads.append(f'{d} {j} [{e.get("st","")}] {e.get("t","")}' + (f" ({where})" if where else ""))
           threads = sorted(set(threads), reverse=True)[:200]
-          open(".github/prompts/.threads.txt", "w").write(("\n".join(threads) if threads else "(none)") + "\n")
+          # One standing check per state, so every state gets searched even when it has no open thread.
+          checks = [f"STATE-CHECK {s}" for s in sorted(area - {"US"})]
+          if "US" in area:
+              checks.append("STATE-CHECK US (federal: Congress, FERC, DOE, EPA, courts, grid operators, national campaigns and polls)")
+          threads = checks + threads   # state checks first, so they are never the part that gets skipped
+          open(".github/prompts/.threads.txt", "w").write("\n".join(threads) + "\n")
           print(f"{len(threads)} open threads for {sorted(area)}")
           PY
 
@@ -129,7 +135,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: candidates-${{ matrix.shard }}
-          path: candidates.json
+          path: |
+            candidates.json
+            coverage.json
           if-no-files-found: ignore
           retention-days: 7
 
@@ -165,6 +173,23 @@ jobs:
           if [ -s all.jsonl ]; then jq -s 'add' all.jsonl > candidates.json; else echo "[]" > candidates.json; fi
           rm -f all.jsonl
           echo "Combined candidates: $(jq length candidates.json)"
+
+      - name: Coverage report
+        run: |
+          {
+            echo "### Search coverage"
+            echo ""
+            echo "| Shard | Rows | Done | Todo |"
+            echo "|---|---|---|---|"
+            for d in cands/*/; do
+              s=$(basename "$d" | sed 's/^candidates-//')
+              if [ -f "$d/coverage.json" ] && jq -e 'type == "array"' "$d/coverage.json" >/dev/null 2>&1; then
+                echo "| $s | $(jq length "$d/coverage.json") | $(jq '[.[] | select(.outcome != "todo")] | length' "$d/coverage.json") | $(jq '[.[] | select(.outcome == "todo")] | length' "$d/coverage.json") |"
+              else
+                echo "| $s | no coverage.json | | |"
+              fi
+            done
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Check and merge what Claude found
         run: |
