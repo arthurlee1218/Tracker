@@ -36,7 +36,7 @@ own Claude account, on their own branches. Read this before changing anything.
 | `scripts/merge.mjs` | Checks what the daily job found and merges it into `updates.json` |
 | `scripts/update.mjs` | Alternative updater that uses the paid API (manual only) |
 | `.github/workflows/update.yml` | Daily job: Claude Code searches the web on the owner's plan |
-| `.github/prompts/find-updates.md` | Instructions the daily job follows. Eight shards (federal plus seven regions) each get a `.threads.txt` of open threads in their states (pending votes, ballot measures, campaigns, statements, polls, pauses, upcoming dates from the last 120 days) and must search for the outcome first; outcomes count even when the article never says "data center". Shard states live in the `matrix` of `update.yml` |
+| `.github/prompts/find-updates.md` | Instructions the daily job follows. Eight shards (federal plus seven regions) each get a `.threads.txt` of one `STATE-CHECK` line per state plus open threads in their states (pending votes, ballot measures, campaigns, statements, polls, pauses, upcoming dates from the last 120 days) and must work every line and record it in `coverage.json` (the publish job reports rows done and todo in the run summary); outcomes count even when the article never says "data center". Shard states live in the `matrix` of `update.yml` |
 | `.github/workflows/update-projects.yml` | Daily job that refreshes existing rows of `data/projects.json` (same Claude plan token) |
 | `.github/prompts/refresh-projects.md` | Instructions the projects job follows |
 | `scripts/merge-projects.mjs` | Checks what the projects job found and applies it to `data/projects.json` |
