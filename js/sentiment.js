@@ -18,7 +18,7 @@ export const trTier=p=>p.x<0?-1:(p.x===0?0:(p.tr>=90?3:(p.tr>=60?2:1)));
 export const TRX=t=>t<0?"Traction not measured":TRL[t];
 export const trMeter=(t,st)=>`<span class="tr" data-st="${st||""}" role="img" aria-label="${TRX(t)}" title="${TRX(t)}">${[1,2,3].map(i=>`<i class="${t>=i?"on":""}"></i>`).join("")}</span>`;
 export const engText=p=>p.p==="bsky"||p.p==="x"?`${p.e[0]} likes · ${p.e[1]} reposts · ${p.e[2]} replies`:p.p==="fb"?`${p.e[0]} reactions · ${p.e[1]} ${String(p.id).startsWith("fc")?"replies":"comments"}`:(p.e.length>1?(String(p.id).startsWith("rc")?`${p.e[1]} upvotes · ${p.e[0]} replies`:`${p.e[1]} upvotes · ${p.e[0]} comments`):`${p.e[0]} comments`);
-export const platName=k=>({bsky:"Bluesky",reddit:"Reddit",x:"X",fb:"Facebook"})[k]||k;
+export const platName=k=>({bsky:"Bluesky",reddit:"Reddit",x:"X",fb:"Facebook",mm:"Meeting minutes"})[k]||k;
 // Reception: how the replies (X) or top comments (Reddit) we read stand toward the post. A post whose replies mostly
 // disagree with it is "contested": its traction measures reach, not agreement, so its meter is drawn grey.
 export const recN=p=>p.rc?p.rc[0]+p.rc[1]:0;

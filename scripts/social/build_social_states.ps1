@@ -1,6 +1,7 @@
 # Builds social/<ST>.json for Arkansas, Kansas, Missouri and Alabama from labeled posts.
 #   Bluesky:  <DataDir>/bluesky_labeled.csv   (stance O/S/M/N set by reading each post; see README)
 #   X:        <DataDir>/x_labeled.csv         (optional; same label columns)
+#   Minutes:  <DataDir>/mm_labeled.csv        (optional; from prepare_minutes.ps1: public comment named in official minutes)
 #   Reddit:   <DataDir>/reddit_labeled.csv    (optional; same label columns)
 # Each post is assigned to one of the four states, then to a county and city by the first place named
 # in the text. Output keeps a short excerpt (<=14 words) and a link, never the full post, and no handles.
@@ -184,6 +185,23 @@ if (Test-Path $ff) {
     $posts.Add([ordered]@{ _st = $r.state; id = 'f' + $r.post_id; p = 'fb'; d = $r.created.Substring(0, 10); w = 'person'; st = $stanceMap[$r.stance]; tp = $tp; q = $ex; c = $cty; ci = $city; u = $r.url; a = (Hash8 ('fb|' + $r.owner_id)); e = @([int]$r.reactions, [int]$r.comments); fl = '' })
   }
 }
+# ---- public comment recorded in official meeting minutes (mm_labeled.csv, from prepare_minutes.ps1) ----
+$mf = Join-Path $DataDir 'mm_labeled.csv'
+if (Test-Path $mf) {
+  foreach ($r in (Import-Csv $mf)) {
+    if ($r.stance -notin 'O', 'S', 'M', 'N') { continue }
+    if ($r.date -lt $From) { continue }
+    $ex = Excerpt $r.summary
+    if (($ex -split ' ').Count -lt 4) { continue }
+    $tp = @(); foreach ($k in $topics.Keys) { if ($r.summary -match $topics[$k]) { $tp += $k } }
+    $cty = $r.county; $city = $r.city
+    if ($city) {
+      $hit = $geoCache[$r.state].cities | Where-Object { $_.n -eq $city } | Select-Object -First 1
+      if ($hit) { $cty = $hit.c } else { Write-Warning "city not in geo: $($r.state) $city"; $city = '' }
+    }
+    $posts.Add([ordered]@{ _st = $r.state; id = 'm' + $r.event + (Hash8 ('mm|' + $r.speaker)); p = 'mm'; d = $r.date; w = 'person'; st = $stanceMap[$r.stance]; tp = $tp; q = $ex; c = $cty; ci = $city; u = $r.url; a = (Hash8 ('mm|' + $r.speaker)); e = @(0); fl = '' })
+  }
+}
 $byId = @{}; foreach ($p in $posts) { $byId[$p.id] = $p }
 $rcTally = @{}
 function Tally($pid2, $stance) { if (-not $rcTally.ContainsKey($pid2)) { $rcTally[$pid2] = @(0, 0, 0) }; $i = @{ O = 0; S = 1; M = 2 }[$stance]; if ($null -ne $i) { $rcTally[$pid2][$i]++ } }
@@ -237,12 +255,12 @@ if (Test-Path $sf) {
   }
 }
 foreach ($k in $rcTally.Keys) { if ($byId.ContainsKey($k)) { $byId[$k]['rc'] = @($rcTally[$k]) } }
-$weights = @{ bsky = @(1, 2, 2); x = @(1, 2, 2); reddit = @(3, 1); fb = @(1, 2) }
+$weights = @{ bsky = @(1, 2, 2); x = @(1, 2, 2); reddit = @(3, 1); fb = @(1, 2); mm = @(0) }
 New-Item -ItemType Directory -Force $OutDir | Out-Null
 foreach ($s in 'AR','KS','MO','AL') {
   $sp = @($posts | Where-Object { $_._st -eq $s })
   foreach ($p in $sp) { $p.Remove('_st'); $w = $weights[$p.p]; $x = 0; for ($i = 0; $i -lt $p.e.Count; $i++) { $x += $w[$i] * $p.e[$i] }; $p['x'] = $(if ($p.e[0] -lt 0) { -1 } else { $x }) }
-  foreach ($plat in 'bsky', 'x', 'reddit', 'fb') {
+  foreach ($plat in 'bsky', 'x', 'reddit', 'fb', 'mm') {
     $grp = @($sp | Where-Object { $_.p -eq $plat })
     $pos = @($grp | Where-Object { $_.x -gt 0 } | ForEach-Object { $_.x } | Sort-Object)
     foreach ($p in $grp) {
@@ -254,7 +272,7 @@ foreach ($s in 'AR','KS','MO','AL') {
   }
   $sp = @($sp | Sort-Object { $_.d } -Descending)
   $cnt = [ordered]@{}; foreach ($p in $sp) { $cnt[$p.p] = 1 + [int]$cnt[$p.p] }
-  $doc = [ordered]@{ state = $s; built = (Get-Date -Format 'yyyy-MM-dd'); from = $From; to = $To; platforms = [ordered]@{ bsky = 'Bluesky'; reddit = 'Reddit'; x = 'X'; fb = 'Facebook' }; counts = $cnt; posts = $sp }
+  $doc = [ordered]@{ state = $s; built = (Get-Date -Format 'yyyy-MM-dd'); from = $From; to = $To; platforms = [ordered]@{ bsky = 'Bluesky'; reddit = 'Reddit'; x = 'X'; fb = 'Facebook'; mm = 'Meeting minutes' }; counts = $cnt; posts = $sp }
   $out = Join-Path $OutDir "$s.json"
   [System.IO.File]::WriteAllText($out, ($doc | ConvertTo-Json -Depth 6 -Compress), (New-Object System.Text.UTF8Encoding($false)))
   "{0}: posts {1}  county {2}  city {3}  bytes {4}" -f $s, $sp.Count, @($sp | Where-Object { $_.c }).Count, @($sp | Where-Object { $_.ci }).Count, (Get-Item $out).Length
