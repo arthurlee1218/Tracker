@@ -1,5 +1,63 @@
 [
   {
+    "d": "2026-11-03",
+    "j": "KS",
+    "w": "Seward County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "water",
+      "siting"
+    ],
+    "t": "Seward County voters elect two commission challengers who oppose data centers",
+    "b": "Unofficial returns show Kay Burtzloff and Lizette Avalos-Morales, who told an Oct. 7 forum they oppose data centers over water, beating incumbents Clay Louderback and Jairo Vazquez, 369-216 and 533-250. About 36% of voters turned out.",
+    "s": [
+      [
+        "Seward County (KSCB)",
+        "https://www.kscbnews.net/2026/11/03/seward-county-voters-go-to-the-polls/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Two data center critics join the commission; no project is pending locally.",
+    "pl": [
+      [
+        "Seward County",
+        "county"
+      ]
+    ],
+    "auto": false,
+    "by": "Claude research, Nov 5"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "KS",
+    "w": "Kansas voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Democrats break Kansas House Republican supermajority, projected 68-57 (unofficial)",
+    "b": "Unofficial results leave Republicans short of the two-thirds needed to override vetoes. If Cindy Holscher, who ran partly on a data center pause, holds her roughly 5,000-vote governor's lead, vetoes will be harder to override in 2027.",
+    "s": [
+      [
+        "KCUR",
+        "https://www.kcur.org/politics-elections-and-government/2026-11-04/kansas-democrats-break-gop-supermajority-johnson-county"
+      ],
+      [
+        "KWCH",
+        "https://www.kwch.com/2026/11/04/state-democrats-break-gop-supermajority-kansas-house/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Weaker veto-proof GOP majority makes a Democratic governor's data center limits harder to undo.",
+    "pl": [],
+    "auto": false,
+    "by": "Claude research, Nov 5"
+  },
+  {
     "d": "2026-12-15",
     "j": "ND",
     "w": "Mandan voters",
