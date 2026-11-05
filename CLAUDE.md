@@ -157,7 +157,7 @@ Separate from the entries above. Official actions, protests, campaigns and polls
   then public sentiment, then the entries logged there. `localBlock()` and `climateBlock()` in
   `entries.js` build the tally and climate blocks for the state, county and city panels alike.- **Files:** `social/<ST>.json` and `geo/<ST>.json`, loaded at runtime. A state turns on when its
   code is in `SOC_STATES` in `js/store.js`, which loads its posts at startup; every state has a geo file, so every state can be drilled into, but states without posts have the Sentiment toggle disabled. Nothing marks the tile.
-- **Post keys:** `id`, `p` (`bsky`, `reddit`, `x` or `fb`), `d` date, `w` (`person` or `group`), `st` (`anti`,
+- **Post keys:** `id`, `p` (`bsky`, `reddit`, `x`, `fb` or `mm` for council-minute public comment), `d` date, `w` (`person` or `group`), `st` (`anti`,
   `pro`, `mixed`, `neutral`), `tp` topics (`water power rates tax jobs land noise fire open tribe
   tech pause`), `q` excerpt, `c` county FIPS (empty means statewide), `ci` city, `u` link, `a` hashed
   account, `e` raw engagement, `x` engagement score, `tr` percentile 0 to 100 within the platform. Optional: `rc` replies read as [against, supportive, mixed] (X replies, Reddit top comments; the site marks a post contested when most disagree with it), `rp` the post a reply or comment answers, and `hs`/`hc`/`hci` where the account is based (X profile location: state, county FIPS, city), which also counts the post toward that place.

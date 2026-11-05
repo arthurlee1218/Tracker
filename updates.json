@@ -1421,6 +1421,36 @@
     "added": "2026-11-05T00:55:20.747Z"
   },
   {
+    "d": "2026-11-03",
+    "j": "AR",
+    "w": "Siloam Springs Board of Directors",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Siloam Springs board adopts six-month data center moratorium",
+    "b": "The board passed the six-month moratorium 5-2 on its final vote, giving the city time to write development rules. The director who requested it said Arkansas law limits what a city can prohibit, and urged residents to contact state legislators.",
+    "s": [
+      [
+        "Siloam Springs Citizen's Page (board director)",
+        "https://www.facebook.com/permalink.php?story_fbid=pfbid0tuoeZeEZBCSrP7yLhUwGE4Fhj7wxVihPuBXswi476FXZoNv5355Kh5JWtNtcfrovl&id=100064627603880"
+      ]
+    ],
+    "im": -2,
+    "iw": "City-wide six-month pause on data centers.",
+    "pl": [
+      [
+        "Siloam Springs",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
+  },
+  {
     "d": "2026-11-02",
     "j": "NY",
     "w": "Hamburg Town Board",
@@ -3842,6 +3872,36 @@
     ],
     "auto": true,
     "added": "2026-11-05T00:55:20.607Z"
+  },
+  {
+    "d": "2026-10-20",
+    "j": "AR",
+    "w": "Siloam Springs Board of Directors",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Siloam Springs board passes second reading of data center moratorium 5-2",
+    "b": "Ten residents spoke, all warning against data centers, before the board passed the second reading of Ordinance 26-25 on a 5-2 roll call. Two directors voted no; some worried about limiting economic opportunity.",
+    "s": [
+      [
+        "Siloam Springs board minutes, in the Nov. 3 agenda packet",
+        "https://www.siloamsprings.gov/AgendaCenter/ViewFile/Agenda/_11032026-948"
+      ]
+    ],
+    "im": -1,
+    "iw": "Second of three readings passed; pause nearly in place.",
+    "pl": [
+      [
+        "Siloam Springs",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
   },
   {
     "d": "2026-10-19",
@@ -7123,6 +7183,37 @@
     ],
     "auto": false,
     "by": "Claude research, Oct 23 (West Coast)"
+  },
+  {
+    "d": "2026-09-30",
+    "j": "MO",
+    "w": "Ralls County zoning board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Ralls County zoning board drafts strict data center ordinance",
+    "b": "The draft chapter would require an independent impact study, closed-loop cooling that cannot draw on Mark Twain Lake or local wells, 1,000-foot setbacks for chillers and generators and onsite power for larger sites, and would bar foreign-owned projects. Public zoning meetings run through Dec. 2.",
+    "s": [
+      [
+        "Ralls County Commission minutes, September 2026 (draft ordinance and meeting notice)",
+        "https://rallscountymo.gov/wp-content/uploads/2026/10/September-2026-Minutes.pdf"
+      ]
+    ],
+    "im": -1,
+    "iw": "Proposed rules would be among the strictest in the state.",
+    "pl": [
+      [
+        "Ralls County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
   },
   {
     "d": "2026-09-29",
@@ -16902,6 +16993,37 @@
     "by": "Claude research, Oct 23"
   },
   {
+    "d": "2026-07-27",
+    "j": "MO",
+    "w": "Marion County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium",
+      "siting",
+      "permitting"
+    ],
+    "t": "Marion County lifts data center moratorium, adopts land-use rules and forms task force",
+    "b": "Meeting with the Planning and Zoning Board, commissioners adopted revisions to the county Land Use Order meant to protect water and air quality, formed a task force to study data center rules, and voted to lift the moratorium.",
+    "s": [
+      [
+        "Palmyra Spectator",
+        "https://www.palmyra-spectator.com/2026/08/26/marion-county-commission-updates-land-use-rules-forms-data-center-task-force/"
+      ]
+    ],
+    "im": -1,
+    "iw": "Pause ended, but under a stricter land-use order.",
+    "pl": [
+      [
+        "Marion County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
+  },
+  {
     "d": "2026-07-23",
     "j": "NE",
     "w": "Gov. Jim Pillen",
@@ -20543,6 +20665,40 @@
     "by": "dkalish42"
   },
   {
+    "d": "2026-06-16",
+    "j": "AL",
+    "w": "Opelika residents",
+    "lv": "local",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "moratorium",
+      "water"
+    ],
+    "t": "Opelika residents press council for data center limits at five meetings",
+    "b": "Four residents spoke against data centers at council meetings from April 21 to June 16, citing water, power and rumored sites, and asking for a moratorium or protections. The council took no action in that period.",
+    "s": [
+      [
+        "Opelika City Council minutes, May 19",
+        "https://opelikaal.portal.civicclerk.com/event/663/files"
+      ],
+      [
+        "Opelika City Council minutes, June 16",
+        "https://opelikaal.portal.civicclerk.com/event/667/files"
+      ]
+    ],
+    "im": -1,
+    "iw": "Rising local opposition, no rule change yet.",
+    "pl": [
+      [
+        "Opelika",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
+  },
+  {
     "d": "2026-06-15",
     "j": "WV",
     "w": "WV Data Economy Office",
@@ -20782,6 +20938,40 @@
     ],
     "auto": false,
     "by": "dkalish42"
+  },
+  {
+    "d": "2026-06-15",
+    "j": "MO",
+    "w": "Marion County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Marion County, Missouri adopts 12-month data center moratorium",
+    "b": "Commissioners unanimously approved a 12-month moratorium on establishing or expanding data centers, on the Planning and Zoning Commission's recommendation, to allow time to amend the county Land Use Order. The presiding commissioner said the county lacks the infrastructure for large data centers.",
+    "s": [
+      [
+        "NEMOnews (Palmyra Spectator)",
+        "https://www.nemonews.net/2026/07/22/marion-county-commission-approves-truck-wash-rezoning-data-center-moratorium/"
+      ],
+      [
+        "WGEM",
+        "https://www.wgem.com/2026/07/15/palmyra-hannibal-officials-address-data-center-rumors/"
+      ]
+    ],
+    "im": -2,
+    "iw": "County-wide pause on data centers.",
+    "pl": [
+      [
+        "Marion County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "by": "Claude research, Nov 4"
   },
   {
     "d": "2026-06-12",
