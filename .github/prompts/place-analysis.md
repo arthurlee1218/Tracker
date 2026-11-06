@@ -2,15 +2,17 @@
 
 Today's date is {{TODAY}}. Write a brief about data center projects and policy in **{{PLACE}}** (a {{SCOPE}}; state {{STATE}}, county {{COUNTY}}, city {{CITY}}), for a reader at Data Center Watch who clicked "Analysis". The readers are people on the ground in or near this place: residents, officials, reporters and developers who know the local people and places. Write for them: specific, named and sourced. Be even-handed: do not argue for or against data centers, and do not give legal advice.
 
-## Step 1: read the tracker's record
+## Step 1: read what the researchers and the tracker found
+
+Five specialist researchers have already worked on this place at the same time, each on one topic (law, utilities, projects, people, sentiment). Their fact sheets are in `facts/*/facts.md` (one folder per topic). Every fact in them has a source URL that the researcher opened, and says whether it is on the tracker. Read all five first. Where two sheets disagree, check the sources yourself and say which you trust and why. A sheet may be missing if its researcher failed; then cover that topic yourself in Step 2.
 
 `.github/prompts/.record.txt` holds everything the tracker has on this place: the state summary, the data center projects the tracker lists for it, every logged entry with its summary and sources, and the public sentiment numbers (people who post online, not residents; say so). Treat it as leads, not proof. Do not read `updates.json`; it is too large.
 
 `.github/prompts/.posts.txt` holds the saved social posts for this place in detail: platform and stance counts, a breakdown of the concerns raised (each topic with how many posts were against, supportive or mixed), and the most-engaged posts on each side with their engagement, how replies read, whether the account is an individual or a group, the account name where the link shows one, and a link. It may include the state's most-engaged posts when the place has few of its own.
 
-## Step 2: research what the record lacks
+## Step 2: fill the gaps yourself
 
-Use web search and fetch. Open every page you cite. Look for:
+The fact sheets are your main material. Before writing, list what each section below needs and does not yet have: every item under "Could not confirm" in the sheets, every claim with low confidence, every name without a role, and any section with thin material. Then do your own searching to close those gaps, up to about 20 searches and 10 pages. When a page will not open, try another route to the same fact (the news story that quotes it, the underlying document, a summary from the same publisher) before you write "I could not confirm", and say what you tried. Open every page you cite yourself, or cite the sheet's source for a fact it recorded. This is the checklist of what a complete brief covers:
 - **Law:** state preemption and local authority; zoning authority (city vs county); state data center statutes (incentives, large-load or ratepayer rules, water, disclosure); citizen initiative and referendum rules and court rulings; bills likely to return. For any point that is disputed, find **who says what**: the statute text, attorney general opinions, city and county attorneys, municipal league counsel, bill sponsors, courts.
 - **Power and water:** who serves the place (investor-owned, municipal, cooperative), its size and supplier, large-load tariffs, capacity limits, grid operator; the water source, plant capacity versus use, wastewater limits.
 - **Projects:** every named project or developer in or near the place: who the developer is and who speaks for it, size (MW, acres, dollars), the site and who proposed it, the current status, the next step and date, and what is still unknown. Include rumored and proposed ones, and ones known only from records requests or minutes.

@@ -6,9 +6,13 @@ run-name: ${{ inputs.mode }} ${{ inputs.city }} ${{ inputs.county }} ${{ inputs.
 
 # Started by the "Deep research" and "Analysis" buttons on the site (through api/research.js), or by hand from
 # the Actions tab. Runs Claude Code on your Claude plan, for one state, county or city only.
-#   mode "deep":     searches that place in depth and adds new entries to updates.json (checked by scripts/merge.mjs)
-#   mode "analysis": writes a siting brief to reports/<id>.md and lists it in reports/index.json
+#   mode "deep":     one job. Searches that place in depth and adds new entries to updates.json (checked by scripts/merge.mjs)
+#   mode "analysis": three stages. Five specialist researchers (law, utilities, projects, people, sentiment) work at the same
+#                    time and each writes a sourced fact sheet; then a writer combines the sheets into a siting brief,
+#                    saved to reports/<id>.md and listed in reports/index.json
+# Every job builds its inputs with scripts/prep-research.mjs, so they all see the same tracker data.
 # Needs the same repository secret as the daily job: CLAUDE_CODE_OAUTH_TOKEN.
+# Model and effort are set on every Claude step below, and in update.yml and update-projects.yml; change them together.
 
 on:
   workflow_dispatch:
@@ -41,9 +45,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  research:
+  deep:
+    name: Deep research
+    if: inputs.mode == 'deep'
     runs-on: ubuntu-latest
-    timeout-minutes: ${{ inputs.mode == 'analysis' && 40 || 25 }}
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -53,169 +59,13 @@ jobs:
 
       - name: Build the prompt for this place
         env:
-          MODE: ${{ inputs.mode }}
+          PREP_RUN: "1"
+          MODE: deep
           STATE: ${{ inputs.state }}
           COUNTY: ${{ inputs.county }}
           CITY: ${{ inputs.city }}
           LOOKBACK: ${{ inputs.lookback_days }}
-        run: |
-          python3 - <<'PY'
-          import os, re, json, datetime, sys
-          mode, state = os.environ["MODE"], os.environ["STATE"].upper()
-          county, city = os.environ["COUNTY"].strip(), os.environ["CITY"].strip()
-          name = re.compile(r"^[A-Za-z0-9 .'’\-&]{1,60}$")
-          if not re.fullmatch(r"[A-Z]{2}", state) or (county and not name.match(county)) or (city and not name.match(city)):
-              sys.exit("Bad place input")
-          lookback = int(os.environ.get("LOOKBACK") or 365) if mode == "deep" else 365
-          today = datetime.datetime.now(datetime.timezone.utc).date()
-          since = today - datetime.timedelta(days=lookback)
-          place = ", ".join(x for x in (city, county, state) if x)
-          scope = "city" if city else ("county" if county else "state")
-
-          def base(n):
-              return re.sub(r"\s+(county|parish|borough|census area|municipality)$", "", n.strip(), flags=re.I).lower()
-
-          rows = []
-          for f in ("data/entries.json", "updates.json"):
-              for e in json.load(open(f)):
-                  if e.get("j") != state:
-                      continue
-                  names = [str(p[0]).lower() for p in (e.get("pl") or []) if p]
-                  text = (e.get("t", "") + " " + e.get("b", "")).lower()
-                  if city:
-                      hit = city.lower() in names or re.search(r"\b" + re.escape(city.lower()) + r"\b", text)
-                  elif county:
-                      hit = base(county) in [base(n) for n in names] or (base(county) + " county") in text
-                  else:
-                      hit = True
-                  if hit:
-                      rows.append(e)
-          rows.sort(key=lambda e: str(e.get("d", "")), reverse=True)
-          limit = 400 if scope == "state" else 120
-          rows = rows[:limit]
-
-          # What the tracker already has, so Claude skips it (deep) or builds on it (analysis).
-          with open(".github/prompts/.known.txt", "w") as k:
-              k.write("\n".join(f'{e.get("d","")} {e.get("j","")} {e.get("t","")}' for e in rows) + "\n")
-
-          rec = [f"PLACE: {place} ({scope})", f"Tracker record as of {today}: {len(rows)} entries"
-                 + (" (newest 400 shown)" if scope == "state" and len(rows) == 400 else "") + ".", ""]
-          try:
-              st = json.load(open("data/states.json"))
-              if state in st:
-                  rec += [f"State summary (reviewed {st.get('_asof','?')}): {st[state].get('t','')}", ""]
-          except Exception:
-              pass
-          # The data center projects the tracker lists for this place (data/projects.json)
-          try:
-              prj = [p for p in json.load(open("data/projects.json")) if p.get("j") == state]
-              if county:
-                  prj = [p for p in prj if base(county) in (p.get("place", "") + " " + p.get("n", "")).lower()]
-              if city:
-                  prj = [p for p in prj if city.lower() in (p.get("place", "") + " " + p.get("n", "")).lower()]
-              if prj:
-                  rec += [f"DATA CENTER PROJECTS THE TRACKER LISTS FOR THIS PLACE ({len(prj)}):"]
-                  for p in prj[:40]:
-                      rec.append(f'- {p.get("n", "")} · {p.get("developer", "developer not named")} · {p.get("mw", "?")} MW · {p.get("status", "")} as of {p.get("d", "")} · {p.get("place", "")} :: {p.get("note", "")} :: ' + "; ".join(f"{x[0]} {x[1]}" for x in (p.get("s") or [])[:3]))
-              else:
-                  rec += ["DATA CENTER PROJECTS THE TRACKER LISTS FOR THIS PLACE: none."]
-              rec += [""]
-          except Exception:
-              pass
-          for e in rows:
-              src = "; ".join(f"{s[0]} {s[1]}" for s in (e.get("s") or [])[:2])
-              pl = ", ".join(str(p[0]) for p in (e.get("pl") or []) if p)
-              rec.append(f'- {e.get("d","")} [{e.get("lv","")}/{e.get("st","")}] {e.get("t","")}' + (f" ({pl})" if pl else "")
-                         + f' :: {e.get("b","")} :: {src}')
-          # Public sentiment, where the tracker has collected it for this state
-          try:
-              soc = json.load(open(f"social/{state}.json"))
-              geo = json.load(open(f"geo/{state}.json"))
-              posts = soc.get("posts", [])
-              if county:
-                  cid = next((c["id"] for c in geo["counties"] if base(c.get("nm") or c["n"]) == base(county) or base(c["n"]) == base(county)), None)
-                  posts = [p for p in posts if p.get("c") == cid] if cid else []
-              if city:
-                  posts = [p for p in posts if p.get("ci", "").lower() == city.lower()]
-              def tally(ps):
-                  stc, tpc, plc = {}, {}, {}
-                  for p in ps:
-                      s = p.get("st", "?")
-                      stc[s] = stc.get(s, 0) + 1
-                      plc[p.get("p", "?")] = plc.get(p.get("p", "?"), 0) + 1
-                      for t in p.get("tp", []):
-                          tpc.setdefault(t, {})
-                          tpc[t][s] = tpc[t].get(s, 0) + 1
-                  return stc, tpc, plc
-
-              def concerns(tpc):
-                  rows = sorted(tpc.items(), key=lambda kv: -sum(kv[1].values()))[:8]
-                  return "; ".join(f"{t} {sum(c.values())} (against {c.get('anti', 0)}, supportive {c.get('pro', 0)}, mixed {c.get('mixed', 0)})" for t, c in rows) or "none tagged"
-
-              def account(p):
-                  u = p.get("u", "")
-                  m = re.search(r"(?:x|twitter)\.com/([A-Za-z0-9_]+)/status", u) or re.search(r"bsky\.app/profile/([^/]+)/post", u)
-                  if m:
-                      return "@" + m.group(1)
-                  m = re.search(r"reddit\.com/r/([A-Za-z0-9_]+)/", u)
-                  if m:
-                      return "posted in r/" + m.group(1) + " (author name is on the page)"
-                  if "facebook.com" in u:
-                      g = re.search(r"/groups/(\d+)/", u)
-                      return ("Facebook group " + g.group(1) if g else "Facebook page") + " (commenter name is on the page, not stored)"
-                  return ""
-
-              def line(p):
-                  who = "a group or organization" if p.get("w") == "group" else "an individual account"
-                  home = ", ".join(str(x) for x in (p.get("hci"), p.get("hs")) if x)
-                  rc = p.get("rc")
-                  bits = [f'{plat.get(p.get("p"), p.get("p"))}', p.get("d", ""), who,
-                          "engagement " + "/".join(str(x) for x in (p.get("e") or [])) + f' (score {p.get("x", 0)}, top {100 - int(p.get("tr", 0))}% on its platform)']
-                  if rc:
-                      bits.append(f"replies read: {rc[0]} against, {rc[1]} supportive, {rc[2]} mixed")
-                  if account(p):
-                      bits.append("account: " + account(p))
-                  if home:
-                      bits.append(f"account based in {home}")
-                  if p.get("tp"):
-                      bits.append("topics " + ",".join(p["tp"]))
-                  return f'  [{p.get("st", "?")}] ' + " · ".join(str(b) for b in bits) + f' :: "{p.get("q", "")}" :: {p.get("u", "")}'
-
-              plat = soc.get("platforms", {})
-              st_c, tp_c, pf_c = tally(posts)
-              allst, alltp, allpf = tally(soc.get("posts", []))
-              by = st_c
-              topics = {t: sum(c.values()) for t, c in tp_c.items()}
-              top = ", ".join(f"{t} {n}" for t, n in sorted(topics.items(), key=lambda x: -x[1])[:6])
-              sx = [f"PUBLIC SENTIMENT DATA FOR {place}  ({soc.get('from','?')} to {soc.get('to','?')}). These are people who post online, not residents; engagement reflects reach, not agreement.",
-                    f"Posts for this place: {len(posts)}; by platform {({plat.get(k, k): v for k, v in pf_c.items()})}; by stance {st_c}.",
-                    f"Concerns raised here, by topic: {concerns(tp_c)}.",
-                    f"Whole state ({state}): {len(soc.get('posts', []))} posts; by stance {allst}; concerns: {concerns(alltp)}.", ""]
-              ranked = sorted(posts, key=lambda p: -p.get("x", 0))
-              for stance, label in (("anti", "AGAINST data centers"), ("pro", "SUPPORTIVE of data centers"), ("mixed", "MIXED")):
-                  sel = [p for p in ranked if p.get("st") == stance][:6]
-                  sx.append(f"MOST-ENGAGED POSTS, {label} (up to 6):" if sel else f"MOST-ENGAGED POSTS, {label}: none for this place.")
-                  sx += [line(p) for p in sel]
-                  sx.append("")
-              if len(posts) < 8:   # thin place data: show the state's most-engaged posts too, so the brief has something to ground in
-                  sx.append(f"STATE-WIDE MOST-ENGAGED POSTS ({state}), because this place has few posts:")
-                  sx += [line(p) for p in sorted(soc.get("posts", []), key=lambda p: -p.get("x", 0))[:8]]
-              open(".github/prompts/.posts.txt", "w").write("\n".join(sx) + "\n")
-              rec += ["", f"PUBLIC SENTIMENT: {len(posts)} posts for this place; stance counts {by}; top topics {top or 'none'}. Full detail, concern breakdown and the most-engaged posts on each side are in .github/prompts/.posts.txt."
-                      + ("" if posts else " No posts were collected for this place.")]
-          except Exception:
-              rec += ["", "PUBLIC SENTIMENT: the tracker has not collected social posts for this state."]
-              open(".github/prompts/.posts.txt", "w").write("No social posts have been collected for this state." + chr(10))
-          open(".github/prompts/.record.txt", "w").write("\n".join(rec) + "\n")
-
-          tpl = ".github/prompts/deep-research.md" if mode == "deep" else ".github/prompts/place-analysis.md"
-          p = open(tpl).read()
-          for a, b in (("{{TODAY}}", today.isoformat()), ("{{SINCE}}", since.isoformat()), ("{{PLACE}}", place),
-                       ("{{STATE}}", state), ("{{COUNTY}}", county or "none"), ("{{CITY}}", city or "none"), ("{{SCOPE}}", scope)):
-              p = p.replace(a, b)
-          open(".github/prompts/.run.md", "w").write(p)
-          print(f"{mode} for {place}: {len(rows)} tracker entries, window {since}..{today}")
-          PY
+        run: node scripts/prep-research.mjs
 
       - name: Let Claude research this place
         uses: anthropics/claude-code-action@v1
@@ -228,10 +78,10 @@ jobs:
             --model claude-sonnet-5-5
             --effort medium
             --allowedTools "WebSearch,WebFetch,Read,Write"
-            --max-turns ${{ inputs.mode == 'analysis' && '120' || '45' }}
+            --max-turns 45
 
       - name: Show what Claude searched
-        if: always() && inputs.mode == 'deep'
+        if: always()
         run: |
           if [ -f research_log.md ]; then
             { echo "### What Claude searched"; echo; cat research_log.md; echo; } >> "$GITHUB_STEP_SUMMARY"
@@ -240,7 +90,6 @@ jobs:
           fi
 
       - name: Check and merge new entries
-        if: inputs.mode == 'deep'
         env:
           LOOKBACK_DAYS: ${{ inputs.lookback_days }}
           ONLY_STATE: ${{ inputs.state }}
@@ -249,8 +98,118 @@ jobs:
           node scripts/merge.mjs
           cat update-summary.md >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Publish to main
+        env:
+          MODE: deep
+          PLACE: ${{ inputs.city }} ${{ inputs.county }} ${{ inputs.state }}
+        run: |
+          git add updates.json reports
+          if git diff --cached --quiet; then echo "Nothing to publish"; exit 0; fi
+          git config user.name "data-center-watch-bot"
+          git config user.email "data-center-watch-bot@users.noreply.github.com"
+          git commit -m "Data Center Watch: $MODE for $PLACE"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          echo "Push failed after 3 tries"; exit 1
+
+  topics:
+    name: Research (${{ matrix.topic }})
+    if: inputs.mode == 'analysis'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 3          # keeps simultaneous sessions within plan rate limits, as in update.yml
+      matrix:
+        topic: [law, utilities, projects, people, sentiment]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build the prompt for this topic
+        env:
+          PREP_RUN: "1"
+          MODE: analysis
+          TOPIC: ${{ matrix.topic }}
+          STATE: ${{ inputs.state }}
+          COUNTY: ${{ inputs.county }}
+          CITY: ${{ inputs.city }}
+        run: node scripts/prep-research.mjs
+
+      - name: Let Claude research this topic
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: "Follow the instructions in .github/prompts/.run.md exactly."
+          claude_args: >-
+            --model claude-sonnet-5-5
+            --effort medium
+            --allowedTools "WebSearch,WebFetch,Read,Write"
+            --max-turns 60
+
+      - name: Save this topic's fact sheet
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: facts-${{ matrix.topic }}
+          path: facts.md
+          if-no-files-found: warn
+          retention-days: 7
+
+  write:
+    name: Write the brief
+    needs: topics
+    if: ${{ !cancelled() && inputs.mode == 'analysis' }}      # runs even if one researcher failed
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build the prompt for the writer
+        env:
+          PREP_RUN: "1"
+          MODE: analysis
+          TOPIC: write
+          STATE: ${{ inputs.state }}
+          COUNTY: ${{ inputs.county }}
+          CITY: ${{ inputs.city }}
+        run: node scripts/prep-research.mjs
+
+      - name: Download the fact sheets
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: facts-*
+          path: facts
+
+      - name: List the fact sheets
+        run: |
+          echo "Fact sheets found: $(find facts -name facts.md 2>/dev/null | wc -l) of 5" | tee -a "$GITHUB_STEP_SUMMARY"
+          find facts -name facts.md 2>/dev/null | sort | tee -a "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Let Claude write the brief
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: "Follow the instructions in .github/prompts/.run.md exactly."
+          claude_args: >-
+            --model claude-sonnet-5-5
+            --effort medium
+            --allowedTools "WebSearch,WebFetch,Read,Write"
+            --max-turns 60
+
       - name: Save the report
-        if: inputs.mode == 'analysis'
         env:
           STATE: ${{ inputs.state }}
           COUNTY: ${{ inputs.county }}
@@ -259,10 +218,10 @@ jobs:
 
       - name: Publish to main
         env:
-          MODE: ${{ inputs.mode }}
+          MODE: analysis
           PLACE: ${{ inputs.city }} ${{ inputs.county }} ${{ inputs.state }}
         run: |
-          git add updates.json reports
+          git add reports
           if git diff --cached --quiet; then echo "Nothing to publish"; exit 0; fi
           git config user.name "data-center-watch-bot"
           git config user.email "data-center-watch-bot@users.noreply.github.com"

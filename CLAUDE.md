@@ -44,6 +44,8 @@ own Claude account, on their own branches. Read this before changing anything.
 | `api/status.js`, `api/cancel.js`, `api/_common.js` | Job status with steps (for the progress bar), the Stop endpoint, and the helpers they share |
 | `.github/workflows/research.yml` | On-demand job for one state, county or city: `deep` adds entries to `updates.json`, `analysis` saves a brief to `reports/` |
 | `.github/prompts/deep-research.md`, `place-analysis.md` | Instructions for those two modes |
+| `scripts/prep-research.mjs` | Builds what each Research job gives Claude: the tracker's entries for the place, its county and the state level, the tracker's projects, the saved posts (with account names where the link shows one) and the prompt. Testable without files: `build()` is a pure function |
+| `.github/prompts/place-facts.md` | Instructions for one specialist researcher in an Analysis (law, utilities, projects, people or sentiment): write a sourced fact sheet, `facts.md` |
 | `scripts/save-report.mjs` | Saves the brief Claude wrote and lists it in `reports/index.json` |
 | `reports/` | Siting briefs (`<id>.md`) and `index.json`, shown by `report.html` |
 | `CONTRIBUTING.md` | Human guide for the team |
@@ -164,8 +166,15 @@ Every state, county and city panel has **Deep research** (search that place only
   bar every second (set-up, then Claude's step timed against `EXPECT` in `research.js`, then saving). `api/cancel.js`
   (POST, password) cancels the run, and only runs of `research.yml`. Both use the shared helpers in `api/_common.js`. When a
   deep run adds entries, the panel says "Found N new entries" and "Show all N in the list" sets `state.dr`, which makes
-  `match()` in `entries.js` list only those entries (cleared by Clear filters). Limits: deep runs 45 turns and 25 minutes, analysis 120 turns and 40 minutes; keep
-  `WAIT_MIN` in `research.js` at the longer of the two `timeout-minutes`.
+  `match()` in `entries.js` list only those entries (cleared by Clear filters). Limits: a deep run is 45 turns and 25 minutes; in an analysis each researcher is 60 turns and 25 minutes and the writer 60 turns and 30
+  minutes; keep `WAIT_MIN` in `research.js` above the longest the whole run can take.
+- **How an Analysis runs.** Three stages in `research.yml`. Five researchers (`topics` job, three at a time) each work one topic and write a fact
+  sheet (`facts.md`, uploaded as the artifact `facts-<topic>`): each fact has the source URL they opened and whether it is on the tracker, plus
+  people named, disputed questions with who says what, and what they could not confirm after trying more than one route. A writer (`write` job)
+  then reads all five, does about 20 searches of its own to close the gaps, and writes the brief. The writer still runs if a researcher fails,
+  and the run summary lists how many sheets it found. A Deep research is one job. `prep-research.mjs` gives a city its county's entries and
+  the state-level entries, and a county the entries for its cities, so a place is not judged on its own few entries. The progress bar
+  counts finished researchers, then times the writer (`jobs` from `api/status.js`; `progress()` in `research.js`).
 - **What a brief contains** (`.github/prompts/place-analysis.md`): a bottom line, legal analysis with each contested question
   argued out by named people, "What matters most here" (three or four issues chosen for that place, no advice column),
   a projects table with status and what is unknown, public sentiment (concerns explained, named accounts and what their
