@@ -1,5 +1,14 @@
 [
   {
+    "id": "mo-marion-county-hannibal-2026-11-06",
+    "title": "Hannibal, Marion County, MO: Data Center Siting Brief",
+    "state": "MO",
+    "county": "Marion County",
+    "city": "Hannibal",
+    "date": "2026-11-06",
+    "added": "2026-11-06T01:22:56.152Z"
+  },
+  {
     "id": "al-lee-county-opelika-2026-11-06",
     "title": "Opelika, Lee County, AL: Data Center Siting Brief",
     "state": "AL",
@@ -7,14 +16,5 @@
     "city": "Opelika",
     "date": "2026-11-06",
     "added": "2026-11-06T01:19:25.115Z"
-  },
-  {
-    "id": "mo-marion-county-hannibal-2026-11-06",
-    "title": "Hannibal, Marion County, MO: Data Center Siting Brief",
-    "state": "MO",
-    "county": "Marion County",
-    "city": "Hannibal",
-    "date": "2026-11-06",
-    "added": "2026-11-06T01:00:35.380Z"
   }
 ]
