@@ -164,8 +164,16 @@ Every state, county and city panel has **Deep research** (search that place only
   bar every second (set-up, then Claude's step timed against `EXPECT` in `research.js`, then saving). `api/cancel.js`
   (POST, password) cancels the run, and only runs of `research.yml`. Both use the shared helpers in `api/_common.js`. When a
   deep run adds entries, the panel says "Found N new entries" and "Show all N in the list" sets `state.dr`, which makes
-  `match()` in `entries.js` list only those entries (cleared by Clear filters). Limits: deep runs 45 turns, analysis 90, the job
-  25 minutes; keep `WAIT_MIN` in `research.js` in step with `timeout-minutes`.
+  `match()` in `entries.js` list only those entries (cleared by Clear filters). Limits: deep runs 45 turns and 25 minutes, analysis 120 turns and 40 minutes; keep
+  `WAIT_MIN` in `research.js` at the longer of the two `timeout-minutes`.
+- **What a brief contains** (`.github/prompts/place-analysis.md`): a bottom line, legal analysis with each contested question
+  argued out by named people, "What matters most here" (three or four issues chosen for that place, no advice column),
+  a projects table with status and what is unknown, public sentiment (concerns explained, named accounts and what their
+  own public page says, and the offline signals), and good-to-knows. Every claim carries a footnote (`[^id]`, defined at
+  the end of `report.md`) that cites a page the run opened and says whether it is on the tracker; `report.js` numbers them
+  by first use and lists them under "Notes and sources". The run also gets the tracker's projects for the place (from
+  `data/projects.json`) and, for social posts, the account name where the saved link shows one. People named in the
+  brief come from sources that name them; the prompt forbids looking anyone up beyond what a page states publicly.
 - **Saved jobs.** The browser remembers the jobs it started (`localStorage` keys `lw-research` and `lw-research-runs`). A job
   whose result is already on the page shows nothing; one GitHub has no matching run for after 5 minutes (`LOST_MS`) says so;
   every finished or lost job has a Dismiss link. Change `VER` in `research.js` whenever the saved shape changes, so old
