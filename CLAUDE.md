@@ -153,6 +153,11 @@ Every state, county and city panel has **Deep research** (search that place only
 - **Secrets live in Vercel, never in the repo** (it is public): `RESEARCH_PASSWORD` (what readers type) and
   `GITHUB_DISPATCH_TOKEN` (a fine-grained token for this repository with Actions: read and write). Without them the
   endpoint answers 503 and the buttons show that. The endpoint does not exist when previewing locally.
+- **Job status.** Each run is named `<mode> <city> <county> <state>` by `run-name` in `research.yml`. `research.js` reads
+  the public run list (`api.github.com`, no token, 60 requests an hour per visitor) once a minute, matches its own run by
+  that name, and says queued, running, finished or failed, with a link. The name format lives in `runTitle()` there and in
+  `run-name`; keep them in step. A deep run also writes `research_log.md`, which the run summary shows ("What Claude
+  searched"), so a run that found nothing still shows what it looked at.
 - Only one small serverless function was added; it uses no npm packages, so there is still no build step.
 
 ## Code map (`js/`)
