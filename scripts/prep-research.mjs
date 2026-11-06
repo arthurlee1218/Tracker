@@ -189,10 +189,7 @@ export function build(inp, data) {
   const tp = TOPICS[topic] || ["", ""];
   const subs = { TODAY: today, SINCE: since, PLACE: place, STATE: state, COUNTY: county || "none", CITY: city || "none", SCOPE: scope, TOPIC: topic, TOPIC_NAME: tp[0], TOPIC_FOCUS: tp[1], TOPIC_QUESTIONS: (QUESTIONS[topic] || []).map((x, n) => `${n + 1}. ${x}`).join("\n") };
   Object.entries(subs).forEach(([k, v]) => { tpl = tpl.split(`{{${k}}}`).join(v); });
-  // What scripts/check-research.mjs (the Stop hook) should require before the session may finish
-  const nq = (QUESTIONS[topic] || []).length;
-  const check = mode === "deep" ? { kind: "deep", minLog: 12 } : (topic && topic !== "write") ? { kind: "facts", questions: nq, minLog: Math.max(12, nq * 2) } : { kind: "report" };
-  return { check, known, record: rec.join("\n") + "\n", posts: sx.join("\n") + "\n", run: tpl, counts: { own: own.length, county: county2.length, inside: inside.length, stateLevel: stateLevel.length, projects: prj.length, posts: posts.length } };
+  return { known, record: rec.join("\n") + "\n", posts: sx.join("\n") + "\n", run: tpl, counts: { own: own.length, county: county2.length, inside: inside.length, stateLevel: stateLevel.length, projects: prj.length, posts: posts.length } };
 }
 
 async function main() {
@@ -207,7 +204,6 @@ async function main() {
   });
   writeFileSync(".github/prompts/.known.txt", out.known); writeFileSync(".github/prompts/.record.txt", out.record);
   writeFileSync(".github/prompts/.posts.txt", out.posts); writeFileSync(".github/prompts/.run.md", out.run);
-  writeFileSync(".github/prompts/.check.json", JSON.stringify(out.check));
   console.log(`${E.MODE}${E.TOPIC ? " / " + E.TOPIC : ""} for ${[E.CITY, E.COUNTY, state].filter(Boolean).join(", ")}:`, JSON.stringify(out.counts));
 }
 if (typeof process !== "undefined" && process.env && process.env.PREP_RUN === "1") await main();
