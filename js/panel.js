@@ -5,6 +5,7 @@ import { socSync } from "./nav.js";
 import { projectState, renderProjects } from "./projects.js";
 import { syncElectionState } from "./election.js";
 import { stateStatus } from "./derive.js";
+import { PCAT, statePosture } from "./posture.js";
 import { bindResearch, researchBlock } from "./research.js";
 import { bindSoc, fillFor, geoHas, loadGeo, readLabel, renderGeoPanel, socHas, socStateBlock, voices } from "./sentiment.js";
 import { showTab } from "./shell.js";
@@ -26,16 +27,16 @@ export function select(ab){
 export function renderPanel(){
   const p=$("#panel");
   if(!state.sel){
-    const c={pause:0,rules:0,proposed:0,local:0};
-    Object.keys(D.ST).forEach(a=>{const s=stateStatus(a).s;if(s in c)c[s]++;});
+    const c=[0,0,0,0,0];
+    Object.keys(GRID).forEach(a=>{c[statePosture(a).c]++;});
     const inForcePauses=E.filter(e=>e.st==="pause").length;
     const ballots=E.filter(e=>e.st==="ballot").length;
     p.innerHTML=`<h2>The national picture</h2>
       <p>In 2025 states mostly competed to attract data centers. In 2026 more than 300 bills were filed in the first six weeks alone, and the debate flipped to who pays for power, who gets water, and whether towns can say no. Governors, not legislatures, produced the pauses now in force.</p>
       <div class="tally">
-        <div><b>${c.pause}</b><small>states with a statewide pause in force</small></div>
-        <div><b>${c.rules}</b><small>states with binding new rules</small></div>
-        <div><b>${c.proposed}</b><small>states where a statewide pause was proposed or failed</small></div>
+        <div><b>${c[0]}</b><small>states with a statewide ban or pause in force</small></div>
+        <div><b>${c[1]}</b><small>states approaching a ban or pause</small></div>
+        <div><b>${c[2]}</b><small>states with unfavourable policies, ${c[3]} with favourable ones</small></div>
         <div><b>${inForcePauses}</b><small>logged pauses in force at any level</small></div>
         <div><b>${new Set(E.flatMap(e=>(e.pl||[]).map(([n])=>e.j+"|"+n))).size}</b><small>counties, cities, townships and tribal nations logged</small></div>
         <div><b>${E.filter(isUp).length}</b><small>scheduled votes and deadlines still ahead</small></div>
@@ -47,10 +48,10 @@ export function renderPanel(){
     return;
   }
   if(geoHas(state.sel)&&(SOC.geoSel.c||SOC.geoSel.ci)){renderGeoPanel(p);return;}
-  const ab=state.sel, info=D.ST[ab], st=stateStatus(ab), s=st.s;
+  const ab=state.sel, info=D.ST[ab], st=stateStatus(ab), s=st.s, pc=statePosture(ab);
   const n=countBy[ab]||0;
   p.innerHTML=`<h2>${esc(NAMES[ab]||ab)}</h2>
-    <div class="status-line"><i class="sw ${s}" style="vertical-align:-2px;margin-right:6px"></i>${esc(SLABEL[s])}</div>
+    <div class="status-line"><i class="sw p${pc.c}" style="vertical-align:-2px;margin-right:6px"></i>${esc(PCAT[pc.c].n)}</div>
     <p>${info?esc(info.t):"Nothing logged here yet. That may mean quiet, or that this tracker hasn't caught up. Check the other trackers tab for local coverage."}</p>
     ${st.why?`<p class="auto-note">Map color raised automatically by an entry logged after the summary below was last reviewed (${esc(fmt(D.ST_ASOF))}): <button type="button" class="linkish" data-goto="${esc(ab+"|")}" data-t="${esc(st.why.t)}">${esc(st.why.t)}</button></p>`:""}
     <p style="font-size:15px">${n?`${n} ${n===1?"entry":"entries"} below, plus federal actions that apply everywhere.`:""}</p>
@@ -79,13 +80,13 @@ export function paintUSTiles(){
   const sent=SOC.view==="sentiment";
   [...map.children].forEach(t=>{
     const ab=t.dataset.ab,base=stateStatus(ab).s,n=countBy[ab]||0;
-    let badge=n,label=`${NAMES[ab]||ab}: ${SLABEL[base]}${n?`, ${n} entries`:""}`,bg="",tone="";
+    let badge=n,label=`${NAMES[ab]||ab}: ${PCAT[statePosture(ab).c].n}${n?`, ${n} entries`:""}`,bg="",tone="";
     if(sent){
       const has=socHas(ab),ps=has?SOC.data[ab].posts:[],v=voices(ps);
-      t.dataset.s=has?"sent":"nosent";
+      t.dataset.s=has?"sent":"nosent";delete t.dataset.p;
       if(has){bg=fillFor(v);tone=v.n>=5&&Math.abs(v.net)>=60?"hi":"";}
       badge=ps.length;label=`${NAMES[ab]||ab}: ${has?`${readLabel(v)}, ${v.n} ${v.n===1?"account":"accounts"}, ${ps.length} posts`:"no posts collected"}`;
-    }else t.dataset.s=base;
+    }else{t.dataset.s=base;t.dataset.p=statePosture(ab).c;}
     t.style.background=bg;t.dataset.tone=tone;
     t.innerHTML=esc(ab)+(badge?`<span class="n" aria-hidden="true">${badge}</span>`:"");
     t.setAttribute("aria-label",label);
@@ -100,7 +101,7 @@ export function initTiles() {
     b.style.gridColumn=(c+1);b.style.gridRow=(r+1);
     b.setAttribute("aria-pressed","false");
     const n=countBy[ab]||0;
-    b.setAttribute("aria-label",(NAMES[ab]||ab)+": "+SLABEL[s]+(n?", "+n+" entries":""));
+    b.dataset.p=statePosture(ab).c;b.setAttribute("aria-label",(NAMES[ab]||ab)+": "+PCAT[statePosture(ab).c].n+(n?", "+n+" entries":""));
     b.innerHTML=esc(ab)+(n?'<span class="n" aria-hidden="true">'+n+"</span>":"");
     b.addEventListener("click",()=>select(state.sel===ab?null:ab));
     map.appendChild(b);

@@ -5,6 +5,7 @@ import { selectGeo } from "./nav.js";
 import { showTab } from "./shell.js";
 import { E, SOC, state } from "./store.js";
 import { bindResearch, researchBlock } from "./research.js";
+import { PCAT, placePosture } from "./posture.js";
 import { $, esc, fmt, key } from "./util.js";
 
 export const socHas=ab=>!!(ab&&SOC.data[ab]);
@@ -116,10 +117,12 @@ export function renderGeoPanel(p){
   else if(own&&own.st==="pause"){cls="pause";label=`Moratorium or pause in force (${fmt(own.e.d)})`;}
   else if(!s.ci&&citiesWith){cls="proposed";label=`No countywide ban or pause; ${citiesWith} ${citiesWith===1?"city or town has":"cities and towns have"} one`;}
   else if(off.length){cls="local";label="Actions logged, no ban or pause";}
+  const pp=placePosture(ab,cn,s.ci);
+  if(!(own&&(own.st==="ban"||own.st==="pause"))) label=PCAT[pp.c].n+(!s.ci&&citiesWith?` · ${citiesWith} ${citiesWith===1?"city or town has":"cities and towns have"} a ban or pause`:"");
   const lead=off.find(x=>x.e.k==="action")||off[0];
   p.innerHTML=`<h2>${esc(nm)}</h2>
     <div style="font-size:14px;color:var(--ink-3);margin-top:2px">${esc(NAMES[ab])}${s.ci?" · "+esc(cn):""}</div>
-    <div class="status-line"><i class="sw ${cls}" style="vertical-align:-2px;margin-right:6px"></i>${esc(label)}</div>
+    <div class="status-line"><i class="sw p${pp.c}" style="vertical-align:-2px;margin-right:6px"></i>${esc(label)}</div>
     <p>${lead?`<b>Latest:</b> ${esc(lead.e.t)}. ${esc(lead.e.b)}`:"Nothing logged here yet. That may mean quiet, or that this tracker hasn't caught up. Check the other trackers tab for local coverage."}</p>
     <p style="font-size:15px">${off.length?`${off.length} ${off.length===1?"entry":"entries"} logged here, listed under Official record below.`:""}</p>
     ${localBlock(inGeo,true)}

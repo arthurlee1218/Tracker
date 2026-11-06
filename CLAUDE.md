@@ -101,6 +101,14 @@ working: -2 at -1.5 or lower, -1 down to -0.4, 0 between, +1 from +0.4, +2 from 
 direction it pushes at a small weight; `none` means no lean at all, not "unimportant". Change a weight or a threshold
 in `js/score.js` only; the data files hold tags, never scores.
 
+**Map colors** come from `js/posture.js`, not from `states.json` or `derive.js` (those still feed the panel text and
+the older status counts). Every place lands in one of five groups, judged only on the entries logged at its own level
+(a state on state-level entries, a county or city on the entries that name it), so the same rules work at every level:
+ban or pause in force (an entry tagged `ban` or `pause` at force 3), approaching (one at force 1 to 2 that is still
+pending or on a ballot, dated within 180 days or ahead), otherwise unfavourable or favourable by the sign of the net
+score of adopted or in-force entries, otherwise no adopted policy. Colors are `--p0` to `--p3` in `styles.css`, with
+dark-mode values; tiles carry `data-p="0".."4"`. Untagged entries fall back to their status and impact.
+
 Every new entry needs the tags. `scripts/merge.mjs` validates them (`cleanTags()`) and an entry without valid tags falls
 back to the `im` the job gave it. The tagging rubric lives in the two prompts, `.github/prompts/find-updates.md` and
 `deep-research.md`; keep them in step with `js/score.js`.
@@ -175,6 +183,7 @@ run page code at the top level of a module.
 | `research.js` | The Deep research and Analysis block in the state, county and city panels, the password dialog, and watching for results |
 | `report.js` | Used only by `report.html`: a small, escaping Markdown reader for the briefs |
 | `score.js` | The tag vocabulary, the weights and `applyTags()`; also imported by `scripts/merge.mjs`, so it must stay free of browser APIs |
+| `posture.js` | The map color group for a state, county or city (ban or pause, approaching, unfavourable, favourable, none) |
 
 Adding something: put its data in a JSON file loaded by `data.js`, its code in the module that
 owns that part of the page, and its startup in that module's `init…()`.
