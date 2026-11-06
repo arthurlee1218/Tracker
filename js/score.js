@@ -34,7 +34,7 @@ export function cleanTags(o) {
 export function score(t) { return EF[t.ef] * FO[t.fo] * RC[t.rc] * DU[t.du] * RL[t.rl]; }
 
 // The five-step industry impact the filters and meters use, derived from the score.
-export function imFromScore(s) { return s <= -2 ? -2 : s <= -0.6 ? -1 : s < 0.6 ? 0 : s < 1.5 ? 1 : 2; }
+export function imFromScore(s) { return s <= -1.5 ? -2 : s <= -0.4 ? -1 : s < 0.4 ? 0 : s < 1.5 ? 1 : 2; }
 
 // Adds `sc` (score) to a tagged entry and sets `im` from it. Untagged entries are left as they are.
 export function applyTags(e) {

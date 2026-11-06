@@ -4,6 +4,7 @@
 // cite at least one URL that actually loads (blocks invented or broken links).
 
 import { readFileSync, writeFileSync, existsSync, unlinkSync } from "node:fs";
+import { cleanTags, imFromScore, score } from "../js/score.js";
 
 const STATES = "AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY".split(" ");
 const LV = ["federal", "state", "local", "tribal"];
@@ -73,11 +74,13 @@ function shape(o) {
   if (!real.length) return [null, "only cites other trackers"];
   s.splice(0, s.length, ...real);
   if (!o.t || !o.b) return [null, "missing text"];
-  const im = Number.isInteger(o.im) && o.im >= -2 && o.im <= 2 ? o.im : undefined;
+  // Tags (ef, fo, rc, du, rl) give the score and the five-step impact; an entry without valid tags falls back to its own im.
+  const tg = cleanTags(o);
+  const im = tg ? imFromScore(score(tg)) : (Number.isInteger(o.im) && o.im >= -2 && o.im <= 2 ? o.im : undefined);
   const pl = (Array.isArray(o.pl) ? o.pl : []).filter(x => Array.isArray(x) && x[0] && PT.includes(x[1]))
     .map(x => [String(x[0]).slice(0, 60), x[1]]).slice(0, 12);
   return [{ d, j, w: String(o.w || "").slice(0, 60), lv, k, st, ty: ty.length ? ty : ["siting"],
-    t: String(o.t).slice(0, 140), b: String(o.b).slice(0, 500), s, im,
+    t: String(o.t).slice(0, 140), b: String(o.b).slice(0, 500), s, im, ...(tg || {}),
     iw: o.iw ? String(o.iw).slice(0, 140) : "", pl, auto: true, added: new Date().toISOString() }, null];
 }
 

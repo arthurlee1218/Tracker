@@ -63,8 +63,13 @@ Entries are objects with short keys:
 | `t` | Headline | under 15 words, own words |
 | `b` | Summary | under 50 words, own words |
 | `s` | Sources | `[["Name","https://..."], ...]` |
-| `im` | Industry impact | integer -2..2, business effect on developers, not a policy judgment |
-| `iw` | Impact reason | one line |
+| `ef` | Effect on developers if it takes full effect | `ban`, `pause`, `deny`, `limit`, `cost`, `info`, `none`, `approve`, `help`, `fast` |
+| `fo` | Force, how far along it is | `0` talk, `1` signal or proposal, `2` adopted, `3` in force |
+| `rc` | Reach, who it covers | `1` project, `2` city, `3` county, `4` region, `5` state, `6` country |
+| `du` | Duration | `p` none or permanent, `l` over 24 months, `m` 7 to 24 months, `s` 6 months or less |
+| `rl` | Relevance | `d` direct, `i` indirect (energy or another project, tied to data center demand) |
+| `im` | Industry impact (derived) | integer -2..2, computed from the five tags above by `js/score.js`; entries without tags keep a hand-set value |
+| `iw` | Reason for the tags | one line |
 | `pl` | Places | `[["Name","county|city|township|tribal"], ...]`; required for local and tribal items |
 | `auto` | Found by the bot and not yet checked by a person | `true` / `false` (updates.json only) |
 | `by` | Who added it | GitHub username (updates.json only) |
@@ -84,6 +89,21 @@ Rules:
   `in-force` entry `rules`, a statewide moratorium that is `pending` or `failed` `proposed`, and
   any other official action `local`. It never lowers a color, so a pause that ended, or a changed
   summary paragraph, is an editorial edit: change `states.json` and move `_asof` forward.
+
+## How entries are scored
+
+The model tags facts and code computes the score, so the weights are public and can change without re-reading any
+entry. Score = effect weight (`ban` -5, `pause` -4, `deny` and `limit` -3, `cost` -2, `info` -1, `none` 0,
+`approve` +2, `help` +3, `fast` +4) × force (0.15, 0.4, 0.75, 1) × reach (0.25 project, 0.4 city, 0.6 county,
+0.8 region, 1 state or country) × duration (1, 0.9, 0.75, 0.5) × relevance (1 direct, 0.5 indirect).
+`imFromScore()` turns that into the five-step `im` that the filters, meters and "climate" average use, so those keep
+working: -2 at -1.5 or lower, -1 down to -0.4, 0 between, +1 from +0.4, +2 from +1.5. Talk (force 0) keeps the
+direction it pushes at a small weight; `none` means no lean at all, not "unimportant". Change a weight or a threshold
+in `js/score.js` only; the data files hold tags, never scores.
+
+Every new entry needs the tags. `scripts/merge.mjs` validates them (`cleanTags()`) and an entry without valid tags falls
+back to the `im` the job gave it. The tagging rubric lives in the two prompts, `.github/prompts/find-updates.md` and
+`deep-research.md`; keep them in step with `js/score.js`.
 
 ## What updates by itself, and what doesn't
 
@@ -154,6 +174,7 @@ run page code at the top level of a module.
 | `shell.js` | Tabs, keyboard shortcuts, theme button |
 | `research.js` | The Deep research and Analysis block in the state, county and city panels, the password dialog, and watching for results |
 | `report.js` | Used only by `report.html`: a small, escaping Markdown reader for the briefs |
+| `score.js` | The tag vocabulary, the weights and `applyTags()`; also imported by `scripts/merge.mjs`, so it must stay free of browser APIs |
 
 Adding something: put its data in a JSON file loaded by `data.js`, its code in the module that
 owns that part of the page, and its startup in that module's `init…()`.

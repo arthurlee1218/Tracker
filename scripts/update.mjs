@@ -5,6 +5,7 @@
 // to search. Requires Node 20+ (built-in fetch) and ANTHROPIC_API_KEY.
 
 import { readFileSync, writeFileSync } from "node:fs";
+import { cleanTags, imFromScore, score } from "../js/score.js";
 
 const API_URL = process.env.ANTHROPIC_API_URL || "https://api.anthropic.com/v1/messages";
 const API_KEY = process.env.ANTHROPIC_API_KEY;
@@ -114,12 +115,13 @@ function clean(o, seen) {
     .map(x => [String(x[0]).slice(0, 60), String(x[1])]);
   if (!s.length) return [null, "no source from search results"];
   if (!o.t || !o.b) return [null, "missing text"];
-  const im = Number.isInteger(o.im) && o.im >= -2 && o.im <= 2 ? o.im : undefined;
+  const tg = cleanTags(o);
+  const im = tg ? imFromScore(score(tg)) : (Number.isInteger(o.im) && o.im >= -2 && o.im <= 2 ? o.im : undefined);
   const pl = (Array.isArray(o.pl) ? o.pl : []).filter(x => Array.isArray(x) && x[0] && PT.includes(x[1]))
     .map(x => [String(x[0]).slice(0, 60), x[1]]).slice(0, 12);
   return [{
     d, j, w: String(o.w || "").slice(0, 60), lv, k, st, ty: ty.length ? ty : ["siting"],
-    t: String(o.t).slice(0, 140), b: String(o.b).slice(0, 500), s, im,
+    t: String(o.t).slice(0, 140), b: String(o.b).slice(0, 500), s, im, ...(tg || {}),
     iw: o.iw ? String(o.iw).slice(0, 140) : "", pl, auto: true, added: new Date().toISOString()
   }, null];
 }
