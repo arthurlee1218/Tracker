@@ -493,3 +493,15 @@ footer p{max-width:90ch;margin-bottom:6px}
 
 /* "How it was scored" line in an open entry (js/entries.js) */
 .e-body .how{font-size:13px;color:var(--ink-3);margin-top:6px}
+
+/* Map colors by policy posture (js/posture.js): ban or pause, approaching, unfavourable, favourable, none */
+:root{--p0:#EC4B3C;--p0-ink:#fff;--p1:#F29838;--p1-ink:#3A1C00;--p2:#545CCE;--p2-ink:#fff;--p3:#65C367;--p3-ink:#10361A}
+:root[data-theme="dark"]{--p0:#F26B5E;--p0-ink:#0E1820;--p1:#F5A95A;--p1-ink:#0E1820;--p2:#7C85EA;--p2-ink:#0E1820;--p3:#79CC7B;--p3-ink:#0E1820}
+.tile[data-p],.dtile[data-p]{box-shadow:none}
+.tile[data-p="0"],.dtile[data-p="0"]{background:var(--p0);color:var(--p0-ink)}
+.tile[data-p="1"],.dtile[data-p="1"]{background:var(--p1);color:var(--p1-ink)}
+.tile[data-p="2"],.dtile[data-p="2"]{background:var(--p2);color:var(--p2-ink)}
+.tile[data-p="3"],.dtile[data-p="3"]{background:var(--p3);color:var(--p3-ink)}
+.tile[data-p="4"],.dtile[data-p="4"]{background:var(--none);color:var(--none-ink)}
+.dtile[data-p][aria-pressed="true"]{box-shadow:inset 0 0 0 3px var(--volt)}
+.sw.p0{background:var(--p0)} .sw.p1{background:var(--p1)} .sw.p2{background:var(--p2)} .sw.p3{background:var(--p3)} .sw.p4{background:var(--none)}

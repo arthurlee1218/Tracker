@@ -3,7 +3,8 @@
 // the map, the same idea as the US tile grid, so every place is a large, easy click target.
 import { localStatus } from "./entries.js";
 import { selectGeo } from "./nav.js";
-import { fillFor, geoHas, officialFor, placeAction, readLabel, socHas, socPosts, voices } from "./sentiment.js";
+import { cName, fillFor, geoHas, officialFor, readLabel, socHas, socPosts, voices } from "./sentiment.js";
+import { PCAT, placePosture } from "./posture.js";
 import { SOC, state } from "./store.js";
 import { $, esc } from "./util.js";
 
@@ -40,11 +41,11 @@ export function renderDrill(){
   grid.style.gridTemplateColumns=`repeat(${lay.cols},minmax(0,1fr))`;
   grid.setAttribute("aria-label",`Counties or cities as tiles, colored by ${sent?"public sentiment":"the strongest local action"}`);
   grid.innerHTML=items.map((it,i)=>{
-    const ps=socPosts(ab,it.c,it.ci),v=voices(ps),acts=officialFor(ab,it.c,it.ci).length,act=placeAction(ab,it.c,it.ci,ls),
+    const ps=socPosts(ab,it.c,it.ci),v=voices(ps),acts=officialFor(ab,it.c,it.ci).length,act=placePosture(ab,cName(ab,it.c),it.ci).c,
       place=it.ci||it.nm||`${it.name} ${g.suffix||"County"}`,
-      lab=`${place}: ${ACTL[act]}; ${socHas(ab)?`${readLabel(v)}, ${v.n} ${v.n===1?"account":"accounts"}, ${ps.length} ${ps.length===1?"post":"posts"}, `:""}${acts} logged ${acts===1?"action":"actions"}`,
+      lab=`${place}: ${PCAT[act].n}; ${socHas(ab)?`${readLabel(v)}, ${v.n} ${v.n===1?"account":"accounts"}, ${ps.length} ${ps.length===1?"post":"posts"}, `:""}${acts} logged ${acts===1?"action":"actions"}`,
       hi=sent&&v.n>=5&&Math.abs(v.net)>=60,on=sel.ci?sel.ci===it.ci:false,
-      color=sent?`data-tone="${hi?"hi":""}" style="grid-column:${lay.pos[i][0]+1};grid-row:${lay.pos[i][1]+1};background:${fillFor(v)}"`:`data-a="${act}" style="grid-column:${lay.pos[i][0]+1};grid-row:${lay.pos[i][1]+1}"`,
+      color=sent?`data-tone="${hi?"hi":""}" style="grid-column:${lay.pos[i][0]+1};grid-row:${lay.pos[i][1]+1};background:${fillFor(v)}"`:`data-p="${act}" style="grid-column:${lay.pos[i][0]+1};grid-row:${lay.pos[i][1]+1}"`,
       line=sent?(ps.length?`${ps.length} ${ps.length===1?"post":"posts"}`:"no posts"):(acts?`${acts} ${acts===1?"action":"actions"}`:"none logged");
     return `<button type="button" class="dtile" data-c="${it.c}" data-ci="${esc(it.ci)}" ${color} aria-pressed="${on}" aria-label="${esc(lab)}" title="${esc(lab)}"><span class="dn">${esc(it.name)}</span><span class="dc">${line}</span>${sent&&acts?`<span class="da" aria-hidden="true">${acts}</span>`:""}</button>`;
   }).join("");
