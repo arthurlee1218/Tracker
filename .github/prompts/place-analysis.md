@@ -6,6 +6,8 @@ Today's date is {{TODAY}}. Write a brief about data center projects and policy i
 
 Five specialist researchers have already worked on this place at the same time, each on one topic (law, utilities, projects, people, sentiment). Their fact sheets are in `facts/*/facts.md` (one folder per topic). Every fact in them has a source URL that the researcher opened, and says whether it is on the tracker. Read all five first. Where two sheets disagree, check the sources yourself and say which you trust and why. A sheet may be missing if its researcher failed; then cover that topic yourself in Step 2.
 
+The documents the workflow downloaded are in `docs/` (`docs/INDEX.txt` lists them, and `docs/*-excerpts.txt` holds the pages that mention data centers or a moratorium). Use them to check or complete any vote tally, ordinance term, effective date or speaker the sheets leave open, and cite the document's URL from INDEX.txt.
+
 `.github/prompts/.record.txt` holds everything the tracker has on this place: the state summary, the data center projects the tracker lists for it, every logged entry with its summary and sources, and the public sentiment numbers (people who post online, not residents; say so). Treat it as leads, not proof. Do not read `updates.json`; it is too large.
 
 `.github/prompts/.posts.txt` holds the saved social posts for this place in detail: platform and stance counts, a breakdown of the concerns raised (each topic with how many posts were against, supportive or mixed), and the most-engaged posts on each side with their engagement, how replies read, whether the account is an individual or a group, the account name where the link shows one, and a link. It may include the state's most-engaged posts when the place has few of its own.
