@@ -183,7 +183,7 @@ jobs:
 
       - name: Download the documents
         continue-on-error: true
-        uses: actions/download-artifact
+        uses: actions/download-artifact@v4
         with:
           name: docs
           path: docs
@@ -256,7 +256,7 @@ jobs:
 
       - name: Download the documents
         continue-on-error: true
-        uses: actions/download-artifact
+        uses: actions/download-artifact@v4
         with:
           name: docs
           path: docs
