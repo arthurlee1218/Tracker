@@ -6,6 +6,9 @@ Today's date is {{TODAY}}. Write a brief about data center projects and policy i
 
 `.github/prompts/.record.txt` holds everything the tracker has on this place: the state summary, every logged entry with its summary and sources, and the public sentiment numbers (people who post online, not residents; say so). Start there and treat it as leads, not as proof. Do not read `updates.json`; it is too large.
 
+`.github/prompts/.posts.txt` holds the saved social posts for this place in detail: the platform and stance counts, a breakdown of the concerns raised (each topic with how many posts were against, supportive or mixed), and the most-engaged posts on each side with their engagement, how replies read, whether the account is an individual or a group, and a link. Use it for the sentiment section. It may also include the state's most-engaged posts when the place has few posts of its own. Do not read `updates.json`; it is too large.
+
+
 ## Step 2: research what the record lacks
 
 Use web search and fetch to check and extend it. Open every page you cite. In particular:
@@ -37,7 +40,12 @@ Short bold-led paragraphs, for example **Local status.**, **State preemption.**,
 A markdown table with the columns Hurdle | Why it matters | What to do. One row each for the issues that apply (for example Power, Water, Local politics, Petitions, State shift).
 
 ## 3. Public sentiment
-Two short paragraphs: what the tracker's online sentiment data shows (with its limits, or that none exists), and what offline signals (elections, meetings, polls) show, including the other side's arguments.
+Four parts, in this order, written for a reader who wants to understand the argument and not only count it:
+- **What the data shows.** One short paragraph: how many posts, on which platforms, the split of against, supportive and mixed, and the limits (people who post online, not residents; engagement measures reach, not agreement; a group's comment threads are not a sample of the town). If the place has no posts, say so and use the state-level numbers instead, labeled as the state's.
+- **The main concerns, explained.** Take the top three or four topics in `.posts.txt` and give each its own short paragraph or bullet: what people actually say about it (water, power and rates, land, jobs, noise, fire, tax, secrecy, distrust of the developer), how many posts raise it on each side, and how it connects to the facts you found (the utility's capacity, the aquifer or river, the tax deal, the vote). Use the excerpts in `.posts.txt` as evidence, and quote no more than 14 words from any one post. Say where the concerns are factual and checkable and where they are rumor, and check the checkable ones against your sources.
+- **Voices on each side.** Pick two or three of the most-engaged posts that argue against and two or three that argue in favor (fewer if that is all there is; say so). For each give: the platform and date, the engagement figures from the file, a link, the argument in your own words, and how the replies read when the file says (`replies read`). Then say what can be known about the source. Open the link and look; if it loads, report what is public: whether it is a community group, a news outlet's page, a candidate's or official's page, or an advocacy group, and who runs it. If the post is by a group, an organization, an official, a candidate or a business, name it and say what it is affiliated with, from its own public page. If it is an ordinary person's comment, do **not** name, describe or try to identify them; say "a resident account" and give only what the file itself records (the platform, whether it is a comment under a larger thread, the place the thread is about, and the account's profile location if the file lists one). If a page is behind a login or will not load, say that you could not open it instead of guessing. Never speculate about someone's employer, politics or motives.
+- **What offline signals add.** Two or three sentences on elections, public meetings, minutes and polls that confirm or contradict the online picture, including the other side's strongest argument as its own supporters would put it.
+
 
 ## 4. Other good-to-knows
 Three to five bullets: comparable approved or denied projects that serve as templates, neighboring jurisdictions that matter, and dates to watch.
@@ -45,4 +53,4 @@ Three to five bullets: comparable approved or denied projects that serve as temp
 **Sources:** a single line naming the publications and records you used, with Data Center Watch first.
 ```
 
-Length: for a city or county, two pages, roughly 900 to 1,300 words. For a state, go longer, roughly 1,800 to 2,600 words, adding a short paragraph on the busiest counties and an overview of where things stand across the state. Every number, date and name must come from a page you opened or from the tracker's record. Use specific figures where you have them. Link key claims inline with markdown links where it helps, using only URLs you opened.
+Length: for a city or county, roughly 900 to 1,300 words, or up to about 1,700 when the place has enough posts to support the sentiment section above. For a state, go longer, roughly 1,800 to 2,600 words, adding a short paragraph on the busiest counties and an overview of where things stand across the state. Every number, date and name must come from a page you opened or from the tracker's record. Use specific figures where you have them. Link key claims inline with markdown links where it helps, using only URLs you opened.

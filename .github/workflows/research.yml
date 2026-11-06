@@ -117,19 +117,60 @@ jobs:
                   posts = [p for p in posts if p.get("c") == cid] if cid else []
               if city:
                   posts = [p for p in posts if p.get("ci", "").lower() == city.lower()]
-              by = {}
-              for p in posts:
-                  by[p.get("st", "?")] = by.get(p.get("st", "?"), 0) + 1
-              topics = {}
-              for p in posts:
-                  for t in p.get("tp", []):
-                      topics[t] = topics.get(t, 0) + 1
+              def tally(ps):
+                  stc, tpc, plc = {}, {}, {}
+                  for p in ps:
+                      s = p.get("st", "?")
+                      stc[s] = stc.get(s, 0) + 1
+                      plc[p.get("p", "?")] = plc.get(p.get("p", "?"), 0) + 1
+                      for t in p.get("tp", []):
+                          tpc.setdefault(t, {})
+                          tpc[t][s] = tpc[t].get(s, 0) + 1
+                  return stc, tpc, plc
+
+              def concerns(tpc):
+                  rows = sorted(tpc.items(), key=lambda kv: -sum(kv[1].values()))[:8]
+                  return "; ".join(f"{t} {sum(c.values())} (against {c.get('anti', 0)}, supportive {c.get('pro', 0)}, mixed {c.get('mixed', 0)})" for t, c in rows) or "none tagged"
+
+              def line(p):
+                  who = "a group or organization" if p.get("w") == "group" else "an individual account"
+                  home = ", ".join(str(x) for x in (p.get("hci"), p.get("hs")) if x)
+                  rc = p.get("rc")
+                  bits = [f'{plat.get(p.get("p"), p.get("p"))}', p.get("d", ""), who,
+                          "engagement " + "/".join(str(x) for x in (p.get("e") or [])) + f' (score {p.get("x", 0)}, top {100 - int(p.get("tr", 0))}% on its platform)']
+                  if rc:
+                      bits.append(f"replies read: {rc[0]} against, {rc[1]} supportive, {rc[2]} mixed")
+                  if home:
+                      bits.append(f"account based in {home}")
+                  if p.get("tp"):
+                      bits.append("topics " + ",".join(p["tp"]))
+                  return f'  [{p.get("st", "?")}] ' + " · ".join(str(b) for b in bits) + f' :: "{p.get("q", "")}" :: {p.get("u", "")}'
+
+              plat = soc.get("platforms", {})
+              st_c, tp_c, pf_c = tally(posts)
+              allst, alltp, allpf = tally(soc.get("posts", []))
+              by = st_c
+              topics = {t: sum(c.values()) for t, c in tp_c.items()}
               top = ", ".join(f"{t} {n}" for t, n in sorted(topics.items(), key=lambda x: -x[1])[:6])
-              rec += ["", f"PUBLIC SENTIMENT ({soc.get('from','?')} to {soc.get('to','?')}; Bluesky, Reddit, X and meeting-minute comments; people who post, not residents): "
-                      + (f"{len(posts)} posts; stance counts {by}; top topics {top or 'none'}." if posts else "no posts collected for this place.")
-                      + (" The tracker does not cover Facebook here." if "fb" not in soc.get("counts", {}) else "")]
+              sx = [f"PUBLIC SENTIMENT DATA FOR {place}  ({soc.get('from','?')} to {soc.get('to','?')}). These are people who post online, not residents; engagement reflects reach, not agreement.",
+                    f"Posts for this place: {len(posts)}; by platform {({plat.get(k, k): v for k, v in pf_c.items()})}; by stance {st_c}.",
+                    f"Concerns raised here, by topic: {concerns(tp_c)}.",
+                    f"Whole state ({state}): {len(soc.get('posts', []))} posts; by stance {allst}; concerns: {concerns(alltp)}.", ""]
+              ranked = sorted(posts, key=lambda p: -p.get("x", 0))
+              for stance, label in (("anti", "AGAINST data centers"), ("pro", "SUPPORTIVE of data centers"), ("mixed", "MIXED")):
+                  sel = [p for p in ranked if p.get("st") == stance][:6]
+                  sx.append(f"MOST-ENGAGED POSTS, {label} (up to 6):" if sel else f"MOST-ENGAGED POSTS, {label}: none for this place.")
+                  sx += [line(p) for p in sel]
+                  sx.append("")
+              if len(posts) < 8:   # thin place data: show the state's most-engaged posts too, so the brief has something to ground in
+                  sx.append(f"STATE-WIDE MOST-ENGAGED POSTS ({state}), because this place has few posts:")
+                  sx += [line(p) for p in sorted(soc.get("posts", []), key=lambda p: -p.get("x", 0))[:8]]
+              open(".github/prompts/.posts.txt", "w").write("\n".join(sx) + "\n")
+              rec += ["", f"PUBLIC SENTIMENT: {len(posts)} posts for this place; stance counts {by}; top topics {top or 'none'}. Full detail, concern breakdown and the most-engaged posts on each side are in .github/prompts/.posts.txt."
+                      + ("" if posts else " No posts were collected for this place.")]
           except Exception:
               rec += ["", "PUBLIC SENTIMENT: the tracker has not collected social posts for this state."]
+              open(".github/prompts/.posts.txt", "w").write("No social posts have been collected for this state." + chr(10))
           open(".github/prompts/.record.txt", "w").write("\n".join(rec) + "\n")
 
           tpl = ".github/prompts/deep-research.md" if mode == "deep" else ".github/prompts/place-analysis.md"
