@@ -27,7 +27,7 @@ export function select(ab){
 export function renderPanel(){
   const p=$("#panel");
   if(!state.sel){
-    const c=[0,0,0,0,0];
+    const c=[0,0,0,0,0,0];
     Object.keys(GRID).forEach(a=>{c[statePosture(a).c]++;});
     const inForcePauses=E.filter(e=>e.st==="pause").length;
     const ballots=E.filter(e=>e.st==="ballot").length;

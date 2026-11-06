@@ -505,3 +505,9 @@ footer p{max-width:90ch;margin-bottom:6px}
 .tile[data-p="4"],.dtile[data-p="4"]{background:var(--none);color:var(--none-ink)}
 .dtile[data-p][aria-pressed="true"]{box-shadow:inset 0 0 0 3px var(--volt)}
 .sw.p0{background:var(--p0)} .sw.p1{background:var(--p1)} .sw.p2{background:var(--p2)} .sw.p3{background:var(--p3)} .sw.p4{background:var(--none)}
+
+/* Places with no adopted policy but with local actions logged */
+:root{--p5:#F2D34E;--p5-ink:#3A3000}
+:root[data-theme="dark"]{--p5:#EBCF5A;--p5-ink:#0E1820}
+.tile[data-p="5"],.dtile[data-p="5"]{background:var(--p5);color:var(--p5-ink)}
+.sw.p5{background:var(--p5)}
