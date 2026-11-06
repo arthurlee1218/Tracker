@@ -178,6 +178,9 @@ Every state, county and city panel has **Deep research** (search that place only
   whose result is already on the page shows nothing; one GitHub has no matching run for after 5 minutes (`LOST_MS`) says so;
   every finished or lost job has a Dismiss link. Change `VER` in `research.js` whenever the saved shape changes, so old
   records are dropped on the next load instead of showing "waiting" forever.
+- **Model and effort.** Every workflow that runs Claude (`update.yml`, `update-projects.yml`, `research.yml`) sets
+  `--model claude-sonnet-5-5 --effort medium` in `claude_args`. Change them together, so the daily job, the projects job
+  and the on-demand jobs behave the same. A step-level `CLAUDE_CODE_EFFORT_LEVEL` would override `--effort`, so don't set one.
 - Only small serverless functions were added; they use no npm packages, so there is still no build step.
 
 ## Code map (`js/`)
