@@ -10,9 +10,15 @@ Today's date is {{TODAY}}. You are one of five specialist researchers preparing 
 
 `.github/prompts/.record.txt` is what the tracker already holds for the place, its county, the state level and the tracker's project list. `.github/prompts/.posts.txt` holds the saved social posts. Read what bears on your topic first. Treat both as leads, not proof, and do not read `updates.json`; it is too large.
 
+## Required questions
+
+You may not stop until every question below has an answer with a source, or at least two failed attempts by different routes written down. Work through them in order. These are the minimum; add more facts wherever you find them.
+
+{{TOPIC_QUESTIONS}}
+
 ## How to research
 
-Use web search and fetch like a careful researcher with time: roughly 15 to 25 searches and up to 12 pages opened, then stop. Search from several angles for each question (the official record, the local newspaper and TV station, the utility's and the state agency's own pages, court dockets, the legislature's site, meeting minutes and agenda packets). When a page will not open (a login, a very large file, a block), try another route to the same fact, such as the news story that quotes it, a cached or summary version from the same publisher, or the underlying document, before you give up. Only write "could not confirm" after at least two different routes failed, and say what you tried.
+Use web search and fetch like a careful researcher with time: plan on about 25 to 40 searches and up to 15 pages opened; the required questions below set the minimum, so you are not done early. Search from several angles for each question (the official record, the local newspaper and TV station, the utility's and the state agency's own pages, court dockets, the legislature's site, meeting minutes and agenda packets). When a page will not open (a login, a very large file, a block), try another route to the same fact, such as the news story that quotes it, a cached or summary version from the same publisher, or the underlying document, before you give up. Only write "could not confirm" after at least two different routes failed, and say what you tried.
 
 Prefer government records, utility and agency pages, court documents and local news. A fact found only on another data center tracker (datacenterbans.com, savrn.com, Server Country, MultiState, Citizen Portal and the like) is a lead: find the story or record behind it. If there is none, you may record it, marked `via another tracker, not independently confirmed`.
 
@@ -34,8 +40,15 @@ Write **only** the file `facts.md` in the repository root. It is not the brief; 
 ## Disputed or open questions
 - QUESTION: the point in dispute. | VIEW A: who says it (name, title), what, SOURCE: ... | VIEW B: who says it, what, SOURCE: ... | WHAT WOULD SETTLE IT: ...
 
+## Answers to the required questions
+- Q1: the answer in one or two lines, with the key names and numbers. | SOURCE: ... (or: not found, tried: query or page 1; query or page 2)
+- Q2: ...
+
 ## Could not confirm
 - What you looked for, and the routes you tried that failed.
+
+## Search log
+- One line for every search you ran and every page you opened, in order: the query or URL, then what it gave (a fact, nothing useful, blocked, too large, login wall). The reader sees this log in the run summary, so it must be complete and honest.
 ```
 
-Rules: only record facts from pages you actually opened or from the tracker's record (then say so in the SOURCE field). Quotations are 14 words or fewer. Write the file early, after your first few finds, and rewrite it as you go, so that running out of turns never loses what you found. A fact sheet with five facts is a failed run; aim for 25 to 60 facts for a city or county, more for a state, each with a source.
+Rules: only record facts from pages you actually opened or from the tracker's record (then say so in the SOURCE field). Quotations are 14 words or fewer. Write the file early, after your first few finds, and rewrite it as you go, so that running out of turns never loses what you found. A fact sheet with five facts, or a search log with five lines, is a failed run; aim for 25 to 60 facts for a city or county, more for a state, each with a source.

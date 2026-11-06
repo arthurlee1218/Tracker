@@ -15,6 +15,52 @@ export const TOPICS = {
   sentiment: ["Public sentiment and the key voices", "Read .github/prompts/.posts.txt. Then open the most-engaged posts on each side (the links are there), and for each report: the account name as the platform shows it, whether it is an individual, a group, an outlet, an official or a business, what the account's own public profile says about it, the argument it makes, and how replies read. If a page will not load or is behind a login, say so and stop; do not look anyone up elsewhere. For each concern in the data (water, rates, power, land, noise and the rest), say how many posts raise it on each side and check whether the claim behind it is true using sources. Find the strongest version of each side's argument as its own supporters put it. Note which threads or groups the posts come from."]
 };
 
+// Questions each researcher must answer, or show at least two failed attempts for, before it may stop. They keep a session
+// from ending after a handful of searches; the answers and a search log go into facts.md and the run summary.
+export const QUESTIONS = {
+  law: [
+    "Who approves a data center here, and by what steps (zoning review, notice, hearings, appeals)? Find the ordinance or code section.",
+    "Is there a state law that may limit a local ban or pause? Name it, quote its key words (14 words or fewer) and find every official, lawyer or bill sponsor who has said how it reads.",
+    "Is there a court ruling or an attorney general opinion on it, in this state or a neighboring one?",
+    "What state tax incentive exists for data centers (its name, thresholds, who administers it, clawbacks)? Has anyone paused or repealed it?",
+    "What state rules exist on water use, disclosure, and large-load or ratepayer protection for data centers?",
+    "What are the citizen initiative and referendum rules for local ordinances here?",
+    "Which bills or resolutions on data centers or local control are filed or expected for the next legislative session (sponsors, status), and what has the governor said?",
+    "What have at least three comparable nearby places adopted (rules, thresholds, dates)?"
+  ],
+  utilities: [
+    "Who owns the electric system, how many customers does it have, and what are its substations, line miles and peak load or capacity?",
+    "Where does its power come from (wholesaler, contract and end date), which grid operator covers it, and what recent capacity or outage events matter?",
+    "Is there a large-load tariff or rider for big customers? Name it, or say none was found after checking the utility's rate pages and commission dockets.",
+    "Who decides a large-load contract here (city board, utility commission, a state commission)?",
+    "What is the water source and intake, the treatment capacity, and current use? Any groundwater or interstate water rules?",
+    "What is the wastewater plant's capacity, the receiving water, and the discharge permit limits (for example nutrient limits) and who enforces them?",
+    "What recent rate cases, rate changes or cost riders affect customers?"
+  ],
+  projects: [
+    "For each project or developer: its name, who speaks for it, the client if known, size (MW, acres, dollars), the site, and how it first became public.",
+    "What is each one's status and next decision, and has any permit, rezoning or application been filed?",
+    "Has the city, county or utility marketed sites, issued a request for proposals, or signed incentive or tax agreements?",
+    "Which projects, lawsuits or developer disputes in adjacent places affect this one?",
+    "For every project the tracker lists for this place, what is its status now according to sources?"
+  ],
+  people: [
+    "For each vote on a data center measure: the date, body, tally, who introduced it and how each member voted. Look in the agenda center, minutes and local news.",
+    "Who spoke in public comment, by name, and what did each ask for?",
+    "What have the officials, utility leaders, chamber and economic development heads and the legislators who represent this place said?",
+    "Did an election turn on data centers here, and what were the results?",
+    "Which organized groups are for or against, and who leads them?",
+    "Is there a poll of this place or state?"
+  ],
+  sentiment: [
+    "Open each of the most-engaged posts' links and report the account name, type, what its public profile says, and how replies read, or that the page would not load.",
+    "For each of the top concerns in the data, is the claim behind it true? Check it against sources.",
+    "What is the strongest argument each side makes, in its own supporters' words?",
+    "Which groups, pages or threads do the posts come from, and who runs them?",
+    "Is there any poll or survey that bears on this place?"
+  ]
+};
+
 const NAME = /^[A-Za-z0-9 .'’\-&]{1,60}$/;
 const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const baseName = n => String(n || "").trim().replace(/\s+(county|parish|borough|census area|municipality)$/i, "").toLowerCase();
@@ -141,7 +187,7 @@ export function build(inp, data) {
   // The prompt
   let tpl = mode === "deep" ? data.templates.deep : (topic && topic !== "write" ? data.templates.facts : data.templates.write);
   const tp = TOPICS[topic] || ["", ""];
-  const subs = { TODAY: today, SINCE: since, PLACE: place, STATE: state, COUNTY: county || "none", CITY: city || "none", SCOPE: scope, TOPIC: topic, TOPIC_NAME: tp[0], TOPIC_FOCUS: tp[1] };
+  const subs = { TODAY: today, SINCE: since, PLACE: place, STATE: state, COUNTY: county || "none", CITY: city || "none", SCOPE: scope, TOPIC: topic, TOPIC_NAME: tp[0], TOPIC_FOCUS: tp[1], TOPIC_QUESTIONS: (QUESTIONS[topic] || []).map((x, n) => `${n + 1}. ${x}`).join("\n") };
   Object.entries(subs).forEach(([k, v]) => { tpl = tpl.split(`{{${k}}}`).join(v); });
   return { known, record: rec.join("\n") + "\n", posts: sx.join("\n") + "\n", run: tpl, counts: { own: own.length, county: county2.length, inside: inside.length, stateLevel: stateLevel.length, projects: prj.length, posts: posts.length } };
 }
