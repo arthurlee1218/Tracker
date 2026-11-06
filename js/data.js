@@ -9,11 +9,13 @@
 //   data/trackers.json  other trackers
 // The daily job's entries (updates.json) are loaded afterwards by loadPublished() in entries.js.
 import { D, E } from "./store.js";
+import { applyTags } from "./score.js";
 
 export async function loadData() {
   const get = n => fetch(`data/${n}.json`).then(r => { if (!r.ok) throw new Error(`${n}.json: HTTP ${r.status}`); return r.json(); });
   const [entries, states, projects, trackers, election] =
     await Promise.all(["entries", "states", "projects", "trackers", "election"].map(get));
+  entries.forEach(applyTags);   // tagged entries get their score and impact from the tags (js/score.js)
   E.push(...entries);
   D.ST_ASOF = states._asof || ""; delete states._asof;
   D.ST = states; D.PROJECTS = projects; D.TRK = trackers; D.ELECTION = election;
