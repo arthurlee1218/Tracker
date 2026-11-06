@@ -271,6 +271,36 @@
     "added": "2026-11-05T00:55:17.739Z"
   },
   {
+    "d": "2026-11-06",
+    "j": "US",
+    "w": "NYC climate groups",
+    "lv": "federal",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Activists protest at Schumer's home over bipartisan permitting bill's data center provisions",
+    "b": "Food & Water Watch and Brooklyn groups planned a Nov. 6 protest at Sen. Schumer's home, urging him to block the Bipartisan American Affordability and Jobs Act, which they call a dirty data center deal and a blank check for Big Tech.",
+    "s": [
+      [
+        "Common Dreams",
+        "https://www.commondreams.org/news/schumer-data-center-protest"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Protest against fast-track permitting bill leans toward limiting data centers",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T12:59:09.517Z"
+  },
+  {
     "d": "2026-11-05",
     "j": "NY",
     "w": "Town of Potsdam",
@@ -406,6 +436,76 @@
     ],
     "auto": true,
     "added": "2026-11-06T01:01:07.523Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "NH",
+    "w": "Bow residents, planning board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Bow residents petition for town vote on a one-year data center pause",
+    "b": "Over 800 Bow voters signed a petition for a town-wide vote on pausing data center permitting for at least a year. The planning board agreed to refine the ordinance and hold a hearing Dec. 3. No developer has applied.",
+    "s": [
+      [
+        "Concord Monitor",
+        "https://www.concordmonitor.com/2026/11/05/bow-residents-push-for-town-vote-on-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed town pause, petition and hearing scheduled, not yet adopted",
+    "pl": [
+      [
+        "Bow",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T12:59:10.678Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "NC",
+    "w": "Guilford County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Guilford County adopts 18-month data center pause, triple the 180 days first floated",
+    "b": "Commissioners unanimously approved a pause on new data center development lasting 18 months, after residents said the proposed six months was too short. The time is meant to study community effects and decide whether local rules need to change.",
+    "s": [
+      [
+        "Yahoo News (WFMY)",
+        "https://www.yahoo.com/news/articles/guilford-county-approves-18-month-004632070.html"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Binding county-wide 18-month pause on new data centers.",
+    "pl": [
+      [
+        "Guilford County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T12:59:10.965Z"
   },
   {
     "d": "2026-11-04",
@@ -638,6 +738,72 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-06T01:01:09.275Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "PA",
+    "w": "Pennsylvania voters (state Senate)",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "cost",
+      "tax"
+    ],
+    "t": "Democrats flip the Pennsylvania Senate 26-24, ending GOP control that stalled data center bills",
+    "b": "Democrats flipped four GOP seats to take the Senate for the first time in over three decades, giving Shapiro a trifecta from January. House-passed data center bills, such as the sales tax break repeal and GRID standards, stalled in the Senate this year. Results unofficial.",
+    "s": [
+      [
+        "Spotlight PA",
+        "https://www.spotlightpa.org/news/2026/11/pennsylvania-house-election-results-legislature-control-elections/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Control change could unstick House-passed data center limits, still unlegislated",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T12:59:10.215Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "OR",
+    "w": "Oregon City commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Oregon City adopts 120-day moratorium on data centers and battery storage",
+    "b": "Commissioners paused applications for data centers and battery energy storage in five industrial and mixed-use zones while staff review city codes and draft new rules. It follows Clackamas County's countywide pause that began Oct. 22.",
+    "s": [
+      [
+        "KATU",
+        "https://katu.com/news/local/oregon-city-adopts-120-day-data-center-moratorium"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Temporary 120-day city pause on applications, in force on adoption.",
+    "pl": [
+      [
+        "Oregon City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T12:59:11.258Z"
   },
   {
     "d": "2026-11-03",
@@ -3659,6 +3825,147 @@
     "added": "2026-11-06T01:01:09.912Z"
   },
   {
+    "d": "2026-11-03",
+    "j": "WI",
+    "w": "Janesville voters",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting"
+    ],
+    "t": "Janesville voters require a public vote on projects over $450 million at GM site",
+    "b": "Janesville voters approved, 16,779 to 9,932 unofficially, a measure requiring voter approval for projects costing over $450 million on the former GM/JATCO site. It followed a data center proposal that lapsed.",
+    "s": [
+      [
+        "Gazette (Janesville)",
+        "https://www.gazettextra.com/news/gm-jatco-site-referendum-passes/article_39bd578b-9327-4174-b6bd-0e44755d1d32.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "i",
+    "iw": "Voter approval needed for giant projects at one site after data center fight",
+    "pl": [
+      [
+        "Janesville",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T12:59:09.900Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NJ",
+    "w": "Downe Township voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "poll",
+    "ty": [
+      "siting"
+    ],
+    "t": "Downe Township, NJ voters overwhelmingly oppose data centers in advisory vote",
+    "b": "Downe Township voters answered a non-binding question on supporting data centers in the township; about 87% opposed, according to reports. Results are unofficial until county certification.",
+    "s": [
+      [
+        "Yahoo News",
+        "https://www.yahoo.com/news/us/articles/neighborhood-data-centers-2-n-110203889.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Non-binding vote backing opposition, takes voters' direction",
+    "pl": [
+      [
+        "Downe Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T12:59:10.459Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "SC",
+    "w": "Spartanburg County Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Spartanburg County advances three data center agreements on Election Day, including 457 MW Valara",
+    "b": "At a special meeting, council gave second-reading approval to agreements for three projects worth about $5.45B, including the exempt Valara campus. Third reading is set for Nov. 16, despite the county's year-long freeze on projects over 65 MW.",
+    "s": [
+      [
+        "South Carolina Public Radio",
+        "https://www.southcarolinapublicradio.org/sc-news/2026-11-05/spartanburg-oks-three-data-center-deals-at-election-day-meeting"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Agreements approved on second reading; final vote pending.",
+    "pl": [
+      [
+        "Spartanburg County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T12:59:10.728Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NM",
+    "w": "Environment Dept and developer",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting"
+    ],
+    "t": "State and Project Jupiter developer ask to vacate Dec. 7 air permit hearing",
+    "b": "The Environment Department and developer filed a joint motion to vacate the Sunland Park hearing, citing more technical review of revised fuel cell plans. No new date is set, and an opponent filed a motion to dismiss the application.",
+    "s": [
+      [
+        "Searchlight New Mexico",
+        "https://searchlightnm.org/state-developers-ask-to-delay-public-hearing-on-project-jupiter-air-quality-permit/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 1,
+    "du": "m",
+    "rl": "d",
+    "iw": "Motion would delay one project's air permit; no order granting it confirmed.",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ],
+      [
+        "Sunland Park",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T12:59:11.123Z"
+  },
+  {
     "d": "2026-11-02",
     "j": "NY",
     "w": "Hamburg Town Board",
@@ -3933,6 +4240,44 @@
     ],
     "auto": true,
     "added": "2026-11-05T13:00:42.324Z"
+  },
+  {
+    "d": "2026-11-01",
+    "j": "KY",
+    "w": "No Data Center 502",
+    "lv": "local",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "siting"
+    ],
+    "t": "Louisville residents march to mayor's home against Shively hyperscale data center",
+    "b": "No Data Center 502 marched two miles to Mayor Greenberg's home, demanding the city stop a Poe Companies and PowerHouse hyperscale project on Camp Ground Road in Shively, saying opposition continues despite proposed regulations.",
+    "s": [
+      [
+        "Spectrum News 1",
+        "https://spectrumnews1.com/ky/louisville/news/2026/11/01/no-data-center-0"
+      ]
+    ],
+    "im": 0,
+    "ef": "deny",
+    "fo": 0,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Protest aimed at stopping one named hyperscale project",
+    "pl": [
+      [
+        "Louisville",
+        "city"
+      ],
+      [
+        "Shively",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T12:59:09.764Z"
   },
   {
     "d": "2026-10-31",
@@ -5826,6 +6171,41 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-04T22:06:56.836Z"
+  },
+  {
+    "d": "2026-10-22",
+    "j": "VT",
+    "w": "Pownal Select Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Pownal board weighs a five-year data center permitting pause",
+    "b": "A Pownal select board member proposed a five-year moratorium on data center facilities, prompted by interest in the former Green Mountain Race Track site. The board has not yet voted; residents will weigh in at a later meeting.",
+    "s": [
+      [
+        "VTDigger",
+        "https://vtdigger.org/2026/10/27/pownal-will-consider-a-5-year-permitting-pause-on-data-center-facilities/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "l",
+    "rl": "d",
+    "iw": "Proposed five-year town pause, only discussed so far",
+    "pl": [
+      [
+        "Pownal",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T12:59:10.709Z"
   },
   {
     "d": "2026-10-21",
