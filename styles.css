@@ -511,3 +511,31 @@ footer p{max-width:90ch;margin-bottom:6px}
 :root[data-theme="dark"]{--p5:#EBCF5A;--p5-ink:#0E1820}
 .tile[data-p="5"],.dtile[data-p="5"]{background:var(--p5);color:var(--p5-ink)}
 .sw.p5{background:var(--p5)}
+
+/* Clickable topics in the side panel, and expandable posts in the Public sentiment tab */
+.kw-hint{font-size:14px;color:var(--ink-3);margin-top:2px}
+.kw li.kw-i{padding:0}
+.kw li.kw-i button{background:none;border:0;font:inherit;color:inherit;cursor:pointer;padding:2px 9px;border-radius:999px}
+.kw li.kw-i:hover{background:var(--surface);border-color:var(--ink-3)}
+.kw li.kw-i button:focus-visible{outline:2px solid var(--volt);outline-offset:1px}
+.sp details>summary{list-style:none;cursor:pointer;display:block}
+.sp details>summary::-webkit-details-marker{display:none}
+.sp-top,.sp-q,.sp-tagrow{display:flex}
+.sp-top{flex-wrap:wrap;align-items:baseline;gap:4px 14px}
+.sp-q{margin:6px 0 8px;font-size:17px;max-width:72ch}
+.sp-tagrow{flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:14px;color:var(--ink-2)}
+.sp-tr{display:inline-flex;align-items:center;gap:6px}
+.sp-hint{margin-left:auto;font-size:13px;font-weight:600;color:var(--ink-3)}
+.sp-hint::after{content:" \25BE"}
+.sp details[open] .sp-hint::after{content:" \25B4"}
+.sp summary:hover .sp-hint,.sp summary:focus-visible .sp-hint{color:var(--ink)}
+.sp summary:focus-visible{outline:2px solid var(--volt);outline-offset:3px}
+.tag-none{font-style:italic;color:var(--ink-3)}
+.sp-body{margin-top:10px;padding:10px 12px;background:var(--surface-2);border:1px solid var(--rule-soft)}
+.sp-dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;font-size:14px}
+.sp-dl dt{color:var(--ink-3);font-weight:600}
+.sp-dl dd{color:var(--ink-2)}
+.sp-note{font-size:13px;color:var(--ink-3);margin:8px 0;max-width:70ch}
+.sp-open{font-weight:600;font-size:14px}
+@media (max-width:520px){.sp-dl{grid-template-columns:1fr}.sp-dl dt{margin-top:4px}}
+.sp-q{display:block}

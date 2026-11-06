@@ -62,6 +62,7 @@ export function fillSocSelects(){
   cis.innerHTML=`<option value="">${Object.keys(cc).length?"All cities and towns":"No city-level posts"}</option>`+Object.keys(cc).sort((a,b)=>cc[b]-cc[a]).map(n=>`<option value="${esc(n)}">${esc(n)} (${cc[n]})</option>`).join("");
   cis.value=f.ci;
 }
+const kindOf=p=>p.p==="mm"?"Public comment at a meeting":p.p==="fb"?(String(p.id).startsWith("fc")?"Comment or reply":"Post or comment in a group"):p.p==="reddit"?(String(p.id).startsWith("rc")?"Comment":"Post"):p.p==="x"?"Post or reply":"Post";
 export function renderSocial(){
   const ul=$("#posts");if(!ul) return;
   const f=SOC.f,end=Object.values(SOC.data)[0]?Date.parse(Object.values(SOC.data)[0].to):0;
@@ -79,13 +80,22 @@ export function renderSocial(){
   });
   list.sort(f.sort==="new"?(a,b)=>b.d.localeCompare(a.d)||b.tr-a.tr:(a,b)=>b.tr-a.tr||b.x-a.x||b.d.localeCompare(a.d));
   const total=Object.values(SOC.data).reduce((t,d)=>t+d.posts.length,0),acc=new Set(list.map(p=>p.a)).size;
-  $("#sc").textContent=`${list.length} of ${total} posts from ${acc} ${acc===1?"account":"accounts"}`+(f.c&&f.c!=="none"&&f.j?` in ${f.ci?f.ci+", ":""}${cName(f.j,f.c)}`:"");
+  $("#sc").textContent=`${list.length} of ${total} posts from ${acc} ${acc===1?"account":"accounts"}`+(f.tp?` about ${TOPL[f.tp].toLowerCase()}`:"")+(f.c&&f.c!=="none"&&f.j?` in ${f.ci?f.ci+", ":""}${cName(f.j,f.c)}`:"");
   if(!list.length){ul.innerHTML='<li class="empty">No posts match. Try clearing a filter or choosing a wider place.</li>';$("#soc-more").innerHTML="";return;}
   ul.innerHTML=list.slice(0,f.n).map(p=>{const t=trTier(p),where=p.c?`${cName(p.j,p.c)}${p.ci?" · "+p.ci:""}`:`${NAMES[p.j]||p.j} · no place named`;
-    return `<li class="sp"><div class="sp-top"><span class="sp-date">${fmt(p.d)}</span><span class="sp-where">${esc(where)}${p.hci?esc(" · author based in "+p.hci):""}</span><span class="stance ${p.st}">${STANCE[p.st]}</span></div>
-      <blockquote class="sp-q">“${esc(p.q)}”</blockquote>
-      <div class="sp-meta"><span>${trMeter(t,effSt(p))} ${TRX(t)}${contested(p)?" · contested":""}${p.x>0?` (${esc(engText(p))})`:""}</span>${p.rc?`<span class="rcv">${esc(recText(p))}</span>`:""}<span>${esc(p.pf)} · ${WHOL[p.w]}</span>
-        <span class="tags">${(p.tp||[]).filter(k=>k!=="pause").slice(0,3).map(k=>`<span class="tag">${TOPL[k]}</span>`).join("")}</span><a href="${esc(p.u)}" target="_blank" rel="noopener">Open post</a></div></li>`;}).join("");
+    return `<li class="sp"><details><summary><span class="sp-top"><span class="sp-date">${fmt(p.d)}</span><span class="sp-where">${esc(where)}${p.hci?esc(" · author based in "+p.hci):""}</span><span class="stance ${p.st}">${STANCE[p.st]}</span></span>
+      <span class="sp-q">“${esc(p.q)}”</span>
+      <span class="sp-tagrow"><span class="tags">${(p.tp||[]).map(k=>`<span class="tag">${TOPL[k]}</span>`).join("")||`<span class="tag tag-none">No topic tagged</span>`}</span><span class="sp-tr">${trMeter(t,effSt(p))} ${TRX(t)}${contested(p)?" · contested":""}</span><span class="sp-hint">Details</span></span></summary>
+      <div class="sp-body"><dl class="sp-dl">
+        <dt>What it is getting at</dt><dd>${(p.tp||[]).length?(p.tp||[]).map(k=>esc(TOPL[k])).join(", "):"No specific topic; a general view"}. Stance label: ${STANCE[p.st]} toward data centers in this place.</dd>
+        <dt>Where</dt><dd>${esc(where)}</dd>
+        <dt>Posted on</dt><dd>${esc(p.pf)} · ${esc(kindOf(p))} · ${fmt(p.d)}</dd>
+        <dt>Account</dt><dd>${WHOL[p.w]}${p.hci?esc(", profile says it is based in "+p.hci):""}</dd>
+        <dt>Reach</dt><dd>${p.x>0?esc(engText(p))+" · "+TRX(t)+(p.tr?` (top ${Math.max(1,100-p.tr)}% on ${esc(p.pf)} in this collection)`:""):"No engagement recorded"}</dd>
+        ${p.rc?`<dt>Replies</dt><dd>${esc(recText(p))}</dd>`:""}
+      </dl>
+      <p class="sp-note">Only the opening words of each post are saved, so this is all the site has. The stance and topic tags were assigned by Claude and can be wrong. Open the post for the full text.</p>
+      <a class="sp-open" href="${esc(p.u)}" target="_blank" rel="noopener">Open post</a></div></details></li>`;}).join("");
   $("#soc-more").innerHTML=list.length>f.n?`<button class="btn-quiet" id="soc-more-btn" type="button">Show ${Math.min(40,list.length-f.n)} more of ${list.length-f.n} left</button>`:"";
   if($("#soc-more-btn"))$("#soc-more-btn").addEventListener("click",()=>{f.n+=40;renderSocial();});
 }

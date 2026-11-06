@@ -178,7 +178,7 @@ run page code at the top level of a module.
 | `sentiment.js` | Sentiment math (accounts, trend, topics, traction) and the panel blocks |
 | `nav.js` | Breadcrumbs, and keeping the page in step with the selected state, county or city |
 | `drill.js` | The drill-down: a state's counties as named tiles, then a county's cities, laid out roughly where they sit |
-| `social.js` | The Public sentiment tab and the loader for `social/` and `geo/` |
+| `social.js` | The Public sentiment tab and the loader for `social/` and `geo/`. Each post row shows its topic tags and expands to the details the file holds (only the 14-word excerpt is stored, never the full text). The topic chips in a place panel ("What people here bring up", built in `sentiment.js`) open this tab on the selected place filtered to that topic |
 | `shell.js` | Tabs, keyboard shortcuts, theme button |
 | `research.js` | The Deep research and Analysis block in the state, county and city panels, the password dialog, and watching for results |
 | `report.js` | Used only by `report.html`: a small, escaping Markdown reader for the briefs |

@@ -79,7 +79,7 @@ export function sentBlock(ab,posts,scope){
     ${v.n?`<div class="vbar" role="img" aria-label="${v.anti} against, ${v.mixed} mixed, ${v.pro} supportive"><i class="a" style="width:${pct(v.anti)}%"></i><i class="m" style="width:${pct(v.mixed)}%"></i><i class="p" style="width:${pct(v.pro)}%"></i></div>
     <div class="vkey"><span><b>${v.anti}</b> against</span><span><b>${v.mixed}</b> mixed</span><span><b>${v.pro}</b> supportive</span></div>`:""}
     ${trend}
-    ${kw.length?`<h3 style="margin-top:12px">What people here bring up</h3><ul class="kw">${kw.map(x=>`<li class="${x.hot?"hot":""}">${TOPL[x.k]}<small>${x.n}${x.hot?" · contested":""}</small></li>`).join("")}</ul>`:""}
+    ${kw.length?`<h3 style="margin-top:12px">What people here bring up</h3><p class="kw-hint">Select a topic to read those posts.</p><ul class="kw">${kw.map(x=>`<li class="kw-i ${x.hot?"hot":""}"><button type="button" data-soc-topic="${x.k}" title="${x.n} ${x.n===1?"account":"accounts"} mention this. Select to read the posts.">${TOPL[x.k]}<small>${x.n}${x.hot?" · contested":""}</small></button></li>`).join("")}</ul>`:""}
     ${top.length?`<h3 style="margin-top:12px">Most traction</h3>${top.map(p=>`<a class="toppost" href="${esc(p.u)}" target="_blank" rel="noopener"><q>${esc(p.q)}</q><small>${trMeter(trTier(p),effSt(p))} ${TRX(trTier(p))}${contested(p)?" · contested":""} · ${esc(platName(p.p))} · ${fmt(p.d)} · ${esc(engText(p))}${p.rc?" · "+esc(recText(p)):""}${p.home?" · based here":""}</small></a>`).join("")}`:""}
     <p class="caveat">Counts accounts, not people, and only those who posted publicly on the platforms collected. Labels were assigned by Claude and can be wrong.</p></div>`;
 }
@@ -136,6 +136,14 @@ export function renderGeoPanel(p){
   bindLocal(p);bindSoc(p);bindResearch(p,{st:ab,county:s.c?cn:"",city:s.ci||""});
 }
 export function bindSoc(p){
-  p.querySelectorAll("[data-soc-posts]").forEach(b=>b.addEventListener("click",()=>{showTab("social",false);$("#t-social").scrollIntoView({block:"start",behavior:"auto"});}));
+  // "See all posts" and the topic chips both open the Public sentiment tab on the selected place; a chip also filters to that topic.
+  const openPosts=async topic=>{
+    SOC.f.tp=topic;SOC.f.n=40;
+    const sel=$("#sf-tp");if(sel)sel.value=topic;
+    const {renderSocial}=await import("./social.js");renderSocial();
+    showTab("social",false);$("#t-social").scrollIntoView({block:"start",behavior:"auto"});
+  };
+  p.querySelectorAll("[data-soc-posts]").forEach(b=>b.addEventListener("click",()=>openPosts("")));
+  p.querySelectorAll("[data-soc-topic]").forEach(b=>b.addEventListener("click",()=>openPosts(b.dataset.socTopic)));
   p.querySelectorAll("[data-soc-up]").forEach(b=>b.addEventListener("click",()=>selectGeo(SOC.geoSel.ci?SOC.geoSel.c:"","")));
 }
