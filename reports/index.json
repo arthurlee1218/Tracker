@@ -1,5 +1,14 @@
 [
   {
+    "id": "mo-marion-county-hannibal-2026-11-06",
+    "title": "Hannibal, Marion County, MO: Data Center Siting Brief",
+    "state": "MO",
+    "county": "Marion County",
+    "city": "Hannibal",
+    "date": "2026-11-06",
+    "added": "2026-11-06T05:21:39.744Z"
+  },
+  {
     "id": "ks-seward-county-liberal-2026-11-06",
     "title": "Liberal, Seward County, KS: Data Center Siting Brief",
     "state": "KS",
@@ -25,14 +34,5 @@
     "city": "Siloam Springs",
     "date": "2026-11-06",
     "added": "2026-11-06T04:49:06.504Z"
-  },
-  {
-    "id": "mo-marion-county-hannibal-2026-11-06",
-    "title": "Hannibal, Marion County, MO: Data Center Siting Brief",
-    "state": "MO",
-    "county": "Marion County",
-    "city": "Hannibal",
-    "date": "2026-11-06",
-    "added": "2026-11-06T01:22:56.152Z"
   }
 ]
