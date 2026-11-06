@@ -1,5 +1,14 @@
 [
   {
+    "id": "al-lee-county-opelika-2026-11-06",
+    "title": "Opelika, Lee County, AL: Data Center Siting Brief",
+    "state": "AL",
+    "county": "Lee County",
+    "city": "Opelika",
+    "date": "2026-11-06",
+    "added": "2026-11-06T05:02:02.571Z"
+  },
+  {
     "id": "ar-benton-county-siloam-springs-2026-11-06",
     "title": "Siloam Springs, Benton County, AR: Data Center Siting Brief",
     "state": "AR",
@@ -25,14 +34,5 @@
     "city": "Hannibal",
     "date": "2026-11-06",
     "added": "2026-11-06T01:22:56.152Z"
-  },
-  {
-    "id": "al-lee-county-opelika-2026-11-06",
-    "title": "Opelika, Lee County, AL: Data Center Siting Brief",
-    "state": "AL",
-    "county": "Lee County",
-    "city": "Opelika",
-    "date": "2026-11-06",
-    "added": "2026-11-06T01:19:25.115Z"
   }
 ]
