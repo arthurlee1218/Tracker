@@ -1,180 +1,5 @@
 [
   {
-    "d": "2026-03-20",
-    "j": "MO",
-    "w": "Hannibal Board of Public Works",
-    "lv": "local",
-    "k": "action",
-    "st": "pending",
-    "ty": [
-      "siting"
-    ],
-    "t": "Hannibal utility board seeks large-load power customers for city-owned tech park",
-    "b": "Hannibal's Board of Public Works, for the city, issued an RFP offering up to 100 MW of retail power at Lakeside Technology Park, naming data centers as one target use. Proposals were due May 15. No public report says whether any were received.",
-    "s": [
-      [
-        "Hannibal Regional Economic Development Council",
-        "https://hredc.com/news/now-open-100-mw-power-opportunity-in-the-hannibal-region/"
-      ],
-      [
-        "Hannibal Board of Public Works (RFP document)",
-        "https://hredc.com/wp-content/uploads/2026/04/Final-RFP_100-MW_Hannibal-MO-complete.pdf"
-      ],
-      [
-        "Hannibal Board of Public Works (April 20 minutes)",
-        "https://www.hannibalbpw.org/wp-content/uploads/2026/06/Minutes-April-20-2026.pdf"
-      ]
-    ],
-    "im": 0,
-    "ef": "help",
-    "fo": 1,
-    "rc": 1,
-    "du": "p",
-    "rl": "d",
-    "iw": "City-owned site with power and fiber offered to developers; outcome unknown.",
-    "pl": [
-      [
-        "Hannibal",
-        "city"
-      ]
-    ],
-    "auto": false,
-    "by": "Claude research, Nov 5"
-  },
-  {
-    "d": "2026-08-20",
-    "j": "MO",
-    "w": "Ralls County Electric Co-op CEO",
-    "lv": "local",
-    "k": "politics",
-    "st": "statement",
-    "ty": [
-      "siting"
-    ],
-    "t": "Ralls County electric co-op says it can serve only data centers under 30 MW",
-    "b": "At a county information meeting, co-op manager Lynn Hodges said developers had made preliminary contact but no power or membership request existed. He said the co-op cannot serve large data centers, only small ones under 30 megawatts.",
-    "s": [
-      [
-        "WGEM",
-        "https://www.wgem.com/2026/08/20/ralls-county-commissioners-hold-public-discussion-about-data-centers/"
-      ]
-    ],
-    "im": 0,
-    "ef": "limit",
-    "fo": 0,
-    "rc": 4,
-    "du": "p",
-    "rl": "d",
-    "iw": "Local power supplier limits project size in Ralls County.",
-    "pl": [
-      [
-        "Ralls County",
-        "county"
-      ]
-    ],
-    "auto": false,
-    "by": "Claude research, Nov 5"
-  },
-  {
-    "d": "2026-11-03",
-    "j": "MO",
-    "w": "Missouri voters",
-    "lv": "state",
-    "k": "politics",
-    "st": "campaign",
-    "ty": [],
-    "t": "Missouri Democrats end House Republican supermajority, 95-68 in preliminary count",
-    "b": "Democrats gained 16 House seats and flipped two Senate seats, so Republicans cannot override Gov. Kehoe's vetoes alone. Amendment 6 passed with about 60 percent, raising the bar to change voter-approved laws. Coverage opened does not mention data centers. Results unofficial.",
-    "s": [
-      [
-        "KRCG",
-        "https://krcgtv.com/news/local/missouri-republicans-suffer-biggest-electoral-setback-in-a-generation"
-      ],
-      [
-        "KY3",
-        "https://www.ky3.com/2026/11/04/missouri-democrats-break-republican-supermajority-with-largest-house-gain-since-1974/"
-      ]
-    ],
-    "im": 0,
-    "ef": "none",
-    "fo": 0,
-    "rc": 5,
-    "du": "p",
-    "rl": "i",
-    "iw": "No stated data center link; more bipartisan bargaining on 2027 bills likely.",
-    "pl": [],
-    "auto": false,
-    "by": "Claude research, Nov 5"
-  },
-  {
-    "d": "2026-11-03",
-    "j": "KS",
-    "w": "Seward County voters",
-    "lv": "local",
-    "k": "politics",
-    "st": "campaign",
-    "ty": [
-      "water",
-      "siting"
-    ],
-    "t": "Seward County voters elect two commission challengers who oppose data centers",
-    "b": "Unofficial returns show Kay Burtzloff and Lizette Avalos-Morales, who told an Oct. 7 forum they oppose data centers over water, beating incumbents Clay Louderback and Jairo Vazquez, 369-216 and 533-250. About 36% of voters turned out.",
-    "s": [
-      [
-        "Seward County (KSCB)",
-        "https://www.kscbnews.net/2026/11/03/seward-county-voters-go-to-the-polls/"
-      ]
-    ],
-    "im": 0,
-    "ef": "limit",
-    "fo": 0,
-    "rc": 3,
-    "du": "p",
-    "rl": "d",
-    "iw": "Two data center critics join the commission; no project is pending locally.",
-    "pl": [
-      [
-        "Seward County",
-        "county"
-      ]
-    ],
-    "auto": false,
-    "by": "Claude research, Nov 5"
-  },
-  {
-    "d": "2026-11-03",
-    "j": "KS",
-    "w": "Kansas voters",
-    "lv": "state",
-    "k": "politics",
-    "st": "campaign",
-    "ty": [
-      "moratorium"
-    ],
-    "t": "Democrats break Kansas House Republican supermajority, projected 68-57 (unofficial)",
-    "b": "Unofficial results leave Republicans short of the two-thirds needed to override vetoes. If Cindy Holscher, who ran partly on a data center pause, holds her roughly 5,000-vote governor's lead, vetoes will be harder to override in 2027.",
-    "s": [
-      [
-        "KCUR",
-        "https://www.kcur.org/politics-elections-and-government/2026-11-04/kansas-democrats-break-gop-supermajority-johnson-county"
-      ],
-      [
-        "KWCH",
-        "https://www.kwch.com/2026/11/04/state-democrats-break-gop-supermajority-kansas-house/"
-      ]
-    ],
-    "im": 0,
-    "ef": "pause",
-    "fo": 0,
-    "rc": 5,
-    "du": "m",
-    "rl": "i",
-    "iw": "Weaker veto-proof GOP majority makes a Democratic governor's data center limits harder to undo.",
-    "pl": [],
-    "auto": false,
-    "by": "Claude research, Nov 5"
-  },
-  {
     "d": "2026-12-15",
     "j": "ND",
     "w": "Mandan voters",
@@ -519,6 +344,70 @@
     "added": "2026-11-05T22:28:48.669Z"
   },
   {
+    "d": "2026-11-05",
+    "j": "US",
+    "w": "Sanders, Ansari, Casar",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Democrats urge national data center moratorium after midterm wins",
+    "b": "Sen. Sanders called for a national moratorium, and Rep. Ansari said pausing AI buildout should be a day-one priority for the House Democratic majority; Rep. Casar backed her. Texas governor-elect Hinojosa earlier pledged a ban on approvals.",
+    "s": [
+      [
+        "CNBC",
+        "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 6,
+    "du": "m",
+    "rl": "d",
+    "iw": "Calls for a national pause; statements only",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:03.863Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "CT",
+    "w": "Cromwell Planning and Zoning",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Cromwell zoning panel takes up a six-month data center moratorium",
+    "b": "Cromwell's Planning and Zoning Commission was scheduled to consider a six-month pause on data centers on Nov. 5, as a large proposed project near a school drew resident concern. The outcome was not yet reported.",
+    "s": [
+      [
+        "WFSB",
+        "https://www.wfsb.com/2026/11/05/cromwell-considers-moratorium-pause-new-data-center-developments/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed six-month town pause on the agenda.",
+    "pl": [
+      [
+        "Cromwell",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T01:01:07.523Z"
+  },
+  {
     "d": "2026-11-04",
     "j": "TX",
     "w": "Brownsville City Commission",
@@ -719,6 +608,135 @@
     ],
     "auto": true,
     "added": "2026-11-05T22:45:09.898Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "AZ",
+    "w": "Arizona Corporation Commission voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost",
+      "disclosure"
+    ],
+    "t": "Two Democrats unseat Republicans on Arizona Corporation Commission, pledging data center scrutiny",
+    "b": "Unofficial returns show Clara Pratte and Jonathon Hill beating Republicans Thompson and Heap, who conceded. The pair pledged to subpoena records on data center water and energy use. Republicans still hold three of five seats; the APS rate case may finish first.",
+    "s": [
+      [
+        "Arizona Capitol Times",
+        "https://azcapitoltimes.com/news/2026/11/05/democrats-break-up-all-republican-majority-on-corporation-commission/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Utility regulators pledge scrutiny of data center load; still a minority on commission",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:09.275Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MO",
+    "w": "Missouri voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [],
+    "t": "Missouri Democrats end House Republican supermajority, 95-68 in preliminary count",
+    "b": "Democrats gained 16 House seats and flipped two Senate seats, so Republicans cannot override Gov. Kehoe's vetoes alone. Amendment 6 passed with about 60 percent, raising the bar to change voter-approved laws. Coverage opened does not mention data centers. Results unofficial.",
+    "s": [
+      [
+        "KRCG",
+        "https://krcgtv.com/news/local/missouri-republicans-suffer-biggest-electoral-setback-in-a-generation"
+      ],
+      [
+        "KY3",
+        "https://www.ky3.com/2026/11/04/missouri-democrats-break-republican-supermajority-with-largest-house-gain-since-1974/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "No stated data center link; more bipartisan bargaining on 2027 bills likely.",
+    "pl": [],
+    "auto": false,
+    "by": "Claude research, Nov 5"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "KS",
+    "w": "Seward County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "water",
+      "siting"
+    ],
+    "t": "Seward County voters elect two commission challengers who oppose data centers",
+    "b": "Unofficial returns show Kay Burtzloff and Lizette Avalos-Morales, who told an Oct. 7 forum they oppose data centers over water, beating incumbents Clay Louderback and Jairo Vazquez, 369-216 and 533-250. About 36% of voters turned out.",
+    "s": [
+      [
+        "Seward County (KSCB)",
+        "https://www.kscbnews.net/2026/11/03/seward-county-voters-go-to-the-polls/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Two data center critics join the commission; no project is pending locally.",
+    "pl": [
+      [
+        "Seward County",
+        "county"
+      ]
+    ],
+    "auto": false,
+    "by": "Claude research, Nov 5"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "KS",
+    "w": "Kansas voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Democrats break Kansas House Republican supermajority, projected 68-57 (unofficial)",
+    "b": "Unofficial results leave Republicans short of the two-thirds needed to override vetoes. If Cindy Holscher, who ran partly on a data center pause, holds her roughly 5,000-vote governor's lead, vetoes will be harder to override in 2027.",
+    "s": [
+      [
+        "KCUR",
+        "https://www.kcur.org/politics-elections-and-government/2026-11-04/kansas-democrats-break-gop-supermajority-johnson-county"
+      ],
+      [
+        "KWCH",
+        "https://www.kwch.com/2026/11/04/state-democrats-break-gop-supermajority-kansas-house/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "i",
+    "iw": "Weaker veto-proof GOP majority makes a Democratic governor's data center limits harder to undo.",
+    "pl": [],
+    "auto": false,
+    "by": "Claude research, Nov 5"
   },
   {
     "d": "2026-11-03",
@@ -3179,6 +3197,468 @@
     "added": "2026-11-05T22:45:13.351Z"
   },
   {
+    "d": "2026-11-03",
+    "j": "OH",
+    "w": "Piqua voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "Piqua voters recall three commissioners and ban large data centers",
+    "b": "Unofficial results show voters recalled Mayor Vetter, Vice Mayor DeBrosse and Commissioner Walker, who backed a controversial data center, and passed a charter ban on data centers above 25 MW with about 67%. Results await certification.",
+    "s": [
+      [
+        "WYSO",
+        "https://www.wyso.org/government-politics-news/2026-11-04/piqua-voters-reject-data-centers-recall-city-commissioners"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 2,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Charter ban on large data centers passed; unofficial until certified",
+    "pl": [
+      [
+        "Piqua",
+        "city"
+      ],
+      [
+        "Miami County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T01:01:04.135Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OH",
+    "w": "Wilmington voters",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting"
+    ],
+    "t": "Wilmington voters reject rezoning of 545 acres sought for data center use",
+    "b": "In four referendums, voters overwhelmingly reversed the council's February rezoning of about 545 acres near U.S. 68. A separate citizen initiative to regulate data centers stayed off the ballot after an Ohio Supreme Court ruling. Results are unofficial.",
+    "s": [
+      [
+        "WYSO",
+        "https://www.wyso.org/government-politics-news/2026-11-04/across-southwest-ohio-voters-pushed-back-against-data-centers-and-politicians-who-support-them"
+      ]
+    ],
+    "im": -1,
+    "ef": "deny",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Voters struck down a rezoning tied to a proposed data center",
+    "pl": [
+      [
+        "Wilmington",
+        "city"
+      ],
+      [
+        "Clinton County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T01:01:05.045Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "IN",
+    "w": "Indiana voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax"
+    ],
+    "t": "Indiana Democrats break Republican supermajority in the state House",
+    "b": "Unofficial results show Democrats ended the two-thirds Republican House majority held since 2012, while Republicans appear to keep their Senate edge. Democrats had campaigned against data center tax breaks, so repeal efforts and veto-proof votes face a changed House. Counts are unofficial.",
+    "s": [
+      [
+        "WFYI",
+        "https://www.wfyi.org/statewide/2026-11-04/democrats-break-indiana-house-supermajority"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Structural shift may improve odds of curbing data center tax breaks",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:05.795Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MO",
+    "w": "Missouri voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting",
+      "cost"
+    ],
+    "t": "Democrats also break Republican supermajority in Missouri Senate",
+    "b": "Democrats flipped two Senate seats, ending the Republican two-thirds margin in both chambers for the first time in 14 years, per reports. Republicans keep majorities, so data center bills pass more easily than overrides of vetoes. Counts are unofficial and the story does not mention data centers.",
+    "s": [
+      [
+        "KOMU",
+        "https://www.komu.com/news/elections/democrats-break-republican-supermajorities-in-missouri-house-and-senate/article_da1a4ea8-f480-4a46-bdc0-f8ec81d47763.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Lost supermajority makes veto-proof data center incentives harder; weak lean toward limits.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:06.158Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NE",
+    "w": "Nebraska voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax",
+      "cost"
+    ],
+    "t": "Pillen wins second term as Nebraska governor, Walz concedes",
+    "b": "Gov. Jim Pillen won reelection and Democrat Lynne Walz conceded. Walz had earlier accused Pillen of reversing himself on data center incentives, while Pillen touts the state's large-load laws. Results are unofficial and the story does not mention data centers.",
+    "s": [
+      [
+        "Nebraska Public Media",
+        "https://nebraskapublicmedia.org/en/news/news-articles/walz-leads-pillen-in-early-vote-results-from-nebraska-governors-race/"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Incumbent who backs data center incentives and ratepayer-protection laws stays in office.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:06.483Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "SD",
+    "w": "South Dakota voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "Rhoden wins full term as South Dakota governor over Ahlers",
+    "b": "Gov. Larry Rhoden, who defended the state's data center law, defeated Democrat Dan Ahlers, who had asked for more local authority over where data centers are built. Results are unofficial and the story does not discuss data centers.",
+    "s": [
+      [
+        "Aberdeen Insider",
+        "https://aberdeeninsider.com/election-2026-larry-rhoden-earns-first-four-year-term-as-sd-governor/"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Incumbent defending the state's data center framework wins over local-control candidate.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:06.858Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "IA",
+    "w": "Iowa voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax"
+    ],
+    "t": "Iowa Republicans keep both chambers, limiting Sand's data center tax-break plan",
+    "b": "Democrats broke the Republican House supermajority but Republicans still control both chambers, so governor-elect Rob Sand needs GOP votes to end data center tax breaks. Seat counts were not given, and the story does not mention data centers.",
+    "s": [
+      [
+        "Iowa Public Radio",
+        "https://www.iowapublicradio.org/political-news/2026-11-04/iowa-democrats-biggest-election-night-win-governor-senate-house-sand-turek-hart"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Tax-break repeal pledge needs a Republican legislature; direction cost but weak.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:07.014Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "ME",
+    "w": "North Berwick voters",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "North Berwick voters approve a permanent local data center ban",
+    "b": "North Berwick voters approved a permanent data center ban with about 78% support in unofficial results. Another outlet reported a different larger-facility question there failing, so the final text needs checking.",
+    "s": [
+      [
+        "Bangor Daily News",
+        "https://www.bangordailynews.com/2026/11/05/politics/elections/maine-election-towns-temporary-data-center-bans/"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Permanent town ban approved at the ballot.",
+    "pl": [
+      [
+        "North Berwick",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T01:01:07.337Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "TX",
+    "w": "Texas voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "cost"
+    ],
+    "t": "Democrats win Texas House while Republicans keep Senate, shaping Hinojosa's data center pause",
+    "b": "Unofficial results show Democrats taking the Texas House and Republicans holding the Senate. Governor-elect Hinojosa, who takes office Jan. 19, wants a pause on all data center approvals until lawmakers act, so any pause law must clear a divided Legislature.",
+    "s": [
+      [
+        "Lubbock Lights",
+        "https://lubbocklights.com/ledger-2026-11-05/"
+      ],
+      [
+        "PBS NewsHour (AP)",
+        "https://www.pbs.org/newshour/politics/democrats-win-full-control-of-more-state-governments-and-the-texas-house"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Pause pledge needs a split Legislature; talk-stage, statewide, no stated length",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:07.991Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "KY",
+    "w": "Kentucky voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Kentucky officials who backed data centers lose seats in Burgin, Mason County and the legislature",
+    "b": "Burgin's council incumbents who backed a hyperscale annexation lost, Mason County's judge-executive who backed Meta's campus lost by about 26 points, and two House Republicans who voted for the data center tax break lost. Unofficial results.",
+    "s": [
+      [
+        "WUKY",
+        "https://www.wuky.org/wuky-news/2026-11-05/burgin-council-members-paid-a-price-for-their-data-center-support-they-werent-the-only-ones"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 4,
+    "du": "p",
+    "rl": "d",
+    "iw": "Voters punished data center backers; signals tougher siting and tax-break politics",
+    "pl": [
+      [
+        "Mercer County",
+        "county"
+      ],
+      [
+        "Mason County",
+        "county"
+      ],
+      [
+        "Simpson County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T01:01:08.417Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "WV",
+    "w": "West Virginia voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "West Virginia Democrats gain legislative seats after backlash over the 2025 data center local-control law",
+    "b": "Democrats rose from nine House seats to about 21 and from two to four of 34 Senate seats in unofficial results; Republicans keep control. Candidates said voters raised HB 2014, which removed local control over data center development, most often.",
+    "s": [
+      [
+        "Mountain State Spotlight",
+        "https://mountainstatespotlight.org/2026/11/04/west-virginia-legislature-changes/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Gains could block fast-tracking and revive local control debate; GOP still controls",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:08.805Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "AL",
+    "w": "Alabama voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Tuberville wins Alabama governor's race over Doug Jones, who had said he would back a data center moratorium",
+    "b": "The AP projected Tuberville the winner, about 52% to 48% with 97% counted; Jones did not concede. The result settles the earlier tracked race in which Jones favored a moratorium and Tuberville was more supportive of data centers. Unofficial.",
+    "s": [
+      [
+        "WSFA",
+        "https://www.wsfa.com/2026/11/04/tuberville-declaring-victory-alabama-governors-race/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Moratorium-leaning candidate lost; no statewide pause likely from governor's office",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:08.895Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NM",
+    "w": "NM Environment Department, Yucca Growth",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting",
+      "siting"
+    ],
+    "t": "State and developer move to cancel Dec. 7 Project Jupiter air permit hearing",
+    "b": "The Environment Department and Yucca Growth Infrastructure asked to vacate the Sunland Park hearing so staff can review the redesigned fuel cell plant. The permit decision likely slips into Gov.-elect Haaland's term, and no new date is set.",
+    "s": [
+      [
+        "KRWG Public Media",
+        "https://www.krwg.org/krwg-news/2026-11-05/state-developers-ask-to-delay-public-hearing-on-project-jupiter-air-quality-permit"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Permit delay for one project; added review, no final decision",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ],
+      [
+        "Sunland Park",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T01:01:09.476Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NV",
+    "w": "Nevada voters (legislature)",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax",
+      "moratorium"
+    ],
+    "t": "Nevada Democrats gain legislative seats; several winners back data center limits",
+    "b": "Democrats flipped Assembly seats and moved toward supermajorities, per the Nevada Independent's live results (counts partial, unofficial). Winners include Assembly candidates pledging a data center moratorium or accountability. With Ford winning, tax-break pause bills face no veto.",
+    "s": [
+      [
+        "The Nevada Independent",
+        "https://thenevadaindependent.com/article/live-updates-nevadas-2026-election-results"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Legislature more open to pausing tax breaks; partial unofficial counts",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-06T01:01:09.912Z"
+  },
+  {
     "d": "2026-11-02",
     "j": "NY",
     "w": "Hamburg Town Board",
@@ -4856,6 +5336,41 @@
     ],
     "auto": true,
     "added": "2026-11-04T22:06:59.249Z"
+  },
+  {
+    "d": "2026-10-26",
+    "j": "AK",
+    "w": "Alaska Senate Resources Committee",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Subpoenaed DNR chief says Mat-Su land transfer decision possible before new governor",
+    "b": "Commissioner Crowther told senators a final call on the 20,000-acre no-cost transfer for an AIDEA industrial park is possible before Dec. 7. Chair Giessel likened it to an appropriation. Data centers are only one listed use; none is confirmed.",
+    "s": [
+      [
+        "Alaska Public Media",
+        "https://alaskapublic.org/news/politics/alaska-legislature/2026-10-28/alaska-legislators-press-natural-resources-commissioner-on-no-cost-state-land-transfers"
+      ]
+    ],
+    "im": 1,
+    "ef": "fast",
+    "fo": 1,
+    "rc": 4,
+    "du": "p",
+    "rl": "i",
+    "iw": "Land transfer could enable industrial sites incl. data centers; not yet final",
+    "pl": [
+      [
+        "Matanuska-Susitna Borough",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-06T01:01:10.136Z"
   },
   {
     "d": "2026-10-24",
@@ -17390,6 +17905,40 @@
     "pl": [],
     "auto": false,
     "by": "Claude research, Oct 22"
+  },
+  {
+    "d": "2026-08-20",
+    "j": "MO",
+    "w": "Ralls County Electric Co-op CEO",
+    "lv": "local",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting"
+    ],
+    "t": "Ralls County electric co-op says it can serve only data centers under 30 MW",
+    "b": "At a county information meeting, co-op manager Lynn Hodges said developers had made preliminary contact but no power or membership request existed. He said the co-op cannot serve large data centers, only small ones under 30 megawatts.",
+    "s": [
+      [
+        "WGEM",
+        "https://www.wgem.com/2026/08/20/ralls-county-commissioners-hold-public-discussion-about-data-centers/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 4,
+    "du": "p",
+    "rl": "d",
+    "iw": "Local power supplier limits project size in Ralls County.",
+    "pl": [
+      [
+        "Ralls County",
+        "county"
+      ]
+    ],
+    "auto": false,
+    "by": "Claude research, Nov 5"
   },
   {
     "d": "2026-08-20",
@@ -31948,6 +32497,48 @@
     ],
     "auto": false,
     "by": "Claude research, Oct 23"
+  },
+  {
+    "d": "2026-03-20",
+    "j": "MO",
+    "w": "Hannibal Board of Public Works",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Hannibal utility board seeks large-load power customers for city-owned tech park",
+    "b": "Hannibal's Board of Public Works, for the city, issued an RFP offering up to 100 MW of retail power at Lakeside Technology Park, naming data centers as one target use. Proposals were due May 15. No public report says whether any were received.",
+    "s": [
+      [
+        "Hannibal Regional Economic Development Council",
+        "https://hredc.com/news/now-open-100-mw-power-opportunity-in-the-hannibal-region/"
+      ],
+      [
+        "Hannibal Board of Public Works (RFP document)",
+        "https://hredc.com/wp-content/uploads/2026/04/Final-RFP_100-MW_Hannibal-MO-complete.pdf"
+      ],
+      [
+        "Hannibal Board of Public Works (April 20 minutes)",
+        "https://www.hannibalbpw.org/wp-content/uploads/2026/06/Minutes-April-20-2026.pdf"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "City-owned site with power and fiber offered to developers; outcome unknown.",
+    "pl": [
+      [
+        "Hannibal",
+        "city"
+      ]
+    ],
+    "auto": false,
+    "by": "Claude research, Nov 5"
   },
   {
     "d": "2026-03-20",
