@@ -114,9 +114,49 @@ jobs:
           done
           echo "Push failed after 3 tries"; exit 1
 
+  docs:
+    name: Fetch documents
+    if: inputs.mode == 'analysis'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build the record for this place
+        env:
+          PREP_RUN: "1"
+          MODE: analysis
+          TOPIC: write
+          STATE: ${{ inputs.state }}
+          COUNTY: ${{ inputs.county }}
+          CITY: ${{ inputs.city }}
+        run: node scripts/prep-research.mjs
+
+      - name: Make sure pdftotext is installed
+        run: command -v pdftotext >/dev/null || (sudo apt-get update -y -qq && sudo apt-get install -y -qq poppler-utils)
+
+      - name: Download the documents and turn them into text
+        env:
+          DOCS_RUN: "1"
+        run: node scripts/fetch-docs.mjs | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Save the documents
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs
+          path: docs
+          if-no-files-found: ignore
+          retention-days: 7
+
   topics:
     name: Research (${{ matrix.topic }})
-    if: inputs.mode == 'analysis'
+    needs: docs
+    if: ${{ !cancelled() && inputs.mode == 'analysis' }}      # runs even if the documents could not be fetched
     runs-on: ubuntu-latest
     timeout-minutes: 25
     strategy:
@@ -140,6 +180,13 @@ jobs:
           COUNTY: ${{ inputs.county }}
           CITY: ${{ inputs.city }}
         run: node scripts/prep-research.mjs
+
+      - name: Download the documents
+        continue-on-error: true
+        uses: actions/download-artifact
+        with:
+          name: docs
+          path: docs
 
       - name: Let Claude research this topic
         uses: anthropics/claude-code-action@v1
@@ -206,6 +253,13 @@ jobs:
         run: |
           echo "Fact sheets found: $(find facts -name facts.md 2>/dev/null | wc -l) of 5" | tee -a "$GITHUB_STEP_SUMMARY"
           find facts -name facts.md 2>/dev/null | sort | tee -a "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Download the documents
+        continue-on-error: true
+        uses: actions/download-artifact
+        with:
+          name: docs
+          path: docs
 
       - name: Let Claude write the brief
         uses: anthropics/claude-code-action@v1

@@ -10,6 +10,8 @@ Today's date is {{TODAY}}. You are one of five specialist researchers preparing 
 
 `.github/prompts/.record.txt` is what the tracker already holds for the place, its county, the state level and the tracker's project list. `.github/prompts/.posts.txt` holds the saved social posts. Read what bears on your topic first. Treat both as leads, not proof, and do not read `updates.json`; it is too large.
 
+`docs/INDEX.txt` lists documents the workflow already downloaded from the sources the tracker lists for this place: council agenda packets, minutes and ordinances, turned into text because they are too large for web fetch (15 to 25 MB). For each there is a `docs/NN-...-excerpts.txt` with only the pages that mention data centers or a moratorium, with page numbers, and the full text in `docs/NN-....txt`. Read the excerpts first, because minutes record the roll call by member (who voted yes and no), the exact ordinance text with its term and effective date, and public comment. Use the full text only for a specific question, in parts, with the Read tool's offset and limit. Cite such a fact to the document's URL from INDEX.txt, and name the page.
+
 ## Required questions
 
 You may not stop until every question below has an answer with a source, or at least two failed attempts by different routes written down. Work through them in order. These are the minimum; add more facts wherever you find them.

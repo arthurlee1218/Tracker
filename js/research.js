@@ -82,6 +82,8 @@ function progress(run, mode) {
   if (mode === "analysis" && jobs.length) {
     // An analysis is five researchers working at the same time, then one writer.
     const topics = jobs.filter(j => /^Research \(/.test(j.name)), writer = jobs.find(j => /^Write the brief/.test(j.name));
+    const docs = jobs.find(j => /^Fetch documents/.test(j.name));
+    if (docs && docs.status !== "completed" && !topics.some(j => j.status !== "queued")) return { pct: 8, label: "Downloading the city's documents" };
     if (writer && writer.status !== "queued") {
       if (writer.status === "completed") return { pct: 99, label: "Saving the brief" };
       const m = Math.floor(since(writer) / 60000);

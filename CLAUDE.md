@@ -46,6 +46,7 @@ own Claude account, on their own branches. Read this before changing anything.
 | `.github/prompts/deep-research.md`, `place-analysis.md` | Instructions for those two modes |
 | `scripts/prep-research.mjs` | Builds what each Research job gives Claude: the tracker's entries for the place, its county and the state level, the tracker's projects, the saved posts (with account names where the link shows one) and the prompt. Testable without files: `build()` is a pure function |
 | `.github/prompts/place-facts.md` | Instructions for one specialist researcher in an Analysis (law, utilities, projects, people or sentiment): write a sourced fact sheet, `facts.md` |
+| `scripts/fetch-docs.mjs` | Downloads agenda packets, minutes and ordinances from the tracker's sources for a place and extracts the pages that matter, for the Analysis researchers (`docUrls()` and `excerpts()` are pure functions) |
 | `scripts/save-report.mjs` | Saves the brief Claude wrote and lists it in `reports/index.json` |
 | `reports/` | Siting briefs (`<id>.md`) and `index.json`, shown by `report.html` |
 | `CONTRIBUTING.md` | Human guide for the team |
@@ -175,7 +176,15 @@ Every state, county and city panel has **Deep research** (search that place only
   and the run summary lists how many sheets it found. A Deep research is one job. `prep-research.mjs` gives a city its county's entries and
   the state-level entries, and a county the entries for its cities, so a place is not judged on its own few entries. The progress bar
   counts finished researchers, then times the writer (`jobs` from `api/status.js`; `progress()` in `research.js`).
-- **What a brief contains** (`.github/prompts/place-analysis.md`): a bottom line, legal analysis with each contested question
+- **Documents first.** Before the researchers start, a `docs` job (`scripts/fetch-docs.mjs`) downloads the official documents behind the
+  tracker's sources for the place (council agenda packets, minutes, ordinances; government hosts only, up to 12, 60 MB each),
+  turns them into text with `pdftotext`, and writes `docs/INDEX.txt` plus, for each, an excerpts file with only the pages that mention
+  data centers or a moratorium. Web fetch cannot open these (15 to 25 MB), and they hold the roll call by member, the ordinance text
+  with its term and effective date, and the public-comment record. The researchers and the writer download the `docs` artifact and are
+  told to read the excerpts first. A document that cannot be fetched is listed in the INDEX with the reason, and a failed `docs` job does
+  not stop the analysis. Deep research does not use it.
+- **What a brief contains**
+ (`.github/prompts/place-analysis.md`): a bottom line, legal analysis with each contested question
   argued out by named people, "What matters most here" (three or four issues chosen for that place, no advice column),
   a projects table with status and what is unknown, public sentiment (concerns explained, named accounts and what their
   own public page says, and the offline signals), and good-to-knows. Every claim carries a footnote (`[^id]`, defined at
