@@ -166,6 +166,10 @@ Every state, county and city panel has **Deep research** (search that place only
   deep run adds entries, the panel says "Found N new entries" and "Show all N in the list" sets `state.dr`, which makes
   `match()` in `entries.js` list only those entries (cleared by Clear filters). Limits: deep runs 45 turns, analysis 90, the job
   25 minutes; keep `WAIT_MIN` in `research.js` in step with `timeout-minutes`.
+- **Saved jobs.** The browser remembers the jobs it started (`localStorage` keys `lw-research` and `lw-research-runs`). A job
+  whose result is already on the page shows nothing; one GitHub has no matching run for after 5 minutes (`LOST_MS`) says so;
+  every finished or lost job has a Dismiss link. Change `VER` in `research.js` whenever the saved shape changes, so old
+  records are dropped on the next load instead of showing "waiting" forever.
 - Only small serverless functions were added; they use no npm packages, so there is still no build step.
 
 ## Code map (`js/`)

@@ -11,9 +11,11 @@ import { NAMES } from "./config.js";
 import { esc, fmt } from "./util.js";
 
 const LS = "lw-research", RUNS = "lw-research-runs", PW = "lw-research-pw";
-const WAIT_MIN = 25, SETTLE_MS = 4 * 60000, POLL_MS = 15000;      // the workflow itself times out at 25 minutes
+const WAIT_MIN = 25, SETTLE_MS = 4 * 60000, POLL_MS = 15000, LOST_MS = 5 * 60000;      // the workflow itself times out at 25 minutes
 const EXPECT = { deep: 6 * 60000, analysis: 9 * 60000 };          // how long Claude's step usually takes, for the bar only
 const REPO = "arthurlee1218/Tracker";                             // keep in step with the default in api/_common.js
+const VER = "3";                          // bump to forget saved jobs whose shape changed
+try { if (localStorage.getItem("lw-research-v") !== VER) { localStorage.removeItem(LS); localStorage.removeItem(RUNS); localStorage.setItem("lw-research-v", VER); } } catch (e) {}
 let reports = [];                       // reports/index.json, newest first
 let timer = 0, tries = 0, ticker = 0;
 
@@ -21,6 +23,7 @@ const read = k => { try { return JSON.parse(localStorage.getItem(k) || "{}"); } 
 const write = (k, f, v) => { try { const o = read(k); o[f] = v; localStorage.setItem(k, JSON.stringify(o)); } catch (e) {} };
 const jobs = () => read(LS), setJob = (k, v) => write(LS, k, v);
 const runs = () => read(RUNS), setRun = (k, v) => write(RUNS, k, v);
+const forget = k => { try { for (const key of [LS, RUNS]) { const o = read(key); delete o[k]; localStorage.setItem(key, JSON.stringify(o)); } } catch (e) {} };
 const pkey = p => [p.st, p.county || "", p.city || ""].join("|");
 const unkey = k => { const [st, county, city, mode] = k.split("|"); return { place: { st, county, city }, mode }; };
 // Must match ENTRY_BY in .github/workflows/research.yml (spaces collapsed, cut to 60 characters).
@@ -95,15 +98,16 @@ function progress(run, mode) {
 function jobMsg(place, mode, at, got) {
   const label = LABEL[mode], noun = mode === "deep" ? "new items" : "a brief";
   const k = pkey(place) + "|" + mode, run = runs()[k], link = run && run.url ? ` <a href="${esc(run.url)}" target="_blank" rel="noopener">Open the run</a>` : "";
-  const done = run && run.status === "completed";
-  if (done && run.conclusion === "cancelled") return `<p class="rs-msg">${label} was stopped at ${esc(hhmm(run.done || at))}.${link}</p>`;
-  if (done && run.conclusion !== "success") return `<p class="rs-msg err">${label} did not finish: GitHub reports it ${esc(run.conclusion || "stopped")}.${link}</p>`;
+  const dismiss = ` <button type="button" class="linkish" data-dismiss="${mode}">Dismiss</button>`;
+  if (got) return "";                    // the result is already on the page, so the job is over whatever GitHub says
+  const done = run && run.status === "completed", age = Date.now() - Date.parse(at);
+  if (done && run.conclusion === "cancelled") return `<p class="rs-msg">${label} was stopped at ${esc(hhmm(run.done || at))}.${link}${dismiss}</p>`;
+  if (done && run.conclusion !== "success") return `<p class="rs-msg err">${label} did not finish: GitHub reports it ${esc(run.conclusion || "stopped")}.${link}${dismiss}</p>`;
   if (done) {
-    if (got) return "";
     if (Date.now() - Date.parse(run.done) < SETTLE_MS) return `<p class="rs-msg wait">${label} finished at ${esc(hhmm(run.done))}. ${mode === "deep" ? "Anything it added" : "The brief"} shows here once the site redeploys, about a minute.${link}</p>`;
-    return `<p class="rs-msg">${label} finished at ${esc(hhmm(run.done))} and saved nothing: it found no ${noun} for ${esc(where(place))}.${link}</p>`;
+    return `<p class="rs-msg">${label} finished at ${esc(hhmm(run.done))} and saved nothing: it found no ${noun} for ${esc(where(place))}.${link}${dismiss}</p>`;
   }
-  if (!run && (Date.now() - Date.parse(at)) / 60000 >= WAIT_MIN) return `<p class="rs-msg">Last ${label.toLowerCase()} (${esc(fmt(at.slice(0, 10)))}) left no result, or GitHub did not report on it.</p>`;
+  if (!run && age >= LOST_MS) return `<p class="rs-msg">${label} started at ${esc(hhmm(at))}, but GitHub has no job this page can match to it, so it may have finished already. Check the list for what it added.${dismiss}</p>`;
   const p = progress(run, mode);
   return `<div class="rs-prog" data-k="${esc(k)}" data-mode="${mode}">
     <div class="rs-ptop"><b>${label}</b><span class="rs-plabel">${esc(p.label)}</span><button type="button" class="btn-quiet rs-stop" data-stop="${mode}"${run && run.id ? "" : " disabled"} title="${run && run.id ? "Stop this job on GitHub" : "Available once GitHub has started the job"}">Stop</button></div>
@@ -133,7 +137,7 @@ export function researchBlock(place) {
     const found = foundFor(place, deep);
     if (found.length) {
       const seen = new Set(), uniq = found.filter(e => !seen.has(e.t) && seen.add(e.t));
-      msg += `<div class="rs-found"><p class="rs-msg ok"><b>Found ${uniq.length} new ${uniq.length === 1 ? "entry" : "entries"}</b> for ${esc(where(place))} (${esc(fmt(deep.slice(0, 10)))}, ${esc(hhmm(deep))}).</p>
+      msg += `<div class="rs-found"><p class="rs-msg ok"><b>Found ${uniq.length} new ${uniq.length === 1 ? "entry" : "entries"}</b> for ${esc(where(place))} (${esc(fmt(deep.slice(0, 10)))}, ${esc(hhmm(deep))}). <button type="button" class="linkish" data-dismiss="deep">Dismiss</button></p>
         <button type="button" class="btn-live rs-view" data-dr-view>Show ${uniq.length === 1 ? "it" : "all " + uniq.length} in the list</button>
         <ul class="rs-new">${uniq.slice(0, 8).map(e => `<li><button type="button" data-goto="${esc(place.st + "|")}" data-t="${esc(e.t)}"><span class="ll-name">${esc(e.t)}</span><span class="ll-meta">${esc(fmt(e.d))}</span></button></li>`).join("")}</ul>
         ${uniq.length > 8 ? `<p class="rs-msg">Plus ${uniq.length - 8} more. Use "Show all" to see them.</p>` : ""}</div>`;
@@ -225,6 +229,7 @@ async function stop(place, mode, box) {
 const stillWatching = () => Object.entries(jobs()).some(([k, at]) => {
   if (Date.now() - Date.parse(at) > WAIT_MIN * 60000) return false;
   const run = runs()[k];
+  if (!run && Date.now() - Date.parse(at) > LOST_MS) return false;
   return !(run && run.status === "completed" && (run.conclusion === "cancelled" || run.conclusion === "failure" || Date.now() - Date.parse(run.done) > SETTLE_MS));
 });
 
@@ -251,6 +256,7 @@ export function bindResearch(root, place) {
   const box = root.querySelector(".research"); if (!box) return;
   box.querySelectorAll("[data-research]").forEach(b => b.addEventListener("click", () => start(place, b.dataset.research, box)));
   box.querySelectorAll("[data-stop]").forEach(b => b.addEventListener("click", () => stop(place, b.dataset.stop, box)));
+  box.querySelectorAll("[data-dismiss]").forEach(b => b.addEventListener("click", async () => { forget(pkey(place) + "|" + b.dataset.dismiss); await redraw(); }));
   box.querySelectorAll("[data-dr-view]").forEach(b => b.addEventListener("click", async () => {
     const since = jobs()[pkey(place) + "|deep"];
     const { showNewEntries } = await import("./entries.js"); showNewEntries(place.st, byLabel(place), since);
