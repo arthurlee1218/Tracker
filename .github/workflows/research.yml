@@ -43,7 +43,7 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -194,7 +194,7 @@ jobs:
           prompt: "Follow the instructions in .github/prompts/.run.md exactly."
           claude_args: >-
             --allowedTools "WebSearch,WebFetch,Read,Write"
-            --max-turns ${{ inputs.mode == 'analysis' && '150' || '120' }}
+            --max-turns ${{ inputs.mode == 'analysis' && '90' || '45' }}
 
       - name: Show what Claude searched
         if: always() && inputs.mode == 'deep'

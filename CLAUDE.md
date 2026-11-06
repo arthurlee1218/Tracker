@@ -41,6 +41,7 @@ own Claude account, on their own branches. Read this before changing anything.
 | `.github/prompts/refresh-projects.md` | Instructions the projects job follows |
 | `scripts/merge-projects.mjs` | Checks what the projects job found and applies it to `data/projects.json` |
 | `api/research.js` | Vercel serverless function behind the Deep research and Analysis buttons: checks the password and starts `research.yml` |
+| `api/status.js`, `api/cancel.js`, `api/_common.js` | Job status with steps (for the progress bar), the Stop endpoint, and the helpers they share |
 | `.github/workflows/research.yml` | On-demand job for one state, county or city: `deep` adds entries to `updates.json`, `analysis` saves a brief to `reports/` |
 | `.github/prompts/deep-research.md`, `place-analysis.md` | Instructions for those two modes |
 | `scripts/save-report.mjs` | Saves the brief Claude wrote and lists it in `reports/index.json` |
@@ -158,7 +159,14 @@ Every state, county and city panel has **Deep research** (search that place only
   that name, and says queued, running, finished or failed, with a link. The name format lives in `runTitle()` there and in
   `run-name`; keep them in step. A deep run also writes `research_log.md`, which the run summary shows ("What Claude
   searched"), so a run that found nothing still shows what it looked at.
-- Only one small serverless function was added; it uses no npm packages, so there is still no build step.
+- **Progress, Stop and results.** While a job runs the panel shows a progress bar and a Stop button. `api/status.js`
+  (GET, no password) finds the run by its name and returns its steps; the page polls it every 15 seconds and moves the
+  bar every second (set-up, then Claude's step timed against `EXPECT` in `research.js`, then saving). `api/cancel.js`
+  (POST, password) cancels the run, and only runs of `research.yml`. Both use the shared helpers in `api/_common.js`. When a
+  deep run adds entries, the panel says "Found N new entries" and "Show all N in the list" sets `state.dr`, which makes
+  `match()` in `entries.js` list only those entries (cleared by Clear filters). Limits: deep runs 45 turns, analysis 90, the job
+  25 minutes; keep `WAIT_MIN` in `research.js` in step with `timeout-minutes`.
+- Only small serverless functions were added; they use no npm packages, so there is still no build step.
 
 ## Code map (`js/`)
 

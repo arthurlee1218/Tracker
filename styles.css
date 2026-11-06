@@ -539,3 +539,17 @@ footer p{max-width:90ch;margin-bottom:6px}
 .sp-open{font-weight:600;font-size:14px}
 @media (max-width:520px){.sp-dl{grid-template-columns:1fr}.sp-dl dt{margin-top:4px}}
 .sp-q{display:block}
+
+/* Progress bar, Stop button and the "found" summary for Deep research and Analysis jobs (js/research.js) */
+.rs-prog{margin-top:12px;padding:10px 12px;border:1px solid var(--rule);background:var(--surface-2)}
+.rs-ptop{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px}
+.rs-ptop b{font-weight:600}
+.rs-plabel{color:var(--ink-2);flex:1;min-width:8em}
+.rs-stop{padding:2px 12px;font-size:14px}
+.rs-stop:disabled{opacity:.5;cursor:not-allowed}
+.rs-bar{height:8px;margin-top:8px;background:var(--rule-soft);border-radius:4px;overflow:hidden}
+.rs-bar i{display:block;height:100%;width:0;background:var(--volt);border-radius:4px;transition:width .9s linear}
+@media (prefers-reduced-motion:reduce){.rs-bar i{transition:none}}
+.rs-psub{font-size:13px;color:var(--ink-3);margin-top:6px}
+.rs-found{margin-top:4px}
+.rs-view{margin-top:8px}

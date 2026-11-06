@@ -8,7 +8,7 @@ Today's date is {{TODAY}}. You are researching **{{PLACE}}** (a {{SCOPE}}; state
 
 ## Step 2: search the place in depth
 
-Work like a researcher with time, not a news skim. A run that ends after a minute or two has not looked hard enough: expect at least 25 searches and 10 pages opened for a county or city, and more for a state. Cover every angle that applies, using several searches for each:
+Work like a researcher with time, not a news skim. Aim for the effort of a careful research session in a normal chat, a few minutes and not an exhaustive crawl: roughly 15 to 25 searches and up to about 10 pages opened for a county or city, somewhat more for a state. A run that ends after a minute with nothing has probably not looked hard enough; one that is still going after ten minutes should wrap up and write what it has. Cover every angle that applies, using several searches for each:
 - **Government records first:** county commission, city council, planning and zoning, board of public works or utility board agendas and **minutes** (these often hold facts no reporter covered), ordinances and resolutions, rezoning applications, development agreements, tax abatement or incentive agreements, RFPs and their outcomes, election office results.
 - **Local reporting:** the county or city newspaper, local TV and radio stations, regional papers, state capital outlets, local weeklies and community outlets.
 - **Utilities and water:** the serving utility or cooperative (capacity limits, large-load tariffs, rate cases, interconnection requests), water and wastewater capacity, state water regulators and groundwater districts.
