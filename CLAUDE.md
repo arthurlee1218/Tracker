@@ -46,6 +46,7 @@ own Claude account, on their own branches. Read this before changing anything.
 | `.github/prompts/deep-research.md`, `place-analysis.md` | Instructions for those two modes |
 | `scripts/prep-research.mjs` | Builds what each Research job gives Claude: the tracker's entries for the place, its county and the state level, the tracker's projects, the saved posts (with account names where the link shows one) and the prompt. Testable without files: `build()` is a pure function |
 | `.github/prompts/place-facts.md` | Instructions for one specialist researcher in an Analysis (law, utilities, projects, people or sentiment): write a sourced fact sheet, `facts.md` |
+| `scripts/check-research.mjs`, `.github/prompts/research-system.md` | The Stop hook that keeps a research session going until its file is complete, and the research system prompt that replaces Claude Code's coding one |
 | `scripts/save-report.mjs` | Saves the brief Claude wrote and lists it in `reports/index.json` |
 | `reports/` | Siting briefs (`<id>.md`) and `index.json`, shown by `report.html` |
 | `CONTRIBUTING.md` | Human guide for the team |
@@ -190,7 +191,16 @@ Every state, county and city panel has **Deep research** (search that place only
 - **Model and effort.** Every workflow that runs Claude (`update.yml`, `update-projects.yml`, `research.yml`) sets
   `--model claude-sonnet-5-5 --effort medium` in `claude_args`. Change them together, so the daily job, the projects job
   and the on-demand jobs behave the same. A step-level `CLAUDE_CODE_EFFORT_LEVEL` would override `--effort`, so don't set one.
-- Only small serverless functions were added; they use no npm packages, so there is still no build step.
+- **Research, not code.** Claude Code's default system prompt is mostly coding guidance, so every research Claude step replaces it
+  (`--system-prompt-file .github/prompts/research-system.md`), loads only web search, fetch, read and write (`--tools`), and
+  registers a Stop hook. The hook (`scripts/check-research.mjs`) checks the file the session was asked to write (a researcher's
+  `facts.md`, the writer's `report.md`, a deep run's log and candidates) against what `prep-research.mjs` put in
+  `.github/prompts/.check.json`, and blocks the stop with a list of what is missing, up to five times. The decision is made in
+  code, not by the model. The job writes `.claude/settings.json` to register the hook; it is never committed, so it does not
+  affect ordinary Claude Code sessions in this repo. If a Claude step fails on `--system-prompt-file` or `--tools`, those two flags
+  are the ones to remove.
+- Only small serverless functions were added;
+ they use no npm packages, so there is still no build step.
 
 ## Code map (`js/`)
 
