@@ -553,3 +553,14 @@ footer p{max-width:90ch;margin-bottom:6px}
 .rs-psub{font-size:13px;color:var(--ink-3);margin-top:6px}
 .rs-found{margin-top:4px}
 .rs-view{margin-top:8px}
+
+/* Footnotes in a siting brief (js/report.js) */
+.report sup.fn{font-size:.72em;line-height:0;margin-left:1px}
+.report sup.fn a{text-decoration:none;font-weight:600;color:var(--ink-2);padding:0 1px}
+.report sup.fn a:hover{color:var(--ink);text-decoration:underline}
+.rp-notes{margin-top:34px}
+.rp-notes ol{margin-left:24px;font-size:14px;color:var(--ink-2)}
+.rp-notes li{margin:7px 0;word-break:break-word}
+.rp-notes li:target{background:var(--surface-2);box-shadow:-6px 0 0 var(--volt)}
+.fnback{text-decoration:none;font-weight:600;margin-left:4px}
+@media print{.report sup.fn a{color:#000}.rp-notes ol{font-size:9.5pt}}

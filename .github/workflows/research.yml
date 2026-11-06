@@ -43,7 +43,7 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: ${{ inputs.mode == 'analysis' && 40 || 25 }}
     steps:
       - uses: actions/checkout@v4
 
@@ -106,6 +106,22 @@ jobs:
                   rec += [f"State summary (reviewed {st.get('_asof','?')}): {st[state].get('t','')}", ""]
           except Exception:
               pass
+          # The data center projects the tracker lists for this place (data/projects.json)
+          try:
+              prj = [p for p in json.load(open("data/projects.json")) if p.get("j") == state]
+              if county:
+                  prj = [p for p in prj if base(county) in (p.get("place", "") + " " + p.get("n", "")).lower()]
+              if city:
+                  prj = [p for p in prj if city.lower() in (p.get("place", "") + " " + p.get("n", "")).lower()]
+              if prj:
+                  rec += [f"DATA CENTER PROJECTS THE TRACKER LISTS FOR THIS PLACE ({len(prj)}):"]
+                  for p in prj[:40]:
+                      rec.append(f'- {p.get("n", "")} · {p.get("developer", "developer not named")} · {p.get("mw", "?")} MW · {p.get("status", "")} as of {p.get("d", "")} · {p.get("place", "")} :: {p.get("note", "")} :: ' + "; ".join(f"{x[0]} {x[1]}" for x in (p.get("s") or [])[:3]))
+              else:
+                  rec += ["DATA CENTER PROJECTS THE TRACKER LISTS FOR THIS PLACE: none."]
+              rec += [""]
+          except Exception:
+              pass
           for e in rows:
               src = "; ".join(f"{s[0]} {s[1]}" for s in (e.get("s") or [])[:2])
               pl = ", ".join(str(p[0]) for p in (e.get("pl") or []) if p)
@@ -136,6 +152,19 @@ jobs:
                   rows = sorted(tpc.items(), key=lambda kv: -sum(kv[1].values()))[:8]
                   return "; ".join(f"{t} {sum(c.values())} (against {c.get('anti', 0)}, supportive {c.get('pro', 0)}, mixed {c.get('mixed', 0)})" for t, c in rows) or "none tagged"
 
+              def account(p):
+                  u = p.get("u", "")
+                  m = re.search(r"(?:x|twitter)\.com/([A-Za-z0-9_]+)/status", u) or re.search(r"bsky\.app/profile/([^/]+)/post", u)
+                  if m:
+                      return "@" + m.group(1)
+                  m = re.search(r"reddit\.com/r/([A-Za-z0-9_]+)/", u)
+                  if m:
+                      return "posted in r/" + m.group(1) + " (author name is on the page)"
+                  if "facebook.com" in u:
+                      g = re.search(r"/groups/(\d+)/", u)
+                      return ("Facebook group " + g.group(1) if g else "Facebook page") + " (commenter name is on the page, not stored)"
+                  return ""
+
               def line(p):
                   who = "a group or organization" if p.get("w") == "group" else "an individual account"
                   home = ", ".join(str(x) for x in (p.get("hci"), p.get("hs")) if x)
@@ -144,6 +173,8 @@ jobs:
                           "engagement " + "/".join(str(x) for x in (p.get("e") or [])) + f' (score {p.get("x", 0)}, top {100 - int(p.get("tr", 0))}% on its platform)']
                   if rc:
                       bits.append(f"replies read: {rc[0]} against, {rc[1]} supportive, {rc[2]} mixed")
+                  if account(p):
+                      bits.append("account: " + account(p))
                   if home:
                       bits.append(f"account based in {home}")
                   if p.get("tp"):
@@ -194,7 +225,7 @@ jobs:
           prompt: "Follow the instructions in .github/prompts/.run.md exactly."
           claude_args: >-
             --allowedTools "WebSearch,WebFetch,Read,Write"
-            --max-turns ${{ inputs.mode == 'analysis' && '90' || '45' }}
+            --max-turns ${{ inputs.mode == 'analysis' && '120' || '45' }}
 
       - name: Show what Claude searched
         if: always() && inputs.mode == 'deep'

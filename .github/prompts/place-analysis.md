@@ -1,56 +1,74 @@
 # Write a data center siting brief for one place
 
-Today's date is {{TODAY}}. Write a brief about data center projects and policy in **{{PLACE}}** (a {{SCOPE}}; state {{STATE}}, county {{COUNTY}}, city {{CITY}}), for a reader at Data Center Watch who clicked "Analysis". The reader is weighing what a data center would face here: the local and state legal picture, the practical hurdles, and where public opinion stands. Be even-handed: do not argue for or against data centers, and do not give legal advice.
+Today's date is {{TODAY}}. Write a brief about data center projects and policy in **{{PLACE}}** (a {{SCOPE}}; state {{STATE}}, county {{COUNTY}}, city {{CITY}}), for a reader at Data Center Watch who clicked "Analysis". The readers are people on the ground in or near this place: residents, officials, reporters and developers who know the local people and places. Write for them: specific, named and sourced. Be even-handed: do not argue for or against data centers, and do not give legal advice.
 
 ## Step 1: read the tracker's record
 
-`.github/prompts/.record.txt` holds everything the tracker has on this place: the state summary, every logged entry with its summary and sources, and the public sentiment numbers (people who post online, not residents; say so). Start there and treat it as leads, not as proof. Do not read `updates.json`; it is too large.
+`.github/prompts/.record.txt` holds everything the tracker has on this place: the state summary, the data center projects the tracker lists for it, every logged entry with its summary and sources, and the public sentiment numbers (people who post online, not residents; say so). Treat it as leads, not proof. Do not read `updates.json`; it is too large.
 
-`.github/prompts/.posts.txt` holds the saved social posts for this place in detail: the platform and stance counts, a breakdown of the concerns raised (each topic with how many posts were against, supportive or mixed), and the most-engaged posts on each side with their engagement, how replies read, whether the account is an individual or a group, and a link. Use it for the sentiment section. It may also include the state's most-engaged posts when the place has few posts of its own. Do not read `updates.json`; it is too large.
-
+`.github/prompts/.posts.txt` holds the saved social posts for this place in detail: platform and stance counts, a breakdown of the concerns raised (each topic with how many posts were against, supportive or mixed), and the most-engaged posts on each side with their engagement, how replies read, whether the account is an individual or a group, the account name where the link shows one, and a link. It may include the state's most-engaged posts when the place has few of its own.
 
 ## Step 2: research what the record lacks
 
-Use web search and fetch to check and extend it. Open every page you cite. In particular:
-- **Law:** whether the state preempts or allows local bans and moratoriums; zoning authority (city vs county); state data center statutes (incentives, large-load or ratepayer protections, water law, disclosure); citizen initiative and referendum rules and any court rulings on them; bills likely to return next session.
-- **Power:** who serves the place (investor-owned utility, municipal, cooperative), its size and wholesale supplier, large-load tariffs or capacity limits, grid operator (PJM, ERCOT, MISO, SPP and so on), recent rate cases.
-- **Water:** the source (aquifer, river, reservoir), capacity versus use, groundwater districts and their rules, wastewater limits.
-- **Money:** state and local incentives, tax abatement mechanics, revenue figures reported for comparable projects nearby.
-- **Local politics and sentiment:** recent elections and who won, officials' stated positions, organized opposition or support, polls, project fights nearby that set precedents.
-- **Projects:** named projects in or near the place, developers, size, status, and any request for proposals or site marketing.
-- **Dates ahead:** votes, hearings, deadlines, court rulings and sessions that matter in the next few months.
+Use web search and fetch. Open every page you cite. Look for:
+- **Law:** state preemption and local authority; zoning authority (city vs county); state data center statutes (incentives, large-load or ratepayer rules, water, disclosure); citizen initiative and referendum rules and court rulings; bills likely to return. For any point that is disputed, find **who says what**: the statute text, attorney general opinions, city and county attorneys, municipal league counsel, bill sponsors, courts.
+- **Power and water:** who serves the place (investor-owned, municipal, cooperative), its size and supplier, large-load tariffs, capacity limits, grid operator; the water source, plant capacity versus use, wastewater limits.
+- **Projects:** every named project or developer in or near the place: who the developer is and who speaks for it, size (MW, acres, dollars), the site and who proposed it, the current status, the next step and date, and what is still unknown. Include rumored and proposed ones, and ones known only from records requests or minutes.
+- **People:** officials who sponsored, voted on or spoke about the matter; residents and groups who spoke at public meetings (minutes and news name them); company representatives; candidates. Find names and roles in meeting minutes, agendas and news.
+- **Politics and sentiment:** elections, organized opposition or support, polls, precedents nearby.
+- **Dates ahead:** votes, hearings, deadlines, rulings and sessions in the next few months.
 
-Prefer government records, utility and agency pages, court documents and local news. Never cite other data center trackers, digests or AI-generated meeting summaries (datacenterbans.com, savrn.com, Server Country, MultiState, Citizen Portal). If you cannot confirm something, say "I could not confirm" instead of guessing, and call unofficial or partial election counts unofficial.
+Prefer government records, utility and agency pages, court documents and local news. If a fact appears only on another data center tracker (datacenterbans.com, savrn.com, Server Country, MultiState, Citizen Portal and the like), use the tracker as a lead and cite the news story or record behind it; if there is none, you may cite the tracker, but say so in its note ("via another tracker, not independently confirmed"). If you cannot confirm something, say "I could not confirm" and do not guess. Call unofficial or partial counts unofficial.
+
+## Naming people and organizations
+
+Name every person, group and company the brief refers to, whenever a source you opened names them, with their role as the source gives it. This replaces vague phrases: write "electric department director Phil Stokes", not "the electric director"; list the residents who spoke at a public meeting by name when the minutes or the news name them, not "ten residents spoke"; name the developer and the person who spoke for it. Check the spelling of a name against the source.
+
+For social posts, give the account name as the platform shows it: the saved link shows the handle for X and Bluesky posts, and a Facebook page shows the commenter's name when it loads. Say whether the account is an individual, a group, an outlet, an official or a business, and what the account's own public profile says about it (a role, an organization, a campaign). If a page is behind a login or does not load, write "name not visible without logging in". Report only what the account or page itself states publicly. Do not look anyone up elsewhere, and do not give home addresses, contact details, employers or family unless the person stated them publicly in the matter at hand, and never speculate about motives.
+
+## Footnotes: every claim has one
+
+Every factual claim in the brief ends with a footnote marker such as `[^1]`, including claims inside tables and the bottom line. Define each one on its own line at the very end of the file, in this form:
+
+`[^1]: Publication or record, "headline or document title", date. https://exact-url-you-opened`
+
+Rules:
+- Cite only pages you actually opened, or sources listed in `.record.txt` for entries that carry a claim you repeat. Prefer a source that the tracker already lists for an entry: after the link, add ` On the tracker: "<entry title>".` when the link is a source of a logged entry. If the source is not on the tracker, add ` Not on the tracker yet.`
+- One footnote can support several sentences, and a claim can have two footnotes. Reuse a number when the source is the same.
+- A claim with no source is not allowed. Where you could not confirm something, say so in plain words, without a footnote.
+- Quotations are 14 words or fewer and always footnoted.
 
 ## Step 3: write `report.md`
 
-Write **only** the file `report.md` in the repository root. Do not edit any other file. Markdown only, in this shape (the site renders headings, bold, tables, bullet lists and links; no images, no HTML):
+Write **only** the file `report.md` in the repository root. Do not edit any other file. Markdown only, in this shape (the site renders headings, bold, tables, bullet lists, links and footnotes; no images, no HTML):
 
 ```
 # {{PLACE}}: Data Center Siting Brief
 
 As of {{TODAY}} · Built from Data Center Watch entries and sentiment data, checked against public reporting · Not legal advice; confirm with local counsel
 
-**Bottom line.** Four to six sentences: the current status (any pause, rules or projects), the biggest legal lever, the hard limits, and what is most likely to change soon.
+**Bottom line.** Four to six sentences with footnotes: where things stand, the biggest legal question, the facts that decide what happens next, and what is likely to change soon.
 
 ## 1. Legal analysis
-Short bold-led paragraphs, for example **Local status.**, **State preemption.**, **Citizen initiatives.**, **Water law.**, **Incentives.**, **Outlook.** Use the labels that fit this place and add or drop some.
+Short bold-led paragraphs: **Local status.** (every vote with its date, tally and the names of who voted and who introduced it, as far as the record names them), **Zoning authority.**, **Citizen initiatives.**, **Water, incentives and disclosure.**, **Outlook.** Use the labels that fit and drop those that do not.
+Then, for each contested legal question (for example whether a state law blocks a local ban), give it its own bold heading and go into depth: what the law actually says, the case that it limits the local government (who argues it, with names and titles), the case that it does not (who argues it), what remains unsettled, and what would settle it (a court case, an attorney general opinion, a bill). Quote the key words of a statute or opinion in 14 words or fewer. If there is no live dispute, say so in one line.
 
-## 2. Practical hurdles
-A markdown table with the columns Hurdle | Why it matters | What to do. One row each for the issues that apply (for example Power, Water, Local politics, Petitions, State shift).
+## 2. What matters most here
+Choose three or four issues that actually shape this place. They differ from place to place (for example power supply, wastewater, a pending lawsuit, an election, a tax deal, a utility's capacity). Do not use an issue that only repeats a section above (do not list the moratorium or the state law again). Write each as a bold lead followed by a short paragraph of concrete facts with names, numbers, places and dates, all footnoted. No "what to do" advice.
 
-## 3. Public sentiment
-Four parts, in this order, written for a reader who wants to understand the argument and not only count it:
-- **What the data shows.** One short paragraph: how many posts, on which platforms, the split of against, supportive and mixed, and the limits (people who post online, not residents; engagement measures reach, not agreement; a group's comment threads are not a sample of the town). If the place has no posts, say so and use the state-level numbers instead, labeled as the state's.
-- **The main concerns, explained.** Take the top three or four topics in `.posts.txt` and give each its own short paragraph or bullet: what people actually say about it (water, power and rates, land, jobs, noise, fire, tax, secrecy, distrust of the developer), how many posts raise it on each side, and how it connects to the facts you found (the utility's capacity, the aquifer or river, the tax deal, the vote). Use the excerpts in `.posts.txt` as evidence, and quote no more than 14 words from any one post. Say where the concerns are factual and checkable and where they are rumor, and check the checkable ones against your sources.
-- **Voices on each side.** Pick two or three of the most-engaged posts that argue against and two or three that argue in favor (fewer if that is all there is; say so). For each give: the platform and date, the engagement figures from the file, a link, the argument in your own words, and how the replies read when the file says (`replies read`). Then say what can be known about the source. Open the link and look; if it loads, report what is public: whether it is a community group, a news outlet's page, a candidate's or official's page, or an advocacy group, and who runs it. If the post is by a group, an organization, an official, a candidate or a business, name it and say what it is affiliated with, from its own public page. If it is an ordinary person's comment, do **not** name, describe or try to identify them; say "a resident account" and give only what the file itself records (the platform, whether it is a comment under a larger thread, the place the thread is about, and the account's profile location if the file lists one). If a page is behind a login or will not load, say that you could not open it instead of guessing. Never speculate about someone's employer, politics or motives.
-- **What offline signals add.** Two or three sentences on elections, public meetings, minutes and polls that confirm or contradict the online picture, including the other side's strongest argument as its own supporters would put it.
+## 3. Projects and proposals
+Every ongoing, proposed, rumored or paused project in or near the place, as a table: Project or developer | Who is involved (people, with roles) | Size and site | Status now and date | What is unknown. After the table, one sentence on the next decision point. If there are none, say so and say what the evidence for that is.
 
+## 4. Public sentiment
+- **What the data shows.** One short paragraph: post counts by platform and stance, and the limits.
+- **The main concerns, explained.** The top three or four topics, each with its own paragraph: what people say, how many on each side, and how it connects to the facts. Quote 14 words or fewer, footnoted to the post.
+- **Voices on each side.** Two or three of the most-engaged posts against and two or three in favor, each with the account name, platform, date, engagement figures, the argument in your own words, how replies read, a link in the footnote, and what the account's own public page says about who it is.
+- **What offline signals add.** Elections, minutes (who spoke, by name, and what they asked for), polls, and the strongest version of the other side's argument.
 
-## 4. Other good-to-knows
-Three to five bullets: comparable approved or denied projects that serve as templates, neighboring jurisdictions that matter, and dates to watch.
+## 5. Other good-to-knows
+Three to five bullets: comparable projects or rules nearby, neighbors that matter, dates to watch.
 
-**Sources:** a single line naming the publications and records you used, with Data Center Watch first.
+[^1]: ...
 ```
 
-Length: for a city or county, roughly 900 to 1,300 words, or up to about 1,700 when the place has enough posts to support the sentiment section above. For a state, go longer, roughly 1,800 to 2,600 words, adding a short paragraph on the busiest counties and an overview of where things stand across the state. Every number, date and name must come from a page you opened or from the tracker's record. Use specific figures where you have them. Link key claims inline with markdown links where it helps, using only URLs you opened.
+Length: as long as the sections need, because the readers use it on the ground. Roughly 1,800 to 3,000 words for a city or county, and longer for a state, adding a paragraph on the busiest counties. Keep sentences plain. Every number, date and name must come from a page you opened or from the tracker's record, and carry a footnote.

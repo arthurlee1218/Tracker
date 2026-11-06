@@ -11,7 +11,7 @@ import { NAMES } from "./config.js";
 import { esc, fmt } from "./util.js";
 
 const LS = "lw-research", RUNS = "lw-research-runs", PW = "lw-research-pw";
-const WAIT_MIN = 25, SETTLE_MS = 4 * 60000, POLL_MS = 15000, LOST_MS = 5 * 60000;      // the workflow itself times out at 25 minutes
+const WAIT_MIN = 40, SETTLE_MS = 4 * 60000, POLL_MS = 15000, LOST_MS = 5 * 60000;      // the workflow itself times out at 40 minutes (analysis) or 25 (deep research)
 const EXPECT = { deep: 6 * 60000, analysis: 9 * 60000 };          // how long Claude's step usually takes, for the bar only
 const REPO = "arthurlee1218/Tracker";                             // keep in step with the default in api/_common.js
 const VER = "3";                          // bump to forget saved jobs whose shape changed
