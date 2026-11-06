@@ -1,5 +1,14 @@
 [
   {
+    "id": "ks-seward-county-liberal-2026-11-06",
+    "title": "Liberal, Seward County, KS: Data Center Siting Brief",
+    "state": "KS",
+    "county": "Seward County",
+    "city": "Liberal",
+    "date": "2026-11-06",
+    "added": "2026-11-06T05:13:01.470Z"
+  },
+  {
     "id": "al-lee-county-opelika-2026-11-06",
     "title": "Opelika, Lee County, AL: Data Center Siting Brief",
     "state": "AL",
@@ -16,15 +25,6 @@
     "city": "Siloam Springs",
     "date": "2026-11-06",
     "added": "2026-11-06T04:49:06.504Z"
-  },
-  {
-    "id": "ks-seward-county-liberal-2026-11-06",
-    "title": "Liberal, Seward County, KS: Data Center Siting Brief",
-    "state": "KS",
-    "county": "Seward County",
-    "city": "Liberal",
-    "date": "2026-11-06",
-    "added": "2026-11-06T01:28:14.229Z"
   },
   {
     "id": "mo-marion-county-hannibal-2026-11-06",
