@@ -11,8 +11,8 @@ import { NAMES } from "./config.js";
 import { esc, fmt } from "./util.js";
 
 const LS = "lw-research", RUNS = "lw-research-runs", PW = "lw-research-pw";
-const WAIT_MIN = 40, SETTLE_MS = 4 * 60000, POLL_MS = 15000, LOST_MS = 5 * 60000;      // the workflow itself times out at 40 minutes (analysis) or 25 (deep research)
-const EXPECT = { deep: 6 * 60000, analysis: 9 * 60000 };          // how long Claude's step usually takes, for the bar only
+const WAIT_MIN = 60, SETTLE_MS = 4 * 60000, POLL_MS = 15000, LOST_MS = 5 * 60000;      // the workflow itself times out at 40 minutes (analysis) or 25 (deep research)
+const EXPECT = { deep: 6 * 60000, topic: 7 * 60000, write: 8 * 60000 };          // how long Claude's step usually takes, for the bar only
 const REPO = "arthurlee1218/Tracker";                             // keep in step with the default in api/_common.js
 const VER = "3";                          // bump to forget saved jobs whose shape changed
 try { if (localStorage.getItem("lw-research-v") !== VER) { localStorage.removeItem(LS); localStorage.removeItem(RUNS); localStorage.setItem("lw-research-v", VER); } } catch (e) {}
@@ -43,7 +43,7 @@ const reportsFor = p => reports.filter(r => r.state === p.st && (r.county || "")
 const foundFor = (p, since) => E.filter(e => e.by === byLabel(p) && e.added && e.added >= since);
 
 // ── Where a job stands ──
-const keep = r => ({ id: r.id, status: r.status, conclusion: r.conclusion || "", url: r.url, done: r.status === "completed" ? r.updated : "", steps: r.steps || [], seen: Date.now() });
+const keep = r => ({ id: r.id, status: r.status, conclusion: r.conclusion || "", url: r.url, done: r.status === "completed" ? r.updated : "", steps: r.steps || [], jobs: (r.jobs || []).map(j => ({ name: j.name, status: j.status, conclusion: j.conclusion, started: j.started, completed: j.completed })), seen: Date.now() });
 
 // Ask the site's own endpoint about one job (it also returns the job's steps); fall back to GitHub's public list.
 async function fetchRun(k, at, viaGithub) {
@@ -78,6 +78,20 @@ function progress(run, mode) {
   if (!run) return { pct: 3, label: "Waiting for GitHub to start it" };
   if (run.status === "completed") return { pct: 100, label: "Finished" };
   if (run.status === "queued") return { pct: 5, label: "Queued on GitHub" };
+  const now = Date.now(), jobs = run.jobs || [], since = j => Math.max(0, now - Date.parse(j.started || run.seen));
+  if (mode === "analysis" && jobs.length) {
+    // An analysis is five researchers working at the same time, then one writer.
+    const topics = jobs.filter(j => /^Research \(/.test(j.name)), writer = jobs.find(j => /^Write the brief/.test(j.name));
+    if (writer && writer.status !== "queued") {
+      if (writer.status === "completed") return { pct: 99, label: "Saving the brief" };
+      const m = Math.floor(since(writer) / 60000);
+      return { pct: 72 + 26 * Math.min(0.95, since(writer) / EXPECT.write), label: `The writer is combining the fact sheets${m ? `, ${m} min in` : ""}` };
+    }
+    const n = Math.max(5, topics.length), done = topics.filter(j => j.status === "completed").length;
+    const part = topics.reduce((t, j) => t + (j.status === "completed" ? 1 : j.status === "in_progress" ? Math.min(0.95, since(j) / EXPECT.topic) : 0), 0);
+    return { pct: 6 + 64 * (part / n), label: `Researchers at work, ${done} of ${n} done` };
+  }
+  // A deep run is one job: set-up, then Claude's long step (timed against how long it usually takes), then saving.
   const steps = run.steps || [], claude = steps.find(s => /Let Claude/.test(s.name));
   if (!claude || claude.status !== "in_progress" && claude.status !== "completed") {
     const done = steps.filter(s => s.status === "completed").length;
@@ -88,10 +102,8 @@ function progress(run, mode) {
     const done = post.filter(s => s.status === "completed").length;
     return { pct: Math.min(99, 90 + 8 * (done / Math.max(1, post.length))), label: "Saving what it found" };
   }
-  const el = Math.max(0, Date.now() - Date.parse(claude.started || run.seen));
-  const frac = Math.min(0.97, el / EXPECT[mode]);
-  const mins = Math.floor(el / 60000);
-  return { pct: 15 + 75 * frac, label: `Claude is ${mode === "deep" ? "searching" : "researching and writing"}${mins ? `, ${mins} min in` : ""}` };
+  const el = since(claude), mins = Math.floor(el / 60000);
+  return { pct: 15 + 75 * Math.min(0.97, el / EXPECT.deep), label: `Claude is searching${mins ? `, ${mins} min in` : ""}` };
 }
 
 // The line or bar that says where one job stands. `got` is true once its result is visible on the page.

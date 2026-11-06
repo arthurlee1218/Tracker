@@ -20,11 +20,15 @@ module.exports = async function handler(req, res) {
     .sort((a, b) => b.created_at.localeCompare(a.created_at))[0];
   if (!run) return send(res, 200, { found: false });
 
-  let steps = [];
-  const jobs = await gh(`/actions/runs/${run.id}/jobs`);
+  // Every job of the run with its steps: a deep run has one job, an analysis has five researchers and a writer.
+  let jobList = [];
+  const jobs = await gh(`/actions/runs/${run.id}/jobs?per_page=30`);
   if (jobs.ok) {
-    const job = ((await jobs.json()).jobs || [])[0];
-    steps = job ? (job.steps || []).map(s => ({ name: s.name, status: s.status, conclusion: s.conclusion, started: s.started_at, completed: s.completed_at })) : [];
+    jobList = ((await jobs.json()).jobs || []).map(j => ({
+      name: j.name, status: j.status, conclusion: j.conclusion || "", started: j.started_at, completed: j.completed_at,
+      steps: (j.steps || []).map(s => ({ name: s.name, status: s.status, conclusion: s.conclusion, started: s.started_at, completed: s.completed_at }))
+    }));
   }
-  return send(res, 200, { found: true, id: run.id, url: run.html_url, status: run.status, conclusion: run.conclusion || "", created: run.created_at, updated: run.updated_at, steps });
+  const steps = jobList.length ? jobList[0].steps : [];
+  return send(res, 200, { found: true, id: run.id, url: run.html_url, status: run.status, conclusion: run.conclusion || "", created: run.created_at, updated: run.updated_at, steps, jobs: jobList });
 };
