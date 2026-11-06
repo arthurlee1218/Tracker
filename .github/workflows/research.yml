@@ -153,6 +153,16 @@ jobs:
             --allowedTools "WebSearch,WebFetch,Read,Write"
             --max-turns 60
 
+      - name: Show what this researcher searched
+        if: always()
+        run: |
+          if [ -f facts.md ]; then
+            { echo "### Research (${{ matrix.topic }}): searches and pages"; echo; sed -n '/^## Search log/,$p' facts.md; echo; } >> "$GITHUB_STEP_SUMMARY"
+            echo "Fact sheet: $(wc -w < facts.md) words, $(grep -c '^- FACT:' facts.md) facts, $(sed -n '/^## Search log/,$p' facts.md | grep -c '^- ') log lines" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "This researcher wrote no fact sheet." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Save this topic's fact sheet
         if: always()
         uses: actions/upload-artifact@v4

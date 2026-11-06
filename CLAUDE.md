@@ -171,7 +171,7 @@ Every state, county and city panel has **Deep research** (search that place only
 - **How an Analysis runs.** Three stages in `research.yml`. Five researchers (`topics` job, three at a time) each work one topic and write a fact
   sheet (`facts.md`, uploaded as the artifact `facts-<topic>`): each fact has the source URL they opened and whether it is on the tracker, plus
   people named, disputed questions with who says what, and what they could not confirm after trying more than one route. A writer (`write` job)
-  then reads all five, does about 20 searches of its own to close the gaps, and writes the brief. The writer still runs if a researcher fails,
+  then reads all five, does about 20 searches of its own to close the gaps, and writes the brief. Each researcher has a list of required questions (`QUESTIONS` in `prep-research.mjs`) it must answer with a source, or show two failed routes for, before it may stop, and it ends its sheet with a search log that the run summary shows ("Research (law): searches and pages"). The writer still runs if a researcher fails,
   and the run summary lists how many sheets it found. A Deep research is one job. `prep-research.mjs` gives a city its county's entries and
   the state-level entries, and a county the entries for its cities, so a place is not judged on its own few entries. The progress bar
   counts finished researchers, then times the writer (`jobs` from `api/status.js`; `progress()` in `research.js`).
