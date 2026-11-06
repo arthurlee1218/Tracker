@@ -8,7 +8,7 @@ Today's date is {{TODAY}}. You are researching **{{PLACE}}** (a {{SCOPE}}; state
 
 ## Step 2: search the place in depth
 
-Work like a researcher with time, not a news skim. Cover every angle that applies, using several searches for each:
+Work like a researcher with time, not a news skim. Aim for the effort of a careful research session in a normal chat, a few minutes and not an exhaustive crawl: roughly 15 to 25 searches and up to about 10 pages opened for a county or city, somewhat more for a state. A run that ends after a minute with nothing has probably not looked hard enough; one that is still going after ten minutes should wrap up and write what it has. Cover every angle that applies, using several searches for each:
 - **Government records first:** county commission, city council, planning and zoning, board of public works or utility board agendas and **minutes** (these often hold facts no reporter covered), ordinances and resolutions, rezoning applications, development agreements, tax abatement or incentive agreements, RFPs and their outcomes, election office results.
 - **Local reporting:** the county or city newspaper, local TV and radio stations, regional papers, state capital outlets, local weeklies and community outlets.
 - **Utilities and water:** the serving utility or cooperative (capacity limits, large-load tariffs, rate cases, interconnection requests), water and wastewater capacity, state water regulators and groundwater districts.
@@ -23,7 +23,7 @@ For a state, work through the state's main fights and its busiest counties; for 
 
 Open each article or record you plan to cite and confirm the date and facts. Cite news reporting or official records, never other data center trackers, digests or AI-generated meeting summaries (datacenterbans.com, savrn.com, Server Country, MultiState, Citizen Portal). Use a tracker only as a lead, then find and cite the article or record it points to.
 
-Write **only** `candidates.json` in the repository root: a JSON array of up to 30 genuinely new, significant items for this place. Do not edit any other file. Write it early (after your first few finds) and rewrite it as you go so running out of turns never loses what you found. A result or outcome of a tracked item counts as new. If the place truly has nothing new, write `[]`.
+Write **only** `candidates.json` and `research_log.md` in the repository root. `research_log.md` is one line per search or page: what you looked for or opened, and what it gave (new item, already tracked, nothing, blocked or not loadable). Write it as you go. The reader sees it in the run summary, so they can tell how hard the search looked even when nothing new turned up. `candidates.json` is: a JSON array of up to 30 genuinely new, significant items for this place. Do not edit any other file. Write it early (after your first few finds) and rewrite it as you go so running out of turns never loses what you found. A result or outcome of a tracked item counts as new. If the place truly has nothing new, write `[]`.
 
 Each item (same format as the daily job):
 

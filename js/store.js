@@ -7,7 +7,7 @@ export const D = {};            // the rest of the loaded data: ST, PROJECTS, RA
 export const countBy = {};      // entries per state, for the tile and map badges
 export const map = $("#map");   // the tile grid
 export function recount() { const c = {}; E.forEach(e => { if (e.j !== "US") c[e.j] = (c[e.j] || 0) + 1; }); Object.keys(countBy).forEach(k => delete countBy[k]); Object.assign(countBy, c); }
-export const state={sel:null,q:"",lv:"",ty:"",st:"",k:"",im:"",pl:"",lt:""};
+export const state={sel:null,q:"",lv:"",ty:"",st:"",k:"",im:"",pl:"",lt:"",dr:null};
 export const TODAY=(()=>{const n=new Date();return n.getFullYear()+"-"+String(n.getMonth()+1).padStart(2,"0")+"-"+String(n.getDate()).padStart(2,"0");})();
 export const isUp=e=>e.d.length===10&&e.d>TODAY;
 export const plKey=(e,n)=>e.j+"|"+n;

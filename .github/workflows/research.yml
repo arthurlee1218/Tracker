@@ -1,5 +1,9 @@
 name: Research one place (deep research or analysis)
 
+# Each run is named "<mode> <city> <county> <state>" so the site (js/research.js) can find its own job in the public
+# run list and say whether it is queued, running, finished or failed. Keep the two in step.
+run-name: ${{ inputs.mode }} ${{ inputs.city }} ${{ inputs.county }} ${{ inputs.state }}
+
 # Started by the "Deep research" and "Analysis" buttons on the site (through api/research.js), or by hand from
 # the Actions tab. Runs Claude Code on your Claude plan, for one state, county or city only.
 #   mode "deep":     searches that place in depth and adds new entries to updates.json (checked by scripts/merge.mjs)
@@ -39,7 +43,7 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -190,7 +194,16 @@ jobs:
           prompt: "Follow the instructions in .github/prompts/.run.md exactly."
           claude_args: >-
             --allowedTools "WebSearch,WebFetch,Read,Write"
-            --max-turns ${{ inputs.mode == 'analysis' && '150' || '120' }}
+            --max-turns ${{ inputs.mode == 'analysis' && '90' || '45' }}
+
+      - name: Show what Claude searched
+        if: always() && inputs.mode == 'deep'
+        run: |
+          if [ -f research_log.md ]; then
+            { echo "### What Claude searched"; echo; cat research_log.md; echo; } >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Claude wrote no research log, so there is no record of what it searched." >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Check and merge new entries
         if: inputs.mode == 'deep'

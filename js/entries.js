@@ -9,6 +9,7 @@ import { $, esc, fmt, key, meter, norm, plural } from "./util.js";
 
 // ── Entries ───────────────────────────────────
 export function match(e){
+  if(state.dr && !(e.by===state.dr.by && e.added && e.added>=state.dr.since)) return false;   // "Show them in the list" after a deep research
   if(state.sel && e.j!==state.sel && !(e.j==="US" && e.lv==="federal" && e.k==="action")) return false;
   if(state.k && e.k!==state.k) return false;
   if(state.lv){
@@ -39,6 +40,7 @@ export function renderEntries(){
   const list=[...up,...past];
   const nA=list.filter(e=>e.k==="action").length, nP=list.length-nA;
   $("#rc").textContent=`${list.length} of ${E.length} entries: ${nA} official ${nA===1?"action":"actions"}, ${nP} political`+(state.pl?` in ${state.pl.split("|")[1]}, ${NAMES[state.pl.split("|")[0]]||state.pl.split("|")[0]}`:(state.sel?` (${NAMES[state.sel]} plus federal actions)`:""));
+  if(state.dr)$("#rc").textContent+=" · showing only the new items from your deep research";
   $("#c-actions").textContent=E.length;
   const ul=$("#entries");
   if(!list.length){ul.innerHTML='<li class="empty">No entries match. Try clearing a filter or picking a different state.</li>';return;}
@@ -115,7 +117,7 @@ export function climateBlock(list){
   const j=k.split("|")[0];
   if(state.sel!==j) select(j);
   // clear other filters so the entry can't be hidden
-  state.q=state.lv=state.ty=state.st=state.k=state.im="";
+  state.q=state.lv=state.ty=state.st=state.k=state.im="";state.dr=null;
   ["#q","#f-kind","#f-level","#f-type","#f-status","#f-impact"].forEach(id=>$(id).value="");
   state.pl=k.endsWith("|")?"":k; fillPlaces(); renderPanel(); renderEntries(); showTab("actions",false);
   const li=[...document.querySelectorAll("#entries .entry")].find(x=>x.dataset.t===title);
@@ -124,6 +126,15 @@ export function climateBlock(list){
   li.classList.remove("flash"); void li.offsetWidth; li.classList.add("flash");
   li.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"});
   li.querySelector("summary").focus({preventScroll:true});
+}
+// After a deep research: list only the entries that run added (stamped `by: "Deep research: <place>"`), on the first tab.
+export function showNewEntries(ab,by,since){
+  state.q=state.lv=state.ty=state.st=state.k=state.im=state.pl="";
+  ["#q","#f-kind","#f-level","#f-type","#f-status","#f-impact","#f-place"].forEach(id=>{const x=$(id);if(x)x.value="";});
+  state.dr={by,since};
+  if(state.sel!==ab) select(ab);
+  fillPlaces(); renderPanel(); renderEntries(); showTab("actions",false);
+  const ul=$("#entries");if(ul)ul.scrollIntoView({block:"start",behavior:"auto"});
 }
 export function fillPlaces(){
   const sel=$("#f-place"), byState={};
@@ -165,7 +176,7 @@ export function initEntries() {
   $("#q").addEventListener("input",ev=>{state.q=ev.target.value.trim().toLowerCase();renderEntries();});
   bindSel("#f-kind","k");bindSel("#f-level","lv");bindSel("#f-type","ty");bindSel("#f-status","st");bindSel("#f-impact","im");
   $("#f-place").addEventListener("change",ev=>{state.pl=ev.target.value;renderPanel();renderEntries();});
-  $("#reset").addEventListener("click",()=>{state.q=state.lv=state.ty=state.st=state.k=state.im=state.pl="";
+  $("#reset").addEventListener("click",()=>{state.q=state.lv=state.ty=state.st=state.k=state.im=state.pl="";state.dr=null;
     ["#q","#f-kind","#f-level","#f-type","#f-status","#f-impact","#f-place"].forEach(id=>$(id).value="");select(null);});
   loadPublished();
 }
