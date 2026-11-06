@@ -67,6 +67,13 @@ jobs:
           LOOKBACK: ${{ inputs.lookback_days }}
         run: node scripts/prep-research.mjs
 
+      - name: Set up the stop check
+        run: |
+          mkdir -p .claude
+          cat > .claude/settings.json <<'JSON'
+          {"hooks":{"Stop":[{"hooks":[{"type":"command","command":"node scripts/check-research.mjs"}]}]}}
+          JSON
+
       - name: Let Claude research this place
         uses: anthropics/claude-code-action@v1
         with:
@@ -77,6 +84,8 @@ jobs:
           claude_args: >-
             --model claude-sonnet-5-5
             --effort medium
+            --system-prompt-file .github/prompts/research-system.md
+            --tools "WebSearch,WebFetch,Read,Write"
             --allowedTools "WebSearch,WebFetch,Read,Write"
             --max-turns 45
 
@@ -141,6 +150,13 @@ jobs:
           CITY: ${{ inputs.city }}
         run: node scripts/prep-research.mjs
 
+      - name: Set up the stop check
+        run: |
+          mkdir -p .claude
+          cat > .claude/settings.json <<'JSON'
+          {"hooks":{"Stop":[{"hooks":[{"type":"command","command":"node scripts/check-research.mjs"}]}]}}
+          JSON
+
       - name: Let Claude research this topic
         uses: anthropics/claude-code-action@v1
         with:
@@ -150,6 +166,8 @@ jobs:
           claude_args: >-
             --model claude-sonnet-5-5
             --effort medium
+            --system-prompt-file .github/prompts/research-system.md
+            --tools "WebSearch,WebFetch,Read,Write"
             --allowedTools "WebSearch,WebFetch,Read,Write"
             --max-turns 60
 
@@ -207,6 +225,13 @@ jobs:
           echo "Fact sheets found: $(find facts -name facts.md 2>/dev/null | wc -l) of 5" | tee -a "$GITHUB_STEP_SUMMARY"
           find facts -name facts.md 2>/dev/null | sort | tee -a "$GITHUB_STEP_SUMMARY" || true
 
+      - name: Set up the stop check
+        run: |
+          mkdir -p .claude
+          cat > .claude/settings.json <<'JSON'
+          {"hooks":{"Stop":[{"hooks":[{"type":"command","command":"node scripts/check-research.mjs"}]}]}}
+          JSON
+
       - name: Let Claude write the brief
         uses: anthropics/claude-code-action@v1
         with:
@@ -216,6 +241,8 @@ jobs:
           claude_args: >-
             --model claude-sonnet-5-5
             --effort medium
+            --system-prompt-file .github/prompts/research-system.md
+            --tools "WebSearch,WebFetch,Read,Write"
             --allowedTools "WebSearch,WebFetch,Read,Write"
             --max-turns 60
 
