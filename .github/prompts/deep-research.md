@@ -39,11 +39,14 @@ Each item (same format as the daily job):
  "t":"headline in your own words, under 15 words",
  "b":"summary in your own words, under 50 words, no direct quotes",
  "s":[["publication name","exact URL of the article or record you opened"]],
- "im": integer -2..2 for near-term business impact on data center developers and operators
-       (-2 strong headwind such as a ban or pause, -1 headwind, 0 mixed, 1 tailwind, 2 strong tailwind such as faster permits). Business impact, not whether the policy is good.,
- "iw":"one-line reason for the score, under 15 words",
+ "ef":"what it does to data center developers if it takes full effect: ban (outright or permanent prohibition) | pause (temporary moratorium or freeze) | deny (rejects or withdraws one specific project or rezoning) | limit (binding siting, size, water, energy or noise conditions) | cost (added tariffs, fees, ratepayer protections, tax-break repeal) | info (disclosure or reporting only) | approve (approves one specific project) | help (incentives, tax breaks, subsidies) | fast (faster permitting or preempting local limits) | none (no lean at all)",
+ "fo": integer 0-3 for how far along it is: 0 talk (statement, poll, protest, campaign, or an action that failed or was withdrawn), 1 signal or proposal (introduced, scheduled, on a ballot, or a non-binding advisory vote or resolution), 2 adopted but not yet in effect, or blocked, 3 in force (a final denial of a project counts as 3),
+ "rc": integer 1-6 for who it covers: 1 one project, 2 one city or town, 3 one county, 4 several counties or one utility's territory, 5 the whole state, 6 the whole country,
+ "du":"p (permanent, no end date, or not a pause) | l (over 24 months) | m (7 to 24 months; use this for a pause with no stated length) | s (6 months or less)",
+ "rl":"d if it is aimed at data centers, i if it is mainly about energy, utilities or another project that matters because of data center demand",
+ "iw":"one-line reason for the tags, under 15 words",
  "pl":[["county, city, township or tribal nation name","county|city|township|tribal"]]
        (every local or tribal item names its place(s); use [] for state items)}
 ```
 
-Rules: only cite URLs you actually opened. The date `d` is when the event happened; for a scheduled vote use the scheduled date. An event older than {{SINCE}} is fine if you found it only now and it matters; set `pd` to show when it was published (only items whose `d` is on or after {{SINCE}}, or whose `pd` is, are kept). Stay neutral and factual. Unofficial counts, partial counts and reports you could not confirm must say so in the summary.
+Rules: only cite URLs you actually opened. Tag every item by what it does, not by whether you like it: talk still has a direction (a protest against a project is deny, a pledge for a pause is pause, a poll showing most oppose a nearby data center is limit), so use ef none only when there is truly no lean; a non-binding advisory vote takes the direction voters backed with fo 1; an action about energy or another project that matters because of data center demand gets rl i. The date `d` is when the event happened; for a scheduled vote use the scheduled date. An event older than {{SINCE}} is fine if you found it only now and it matters; set `pd` to show when it was published (only items whose `d` is on or after {{SINCE}}, or whose `pd` is, are kept). Stay neutral and factual. Unofficial counts, partial counts and reports you could not confirm must say so in the summary.

@@ -490,3 +490,6 @@ footer p{max-width:90ch;margin-bottom:6px}
   .report table,.report tr{break-inside:avoid}
   .report a{color:#000}
 }
+
+/* "How it was scored" line in an open entry (js/entries.js) */
+.e-body .how{font-size:13px;color:var(--ink-3);margin-top:6px}

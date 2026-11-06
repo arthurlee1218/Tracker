@@ -3,6 +3,7 @@ import { ACT_ST, IML, LVL, NAMES, OK_LV, OK_TY, POL_ST, PTL, STLBL, TYL } from "
 import { paintCounts, renderPanel, select } from "./panel.js";
 import { showTab } from "./shell.js";
 import { renderElectionFeed } from "./election.js";
+import { applyTags, cleanTags, DUL, EFL, FOL, RCL } from "./score.js";
 import { E, isUp, plKey, state } from "./store.js";
 import { $, esc, fmt, key, meter, norm, plural } from "./util.js";
 
@@ -53,6 +54,7 @@ export function renderEntries(){
     </summary><div class="e-body">
       <p>${esc(e.b)}</p>
       <div class="im-line">${meter(e.im)}<span><b>${typeof e.im==="number"?IML[e.im]:"Not scored"}</b>${e.iw?" for developers: "+esc(e.iw):""}</span></div>
+      ${e.ef?`<p class="how">How it was scored: ${esc(EFL[e.ef])} · ${esc(FOL[e.fo])} · ${esc(RCL[e.rc])} · ${esc(DUL[e.du])}${e.rl==="i"?" · indirect":""}</p>`:""}
       <div class="tags"><span class="tag">${e.k==="politics"?"Political noise":"Official action"}</span><span class="tag">${LVL[e.lv]}</span>${(e.pl||[]).map(([n,t])=>`<span class="tag">${esc(n)} (${PTL[t]||t})</span>`).join("")}${e.ty.map(t=>`<span class="tag">${TYL[t]}</span>`).join("")}</div>
       <div class="srcs">Sources: ${e.s.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("")}${e.by?` · Added by ${esc(e.by)}`:""}</div>
       ${e.fresh||e.auto?'<p style="font-size:14px;margin-top:8px">Found and summarized automatically from web search. Open the source before relying on it.</p>':""}
@@ -142,7 +144,7 @@ export function clean(o){
   if(!s.length||!o.t||!o.b)return null;
   const im=Number.isInteger(o.im)&&o.im>=-2&&o.im<=2?o.im:undefined;
   const pl=(Array.isArray(o.pl)?o.pl:[]).filter(x=>Array.isArray(x)&&x[0]&&PTL[x[1]]).map(x=>[String(x[0]).slice(0,60),x[1]]).slice(0,12);
-  return {d,j,w:String(o.w||"").slice(0,60),lv,k,st,ty:ty.length?ty:["siting"],t:String(o.t).slice(0,140),b:String(o.b).slice(0,500),s,im,iw:o.iw?String(o.iw).slice(0,140):"",pl,fresh:true};
+  return applyTags({d,j,w:String(o.w||"").slice(0,60),lv,k,st,ty:ty.length?ty:["siting"],t:String(o.t).slice(0,140),b:String(o.b).slice(0,500),s,im,iw:o.iw?String(o.iw).slice(0,140):"",pl,fresh:true,...(cleanTags(o)||{})});
 }
 // Items published by the scheduled GitHub job (updates.json next to this file)
 export async function loadPublished(){
