@@ -402,6 +402,35 @@
     "added": "2026-11-07T00:57:28.540Z"
   },
   {
+    "d": "2026-11-06",
+    "j": "WA",
+    "w": "Washington voters, House Democrats",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Washington Democrats poised for veto-proof House supermajority, 66 of 98 seats, count unofficial",
+    "b": "Democrats led to flip seven Republican-held House seats, reaching the 66-seat veto-override level; close races remain uncounted. The article does not mention data centers. It matters for statewide pause demands that rallies pressed in October, and for any data center bill facing a veto.",
+    "s": [
+      [
+        "OPB / Washington State Standard",
+        "https://www.opb.org/article/2026/11/06/washington-state-house-democrat-supermajority/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Legislative margin change; no direct data center action yet, counts unofficial",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-07T12:46:55.045Z"
+  },
+  {
     "d": "2026-11-05",
     "j": "NY",
     "w": "Town of Potsdam",
@@ -4389,6 +4418,180 @@
     "added": "2026-11-07T00:57:30.058Z"
   },
   {
+    "d": "2026-11-03",
+    "j": "MI",
+    "w": "Mason voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "Mason, Michigan voters recall council member after data center zoning fight",
+    "b": "Voters recalled Councilwoman Elaine Ferris and chose Pamela Oliver. The recall followed opposition to a proposed data center in neighboring Vevay Township, even after the council repealed its data center zoning ordinance. Vote share was not reported in the cited story.",
+    "s": [
+      [
+        "WILX",
+        "https://www.wilx.com/2026/11/05/mason-voters-recall-council-member-following-data-center-opposition/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Voter backlash signals tougher siting stance; no binding rule yet",
+    "pl": [
+      [
+        "Mason",
+        "city"
+      ],
+      [
+        "Vevay Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T12:46:53.657Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "KS",
+    "w": "Kansas voters, U.S. Senate race",
+    "lv": "federal",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "Hamilton ousts Sen. Marshall in Kansas; both had called for regulating data centers",
+    "b": "Democrat Adam Hamilton was projected to beat Republican Sen. Roger Marshall, who earlier said he backs counties opposing data centers. Both candidates told voters data centers need regulation; Hamilton also proposed funding health subsidies partly by ending data center tax breaks. Results unofficial.",
+    "s": [
+      [
+        "Fox News",
+        "https://www.foxnews.com/politics/republicans-suffer-historic-senate-upset-dem-flips-deep-red-state-first-time-nearly-century"
+      ],
+      [
+        "KCUR",
+        "https://www.kcur.org/politics-elections-and-government/2026-10-16/marshall-hamilton-everyday-issues"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Winning candidate favors regulating data centers; no law yet",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-07T12:46:53.877Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "SD",
+    "w": "South Dakota voters, PUC race",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "South Dakota PUC candidate who urged one-year data center pause loses with about 40%",
+    "b": "Democrat Frank Kloucek, who campaigned for a one-year pause on new AI data centers, took 39.76% in the Public Utilities Commission race, according to unofficial returns. Republican Don Haggar had called the pause pandering. The commission stays Republican-led.",
+    "s": [
+      [
+        "Dakota Free Press",
+        "https://dakotafreepress.com/2026/11/04/no-blue-wave-in-south-dakota-even-frank-kloucek-cant-break-40/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Pause pledge rejected by voters, so no pause advances",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-07T12:46:54.132Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "CO",
+    "w": "Littleton City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Littleton approves six-month data center moratorium after Nov. 3 hearing",
+    "b": "A Nov. 6 report says Littleton approved a six-month temporary pause on data centers this week, following a Nov. 3 second reading. The council can end it early if rules are adopted. The city has no pending applications.",
+    "s": [
+      [
+        "Center Square via AOL",
+        "https://www.aol.com/articles/energy-analyst-data-center-moratoriums-180000000.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Temporary six-month freeze on data center applications in one city",
+    "pl": [
+      [
+        "Littleton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T12:46:54.711Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OR",
+    "w": "Hermiston and Umatilla officials",
+    "lv": "local",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "tax"
+    ],
+    "t": "Hermiston weighs legal action against Kotek's data center permit pause, citing up to $1 billion lost",
+    "b": "Hermiston officials said on Nov. 3 they are examining all legal remedies with partner agencies, projecting $500 million to $1 billion in lost revenue from annexed land. Umatilla's emergency declaration lets its manager weigh legal steps over $5 billion in delayed investment.",
+    "s": [
+      [
+        "East Oregonian",
+        "https://eastoregonian.com/2026/11/04/hermiston-umatilla-push-back-against-data-center-moratorium/"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Local officials oppose a pause and seek to reverse it; talk only",
+    "pl": [
+      [
+        "Hermiston",
+        "city"
+      ],
+      [
+        "Umatilla",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T12:46:55.420Z"
+  },
+  {
     "d": "2026-11-02",
     "j": "NY",
     "w": "Hamburg Town Board",
@@ -6173,6 +6376,41 @@
     ],
     "auto": true,
     "added": "2026-11-06T01:01:10.136Z"
+  },
+  {
+    "d": "2026-10-26",
+    "j": "NJ",
+    "w": "Mahwah Township Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Mahwah council bans data centers over 50 MW in every zone",
+    "b": "Mahwah's council voted 6-0 for Ordinance 2105, prohibiting hyperscale data centers above 50 megawatts of load in all zoning districts. The planning board must report by June 30, 2027; that date does not end the ban. It takes effect 20 days after publication.",
+    "s": [
+      [
+        "Morristown Minute",
+        "https://morristownminute.org/mahwah-data-center-ban/"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 2,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Adopted township-wide ban on large data centers, not yet in effect.",
+    "pl": [
+      [
+        "Mahwah",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T12:46:54.526Z"
   },
   {
     "d": "2026-10-24",
