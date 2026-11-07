@@ -241,6 +241,41 @@
     "added": "2026-11-05T22:28:49.577Z"
   },
   {
+    "d": "2026-11-10",
+    "j": "ID",
+    "w": "Boise mayor, City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Boise mayor asks council for six-month pause on mega data centers",
+    "b": "Mayor Lauren McLean proposed a six-month moratorium on data centers over 100,000 square feet or 20 megawatts inside city limits, to allow permanent rules. Council is asked to vote Nov. 10. The city has no pending mega data center applications.",
+    "s": [
+      [
+        "Spokesman-Review",
+        "https://www.spokesman.com/stories/2026/nov/06/boise-mayor-seeks-pause-on-data-centers-they-dont-/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed six-month city pause on large data centers, vote scheduled",
+    "pl": [
+      [
+        "Boise",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T00:57:29.845Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -271,6 +306,41 @@
     "added": "2026-11-05T00:55:17.739Z"
   },
   {
+    "d": "2026-11-09",
+    "j": "CO",
+    "w": "Aurora mayor and City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Aurora mayor to bring data center moratorium back for a third vote Nov. 9",
+    "b": "After the council fell one vote short on Oct. 26 of reconsidering an indefinite pause, Mayor Mike Coffman planned to bring it back at the Nov. 9 meeting. The pause would not cover the already-accepted Trident application.",
+    "s": [
+      [
+        "Sentinel Colorado",
+        "https://sentinelcolorado.com/metro/aurora-lawmakers-reject-data-center-moratorium-amid-resident-calls-of-shame/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed indefinite city pause on data center applications, vote scheduled",
+    "pl": [
+      [
+        "Aurora",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T00:57:29.916Z"
+  },
+  {
     "d": "2026-11-06",
     "j": "US",
     "w": "NYC climate groups",
@@ -299,6 +369,37 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-06T12:59:09.517Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "IL",
+    "w": "Rep. Robyn Gabel",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "cost",
+      "siting",
+      "water"
+    ],
+    "t": "Illinois POWER Act sponsor says data center bill more likely in January than fall veto session",
+    "b": "Gabel, the bill's chief sponsor, says lame duck in early January is likelier than the veto session starting Nov. 17. Stakeholder talks have only begun. Pritzker had said last month he expected a bill in the fall.",
+    "s": [
+      [
+        "The Center Square (via Cities 929)",
+        "https://www.cities929.com/2026/11/06/house-leader-hoping-to-pass-data-center-bill-in-january/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "POWER Act would set binding data center energy and water rules; still a proposal",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-07T00:57:28.540Z"
   },
   {
     "d": "2026-11-05",
@@ -506,6 +607,111 @@
     ],
     "auto": true,
     "added": "2026-11-06T12:59:10.965Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "SD",
+    "w": "Rapid City Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Rapid City planning panel delays data center ordinance vote to January 21",
+    "b": "Commissioners accepted staff's request for more time to revise the proposed data center ordinance after nearly 940 resident survey responses on water, power, sewer, noise and siting. Action moved from the earlier-floated Dec. 10 date to Jan. 21, 2027.",
+    "s": [
+      [
+        "KOTA Radio",
+        "https://www.kotaradio.com/2026/11/06/update-rapid-city-planning-commission-delays-data-center-ordinance-until-january/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed siting limits delayed, still only a proposal",
+    "pl": [
+      [
+        "Rapid City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T00:57:28.811Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "MA",
+    "w": "Northampton City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Northampton council unanimously adopts one-year data center moratorium",
+    "b": "Northampton's council voted unanimously Nov. 5 for a yearlong halt on commercial data centers, effective immediately. An amendment exempting users of 250 kilowatts or less failed 7-1, so no size threshold applies.",
+    "s": [
+      [
+        "Daily Hampshire Gazette",
+        "https://gazettenet.com/2026/11/06/northampton-city-council-unanimously-approves-yearlong-moratorium-on-ai-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Adopted, immediate one-year city moratorium with no size exemption",
+    "pl": [
+      [
+        "Northampton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T00:57:29.267Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "GA",
+    "w": "Dade County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Dade County, Georgia defers 90-day data center pause to December as 300 MW developer surfaces",
+    "b": "A commissioner proposed a 90-day pause, but staff first disclosed that a developer is evaluating power for a possible 300 MW campus. Commissioners moved the pause to their December agenda. The developer plans a public meeting Nov. 23.",
+    "s": [
+      [
+        "Local 3 News",
+        "https://www.local3news.com/local-news/update-dade-county-commissioner-calls-for-90-day-data-center-moratorium/article_d92fddbf-afd4-45ef-aafd-1d974ffe0fd6.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed 90-day pause on the agenda, not yet adopted.",
+    "pl": [
+      [
+        "Dade County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T00:57:29.562Z"
   },
   {
     "d": "2026-11-04",
@@ -3966,6 +4172,223 @@
     "added": "2026-11-06T12:59:11.123Z"
   },
   {
+    "d": "2026-11-03",
+    "j": "NE",
+    "w": "Nebraska voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Nebraska conservatives appear to lose filibuster-proof Legislature majority in unofficial results",
+    "b": "Early returns show progressives winning Omaha-area legislative seats, which would end the 33-vote conservative bloc if leads hold. Data center measures this year, such as the 34-7 large-load bill Sen. Conrad opposed, passed with that margin. Counts are unofficial; the new session opens Jan. 6.",
+    "s": [
+      [
+        "WOWT",
+        "https://www.wowt.com/2026/11/04/nebraska-election-results-appear-end-conservatives-filibuster-proof-majority/"
+      ],
+      [
+        "Nebraska Public Media",
+        "https://nebraskapublicmedia.org/en/news/news-articles/legislature-advances-bill-paving-the-way-for-data-centers-in-nebraska/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Seat shift could make data center restrictions easier to pass",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-07T00:57:28.917Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NJ",
+    "w": "NJ-2 voters",
+    "lv": "federal",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Mullock ousts Van Drew in NJ-2 after Vineland data center fight",
+    "b": "Democrat Zack Mullock beat Rep. Jeff Van Drew by about two points. He made the Vineland AI campus a centerpiece and urged a federal data center moratorium. Cumberland County swung about 21 points. The outlet says it was not the sole cause.",
+    "s": [
+      [
+        "NJ Digest",
+        "https://thedigestonline.com/news/vineland-data-center-van-drew-mullock/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 4,
+    "du": "m",
+    "rl": "d",
+    "iw": "Winner campaigned for a federal moratorium; talk-level signal",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-07T00:57:29.320Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NY",
+    "w": "New York voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Hochul wins reelection after making a statewide data center pause a campaign theme",
+    "b": "Gov. Kathy Hochul won a convincing victory over Republican Bruce Blakeman, who vowed to repeal her data center moratorium, per Finger Lakes 1. Results were unofficial; the source gives no margin.",
+    "s": [
+      [
+        "FingerLakes1",
+        "https://www.fingerlakes1.com/2026/11/04/data-centers-became-decisive-issue-for-nys-voters/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Reelection keeps the executive-order pause in place; repeal threat gone",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-07T00:57:29.419Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "VA",
+    "w": "Virginia voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost",
+      "siting"
+    ],
+    "t": "Warner wins fourth term after campaigning on data centers paying their own way",
+    "b": "Sen. Mark Warner won reelection by double digits after making data center regulation a campaign theme, calling for a federal baseline that data centers bring their own power and water. Reps. Subramanyam and Vindman, also pushing stricter rules, won by double digits too. Results are unofficial.",
+    "s": [
+      [
+        "WJLA",
+        "https://wjla.com/newsletter-daily/data-center-virginia-power-resources-pjm-hashmi-stricter-regulations-suhas-warner-vindman-reelection-campaigns-infrastructure-controversy"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Winning candidates pledged data centers bear power and water costs; not yet law.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-07T00:57:29.517Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "AZ",
+    "w": "Arizona voters, Attorney General Mayes",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "cost"
+    ],
+    "t": "Mayes wins re-election; she is the only statewide official backing a data center ban",
+    "b": "Attorney General Kris Mayes won a second term. KJZZ says she is the first statewide official to back a data center ban. Democrat Amish Shah, who opposed new data centers, flipped the 1st Congressional District. Advocates credit energy-cost anger; the link is unproven.",
+    "s": [
+      [
+        "KJZZ",
+        "https://www.kjzz.org/elections/2026-11-06/anger-over-energy-costs-data-centers-may-have-propelled-several-arizona-democrats-to-victory"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Re-elected AG backs statewide pause and ban; talk, no binding action",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-07T00:57:29.973Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "WA",
+    "w": "Spokane County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Spokane County commission race: pause backer leads write-in candidate who ran on data centers",
+    "b": "In unofficial election-night counts, Republican Suzanne Schmidt, who supports the county's temporary data center application pause, led write-in Rachelle Miller 53% to 46%. About 44,000 ballots remained, so the race was uncalled. Follows the earlier write-in ballot entry.",
+    "s": [
+      [
+        "The Spokesman-Review",
+        "https://www.spokesman.com/stories/2026/nov/03/races-in-countywide-positions-too-close-to-call-on/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Leading candidate backs the existing county pause; result unofficial",
+    "pl": [
+      [
+        "Spokane County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T00:57:30.044Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "AK",
+    "w": "Alaska voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost"
+    ],
+    "t": "Alaska's bipartisan legislative coalition looks set to hold and widen its majority",
+    "b": "Preliminary counts show Republicans trailing in several House races and no coalition senator behind, so the majority that passed a data center ratepayer bill in the Senate looks likely to continue. Results are unofficial; ranked-choice tabulation is Nov. 18.",
+    "s": [
+      [
+        "Anchorage Daily News",
+        "https://www.adn.com/politics/alaska-legislature/2026/11/04/republicans-on-track-to-lose-seats-in-alaska-house-amid-strong-showings-for-democrats-independents/"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Article never mentions data centers; link is to earlier ratepayer bill",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-07T00:57:30.058Z"
+  },
+  {
     "d": "2026-11-02",
     "j": "NY",
     "w": "Hamburg Town Board",
@@ -4854,6 +5277,40 @@
     ],
     "auto": true,
     "added": "2026-11-05T22:45:13.323Z"
+  },
+  {
+    "d": "2026-10-28",
+    "j": "WY",
+    "w": "Prometheus Hyperscale",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting"
+    ],
+    "t": "Prometheus drops $500M, 1.5 GW data center plan in Natrona County",
+    "b": "Prometheus Hyperscale told WyoFile it will not build its planned campus on 940 acres east of Casper. No reason was given; commissioners said they took no blocking votes, though neighbors had raised noise, emissions and traffic concerns. No permit application had been filed.",
+    "s": [
+      [
+        "Oil City News",
+        "https://oilcity.news/business-feature-2/2026/10/28/prometheus-hyperscale-drops-plans-for-500m-data-center-campus-in-natrona-county/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Developer withdrew a specific project after local opposition, no government action",
+    "pl": [
+      [
+        "Natrona County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T00:57:29.897Z"
   },
   {
     "d": "2026-10-27",
@@ -9825,6 +10282,44 @@
     ],
     "auto": true,
     "by": "Claude research, Nov 4"
+  },
+  {
+    "d": "2026-10-06",
+    "j": "OH",
+    "w": "Allen Township trustees",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Hancock County residents say they have signatures to force a vote on Allen Township data center rezoning",
+    "b": "Trustees approved a planned unit development rezoning for a data center on Oct. 6. Organizers say they have gathered enough signatures for a referendum, which would freeze the rezoning until voters decide. Signatures are not yet verified.",
+    "s": [
+      [
+        "The Ohio Register",
+        "https://www.theohioregister.com/hancock-citizens-mobilize-voter-referendum-to-block-controversial-data-center/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 2,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Rezoning for one project approved but blocked pending a possible referendum",
+    "pl": [
+      [
+        "Allen Township",
+        "township"
+      ],
+      [
+        "Hancock County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-07T00:57:28.678Z"
   },
   {
     "d": "2026-10-05",
