@@ -311,6 +311,41 @@
     "added": "2026-11-07T00:57:29.845Z"
   },
   {
+    "d": "2026-11-10",
+    "j": "CO",
+    "w": "Boulder County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Boulder County to hear rules capping unincorporated data centers at 75 kilowatts",
+    "b": "Staff will present Land Use Code amendments at a Nov. 10 hearing that would allow only data centers of 75 kilowatts or less, in industrial zones, after special review. Larger facilities would not be permitted. It follows the county's June pause.",
+    "s": [
+      [
+        "Boulder County",
+        "https://bouldercounty.gov/news/nov-10-public-hearing-on-proposed-land-use-code-amendments-related-to-data-centers-and-detention-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding size and zoning cap, still at hearing stage",
+    "pl": [
+      [
+        "Boulder County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:33.718Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -494,6 +529,35 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-08T00:55:09.091Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "NY",
+    "w": "New York Democrats",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "New York Democrats regain veto-proof Senate majority and expand Assembly lead",
+    "b": "Unofficial results give Democrats about 111 Assembly seats and restore a Senate supermajority lost after 2024. That matters for the legislature-passed data center moratorium bill that Hochul has not signed, though leaders show little appetite for overrides. Counts are unofficial.",
+    "s": [
+      [
+        "New York Focus",
+        "https://nysfocus.com/2026/11/06/new-york-blue-wave-democrats-albany"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Supermajority raises odds a vetoed pause bill could be overridden; counts unofficial",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-08T12:47:31.500Z"
   },
   {
     "d": "2026-11-05",
@@ -843,6 +907,109 @@
     "added": "2026-11-08T00:55:06.257Z"
   },
   {
+    "d": "2026-11-05",
+    "j": "WI",
+    "w": "Wisconsin Watch",
+    "lv": "local",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "disclosure"
+    ],
+    "t": "Operative recruits unlabeled paid social posters to promote Port Washington data center",
+    "b": "A former Republican aide and consultant pitched a southwest Wisconsin software analyst on paid posts backing the $15 billion Vantage campus, under a nondisclosure agreement and without labeling. Vantage says partnerships are disclosed; Microsoft and Meta said they run no such efforts.",
+    "s": [
+      [
+        "Wisconsin Watch",
+        "https://wisconsinwatch.org/2026/11/wisconsin-data-center-paid-social-media-posters-recruited-to-promote-port-washington/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Reported influence effort around one project; no policy direction",
+    "pl": [
+      [
+        "Port Washington",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:30.350Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "ND",
+    "w": "Barnes County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Barnes County extends commercial data center moratorium six months, through May",
+    "b": "Commissioners voted unanimously to extend the freeze, which was due to expire in mid-November, while staff draft countywide data center zoning rules. Public readings will precede a final vote, and the pause can end early if the draft is finished sooner.",
+    "s": [
+      [
+        "KFGO",
+        "https://kfgo.com/2026/11/06/1372510/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Binding six-month county pause on commercial data centers, in force.",
+    "pl": [
+      [
+        "Barnes County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:30.711Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "FL",
+    "w": "Indiantown Village Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Indiantown unanimously advances one-year data center pause, exempting three filed projects",
+    "b": "Reversing its September 4-1 refusal, the council passed a first reading of a one-year pause on new data center applications. Projects Growler, Silver Fox and Parrot are exempt. A second reading is set for Nov. 19, along with a citizens advisory committee.",
+    "s": [
+      [
+        "TCPalm via Yahoo News",
+        "https://www.yahoo.com/news/us/articles/florida-town-advances-data-center-031223955.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "First-reading pause; three pending projects exempt; final vote still ahead.",
+    "pl": [
+      [
+        "Indiantown",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:32.748Z"
+  },
+  {
     "d": "2026-11-04",
     "j": "TX",
     "w": "Brownsville City Commission",
@@ -1139,6 +1306,115 @@
     ],
     "auto": true,
     "added": "2026-11-06T12:59:11.258Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "MN",
+    "w": "Environmental groups, Hermantown residents",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Opponents file second lawsuit over Hermantown's environmental review of Google data center",
+    "b": "A state environmental group and a residents' group sued in St. Louis County court days after the council approved Google's permit. They say the city's second area-wide environmental review broke state law and want a state-led review like Pine Island's.",
+    "s": [
+      [
+        "KAXE",
+        "https://www.kaxe.org/local-news/2026-11-05/environmental-groups-sue-hermantown-google-over-data-center-review"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Lawsuit seeking redo of review could halt one project's permits",
+    "pl": [
+      [
+        "Hermantown",
+        "city"
+      ],
+      [
+        "St. Louis County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:29.638Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "TX",
+    "w": "Brownsville City Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Brownsville commissioners pass final reading of 90-day data center application pause",
+    "b": "Brownsville's commission gave final approval to a 90-day pause on new data center applications, running through Feb. 3, 2027. It followed a July application for a data center in a former Walmart that was later withdrawn. Officials may seek a second 90-day extension.",
+    "s": [
+      [
+        "KURV",
+        "https://www.kurv.com/brownsville-passes-90-day-moratorium-on-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Binding city pause on data center applications, 90 days, in force",
+    "pl": [
+      [
+        "Brownsville",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:31.591Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "AL",
+    "w": "Lambda, Cloverleaf Infrastructure",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Lambda named anchor tenant of 1,500 MW Project Red Clay in Lowndes County",
+    "b": "Lambda committed $33.1 billion to anchor the 2,200-acre campus off Highway 80 near Montgomery, which would draw up to 1,500 MW from Alabama Power. Construction could start in January, while lawsuits challenge the county's tax abatement vote.",
+    "s": [
+      [
+        "WSFA",
+        "https://www.wsfa.com/2026/11/04/anchor-company-named-project-red-clay-data-center-lowndes-county/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 2,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Names the tenant of a county-approved campus; legal challenges pending.",
+    "pl": [
+      [
+        "Lowndes County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:33.344Z"
   },
   {
     "d": "2026-11-03",
@@ -4843,6 +5119,144 @@
     "added": "2026-11-08T00:55:08.838Z"
   },
   {
+    "d": "2026-11-03",
+    "j": "PA",
+    "w": "East Whiteland voters",
+    "lv": "local",
+    "k": "action",
+    "st": "ballot",
+    "ty": [
+      "siting"
+    ],
+    "t": "East Whiteland voters expand board of supervisors to five after data center fight",
+    "b": "Voters approved growing the Chester County township's board from three to five members, with about 64% support. The push followed opposition to a 1.5 million-square-foot data center the current board approved in 2024. The change does not itself stop the project.",
+    "s": [
+      [
+        "Philadelphia Inquirer",
+        "https://www.inquirer.com/news/pennsylvania/chester-county-east-whiteland-election-20261104.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 2,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Governance change born of data center backlash; indirect effect on one project",
+    "pl": [
+      [
+        "East Whiteland Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:31.094Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "AL",
+    "w": "Protect Lowndes County, Alabama Rivers Alliance",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax",
+      "disclosure"
+    ],
+    "t": "Groups file second suit to void Lowndes County's Project Red Clay tax abatements",
+    "b": "Protect Lowndes County and the Alabama Rivers Alliance sued the county commission, alleging open meetings and open records violations in its Oct. 13 vote. They seek to void abatements worth over $2.7 billion. Residents filed an earlier suit; a hearing in it is set for Dec. 2.",
+    "s": [
+      [
+        "Alabama Political Reporter",
+        "https://www.alreporter.com/2026/11/06/lowndes-county-commission-sued-for-second-time-over-data-center-tax-break"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Lawsuit seeking to undo tax breaks for one campus; outcome open.",
+    "pl": [
+      [
+        "Lowndes County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:33.252Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "CO",
+    "w": "Fort Collins City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Fort Collins adopts six-month moratorium on data centers of 10 megawatts or more",
+    "b": "Reporting says the city approved a pause running to April 6, 2027, after a unanimous first reading Oct. 20. It covers primary-use data centers and accessory ones over 10 megawatts. No applications were pending. The exact final-vote date was not stated.",
+    "s": [
+      [
+        "Center Square (Yahoo News)",
+        "https://www.yahoo.com/news/us/articles/energy-analyst-data-center-moratoriums-180000761.html"
+      ],
+      [
+        "Yahoo News",
+        "https://www.yahoo.com/news/articles/fort-collins-council-votes-data-201210112.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Temporary moratorium in force, six months, one city",
+    "pl": [
+      [
+        "Fort Collins",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:34.019Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "CA",
+    "w": "California voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "permitting",
+      "siting"
+    ],
+    "t": "California voters reject Prop 45 CEQA overhaul that opponents tied to data centers",
+    "b": "Proposition 45, a streamlined environmental-review measure, was failing about 56% to 44% with roughly 76% counted. Backers said it excluded data centers; opponents argued it could fast-track them, and the No campaign cited a message to data center builders. Count unofficial.",
+    "s": [
+      [
+        "CalMatters",
+        "https://calmatters.org/politics/2026/11/california-election-2026-prop-45/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Failed permitting fast-track; data center link was contested, so indirect",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-08T12:47:35.439Z"
+  },
+  {
     "d": "2026-11-02",
     "j": "NY",
     "w": "Hamburg Town Board",
@@ -5117,6 +5531,42 @@
     ],
     "auto": true,
     "added": "2026-11-05T13:00:42.324Z"
+  },
+  {
+    "d": "2026-11-02",
+    "j": "WY",
+    "w": "Cheyenne Public Services Committee",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "water",
+      "siting",
+      "permitting"
+    ],
+    "t": "Cheyenne council committee advances ban on evaporative cooling for new data centers",
+    "b": "On a 2-1 vote the committee sent code amendments to the full council, with a first reading set for Nov. 9. They would require closed-loop cooling, bar glycol wastewater in sewers without utility approval, and add noise limits and disclosure of water use.",
+    "s": [
+      [
+        "Cap City News",
+        "https://capcity.news/community/city/2026/11/02/proposed-regulations-to-city-construction-sites-pass-committee-reading-monday/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding cooling and noise conditions, committee stage only",
+    "pl": [
+      [
+        "Cheyenne",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:33.851Z"
   },
   {
     "d": "2026-11-01",
@@ -6252,6 +6702,41 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-05T22:28:52.775Z"
+  },
+  {
+    "d": "2026-10-27",
+    "j": "CA",
+    "w": "Whittier City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Whittier adopts 45-day pause on new data center permits",
+    "b": "Whittier's council approved a 45-day pause on permits for data centers, along with car washes, massage parlors and detention centers, while staff draft permanent land-use rules. Reports say it could be extended on Dec. 8 by 10 months and 15 days.",
+    "s": [
+      [
+        "FOX 11 Los Angeles",
+        "https://www.foxla.com/news/whittier-ban-data-centers-car-washes"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Short city permit pause, in force, aimed partly at data centers",
+    "pl": [
+      [
+        "Whittier",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T12:47:34.507Z"
   },
   {
     "d": "2026-10-26",
