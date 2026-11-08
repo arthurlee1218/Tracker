@@ -35,6 +35,41 @@
     "added": "2026-11-05T00:55:18.830Z"
   },
   {
+    "d": "2026-12-03",
+    "j": "CT",
+    "w": "Cromwell Planning and Zoning",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Cromwell sets Dec. 3 hearing on six-month data center application pause",
+    "b": "After rejecting a one-year pause in September, Cromwell's commission will hold a special Dec. 3 hearing on a six-month freeze and a resident's text amendment with setbacks. Town council will also take up a ban on tax abatements for data centers Nov. 18.",
+    "s": [
+      [
+        "WFSB",
+        "https://www.wfsb.com/2026/11/05/cromwell-considers-moratorium-pause-new-data-center-developments/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed six-month pause on applications, hearing scheduled",
+    "pl": [
+      [
+        "Cromwell",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T00:55:06.617Z"
+  },
+  {
     "d": "2026-11-18",
     "j": "TN",
     "w": "Shelby County Commission",
@@ -431,6 +466,36 @@
     "added": "2026-11-07T12:46:55.045Z"
   },
   {
+    "d": "2026-11-06",
+    "j": "AZ",
+    "w": "Arizona voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost",
+      "water"
+    ],
+    "t": "Democrats win Arizona House and Senate; Hobbs re-elected, giving party full control",
+    "b": "Democrats took both chambers and kept the governor's office for the first time since 1966, per AP calls (counts partial). Incoming Senate president Sundareshan sponsored a stalled bill keeping data center power costs off consumers, a possible starting point in 2027.",
+    "s": [
+      [
+        "KJZZ",
+        "https://www.kjzz.org/elections/2026-11-06/democrats-win-control-of-arizona-house-senate-and-governors-office-for-the-first-time-in-60-years"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Trifecta makes ratepayer-protection bills on data centers more likely to pass.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-08T00:55:09.091Z"
+  },
+  {
     "d": "2026-11-05",
     "j": "NY",
     "w": "Town of Potsdam",
@@ -741,6 +806,41 @@
     ],
     "auto": true,
     "added": "2026-11-07T00:57:29.562Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "MD",
+    "w": "Frederick City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Frederick city council votes 5-0 for two-year pause on data center zoning changes",
+    "b": "The council passed Ordinance G-26-16, barring the city from accepting or approving zoning amendments that would allow data centers for two years while it studies impacts. It takes effect when the mayor signs. A union representative opposed it.",
+    "s": [
+      [
+        "Frederick News-Post",
+        "https://www.fredericknewspost.com/news/continuing_coverage/data_centers/city-of-frederick-passes-two-year-data-center-legislation-moratorium/article_5fc17e55-f86e-519b-9acb-018ac07ae314.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 2,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Two-year freeze on rezoning for data centers in one city, awaiting mayor's signature",
+    "pl": [
+      [
+        "Frederick",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T00:55:06.257Z"
   },
   {
     "d": "2026-11-04",
@@ -4590,6 +4690,157 @@
     ],
     "auto": true,
     "added": "2026-11-07T12:46:55.420Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OH",
+    "w": "Ohio local voters",
+    "lv": "local",
+    "k": "action",
+    "st": "ballot",
+    "ty": [
+      "moratorium",
+      "siting",
+      "tax"
+    ],
+    "t": "Ohio voters pass data center bans and limits in many towns on Nov. 3",
+    "b": "Ballotpedia counts eight partial bans, three full bans and two Adams County zoning measures approved. Perry's financial-guarantee rule for hyperscale tax incentives and Grove City's voter-approval rule also passed. Ashville's data center referendum and a pro-development question failed. Results are unofficial.",
+    "s": [
+      [
+        "Ballotpedia News",
+        "https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Voter-approved bans and limits bind the places covered, permanently.",
+    "pl": [
+      [
+        "Perry",
+        "city"
+      ],
+      [
+        "Grove City",
+        "city"
+      ],
+      [
+        "Ashville",
+        "city"
+      ],
+      [
+        "Adams County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T00:55:05.455Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "KS",
+    "w": "Johnson County District Court",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Judge rules Edgerton's citizen data center ban ordinance is legislative; council must pass it or send it to voters",
+    "b": "A Johnson County judge decided the petition ordinance is a legislative act, not administrative. Edgerton's council must now either adopt it as written or put it on the ballot. The council takes it up Nov. 12. If voters pass it, it could not be repealed for 10 years.",
+    "s": [
+      [
+        "FOX 4 Kansas City (via Yahoo)",
+        "https://www.yahoo.com/news/politics/articles/judge-rules-edgerton-data-center-214656726.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "l",
+    "rl": "d",
+    "iw": "Citizen ordinance to ban data centers is moving to council or ballot, not yet adopted",
+    "pl": [
+      [
+        "Edgerton",
+        "city"
+      ],
+      [
+        "Johnson County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T00:55:05.671Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "PA",
+    "w": "Democratic state Senate winners",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Winners of flipped PA Senate seats say data center anger helped; one wants approvals paused",
+    "b": "Democrats Mark Pinsley and Eileen Hartnett Albillar, plus Brian Wrightson in the Poconos, unseated GOP senators. Albillar called for pausing approvals; Pinsley called data center opposition a massive factor, though he also cited broader backlash. Results are unofficial.",
+    "s": [
+      [
+        "Brushwood Media Network",
+        "https://www.brushwoodmedianetwork.com/pennsylvania/news-pennsylvania/data-center-disgust-played-significant-role-in-state-senate-flip-winners-say/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Incoming senators' pause pledge; talk only, results unofficial",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-08T00:55:08.500Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "KY",
+    "w": "McCracken County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "McCracken County re-elects judge-executive who welcomed Paducah-area data center project",
+    "b": "Incumbent Republican Craig Clymer beat Paducah mayor George Bray, an independent, about 12,000 votes to 7,600. Clymer welcomed the large data center project near Paducah. Bray also backed it but wanted a community benefit agreement and clearer benefits for the adjacent city.",
+    "s": [
+      [
+        "Heatmap News",
+        "https://heatmap.news/the-place-where-a-candidate-promising-to-do-less-on-data-centers-actually-won"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 0,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Pro-project incumbent won; both candidates backed the project, so lean is mild support",
+    "pl": [
+      [
+        "McCracken County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-08T00:55:08.838Z"
   },
   {
     "d": "2026-11-02",
