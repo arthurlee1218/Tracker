@@ -519,6 +519,72 @@
     "added": "2026-11-09T00:57:03.531Z"
   },
   {
+    "d": "2026-11-09",
+    "j": "WI",
+    "w": "Incoming Democratic legislative leaders",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "cost",
+      "tax"
+    ],
+    "t": "Wisconsin Democratic leaders plan data center restrictions in January, but no moratorium",
+    "b": "Incoming Assembly Speaker Hesselbein and Senate Majority Leader Neubauer say new data center limits will be a priority once Democrats take control. Neither backs a moratorium. Neubauer says the sales tax exemption needs a look; Hesselbein wants to consult her caucus first.",
+    "s": [
+      [
+        "WisBusiness",
+        "https://www.wisbusiness.com/2026/mon-am-news-dem-legislative-leaders-plan-new-guardrails-on-data-centers-psc-signs-off-on-smaller-we-energies-rate-hike-than-requested/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Leaders pledge restrictions and review of tax exemption; no pause",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-09T13:04:51.766Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "OR",
+    "w": "Salem City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Salem council to vote on reading its code as excluding AI and hyperscale data centers",
+    "b": "A public hearing on Resolution 2026-46 would interpret Salem's zoning code so AI and hyperscale data centers fit no use category. The decision bears on Verrus's Mill Creek campus, already stalled by a moratorium. A developer says it works as a citywide ban.",
+    "s": [
+      [
+        "Salem Reporter",
+        "https://www.salemreporter.com/2026/11/06/city-meeting-an-interpretation-of-existing-city-code-could-spell-trouble-for-ai-data-centers-in-salem/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Scheduled vote that would exclude hyperscale data centers from all city use categories.",
+    "pl": [
+      [
+        "Salem",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-09T13:04:53.413Z"
+  },
+  {
     "d": "2026-11-06",
     "j": "US",
     "w": "NYC climate groups",
@@ -666,6 +732,105 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-08T12:47:31.500Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "US",
+    "w": "Sen. Martin Heinrich",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "permitting",
+      "disclosure"
+    ],
+    "t": "Heinrich presses BLM for details on 15+ data center proposals on public land",
+    "b": "Sen. Heinrich asked BLM's director for the legal authority, a project inventory and the list of eligible federal sites behind at least 15 data center proposals covering over 17,000 acres in six Western states. Answers are due Nov. 20.",
+    "s": [
+      [
+        "Organ Mountain News",
+        "https://www.organmountainnews.com/heinrich-blm-data-centers-federal-public-lands-2026/"
+      ]
+    ],
+    "im": -1,
+    "ef": "info",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Oversight letter seeking disclosure and review of federal-land projects; no binding effect yet",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-09T13:04:51.642Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "KS",
+    "w": "Kansas voters, Holscher and Masterson",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Kansas governor's race still uncalled; Holscher declares victory, Masterson waits for verification",
+    "b": "Holscher, who has urged a statewide data center moratorium, led Masterson by just over 7,000 votes on Nov. 6. She declared victory and Gov. Kelly recognized her as governor-elect. Masterson has not conceded, pending provisional ballots and statutory verification. Counts are unofficial.",
+    "s": [
+      [
+        "KCTV5",
+        "https://www.kctv5.com/2026/11/06/mail-in-ballots-set-arrive-kansas-governors-race-remains-uncalled/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Winner backs a statewide pause; result unofficial, talk-stage only",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-09T13:04:51.950Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "NM",
+    "w": "NM hearing officer",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting",
+      "siting"
+    ],
+    "t": "Hearing officer vacates Dec. 7 Project Jupiter air permit hearing, sets no new date",
+    "b": "Granting a joint request from the permit applicant and the state Air Quality Bureau, the officer cancelled the hearing. It cannot be rescheduled until the bureau files a revised recommendation. The permit stays pending, and status conferences start Nov. 19.",
+    "s": [
+      [
+        "Microgrid Media",
+        "https://microgridmedia.com/project-jupiter-air-permit-hearing-delayed/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Procedural delay of one project's permit; no approval or denial yet",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ],
+      [
+        "Sunland Park",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-09T13:04:53.151Z"
   },
   {
     "d": "2026-11-05",
@@ -1116,6 +1281,41 @@
     ],
     "auto": true,
     "added": "2026-11-08T12:47:32.748Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "CT",
+    "w": "Cromwell Planning and Zoning",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Cromwell zoning commission approves six-month pause on data center applications",
+    "b": "After an earlier 12-month proposal failed, the commission voted for a six-month pause tied to a resident's zoning-change application and the proposed 159-acre Geer Street campus. A Dec. 3 public hearing on a related data center tax amendment is set.",
+    "s": [
+      [
+        "FOX61 via Yahoo News",
+        "https://www.yahoo.com/news/articles/cromwell-officials-place-6-month-043450226.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Six-month freeze on data center applications in one town, adopted",
+    "pl": [
+      [
+        "Cromwell",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-09T13:04:52.221Z"
   },
   {
     "d": "2026-11-04",
@@ -5518,6 +5718,36 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-09T00:57:06.445Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "AR",
+    "w": "Arkansas voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost",
+      "siting"
+    ],
+    "t": "Arkansas House Republicans lose three-fourths supermajority as Democrats flip nine seats",
+    "b": "Democrats flipped nine GOP-held House seats, ending the three-fourths majority needed for most appropriations bills; Republicans kept the Senate supermajority. Counts are unofficial and one race was uncalled. The article does not link the result to data center bills or incentives.",
+    "s": [
+      [
+        "Arkansas Democrat-Gazette",
+        "https://www.arkansasonline.com/news/2026/nov/04/arkansas-democrats-flip-seats-in-state-house-causing-gop-to-lose-its-supermajority/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Structural election result; no stated data center position or direct link",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-09T13:04:52.826Z"
   },
   {
     "d": "2026-11-02",
