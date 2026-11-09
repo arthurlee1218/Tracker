@@ -135,6 +135,40 @@
     "added": "2026-11-05T22:45:10.555Z"
   },
   {
+    "d": "2026-11-18",
+    "j": "NY",
+    "w": "Putnam Valley Town Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Putnam Valley schedules Nov. 18 hearing on a temporary data center moratorium",
+    "b": "The town board will take comment on Local Law No. 6 of 2026, a temporary moratorium on data centers, at 6 p.m. at Town Hall. The notice does not state the pause's length. A companion law covers large battery storage and wind systems.",
+    "s": [
+      [
+        "Town of Putnam Valley",
+        "https://www.putnamvalley.gov/notice-of-public-hearing-a-local-law-establishing-a-temporary-moratorium-on-data-centers-in-the-town-of-putnam-valley/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed local pause at hearing stage, length unstated",
+    "pl": [
+      [
+        "Putnam Valley",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-09T00:57:03.699Z"
+  },
+  {
     "d": "2026-11-17",
     "j": "VA",
     "w": "Loudoun County",
@@ -346,6 +380,45 @@
     "added": "2026-11-08T12:47:33.718Z"
   },
   {
+    "d": "2026-11-10",
+    "j": "PA",
+    "w": "Hanover Township supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Hanover Township holds more hearings on Prime's 350 MW Starpointe data center and gas plant",
+    "b": "Supervisors set hearings for Nov. 10 and 11 on a conditional use permit for seven data center buildings and an attached 350 MW gas plant in Starpointe Business Park, Washington County. They have already held almost a dozen hearings; a decision may slip to December.",
+    "s": [
+      [
+        "Observer-Reporter",
+        "https://www.observer-reporter.com/news/local-news/2026/nov/02/starpointe-data-center-hearings-potentially-nearing-end/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Pending conditional use permit for one project, outcome undecided",
+    "pl": [
+      [
+        "Hanover Township",
+        "township"
+      ],
+      [
+        "Washington County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-09T00:57:03.642Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -409,6 +482,41 @@
     ],
     "auto": true,
     "added": "2026-11-07T00:57:29.916Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "MA",
+    "w": "Athol Special Town Meeting",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Athol voters to decide a one-year data center moratorium at special town meeting",
+    "b": "Article 9 would bar special permits, site plan approvals and other land use approvals for data centers for a year while the planning board studies power, water, noise and health effects. Planning board, select board and finance committee all backed it unanimously. Result not yet reported.",
+    "s": [
+      [
+        "Athol Daily News",
+        "https://atholdailynews.com/2026/11/06/data-center-moratorium-on-athol-special-town-meeting-warrant/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "One-year local pause on the warrant with unanimous board support, vote pending",
+    "pl": [
+      [
+        "Athol",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-09T00:57:03.531Z"
   },
   {
     "d": "2026-11-06",
@@ -5257,6 +5365,161 @@
     "added": "2026-11-08T12:47:35.439Z"
   },
   {
+    "d": "2026-11-03",
+    "j": "OH",
+    "w": "Pataskala, Granville, Sunbury voters",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Pataskala, Granville and Sunbury voters pass charter bans on large data centers",
+    "b": "Unofficial results: Pataskala (73.6%) and Granville (82.5%) in Licking County, and Sunbury in Delaware County (78.6%), approved charter amendments barring data centers, with a 25 MW threshold in Sunbury. Pataskala had earlier rejected an Aligned proposal. Counties must certify within 21 days.",
+    "s": [
+      [
+        "Yahoo News (Ohio election roundup)",
+        "https://www.yahoo.com/news/politics/articles/ohio-election-results-show-voters-142538202.html"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Voter-approved charter bans on large data centers, unofficial until certified",
+    "pl": [
+      [
+        "Pataskala",
+        "city"
+      ],
+      [
+        "Granville",
+        "city"
+      ],
+      [
+        "Sunbury",
+        "city"
+      ],
+      [
+        "Licking County",
+        "county"
+      ],
+      [
+        "Delaware County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-09T00:57:02.964Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "KS",
+    "w": "Ottawa voters",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Ottawa voters approve 10-year ban on data centers over 25 MW by about 72%",
+    "b": "A citizen-petitioned ordinance banning hyperscale data centers above 25 megawatts in Ottawa passed in unofficial returns, about 72% to 28%, after a judge ruled the petition legislative. The city manager said the ban hurts Ottawa's chances at advanced developments.",
+    "s": [
+      [
+        "KSHB",
+        "https://www.kshb.com/news/local-news/data-centers/citizen-led-effort-ends-in-landslide-win-for-ottawa-hyperscale-data-center-ban"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 2,
+    "du": "l",
+    "rl": "d",
+    "iw": "Voter-adopted 10-year ban on 25 MW+ facilities within city limits",
+    "pl": [
+      [
+        "Ottawa",
+        "city"
+      ],
+      [
+        "Franklin County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-09T00:57:03.253Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "AR",
+    "w": "Pulaski County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Pulaski County elects data center critics: Griffen as judge, plus new justices of the peace",
+    "b": "Wendell Griffen, who helped draft the county's new data center rules, won county judge over Republican Michael Rushin. Jesse Johnson, who campaigned against the AVAIO project, unseated a justice who opposed the rules. Other seats split between supporters and opponents. Results unofficial.",
+    "s": [
+      [
+        "Arkansas Times",
+        "https://arktimes.com/arkansas-blog/2026/11/06/incoming-jp-says-he-wants-to-kick-data-centers-out-of-pulaski-county"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Winners back binding siting rules already in force; seats split",
+    "pl": [
+      [
+        "Pulaski County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-09T00:57:06.340Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OK",
+    "w": "Oklahoma voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Oklahoma Republicans keep veto-proof supermajorities despite Democratic House gains",
+    "b": "Democrats flipped at least five House seats and held all eight Senate seats they defended, but Republicans keep supermajorities in both chambers. A data center moratorium would need Republican support, and governor-elect Mazzei favors local approval over a ban. Counts unofficial.",
+    "s": [
+      [
+        "KGOU",
+        "https://www.kgou.org/oklahoma-election-results-november-2026"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Structural result; Republican control makes a statewide pause unlikely, no direct policy",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-09T00:57:06.445Z"
+  },
+  {
     "d": "2026-11-02",
     "j": "NY",
     "w": "Hamburg Town Board",
@@ -5567,6 +5830,41 @@
     ],
     "auto": true,
     "added": "2026-11-08T12:47:33.851Z"
+  },
+  {
+    "d": "2026-11-02",
+    "j": "OK",
+    "w": "Caddo Nation Tribal Council",
+    "lv": "tribal",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Caddo Nation declares 10-year moratorium on hyperscale data centers",
+    "b": "The Caddo Nation's Tribal Council announced a ten-year pause on approving, building, expanding or operating hyperscale data centers on lands under its jurisdiction and in its ancestral homeland. The report does not say how it applies off tribal land or to existing projects. Announced on Facebook.",
+    "s": [
+      [
+        "News 9",
+        "https://www.news9.com/data-centers-in-oklahoma/caddo-nation-data-center-moratorium"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "l",
+    "rl": "d",
+    "iw": "Binding multi-year pause on hyperscale projects on tribal lands",
+    "pl": [
+      [
+        "Caddo Nation",
+        "tribal"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-09T00:57:05.824Z"
   },
   {
     "d": "2026-11-01",
