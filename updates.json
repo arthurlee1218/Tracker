@@ -239,6 +239,41 @@
     "added": "2026-11-05T13:00:43.848Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "IL",
+    "w": "McHenry County Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "McHenry County board to vote Nov. 17 on 12-month data center moratorium",
+    "b": "The zoning board and a county committee have approved a 12-month freeze on data center applications in unincorporated areas. The full board votes Nov. 17, possibly in two votes over due process concerns. No applicants are pending.",
+    "s": [
+      [
+        "Northwest Herald (Shaw Local)",
+        "https://www.shawlocal.com/northwest-herald/2026/11/09/mchenry-county-board-to-take-up-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Scheduled vote on a 12-month county pause, none pending",
+    "pl": [
+      [
+        "McHenry County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T00:56:11.511Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -272,6 +307,42 @@
     ],
     "auto": true,
     "added": "2026-11-05T22:28:50.677Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "MN",
+    "w": "Minneapolis City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "disclosure",
+      "moratorium"
+    ],
+    "t": "Minneapolis council to vote Nov. 12 on data center zoning replacing expiring moratorium",
+    "b": "Proposed rules would allow data centers only in existing downtown and North Loop buildings, cap them at 150,000 square feet, require 20-foot setbacks from walls and energy and water disclosure. The council is split on a full ban; the moratorium ends Nov. 21.",
+    "s": [
+      [
+        "FOX 9",
+        "https://www.fox9.com/news/minneapolis-set-pass-sweeping-data-center-regulations"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding siting, size and disclosure limits scheduled for vote",
+    "pl": [
+      [
+        "Minneapolis",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T00:56:11.909Z"
   },
   {
     "d": "2026-11-10",
@@ -585,6 +656,104 @@
     "added": "2026-11-09T13:04:53.413Z"
   },
   {
+    "d": "2026-11-09",
+    "j": "US",
+    "w": "U.S. Senate",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Senate votes 73-25 to begin debate on bipartisan permitting bill with data center power-cost rules",
+    "b": "The Senate cleared the first procedural hurdle on a bipartisan permitting package that would require data center developers to cover their own power and grid-upgrade costs. Final Senate votes are expected this week; the House must still act.",
+    "s": [
+      [
+        "CNBC",
+        "https://www.cnbc.com/2026/11/09/senate-infrastructure-bill-data-centers.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Bill would make data centers pay own power costs; still pending in Congress.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-10T00:56:11.261Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "WI",
+    "w": "Potawatomi tribal business",
+    "lv": "tribal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Potawatomi-owned Milwaukee data center seeks zoning change to expand, outside city moratorium",
+    "b": "Forest County Potawatomi's Data Holdings wants to add up to 59,000 square feet next to its 46,000 square foot west side facility. Milwaukee's new moratorium exempts planned development districts, so the council must approve the change; no hearing is set.",
+    "s": [
+      [
+        "The Daily Reporter",
+        "https://dailyreporter.com/2026/11/09/potawatomi-looks-to-expand-milwaukee-data-center/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed expansion of one existing facility, awaiting council zoning approval",
+    "pl": [
+      [
+        "Milwaukee",
+        "city"
+      ],
+      [
+        "Forest County Potawatomi Community",
+        "tribal"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T00:56:12.304Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "LA",
+    "w": "Landowner groups v. PSC",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting",
+      "cost"
+    ],
+    "t": "Landowner groups sue Louisiana regulators over fast-track rule used for Meta power plants",
+    "b": "Three groups sued the Public Service Commission in Baton Rouge, arguing its fast-track directive was adopted without adequate public notice. They want it declared invalid. One plaintiff hopes the suit delays the commission's vote on Entergy's gas plants for Meta's Hyperion campus.",
+    "s": [
+      [
+        "KRVS / Gulf States Newsroom",
+        "https://www.krvs.org/louisiana-news/2026-11-09/entergy-wants-their-land-for-metas-power-lines-theyre-suing-the-regulators-approving-them"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 4,
+    "du": "p",
+    "rl": "i",
+    "iw": "Lawsuit could slow gas plants serving a data center; outcome open",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-10T00:56:13.233Z"
+  },
+  {
     "d": "2026-11-06",
     "j": "US",
     "w": "NYC climate groups",
@@ -831,6 +1000,44 @@
     ],
     "auto": true,
     "added": "2026-11-09T13:04:53.151Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "OK",
+    "w": "Pawnee City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting"
+    ],
+    "t": "Pawnee council OKs grid study for proposed Black Bear AI data center campus",
+    "b": "Council authorized the mayor to sign a developer-funded transmission cost study with GRDA and SPP for a proposed campus near Morrison. It does not approve electric service or construction, and officials say the project is at its earliest stage.",
+    "s": [
+      [
+        "News On 6",
+        "https://www.newson6.com/data-centers-in-oklahoma/pawnee-power-study-proposed-ai-data-center-project"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Preliminary step toward serving one project; no commitments made",
+    "pl": [
+      [
+        "Pawnee",
+        "city"
+      ],
+      [
+        "Pawnee County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T00:56:13.888Z"
   },
   {
     "d": "2026-11-05",
@@ -8279,6 +8486,35 @@
     ],
     "auto": false,
     "by": "Chongwmichael"
+  },
+  {
+    "d": "2026-10-21",
+    "j": "ND",
+    "w": "North Dakota News Cooperative poll",
+    "lv": "state",
+    "k": "politics",
+    "st": "poll",
+    "ty": [
+      "siting"
+    ],
+    "t": "North Dakota poll: AI data centers draw more opposition than support",
+    "b": "A Mason-Dixon poll of 625 adults fielded Oct. 19-21 found 45% oppose and 35% support AI data centers. Traditional data centers get 57% support, rising to 74% if developers pay all local infrastructure costs; 40% oppose one in their own community.",
+    "s": [
+      [
+        "InForum",
+        "https://www.inforum.com/news/north-dakota/poll-north-dakotans-show-mixed-support-for-data-centers-envision-job-creation-local-tax-benefits"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Poll shows plurality opposing AI data centers and wanting developers to pay costs.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-10T00:56:12.530Z"
   },
   {
     "d": "2026-10-20",
