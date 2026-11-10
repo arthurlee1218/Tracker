@@ -70,6 +70,80 @@
     "added": "2026-11-08T00:55:06.617Z"
   },
   {
+    "d": "2026-11-23",
+    "j": "NC",
+    "w": "Chowan County, Edenton councils",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Edenton and Chowan County, NC schedule hearings on temporary data center moratoriums",
+    "b": "Edenton's council holds a hearing Nov. 10 on a 60-day pause on data center approvals after postponing a zoning amendment. Chowan County commissioners hold their own hearing Nov. 23 on a temporary moratorium, of unspecified length. No application is known to be pending.",
+    "s": [
+      [
+        "Albemarle Observer",
+        "https://albemarleobserver.news/2026/11/06/edenton-chowan-county-to-consider-data-center-moratoriums/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Scheduled hearings on proposed local pauses, not yet adopted",
+    "pl": [
+      [
+        "Chowan County",
+        "county"
+      ],
+      [
+        "Edenton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:32.284Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "AR",
+    "w": "Washington County Quorum Court",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Washington County, Arkansas, committee backs one-year data center moratorium; full court votes Nov. 19",
+    "b": "A Quorum Court committee recommended a one-year moratorium on data centers in Washington County. The full Quorum Court is scheduled to take it up at its regular meeting on Nov. 19.",
+    "s": [
+      [
+        "Northwest Arkansas Democrat-Gazette",
+        "https://www.nwaonline.com/news/2026/nov/09/washington-county-moratorium-on-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed one-year county pause, committee-approved, awaiting full court vote",
+    "pl": [
+      [
+        "Washington County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:31.487Z"
+  },
+  {
     "d": "2026-11-18",
     "j": "TN",
     "w": "Shelby County Commission",
@@ -307,6 +381,40 @@
     ],
     "auto": true,
     "added": "2026-11-05T22:28:50.677Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "MO",
+    "w": "Springfield City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Springfield council expected to vote Nov. 16 on extending data center moratorium to February",
+    "b": "Springfield's council is expected to take up an extension of its data center moratorium through February at its Nov. 16 meeting, days after a judge declined to let a developer out of the pause.",
+    "s": [
+      [
+        "KY3",
+        "https://www.ky3.com/2026/11/10/judge-denies-companys-request-end-springfields-data-center-moratorium/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Scheduled vote to extend a city pause about three months",
+    "pl": [
+      [
+        "Springfield",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:30.022Z"
   },
   {
     "d": "2026-11-12",
@@ -752,6 +860,210 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-10T00:56:13.233Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "IN",
+    "w": "Warrick County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Warrick County commissioners table data center ordinance after residents ask for a moratorium",
+    "b": "Commissioners tabled the proposed ordinance on Nov. 9, a week after the Area Plan Commission recommended against it 5-2. Many residents asked for another moratorium; no new date was set.",
+    "s": [
+      [
+        "14 News (WFIE)",
+        "https://www.14news.com/2026/11/10/warrick-county-commissioners-table-proposed-data-center-ordinance/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Ordinance delayed, outcome open; no clear lean",
+    "pl": [
+      [
+        "Warrick County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:29.236Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "MO",
+    "w": "Greene County judge",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Judge refuses to lift Springfield's data center moratorium for NSI project",
+    "b": "A judge denied NSI's request to end Springfield's moratorium. NSI argued its South National Avenue site is zoned for data processing and was approved before the pause. The ruling leaves the city's pause in place for that project.",
+    "s": [
+      [
+        "KY3",
+        "https://www.ky3.com/2026/11/10/judge-denies-companys-request-end-springfields-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Court upholds a city pause against a specific developer's challenge",
+    "pl": [
+      [
+        "Springfield",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:29.670Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "OK",
+    "w": "Edmond City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Edmond council extends its data center moratorium through June 2027",
+    "b": "Edmond's council voted 5-0 to extend the pause on accepting rezoning and building permit applications for data centers until June 30, 2027, giving staff time to weigh regulations and land-use rules.",
+    "s": [
+      [
+        "News9",
+        "https://www.news9.com/data-centers-in-oklahoma/edmond-city-council-extends-data-center-moratorium"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "City pause on data center applications extended to mid-2027",
+    "pl": [
+      [
+        "Edmond",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:30.906Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "TN",
+    "w": "Montgomery County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Montgomery County, Tennessee adopts data center zoning rules, 17-4, without a moratorium",
+    "b": "Commissioners approved zoning rules for data centers and power plants: 10 to 100 acre sites with appeals-board approval, 500-foot setbacks from most districts, noise caps, and developer-paid infrastructure. Residents asked for a pause; no moratorium vote was held.",
+    "s": [
+      [
+        "FOX 17 Nashville",
+        "https://fox17.com/news/local/montgomery-county-approves-new-data-center-zoning-rules-after-residents-call-for-pause"
+      ]
+    ],
+    "im": -2,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding county siting, setback and noise conditions on data centers",
+    "pl": [
+      [
+        "Montgomery County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:32.105Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "CO",
+    "w": "Aurora City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax",
+      "moratorium"
+    ],
+    "t": "Aurora advances ban on data center tax rebates; moratorium not revived",
+    "b": "Council again declined to reconsider a data center moratorium, with no opponent bringing it back. It advanced Mayor Coffman's ban on sales and use tax rebates for future projects. Both that ban and a new six-vote moratorium proposal are set for Nov. 23.",
+    "s": [
+      [
+        "Sentinel Colorado",
+        "https://sentinelcolorado.com/metro/aurora-data-center-tax-incentive-ban-advances-amid-another-failed-push-for-a-moratorium/"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed ban on future tax rebates; applies to new projects only",
+    "pl": [
+      [
+        "Aurora",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:32.913Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "AK",
+    "w": "Alaska voters, governor's race",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Kreiss-Tomkins' Alaska governor lead grows to 49.4% of first choices",
+    "b": "With about 220,000 ballots counted, the Democrat who earlier backed a data center moratorium holds 49.4% of first choices against Wilson's 28.8%. Counts are unofficial and ranked-choice tallying is still ahead. Swearing-in is expected Dec. 7. The article does not discuss data centers.",
+    "s": [
+      [
+        "Anchorage Daily News",
+        "https://www.adn.com/politics/2026/11/09/kreiss-tomkins-grows-his-lead-in-alaska-governors-race/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Winning candidate pledged a moratorium; talk only, count unofficial.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-10T13:00:33.209Z"
   },
   {
     "d": "2026-11-06",
@@ -1525,6 +1837,105 @@
     "added": "2026-11-09T13:04:52.221Z"
   },
   {
+    "d": "2026-11-05",
+    "j": "NJ",
+    "w": "Bridgewater Township Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting"
+    ],
+    "t": "Bridgewater council bars data centers from Greymark redevelopment plan",
+    "b": "Bridgewater's council voted unanimously on final action to amend Ordinance 2621, removing data centers as a permitted use in the Greymark Office Tract plan on Route 22 and listing them as a prohibited use.",
+    "s": [
+      [
+        "Bridgewater Patch",
+        "https://patch.com/new-jersey/bridgewater/bridgewater-council-removes-data-centers-greymark-redevelopment-plan"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Final ordinance prohibits data centers in one redevelopment tract",
+    "pl": [
+      [
+        "Bridgewater Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:30.350Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "NJ",
+    "w": "NJ General Assembly",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "water",
+      "disclosure"
+    ],
+    "t": "New Jersey Assembly passes bill A3966 to study data center water use",
+    "b": "The Assembly recently passed A3966, directing the state environmental department to study how large data centers use water and letting it request information from operators and utilities. The Senate and governor have not acted, per the report.",
+    "s": [
+      [
+        "ROI-NJ",
+        "https://www.roi-nj.com/2026/11/06/industry/energy-utilities/assembly-passes-measure-to-examine-impact-of-data-centers-on-n-j-s-water-supply-and-usage/"
+      ]
+    ],
+    "im": -1,
+    "ef": "info",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Study and information requests only; passed one chamber",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-10T13:00:30.507Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "GA",
+    "w": "Dade County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Dade County, Georgia adopts 90-day data center moratorium after 300 MW developer surfaces",
+    "b": "Commissioners unanimously approved a 90-day pause on new data center development, proposed by a commissioner, to draft regulations. An industrial authority director told the board an Atlanta developer had inquired about a 300 MW site in the county's development park.",
+    "s": [
+      [
+        "Chattanooga Times Free Press",
+        "https://www.timesfreepress.com/news/2026/nov/09/dade-county-pumps-brakes-on-data-centers-as-massive-300-megawatt-proposal-sparks-backlash/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Binding 90-day county pause on new data center development",
+    "pl": [
+      [
+        "Dade County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:31.970Z"
+  },
+  {
     "d": "2026-11-04",
     "j": "TX",
     "w": "Brownsville City Commission",
@@ -1930,6 +2341,40 @@
     ],
     "auto": true,
     "added": "2026-11-08T12:47:33.344Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "MT",
+    "w": "CubCloud AI",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Missoula company sues city over zoning that blocks data centers",
+    "b": "CubCloud AI, backed by the Goldwater Institute, sued Missoula over an October zoning change that effectively bars data centers in city limits. It argues the rule violates Montana's Right to Compute Act. The city says it will defend the ordinance.",
+    "s": [
+      [
+        "Montana Free Press",
+        "https://montanafreepress.org/2026/11/09/missoula-ai-company-sues-city-over-data-center-restrictions/"
+      ]
+    ],
+    "im": 1,
+    "ef": "fast",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Lawsuit seeking to overturn a city ban using state preemption law",
+    "pl": [
+      [
+        "Missoula",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:33.038Z"
   },
   {
     "d": "2026-11-03",
@@ -5955,6 +6400,126 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-09T13:04:52.826Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OH",
+    "w": "Urbana voters",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Urbana, Ohio, voters ban data centers over 7.5 MW and recall mayor",
+    "b": "Urbana voters passed a charter amendment barring data centers above 7.5 MW of peak demand with 77%, and recalled Mayor Bill Bean with 73% the same night. Results are unofficial until the county board certifies them.",
+    "s": [
+      [
+        "WVXU / Ohio Newsroom",
+        "https://www.wvxu.org/2026-11-10/heres-how-every-data-center-related-ballot-measure-fared-in-ohio"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Charter amendment bans large data centers in one city, permanently",
+    "pl": [
+      [
+        "Urbana",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:25.619Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MN",
+    "w": "St. Louis County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "disclosure"
+    ],
+    "t": "St. Louis County commissioner who signed Google NDA loses to moratorium backer",
+    "b": "Incumbent Annie Harala, who signed a nondisclosure agreement tied to the Hermantown project and later regretted it, lost to Kris Eilers, who supports a data center moratorium, by about 8% in unofficial results. In Hermantown, supporter Andy Hjelle also lost his council seat.",
+    "s": [
+      [
+        "KAXE",
+        "https://www.kaxe.org/elections/2026-11-04/incumbents-lose-in-hermantown-st-louis-county-races-amid-data-center-turmoil"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Winner backs a moratorium; election result, not yet policy",
+    "pl": [
+      [
+        "St. Louis County",
+        "county"
+      ],
+      [
+        "Hermantown",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:26.343Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "ME",
+    "w": "Voters in four Maine towns",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Eliot, Brownfield, Freedom and Sabattus voters approve data center moratoriums",
+    "b": "Voters in Eliot, Brownfield, Freedom and Sabattus approved moratoriums on data centers on Nov. 3, with roughly 66 to 78 percent support. Reporting describes the pauses as 180 days, giving each town time to write rules. Results are unofficial.",
+    "s": [
+      [
+        "The Maine Monitor",
+        "https://themainemonitor.org/maine-towns-adopt-data-center-bans/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Voter-approved 180-day local pauses on data centers",
+    "pl": [
+      [
+        "Eliot",
+        "township"
+      ],
+      [
+        "Brownfield",
+        "township"
+      ],
+      [
+        "Freedom",
+        "township"
+      ],
+      [
+        "Sabattus",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-10T13:00:30.115Z"
   },
   {
     "d": "2026-11-02",
