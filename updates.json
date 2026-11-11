@@ -598,6 +598,137 @@
     "added": "2026-11-09T00:57:03.642Z"
   },
   {
+    "d": "2026-11-10",
+    "j": "OK",
+    "w": "Oklahoma City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Oklahoma City council unanimously extends data center moratorium through end of 2027",
+    "b": "The council voted unanimously to extend the city's pause on new data center projects to Dec. 31, 2027, effective immediately. It can end early if zoning amendments pass first. The ordinance carves out some pending rezonings and adds an appeals process.",
+    "s": [
+      [
+        "News 9",
+        "https://www.news9.com/data-centers-in-oklahoma/okc-council-data-center-project-moratorium-extension-vote"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "City pause in force, extended about 13 months, with exceptions",
+    "pl": [
+      [
+        "Oklahoma City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T00:55:39.931Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "GA",
+    "w": "McIntosh County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "McIntosh County, Georgia requires special use permits for data centers instead of a moratorium",
+    "b": "Commissioners approved a stopgap zoning change requiring a special use permit and at least one public hearing for any data center, letting planners set noise, water and power conditions while the county writes a white paper. No applications are pending.",
+    "s": [
+      [
+        "The Current GA",
+        "https://thecurrentga.org/2026/11/10/mcintosh-county-mandates-special-use-permits-for-potential-data-centers/"
+      ]
+    ],
+    "im": -2,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding permit and hearing requirement countywide, no end date",
+    "pl": [
+      [
+        "McIntosh County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T00:55:40.569Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "AZ",
+    "w": "Arizona Democratic legislators",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Arizona Democrats weigh statewide data center moratorium despite Hobbs's opposition",
+    "b": "After winning full control of state government, Sen. Lauren Kuby calls a moratorium the top item Democrats are examining. Senate President-elect Sundareshan says Hobbs's opposition does not rule one out. Mayes reaffirmed support for a pause. Hobbs said in September she opposes one.",
+    "s": [
+      [
+        "Arizona Capitol Times",
+        "https://azcapitoltimes.com/news/2026/11/10/data-center-regulation-could-be-first-test-of-arizonas-new-democratic-trifecta/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Talk of a statewide pause; governor opposed, so only a signal",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-11T00:55:41.277Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "WA",
+    "w": "Gov. Ferguson, Rep. Doglio",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "disclosure",
+      "cost",
+      "siting"
+    ],
+    "t": "Ferguson expects Washington data center law in 2027 as Democrats gain House supermajority",
+    "b": "Days after Democrats won a House supermajority, the governor said he is confident lawmakers will pass data center legislation next session. Rep. Doglio plans to refile her bill with an NDA ban, grid-emergency curtailment and extra fees, preferring guardrails to a moratorium.",
+    "s": [
+      [
+        "Cascadia Daily News",
+        "https://www.cascadiadaily.com/2026/nov/10/is-the-honeymoon-over-for-data-centers-in-washington/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Planned 2027 state guardrails bill; proposal stage, covers whole state, no pause.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-11T00:55:41.401Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -1064,6 +1195,256 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-10T13:00:33.209Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "MI",
+    "w": "Romulus City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Romulus, Michigan, unanimously adopts a 180-day data center moratorium",
+    "b": "Romulus council voted unanimously to halt data center development approvals for 180 days, effective immediately, to give the city time to write permanent regulations.",
+    "s": [
+      [
+        "Michigan Public",
+        "https://www.michiganpublic.org/politics-government/2026-11-10/data-center-restrictions-pass-in-saginaw-township-and-romulus"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Fixed 180-day city pause in force, aimed at data centers",
+    "pl": [
+      [
+        "Romulus",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T00:55:37.279Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "MI",
+    "w": "Lighthouse Sustainability",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting"
+    ],
+    "t": "Developer withdraws from proposed $10 billion Holt data center after township opposition",
+    "b": "Lighthouse Sustainability told the Lansing Economic Area Partnership it is dropping the 423-acre Holt campus plan, days after Delhi Township's board voted 6-0 to oppose it. The township's moratorium stays in place until at least April.",
+    "s": [
+      [
+        "WILX",
+        "https://www.wilx.com/2026/11/10/leap-company-behind-proposed-data-center-withdraw-plans-after-community-pushes-back/"
+      ]
+    ],
+    "im": 0,
+    "ef": "deny",
+    "fo": 0,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "One specific project withdrawn after local opposition",
+    "pl": [
+      [
+        "Delhi Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T00:55:38.030Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "KS",
+    "w": "Protect Kansas petitioners",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting",
+      "water"
+    ],
+    "t": "Protect Kansas circulates petition to ban Topeka data centers over 25 MW",
+    "b": "A citizen group is gathering 6,000 verifiable signatures for an ordinance barring data centers above 25 MW, ending Topeka water service outside city limits to them, and blocking their annexation. Group says current Topeka and Shawnee County pauses are only temporary.",
+    "s": [
+      [
+        "WIBW",
+        "https://www.wibw.com/2026/11/10/protect-kansas-circulating-3-part-petition-ban-hyperscale-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Citizen petition for a permanent size cap; not yet filed or adopted.",
+    "pl": [
+      [
+        "Topeka",
+        "city"
+      ],
+      [
+        "Shawnee County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T00:55:38.860Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "SD",
+    "w": "Sioux Falls oversight committee",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "disclosure"
+    ],
+    "t": "Sioux Falls committee questions Gemini developer on proposed data center as it drafts rules",
+    "b": "The Regulatory Oversight Committee heard Gemini Data Centers describe its Rice Street and Veterans Parkway site, projected tax revenue and a 2028-29 earliest power date. No votes. Members will tour Nebraska sites; comments are due Nov. 27, with the next meeting Nov. 30.",
+    "s": [
+      [
+        "Dakota News Now",
+        "https://www.dakotanewsnow.com/2026/11/10/sioux-falls-committee-discusses-potential-data-center-regulations/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Local rules still being drafted; no adopted limits yet.",
+    "pl": [
+      [
+        "Sioux Falls",
+        "city"
+      ],
+      [
+        "Minnehaha County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T00:55:39.227Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "ME",
+    "w": "Hallowell City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Hallowell council unanimously adopts 180-day data center development ban",
+    "b": "Hallowell's city council gave final approval, with no opposing votes, to a 180-day ban on data center development. The city will gather resident input and draft a longer-term ordinance. It acted after the governor vetoed a statewide moratorium in May.",
+    "s": [
+      [
+        "Kennebec Journal / Central Maine",
+        "https://www.centralmaine.com/2026/11/10/hallowell-passes-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Binding six-month local ban on data center development",
+    "pl": [
+      [
+        "Hallowell",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T00:55:39.677Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "MA",
+    "w": "Athol Special Town Meeting",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Athol postpones town meeting on data center moratorium to Nov. 30",
+    "b": "Athol halted its special town meeting after voters had signed in because required postcard notices were never mailed. The one-year data center moratorium article, backed by the select board, now goes to voters on Nov. 30.",
+    "s": [
+      [
+        "Athol Daily News",
+        "https://atholdailynews.com/2026/11/10/athol-special-town-meeting-postponed/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed one-year local pause, vote rescheduled",
+    "pl": [
+      [
+        "Athol",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T00:55:39.852Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "SC",
+    "w": "Beaufort County Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Beaufort County, South Carolina advances two-year data center pause, longer than staff's nine months",
+    "b": "County Council advanced a moratorium on accepting, processing and approving certain data center applications while it studies water, power and infrastructure effects. A member pushed 24 months over staff's nine-month proposal. Two more votes are needed.",
+    "s": [
+      [
+        "WTOC",
+        "https://www.wtoc.com/2026/11/10/beaufort-co-leaders-advance-proposed-two-year-pause-data-center-applications/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed countywide two-year pause, passed first step only",
+    "pl": [
+      [
+        "Beaufort County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T00:55:40.619Z"
   },
   {
     "d": "2026-11-06",
@@ -1934,6 +2315,36 @@
     ],
     "auto": true,
     "added": "2026-11-10T13:00:31.970Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "US",
+    "w": "PJM Interconnection",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "siting"
+    ],
+    "t": "PJM files revised backstop plan to cover 6.8 GW data center shortfall",
+    "b": "After FERC rejected most of its first version, PJM refiled with cost allocation by zone, lower risk for default-service providers, and a March 1 target start. Bilateral data center deals could shrink the volume procured.",
+    "s": [
+      [
+        "MGrid",
+        "https://mgrid.org/2026/11/06/pjm-files-revised-reliability-backstop-plan-to-address-6-8-gw-capacity-deficit/"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 4,
+    "du": "m",
+    "rl": "i",
+    "iw": "Pending filing allocating capacity costs to data center growth zones",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-11T00:55:35.725Z"
   },
   {
     "d": "2026-11-04",
@@ -6520,6 +6931,65 @@
     ],
     "auto": true,
     "added": "2026-11-10T13:00:30.115Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "US",
+    "w": "CBS News exit poll",
+    "lv": "federal",
+    "k": "politics",
+    "st": "poll",
+    "ty": [
+      "siting"
+    ],
+    "t": "CBS exit poll: big majorities oppose a data center in their community",
+    "b": "CBS News exit polling found large majorities nationally and in every Senate battleground opposed having a data center built in their community; counts were still updating.",
+    "s": [
+      [
+        "CBS News",
+        "https://www.cbsnews.com/news/exit-polls-data-centers-2026-election/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Poll shows majority opposition to nearby data centers",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-11T00:55:37.075Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "VA",
+    "w": "Subramanyam and Vindman",
+    "lv": "federal",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost",
+      "siting"
+    ],
+    "t": "Two Virginia House Democrats who campaigned on stricter data center rules win by double digits",
+    "b": "Reps. Suhas Subramanyam and Eugene Vindman made data center regulation a campaign focus and won reelection by double digits, including in Republican-leaning Spotsylvania and Stafford counties, per WJLA. Warner also won.",
+    "s": [
+      [
+        "WJLA",
+        "https://wjla.com/news/local/data-center-virginia-power-resources-pjm-hashmi-stricter-regulations-suhas-warner-vindman-reelection-campaigns-infrastructure-controversy"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Campaign wins by candidates favoring tougher data center rules",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-11T00:55:41.115Z"
   },
   {
     "d": "2026-11-02",
