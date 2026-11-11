@@ -35,6 +35,40 @@
     "added": "2026-11-05T00:55:18.830Z"
   },
   {
+    "d": "2026-12-10",
+    "j": "TX",
+    "w": "Lubbock City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Lubbock council gets first chance to vote on data center moratorium Dec. 10",
+    "b": "After the Nov. 10 first hearing, a second hearing is set for Dec. 10, when council can first vote on the 90-day pause. Zoning rules from the planning commission come to council Dec. 1.",
+    "s": [
+      [
+        "KCBD",
+        "https://www.kcbd.com/2026/11/11/lubbock-residents-urge-council-pass-data-center-moratorium/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Scheduled vote on proposed 90-day pause in one city",
+    "pl": [
+      [
+        "Lubbock",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:04.943Z"
+  },
+  {
     "d": "2026-12-03",
     "j": "CT",
     "w": "Cromwell Planning and Zoning",
@@ -68,6 +102,40 @@
     ],
     "auto": true,
     "added": "2026-11-08T00:55:06.617Z"
+  },
+  {
+    "d": "2026-12-03",
+    "j": "NH",
+    "w": "Bow Planning Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Bow planning board to hold Dec. 3 hearing on petitioned data center pause ordinance",
+    "b": "After a petition with more than 800 voter signatures, the board unanimously agreed to refine the ordinance and hold a hearing Dec. 3. It would pause data center permitting and construction for at least a year, targeting the closed Merrimack Station site.",
+    "s": [
+      [
+        "Concord Monitor",
+        "https://www.concordmonitor.com/2026/11/05/bow-residents-push-for-town-vote-on-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed one-year local pause, hearing scheduled",
+    "pl": [
+      [
+        "Bow",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:04.275Z"
   },
   {
     "d": "2026-11-23",
@@ -346,6 +414,40 @@
     ],
     "auto": true,
     "added": "2026-11-10T00:56:11.511Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "TX",
+    "w": "Tarrant County Commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax"
+    ],
+    "t": "Tarrant County to vote on ending data center tax abatements",
+    "b": "Commissioner Matt Krause plans a resolution to end county tax abatements for data centers, with a vote expected Nov. 17. The county flipped blue in the Nov. 3 election.",
+    "s": [
+      [
+        "Fort Worth Report",
+        "https://fortworthreport.org/2026/11/10/fort-worth-takes-next-step-toward-data-center-moratorium-as-lawmakers-prep-legislation/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed end to county abatements, scheduled vote",
+    "pl": [
+      [
+        "Tarrant County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:04.893Z"
   },
   {
     "d": "2026-11-16",
@@ -727,6 +829,209 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-11T00:55:41.401Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "ME",
+    "w": "Gov.-elect Hannah Pingree",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Maine governor-elect Pingree says Jay should not be data center testing ground",
+    "b": "As the developer filed two state environmental permit applications for a Jay mill data center on Nov. 9, Pingree said the town should not host one before strong rules exist. She backed a pause while campaigning; her plans as governor are unstated.",
+    "s": [
+      [
+        "Bangor Daily News",
+        "https://www.bangordailynews.com/2026/11/10/mainefocus/mainefocus-environment/hannah-pingree-jay-mill-data-center-testing-ground/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Incoming governor signals support for pause until rules exist",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-11T13:02:04.695Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "TX",
+    "w": "Fort Worth City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Fort Worth holds first hearing on 90-day data center moratorium",
+    "b": "About two dozen residents spoke, nearly all backing the pause. No vote was taken. Adoption needs three-fourths of the council after a second hearing and two votes. If approved, it would start Feb. 23 and run to May 24.",
+    "s": [
+      [
+        "Fort Worth Report",
+        "https://fortworthreport.org/2026/11/10/fort-worth-takes-next-step-toward-data-center-moratorium-as-lawmakers-prep-legislation/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed 90-day pause, hearing stage, one city",
+    "pl": [
+      [
+        "Fort Worth",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:04.838Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "NC",
+    "w": "Edenton Town Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Edenton council unanimously adopts 60-day data center moratorium, may extend up to a year",
+    "b": "Edenton's council voted unanimously on Nov. 10 to pause approvals for new data centers and large expansions inside town limits and its planning area through Jan. 10, 2027. Members said they may need up to a year; Chowan County holds a hearing on its own pause Nov. 23.",
+    "s": [
+      [
+        "Albemarle Observer",
+        "https://albemarleobserver.news/2026/11/11/edenton-approves-data-center-moratorium-as-residents-call-for-stronger-safeguards/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Binding 60-day pause on data center approvals in one town.",
+    "pl": [
+      [
+        "Edenton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:06.246Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "ID",
+    "w": "Boise City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Boise council unanimously approves six-month pause on mega data centers",
+    "b": "Acting on the mayor's proposal, the council barred new data centers over 100,000 square feet for six months, effective immediately. City staff say the time is needed to learn what the city can legally regulate. Everyone who testified backed the pause.",
+    "s": [
+      [
+        "KIVI-TV",
+        "https://www.kivitv.com/downtown-boise/boise-city-council-approves-6-month-moratorium-on-mega-data-centers-amid-resident-concerns"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Emergency six-month moratorium in force in one city",
+    "pl": [
+      [
+        "Boise",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:06.380Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "NM",
+    "w": "Doña Ana County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Doña Ana commissioners authorize second breach notice to Project Jupiter over missed job reports",
+    "b": "Commissioners voted 4-0 to notify Project Jupiter's developers they missed job reports required by their industrial revenue bond agreements. It is the second notice in two weeks; sanctions and next steps were unclear.",
+    "s": [
+      [
+        "Albuquerque Journal",
+        "https://www.abqjournal.com/news/dona-ana-county-issues-new-breach-notice-to-project-jupiter-developers/3160223"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "County pressing one project on bond agreement compliance; outcome open",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:06.545Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "CA",
+    "w": "Oakland City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Oakland extends its data center moratorium to October 2027",
+    "b": "The council voted unanimously to lengthen its 45-day emergency pause by about ten and a half months, to Oct. 5, 2027, while staff study grid, water and air effects and whether zoning needs updating. It can end early if rules are adopted.",
+    "s": [
+      [
+        "Oaklandside",
+        "https://oaklandside.org/2026/11/10/oakland-data-center-moratorium-extension/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Temporary citywide pause in force, extended to about 11 months.",
+    "pl": [
+      [
+        "Oakland",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:06.807Z"
   },
   {
     "d": "2026-11-09",
@@ -1445,6 +1750,169 @@
     ],
     "auto": true,
     "added": "2026-11-11T00:55:40.619Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "US",
+    "w": "President Trump",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "cost"
+    ],
+    "t": "Trump says he backs Senate permitting bill making data centers pay more for the grid",
+    "b": "Trump told reporters the White House is fully behind the bipartisan permitting bill, which would make large data centers pay more toward grid expansion. Grid Strategies estimates about $35 billion in extra transmission payments over a decade.",
+    "s": [
+      [
+        "KCRA",
+        "https://www.kcra.com/article/trump-data-center-bill-pay-more-electricity-costs/74380398"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Presidential backing for a bill adding data center grid cost obligations",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-11T13:02:02.440Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "IA",
+    "w": "Marshalltown City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "water",
+      "siting",
+      "permitting"
+    ],
+    "t": "Marshalltown council advances data center water, well and noise rules; sends zoning back",
+    "b": "On second readings the council passed a water connection ordinance allowing reclaimed wastewater for cooling, a private well ordinance, and a noise ordinance with a stricter limit as an approval condition. The zoning ordinance went back to planners; no moratorium extension vote was reported.",
+    "s": [
+      [
+        "Times Republican",
+        "https://www.timesrepublican.com/news/todays-news/2026/11/marshalltown-data-center-debate-rages-on-at-latest-council-meeting/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 2,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding city water, well and noise conditions adopted on second reading",
+    "pl": [
+      [
+        "Marshalltown",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:03.493Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "MD",
+    "w": "Maryland senators and advocates",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Maryland senators plan multi-year statewide data center moratorium bills for January 2027",
+    "b": "At a Baltimore gathering, advocates said Sen. Mary Washington and Sen.-elect C.T. Wilson will file multi-year statewide pause bills when the session opens. Gov. Moore has signaled he would sign one. Other delegates plan water, noise and NDA bills.",
+    "s": [
+      [
+        "WYPR",
+        "https://www.wypr.org/wypr-news/2026-11-09/maryland-leaders-begin-work-on-new-data-center-regulations-with-statewide-moratorium-on-the-table"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Planned statewide multi-year pause bills with governor's signal; not yet filed",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-11T13:02:03.570Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "MA",
+    "w": "Beverly City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Beverly council gives first passage to one-year data center moratorium, unanimously",
+    "b": "The Planning Board and City Council both unanimously backed Mayor Mike Cahill's one-year pause on data centers. A second and final council vote is set for Nov. 23. The pause would run to the end of November 2027 and could be extended.",
+    "s": [
+      [
+        "Beverly Patch",
+        "https://patch.com/massachusetts/beverly/beverly-city-council-planning-board-approve-data-center-moratorium"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "One-year city pause, passed first reading only",
+    "pl": [
+      [
+        "Beverly",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:04.119Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "WY",
+    "w": "Cheyenne City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Cheyenne council advances strict industrial noise limits that data center firms say are too tight",
+    "b": "On second reading the council advanced code amendments capping industrial noise at 45 decibels by day near homes and barring city nondisclosure agreements. Data center representatives called the limits hard to enforce. It returns to committee, then to the council for final approval.",
+    "s": [
+      [
+        "Cap City News",
+        "https://capcity.news/community/city/2026/11/10/data-center-reps-push-back-against-newly-proposed-noise-limits/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding noise limits, pending final approval, aimed partly at data centers",
+    "pl": [
+      [
+        "Cheyenne",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:06.747Z"
   },
   {
     "d": "2026-11-06",
@@ -2786,6 +3254,45 @@
     ],
     "auto": true,
     "added": "2026-11-10T13:00:33.038Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "WA",
+    "w": "Spokane County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Spokane County commission: Schmidt leads data-center-focused write-in Miller, unofficial count",
+    "b": "In the District 4 race, Republican Suzanne Schmidt, who backed the county's data center permit pause, led independent write-in Rachelle Miller, whose campaign centered on opposing data centers, about 54% to 46% in preliminary results. Ballots were still being counted.",
+    "s": [
+      [
+        "Spokane Public Radio",
+        "https://www.spokanepublicradio.org/november-2026-election-results/2026-11-03/election-results-spokane-county-candidates"
+      ],
+      [
+        "Range Media",
+        "https://www.rangemedia.co/data-center-4th-district-county-commissioner-miller-schmidt/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Winner backs the existing pause; anti-data-center challenger trails.",
+    "pl": [
+      [
+        "Spokane County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-11T13:02:06.861Z"
   },
   {
     "d": "2026-11-03",
@@ -6990,6 +7497,73 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-11T00:55:41.115Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "VT",
+    "w": "Vermont voters (legislature)",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Vermont Democrats and Progressives appear to regain veto-proof legislative majorities, unofficial",
+    "b": "Unofficial counts show Democrats and Progressives with about 109 House and 21 Senate seats, above the two-thirds needed. Gov. Scott, re-elected, vetoed the H.727 data center bill in May and the override failed; a new Legislature could revisit it.",
+    "s": [
+      [
+        "Vermont Daily Chronicle",
+        "https://vermontdailychronicle.com/vt-election-results-2026-supermajority-again/"
+      ],
+      [
+        "VTDigger",
+        "https://vtdigger.org/2026/11/03/republican-phil-scott-wins-record-6th-term-as-vermonts-governor/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Supermajority could override a veto of state data center rules; counts unofficial",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-11T13:02:04.439Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OK",
+    "w": "Oklahoma voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost"
+    ],
+    "t": "Boles wins Oklahoma Corporation Commission seat after authoring data center ratepayer law",
+    "b": "Republican Rep. Brad Boles beat Democrat Rhonda Eastman, who had urged a pause on new data centers. Boles sponsored the 2026 ratepayer protection act for large loads. He replaces Todd Hiett in January. Results were unofficial.",
+    "s": [
+      [
+        "KGOU",
+        "https://www.kgou.org/politics-and-government/2026-11-03/republican-state-lawmaker-brad-boles-wins-seat-on-oklahoma-corporation-commission"
+      ],
+      [
+        "Oklahoma Voice",
+        "https://oklahomavoice.com/2026/10/05/corporation-commission-candidates-differ-on-oklahoma-data-center-regulation-utility-rates/"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Regulator who backs ratepayer protections wins; pause candidate lost",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-11T13:02:05.401Z"
   },
   {
     "d": "2026-11-02",
