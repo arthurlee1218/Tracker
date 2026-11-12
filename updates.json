@@ -35,6 +35,44 @@
     "added": "2026-11-05T00:55:18.830Z"
   },
   {
+    "d": "2026-12-14",
+    "j": "OH",
+    "w": "Twin Township trustees",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Twin Township, Ohio, advances data center rules and may adopt a 12-month moratorium Dec. 14",
+    "b": "Darke County's Twin Township trustees advanced a resolution defining data centers, the first step toward blocking one. No proposal has been filed. Trustees could pass a 12-month moratorium as early as Dec. 14.",
+    "s": [
+      [
+        "Yahoo News (local report)",
+        "https://www.yahoo.com/news/articles/twin-township-prepares-block-potential-032406186.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed 12-month township moratorium, scheduled vote",
+    "pl": [
+      [
+        "Twin Township",
+        "township"
+      ],
+      [
+        "Darke County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T01:05:02.267Z"
+  },
+  {
     "d": "2026-12-10",
     "j": "TX",
     "w": "Lubbock City Council",
@@ -175,6 +213,40 @@
     ],
     "auto": true,
     "added": "2026-11-10T13:00:32.284Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "MA",
+    "w": "Beverly City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Beverly council schedules final vote on one-year data center moratorium for Nov. 23",
+    "b": "After unanimous Planning Board, committee and first-passage votes on Nov. 9-10, Beverly's one-year moratorium on data center applications awaits a second and final council vote Nov. 23. It would run to the end of November 2027 and could be extended.",
+    "s": [
+      [
+        "Beverly Patch",
+        "https://patch.com/massachusetts/beverly/beverly-city-council-planning-board-approve-data-center-moratorium"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Scheduled final vote on a one-year local moratorium; unanimous so far.",
+    "pl": [
+      [
+        "Beverly",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T01:05:03.456Z"
   },
   {
     "d": "2026-11-19",
@@ -517,6 +589,36 @@
     ],
     "auto": true,
     "added": "2026-11-10T13:00:30.022Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "US",
+    "w": "FERC / grid operators",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Grid operators' large-load interconnection filings due to FERC Nov. 16 after 90-day pause",
+    "b": "FERC's June show-cause orders pushed PJM, MISO, SPP, CAISO and others to justify or rewrite rules for connecting data centers, including cost-shift protections. Operators that asked for a pause must file by Nov. 16, possibly as tariff proposals.",
+    "s": [
+      [
+        "Hunton Andrews Kurth",
+        "https://www.hunton.com/the-nickel-report/ferc-show-cause-orders-seek-to-accelerate-large-load-interconnections-to-the-grid"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Scheduled filings on large-load tariffs with cost-shift protections; not yet binding",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-12T01:05:01.007Z"
   },
   {
     "d": "2026-11-12",
@@ -1032,6 +1134,209 @@
     ],
     "auto": true,
     "added": "2026-11-11T13:02:06.807Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "US",
+    "w": "Environmental and tribal groups",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "permitting",
+      "siting"
+    ],
+    "t": "Environmental, tribal groups say Senate permitting bill gives data centers a giveaway",
+    "b": "After the Senate's 73-25 procedural vote, Sierra Club, Earthjustice, Oil Change International and tribal leaders criticized the bill for speeding gas-fueled data centers and public-land siting, and weakening review. Hundreds of groups urge rejection, and some object to a lame-duck vote.",
+    "s": [
+      [
+        "TIME",
+        "https://time.com/article/2026/11/10/permitting-bill-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Opposition pushes against the bill's fast-tracking of data center projects; talk only",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-12T01:05:01.668Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "MA",
+    "w": "Sutton Select Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Kraft Group pitches 900 MW data center campus in Sutton; residents object",
+    "b": "Sutton's Select Board heard the first public presentation of a ten-building, roughly 900 MW campus. All six public speakers opposed it. No application is filed and no vote or moratorium was taken. Data centers are not an allowed use; any bylaw needs a two-thirds town meeting vote.",
+    "s": [
+      [
+        "Boston.com",
+        "https://www.boston.com/news/local-news/2026/11/11/sutton-residents-voice-fierce-opposition-to-proposed-16-billion-kraft-data-center/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Resident opposition to a pitched project; zoning currently bars the use.",
+    "pl": [
+      [
+        "Sutton",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T01:05:03.230Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "NM",
+    "w": "Doña Ana County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "water"
+    ],
+    "t": "Doña Ana commissioners steer $3 million of Project Jupiter tax proceeds to water tank repairs",
+    "b": "Commissioners approved just over $3 million from Project Jupiter gross receipts tax proceeds to refurbish three regional utility water tanks. The money comes from the project's community benefits agreements; remaining funds go to other qualifying water systems, with applications due Dec. 10.",
+    "s": [
+      [
+        "KRWG Public Media",
+        "https://www.krwg.org/krwg-news/2026-11-11/project-jupiter-funds-to-go-to-crrua-for-water-tank-improvements"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Spends project-linked tax revenue on local water; no restriction on the developer",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T01:05:04.260Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "AK",
+    "w": "Alaska DNR",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting"
+    ],
+    "t": "Alaska approves scaled-down 6,800-acre land transfer to AIDEA for Mat-Su industrial park",
+    "b": "DNR's final decision cut the transfer from 19,500 acres, kept a reversion clause and added salmon-stream and public-access conditions. Data centers were floated as a possible use. A lawsuit is pending and a 20-day reconsideration window opened.",
+    "s": [
+      [
+        "Alaska Public Media",
+        "https://alaskapublic.org/news/environment/2026-11-11/alaska-dnr-approves-scaled-down-land-transfer-to-aidea-for-industrial-park-near-houston"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 3,
+    "rc": 4,
+    "du": "p",
+    "rl": "i",
+    "iw": "Land for industrial district where data centers were floated; no project planned",
+    "pl": [
+      [
+        "Matanuska-Susitna Borough",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T01:05:04.646Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "CA",
+    "w": "Fairfield City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Fairfield adopts unanimous 45-day citywide data center moratorium",
+    "b": "Council unanimously passed an urgency pause on projects with 5,000 sq ft of servers or 1 MW or more, as staff draft zoning rules. A report is due Dec. 15 before any extension. NorthPoint has floated a 150 MW campus.",
+    "s": [
+      [
+        "Vallejo Sun",
+        "https://www.vallejosun.com/fairfield-enacts-temporary-moratorium-on-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Binding 45-day pause on new data centers in one city",
+    "pl": [
+      [
+        "Fairfield",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T01:05:04.792Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "OR",
+    "w": "Washington County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Moratorium advocate Sinclair wins Washington County, Oregon commission seat over Callaway",
+    "b": "Hillsboro councilor Kipperlyn Sinclair, who backs a data center moratorium, declared victory at 51.1% to 48.1% (count unofficial). The chair race between Treece and Fai remains too close to call, 363 votes apart.",
+    "s": [
+      [
+        "Hillsboro News Times",
+        "https://hillsboronewstimes.com/2026/11/11/kipperlyn-sinclair-declares-victory-in-washington-county-district-4-race/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Winner campaigned on data center moratorium and impacts",
+    "pl": [
+      [
+        "Washington County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T01:05:04.921Z"
   },
   {
     "d": "2026-11-09",
@@ -1913,6 +2218,44 @@
     ],
     "auto": true,
     "added": "2026-11-11T13:02:06.747Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "MI",
+    "w": "Hagar Township board",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Hagar Township, Michigan, adopts one-year data center moratorium unanimously",
+    "b": "Berrien County's Hagar Township trustees voted unanimously for a one-year pause on data centers to write an ordinance that could strictly limit or ban them. No developer has approached the township. It joins other Berrien County communities with pauses.",
+    "s": [
+      [
+        "WNDU",
+        "https://www.wndu.com/2026/11/11/hagar-township-approves-one-year-pause-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "One-year township pause in force, aimed at data centers",
+    "pl": [
+      [
+        "Hagar Township",
+        "township"
+      ],
+      [
+        "Berrien County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T01:05:01.822Z"
   },
   {
     "d": "2026-11-06",
@@ -2813,6 +3156,65 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-11T00:55:35.725Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "WI",
+    "w": "Wisconsin Public Service Commission",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "cost"
+    ],
+    "t": "Wisconsin regulators make data center customers bear We Energies power plant costs",
+    "b": "The PSC rejected a plan to bill ratepayers for a quarter of new power plant costs built for data centers, ordering those costs assigned to large data center customers. It also approved a smaller two-year rate increase; the written order is pending.",
+    "s": [
+      [
+        "Wisconsin Watch",
+        "https://wisconsinwatch.org/2026/11/wisconsin-we-energies-customers-another-rate-hike-but-smaller-public-service-commission-regulators-utility/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 2,
+    "rc": 4,
+    "du": "p",
+    "rl": "d",
+    "iw": "Shifts new generation costs onto data center customers in We Energies territory",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-12T01:05:02.210Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "OK",
+    "w": "Oklahoma Corporation Commission",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Oklahoma regulators approve PSO's large-load tariff for 75 MW-plus customers, leaving own-generation rules open",
+    "b": "In its 2-1 vote on PSO's rate case, the commission unanimously approved a new rate class for customers above 75 megawatts, such as data centers, with long-term commitments, collateral and minimum bills. How customers who bring their own generation pay was left for later proceedings.",
+    "s": [
+      [
+        "Tulsa Flyer",
+        "https://tulsaflyer.org/2026/11/05/your-money/post/occ-approves-higher-pso-rates-residents/"
+      ]
+    ],
+    "im": -2,
+    "ef": "cost",
+    "fo": 3,
+    "rc": 4,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding tariff adds commitments, collateral and minimum bills for data centers in PSO territory.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-12T01:05:03.589Z"
   },
   {
     "d": "2026-11-04",
@@ -7564,6 +7966,110 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-11T13:02:05.401Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NE",
+    "w": "Cass County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Cass County, Nebraska, caps future data centers at 15 MW, confining them to industrial land",
+    "b": "Commissioners adopted Resolution 2026-11 amending zoning: data centers only on industrial-zoned land, with electricity use capped at 15 megawatts, ruling out hyperscale sites. The 12-month moratorium stays in effect until August 2027.",
+    "s": [
+      [
+        "KETV",
+        "https://www.ketv.com/article/cass-county-commissioners-approve-data-center-development/74324610"
+      ],
+      [
+        "WOWT 3 News Now",
+        "https://www.3newsnow.com/northeast-nebraska/cass-county-nebraska-adopts-new-data-centers-regulations-after-months-of-debate"
+      ]
+    ],
+    "im": -2,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding county zoning with a 15 MW cap and industrial-only siting",
+    "pl": [
+      [
+        "Cass County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T01:05:02.629Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "PA",
+    "w": "Hanover Township voters",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting"
+    ],
+    "t": "Hanover Township voters reject expanding board of supervisors amid data center fight",
+    "b": "A referendum to grow Washington County's Hanover Township board from three to five supervisors failed 482 to 443 in preliminary results. Backers wanted more resident leverage over Prime's pending 350 MW Starpointe data center and gas plant permit; one supervisor has recused.",
+    "s": [
+      [
+        "Observer-Reporter",
+        "https://www.observer-reporter.com/news/local-news/2026/nov/04/hanover-township-supervisors-ballot-measure-fails/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Failed governance referendum tied to one project's permit; no direct rule change.",
+    "pl": [
+      [
+        "Hanover Township, Washington County",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T01:05:03.372Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "TX",
+    "w": "Texas voters; Lt. Gov.-elect Goodwin",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax",
+      "disclosure",
+      "siting"
+    ],
+    "t": "Democrat Goodwin wins Texas lieutenant governor and backs ending data center tax breaks, adding disclosure rules",
+    "b": "Vikki Goodwin, who earlier asked Abbott for a special session on data centers, will be the first Democratic lieutenant governor since 1999. She says lawmakers likely agree on ending the 2013 sales tax exemptions, and backs county land-use power and water and energy disclosure. Republicans keep the Senate majority.",
+    "s": [
+      [
+        "KSAT",
+        "https://www.ksat.com/news/local/2026/11/11/marijuana-education-gambling-medicaid-lt-gov-elect-vikki-goodwin-talks-bills-and-challenges-ahead-of-2027-session/"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Incoming Senate presiding officer backs ending tax breaks and adding disclosure; Senate stays Republican.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-12T01:05:03.763Z"
   },
   {
     "d": "2026-11-02",
