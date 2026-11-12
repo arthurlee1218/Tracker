@@ -657,6 +657,110 @@
     "added": "2026-11-10T00:56:11.909Z"
   },
   {
+    "d": "2026-11-11",
+    "j": "US",
+    "w": "Veterans for Public Lands",
+    "lv": "federal",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Veterans group launches push for moratorium on data centers on federal public lands",
+    "b": "Veterans for Public Lands asked the Interior Secretary to pause new data center development on public lands and urged the next Congress to pass a moratorium bill within its first 100 days, with public input, environmental review and tribal consultation.",
+    "s": [
+      [
+        "PR Newswire (Veterans for Public Lands release)",
+        "https://www.prnewswire.com/news-releases/veterans-launch-call-for-moratorium-on-data-centers-on-public-lands-302935664.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 6,
+    "du": "m",
+    "rl": "d",
+    "iw": "Advocacy call for a federal-land pause; no bill or order yet",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-12T13:05:49.573Z"
+  },
+  {
+    "d": "2026-11-11",
+    "j": "MI",
+    "w": "Saline Township board",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "Saline Township reaffirms 12-year Oracle data center tax break amid legal challenge",
+    "b": "Trustees unanimously ratified the industrial development district and asked the state to grant a 50% abatement on a $43.1 billion project, responding to a claim that a required hearing was skipped. Residents protested for over an hour.",
+    "s": [
+      [
+        "Yahoo News (local report)",
+        "https://www.yahoo.com/news/us/articles/saline-township-sticks-oracle-tax-043924397.html"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 2,
+    "rc": 1,
+    "du": "l",
+    "rl": "d",
+    "iw": "Tax abatement for one named project, adopted locally, awaiting state grant",
+    "pl": [
+      [
+        "Saline Township",
+        "township"
+      ],
+      [
+        "Washtenaw County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:51.368Z"
+  },
+  {
+    "d": "2026-11-11",
+    "j": "ME",
+    "w": "Gorham town officials",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Gorham extends its data center pause another 180 days, to May 2027",
+    "b": "Gorham officials approved a new 180-day pause on building data centers, extending the 2024 moratorium that was due to lapse this month. The town has no pending applications and is still weighing a permanent ban. The exact meeting date was not stated; the vote was reported Nov. 11.",
+    "s": [
+      [
+        "WGME",
+        "https://wgme.com/newsletter-daily/gorham-town-officials-approve-another-180-day-pause-on-new-data-centers-maine-housing-environment-energy"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Six-month local pause in force, extending an earlier moratorium",
+    "pl": [
+      [
+        "Gorham",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:52.821Z"
+  },
+  {
     "d": "2026-11-10",
     "j": "TX",
     "w": "Lubbock City Council",
@@ -1337,6 +1441,214 @@
     ],
     "auto": true,
     "added": "2026-11-12T01:05:04.921Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "MI",
+    "w": "Saginaw Township board",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Saginaw Township adopts data center rules: noise cap, 500-foot setbacks, closed-loop cooling",
+    "b": "Trustees approved a 15-page ordinance limiting medium and hyperscale data centers to one section of the township, capping noise at 40 decibels, requiring 500-foot residential setbacks, closed-loop or recycled cooling, and resident notice. Takes effect Nov. 16. No project is pending.",
+    "s": [
+      [
+        "Michigan Public",
+        "https://www.michiganpublic.org/politics-government/2026-11-10/data-center-restrictions-pass-in-saginaw-township-and-romulus"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 2,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding siting, noise and water conditions, permanent, one township",
+    "pl": [
+      [
+        "Saginaw Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:49.715Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "OH",
+    "w": "Ohio Chamber of Commerce",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "tax",
+      "cost"
+    ],
+    "t": "Ohio Chamber report touts data center economy after voters back bans in 21 communities",
+    "b": "The chamber's research foundation says data centers added over $9 billion to Ohio GDP and 69,600 jobs, and that the sales tax exemption forwent $1.57 billion. Its CEO says voters rejected the current business model and hopes lawmakers act in the lame-duck session.",
+    "s": [
+      [
+        "Statehouse News Bureau",
+        "https://www.statenews.org/government-politics/2026-11-10/voters-pushed-back-on-data-centers-but-business-group-says-ohio-rakes-in-revenue-from-them"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Industry-friendly economic case, but concedes need for new rules; talk only",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-12T13:05:50.884Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "IA",
+    "w": "Center Point city council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Center Point, Iowa, passes 12-month data center moratorium on final reading",
+    "b": "The council unanimously passed the pause on third reading, effective Nov. 20. It lasts until a zoning ordinance from the planning commission, which starts work in January, is adopted. No developer has approached the city yet.",
+    "s": [
+      [
+        "Corridor Business Journal",
+        "https://corridorbusiness.com/center-point-enacts-temporary-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "City-wide 12-month pause in force, aimed at data centers",
+    "pl": [
+      [
+        "Center Point",
+        "city"
+      ],
+      [
+        "Linn County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:52.263Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "IA",
+    "w": "Clinton city council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Clinton, Iowa, council advances amended data center ordinance with berm and vegetation buffer rule",
+    "b": "The council approved an amended version of its data center ordinance. Hyperscale sites near homes or sensitive areas need a berm and vegetation buffer before above-ground construction. The council next meets Nov. 24.",
+    "s": [
+      [
+        "KWQC",
+        "https://www.kwqc.com/2026/11/11/clinton-city-council-moves-data-center-ordinance-forward/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding buffer conditions on hyperscale sites, not yet final",
+    "pl": [
+      [
+        "Clinton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:52.410Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "CO",
+    "w": "Boulder County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Boulder County adopts rules capping unincorporated data centers at 50 kilowatts, replacing moratorium",
+    "b": "Commissioners voted unanimously for limits that effectively ban large data centers in unincorporated areas. The cap is 50 kilowatts, below the 75 staff proposed. The rules replace the summer moratorium. Vote date inferred from coverage dated Nov. 10-11.",
+    "s": [
+      [
+        "BizWest",
+        "https://bizwest.com/2026/11/11/boulder-county-oks-new-data-center-regs/"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Permanent size cap effectively bars large data centers in county.",
+    "pl": [
+      [
+        "Boulder County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:53.840Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "WY",
+    "w": "Cheyenne city clerk",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting"
+    ],
+    "t": "Petition to force vote on Microsoft data center annexation falls short in Cheyenne",
+    "b": "The clerk found the petition had just under 1,800 valid signatures against about 2,700 needed, so the roughly 3,500-acre annexation, mostly for Microsoft's project, stands as passed by council and goes to no public vote.",
+    "s": [
+      [
+        "Wyoming Public Media",
+        "https://www.wyomingpublicmedia.org/natural-resources-energy/2026-11-12/petition-challenging-cheyennes-microsoft-data-center-fails"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Referendum fails, so annexation for Microsoft campus remains in force.",
+    "pl": [
+      [
+        "Cheyenne",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:53.980Z"
   },
   {
     "d": "2026-11-09",
@@ -2256,6 +2568,84 @@
     ],
     "auto": true,
     "added": "2026-11-12T01:05:01.822Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "IN",
+    "w": "Indianapolis council committee",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "Indianapolis committee votes 11-2 to recommend rejecting $113 million in DC Blox abatements",
+    "b": "The City-County Council's economic development committee advised denying roughly $113 million in property tax breaks for DC Blox's $1.8 billion Irvington-area campus. The advice is not binding; a full council vote is expected in December, and the project faces a court challenge to its land use approval.",
+    "s": [
+      [
+        "WFYI",
+        "https://www.wfyi.org/wfyi-news/2026-11-09/committee-recommends-no-tax-break-for-controversial-indianapolis-data-center"
+      ]
+    ],
+    "im": 0,
+    "ef": "deny",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Committee recommends denying abatements for one named project; full council undecided",
+    "pl": [
+      [
+        "Indianapolis",
+        "city"
+      ],
+      [
+        "Marion County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:50.271Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "MN",
+    "w": "Monticello City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Monticello council votes 3-1 to draft approvals for 547-acre data center campus",
+    "b": "After four hours of testimony, councilors directed staff to prepare annexation, plat, rezoning and conditional use permit documents for the hyperscale project. Nothing is approved yet; a special meeting Nov. 30 falls eight days before a state deadline.",
+    "s": [
+      [
+        "Blandin on Broadband",
+        "https://blandinonbroadband.org/2026/11/11/monticello-data-center-decision-delayed-until-nov-30-after-divided-council-vote-on-nov-9-wright-county/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Council moves toward approving one named project; final vote pending",
+    "pl": [
+      [
+        "Monticello",
+        "city"
+      ],
+      [
+        "Wright County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:51.314Z"
   },
   {
     "d": "2026-11-06",
@@ -3215,6 +3605,42 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-12T01:05:03.589Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "NC",
+    "w": "Mount Airy commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Mount Airy ends data center moratorium and adopts zoning rules with water limits",
+    "b": "Commissioners lifted the city's moratorium and allowed data centers in three zoning districts, with review tiers by size. Facilities must use utility-supplied water and public wastewater service, reviewed annually. Energy use is left to the state utilities commission. Vote count was not reported.",
+    "s": [
+      [
+        "WFMY News 2 via Yahoo News",
+        "https://www.yahoo.com/news/articles/mount-airy-commissioners-vote-allow-181849996.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding size-tiered permits and water source limits replace a pause",
+    "pl": [
+      [
+        "Mount Airy",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:53.571Z"
   },
   {
     "d": "2026-11-04",
@@ -8070,6 +8496,159 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-12T01:05:03.763Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "IN",
+    "w": "Indiana House Speaker Huston",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "tax"
+    ],
+    "t": "Indiana House Speaker Todd Huston loses his seat to Democrat Lauren Cole",
+    "b": "Cole led Huston 51.5% to 48.5% in Hamilton County's unofficial election-night count. Republicans keep a 54-46 House after losing their supermajority. Democrats had campaigned against data center tax breaks, which Huston backed. Huston leaves the chair in January; Ben Smaltz is the GOP pick.",
+    "s": [
+      [
+        "Larry in Fishers (Hamilton County election-night report)",
+        "https://www.larryinfishers.com/2026/11/03/hse-referendum-passes-in-unofficial-results-altman-edges-mcnear-for-commissioner-huston-loses/"
+      ],
+      [
+        "WFYI",
+        "https://www.wfyi.org/statewide/2026-11-04/indiana-democrats-broke-the-republicans-supermajority-at-the-statehouse-what-that-means-ahead-of-session"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Tax-break-aligned speaker ousted; talk-level signal toward fewer incentives",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-12T13:05:51.729Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MD",
+    "w": "Maryland county executive winners",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "cost",
+      "siting"
+    ],
+    "t": "Maryland county executive winners largely back keeping data center pauses and limits",
+    "b": "Nov. 3 winners include Jawando in Montgomery (renewables, no tax breaks), Jones in Baltimore County (large users pay their way), Pickard in Anne Arundel, and Cassilly in Harford, who signed a ban. Braveboy in Prince George's paused permit reviews until Dec. 31.",
+    "s": [
+      [
+        "The Daily Record",
+        "https://thedailyrecord.com/2026/11/10/data-centers-maryland-county-executives/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 4,
+    "du": "m",
+    "rl": "d",
+    "iw": "Winning executives pledge limits and pauses, but no new binding action yet",
+    "pl": [
+      [
+        "Montgomery County",
+        "county"
+      ],
+      [
+        "Baltimore County",
+        "county"
+      ],
+      [
+        "Anne Arundel County",
+        "county"
+      ],
+      [
+        "Harford County",
+        "county"
+      ],
+      [
+        "Prince George's County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:52.959Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "TX",
+    "w": "San Angelo voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "San Angelo voters recall council member who backed rezoning for data center campus",
+    "b": "District 3 voters removed Councilmember Harry Thomas about 68% to 32% (unofficial). The recall, led by a data center citizens' coalition, centered on transparency around a proposed northeast San Angelo data center. The seat is now vacant pending canvass.",
+    "s": [
+      [
+        "San Angelo LIVE!",
+        "https://sanangelolive.com/news/san-angelo/2026-11-04/mayor-we-respect-voters-decision-harry-thomas-recall"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Voters punished official tied to a project's rezoning; signals local resistance",
+    "pl": [
+      [
+        "San Angelo",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:53.147Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OK",
+    "w": "Yukon voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "Yukon voters oust mayor in recall amid data center controversy",
+    "b": "Joe Phillips won the Ward 3 council seat in a recall election, ending Brian Pillmore's tenure as mayor. The recall grew from transparency complaints, including a proposed data center. The council later named an interim mayor.",
+    "s": [
+      [
+        "KOKH FOX 25",
+        "https://okcfox.com/news/local/yukon-mayor-loses-seat-following-recall-election-result"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Recall of official tied to data center talks signals local opposition",
+    "pl": [
+      [
+        "Yukon",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-12T13:05:53.504Z"
   },
   {
     "d": "2026-11-02",
