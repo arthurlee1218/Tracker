@@ -178,6 +178,40 @@
     "added": "2026-11-13T01:00:35.626Z"
   },
   {
+    "d": "2026-12-07",
+    "j": "NC",
+    "w": "Fayetteville City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Fayetteville sets Dec. 7 hearing on 180-day data center moratorium",
+    "b": "Council voted 10-0 on Nov. 9 to schedule a public hearing for Dec. 7 on a drafted 180-day moratorium on data center applications. It could change the length or decline to adopt one after hearing public comment.",
+    "s": [
+      [
+        "CityView",
+        "https://www.cityviewnc.com/stories/fayetteville-to-hold-public-hearing-on-data-center-moratorium/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed 180-day pause, hearing scheduled, not yet adopted",
+    "pl": [
+      [
+        "Fayetteville",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:25.979Z"
+  },
+  {
     "d": "2026-12-03",
     "j": "CT",
     "w": "Cromwell Planning and Zoning",
@@ -245,6 +279,40 @@
     ],
     "auto": true,
     "added": "2026-11-11T13:02:04.275Z"
+  },
+  {
+    "d": "2026-12-01",
+    "j": "TX",
+    "w": "Denton City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Denton council set to take final vote on 90-day data center moratorium Dec. 1",
+    "b": "After the second hearing and first reading Oct. 27 with no action, the final vote could come Dec. 1. The 90-day pause needs 75% of the council; a 180-day extension would need a separate vote.",
+    "s": [
+      [
+        "Community Impact",
+        "https://communityimpact.com/denton/government/denton-holds-final-hearing-first-reading-of-proposed-data-center-moratorium/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Scheduled final vote on short city pause",
+    "pl": [
+      [
+        "Denton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:24.143Z"
   },
   {
     "d": "2026-11-23",
@@ -318,6 +386,41 @@
     ],
     "auto": true,
     "added": "2026-11-12T01:05:03.456Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "CO",
+    "w": "Aurora Mayor Coffman",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "tax"
+    ],
+    "t": "Aurora mayor to bring new data center moratorium and tax-rebate ban to Nov. 23 council",
+    "b": "After council twice declined to revive its moratorium, Mayor Mike Coffman plans a version needing only six votes that pauses applications unless a utility guarantees service. A ban on city sales-tax rebates for data centers is also set for the Nov. 23 agenda.",
+    "s": [
+      [
+        "Sentinel Colorado",
+        "https://sentinelcolorado.com/metro/aurora-data-center-tax-incentive-ban-advances-amid-another-failed-push-for-a-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed pause scheduled for vote; not yet adopted",
+    "pl": [
+      [
+        "Aurora",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:26.816Z"
   },
   {
     "d": "2026-11-19",
@@ -993,6 +1096,185 @@
     "added": "2026-11-13T01:00:34.351Z"
   },
   {
+    "d": "2026-11-12",
+    "j": "IN",
+    "w": "Elkhart County Plan Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Elkhart County plan commission unanimously backs data center ordinance with home and school setbacks",
+    "b": "The commission sent county commissioners a zoning ordinance for unincorporated areas with minimum distances from homes and schools and set noise hours of 7 a.m. to 7 p.m. Commissioners take it up Dec. 7. Towns must pass their own rules.",
+    "s": [
+      [
+        "WNDU",
+        "https://www.wndu.com/2026/11/13/elkhart-county-planning-commission-approves-data-center-ordinance/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting and noise rules, awaiting commissioners' vote.",
+    "pl": [
+      [
+        "Elkhart County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:17.598Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "MI",
+    "w": "Summit Township board",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Summit Township replaces its data center pause with tiered zoning rules",
+    "b": "Jackson County's Summit Township ended its six-month moratorium by adopting tiered rules: setbacks of 100 to 300 feet, a 55-decibel noise limit, closed-loop or municipal water, utility power assurances and applicant-paid outside review. No proposals are pending.",
+    "s": [
+      [
+        "WILX",
+        "https://www.wilx.com/2026/11/12/jackson-county-townships-move-set-data-center-rules/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding setbacks, noise and water conditions now in force.",
+    "pl": [
+      [
+        "Summit Township",
+        "township"
+      ],
+      [
+        "Jackson County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:18.026Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "TX",
+    "w": "16 Texas senators",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "water",
+      "tax",
+      "permitting",
+      "siting"
+    ],
+    "t": "Sixteen senators, 15 of them Republican, back SB 338 on data center cooling, water and tax breaks",
+    "b": "SB 338 would require approved cooling methods and water reporting at sites of 100,000 sq ft or more, let utilities disconnect noncompliant ERCOT sites, cap municipal abatements at 50%, and let regulators halt permits for noncompliance.",
+    "s": [
+      [
+        "KTRE",
+        "https://www.ktre.com/2026/11/12/16-senators-author-sweeping-legislation-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding cooling, reporting and abatement limits; not yet adopted",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T13:03:23.745Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "OK",
+    "w": "Piedmont Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Piedmont planners back Project Open Sky data center with water and noise limits, 3-1",
+    "b": "The commission recommended that the council approve the amended planned development on about 633 acres, with water capped at 75,000 gallons a day, no wells, noise limits and developer-paid studies. It had earlier urged denial.",
+    "s": [
+      [
+        "KOKH Fox 25",
+        "https://okcfox.com/news/local/piedmont-planning-commission-backs-moving-cloverleaf-data-center-master-plan-to-council"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Advisory recommendation to approve one project with conditions",
+    "pl": [
+      [
+        "Piedmont",
+        "city"
+      ],
+      [
+        "Canadian County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:24.667Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "MT",
+    "w": "Missoula County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Missoula County accepts data center study, signals moratorium extension or permanent zoning",
+    "b": "Commissioners accepted the county's data center study on Nov. 12. One commissioner said permanent zoning will be in place or the pause extended, with no gap. State Right to Compute law likely bars an outright ban.",
+    "s": [
+      [
+        "Missoula Current",
+        "https://missoulacurrent.com/data-center-missoula-county-regulations/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Study accepted; extension or zoning signaled, not yet adopted",
+    "pl": [
+      [
+        "Missoula County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:27.366Z"
+  },
+  {
     "d": "2026-11-11",
     "j": "US",
     "w": "Veterans for Public Lands",
@@ -1095,6 +1377,65 @@
     ],
     "auto": true,
     "added": "2026-11-12T13:05:52.821Z"
+  },
+  {
+    "d": "2026-11-11",
+    "j": "VA",
+    "w": "Pause to Protect coalition",
+    "lv": "state",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Virginia conservation groups rally at Hanover site for statewide data center pause",
+    "b": "More than a dozen environmental groups launched a Pause to Protect platform beside a data center construction site, asking for a statewide halt on new permits and grid connections until water, energy and siting rules exist. The Data Center Coalition opposes a statewide moratorium.",
+    "s": [
+      [
+        "WTVR 12 On Your Side",
+        "https://www.12onyourside.com/2026/11/11/organizations-push-pause-data-centers-across-central-virginia/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Advocacy call for a statewide pause; talk only, no bill adopted",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T13:03:24.771Z"
+  },
+  {
+    "d": "2026-11-11",
+    "j": "GA",
+    "w": "Incoming PSC Democrats",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Georgia's incoming Democratic utility regulators say data centers must pay their own way",
+    "b": "Re-elected Commissioner Hubbard says he will fight Georgia Power's gas plants and seek an affordability docket; commissioner-elect Edwards wants data center cost and environmental facts gathered first. Democrats take a 3-2 majority in January.",
+    "s": [
+      [
+        "Canary Media",
+        "https://www.canarymedia.com/articles/politics/new-dem-regulators-georgia-power"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Stated plans to scrutinize costs and gas buildout for data centers; no vote yet",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T13:03:25.802Z"
   },
   {
     "d": "2026-11-10",
@@ -2090,6 +2431,178 @@
     ],
     "auto": true,
     "added": "2026-11-13T01:00:35.819Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "US",
+    "w": "Rep. Tim Burchett (R-TN)",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Burchett bill would bar federal funds for data centers that skip local approvals",
+    "b": "Republican Rep. Tim Burchett introduced the Community Control of Data Centers Act. It denies federal money for building or operating a data center unless it follows state and local law and gets required approvals. Energy and Treasury secretaries would judge compliance.",
+    "s": [
+      [
+        "Newsweek via Yahoo News",
+        "https://www.yahoo.com/news/politics/articles/bill-targets-data-centers-built-131707585.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed bill conditions federal funds on local compliance; only introduced",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T13:03:13.600Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "MI",
+    "w": "Gov.-elect Benson",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "cost",
+      "tax",
+      "water",
+      "disclosure"
+    ],
+    "t": "Governor-elect Benson outlines data center plan: pause, no tax breaks, ratepayer protection",
+    "b": "Benson proposes pausing new data center construction until state rules require public hearings, disclosure, environmental proof, and that data centers pay for added power. Her plan would bar tax breaks. It is a proposal, not law, and outgoing Gov. Whitmer opposes a moratorium.",
+    "s": [
+      [
+        "WDIV ClickOnDetroit",
+        "https://www.clickondetroit.com/news/local/2026/11/10/michigan-data-centers-governor-elect-jocelyn-benson-proposes-new-regulations-on-water-energy-tax-breaks/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Incoming governor proposes statewide pause and tax-break ban; not yet legislation.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T13:03:16.684Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "IA",
+    "w": "Central City, Iowa",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Central City releases draft data center rules as 4 MW Elk project awaits approval",
+    "b": "Central City's draft ordinance would limit larger data centers to heavy-industrial zones, cap noise at 65 decibels at the property line, require noise studies and treat closed-loop cooling as low water impact. The council must still adopt it, and the Elk Data Center has no final approval.",
+    "s": [
+      [
+        "KCRG",
+        "https://www.kcrg.com/2026/11/10/central-city-releases-draft-ordinance-outlining-rules-proposed-data-center/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting and noise limits, not yet adopted",
+    "pl": [
+      [
+        "Central City",
+        "city"
+      ],
+      [
+        "Linn County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:19.666Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "VA",
+    "w": "Botetourt County Circuit Court",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "disclosure",
+      "siting"
+    ],
+    "t": "Judge lets open-meetings suit over Botetourt's Google data center agreement proceed",
+    "b": "A substitute judge found a resident's suit legally sufficient. It says the supervisors' closed-session notice for the 2025 Google-linked performance agreement broke FOIA rules. The suit seeks to void the agreement; the case continues.",
+    "s": [
+      [
+        "Cardinal News",
+        "https://cardinalnews.org/2026/11/11/lawsuit-over-botetourt-county-data-center-project-can-move-forward-judge-rules/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Court challenge could void one project's agreement; still unresolved",
+    "pl": [
+      [
+        "Botetourt County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:26.166Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "WA",
+    "w": "Spokane County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Spokane County commission: Schmidt wins 55–44 over write-in who ran against data centers",
+    "b": "Later count shows Republican Suzanne Schmidt, who backs the county's temporary data center pause, beating write-in Rachelle Miller, whose campaign centered on opposing a West Plains data center. Counts are not yet certified. The pause stays in place through June 2027.",
+    "s": [
+      [
+        "Inlander",
+        "https://www.inlander.com/news/baumgartner-wins-5th-congressional-district-despite-conroy-s-blue-wave-gains/article_aa34288d-69ff-400a-bef7-ddb1d9b6c021.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Pause backer won; opponent's data center stance lost, result uncertified",
+    "pl": [
+      [
+        "Spokane County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:35.534Z"
   },
   {
     "d": "2026-11-09",
@@ -3195,6 +3708,207 @@
     "added": "2026-11-13T01:00:36.284Z"
   },
   {
+    "d": "2026-11-09",
+    "j": "MD",
+    "w": "Frederick County, Quantum Maryland",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Frederick County seeks dismissal of developer suit; injunction hearing set for January",
+    "b": "The county moved to dismiss Quantum Maryland's 14-count suit over the executive's data center moratorium. The judge set Jan. 28-29 to hear dismissal and injunction motions together. The county attorney said a new council, seated Dec. 7, may adopt its own moratorium.",
+    "s": [
+      [
+        "Frederick News-Post (via Yahoo)",
+        "https://www.yahoo.com/news/politics/articles/updated-data-center-lawsuit-scheduled-045900138.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Court fight over a county pause that stays in force; hearing scheduled.",
+    "pl": [
+      [
+        "Frederick County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:20.675Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "TX",
+    "w": "Sen. Roland Gutierrez",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "tax",
+      "permitting",
+      "siting"
+    ],
+    "t": "Texas Senate bill would pause large data centers for two years, then require local votes",
+    "b": "SB 296 would bar approvals and power hookups for data centers of 20 MW or more for two years. After that, projects would need voter approval, a state permit and annual payments to county residents. It also repeals the sales tax exemption.",
+    "s": [
+      [
+        "The Texas Dispatch",
+        "https://thetexasdispatch.com/sb-296-data-center-moratorium-local-vote-resident-payments/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Filed bill for a statewide two-year pause; not yet considered",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T13:03:21.152Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "TX",
+    "w": "Sen. Joan Huffman",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax"
+    ],
+    "t": "Republican Huffman files bill ending Texas data center sales tax exemption, with 23 senators signed on",
+    "b": "SB 293 would end the state sales tax exemption for data centers and deny applications still pending at the comptroller. Per the author, 23 of 31 senators and senators-elect had signed on by the evening bill filing opened.",
+    "s": [
+      [
+        "National Law Review",
+        "https://natlawreview.com/article/texas-lawmakers-file-repeal-data-center-sales-tax-exemption"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed repeal of tax break; broad bipartisan support but not yet law",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T13:03:21.374Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "LA",
+    "w": "England Authority board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax",
+      "permitting"
+    ],
+    "t": "England Authority introduces tax-deal lease for Applied Digital's 300 MW Delta Forge 1; final vote Nov. 19",
+    "b": "The board voted unanimously to introduce the PILOT agreement for a $7.2 billion Rapides Parish campus: about $575.5 million in payments through 2052 and a community trust. Water and electricity language will be added before the final vote.",
+    "s": [
+      [
+        "KALB",
+        "https://www.kalb.com/2026/11/12/england-authority-sets-stage-final-vote-applied-digital-data-center-pilot-agreement/"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 1,
+    "rc": 1,
+    "du": "l",
+    "rl": "d",
+    "iw": "Tax-lease incentive for one project, not yet final",
+    "pl": [
+      [
+        "Rapides Parish",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:24.373Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "AL",
+    "w": "Trinity Town Council",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting"
+    ],
+    "t": "Trinity, Alabama rezoning for 184-acre industrial site withdrawn after resident opposition",
+    "b": "The owner withdrew the request before the council voted, and the council agreed, putting it on hold until Trinity revises its zoning rules. A town data center moratorium runs through June 2027. The site is marketed partly for data centers.",
+    "s": [
+      [
+        "WAFF",
+        "https://www.waff.com/2026/11/10/trinity-data-center-rezoning-request-withdrawn-amid-resident-opposition/"
+      ]
+    ],
+    "im": 0,
+    "ef": "deny",
+    "fo": 0,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Withdrawn rezoning tied to data center site; no binding rule",
+    "pl": [
+      [
+        "Trinity",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:26.441Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "WA",
+    "w": "Walla Walla County residents",
+    "lv": "local",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "moratorium",
+      "water",
+      "siting"
+    ],
+    "t": "Dozens urge Walla Walla County to pause data centers over Amazon campus",
+    "b": "About 56 public comments, mostly opposed, asked for a one-year countywide moratorium at the Nov. 9 commissioners meeting. Commissioner Clayton said she would consider a pause; the other two commissioners have opposed one. Amazon's project is under SEPA review.",
+    "s": [
+      [
+        "Walla Walla Union-Bulletin",
+        "https://www.union-bulletin.com/news/local/dozens-of-ww-residents-oppose-amazons-data-center-at-county-commissioner-meeting/article_b8992e49-e22e-4aca-9d1b-8e2299407d0b.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Protest and public pressure for a one-year pause; commission split",
+    "pl": [
+      [
+        "Walla Walla County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:35.647Z"
+  },
+  {
     "d": "2026-11-06",
     "j": "US",
     "w": "NYC climate groups",
@@ -3479,6 +4193,103 @@
     ],
     "auto": true,
     "added": "2026-11-10T00:56:13.888Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "US",
+    "w": "President Trump",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting"
+    ],
+    "t": "Trump vows to work with states that want data centers, warns others lose out",
+    "b": "Days after midterm ballot measures restricted data centers, Trump posted that he is fully for superintelligence and will work with states that want the riches data centers bring, calling refusal foolish. NEC director Hassett said projects planned for coming years are unaffected by the votes.",
+    "s": [
+      [
+        "CNBC",
+        "https://www.cnbc.com/2026/11/06/data-centers-ai-elections-hassett.html"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Presidential statement favoring data center build-out; no binding action",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T13:03:14.181Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "US",
+    "w": "Cleanview analysis",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "About 40% of pending U.S. data center capacity sits in states with pause-minded governors-elect",
+    "b": "Market-intelligence firm Cleanview estimates roughly 40% of pending data center capacity is in states where newly elected governors campaigned to stop or pause construction, including Ohio, Georgia, Michigan, New Mexico and Texas. These are campaign pledges, not enacted policy.",
+    "s": [
+      [
+        "Insurance Journal (Bloomberg)",
+        "https://www.insurancejournal.com/news/southcentral/2026/11/06/891870.htm"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 6,
+    "du": "m",
+    "rl": "d",
+    "iw": "Analysis of pause pledges by governors-elect; nothing enacted yet",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T13:03:16.199Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "IL",
+    "w": "Sangamon County Circuit Court",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Judge dismisses residents' suit against Sangamon County's hyperscale data center zoning approval",
+    "b": "Circuit Judge Adam Giganti threw out the residents' challenge to the county board's 17-10 April permit for a 280-acre data center in Talkington Township, finding a rational basis for the decision. Whether plaintiffs will appeal was not reported.",
+    "s": [
+      [
+        "Illinois Times",
+        "https://www.illinoistimes.com/news/judge-dismisses-countys-first-data-center-lawsuit/"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Court leaves approval of one specific project standing.",
+    "pl": [
+      [
+        "Sangamon County",
+        "county"
+      ],
+      [
+        "Talkington Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:16.592Z"
   },
   {
     "d": "2026-11-05",
@@ -4668,6 +5479,41 @@
     ],
     "auto": true,
     "added": "2026-11-11T13:02:06.861Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "UT",
+    "w": "Grand County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Grand County, Utah, hires engineers to draft data center ban or size-cap rules",
+    "b": "Commissioners unanimously approved up to $5,000 for draft rules either prohibiting data centers where state law allows or permitting only smaller ones. Drafts are due in about two weeks, ahead of the Jan. 3 expiry of the county's 180-day pause.",
+    "s": [
+      [
+        "Salt Lake Tribune",
+        "https://www.sltrib.com/news/2026/11/09/grand-county-debates-data-center/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Draft rules could ban or cap data centers; nothing adopted yet",
+    "pl": [
+      [
+        "Grand County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:26.931Z"
   },
   {
     "d": "2026-11-03",
@@ -9577,6 +10423,41 @@
     ],
     "auto": true,
     "added": "2026-11-09T00:57:05.824Z"
+  },
+  {
+    "d": "2026-11-02",
+    "j": "IA",
+    "w": "Estherville City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Estherville council sends draft data center ordinance to Nov. 16 public hearing",
+    "b": "Estherville's council voted, with one dissent, to hold a public hearing on a planning commission draft data center ordinance. The dissenting councilman wants tougher low-frequency noise limits near schools, the community college and the wellness center. The draft could still return to planning.",
+    "s": [
+      [
+        "Northwest Iowa Now",
+        "https://northwestiowanow.com/news/278872-estherville-sets-public-hearing-for-proposed-data-center-ordinance/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Draft siting and noise rules, hearing set, not yet adopted",
+    "pl": [
+      [
+        "Estherville",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T13:03:18.469Z"
   },
   {
     "d": "2026-11-01",
