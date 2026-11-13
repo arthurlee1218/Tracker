@@ -107,6 +107,77 @@
     "added": "2026-11-11T13:02:04.943Z"
   },
   {
+    "d": "2026-12-09",
+    "j": "PA",
+    "w": "Hanover Township supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Hanover Township adds hearings through Dec. 9 on Starpointe data center permit",
+    "b": "Supervisors added hearings on Nov. 18 and Dec. 9 after Prime Data Centers said it had more witnesses for its 350 MW campus with a gas plant. Over 20 hours of testimony have been heard since August. No decision yet.",
+    "s": [
+      [
+        "Observer-Reporter",
+        "https://www.observer-reporter.com/news/local-news/2026/nov/12/starpointe-data-center-hearings-to-continue-into-december/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Conditional use decision for one project still pending",
+    "pl": [
+      [
+        "Hanover Township, Washington County",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:34.797Z"
+  },
+  {
+    "d": "2026-12-09",
+    "j": "AZ",
+    "w": "Cochise County P&Z",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Cochise County sets Dec. 9 hearing on 6-gigawatt Tombstone Resources data center campus",
+    "b": "Tombstone Resources applied for a special use authorization for a roughly 750-acre, 6 GW campus near Cochise and the Apache station, tied to SpaceX. Over 1,000 residents petitioned against it. The county zoning commission decides at a Dec. 9 hearing.",
+    "s": [
+      [
+        "KJZZ",
+        "https://www.kjzz.org/business/2026-11-03/largest-data-center-proposal-in-arizona-heads-to-cochise-county-1st-community-meeting-scheduled"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Pending approval of one large project; opposition petition raises denial risk.",
+    "pl": [
+      [
+        "Cochise County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:35.626Z"
+  },
+  {
     "d": "2026-12-03",
     "j": "CT",
     "w": "Cromwell Planning and Zoning",
@@ -522,6 +593,110 @@
     "added": "2026-11-11T13:02:04.893Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "OR",
+    "w": "Salem City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Salem pushes vote on excluding hyperscale data centers from city code to Nov. 17",
+    "b": "Salem's council delayed deliberation on reading its code as excluding AI and hyperscale data centers, from Nov. 12 to Nov. 17, after an email outage limited public testimony. Testimony closes Nov. 13. The ruling could block Verrus's Mill Creek campus.",
+    "s": [
+      [
+        "Salem Reporter",
+        "https://www.salemreporter.com/2026/11/12/salem-reschedules-data-center-code-deliberations-and-vote-to-next-tuesday/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Scheduled vote on code reading that would exclude hyperscale data centers citywide.",
+    "pl": [
+      [
+        "Salem",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:36.157Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "CA",
+    "w": "San Jose City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "San Jose mayor and four councilmembers propose pausing data center approvals until new standards pass",
+    "b": "A joint memo would halt approvals of data centers until the council adopts siting standards, expected Dec. 8. Google's 250 MW Alviso project is among those that could be approved first. The full council is likely to take it up Nov. 17.",
+    "s": [
+      [
+        "KQED",
+        "https://www.kqed.org/news/12109309/san-jose-could-pause-data-center-approvals-until-new-rules-take-effect"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed short citywide approval freeze pending standards; scheduled council vote.",
+    "pl": [
+      [
+        "San Jose",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:36.838Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "CA",
+    "w": "San Francisco Board of Supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "San Francisco supervisors set Nov. 17 vote to extend data center moratorium 10.5 months",
+    "b": "Supervisors are scheduled to consider lengthening the city's 45-day data center pause by about ten and a half months, following Oakland's extension. Mayor Lurie would then decide whether to sign it.",
+    "s": [
+      [
+        "SFist",
+        "https://sfist.com/2026/11/11/sf-to-consider-extending-data-center-moratorium-as-oakland-approves-10-month-extension/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Scheduled vote to extend a citywide pause to roughly 11 months.",
+    "pl": [
+      [
+        "San Francisco",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:37.132Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -655,6 +830,167 @@
     ],
     "auto": true,
     "added": "2026-11-10T00:56:11.909Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "US",
+    "w": "Sen. Josh Hawley",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Hawley becomes first GOP senator to urge federal data center moratorium in lame duck",
+    "b": "Hawley urged Republicans to pass a federal data center moratorium during the lame-duck session, lasting until Congress guarantees no utility rate increases. Trump favors faster construction, so a veto is likely; Democrats Sanders and Ocasio-Cortez have a similar bill.",
+    "s": [
+      [
+        "WACH",
+        "https://wach.com/news/connect-to-congress/hawley-backs-data-center-moratorium-as-washington-weighs-new-restrictions-artificial-intelligence-midterm-elections-electricity-water-usage"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 6,
+    "du": "m",
+    "rl": "d",
+    "iw": "Call for a national pause; talk only, veto likely",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T01:00:32.519Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "MN",
+    "w": "Minneapolis City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Minneapolis council passes data center zoning 7-6 as moratorium nears expiry",
+    "b": "The council approved an ordinance confining data centers to two downtown districts, inside existing office space, capped at 150,000 sq ft with renewable power or 50,000 without. Six members voted no. It goes to Mayor Frey, who can approve or veto it.",
+    "s": [
+      [
+        "KSTP",
+        "https://kstp.com/kstp-news/top-news/minneapolis-city-council-narrowly-approves-data-center-ordinance-that-adds-regulations/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 2,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding siting and size limits, adopted pending mayor's signature, replace expiring moratorium.",
+    "pl": [
+      [
+        "Minneapolis",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:32.720Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "KS",
+    "w": "Kansas governor-elect Holscher",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "cost",
+      "water"
+    ],
+    "t": "Holscher wins Kansas governor's race; Masterson concedes after post-election audit",
+    "b": "Democrat Cindy Holscher won by about 7,500 votes and Ty Masterson conceded. Holscher has called for a data center pause over power costs and water strain; Masterson defended the incentive law and favored local say on siting.",
+    "s": [
+      [
+        "KMBC",
+        "https://www.kmbc.com/article/kansas-governor-race-2026-holscher-masterson-election-results/74287424"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Winner backs a statewide data center pause, but only as a stated position",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T01:00:33.650Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "SD",
+    "w": "Rapid City mayor",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Rapid City mayor proposes six-month data center permit pause or interim rules",
+    "b": "Mayor Jason Salamun offered the Planning Commission two options for Nov. 25: a six-month pause on data center permits or interim protections. He prefers rules. The permanent ordinance was pushed to Jan. 21, 2027.",
+    "s": [
+      [
+        "KOTA TV",
+        "https://www.kotatv.com/2026/11/13/rapid-city-mayor-seeks-data-center-safeguards-permanent-rules-face-delay/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed six-month pause or limits, not yet adopted",
+    "pl": [
+      [
+        "Rapid City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:33.820Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "MA",
+    "w": "Committee to Restrict Data Centers",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting",
+      "cost",
+      "water"
+    ],
+    "t": "Massachusetts 2028 ballot petition would require two-thirds local approval for data centers",
+    "b": "A certified citizen petition for the 2028 ballot would cover data centers of 5 MW or more. It would require two-thirds approval from host-community residents, cost-shifting protections, water certifications and audits. Organizers are not collecting signatures for this month's first-stage deadline.",
+    "s": [
+      [
+        "Boston Globe",
+        "https://www.bostonglobe.com/2026/11/12/business/massachusetts-ballot-question-major-restrictions-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting, cost and water conditions statewide; signatures not yet gathered",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T01:00:34.351Z"
   },
   {
     "d": "2026-11-11",
@@ -1649,6 +1985,111 @@
     ],
     "auto": true,
     "added": "2026-11-12T13:05:53.980Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "TX",
+    "w": "Lubbock City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Lubbock residents urge 90-day data center moratorium at first hearing; vote Dec. 10",
+    "b": "Residents pressed council at the first of two hearings, accepting 90 days after asking for 18 months. Some said it comes too late because the development alliance approved a smaller data center. Zoning rules come to council Dec. 1; first vote Dec. 10.",
+    "s": [
+      [
+        "KCBD",
+        "https://www.kcbd.com/2026/11/11/lubbock-residents-urge-council-pass-data-center-moratorium/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed 90-day pause, hearing held, no vote yet",
+    "pl": [
+      [
+        "Lubbock",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:34.895Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "GA",
+    "w": "Lee County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Lee County, Georgia extends data center moratorium to June 30, 2027",
+    "b": "Commissioners extended the unincorporated-area pause on data center zoning, permitting and construction from Dec. 31 to June 30, 2027, the second extension. It ends early if an ordinance is adopted sooner. Staff need time to draft rules and gather comment.",
+    "s": [
+      [
+        "WALB",
+        "https://www.walb.com/2026/11/11/lee-county-commissioners-extend-moratorium-data-centers-into-next-summer/"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "County-wide pause on data centers extended about six months, in force",
+    "pl": [
+      [
+        "Lee County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:35.435Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "NM",
+    "w": "Taos County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting",
+      "disclosure"
+    ],
+    "t": "Taos County commissioners discuss 18-month data center pause; no vote yet, adoption eyed Dec. 15",
+    "b": "Commissioners reviewed a draft ordinance pausing data center development for 18 months while staff write rules, and limiting nondisclosure agreements in deals. No vote was taken; staff hope to return it for adoption Dec. 15.",
+    "s": [
+      [
+        "Taos News",
+        "https://www.taosnews.com/news/local-news/taos-county-weighs-18-month-preemptive-pause-on-data-centers/article_f761a45a-d703-5165-93a7-bd5468d981c8.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Draft 18-month county pause, discussed but not yet voted.",
+    "pl": [
+      [
+        "Taos County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:35.819Z"
   },
   {
     "d": "2026-11-09",
@@ -2646,6 +3087,112 @@
     ],
     "auto": true,
     "added": "2026-11-12T13:05:51.314Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "MI",
+    "w": "Napoleon Township",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Napoleon Township, Michigan, adopts 12-month data center moratorium",
+    "b": "The Jackson County township passed a one-year pause on new data center projects the week of Nov. 9. Neighboring Summit Township adopted permanent rules on noise, water, setbacks and size tiers after a six-month pause. Exact vote date and count were not reported.",
+    "s": [
+      [
+        "WILX",
+        "https://www.wilx.com/2026/11/12/jackson-county-townships-move-set-data-center-rules/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Temporary moratorium in force, one year, one township.",
+    "pl": [
+      [
+        "Napoleon Township",
+        "township"
+      ],
+      [
+        "Summit Township",
+        "township"
+      ],
+      [
+        "Jackson County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:33.100Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "ME",
+    "w": "Jay mill data center developers",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting",
+      "siting"
+    ],
+    "t": "Jay mill data center developers amend permit applications, with open house set for Dec. 10",
+    "b": "Developers of the proposed data center at the former Androscoggin paper mill in Jay amended their permit applications days after the election. Backup generators were added to the air license request. Governor-elect Pingree, who backs a pause, has questioned the site.",
+    "s": [
+      [
+        "WMTW",
+        "https://www.wmtw.com/article/jay-maine-data-center-developers-amend-permit-application/74404120"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Pending permits for one named project; no approval yet",
+    "pl": [
+      [
+        "Jay",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:34.220Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "OR",
+    "w": "Oregon voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Oregon Democrats hold 39-21 House and 19-11 Senate supermajorities ahead of data center pause bill",
+    "b": "Nearly complete unofficial results give Democrats two more House seats and one more Senate seat, above the 60% tax-vote threshold in both chambers. Plans for a 2027 data center moratorium bill face a stronger majority; the report itself does not mention data centers.",
+    "s": [
+      [
+        "Willamette Week",
+        "https://www.wweek.com/news/health/2026/11/09/democrats-bolster-supermajorities-in-oregon-statehouse/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Larger majority eases passage of a planned statewide pause bill; unofficial counts.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-13T01:00:36.284Z"
   },
   {
     "d": "2026-11-06",
@@ -8649,6 +9196,40 @@
     ],
     "auto": true,
     "added": "2026-11-12T13:05:53.504Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "IL",
+    "w": "Joliet voters",
+    "lv": "local",
+    "k": "action",
+    "st": "ballot",
+    "ty": [
+      "siting"
+    ],
+    "t": "Joliet voters reject AI data center construction in advisory referendum, nearly 80%",
+    "b": "Nearly 80% of Joliet voters said no on a nonbinding question about approving data centers to power AI, per the Will County Clerk. Results are unofficial until certified and the vote does not bind the council.",
+    "s": [
+      [
+        "NBC Chicago",
+        "https://www.nbcchicago.com/news/local/aurora-mayoral-recall-referendum-passes-joliet-data-center-question-fails/4012480/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Non-binding vote against data centers; takes the direction voters backed.",
+    "pl": [
+      [
+        "Joliet",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-13T01:00:32.858Z"
   },
   {
     "d": "2026-11-02",
