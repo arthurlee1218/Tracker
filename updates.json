@@ -458,6 +458,45 @@
     "added": "2026-11-10T13:00:31.487Z"
   },
   {
+    "d": "2026-11-19",
+    "j": "NM",
+    "w": "Lea County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "Lea County may vote on $134 billion in bonds for Google data center near Hobbs",
+    "b": "Commissioners may act as soon as their next meeting on industrial revenue bonds for Google's proposed 1,890-acre campus, called Project Rancho. A resident group has gathered nearly 900 signatures asking for a six-month moratorium instead. The exact vote date was not announced.",
+    "s": [
+      [
+        "Searchlight New Mexico",
+        "https://searchlightnm.org/critics-google-town-halls-on-lea-county-data-center-are-pr-events-with-few-answers/"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Bond financing for one named campus; vote pending, date unconfirmed",
+    "pl": [
+      [
+        "Lea County",
+        "county"
+      ],
+      [
+        "Hobbs",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:33.234Z"
+  },
+  {
     "d": "2026-11-18",
     "j": "TN",
     "w": "Shelby County Commission",
@@ -899,6 +938,38 @@
     "added": "2026-11-12T01:05:01.007Z"
   },
   {
+    "d": "2026-11-13",
+    "j": "PA",
+    "w": "Incoming PA Democratic lawmakers",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "cost",
+      "tax",
+      "siting"
+    ],
+    "t": "New Pennsylvania Democratic lawmakers plan 2027 data center moratorium, local pause and tax-break bills",
+    "b": "Newly elected Democrats who helped flip the state Senate say data center anger aided them. They back a statewide moratorium, 180-day local pauses and repealing developer tax breaks. A slim Senate majority could limit what passes.",
+    "s": [
+      [
+        "Spotlight PA",
+        "https://www.spotlightpa.org/news/2026/11/pennsylvania-data-centers-democrats-senate-environment"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Lawmakers pledge moratorium and tax-break repeal bills; talk only",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-14T00:57:30.020Z"
+  },
+  {
     "d": "2026-11-12",
     "j": "MN",
     "w": "Minneapolis City Council",
@@ -1273,6 +1344,139 @@
     ],
     "auto": true,
     "added": "2026-11-13T13:03:27.366Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "MN",
+    "w": "Minneapolis City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Minneapolis council passes data center zoning 7-6, requiring council approval for each project",
+    "b": "The council adopted permanent rules limiting new data centers to existing buildings in two downtown districts, with council sign-off on each. A full ban failed. Mayor Frey may veto; the moratorium expires Nov. 21.",
+    "s": [
+      [
+        "MPR News",
+        "https://www.mprnews.org/story/2026/11/13/minneapolis-city-council-votes-to-require-casebycase-approval-of-new-data-centers"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 2,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding city siting limits and case-by-case approval, pending possible mayoral veto.",
+    "pl": [
+      [
+        "Minneapolis",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:28.939Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "SD",
+    "w": "Yankton County commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Yankton County keeps drafting data center ordinance; moratorium likely extended into January",
+    "b": "Planning and zoning and the county commission met in special session on the draft ordinance. The revised draft should reach commissioners in January, which would likely require extending the current moratorium on new data center petitions so two readings can occur.",
+    "s": [
+      [
+        "KYNT",
+        "https://www.kynt1450.com/2026/11/12/yankton-county-continues-work-on-data-center-ordinance/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Existing pause likely extended while ordinance is finalized; not yet voted",
+    "pl": [
+      [
+        "Yankton County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:29.645Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "TX",
+    "w": "Westlake Town Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting"
+    ],
+    "t": "Westlake council approves development agreement for Circle T data center, 4-1",
+    "b": "Westlake approved a development agreement for its first data center, about 88 acres next to Keller. Officials project roughly $5 million a year in revenue. One member dissented. A homeowner lawsuit over the site was settled earlier.",
+    "s": [
+      [
+        "Yahoo News (Fort Worth area report)",
+        "https://www.yahoo.com/news/us/articles/circle-t-data-center-clears-181034377.html"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Approves one specific project through a binding agreement.",
+    "pl": [
+      [
+        "Westlake",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:30.486Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "AK",
+    "w": "Alaska voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Kreiss-Tomkins projected Alaska governor-elect; ranked-choice tally shows 56-44 over Wilson",
+    "b": "Preliminary ranked-choice figures put Democrat Kreiss-Tomkins ahead of Wilson 56%-44%, and CNN has projected him the winner. He has backed a data center moratorium. Results are unofficial; the official ranked-choice tabulation is set for Nov. 18.",
+    "s": [
+      [
+        "FairVote",
+        "https://fairvote.org/results-and-analysis-from-alaskas-2026-elections/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Winning candidate pledged a moratorium; talk, not yet law.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-14T00:57:38.030Z"
   },
   {
     "d": "2026-11-11",
@@ -2605,6 +2809,109 @@
     "added": "2026-11-13T13:03:35.534Z"
   },
   {
+    "d": "2026-11-10",
+    "j": "TN",
+    "w": "Rogersville aldermen",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Rogersville passes heavy data center and crypto restrictions on second reading, 4-2",
+    "b": "The aldermen advanced an ordinance that is not a ban but sets so many requirements for high-density data centers and crypto mining that siting one in town would be very difficult. A no-vote member wants a full ban. A third reading is needed.",
+    "s": [
+      [
+        "The Rogersville Review",
+        "https://www.therogersvillereview.com/news/article_606e6982-4b3c-4b96-b72f-0fe7bda64b24.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Restrictive siting rules advanced, not yet final",
+    "pl": [
+      [
+        "Rogersville",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:31.260Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "TN",
+    "w": "Greeneville Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Greeneville planners recommend six-month data center moratorium; council takes it up Nov. 17",
+    "b": "The planning commission recommended a six-month pause on new data centers, with existing operations and broadband facilities exempt, to write permanent rules. No applications have been filed. The City Council is scheduled to consider it November 17.",
+    "s": [
+      [
+        "WGRV Radio Greeneville News",
+        "https://wgrv.com/planning-commission-recommends-six-month-data-center-moratorium-to-greeneville-city-council/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed six-month pause recommended, awaiting council vote",
+    "pl": [
+      [
+        "Greeneville",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:31.737Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "WA",
+    "w": "Port Angeles advisory committee",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Port Angeles utilities panel backs six more months of data center pause",
+    "b": "The city's Utilities Advisory Committee voted 4-1 to recommend extending the data center moratorium another six months beyond its Feb. 28 expiry. The council could vote Dec. 1. The committee also backed dropping the 60-day report-back requirement for draft code.",
+    "s": [
+      [
+        "Peninsula Daily News",
+        "https://www.peninsuladailynews.com/2026/11/13/port-angeles-may-extend-pause-on-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Advisory recommendation to extend a city pause; council has not voted.",
+    "pl": [
+      [
+        "Port Angeles",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:37.914Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -3909,6 +4216,201 @@
     "added": "2026-11-13T13:03:35.647Z"
   },
   {
+    "d": "2026-11-09",
+    "j": "US",
+    "w": "Sen. Cortez Masto",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "permitting",
+      "cost"
+    ],
+    "t": "Cortez Masto will seek to strike tribal-review changes from Senate permitting bill",
+    "b": "After the 73-25 procedural vote, the Nevada Democrat said she will offer an amendment removing the historic-preservation and tribal consultation changes, and will oppose final passage if they stay. The bill also requires large data centers to pay for grid upgrades.",
+    "s": [
+      [
+        "Deseret News",
+        "https://www.deseret.com/politics/2026/11/09/permitting-reform-overcomes-first-obstacle/"
+      ]
+    ],
+    "im": 0,
+    "ef": "fast",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "i",
+    "iw": "Permitting bill speeds projects; amendment fight over tribal review is talk-stage",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-14T00:57:28.426Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "SC",
+    "w": "Abbeville County Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Abbeville County gives final approval to 12-month bar on data center approvals",
+    "b": "Council passed third reading of an ordinance under which no data centers will be approved for 12 months. Officials say they want future projects steered to industrial parks and want to protect ratepayers and water. No discussion was held at the meeting.",
+    "s": [
+      [
+        "Index-Journal",
+        "https://www.indexjournal.com/news/abbeville-county-gives-final-approval-to-data-center-moratorium/article_9b89563d-25ea-423e-9526-cd763215a8ff.html"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "County-wide 12-month halt on approvals, adopted on final reading",
+    "pl": [
+      [
+        "Abbeville County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:30.901Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "NC",
+    "w": "Lumberton City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Lumberton adopts data center rules limiting them to one industrial park",
+    "b": "Council approved regulations despite resident opposition. Data centers are confined to the Southeast Crossroads Industrial Park, with disclosure of power and water use, water-efficient cooling, buffers and a 65-decibel noise limit at residential lines. No specific facility was approved.",
+    "s": [
+      [
+        "WPDE",
+        "https://wpde.com/news/local/lumberton-city-council-approves-data-center-regulations-despite-opposition"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding siting, noise and water-disclosure conditions in force",
+    "pl": [
+      [
+        "Lumberton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:31.144Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "WY",
+    "w": "Wyoming transportation committee",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax",
+      "disclosure"
+    ],
+    "t": "Wyoming committee backs sending 40% of data center power sales tax to highways",
+    "b": "The interim transportation committee voted 8-2 to draft a bill steering 40% of electricity sales taxes paid by data centers into a WYDOT trust fund. It also requires utilities to report power sold to data centers. Full legislature must still act in 2027.",
+    "s": [
+      [
+        "Cowboy State Daily",
+        "https://cowboystatedaily.com/2026/11/09/wyoming-lawmakers-advance-bill-to-invest-data-center-taxes-for-wydot/"
+      ]
+    ],
+    "im": -1,
+    "ef": "info",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Committee draft earmarks tax revenue and adds sales reporting; no operating limits",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-14T00:57:33.677Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "UT",
+    "w": "Gov. Spencer Cox",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Cox says he is working with legislature to write data center limits into law",
+    "b": "The governor said Nov. 9 his office is drafting a bill with lawmakers to put many restrictions from his May executive order into statute. The order targets Great Salt Lake, air quality and ratepayer protection. House and Senate leaders also want more local input on projects.",
+    "s": [
+      [
+        "Deseret News",
+        "https://www.deseret.com/politics/2026/11/10/where-midterm-votes-left-data-center-developers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed statute codifying binding conditions on large data centers",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-14T00:57:37.267Z"
+  },
+  {
+    "d": "2026-11-07",
+    "j": "ID",
+    "w": "Ada County commissioner-elect Warner",
+    "lv": "local",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Ada County's incoming commissioner says county should weigh data center application pause",
+    "b": "Kelceymarie Warner, who narrowly ousted a two-term incumbent, says voters raised data centers as a top worry. She wants the county to consider a temporary moratorium on applications while commissioners decide what development should look like. The county has not adopted one.",
+    "s": [
+      [
+        "KTVB via Yahoo News",
+        "https://www.yahoo.com/news/politics/articles/ada-countys-commissioner-says-shell-052132250.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Pledge-level talk of a county pause with no stated length",
+    "pl": [
+      [
+        "Ada County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:33.347Z"
+  },
+  {
     "d": "2026-11-06",
     "j": "US",
     "w": "NYC climate groups",
@@ -4290,6 +4792,70 @@
     ],
     "auto": true,
     "added": "2026-11-13T13:03:16.592Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "GA",
+    "w": "Effingham residents (court)",
+    "lv": "local",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "siting",
+      "disclosure"
+    ],
+    "t": "Effingham residents file racketeering suit over OpenAI-linked Project Camellia data center",
+    "b": "Three residents sued in county state court, alleging nondisclosure agreements and code names hid the project from the public. Defendants include OpenAI entities, the development authority and all six commissioners. They seek damages, not an injunction. Claims are unproven.",
+    "s": [
+      [
+        "WTOC",
+        "https://www.wtoc.com/2026/11/09/effingham-county-residents-sue-openai-county-officials-over-project-camellia-data-center/"
+      ]
+    ],
+    "im": 0,
+    "ef": "deny",
+    "fo": 0,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Lawsuit opposing one project; seeks damages, no injunction",
+    "pl": [
+      [
+        "Effingham County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T00:57:32.658Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "WY",
+    "w": "Wyoming Select Water Committee",
+    "lv": "state",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "water"
+    ],
+    "t": "Wyoming water committee declines to sponsor data center water-use cap, backs groundwater study",
+    "b": "The Select Water Committee did not sponsor a draft capping data center water consumption, citing equal-protection legal concerns. Members unanimously backed a roughly $2 million groundwater survey for next session's omnibus water bill. The meeting date is inferred from the article.",
+    "s": [
+      [
+        "Wyoming Public Media",
+        "https://www.wyomingpublicmedia.org/natural-resources-energy/2026-11-11/wyoming-lawmakers-mull-water-use-solutions-to-data-center-development"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Statewide water limit proposal stalled in committee; study only",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-14T00:57:33.970Z"
   },
   {
     "d": "2026-11-05",
@@ -10076,6 +10642,36 @@
     ],
     "auto": true,
     "added": "2026-11-13T01:00:32.858Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MN",
+    "w": "Minnesota voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Minnesota data center critics win Farmington council, a state House seat and a U.S. House seat",
+    "b": "Farmington's top vote-getter opposes its proposed data center park; Democrat Leah Hanson ousted a House incumbent painted as pro-data center; Jake Johnson, who backs a moratorium, narrowly beat Rep. Finstad. Turnout rose in data center towns.",
+    "s": [
+      [
+        "Civic Media",
+        "https://civicmedia.us/news/2026/11/13/voter-turnout-spiked-in-minnesota-communities-linked-to-hyperscale-data-centers"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Election wins by data center skeptics signal tighter limits, not yet binding.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-14T00:57:29.432Z"
   },
   {
     "d": "2026-11-02",
