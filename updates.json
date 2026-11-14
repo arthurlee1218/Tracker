@@ -839,6 +839,42 @@
     "added": "2026-11-13T01:00:37.132Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "AL",
+    "w": "Irondale City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Irondale, Alabama sets Nov. 17 final vote on data center regulations instead of a pause",
+    "b": "Council will hold a hearing and final vote on rules sorting data centers by size, requiring closed-loop cooling, developer-paid grid upgrades, 50/45 decibel noise limits, residential setbacks and closure plans. It takes a regulatory route rather than a moratorium.",
+    "s": [
+      [
+        "WBHM",
+        "https://www.wbhm.org/local-news/2026-11-13/irondale-moves-forward-with-proposed-data-center-regulations-after-other-alabama-cities-hit-pause"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding water, noise, setback and cost conditions for one city.",
+    "pl": [
+      [
+        "Irondale",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T12:44:38.901Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -968,6 +1004,40 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-14T00:57:30.020Z"
+  },
+  {
+    "d": "2026-11-13",
+    "j": "SD",
+    "w": "West River Alliance for Democracy",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Rapid City advocacy group demands data center pause of up to a year",
+    "b": "The group wants approvals paused for up to a year or until a firm ordinance is in place, saying the mayor's six-month plan leaves a gap. A council member backs a pause.",
+    "s": [
+      [
+        "KOTA",
+        "https://www.kotatv.com/2026/11/14/rapid-city-group-seeks-data-center-pause-city-works-new-rules/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Advocacy call for a pause; not adopted",
+    "pl": [
+      [
+        "Rapid City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T12:44:38.397Z"
   },
   {
     "d": "2026-11-12",
@@ -1477,6 +1547,45 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-14T00:57:38.030Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "KS",
+    "w": "Edgerton City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "ballot",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Edgerton council sends citizen data center ban to March 2027 ballot, leaves appeal open",
+    "b": "After a judge ruled the petition legislative, the council chose a public vote over adopting the ban. It did not vote to appeal but let the city attorney review that option.",
+    "s": [
+      [
+        "Topeka Capital-Journal via Yahoo News",
+        "https://www.yahoo.com/news/politics/articles/edgerton-city-council-puts-data-002932009.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Citizen ban on ballot, not yet adopted; would bar new data centers",
+    "pl": [
+      [
+        "Edgerton",
+        "city"
+      ],
+      [
+        "Johnson County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T12:44:38.187Z"
   },
   {
     "d": "2026-11-11",
@@ -2910,6 +3019,71 @@
     ],
     "auto": true,
     "added": "2026-11-14T00:57:37.914Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "US",
+    "w": "House leaders",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "House leaders signal resistance to Senate permitting bill with data center grid-cost rules",
+    "b": "After the Senate's 73-25 procedural vote, Jeffries said he won't rubber-stamp the bill, citing environmental review and tribal protections. Energy and Commerce Chair Guthrie wants grid-reliability changes. House passage before Jan. 3 is uncertain.",
+    "s": [
+      [
+        "The Center Square via Just The News",
+        "https://justthenews.com/nation/states/center-square/data-center-grid-bill-faces-lame-duck-senate-floor-fight"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "House doubts could stall bill making data centers pay grid upgrade costs",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-14T12:44:37.341Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "VA",
+    "w": "Washington County supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Washington County, Virginia adopts first data center zoning rules, unanimously",
+    "b": "Supervisors unanimously approved an ordinance requiring a special exception permit and two public hearings for future data centers, with strict conditions and signed agreements possible. The county previously had no data center zoning language.",
+    "s": [
+      [
+        "SuperTalk 92.9",
+        "https://www.supertalk929.com/2026/11/11/washington-county-va-passes-new-data-center-ordinance/"
+      ]
+    ],
+    "im": -2,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding special-exception and hearing requirements for all new data centers in the county.",
+    "pl": [
+      [
+        "Washington County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-14T12:44:38.753Z"
   },
   {
     "d": "2026-11-09",
@@ -10672,6 +10846,36 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-14T00:57:29.432Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "MN",
+    "w": "Minnesota voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting",
+      "cost"
+    ],
+    "t": "Klobuchar wins Minnesota governor's race; DFL holds governor's office and both legislative chambers",
+    "b": "Unofficial results give Democrats a state trifecta after a tied House and one-vote Senate edge. Recounts are pending in several seats. The shift removes divided government for any 2027 bill on data center siting, ratepayer costs or tax breaks; the article does not discuss data centers.",
+    "s": [
+      [
+        "MPR News",
+        "https://www.mprnews.org/story/2026/11/03/control-of-minnesota-capitol-hangs-in-balance-as-voters-decide-all-201-legislative-seats"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Structural change in who can pass state data center bills; no stated policy",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-14T12:44:37.469Z"
   },
   {
     "d": "2026-11-02",
