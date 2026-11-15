@@ -423,6 +423,41 @@
     "added": "2026-11-13T13:03:26.816Z"
   },
   {
+    "d": "2026-11-23",
+    "j": "CT",
+    "w": "Ellington Planning and Zoning",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Ellington sets Nov. 23 hearing on one-year data center and battery storage pause",
+    "b": "The commission postponed its hearing from Oct. 26 without adopting the pause. The proposal would halt new data centers and battery energy storage for a year while the town studies rules, and the commission is adjusting language for home batteries.",
+    "s": [
+      [
+        "Ellington Patch",
+        "https://patch.com/connecticut/ellington-somers/ellington-moves-data-center-moratorium-hearing-november"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed one-year moratorium, hearing scheduled, not yet adopted",
+    "pl": [
+      [
+        "Ellington",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T00:55:55.055Z"
+  },
+  {
     "d": "2026-11-19",
     "j": "AR",
     "w": "Washington County Quorum Court",
@@ -3086,6 +3121,80 @@
     "added": "2026-11-14T12:44:38.753Z"
   },
   {
+    "d": "2026-11-10",
+    "j": "AR",
+    "w": "Wynne City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "water"
+    ],
+    "t": "Wynne council passes one-year moratorium on new data centers",
+    "b": "Wynne aldermen passed Ordinance 926 pausing new data centers inside city limits for a year, citing water and electricity supply. The meeting date and vote count were not reported; Cross County's court has only discussed a similar pause.",
+    "s": [
+      [
+        "KAIT",
+        "https://www.kait8.com/2026/11/13/wynne-city-council-approves-one-year-moratorium-new-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "One-year city pause on new data centers, in force",
+    "pl": [
+      [
+        "Wynne",
+        "city"
+      ],
+      [
+        "Cross County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T00:55:55.320Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "FL",
+    "w": "Hillsborough County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Hillsborough commissioners defer one-year data center moratorium until two new members seated",
+    "b": "Commissioners voted unanimously to postpone a proposed one-year pause on new AI data center proposals, so two newly elected members can review it first. No new date was set.",
+    "s": [
+      [
+        "WMNF",
+        "https://www.wmnf.org/hillsborough-county-commissioners-delay-vote-on-ai-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed county pause, vote deferred with no date",
+    "pl": [
+      [
+        "Hillsborough County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T00:55:56.829Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -4550,6 +4659,72 @@
     "added": "2026-11-14T00:57:37.267Z"
   },
   {
+    "d": "2026-11-09",
+    "j": "TX",
+    "w": "Sen. Zaffirini",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting",
+      "cost",
+      "tax",
+      "water",
+      "siting"
+    ],
+    "t": "Zaffirini files five bills: state data center permit, cost allocation, county powers, tax limits",
+    "b": "Sen. Judith Zaffirini prefiled bills for a statewide construction permit for large data centers, a separate rate class so they bear grid costs, county regulation powers, water-planning data sharing, and limits on tax breaks, for the 2027 session.",
+    "s": [
+      [
+        "Texas Senate press release",
+        "https://senate.texas.gov/press.php?id=21-20261109a"
+      ],
+      [
+        "KSAT",
+        "https://www.ksat.com/news/texas/2026/11/09/data-centers-minimum-wage-and-medicaid-legislation-open-bill-filing-for-a-divided-texas-legislature/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Prefiled permit, cost and siting bills; not yet law",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-15T00:55:55.803Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "AK",
+    "w": "Gov. Dunleavy, AIDEA",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting"
+    ],
+    "t": "Outgoing Dunleavy launches AIDEA data center corporation and investment platform before governor-elect's moratorium pledge",
+    "b": "Less than a month before leaving office, Dunleavy announced a public corporation, Alaska Data Corp., and a platform for individual Alaskans to invest in data centers. Governor-elect Kreiss-Tomkins backs a moratorium until state rules pass and wants more AIDEA oversight.",
+    "s": [
+      [
+        "Anchorage Daily News",
+        "https://www.adn.com/politics/2026/11/11/dunleavy-pushes-for-data-centers-to-come-to-alaska-as-he-prepares-to-leave-office/"
+      ]
+    ],
+    "im": 2,
+    "ef": "help",
+    "fo": 2,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "State-backed vehicle promotes data centers; new governor may reverse",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-15T00:55:58.108Z"
+  },
+  {
     "d": "2026-11-07",
     "j": "ID",
     "w": "Ada County commissioner-elect Warner",
@@ -5030,6 +5205,70 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-14T00:57:33.970Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "US",
+    "w": "ProPublica report on Interior",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "disclosure"
+    ],
+    "t": "Report: Interior chief overseeing public-land data centers holds AI investments",
+    "b": "ProPublica reports Secretary Burgum has $18M to $64M in AI-company holdings while leading a push to site data centers on federal land. BLM is reviewing about 15 applications; Democratic senators demand transparency.",
+    "s": [
+      [
+        "ProPublica",
+        "https://www.propublica.org/article/burgum-public-land-data-centers-investments"
+      ]
+    ],
+    "im": 0,
+    "ef": "info",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Conflict-of-interest scrutiny of federal land siting; no binding action",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-15T00:55:54.739Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "GA",
+    "w": "Putnam County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Putnam County, Georgia extends data center and battery storage pause to Dec. 4",
+    "b": "Commissioners extended the moratorium on data centers, battery storage and some solar projects a second time, to Dec. 4, while a proposed energy and digital infrastructure ordinance takes public comment.",
+    "s": [
+      [
+        "Putnam County, GA (county notice)",
+        "https://www.putnamcountyga.us/m/newsflash/Home/Detail/20"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Short extension of a county pause in force",
+    "pl": [
+      [
+        "Putnam County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T00:55:57.682Z"
   },
   {
     "d": "2026-11-05",
@@ -11460,6 +11699,35 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-05T00:55:19.069Z"
+  },
+  {
+    "d": "2026-10-30",
+    "j": "MI",
+    "w": "Michigan Attorney General",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost"
+    ],
+    "t": "Nessel asks regulators to rehear approval of DTE's Google data center contracts",
+    "b": "The attorney general petitioned the Michigan Public Service Commission for rehearing on DTE's contracts for Google's Van Buren Township campus. She wants annual cost reconciliation, no cap on Google's liability and stronger backstops, or outright rejection of the contracts.",
+    "s": [
+      [
+        "The Alpena News",
+        "https://www.thealpenanews.com/news/2026/11/nessel-challenges-mpsc-approval-of-dtes-google-data-center-contracts/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 4,
+    "du": "p",
+    "rl": "d",
+    "iw": "Seeks tougher ratepayer protections on one utility's data center contract; only a petition.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-15T00:55:54.974Z"
   },
   {
     "d": "2026-10-29",
