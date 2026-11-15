@@ -1075,6 +1075,45 @@
     "added": "2026-11-14T12:44:38.397Z"
   },
   {
+    "d": "2026-11-13",
+    "j": "OR",
+    "w": "Washington County voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "tax"
+    ],
+    "t": "Moratorium backer Fai edges ahead in Washington County, Oregon chair race; progressives sweep Hillsboro",
+    "b": "Unofficial counts show Commissioner Nafisa Fai, who backed a county data center moratorium, ahead of Pam Treece by 363 votes, too close to call. Three data-center-skeptic progressives also won Hillsboro council seats. Certification is due Nov. 30.",
+    "s": [
+      [
+        "OPB",
+        "https://www.opb.org/article/2026/11/13/progressives-dominate-washington-county-elections/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Election result for a moratorium advocate; count unofficial and close",
+    "pl": [
+      [
+        "Washington County",
+        "county"
+      ],
+      [
+        "Hillsboro",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T18:44:35.931Z"
+  },
+  {
     "d": "2026-11-12",
     "j": "MN",
     "w": "Minneapolis City Council",
@@ -3195,6 +3234,177 @@
     "added": "2026-11-15T00:55:56.829Z"
   },
   {
+    "d": "2026-11-10",
+    "j": "MA",
+    "w": "Norfolk town meeting",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Norfolk town meeting unanimously adopts data center moratorium to 2028",
+    "b": "Voters approved a moratorium on data centers through Jan. 1, 2028, and added data centers to the zoning bylaws. The advisory committee and planning board both backed it.",
+    "s": [
+      [
+        "The Sun Chronicle",
+        "https://www.thesunchronicle.com/news/local_news/foxboro-wrentham-voters-back-data-center-bans/article_60bdd15a-055e-4c3f-8b03-83b4aa38a2e0.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Adopted town pause of about 14 months",
+    "pl": [
+      [
+        "Norfolk",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T18:44:32.336Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "AR",
+    "w": "Federal judge, Pulaski County case",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting",
+      "siting"
+    ],
+    "t": "Judge denies Pulaski County delay in data center developer's lawsuit; injunction hearing Nov. 20",
+    "b": "A federal judge refused the county's request for two more weeks to respond to AVAIO's suit over its data center permitting rules. A hearing on blocking enforcement is set for Nov. 20, and the county's answer is due Nov. 23.",
+    "s": [
+      [
+        "Arkansas Democrat-Gazette",
+        "https://www.nwaonline.com/news/2026/nov/10/federal-judge-denies-pulaski-countys-request-for/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "County rules face court challenge; outcome would decide whether limits hold",
+    "pl": [
+      [
+        "Pulaski County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T18:44:33.229Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "AK",
+    "w": "Alaska DNR",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting",
+      "water"
+    ],
+    "t": "Alaska approves 50-year land lease for gas-powered North Slope data center campus",
+    "b": "Natural Resources approved a 50-year lease on about 715 acres for the STAK Energy Campus, with a multi-gigawatt gas plant. Over 1,200 public responses mostly opposed it. A 20-day reconsideration window and court challenges remain, and other permits are needed.",
+    "s": [
+      [
+        "Alaska Public Media",
+        "https://alaskapublic.org/news/economy/energy/2026-11-11/alaska-approves-50-year-land-lease-for-large-natural-gas-powered-data-center-in-the-arctic"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "l",
+    "rl": "d",
+    "iw": "State lease approves one named project; reconsideration still possible",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-15T18:44:35.063Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "CA",
+    "w": "Riverside City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Riverside council, 5-2, treats data centers as prohibited while AI working group studies impacts",
+    "b": "Riverside adopted a resolution formalizing that its code lists no data center use, so new or expanded facilities are barred while a working group studies energy, water and neighborhood effects. Reports differ on whether it is a 45-day or open-ended pause. Building trades opposed.",
+    "s": [
+      [
+        "Hey SoCal",
+        "https://heysocal.com/2026/11/13/riverside-council-temporarily-prohibits-data-centers"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "City bars new data centers pending study; length unclear",
+    "pl": [
+      [
+        "Riverside",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T18:44:35.403Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "CA",
+    "w": "Oakley City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Oakley council votes 3-1 to introduce citywide data center ban in all zones",
+    "b": "Oakley's council introduced an ordinance prohibiting data centers in every zoning district, including home businesses. The vice mayor dissented. A second vote is needed to adopt it, and staff will amend home-business rules to match.",
+    "s": [
+      [
+        "Contra Costa News",
+        "https://contracosta.news/2026/11/12/3-1-oakley-city-council-agrees-to-data-center-ban/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed permanent citywide ban, introduced but not adopted",
+    "pl": [
+      [
+        "Oakley",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T18:44:35.635Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -4725,6 +4935,110 @@
     "added": "2026-11-15T00:55:58.108Z"
   },
   {
+    "d": "2026-11-09",
+    "j": "MA",
+    "w": "Foxboro town meeting",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Foxboro town meeting bans data centers in all zoning districts",
+    "b": "Voters at town meeting approved a zoning bylaw barring data processing centers throughout Foxboro. The planning board backed it after a hearing where no residents spoke.",
+    "s": [
+      [
+        "The Sun Chronicle",
+        "https://www.thesunchronicle.com/news/local_news/foxboro-wrentham-voters-back-data-center-bans/article_60bdd15a-055e-4c3f-8b03-83b4aa38a2e0.html"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Permanent zoning ban adopted for one town",
+    "pl": [
+      [
+        "Foxboro",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T18:44:32.266Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "TX",
+    "w": "Cottle County Commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "Cottle County backs reinvestment zone and tax abatement for gas-powered data center",
+    "b": "Commissioners unanimously endorsed a 4,252-acre reinvestment zone near Paducah and an abatement for Aetheris's 96 MW campus, to be powered by a 180 MW gas plant. The county expects $1.5 million within 90 days, then $2.5 million yearly.",
+    "s": [
+      [
+        "Salt Lake Tribune",
+        "https://www.sltrib.com/religion/2026/11/13/texas-officials-advance-plan-data/"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "County approved zone and abatement for one named campus",
+    "pl": [
+      [
+        "Cottle County",
+        "county"
+      ],
+      [
+        "Paducah",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T18:44:32.578Z"
+  },
+  {
+    "d": "2026-11-08",
+    "j": "US",
+    "w": "President Trump",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Trump urges supporters to call senators and demand a yes vote on permitting bill",
+    "b": "In a Sunday Truth Social post, Trump asked backers to press their senators to pass the permitting bill, saying it would codify his pledge that data centers pay for their own electricity and warning China would take any data center the U.S. rejects.",
+    "s": [
+      [
+        "Yahoo News (MeidasTouch)",
+        "https://www.yahoo.com/news/politics/articles/trump-urges-maga-pressure-senators-113327795.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Backs bill making data centers pay grid costs; talk only",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-15T18:44:31.692Z"
+  },
+  {
     "d": "2026-11-07",
     "j": "ID",
     "w": "Ada County commissioner-elect Warner",
@@ -5978,6 +6292,41 @@
     ],
     "auto": true,
     "added": "2026-11-12T13:05:53.571Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "NY",
+    "w": "Potsdam Town Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Potsdam town council passes one-year moratorium on large data centers and crypto mines",
+    "b": "After a public hearing, the council suspended applications, permits and construction for computing facilities of 20 MW or more, or over 50,000 square feet, in unincorporated Potsdam for one year. The article gives no vote date; Nov. 5 was the hearing.",
+    "s": [
+      [
+        "Watertown Daily Times",
+        "https://www.nny360.com/news/watertown_daily_times/potsdam-town-board-passes-data-center-crypto-mine-moratorium/article_f1c8dc7c-ae4e-59d6-a622-0e0b4d85ebbd.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Adopted one-year pause for large facilities in one town",
+    "pl": [
+      [
+        "Potsdam",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T18:44:32.367Z"
   },
   {
     "d": "2026-11-04",
@@ -11115,6 +11464,122 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-14T12:44:37.469Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "OH",
+    "w": "Defiance, Oregon, Upper Sandusky voters",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Northwest Ohio voters in Defiance, Oregon and Upper Sandusky pass charter bans on data centers",
+    "b": "Unofficial results show Defiance (about 65%) and Oregon (about 61%) amended their charters to bar data centers over 25 MW, and Upper Sandusky (77%) to bar data center construction. Results are not yet certified.",
+    "s": [
+      [
+        "The Statehouse News Bureau",
+        "https://www.statenews.org/section/the-ohio-newsroom/2026-11-10/heres-how-every-data-center-related-ballot-measure-fared-in-ohio"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Charter amendments prohibit large data centers, permanently, in three cities.",
+    "pl": [
+      [
+        "Defiance",
+        "city"
+      ],
+      [
+        "Oregon",
+        "city"
+      ],
+      [
+        "Upper Sandusky",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T18:44:32.037Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "KY",
+    "w": "Kentucky local voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Data center critics win Bowling Green, Franklin and Cave City races in Kentucky",
+    "b": "Tom Morris won a Bowling Green commission seat after an incumbent opposed a moratorium, Kelly Bush won as Franklin mayor, and Clifton Parsley beat Cave City's incumbent mayor. Morris intends to revive the moratorium that failed 3-2 in June.",
+    "s": [
+      [
+        "WKU Public Radio",
+        "https://www.wkyufm.org/2026-11-13/data-center-concerns-sparked-major-wins-for-local-candidates-critical-of-the-industry"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Candidates critical of data centers won; moratorium push likely to return",
+    "pl": [
+      [
+        "Bowling Green",
+        "city"
+      ],
+      [
+        "Franklin",
+        "city"
+      ],
+      [
+        "Cave City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-15T18:44:34.041Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "UT",
+    "w": "Utah voters, legislature",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Utah Republicans lose House supermajority; speaker lists data center transparency as session focus",
+    "b": "Unofficial results show Republicans lost 16 House seats and their two-thirds margin, so they cannot override a Cox veto alone. Speaker Mike Schultz named data center transparency a 2027 priority; Cox is pushing to codify his data center limits.",
+    "s": [
+      [
+        "Deseret News",
+        "https://www.deseret.com/politics/2026/11/10/utah-blue-wave-lost-republican-supermajority-in-legislature-governor-spencer-cox-responds/"
+      ]
+    ],
+    "im": 0,
+    "ef": "info",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Weaker GOP margin may help data center limits and disclosure bills pass.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-15T18:44:34.907Z"
   },
   {
     "d": "2026-11-02",
