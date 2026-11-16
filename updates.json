@@ -910,6 +910,37 @@
     "added": "2026-11-14T12:44:38.901Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "IL",
+    "w": "Illinois General Assembly",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "disclosure",
+      "water"
+    ],
+    "t": "Illinois veto session opens Nov. 17 with data center rules, POWER Act on the table",
+    "b": "Lawmakers meet Nov. 17-19 and Dec. 1-3. Leaders of both parties want data centers to bring their own power and water and protect bills; the POWER Act could ban data center NDAs. No bill vote is scheduled yet.",
+    "s": [
+      [
+        "WAND-TV",
+        "https://www.wandtv.com/2026/11/14/lawmakers-prepare-data-center-regulation-bears-stadium-bill-debates-during-veto-session/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed statewide ratepayer, water and NDA rules, not yet adopted",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-16T05:37:39.414Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -1007,6 +1038,41 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-12T01:05:01.007Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "CA",
+    "w": "Delano City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Delano council to vote on 45-day data center moratorium",
+    "b": "Delano's council was set to consider a 45-day halt on data center approvals, needing four of five votes. City code lists no data centers in any zone, but a similar-use provision could let a developer apply. Result not yet reported.",
+    "s": [
+      [
+        "Yahoo News (local report)",
+        "https://www.yahoo.com/news/politics/articles/delano-city-council-consider-temporary-212213832.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed 45-day citywide pause, vote scheduled",
+    "pl": [
+      [
+        "Delano",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-16T05:37:40.976Z"
   },
   {
     "d": "2026-11-13",
@@ -1112,6 +1178,72 @@
     ],
     "auto": true,
     "added": "2026-11-15T18:44:35.931Z"
+  },
+  {
+    "d": "2026-11-13",
+    "j": "IA",
+    "w": "Iowa legislators, Gov.-elect Sand",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "cost",
+      "tax",
+      "siting"
+    ],
+    "t": "Iowa lawmakers brace for 2027 data center debate as Sand seeks tax-break end",
+    "b": "Gov.-elect Sand wants early 2027 legislation ending data center tax breaks, adding setbacks and making operators cover utility cost increases. Republican Rep. Hans Wilz says more stakeholder talks are needed first and warns against rules that block development deals. No bill text yet.",
+    "s": [
+      [
+        "Iowa Capital Dispatch (via KYOU)",
+        "https://www.kyoutv.com/2026/11/14/data-center-policy-ubiquitous-pressing-issue-state-lawmakers/"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Talk of cost and tax limits; Republican legislature may temper it",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-16T05:37:39.947Z"
+  },
+  {
+    "d": "2026-11-13",
+    "j": "NC",
+    "w": "Vance County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "water"
+    ],
+    "t": "Vance County, NC extends data center moratorium 30 days to Dec. 13",
+    "b": "Commissioners voted unanimously at a special meeting, on the day the pause was due to end, to extend it 30 days. Residents and local officials raised concern about water, with drought and low Kerr Lake levels.",
+    "s": [
+      [
+        "WIZS",
+        "https://wizs.com/vance-commissioners-vote-to-extend-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Short extension of an in-force county pause",
+    "pl": [
+      [
+        "Vance County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-16T05:37:40.216Z"
   },
   {
     "d": "2026-11-12",
@@ -3403,6 +3535,36 @@
     ],
     "auto": true,
     "added": "2026-11-15T18:44:35.635Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "NV",
+    "w": "Nevada Public Utilities Commission",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "permitting",
+      "siting"
+    ],
+    "t": "Nevada regulators approve 510 MW gas plant built to power Switch data centers",
+    "b": "The Public Utilities Commission approved the behind-the-meter plant at the Tahoe Reno Industrial Center in Storey County. Thirteen state, county and federal approvals must still be filed, and only a draft order was posted as of Nov. 11.",
+    "s": [
+      [
+        "Nevada News and Views",
+        "https://nevadanewsandviews.com/nevada-regulators-approve-510-megawatt-gas-plant-to-power-switch-data-centers/"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 2,
+    "rc": 1,
+    "du": "p",
+    "rl": "i",
+    "iw": "Approves a specific plant serving one data center operator; permits still pending",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-16T05:37:40.844Z"
   },
   {
     "d": "2026-11-09",
@@ -6329,6 +6491,36 @@
     "added": "2026-11-15T18:44:32.367Z"
   },
   {
+    "d": "2026-11-05",
+    "j": "OH",
+    "w": "Ohio legislative leaders",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "cost"
+    ],
+    "t": "Ohio lawmakers differ on timing of data center rules after local ballot losses",
+    "b": "Incoming Senate president Reineke would not promise data center rules this year or next. House Democratic leader Isaacsohn floated compromise, including decommissioning payments and farmland offsets. Governor-elect Acton has pledged a conditional moratorium.",
+    "s": [
+      [
+        "NBC4 WCMH-TV via Yahoo News",
+        "https://www.yahoo.com/news/politics/articles/ohio-lawmakers-compromise-possible-data-000000054.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Talk of statewide limits, no bill moving; direction is binding conditions",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-16T05:37:39.109Z"
+  },
+  {
     "d": "2026-11-04",
     "j": "TX",
     "w": "Brownsville City Commission",
@@ -6842,6 +7034,41 @@
     ],
     "auto": true,
     "added": "2026-11-13T13:03:26.931Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "VA",
+    "w": "Petersburg City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Petersburg, VA council introduces rules ending by-right data center siting",
+    "b": "A proposed zoning amendment would make data centers a special use where they were allowed by right, require community meetings and widen setbacks from homes and parks. No vote date was reported; some residents remain unhappy.",
+    "s": [
+      [
+        "12 On Your Side (WWBT)",
+        "https://www.12onyourside.com/2026/11/13/petersburg-introduces-new-data-center-zoning-rules-some-residents-still-unhappy/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting limits for one city, not yet adopted",
+    "pl": [
+      [
+        "Petersburg",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-16T05:37:40.326Z"
   },
   {
     "d": "2026-11-03",
