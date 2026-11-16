@@ -107,6 +107,36 @@
     "added": "2026-11-11T13:02:04.943Z"
   },
   {
+    "d": "2026-12-10",
+    "j": "LA",
+    "w": "Louisiana Public Service Commission",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Entergy to seek seven gas plants for Meta at PSC's Dec. 10 meeting",
+    "b": "Reporting on a new lawsuit over the commission's fast-track rule says Entergy will invoke it at the Dec. 10 meeting to seek approval of seven gas plants for Meta's data center. Earlier tracker items listed Nov. 18; sources differ.",
+    "s": [
+      [
+        "WWNO",
+        "https://www.wwno.org/economy/2026-11-09/entergy-wants-their-land-for-metas-power-lines-theyre-suing-the-regulators-approving-them"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 4,
+    "du": "p",
+    "rl": "i",
+    "iw": "Pending approval of power plants for one campus, tied to data center demand",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-16T21:52:36.619Z"
+  },
+  {
     "d": "2026-12-09",
     "j": "PA",
     "w": "Hanover Township supervisors",
@@ -313,6 +343,40 @@
     ],
     "auto": true,
     "added": "2026-11-13T13:03:24.143Z"
+  },
+  {
+    "d": "2026-11-30",
+    "j": "OK",
+    "w": "Nowata County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Nowata County commissioners postpone data center moratorium decision to Nov. 30",
+    "b": "Commissioners delayed a proposed data center moratorium because the person who requested the agenda item missed the meeting. Residents cited power, water, noise and bills; one commissioner said the county needs industry. Item returns Nov. 30.",
+    "s": [
+      [
+        "KJRH",
+        "https://www.kjrh.com/news/local-news/nowata-county-commissioners-delay-consideration-on-data-center-moratorium-until-november-30"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed county pause, scheduled vote, no length stated",
+    "pl": [
+      [
+        "Nowata County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-16T21:52:36.304Z"
   },
   {
     "d": "2026-11-23",
@@ -3567,6 +3631,41 @@
     "added": "2026-11-16T05:37:40.844Z"
   },
   {
+    "d": "2026-11-10",
+    "j": "GA",
+    "w": "DeKalb County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "DeKalb withdraws data center health study proposal; definition changes deferred to Dec. 15",
+    "b": "Commissioners voted 5-2 to withdraw a proposal for an independent health and environmental study before lifting the moratorium, and deferred a measure redefining data centers to Dec. 15. The moratorium on new applications stays in place.",
+    "s": [
+      [
+        "Decaturish",
+        "https://www.decaturish.com/news/dekalb/dekalb-data-center-proposals-stall-amid-debate-over-studies/article_087c46bf-2c72-4e71-b555-8714fcbd296c.html"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Existing county pause remains in force while new rules stall",
+    "pl": [
+      [
+        "DeKalb County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-16T21:52:37.358Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -5169,6 +5268,42 @@
     ],
     "auto": true,
     "added": "2026-11-15T18:44:32.578Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "IA",
+    "w": "Marshalltown City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Marshalltown council passes data center overlay district 4-3, caps potable cooling water",
+    "b": "Council approved the second reading of an overlay zone for data centers, mainly Edgewood Industrial Park, 4-3. It rejected community-fund and emergency-response add-ons, allowed up to one million gallons of potable cooling water yearly, and deferred the moratorium extension to Nov. 23.",
+    "s": [
+      [
+        "Times Republican",
+        "https://www.timesrepublican.com/news/todays-news/2026/11/council-votes-down-emergency-response-community-benefit-amendments-for-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Zoning conditions on water use for data centers; ordinance returns for another reading.",
+    "pl": [
+      [
+        "Marshalltown",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-16T21:52:36.225Z"
   },
   {
     "d": "2026-11-08",
@@ -11807,6 +11942,36 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-15T18:44:34.907Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "IN",
+    "w": "Indiana voters",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "cost",
+      "tax"
+    ],
+    "t": "Indiana House utilities chair Soliday, author of data center incentive bill, loses to Democrat Kominakis",
+    "b": "Democrat Ryan Kominakis ousted Rep. Ed Soliday, who chairs the House Utilities Committee and wrote a 2019 data center incentive bill. Democrat Tiffany Stoner also beat Rep. Becky Cash near Meta's Lebanon campus. Unofficial results; some data center critics lost elsewhere.",
+    "s": [
+      [
+        "Mirror Indy",
+        "https://mirrorindy.org/data-center-election-results/"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Loss of incentive author and committee chair shifts odds toward limits on tax breaks",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-16T21:52:35.774Z"
   },
   {
     "d": "2026-11-02",
