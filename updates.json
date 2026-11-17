@@ -596,6 +596,46 @@
     "added": "2026-11-14T00:57:33.234Z"
   },
   {
+    "d": "2026-11-19",
+    "j": "ND",
+    "w": "Williams County Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Williams County planners to hear 250 MW gas-powered data center after township urges denial",
+    "b": "The Williams County Planning and Zoning Commission takes up Western Dakota Infrastructure's 250 MW data center in Dublin Township on Nov. 19. The township voted 2-1 to recommend denial. County commissioners could decide in early December. The developer has no water permit or tenant.",
+    "s": [
+      [
+        "Williston Herald",
+        "https://www.willistonherald.com/news/wdi-data-center-proposal-faces-scrutiny-ahead-of-county-hearing"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Scheduled hearing on one project; outcome open, township opposed",
+    "pl": [
+      [
+        "Williams County",
+        "county"
+      ],
+      [
+        "Dublin Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:23.178Z"
+  },
+  {
     "d": "2026-11-18",
     "j": "TN",
     "w": "Shelby County Commission",
@@ -1040,6 +1080,41 @@
     "added": "2026-11-16T05:37:39.414Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "AR",
+    "w": "Federal judge Rudofsky",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Judge bars Pulaski County Judge-elect Griffen from joining developer's data center lawsuit",
+    "b": "A federal judge denied Wendell Griffen's bid to intervene in AVAIO's suit over Pulaski County data center rules, allowing only an amicus brief. A hearing on AVAIO's request to block enforcement is set for Friday, Nov. 20.",
+    "s": [
+      [
+        "Arkansas Democrat-Gazette",
+        "https://www.arkansasonline.com/news/2026/nov/17/judge-denies-wendell-griffens-request-to/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Court fight over county data center rules; outcome undecided, rules would bind siting",
+    "pl": [
+      [
+        "Pulaski County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:25.225Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -1278,6 +1353,383 @@
     "added": "2026-11-17T07:13:53.646Z"
   },
   {
+    "d": "2026-11-16",
+    "j": "US",
+    "w": "PJM, MISO, CAISO, NYISO",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Grid operators file large-load interconnection reforms at FERC after show-cause orders",
+    "b": "PJM, MISO, CAISO and NYISO filed proposals Nov. 16 for connecting data centers and other large loads, including a one-year joint study, cost-recovery agreements and curtailable service. ISO-NE filed Nov. 13; SPP is due later. FERC has not ruled.",
+    "s": [
+      [
+        "Utility Dive",
+        "https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "i",
+    "iw": "Proposed grid tariffs shifting large-load costs to data centers; FERC review pending",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-17T20:43:19.364Z",
+    "linkCheck": "blocked-by-site"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "MN",
+    "w": "Rochester City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Rochester council approves one-year data center moratorium 5-1",
+    "b": "Rochester's council passed an interim ordinance pausing data centers within city limits for a year and ordered a study of best practices. No applications are pending. One member voted no.",
+    "s": [
+      [
+        "KTTC",
+        "https://www.kttc.com/2026/11/17/rochester-city-council-approves-one-year-pause-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Citywide one-year pause in force, no pending project",
+    "pl": [
+      [
+        "Rochester",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:19.560Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "MN",
+    "w": "St. Cloud City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "St. Cloud council rejects data center rules, votes 4-3 to consider moratorium",
+    "b": "After a hearing where most speakers opposed data centers, the council set aside proposed siting rules and voted 4-3 to pursue a one-year moratorium. A hearing and possible vote are set for Dec. 21.",
+    "s": [
+      [
+        "MPR News",
+        "https://www.mprnews.org/story/2026/11/17/st-cloud-rejects-new-rules-for-data-centers-moves-closer-to-moratorium"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Moratorium proposed, not yet adopted; hearing Dec. 21",
+    "pl": [
+      [
+        "St. Cloud",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:19.795Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "IA",
+    "w": "Estherville City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Estherville holds public hearing on data center zoning rules as 25 MW PathOne project awaits",
+    "b": "Estherville's council held a hearing on zoning rules for data centers. A developer proposes a 100,000-square-foot facility in city limits, with closed-loop cooling, fan-speed noise controls and sound barriers. No vote was reported; the ordinance returns for further readings.",
+    "s": [
+      [
+        "Radio Iowa",
+        "https://www.radioiowa.com/2026/11/16/public-hearing-in-estherville-about-proposed-pathone-data-center/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Draft zoning rules with noise and siting conditions, still at hearing stage",
+    "pl": [
+      [
+        "Estherville",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:21.780Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "MA",
+    "w": "Dedham Town Meeting",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Dedham Town Meeting backs one-year data center moratorium, rejects outright ban",
+    "b": "Town Meeting members voted overwhelmingly for a twelve-month pause on data center construction, choosing it over a resident-led ban proposal so the planning board can draft zoning rules.",
+    "s": [
+      [
+        "Boston Globe",
+        "https://www.bostonglobe.com/2026/11/17/business/sutton-dedham-data-center-moratorium-ban/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Adopted one-year town-wide pause on data center construction.",
+    "pl": [
+      [
+        "Dedham",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:23.814Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "PA",
+    "w": "Lancaster Township supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Lancaster Township, Butler County, adopts data center zoning limits",
+    "b": "Supervisors allowed data centers only as a conditional use in one small industrial district, with a 10-acre minimum lot, 300-foot setbacks, and a 55-decibel limit. No developer has proposed one.",
+    "s": [
+      [
+        "Butler Eagle",
+        "https://www.butlereagle.com/20261117/lancaster-township-adopts-data-center-ordinance/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding siting, setback and noise conditions adopted.",
+    "pl": [
+      [
+        "Lancaster Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:24.733Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "NC",
+    "w": "Pitt County Commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Pitt County commissioners unanimously adopt two-year data center moratorium",
+    "b": "After a public hearing, Pitt County's board voted unanimously for a two-year moratorium on data center development, longer than the one-year timeline staff proposed. Staff said state law bars an outright local ban.",
+    "s": [
+      [
+        "The Daily Reflector",
+        "https://www.reflector.com/news/local/pitt-commissioners-approve-two-year-moratorium-on-data-centers/article_3ffa2160-5324-4011-853d-ccb5a15eb1b3.html"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "County-wide two-year pause on data center development, in force on adoption.",
+    "pl": [
+      [
+        "Pitt County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:25.582Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "GA",
+    "w": "Dade County IDA",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting"
+    ],
+    "t": "Dade County development authority rescinds letter of intent for 300 MW data center",
+    "b": "Dade County's Industrial Development Authority voted unanimously to withdraw its letter of intent with Atlanta developer Masterworks, and canceled a Nov. 23 public meeting, after the 300 MW proposal drew opposition.",
+    "s": [
+      [
+        "Local 3 News",
+        "https://www.local3news.com/local-news/update-dade-county-ida-retracts-support-for-data-center-development/article_d92fddbf-afd4-45ef-aafd-1d974ffe0fd6.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "deny",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Local authority withdraws support for one named project.",
+    "pl": [
+      [
+        "Dade County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:26.029Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "SC",
+    "w": "Spartanburg County Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Spartanburg County gives final approval to three data center agreements, Valara 3-2",
+    "b": "Council finalized development agreements for Valara's 457 MW campus (3-2), AIB's 50 MW Tyger River project and a 65 MW Jones Road redevelopment, both unanimous. Three more AIB agreements passed first reading.",
+    "s": [
+      [
+        "WYFF",
+        "https://www.wyff4.com/article/spartanburg-county-council-approves-three-data-center-agreements-advances-three-more/74446495"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Final approval locks in development rights for named data center projects.",
+    "pl": [
+      [
+        "Spartanburg County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:26.347Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "VA",
+    "w": "Botetourt County Circuit Court",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "disclosure",
+      "siting"
+    ],
+    "t": "Judge hears Google data center open-meetings suit, orders more briefs before ruling",
+    "b": "After hearing arguments, the Botetourt judge did not rule on halting the Google campus and gave all parties until Nov. 20 for more briefs; a ruling could come Nov. 23. He questioned the county's disclosure timing.",
+    "s": [
+      [
+        "WSLS",
+        "https://www.wsls.com/news/local/2026/11/17/judge-declines-to-rule-on-google-data-center-lawsuit/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Pending court challenge to one project's agreement.",
+    "pl": [
+      [
+        "Botetourt County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:26.663Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "CA",
+    "w": "Delano City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Delano council rejects mayor's 45-day data center moratorium, orders impact report",
+    "b": "Delano's council did not adopt the mayor's proposed 45-day urgent data center moratorium. It instead directed staff to return within 120 days with a report on impacts of a local ordinance, including mitigation measures that could differ from state policy.",
+    "s": [
+      [
+        "KGET 17 News (via Yahoo)",
+        "https://www.yahoo.com/news/articles/delano-city-council-votes-down-034357953.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed 45-day pause failed; study ordered instead",
+    "pl": [
+      [
+        "Delano",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:28.039Z"
+  },
+  {
     "d": "2026-11-13",
     "j": "PA",
     "w": "Incoming PA Democratic lawmakers",
@@ -1447,6 +1899,35 @@
     ],
     "auto": true,
     "added": "2026-11-16T05:37:40.216Z"
+  },
+  {
+    "d": "2026-11-13",
+    "j": "NC",
+    "w": "Catina Hamm (D)",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Democrat Hamm requests recount in NC Senate seat deciding Republican veto-proof majority",
+    "b": "Hamm trails Republican Sen. Danny Britt by about 225 votes and requested a recount in Scotland, Hoke and Robeson counties. Republicans lose their veto-proof Senate majority either way, which affects whether a governor's veto on data center bills can be overridden. Results unofficial; canvass Nov. 24.",
+    "s": [
+      [
+        "Yahoo News (Carolina Journal syndication)",
+        "https://www.yahoo.com/news/politics/articles/gop-holds-control-nc-senate-152606527.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Legislative margin shapes future state data center policy; no direct lean.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-17T20:43:26.440Z"
   },
   {
     "d": "2026-11-12",
@@ -2030,6 +2511,75 @@
     ],
     "auto": true,
     "added": "2026-11-17T07:13:53.734Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "ME",
+    "w": "Gorham town officials",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Gorham extends data center moratorium another 180 days while weighing permanent ban",
+    "b": "As the 2024 pause neared expiry, Gorham officials enacted a second 180-day moratorium on data center construction. The town is also considering a permanent ban. Exact vote date and tally were not reported.",
+    "s": [
+      [
+        "The Maine Wire",
+        "https://www.themainewire.com/2026/11/gorham-officials-extend-data-center-moratorium-for-another-180-days/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "180-day town pause in force, extension of earlier one.",
+    "pl": [
+      [
+        "Gorham",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:24.568Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "UT",
+    "w": "Carbon County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Carbon County, Utah, approves permit for Valar nuclear, gas and data center campus",
+    "b": "Commissioners approved, with one no vote, a conditional use permit for Valar Atomics' Raceway Energy Campus near Price, which includes data centers powered first by gas. Air-quality, building and federal nuclear permits are still needed.",
+    "s": [
+      [
+        "Salt Lake Tribune",
+        "https://www.sltrib.com/news/environment/2026/11/13/carbon-county-approves-permit/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "i",
+    "iw": "Approves one energy and data center campus with conditions; data centers are part of it.",
+    "pl": [
+      [
+        "Carbon County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:27.549Z"
   },
   {
     "d": "2026-11-11",
@@ -12770,6 +13320,40 @@
     ],
     "auto": true,
     "added": "2026-11-13T13:03:18.469Z"
+  },
+  {
+    "d": "2026-11-02",
+    "j": "MA",
+    "w": "Southbridge Town Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Southbridge council unanimously passes one-year data center moratorium",
+    "b": "The council approved a one-year pause on data centers, extendable twice by 180 days. It took effect Nov. 17, 2026.",
+    "s": [
+      [
+        "MassLive via Yahoo News",
+        "https://www.yahoo.com/news/us/articles/central-mass-town-data-center-173324196.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Adopted one-year town pause, extendable.",
+    "pl": [
+      [
+        "Southbridge",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T20:43:24.334Z"
   },
   {
     "d": "2026-11-01",
