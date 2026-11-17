@@ -695,6 +695,41 @@
     "added": "2026-11-09T00:57:03.699Z"
   },
   {
+    "d": "2026-11-18",
+    "j": "MD",
+    "w": "Calvert County Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Calvert County planning panel to hold hearing on countywide data center ban",
+    "b": "Text Amendment 26-31 would remove data centers from the I-1 and I-2 zones and bar them in every district. The commission sent it to hearing Oct. 21 with no opposition; county commissioners hold the final vote later.",
+    "s": [
+      [
+        "Southern Maryland Chronicle",
+        "https://southernmarylandchronicle.com/2026/11/15/calvert-data-center-ban-text-amendment-26-31-nov-18-public-hearing/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed permanent countywide ban awaiting hearing and final vote",
+    "pl": [
+      [
+        "Calvert County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T07:13:53.828Z"
+  },
+  {
     "d": "2026-11-17",
     "j": "VA",
     "w": "Loudoun County",
@@ -1137,6 +1172,110 @@
     ],
     "auto": true,
     "added": "2026-11-16T05:37:40.976Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "US",
+    "w": "U.S. Senate",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Senate votes 70-27 to end debate on permitting bill making data centers pay grid costs",
+    "b": "The Senate cut off debate on a substitute to the bipartisan permitting bill. It would make data centers of any size cover the transmission and grid equipment they require and give FERC 90 days to set a policy. A final vote is expected before Thanksgiving; the House is the obstacle.",
+    "s": [
+      [
+        "HNGN",
+        "https://www.hngn.com/articles/273848/20261116/senate-advances-permitting-bill-70-27-jeffries-opposes-it.htm"
+      ],
+      [
+        "PoliAlert",
+        "https://www.polialert.com/political-news/senate-permitting-bill-data-centers-vote/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Bill would bind all data centers to pay grid costs; still needs House.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-17T07:13:52.707Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "MO",
+    "w": "Springfield City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Springfield council extends data center application pause to February 24, 2027",
+    "b": "Council voted Nov. 16 to extend the city's administrative delay on data center applications, which was due to expire Nov. 17. Separate land-code definitions were not passed; an amended version returns Nov. 30. The tally was not reported.",
+    "s": [
+      [
+        "KY3",
+        "https://www.ky3.com/2026/11/17/springfield-city-council-extends-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "City pause on data center applications extended about three months.",
+    "pl": [
+      [
+        "Springfield",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T07:13:53.278Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "SD",
+    "w": "Rapid City residents",
+    "lv": "local",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Rapid City council takes no action as residents demand data center halt, threaten recalls",
+    "b": "At the Nov. 16 council meeting, opponents urged a moratorium or adoption of the data center ordinance as written and warned of recall petitions. Council did not put a pause on the agenda and gave no new date for either.",
+    "s": [
+      [
+        "SDPB",
+        "https://www.sdpb.org/politics/2026-11-16/tensions-mount-as-residents-urge-rapid-city-council-to-act-on-data-centers"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Public demand for a pause; council did not act.",
+    "pl": [
+      [
+        "Rapid City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T07:13:53.646Z"
   },
   {
     "d": "2026-11-13",
@@ -1858,6 +1997,41 @@
     "added": "2026-11-14T12:44:38.187Z"
   },
   {
+    "d": "2026-11-12",
+    "j": "NJ",
+    "w": "Edison Township Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Edison council tables townwide data center ban for a second time",
+    "b": "Edison's council postponed the hearing and possible adoption of an ordinance banning data centers in all zones, introduced 7-0 on Oct. 14. The ordinance is now under planning board review; the council president said it would not be discussed.",
+    "s": [
+      [
+        "Edison Patch",
+        "https://patch.com/new-jersey/edison-metuchen/edison-council-tables-proposed-data-center-ban"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed permanent townwide ban, delayed and unadopted",
+    "pl": [
+      [
+        "Edison Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T07:13:53.734Z"
+  },
+  {
     "d": "2026-11-11",
     "j": "US",
     "w": "Veterans for Public Lands",
@@ -2019,6 +2193,44 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-13T13:03:25.802Z"
+  },
+  {
+    "d": "2026-11-11",
+    "j": "OR",
+    "w": "Umatilla city and county",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting"
+    ],
+    "t": "Umatilla and its county sue to force DEQ to resume data center permits",
+    "b": "The city and county filed a petition in Umatilla Circuit Court asking a judge to order Oregon's environmental agency to keep processing data center water discharge permits despite the governor's pause, citing millions in lost revenue and stalled investment.",
+    "s": [
+      [
+        "East Oregonian",
+        "https://eastoregonian.com/2026/11/16/umatilla-county-file-petition-over-data-center-permit-suspension/"
+      ]
+    ],
+    "im": 1,
+    "ef": "fast",
+    "fo": 1,
+    "rc": 4,
+    "du": "p",
+    "rl": "d",
+    "iw": "Lawsuit seeks to lift permit pause; filed, not yet ruled",
+    "pl": [
+      [
+        "Umatilla",
+        "city"
+      ],
+      [
+        "Umatilla County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T07:13:54.907Z"
   },
   {
     "d": "2026-11-10",
@@ -3666,6 +3878,79 @@
     "added": "2026-11-16T21:52:37.358Z"
   },
   {
+    "d": "2026-11-10",
+    "j": "TX",
+    "w": "SpaceX / Starbase",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "tax",
+      "moratorium"
+    ],
+    "t": "SpaceX plans $24B data center on land removed from Brownsville limits, sidestepping its pause",
+    "b": "SpaceX plans a gas-powered data center on 444 acres Brownsville released at its request, outside the city's new 90-day pause. Starbase has scheduled a December hearing on tax breaks for the project.",
+    "s": [
+      [
+        "Texas Tribune",
+        "https://www.texastribune.org/2026/11/10/texas-spacex-data-center-power-plant/"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Project proposal with tax-break hearing pending, outside local pause",
+    "pl": [
+      [
+        "Starbase",
+        "city"
+      ],
+      [
+        "Brownsville",
+        "city"
+      ],
+      [
+        "Cameron County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T07:13:54.251Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "NC",
+    "w": "NC State Board of Elections",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "NC Senate control hinges on 228-vote race; recount deadline Nov. 17, canvass Nov. 24",
+    "b": "Democrats gained four Senate seats to hold 24 of 50. Republican Danny Britt leads Catina Hamm by 228 votes; a Britt win keeps a 26-24 GOP majority, a Hamm win makes 25-25 with the Democratic lieutenant governor breaking ties. Counts are unofficial; the article does not mention data centers.",
+    "s": [
+      [
+        "WRAL",
+        "https://www.wral.com/news/nccapitol/nc-senate-control-at-stake-as-two-counties-review-hundreds-of-ballots-tuesday-nov-2026/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Senate balance affects NC data center bills such as SB 730; no direct lean",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-17T07:13:54.439Z"
+  },
+  {
     "d": "2026-11-09",
     "j": "US",
     "w": "Senate leaders",
@@ -5304,6 +5589,70 @@
     ],
     "auto": true,
     "added": "2026-11-16T21:52:36.225Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "PA",
+    "w": "Hazle Township supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Hazle Township residents press for tougher limits on data center overlay ordinance",
+    "b": "At a packed Nov. 9 meeting, residents objected to a draft zoning amendment creating an overlay district without special exceptions and cutting the residential setback to 500 feet. Supervisors have until Dec. 7 to finish the amendment.",
+    "s": [
+      [
+        "FOX56",
+        "https://fox56.com/news/local/hazle-township-residents-press-for-tougher-data-center-zoning-limits-on-revised-ordinance"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Draft eases siting in an overlay district; residents push back",
+    "pl": [
+      [
+        "Hazle Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T07:13:54.114Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "WA",
+    "w": "Washington Senate Democrats",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Washington Democrats win House supermajority but fall short in Senate",
+    "b": "Democrats are on track for a two-thirds House, first since 1949, but would have needed two more Senate flips for a supermajority. Counts were unofficial. A data center law in 2027 can pass the House alone but needs Republican Senate votes to override a veto.",
+    "s": [
+      [
+        "KUOW",
+        "https://www.kuow.org/elections/2026-11-09/washington-dems-nab-supermajority-in-state-house"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Chamber balance shapes what 2027 data center bills can pass; no direct lean",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-17T07:13:55.028Z"
   },
   {
     "d": "2026-11-08",
@@ -7204,6 +7553,38 @@
     ],
     "auto": true,
     "added": "2026-11-16T05:37:40.326Z"
+  },
+  {
+    "d": "2026-11-04",
+    "j": "PA",
+    "w": "Chester County House Democrats",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "water",
+      "siting",
+      "disclosure"
+    ],
+    "t": "House Bill 2888 would set power, water and jobs rules for hyperscale data centers",
+    "b": "Introduced Nov. 4 and sent to the House Energy Committee, the bill would require operators to secure added power, disclose power and water use, and file community-benefit plans with $250 million investment. The session ends Nov. 30.",
+    "s": [
+      [
+        "MyChesCo",
+        "https://www.mychesco.com/a/news/government/chester-county-lawmakers-push-new-data-center-restrictions/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding power, water, reporting and penalty rules, only introduced",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-17T07:13:53.898Z"
   },
   {
     "d": "2026-11-03",
@@ -11972,6 +12353,41 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-16T21:52:35.774Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "NV",
+    "w": "Reno voters",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Kate Marshall, a data center skeptic, beats Kathleen Taylor for Reno mayor",
+    "b": "Marshall won comfortably in unofficial returns after ads called Taylor, the lone vote against Reno's data center moratorium, the 'Data Center Queen.' Marshall says data centers do not belong in the city. The moratorium runs to Aug. 31, 2027.",
+    "s": [
+      [
+        "The Nevada Independent",
+        "https://thenevadaindependent.com/article/did-anger-over-data-centers-lead-to-nevadas-blue-tsunami"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Winner opposes data centers in city; talk and campaign, not yet policy",
+    "pl": [
+      [
+        "Reno",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-17T07:13:54.555Z"
   },
   {
     "d": "2026-11-02",
