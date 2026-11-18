@@ -1115,6 +1115,382 @@
     "added": "2026-11-17T20:43:25.225Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "US",
+    "w": "McGovern, Pingree, Lawrence",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "House Democrats call for national data center construction pause until AI is regulated",
+    "b": "Reps. McGovern and Pingree and Rep.-elect Lawrence urged a national moratorium on data center construction so Congress can pass AI rules. Reporting says it is unclear the plan has enough support in the next Congress.",
+    "s": [
+      [
+        "WYMT",
+        "https://www.wymt.com/2026/11/18/lawmakers-call-national-data-center-construction-pause/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 6,
+    "du": "m",
+    "rl": "d",
+    "iw": "Call for a nationwide pause; talk only, no bill text",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-18T06:39:17.912Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "ND",
+    "w": "Grand Forks County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Grand Forks County weighs data center pause until after 2027 legislative session",
+    "b": "The administrator plans to bring a temporary moratorium to the commission's next agenda, lasting to July 1, 2027, so the county can wait for state lawmakers before writing an ordinance. No developer has committed to a project.",
+    "s": [
+      [
+        "Yahoo News (Grand Forks Herald report)",
+        "https://www.yahoo.com/news/politics/articles/potential-data-center-moratorium-table-013300157.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed county pause, only discussed so far",
+    "pl": [
+      [
+        "Grand Forks County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:19.561Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "MA",
+    "w": "Sutton residents",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Sutton residents petition for special town meeting on data center bylaw",
+    "b": "Residents filed a petition with 347 signatures, 200 needed, seeking a special town meeting on a zoning bylaw defining data centers and banning them. Clerk must certify it. It would need a two-thirds vote. It targets the proposed Kraft-linked campus.",
+    "s": [
+      [
+        "Boston Globe",
+        "https://www.bostonglobe.com/2026/11/17/business/sutton-dedham-data-center-moratorium-ban/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed permanent bylaw ban, petitioned, not yet voted",
+    "pl": [
+      [
+        "Sutton",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:20.059Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "TX",
+    "w": "Tarrant County Commissioners Court",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "tax"
+    ],
+    "t": "Tarrant County commissioners unanimously move to bar data centers from county tax abatements",
+    "b": "Commissioners voted 4-0 on a resolution by Matt Krause directing staff to write abatement guidelines that disqualify data centers, large batteries and power plants. Future projects only; guidelines still to be drafted.",
+    "s": [
+      [
+        "Fort Worth Report",
+        "https://fortworthreport.org/2026/11/17/tarrant-county-bans-tax-abatements-for-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 2,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Removes county tax breaks for future data centers; guidelines not yet written",
+    "pl": [
+      [
+        "Tarrant County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:20.856Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "VA",
+    "w": "Loudoun County Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Loudoun supervisors approve 12-month pause on data center applications, 7-1-1",
+    "b": "Loudoun's board voted 7-1-1 to stop acting on legislative data center and substation applications for 12 months, retroactive to Sept. 15, while standards are rewritten. Tax-district projects, grid-reliability substations and applications nearing review deadlines are exempt.",
+    "s": [
+      [
+        "Loudoun Now",
+        "https://www.loudounnow.com/news/loudoun-supervisors-approve-12-month-data-center-pause/article_595ee60a-6c09-427e-ac37-af7bde569964.html"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Binding 12-month county pause on legislative data center applications, with exemptions",
+    "pl": [
+      [
+        "Loudoun County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:20.926Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "GA",
+    "w": "Effingham County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Effingham approves OpenAI Project Camellia site plan, tables moratorium to January",
+    "b": "Commissioners approved the site plan for OpenAI's Project Camellia and held a first reading making data centers a conditional use, with a December second reading. A moratorium that looked likely to pass was tabled to January for city coordination; Helmly alone dissented.",
+    "s": [
+      [
+        "The Current",
+        "https://thecurrentga.org/2026/11/17/openai-site-plan-approved-for-effingham/"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Approves one specific campus; moratorium delayed",
+    "pl": [
+      [
+        "Effingham County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:21.198Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "VA",
+    "w": "Spotsylvania County Board",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting"
+    ],
+    "t": "Spotsylvania board advances 550-acre Crossroads data center permit 4-3 over opposition",
+    "b": "Spotsylvania supervisors voted 4-3 to advance a special use permit for the 550-acre Crossroads Technology Campus in Lee Hill after residents testified against it. The planning commission had backed it 4-2 in September. Final status of the permit is unclear.",
+    "s": [
+      [
+        "WJLA",
+        "https://wjla.com/news/local/spotsylvania-county-board-approves-550-acre-data-center-site-despite-fierce-opposition"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 2,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Approves one specific project's permit, though final status unclear",
+    "pl": [
+      [
+        "Spotsylvania County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:31.551Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "MS",
+    "w": "Jackson City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Jackson council rejects repeal of data center moratorium 5-2 and censures sponsor",
+    "b": "After a chaotic Nov. 3 meeting, Jackson's council voted 5-2 against Councilman Kenneth Stokes's ordinance to lift the data center ban, keeping the pause in place until April 4. Residents cited a chemical spill at a Southaven data center.",
+    "s": [
+      [
+        "WLBT",
+        "https://www.wlbt.com/2026/11/18/council-rejects-ordinance-lifting-jacksons-data-center-ban/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Council keeps a binding city pause through April",
+    "pl": [
+      [
+        "Jackson",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:31.593Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "CA",
+    "w": "San Francisco Board of Supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "San Francisco supervisors unanimously extend data center moratorium to September 2027",
+    "b": "Supervisors voted unanimously to extend the citywide pause by about 10 months, citing grid capacity near its transmission limit and air quality in the southeast. No new data center applications are pending. The mayor can sign or veto; sponsor Walton floated a permanent ban.",
+    "s": [
+      [
+        "San Francisco Standard",
+        "https://sfstandard.com/2026/11/17/data-center-moratorium-september-2027/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 2,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "City pause adopted, awaiting mayor's signature; 10 months",
+    "pl": [
+      [
+        "San Francisco",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:31.888Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "OR",
+    "w": "Salem City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Salem council votes 6-2 to read city code as excluding AI and hyperscale data centers",
+    "b": "Councilors interpreted existing zoning as not covering AI or hyperscale data centers, which could complicate a planned campus at Mill Creek Corporate Center. Business and labor groups opposed the move, as the earlier Nov. 9 item described.",
+    "s": [
+      [
+        "Salem Reporter",
+        "https://www.salemreporter.com/2026/11/17/salem-councilors-interpret-city-code-to-exclude-ai-data-centers/"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Code interpretation bars hyperscale use in the city; no end date",
+    "pl": [
+      [
+        "Salem",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:32.076Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "CA",
+    "w": "San Jose City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "San Jose council unanimously pauses data center land-use approvals until new standards take effect",
+    "b": "The council paused approvals for data centers and other large energy-use projects, covering about 12 projects under review. New standards go to council Dec. 8. Mayor Mahan, who had opposed a moratorium, backed the pause as a bridge to the rules.",
+    "s": [
+      [
+        "San José Spotlight",
+        "https://sanjosespotlight.com/san-jose-enacts-temporary-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "City pause in force until standards adopted, likely a few months",
+    "pl": [
+      [
+        "San Jose",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:32.155Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -1728,6 +2104,106 @@
     ],
     "auto": true,
     "added": "2026-11-17T20:43:28.039Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "IL",
+    "w": "Champaign County task force",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water",
+      "moratorium"
+    ],
+    "t": "Champaign County task force leans toward 10 MW threshold, prime-farmland and aquifer limits for data centers",
+    "b": "The county's data center task force straw-polled a 10 MW threshold, directed drafting of a prime-farmland construction ban and limits on Mahomet Aquifer cooling water, and weighed 100% renewable supply. Draft is not final; moratorium expires mid-April and an extension was debated.",
+    "s": [
+      [
+        "SJO Daily",
+        "https://sjodaily.com/2026/11/18/data-center-task-force-leans-toward-lower-threshold-farmland-and-aquifer-limits-as-county-ordinance-nears-the-finish-line/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting, water and energy conditions, still a draft",
+    "pl": [
+      [
+        "Champaign County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:18.924Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "IA",
+    "w": "Estherville City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Estherville council passes first reading of data center ordinance 5-1, sends noise limits back",
+    "b": "After a hearing of about 70 people, the council approved first reading 5-1 with one abstention, then returned the ordinance to planning commissioners to amend decibel limits. Further readings follow Nov. 30; PathOne's 25 MW project awaits.",
+    "s": [
+      [
+        "Yahoo News (Estherville hearing report)",
+        "https://www.yahoo.com/news/articles/estherville-city-council-holds-public-040910492.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Local zoning rules with noise limits, still before the council",
+    "pl": [
+      [
+        "Estherville",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:19.292Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "NC",
+    "w": "NC Utilities Commission",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "cost"
+    ],
+    "t": "NC regulators approve Duke data center tariff with 10 to 15 year contracts",
+    "b": "The Utilities Commission approved Duke rate settlements and a data center schedule for sites of 50 MW or more: contracts of at least 10 years (15 above 100 MW), payment on at least 75% of contracted demand, upfront facility payments, security for transmission upgrades and exit charges.",
+    "s": [
+      [
+        "WRAL",
+        "https://www.wral.com/news/state/nc-approves-duke-energy-rate-hikes-new-rules-for-data-centers-november-2026/"
+      ]
+    ],
+    "im": -2,
+    "ef": "cost",
+    "fo": 3,
+    "rc": 4,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding utility tariff shifting data center grid costs onto developers",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-18T06:39:31.848Z"
   },
   {
     "d": "2026-11-13",
@@ -2580,6 +3056,41 @@
     ],
     "auto": true,
     "added": "2026-11-17T20:43:27.549Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "MO",
+    "w": "Kansas City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "denied",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Kansas City council unanimously rejects 20-story downtown data center at 934 Central",
+    "b": "Council members voted against demolishing a historic building for the data center, after the plan commission's earlier denial. Several members said they would support studying how future data centers can benefit the community.",
+    "s": [
+      [
+        "KSHB",
+        "https://www.kshb.com/news/local-news/missouri/kansas-city/kansas-city-denies-downtown-data-center-as-sen-hawley-calls-for-nationwide-moratorium"
+      ]
+    ],
+    "im": -1,
+    "ef": "deny",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Final council denial of one named project",
+    "pl": [
+      [
+        "Kansas City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-18T06:39:19.773Z"
   },
   {
     "d": "2026-11-11",
@@ -4499,6 +5010,37 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-17T07:13:54.439Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "VA",
+    "w": "Spanberger, legislative Democrats",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "disclosure",
+      "water",
+      "siting"
+    ],
+    "t": "Virginia Democrats' 2027 agenda targets data center NDAs and cooling water rules",
+    "b": "Gov. Spanberger and legislative Democrats previewed a 2027 session agenda that would ban nondisclosure agreements keeping local officials from discussing data center projects and codify the Cooling Water Scarcity Act. The session starts Jan. 13.",
+    "s": [
+      [
+        "WJLA",
+        "https://wjla.com/news/local/virginia-democrats-lay-out-2027-agenda-targeting-affordability-and-data-centers-health-care-housing-costs-governor-abigail-spanberger-november-2026"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed statewide disclosure and water rules for 2027 session",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-18T06:39:31.823Z"
   },
   {
     "d": "2026-11-09",
