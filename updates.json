@@ -1065,6 +1065,75 @@
     "added": "2026-11-19T06:41:04.087Z"
   },
   {
+    "d": "2026-11-18",
+    "j": "US",
+    "w": "Senate permitting bill authors",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Permitting bill authors propose exempting communications-focused data centers from grid-upgrade payments",
+    "b": "Senators Whitehouse, Heinrich, Capito and Lee proposed a carve-out from the bill's requirement that data centers pay for grid upgrades, covering facilities mainly providing internet, cable or telecom service. Over a dozen environmental groups urged rejection. No vote had been held at publication.",
+    "s": [
+      [
+        "Energy Connects",
+        "https://www.energyconnects.com/news/renewables/2026/november/senate-permitting-bill-authors-seek-data-center-exemption/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Narrows a proposed national grid-cost requirement; still a pending amendment",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-19T20:18:41.784Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "NY",
+    "w": "Lansing Town Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Lansing board votes 3-2 to ban data centers, but landowner protest may block it",
+    "b": "The Tompkins County town board backed a zoning change prohibiting data centers, aimed at TeraWulf's proposed Cayuga Lake project. A landowner protest petition would raise the bar to a three-fourths vote, which 3-2 misses. The town is still validating the petition.",
+    "s": [
+      [
+        "Spectrum News",
+        "https://spectrumlocalnews.com/nys/central-ny/news/2026/11/18/tompkins-county-data-center-proposal-opposition"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Ban vote passed simple majority but is contested; not yet effective",
+    "pl": [
+      [
+        "Lansing",
+        "township"
+      ],
+      [
+        "Tompkins County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T20:18:42.271Z"
+  },
+  {
     "d": "2026-11-17",
     "j": "VA",
     "w": "Loudoun County",
@@ -2388,6 +2457,76 @@
     "added": "2026-11-19T06:41:03.209Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "AL",
+    "w": "Irondale City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Irondale, Alabama adopts data center rules unanimously instead of a moratorium",
+    "b": "The council passed a data center ordinance on Nov. 17 covering environmental safeguards, noise limits and financial accountability. No project has been proposed in the city. It chose rules over the pauses adopted by other Alabama towns.",
+    "s": [
+      [
+        "WBRC",
+        "https://www.wbrc.com/2026/11/18/irondale-city-council-sets-rules-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding permanent siting, noise and water rules for one city",
+    "pl": [
+      [
+        "Irondale",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T20:18:42.936Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "UT",
+    "w": "Salt Lake City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Salt Lake City council pauses new data centers for 180 days after Qlevr permit filing",
+    "b": "The council voted 6-0 to remove data centers as an allowed use in manufacturing and business park zones for 180 days, the state-law maximum, and told staff to draft rules on energy, water, noise, heat and lighting. A $105 million Northpoint project prompted it.",
+    "s": [
+      [
+        "Salt Lake Tribune",
+        "https://www.sltrib.com/news/2026/11/19/salt-lake-city-bans-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Binding 180-day city pause on data center use in two zones",
+    "pl": [
+      [
+        "Salt Lake City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T20:18:43.248Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -3233,6 +3372,103 @@
     ],
     "auto": true,
     "added": "2026-11-19T06:40:59.823Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "TX",
+    "w": "TCEQ",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "permitting",
+      "siting"
+    ],
+    "t": "Texas issues air permit for SpaceX's 750 MW gas plant at Starbase data center campus",
+    "b": "TCEQ authorized 35 gas turbines, off the grid, with a nitrogen oxide cap just under the threshold that triggers a public hearing. Environmental groups say construction began without a permit. It is the first data center air permit after TCEQ resumed reviews.",
+    "s": [
+      [
+        "Politico via Yahoo News",
+        "https://www.yahoo.com/news/politics/articles/texas-issues-air-permit-massive-223921553.html"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Final air permit approves one specific data center campus's power plant.",
+    "pl": [
+      [
+        "Cameron County",
+        "county"
+      ],
+      [
+        "Starbase",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T20:18:42.599Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "NC",
+    "w": "NC Utilities Commission",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "cost"
+    ],
+    "t": "NC regulators approve Duke's first data center rate class with long contracts and stranded-cost collateral",
+    "b": "In Duke's rate case order, the commission set a large-load tariff for data centers over 50 MW: 10 to 15 year minimum contracts, early-exit fees, and collateral for a gas plant's remaining life. Commissioner van der Vaart dissented, saying it doesn't protect other customers enough.",
+    "s": [
+      [
+        "WUNC",
+        "https://www.wunc.org/2026-11-18/nc-regulators-approve-new-rates-for-data-centers-in-rate-hike-plan"
+      ]
+    ],
+    "im": -2,
+    "ef": "cost",
+    "fo": 3,
+    "rc": 4,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding tariff adds cost and long commitments for large data centers",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-19T20:18:43.120Z"
+  },
+  {
+    "d": "2026-11-15",
+    "j": "US",
+    "w": "Rep. Maxine Dexter",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Dexter files bill banning data centers on Interior and Forest Service land",
+    "b": "Oregon Rep. Dexter filed the Protecting Our Public Lands from Data Centers Act in mid-November. It would bar data center construction on land managed by Interior and the Forest Service. Separately, Sen. Cortez Masto says she is drafting public-land data center legislation.",
+    "s": [
+      [
+        "National Memo",
+        "https://www.nationalmemo.com/ai-data-centers-on-public-land"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed permanent federal-land ban; only introduced",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-19T20:18:42.129Z"
   },
   {
     "d": "2026-11-13",
