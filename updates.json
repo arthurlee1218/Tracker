@@ -804,6 +804,267 @@
     "added": "2026-11-17T07:13:53.828Z"
   },
   {
+    "d": "2026-11-18",
+    "j": "US",
+    "w": "U.S. Senate",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Senate passes 65-31 permitting bill making large data centers pay grid costs; House next",
+    "b": "The 494-page bipartisan bill directs regulators to make large data centers cover their share of existing grid costs and the full cost of upgrades to connect them. It returns to the House, where leaders have signaled resistance, before the lame-duck session ends.",
+    "s": [
+      [
+        "Regional Media News",
+        "https://www.regionalmedianews.com/news/national/energy/senate-passes-energy-permitting-overhaul-sends-to-house/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Passed one chamber; would add grid cost duties for data centers nationwide",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-19T06:40:58.864Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "US",
+    "w": "House Energy chair Guthrie",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "House Energy chair Guthrie opposes federal data center moratorium, favors local choice",
+    "b": "Rep. Brett Guthrie said Washington should not mandate a pause and communities should decide for themselves. He wants the Ratepayer Protection Act enacted instead, putting him against Hawley, Sanders and Ocasio-Cortez on a national moratorium.",
+    "s": [
+      [
+        "Washington Examiner",
+        "https://www.washingtonexaminer.com/daily-on-energy/4807992/daily-on-energy-top-house-republican-stands-firm-data-center-bans/"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Statement against a national pause; leans toward status quo for developers",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-19T06:40:59.284Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "OH",
+    "w": "Pierce Township trustees",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Pierce Township trustees ask zoning panel to draft rules prohibiting hyperscale data centers",
+    "b": "Trustees voted to send a motion to the zoning commission to draft code changes that would prohibit data centers, aimed at hyperscale sites. A 300 MW proposal near the Beckjord plant is pending; a moratorium already runs to May 31, 2027.",
+    "s": [
+      [
+        "WCPO",
+        "https://www.wcpo.com/news/local-news/pierce-township-trustees-decide-to-ask-the-zoning-commission-to-look-into-code-changes-that-would-prohibit-large-scale-data-centers"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposal to draft a prohibition; not yet adopted.",
+    "pl": [
+      [
+        "Pierce Township",
+        "township"
+      ],
+      [
+        "Clermont County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T06:40:59.465Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "MS",
+    "w": "Gov. Tate Reeves",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Mississippi governor defends data center buildout, blames foreign campaign for public backlash",
+    "b": "Reeves said Mississippi has 38 data center projects, 17 operating, and backed continued buildout. He called water and noise concerns legitimate, suggested industrial-park siting, and claimed foreign adversaries are driving opposition on social media, a claim the article says lacks evidence.",
+    "s": [
+      [
+        "Fortune",
+        "https://fortune.com/2026/11/18/mississippi-governor-data-center-messaging-midterm-elections/"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Governor's talk favors buildout with light siting nods",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-19T06:41:00.872Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "UT",
+    "w": "Utah interim committee, Cutler and Wilson",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "tax",
+      "permitting",
+      "disclosure"
+    ],
+    "t": "Utah Republican lawmakers pitch sweeping data center law for 2027 session, without a moratorium",
+    "b": "Rep. Paul Cutler and Sen. Chris Wilson told an interim committee they will draft rules on approvals, environmental protections, local say and reworked tax incentives. Bill text is not public; they expect passage in the session starting Jan. 19. Cox is willing to help.",
+    "s": [
+      [
+        "KUER",
+        "https://www.kuer.org/politics-government/2026-11-18/new-utah-data-center-law-interim-committee-2027-session"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed statewide siting, environmental and incentive rules; not yet drafted",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-19T06:41:01.820Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "AZ",
+    "w": "SSVEC members, Cochise County residents",
+    "lv": "local",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "cost",
+      "siting",
+      "disclosure"
+    ],
+    "t": "Co-op members voice opposition to SpaceX data center at SSVEC board meeting",
+    "b": "At a 45-minute comment session, members of Sulphur Springs Valley Electric Cooperative raised rate risk, secrecy, wildfire and wildlife concerns about SpaceX's planned campus near Willcox. The board took no vote; the CEO said the co-op has not endorsed the project. Zoning hearing is Dec. 9.",
+    "s": [
+      [
+        "Tucson Daily Brief",
+        "https://tucsondailybrief.com/news-reports/ssvec-2026-11-18.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "deny",
+    "fo": 0,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Protest against one specific project; no binding action",
+    "pl": [
+      [
+        "Cochise County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T06:41:02.283Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "NM",
+    "w": "Oracle, Doña Ana County",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting",
+      "tax"
+    ],
+    "t": "Report: Oracle filed force majeure notice on Project Jupiter lease; air permit still pending",
+    "b": "Oracle told the county in September it may defer obligations such as rent because of unforeseen delays, including the state air permit needed for Bloom Energy's power system. Commissioners have separately warned Oracle and Stack of possible bond-agreement breaches over missing jobs data.",
+    "s": [
+      [
+        "KKOB",
+        "https://www.newsradiokkob.com/2026/11/18/project-jupiter-faces-delays-and-contract-dispute-in-southern-new-mexico/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Project delay and contract dispute; no rule change or approval",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T06:41:02.515Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "AK",
+    "w": "Alaska Legislature coalitions",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Alaska Senate coalition drops to 11-9 as Republicans leave before governor-elect takes office",
+    "b": "Unofficial final counts show the bipartisan coalitions keep control, but three Republicans left the Senate majority, leaving a thin margin. Five GOP incumbents lost seats. Governor-elect Kreiss-Tomkins backs a data center moratorium, so a narrow majority affects any such bill. Certification is Nov. 25.",
+    "s": [
+      [
+        "Alaska Public Media",
+        "https://alaskapublic.org/news/politics/elections/2026-11-18/five-republicans-lose-seats-in-legislature-as-election-officials-finish-vote-counting-and-tabulation"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Legislative margin shapes odds for governor-elect's pledged moratorium; source doesn't mention data centers",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-19T06:41:04.087Z"
+  },
+  {
     "d": "2026-11-17",
     "j": "VA",
     "w": "Loudoun County",
@@ -1949,6 +2210,184 @@
     "added": "2026-11-18T20:19:49.568Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "IA",
+    "w": "Kossuth County supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Kossuth County, Iowa, supervisors back six-month data center moratorium 3-2",
+    "b": "Supervisors voted 3-2 to accept the planning commission's recommendation for a six-month pause on data center projects. Staff were told to draft the moratorium language and begin work on a data center ordinance.",
+    "s": [
+      [
+        "KLGA/KLGZ Algona Radio",
+        "https://algonaradio.com/2026/11/18/supervisors-accept-recommendation-for-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 2,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Six-month county pause, language still to be drafted, so adopted not in force.",
+    "pl": [
+      [
+        "Kossuth County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T06:40:59.641Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "TX",
+    "w": "Cameron County Commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "denied",
+    "ty": [
+      "tax"
+    ],
+    "t": "Cameron County commissioners reject advancing SpaceX data center tax break",
+    "b": "Only the county judge and one commissioner voted to move SpaceX's tax abatement request for a $24 billion data center and gas plant forward. A commissioner said the request is dead because no second meeting will be held.",
+    "s": [
+      [
+        "KRGV",
+        "https://www.krgv.com/news/cameron-county-commissioners-reject-spacex-data-center-tax-break-request/"
+      ]
+    ],
+    "im": -1,
+    "ef": "deny",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Final rejection of one project's tax break request",
+    "pl": [
+      [
+        "Cameron County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T06:41:00.373Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "KY",
+    "w": "Louisville Metro Council committee",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Louisville council committee tables vote on permanent data center rules to Dec. 8",
+    "b": "The Planning and Zoning Committee heard local experts but postponed its scheduled vote on land development code amendments, saying the public needs more review time. The committee is now set to vote Dec. 8, while the six-month pause on new applications continues.",
+    "s": [
+      [
+        "WLKY",
+        "https://www.wlky.com/article/louisville-metro-council-discusses-data-center-regulations/74458127"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting rules still in committee, vote delayed",
+    "pl": [
+      [
+        "Louisville",
+        "city"
+      ],
+      [
+        "Jefferson County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T06:41:00.693Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "CA",
+    "w": "Moreno Valley City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Moreno Valley adopts 45-day urgency pause on data center approvals",
+    "b": "The council halted data center approvals for an initial 45 days while it weighs a permanent ban on large AI facilities. The city attorney expects the pause to need extension, and a permanent ban must first go through the planning commission.",
+    "s": [
+      [
+        "KVCR News",
+        "https://www.kvcrnews.org/local-news/2026-11-18/moreno-valley-riverside-take-steps-to-restrict-data-center-development-as-opposition-swells"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Citywide pause, in force, six weeks, aimed at data centers",
+    "pl": [
+      [
+        "Moreno Valley",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T06:41:02.698Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "CA",
+    "w": "San Mateo County supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "San Mateo County supervisors unanimously impose 45-day data center ban in unincorporated areas",
+    "b": "An urgency ordinance bars siting, construction or operation of new or expanded data centers in every unincorporated zoning district for 45 days. It took effect immediately and can be extended up to a year, then another year, while staff study conditions.",
+    "s": [
+      [
+        "Palo Alto Daily Post",
+        "https://padailypost.com/2026/11/18/san-mateo-county-supervisors-impose-a-temporary-moratorium-on-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "County urgency pause in force, 45 days, extendable",
+    "pl": [
+      [
+        "San Mateo County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T06:41:03.209Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -2761,6 +3200,41 @@
     "added": "2026-11-18T20:19:48.981Z"
   },
   {
+    "d": "2026-11-16",
+    "j": "MA",
+    "w": "Hudson Special Town Meeting",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Hudson, Massachusetts town meeting approves data center moratorium through 2027",
+    "b": "Voters at a Nov. 16 special town meeting passed Article 7, pausing data center development until Dec. 31, 2027 while the town studies water, power and noise. Server rooms and institutional uses are exempt. It also covers the former Intel site on Reed Road.",
+    "s": [
+      [
+        "MetroWest Daily News (via Yahoo)",
+        "https://www.yahoo.com/news/articles/hudson-voters-approve-one-moratorium-095905616.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Binding town-wide pause of about 13 months on data centers",
+    "pl": [
+      [
+        "Hudson",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T06:40:59.823Z"
+  },
+  {
     "d": "2026-11-13",
     "j": "PA",
     "w": "Incoming PA Democratic lawmakers",
@@ -3017,6 +3491,35 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-18T20:19:44.357Z"
+  },
+  {
+    "d": "2026-11-13",
+    "j": "TX",
+    "w": "TCEQ",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "permitting"
+    ],
+    "t": "TCEQ resumes data center environmental permit reviews, ending Abbott's pause",
+    "b": "After Abbott's office said ERCOT had finished collecting community-impact information, TCEQ returned to normal review of air and stormwater permits for data centers. Public Citizen criticized the lack of disclosed findings. ERCOT reports to the PUC Dec. 10.",
+    "s": [
+      [
+        "Texas Tribune",
+        "https://www.texastribune.org/2026/11/17/tceq-environmental-data-center-permits-resume/"
+      ]
+    ],
+    "im": 2,
+    "ef": "fast",
+    "fo": 3,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Ends state permit freeze; permits flow again",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-19T06:41:00.598Z"
   },
   {
     "d": "2026-11-12",
@@ -3739,6 +4242,37 @@
     ],
     "auto": true,
     "added": "2026-11-18T20:19:43.049Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "AZ",
+    "w": "Mayes, Hobbs aides, Senate leaders",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "cost",
+      "water"
+    ],
+    "t": "Mayes and Democratic leaders say statewide data center moratorium will be taken up in January",
+    "b": "Mayes, Hobbs's office and incoming Senate President Sundareshan said the issue returns in the 2027 session. Hobbs wants the tax-break freeze made permanent plus guardrails, not a moratorium. Republican Kavanagh says a pause would change little with 100-plus projects already in the pipeline.",
+    "s": [
+      [
+        "Newsline Local (Arizona Mirror)",
+        "https://www.newslinelocal.com/2026/11/13/arizona-democrats-call-for-data-center-moratorium-in-2027/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Pledge to pursue a statewide pause; governor opposes, so only talk",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-19T06:41:01.006Z"
   },
   {
     "d": "2026-11-11",
@@ -8817,6 +9351,40 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-16T05:37:39.109Z"
+  },
+  {
+    "d": "2026-11-05",
+    "j": "NJ",
+    "w": "Lawrence Township Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Lawrence Township, NJ tables proposed townwide data center ban pending planning board review",
+    "b": "Council put off its scheduled Nov. 5 final vote on a ban after the planning board declined to endorse it and asked for more research. Board members weighed a ban against strict standards with data centers as a conditional use.",
+    "s": [
+      [
+        "Princeton Info",
+        "https://princetoninfo.com/business/township-council-puts-ordinance-banning-data-centers-on-hold-pending-further-review/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed permanent ban, delayed and not adopted",
+    "pl": [
+      [
+        "Lawrence Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-19T06:41:00.172Z"
   },
   {
     "d": "2026-11-04",
