@@ -670,6 +670,350 @@
     "added": "2026-11-17T20:43:23.178Z"
   },
   {
+    "d": "2026-11-19",
+    "j": "US",
+    "w": "U.S. Senate",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Senate passes permitting bill 62-33; data centers would pay grid costs, House next",
+    "b": "The Senate approved the bipartisan permitting package, which directs FERC to make data centers pay for grid upgrades they need. Republicans Hawley and Rounds and Democrat Padilla voted no. A public-lands data center ban amendment got no vote. House action is uncertain.",
+    "s": [
+      [
+        "KSL (AP)",
+        "https://www.ksl.com/article/51647051/senate-approves-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay-for-energy-costs"
+      ],
+      [
+        "Inside Climate News",
+        "https://insideclimatenews.org/news/19112026/bipartisan-permitting-bill-data-center-impact/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Passed one chamber; would require data centers to pay grid costs",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-20T06:28:23.318Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "MN",
+    "w": "Minneapolis Mayor Frey",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Minneapolis mayor vetoes council's data center ordinance, calling it a de facto ban",
+    "b": "Mayor Jacob Frey vetoed the 7-6 ordinance that confines new data centers to two downtown districts and needs council approval for each. He says he would sign the staff framework. Nine votes are needed to override; the moratorium expires Nov. 21.",
+    "s": [
+      [
+        "MPR News",
+        "https://www.mprnews.org/story/2026/11/19/minneapolis-mayor-jacob-frey-vetoes-data-center-ordinance-denial-of-police-chief-nominee"
+      ],
+      [
+        "MPR News",
+        "https://www.mprnews.org/story/2026/11/13/minneapolis-city-council-votes-to-require-casebycase-approval-of-new-data-centers"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Veto blocks binding siting limits; council needs nine votes to override",
+    "pl": [
+      [
+        "Minneapolis",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T06:28:23.676Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "MI",
+    "w": "University of Michigan Regents",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting"
+    ],
+    "t": "U-M Regents approve Ypsilanti Township computing center over township's objections; suit threatened",
+    "b": "Regents voted 7-1 for a research computing center that opponents call a data center, with Los Alamos using 90% of capacity. The township attorney says officials will pursue all legal means to stop it.",
+    "s": [
+      [
+        "Michigan Public",
+        "https://www.michiganpublic.org/education/2026-11-19/u-m-regents-approve-research-computation-center-in-ypsilanti-township-which-says-it-will-sue"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 2,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Approves one specific project, though a lawsuit could block it",
+    "pl": [
+      [
+        "Ypsilanti Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T06:28:24.483Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "NE",
+    "w": "Nebraska Data Center Task Force",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water",
+      "cost"
+    ],
+    "t": "Nebraska task force finishes work, urges keeping local control and current water rules",
+    "b": "Gov. Pillen's data center task force held its final meeting and issued four recommendations: keep the water framework and reporting rules, protect public-power ratepayers, preserve local land-use control, and clarify authority for community benefit agreements. Pillen called approval a local decision.",
+    "s": [
+      [
+        "KLKN",
+        "https://www.klkntv.com/pillen-announces-data-center-task-force-final-findings-recommendations/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Non-binding recommendations; favor ratepayer protection and local control without new bans",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-20T06:28:25.223Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "MO",
+    "w": "Mansfield residents",
+    "lv": "local",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Hundreds pack Mansfield, Missouri, meeting on proposed data center, demand moratorium or vote",
+    "b": "Residents raised water, noise and groundwater worries at a tense public meeting on a roughly 80,000 to 100,000 square foot proposal. Some asked for a moratorium until an environmental study and for a ballot vote. The aldermen canceled a closed session afterward.",
+    "s": [
+      [
+        "KY3",
+        "https://www.ky3.com/2026/11/20/hundreds-residents-voice-their-opinions-data-center-proposal-mansfield-mo/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Residents press for a pause and a vote; no official action yet",
+    "pl": [
+      [
+        "Mansfield",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T06:28:25.595Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "AR",
+    "w": "Washington County Quorum Court",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Washington County quorum court passes 12-month data center moratorium, 9-6",
+    "b": "The Arkansas county's court approved a one-year halt on data center construction and development, effective Nov. 20, after a 9-5 committee vote. The pause gives officials time to review zoning, enforcement and infrastructure rules.",
+    "s": [
+      [
+        "Northwest Arkansas Democrat-Gazette",
+        "https://www.nwaonline.com/news/2026/nov/19/washington-county-quorum-court-approves-12-month/"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Binding county-wide one-year moratorium in force from Nov. 20",
+    "pl": [
+      [
+        "Washington County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T06:28:26.269Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "LA",
+    "w": "England Authority",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "tax",
+      "water",
+      "siting"
+    ],
+    "t": "England Authority unanimously approves tax-deal agreement for Applied Digital's Delta Forge 1",
+    "b": "The Rapides Parish board gave final 8-0 approval to the payment-in-lieu-of-taxes deal for the 300 MW campus, with an amendment barring new on-site groundwater wells. The data center must be complete by Jan. 1, 2028.",
+    "s": [
+      [
+        "KALB",
+        "https://www.kalb.com/2026/11/20/england-authority-approves-data-center-pilot/"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Final approval of tax deal for one named project, with a well ban",
+    "pl": [
+      [
+        "Rapides Parish",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T06:28:27.832Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "AZ",
+    "w": "Attorney General Mayes",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Mayes asks Cochise County to delay vote on $50 billion SpaceX data center",
+    "b": "The attorney general wrote to county supervisors asking them to postpone a December hearing on the roughly 6,000-megawatt campus near Willcox, saying agencies need time to study grid and water effects. She plans her own town hall Dec. 3.",
+    "s": [
+      [
+        "KJZZ",
+        "https://www.kjzz.org/politics/2026-11-19/arizona-ag-asks-cochise-county-supervisors-to-delay-vote-on-spacex-data-center"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 1,
+    "du": "s",
+    "rl": "d",
+    "iw": "Request to delay one project's vote; talk, not binding",
+    "pl": [
+      [
+        "Cochise County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T06:28:28.404Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "NM",
+    "w": "Center for Biological Diversity",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "water",
+      "permitting"
+    ],
+    "t": "Conservation group sues state engineer over Project Jupiter groundwater approval",
+    "b": "The Center for Biological Diversity filed suit in state district court against the State Engineer over the emergency approval letting Project Jupiter use fresh groundwater, and asks the court to pause the water use.",
+    "s": [
+      [
+        "Albuquerque Journal (via Yahoo News)",
+        "https://www.yahoo.com/news/us/articles/conservation-group-sues-state-engineer-040300371.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Lawsuit seeking to halt one project's water use; unresolved",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T06:28:28.553Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "AK",
+    "w": "Governor-elect Kreiss-Tomkins",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Alaska governor-elect asks AIDEA to hold decisions until he takes office; agency refuses",
+    "b": "Jonathan Kreiss-Tomkins asked the AIDEA board to postpone further action until after Dec. 7, citing rushed, hard-to-reverse spending. AIDEA's director said it will not pause. The agency recently launched a data center subsidiary, at odds with his pledge to wait for regulations.",
+    "s": [
+      [
+        "Anchorage Daily News",
+        "https://www.adn.com/politics/2026/11/19/kreiss-tomkins-urges-aidea-to-pause-decisions-until-he-takes-office/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Incoming governor seeks a freeze on data center-related state agency moves; agency declined.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-20T06:28:28.857Z"
+  },
+  {
     "d": "2026-11-18",
     "j": "TN",
     "w": "Shelby County Commission",
@@ -1132,6 +1476,41 @@
     ],
     "auto": true,
     "added": "2026-11-19T20:18:42.271Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "WI",
+    "w": "Appleton Common Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Appleton council unanimously adopts 12-month pause on large-scale data centers",
+    "b": "Appleton's Common Council approved a one-year moratorium on large data centers, with no proposal currently pending. City staff will use the pause to draft zoning rules for the facilities.",
+    "s": [
+      [
+        "NBC26",
+        "https://www.nbc26.com/appleton/appleton-approves-12-month-pause-on-large-scale-data-centers"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Temporary 12-month city moratorium in force while zoning is drafted",
+    "pl": [
+      [
+        "Appleton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T06:28:24.170Z"
   },
   {
     "d": "2026-11-17",
