@@ -73,6 +73,41 @@
     "added": "2026-11-12T01:05:02.267Z"
   },
   {
+    "d": "2026-12-14",
+    "j": "NC",
+    "w": "Cumberland County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Cumberland County, NC, to vote Dec. 14 on six-month extension of data center moratorium",
+    "b": "The county's June pause expires Dec. 15. Commissioners plan a public hearing and vote on extending it six months so staff can write zoning rules; the attorney suggested ending it early if the ordinance passes.",
+    "s": [
+      [
+        "CityView NC",
+        "https://www.cityviewnc.com/stories/cumberland-county-considers-extending-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Scheduled vote to extend a county pause six months",
+    "pl": [
+      [
+        "Cumberland County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:55.422Z"
+  },
+  {
     "d": "2026-12-10",
     "j": "TX",
     "w": "Lubbock City Council",
@@ -556,6 +591,106 @@
     "added": "2026-11-15T00:55:55.055Z"
   },
   {
+    "d": "2026-11-20",
+    "j": "US",
+    "w": "President Trump",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Trump says U.S. firms will face a heavy tax for building data centers abroad",
+    "b": "At a White House press conference Trump said American companies would be barred from building data centers overseas, or taxed heavily if they do, while vowing to fight hard for data centers at home. No policy text was released.",
+    "s": [
+      [
+        "CNBC",
+        "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Talk favoring domestic buildout; overseas tax is unspecified",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-20T19:51:50.526Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "MN",
+    "w": "Minneapolis City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Minneapolis council fails to override mayor's veto of data center ordinance",
+    "b": "Both override attempts failed Friday, so the council's downtown-only data center zoning, which needed council approval per project, will not take effect. The moratorium ends Nov. 21, leaving no data center rules until the council acts again. Vote counts were not given in the cited article.",
+    "s": [
+      [
+        "CBS Minnesota",
+        "https://www.cbsnews.com/minnesota/news/minneapolis-city-council-fails-to-override-mayor-frey-vetoes-police-chief-data-centers/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Failed override kills siting limits; moratorium lapses with no replacement",
+    "pl": [
+      [
+        "Minneapolis",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:50.925Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "SD",
+    "w": "Rapid City staff survey",
+    "lv": "local",
+    "k": "politics",
+    "st": "poll",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Rapid City survey finds large majorities say draft data center limits are too weak",
+    "b": "City survey results: over three-quarters said micro-scale limits are not enough, nearly 85% said so for large-scale. Water ranked top concern. The draft would ban hyperscale sites above 50 MW and cap water use; the planning panel returns to it in January.",
+    "s": [
+      [
+        "SDPB",
+        "https://www.sdpb.org/politics/2026-11-20/lawmakers-face-tightrope-walk-priorities-as-data-centers-prove-unpopular"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Survey shows residents want stricter limits than the draft",
+    "pl": [
+      [
+        "Rapid City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:52.052Z"
+  },
+  {
     "d": "2026-11-19",
     "j": "AR",
     "w": "Washington County Quorum Court",
@@ -1012,6 +1147,145 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-20T06:28:28.857Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "ND",
+    "w": "Williams County planning commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Williams County planners back 250 MW Dublin Township data center 6-1",
+    "b": "The planning and zoning commission voted 6-1 to recommend approval of Western Dakota Infrastructure's campus north of Williston, with a benefits package and traffic study required. One member abstained over ties to the project. County commissioners have final say, expected in December.",
+    "s": [
+      [
+        "KEYZ Radio",
+        "https://keyzradio.com/williams-county-data-center-vote/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Recommendation to approve one project; commission vote still ahead",
+    "pl": [
+      [
+        "Williams County",
+        "county"
+      ],
+      [
+        "Dublin Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:51.017Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "MA",
+    "w": "Northfield special town meeting",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Northfield voters approve one-year data center construction moratorium",
+    "b": "A special town meeting adopted a bylaw pausing any new construction and development of data centers in Northfield for one year. The Greenfield Recorder's report on the meeting did not give a vote count for the article.",
+    "s": [
+      [
+        "Greenfield Recorder",
+        "https://recorder.com/2026/11/20/northfield-voters-ok-borrowing-9-5-million-for-new-ems-building/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "One-year local pause adopted by town meeting",
+    "pl": [
+      [
+        "Northfield",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:54.022Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "TX",
+    "w": "Gov.-elect Gina Hinojosa",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Hinojosa restates call for statewide data center moratorium on national TV",
+    "b": "The governor-elect said Texas lacks laws protecting residents and she wants a moratorium on new data centers, while acknowledging she cannot stop projects already under construction. Senator Perry's SB 338 on cooling and water was also in the news.",
+    "s": [
+      [
+        "KCBD",
+        "https://www.kcbd.com/2026/11/20/hinojosa-calls-data-center-moratorium-perry-files-senate-bill/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Incoming governor pledges a statewide pause; no legal action yet",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-20T19:51:54.345Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "CO",
+    "w": "Montrose County Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting",
+      "permitting"
+    ],
+    "t": "Montrose County hears draft data center rules while weighing longer moratorium",
+    "b": "Planning commission hearing on draft rules allowing data centers only by special use in agricultural and industrial zones, with energy, water, thermal and noise standards. The county, under a July six-month moratorium, is considering extending it until rules are final.",
+    "s": [
+      [
+        "KJCT 8",
+        "https://www.kjct8.com/2026/11/19/montrose-county-drafting-data-center-regulations-during-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed county siting standards and possible moratorium extension; not yet adopted.",
+    "pl": [
+      [
+        "Montrose County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:55.534Z"
   },
   {
     "d": "2026-11-18",
@@ -1511,6 +1785,110 @@
     ],
     "auto": true,
     "added": "2026-11-20T06:28:24.170Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "US",
+    "w": "Seven states' ratepayer advocates",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "cost"
+    ],
+    "t": "Ratepayer advocates and PJM market monitor urge delaying December capacity auction over data center forecast",
+    "b": "Consumer advocates from seven PJM states asked the grid operator's board to postpone the 2029/30 auction until real and speculative data center load is removed from the forecast, and to hold a separate backstop procurement. PJM says delay risks market instability; the auction runs Dec. 9-15.",
+    "s": [
+      [
+        "Utility Dive",
+        "https://www.utilitydive.com/news/ratepayer-advocates-pjm-market-monitor-capacity-auction/875165/"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 4,
+    "du": "s",
+    "rl": "i",
+    "iw": "Advocacy to delay auction and shift data center costs; needs FERC approval",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-20T19:51:50.708Z",
+    "linkCheck": "blocked-by-site"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "NY",
+    "w": "Lansing Town Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Lansing board votes 3-2 for data center ban, but landowner protest may require four votes",
+    "b": "The board voted 3-2 for a zoning ban on data centers and crypto mines. A TeraWulf-backed landowner protest claiming over 20% of affected land could raise the bar to four votes; counsel is still checking validity. TeraWulf proposes a site at the former Cayuga plant.",
+    "s": [
+      [
+        "Fingerlakes1",
+        "https://www.fingerlakes1.com/2026/11/20/lansing-votes-3-2-for-data-center-ban-as-landowner-protest-puts-outcome-in-doubt/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Permanent town ban voted but not effective while protest unresolved",
+    "pl": [
+      [
+        "Lansing",
+        "township"
+      ],
+      [
+        "Tompkins County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:52.126Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "MD",
+    "w": "Calvert planning commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Calvert planners hold hearing on countywide data center ban, delay vote to Dec. 16",
+    "b": "After about an hour of testimony on Text Amendment 26-31, the commission postponed its recommendation to December 16. Many speakers urged safeguards rather than a ban. The county commissioners make the final decision afterward.",
+    "s": [
+      [
+        "The BayNet",
+        "https://thebaynet.com/calvert-planning-commission-pushes-data-center-vote-to-december/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed permanent countywide ban, still only a proposal",
+    "pl": [
+      [
+        "Calvert County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:52.242Z"
   },
   {
     "d": "2026-11-17",
@@ -2906,6 +3284,145 @@
     "added": "2026-11-19T20:18:43.248Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "IL",
+    "w": "McHenry County Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "McHenry County board adopts 12-month data center moratorium in unincorporated areas",
+    "b": "The board approved a one-year freeze on zoning changes and permits, including building permits, for data centers in unincorporated areas. It took effect immediately. The tally was not announced, and the zoning board recommended it 7-0. No project was pending.",
+    "s": [
+      [
+        "Lake and McHenry County Scanner",
+        "https://www.lakemchenryscanner.com/2026/11/20/protect-people-first-mchenry-county-board-approves-12-month-ban-on-new-data-centers-in-unincorporated-areas/"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Binding one-year county freeze on data center permits, in force now",
+    "pl": [
+      [
+        "McHenry County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:50.827Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "KY",
+    "w": "Hopkins County Fiscal Court",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "water"
+    ],
+    "t": "Hopkins County, Kentucky, adopts six-month pause on high-water-use businesses including data centers",
+    "b": "The fiscal court approved a six-month moratorium in unincorporated areas, longer than the three months first proposed. Developers can seek exceptions with a study showing no effect on county water. A committee is to study impacts and draft permanent rules.",
+    "s": [
+      [
+        "WEHT Evansville (via Yahoo News)",
+        "https://www.yahoo.com/news/us/articles/hopkins-county-approves-data-center-033656791.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Binding six-month county pause on data centers, unincorporated areas only",
+    "pl": [
+      [
+        "Hopkins County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:54.728Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "CA",
+    "w": "Humboldt County supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Humboldt County extends data center ban in unincorporated areas by 10.5 months",
+    "b": "Supervisors voted 4-1 after an initial 3-2 tally, since extension needed four-fifths. Exemption narrowed to projects under 8 MW on Rule 30 renewable power. Opponents said no applications are pending.",
+    "s": [
+      [
+        "Lost Coast Outpost",
+        "https://lostcoastoutpost.com/2026/nov/18/yesterday-in-supes-temporary-ban-on-data-centers-e/"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Extends a county-wide pause in force, 10.5 months",
+    "pl": [
+      [
+        "Humboldt County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:55.945Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "CA",
+    "w": "San Joaquin County supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "water"
+    ],
+    "t": "San Joaquin County adopts 45-day pause on large AI data center approvals",
+    "b": "An urgency ordinance pauses land use approvals for large AI data centers in unincorporated areas while staff review the general plan, zoning and infrastructure standards. No such proposals are pending. Vote count not reported.",
+    "s": [
+      [
+        "Manteca Bulletin",
+        "https://www.mantecabulletin.com/news/local-news/county-adopts-45-day-moratorium-on-land-oks-for-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Urgency pause in force for 45 days",
+    "pl": [
+      [
+        "San Joaquin County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:56.165Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -3819,6 +4336,41 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-19T20:18:43.120Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "MO",
+    "w": "Kansas City mayor Quinton Lucas",
+    "lv": "local",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Kansas City mayor says he backs a pause on new data center projects",
+    "b": "Mayor Lucas told the Kansas City Star the city has approved enough data centers for now and wants a moratorium to study long-term effects. Activists are separately drafting a citywide ban ordinance and may gather signatures for a ballot if the council does not act.",
+    "s": [
+      [
+        "GovTech (Kansas City Star)",
+        "https://www.govtech.com/artificial-intelligence/could-kansas-city-mo-ban-data-centers"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Mayor publicly backs a moratorium; no ordinance introduced yet",
+    "pl": [
+      [
+        "Kansas City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:51.777Z"
   },
   {
     "d": "2026-11-15",
@@ -8577,6 +9129,41 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-17T07:13:55.028Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "NC",
+    "w": "Henderson City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Henderson, NC, council votes 4-3 for six-month data center approval pause",
+    "b": "The council paused data center development approvals inside city limits and its extraterritorial area for six months. Several members wanted up to 12 months. The vote followed Vance County's own moratorium extensions.",
+    "s": [
+      [
+        "The North State Journal",
+        "https://nsjonline.com/article/2026/11/data-center-moratoriums-continue-climb/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Adopted six-month city pause on data center approvals",
+    "pl": [
+      [
+        "Henderson",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-20T19:51:54.985Z"
   },
   {
     "d": "2026-11-08",
