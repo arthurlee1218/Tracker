@@ -414,6 +414,44 @@
     "added": "2026-11-18T20:19:45.236Z"
   },
   {
+    "d": "2026-12-01",
+    "j": "ND",
+    "w": "Williams County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Williams County commissioners set Dec. 1 vote on Dublin Township data center campus",
+    "b": "After planners recommended approval 6-1, with one member abstaining over ties to the project, the county board will take up the Western Dakota Infrastructure campus north of Williston on Dec. 1. It is not bound by the recommendation.",
+    "s": [
+      [
+        "KEYZ Radio",
+        "https://keyzradio.com/williams-county-data-center-vote/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Scheduled vote on approving one specific project; not yet decided",
+    "pl": [
+      [
+        "Williams County",
+        "county"
+      ],
+      [
+        "Dublin Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T18:58:04.908Z"
+  },
+  {
     "d": "2026-11-30",
     "j": "OK",
     "w": "Nowata County commissioners",
@@ -635,6 +673,35 @@
     "added": "2026-11-21T06:19:06.532Z"
   },
   {
+    "d": "2026-11-21",
+    "j": "NC",
+    "w": "NC Senate District 24 race",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "Hamm concedes NC Senate race; Republicans keep Senate 26-24 without veto-proof majority",
+    "b": "Democrat Catina Hamm conceded to Sen. Danny Britt after a recount request, leaving Republicans with a 26-24 Senate in January, short of the 30 votes to override vetoes. Democrats hold the House. Unofficial; certification set for Nov. 24. Affects any data center bill vetoes.",
+    "s": [
+      [
+        "WRAL",
+        "https://www.wral.com/news/nccapitol/republican-nc-senate-majority-win-danny-britt-democrat-catina-hamm-robeson-recount-concede-november-2026/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Structural change in what can pass; no direct lean",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-21T18:58:05.546Z"
+  },
+  {
     "d": "2026-11-20",
     "j": "US",
     "w": "President Trump",
@@ -768,6 +835,40 @@
     ],
     "auto": true,
     "added": "2026-11-21T06:19:06.385Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "AR",
+    "w": "Federal judge Rudofsky",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Federal judge refuses consent decree exempting AVAIO data center from Pulaski County rules",
+    "b": "At the injunction hearing, Judge Lee Rudofsky declined to enter a proposed agreement between AVAIO and the county judge that would largely exempt the project, citing concern it could bind future county officials. He also denied Wendell Griffen's bid to intervene. Hearing resumes Nov. 23.",
+    "s": [
+      [
+        "Arkansas Times",
+        "https://arktimes.com/arkansas-blog/2026/11/20/avaio-lawsuit-against-pulaski-county-stretches-to-monday-as-judge-says-no-for-now-on-proposed-agreement"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "County data center rules stay enforceable while injunction is undecided.",
+    "pl": [
+      [
+        "Pulaski County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T18:58:05.397Z"
   },
   {
     "d": "2026-11-19",
@@ -1539,6 +1640,41 @@
     "added": "2026-11-21T06:19:11.564Z"
   },
   {
+    "d": "2026-11-19",
+    "j": "IN",
+    "w": "DeKalb County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "DeKalb County, Indiana, adopts data center rules after moratorium, capping campuses at 645 acres",
+    "b": "Commissioners passed an ordinance at a special meeting ending a roughly six-month pause. It caps site size at 645 acres, sets noise standards and generator rules, and requires disclosure from users of municipal water. No company has approached the county.",
+    "s": [
+      [
+        "WOWO",
+        "https://wowo.com/dekalb-county-adopts-rules-for-potential-future-data-centers/"
+      ]
+    ],
+    "im": -2,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Adopted binding size, noise and water-disclosure limits for one county",
+    "pl": [
+      [
+        "DeKalb County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T18:58:03.733Z"
+  },
+  {
     "d": "2026-11-18",
     "j": "TN",
     "w": "Shelby County Commission",
@@ -2171,6 +2307,71 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-21T06:19:09.269Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "US",
+    "w": "115 conservation and faith groups",
+    "lv": "federal",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "115 groups ask Interior and Agriculture for moratorium on public-land data centers",
+    "b": "A coalition including Sierra Club and Defenders of Wildlife wrote Burgum and Rollins seeking an immediate pause on commercial data centers on federal land. They cite 17 proposed campuses on over 24,000 acres in six Western states and unresolved legal authority.",
+    "s": [
+      [
+        "Common Dreams",
+        "https://www.commondreams.org/news/data-centers-on-public-lands"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 6,
+    "du": "m",
+    "rl": "d",
+    "iw": "Coalition demands a pause on federal-land data centers; advocacy only, no action yet",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-21T18:58:03.268Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "AZ",
+    "w": "Oro Valley Town Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Oro Valley council unanimously keeps ban on large AI data centers",
+    "b": "The new council voted unanimously to prohibit data centers as a primary use in all zoning districts, keeping a 20-megawatt definition and adding guidelines for ancillary data systems. It reserved the option to revisit the rules.",
+    "s": [
+      [
+        "Tucson Spotlight",
+        "https://www.tucsonspotlight.org/oro-valley-pima-county-move-to-restrict-data-centers/"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Zoning prohibits large data centers as primary use town-wide",
+    "pl": [
+      [
+        "Oro Valley",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T18:58:05.774Z"
   },
   {
     "d": "2026-11-17",
@@ -3845,6 +4046,41 @@
     "added": "2026-11-21T06:19:09.422Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "CA",
+    "w": "San Joaquin County supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "San Joaquin County extends data center moratorium by 10.5 months",
+    "b": "Supervisors extended the county's pause on data center land-use approvals by 10 months and 15 days, after the initial 45-day urgency pause. Staff will return with a comprehensive report on environmental and economic impacts in June 2027.",
+    "s": [
+      [
+        "Stockton Record via Yahoo News",
+        "https://www.yahoo.com/news/articles/san-joaquin-county-supervisors-extend-045900544.html"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Binding county pause extended to roughly late 2027",
+    "pl": [
+      [
+        "San Joaquin County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T18:58:06.658Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -4793,6 +5029,74 @@
     ],
     "auto": true,
     "added": "2026-11-20T19:51:51.777Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "MA",
+    "w": "Amherst Town Council",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Amherst council rejects data center moratorium 1-12, keeps ban under review",
+    "b": "Sponsors withdrew a two-year moratorium after realizing no permits could be granted while ban hearings were open. Council President's version failed 1-12. Councilors say a ban bylaw can be drafted directly; Planning Board hearing continues Jan. 6.",
+    "s": [
+      [
+        "Amherst Indy",
+        "https://www.amherstindy.org/2026/11/18/town-council-rejects-data-center-moratorium-ban-still-under-consideration/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Failed pause; ban bylaw still being drafted",
+    "pl": [
+      [
+        "Amherst",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T18:58:05.060Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "AK",
+    "w": "Mat-Su Borough",
+    "lv": "local",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting"
+    ],
+    "t": "Mat-Su Borough asks Alaska to reverse AIDEA land transfer near Houston",
+    "b": "The borough manager and mayor wrote to the state asking it to reconsider the no-cost transfer of about 6,800 acres to AIDEA, preferring large industrial projects at Point MacKenzie. AIDEA's proposal listed possible data centers among uses.",
+    "s": [
+      [
+        "Mat-Su Sentinel",
+        "https://www.matsusentinel.com/mat-su-borough-asks-state-to-reverse-aidea-land-transfer-consider-point-mackenzie-instead/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 3,
+    "du": "p",
+    "rl": "i",
+    "iw": "Local objection to land for a possible industrial or data center park",
+    "pl": [
+      [
+        "Matanuska-Susitna Borough",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T18:58:06.978Z"
   },
   {
     "d": "2026-11-15",
@@ -5897,6 +6201,45 @@
     ],
     "auto": true,
     "added": "2026-11-21T06:19:07.718Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "NM",
+    "w": "Navajo Nation Council committee",
+    "lv": "tribal",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Navajo council committee rejects lease for energy park with data center",
+    "b": "The Naabik'iyati Committee voted 4-12 against a lease for a 599-acre Fruitland energy park including a roughly 200-acre data center. Critics cited water use and a waived bond. The full council could vote as soon as December.",
+    "s": [
+      [
+        "Searchlight New Mexico",
+        "https://searchlightnm.org/navajo-nation-council-to-weigh-data-center-in-san-juan-county/"
+      ]
+    ],
+    "im": 0,
+    "ef": "deny",
+    "fo": 0,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Committee rejected one project's lease; full council still to decide",
+    "pl": [
+      [
+        "Navajo Nation",
+        "tribal"
+      ],
+      [
+        "San Juan County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T18:58:05.662Z"
   },
   {
     "d": "2026-11-11",
@@ -10271,6 +10614,36 @@
     ],
     "auto": true,
     "added": "2026-11-18T20:19:42.733Z"
+  },
+  {
+    "d": "2026-11-06",
+    "j": "WY",
+    "w": "Wyoming Select Water Committee",
+    "lv": "state",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "water",
+      "disclosure"
+    ],
+    "t": "Wyoming water committee declines to sponsor data center water-use cap bill",
+    "b": "The committee voted 3-8 against sponsoring a draft capping cooling water at 0.2 liters per kilowatt-hour for data centers of 5 MW or more, with annual reporting. Lawmakers may still introduce it individually; the panel backed a groundwater study.",
+    "s": [
+      [
+        "Western Water",
+        "https://www.western-water.com/2026/11/12/wyoming-panel-declines-to-sponsor-data-center-water-bill/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding water cap failed to get committee sponsorship",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-21T18:58:05.856Z"
   },
   {
     "d": "2026-11-05",
