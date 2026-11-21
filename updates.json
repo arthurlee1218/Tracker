@@ -591,6 +591,50 @@
     "added": "2026-11-15T00:55:55.055Z"
   },
   {
+    "d": "2026-11-23",
+    "j": "PA",
+    "w": "PA DEP",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "water",
+      "permitting",
+      "siting"
+    ],
+    "t": "DEP sets Nov. 23 hearing on stormwater permits for Project Atlas data center campus",
+    "b": "Pennsylvania DEP will take comment on stormwater and wetland permits for CDE Acquisitions' three-building, 1.5 million square foot Project Atlas campus in South Whitehall Township. Comments are open to Dec. 7; the township planning commission reviews plans again Jan. 13.",
+    "s": [
+      [
+        "Pennsylvania DEP",
+        "https://www.pa.gov/agencies/dep/newsroom/2026-11-20-dep-to-host-public-meeting-and-hearing-on-proposed-project-atlas-data-center"
+      ],
+      [
+        "WFMZ",
+        "https://www.wfmz.com/news/area/lehighvalley/lehigh-county/allentown-area/dep-meeting-on-project-atlas-data-center-campus-happening-soon/article_7affb797-7b7b-4869-a674-53a6d5b0ddad.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Pending state permits for one named campus; could add water conditions.",
+    "pl": [
+      [
+        "South Whitehall Township",
+        "township"
+      ],
+      [
+        "Lehigh County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T06:19:06.532Z"
+  },
+  {
     "d": "2026-11-20",
     "j": "US",
     "w": "President Trump",
@@ -689,6 +733,41 @@
     ],
     "auto": true,
     "added": "2026-11-20T19:51:52.052Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "WI",
+    "w": "Madison mayor and planning staff",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Madison formally proposes ordinance banning hyperscale data centers and capping others at 75,000 sq ft",
+    "b": "Ordinance would ban the largest data centers, bar any size from residential zones, require noise plans and set spacing rules. Introduced Nov. 24, council vote set for Jan. 12, 2027; the city's moratorium expires Jan. 24.",
+    "s": [
+      [
+        "City of Madison",
+        "https://www.cityofmadison.com/news/2026-11-20/proposed-ordinance-to-ban-hyperscale-data-centers"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed permanent hyperscale ban in one city, not yet adopted",
+    "pl": [
+      [
+        "Madison",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T06:19:06.385Z"
   },
   {
     "d": "2026-11-19",
@@ -1286,6 +1365,178 @@
     ],
     "auto": true,
     "added": "2026-11-20T19:51:55.534Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "US",
+    "w": "Sens. Wyden and Merkley",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Oregon senators' push to ban public-land data centers gets no vote before permitting bill passes",
+    "b": "Wyden and Merkley sought an amendment banning data centers on public lands and delayed the final vote for days. Republicans blocked amendment votes, and the permitting bill passed 62-33 without rank-and-file amendments.",
+    "s": [
+      [
+        "MPR News (AP)",
+        "https://www.mprnews.org/story/2026/11/20/senate-approves-bill-to-speed-up-permitting-reviews-force-data-centers-pay-for-energy-costs"
+      ],
+      [
+        "OPB (AP)",
+        "https://www.opb.org/article/2026/11/20/senate-approves-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay-for-energy-costs/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed ban on federal-land data centers failed to get a vote",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-21T06:19:05.335Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "PA",
+    "w": "Lycoming County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Lycoming County holds hearing on zoning amendment limiting data centers to industrial districts",
+    "b": "Commissioners heard comment on an amendment covering 19 partner municipalities. Data centers would be industrial uses needing a special exception, with setbacks, noise, water metering and financial security rules. No applications are pending; a final vote is scheduled for December.",
+    "s": [
+      [
+        "Williamsport Sun-Gazette",
+        "https://www.sungazette.com/news/top-news/2026/11/proposed-data-center-scrutinized-at-public-hearing/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting and standards rules, not yet adopted.",
+    "pl": [
+      [
+        "Lycoming County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T06:19:06.689Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "NM",
+    "w": "Lea County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "Lea County approves $130 billion revenue bonds for Google data center, rejects moratorium",
+    "b": "Commissioners voted 4-1 for an industrial revenue bond tied to Google's proposed campus near Hobbs, and unanimously rejected a six-month data center moratorium. Lease and community benefit terms were still being negotiated.",
+    "s": [
+      [
+        "Albuquerque Journal",
+        "https://www.abqjournal.com/news/lea-county-approves-130-billion-google-data-center-deal/3166583"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Tax-advantaged bond approves one project and moratorium was rejected",
+    "pl": [
+      [
+        "Lea County",
+        "county"
+      ],
+      [
+        "Hobbs",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T06:19:10.981Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "WA",
+    "w": "Residents, Amazon Web Services",
+    "lv": "local",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "siting"
+    ],
+    "t": "Protesters gather outside Amazon's West Richland data center open house",
+    "b": "Amazon hosted an open house on its plan for up to 21 data center buildings on about 1,000 acres in West Richland while protesters demonstrated outside. The city has received no formal proposal; council earlier deadlocked on a moratorium and adopted interim limits.",
+    "s": [
+      [
+        "Apple Valley News Now",
+        "https://www.applevalleynewsnow.com/news/protest-held-outside-as-amazon-hosts-west-richland-data-center-open-house/article_1ed4feba-6343-4245-bd1c-85068f416acd.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Protest against a specific campus; talk-level pressure for limits",
+    "pl": [
+      [
+        "West Richland",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T06:19:11.365Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "AK",
+    "w": "Alaska voters, House coalition",
+    "lv": "state",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Alaska House coalition gains four seats, could near two-thirds as new governor takes office",
+    "b": "Coalition-aligned candidates flipped four Republican House seats; the GOP drops to 16 of 40 and the coalition could reach 25. The article does not mention data centers. The coalition's size bears on any legislation for governor-elect Kreiss-Tomkins' pledged moratorium. Counts may change.",
+    "s": [
+      [
+        "Anchorage Daily News",
+        "https://www.adn.com/politics/2026/11/18/coalition-aligned-candidates-flip-4-alaska-house-seats-shrinking-gop-minority/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Larger coalition improves odds for governor-elect's pledged data center moratorium",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-21T06:19:11.564Z"
   },
   {
     "d": "2026-11-18",
@@ -1889,6 +2140,37 @@
     ],
     "auto": true,
     "added": "2026-11-20T19:51:52.242Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "VA",
+    "w": "Rural advocacy groups",
+    "lv": "state",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "moratorium",
+      "water",
+      "siting"
+    ],
+    "t": "Rural Virginia groups rally in Henrico against data centers, gas plants and power lines",
+    "b": "Grassroots groups from Buckingham, Cumberland, Dinwiddie, Goochland, Hanover and Henrico gathered Nov. 18 to oppose data centers and the transmission and generation built to serve them. They cited water supply and called for a statewide moratorium.",
+    "s": [
+      [
+        "Loudoun Times (Virginia Mercury)",
+        "https://www.loudountimes.com/news/environment/rural-advocacy-groups-in-virginia-band-together-to-oppose-data-centers-related-energy-projects/article_98c5d343-a753-4ba3-b3bc-0db38ff6ec3d.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Protest calling for a statewide pause on data centers; talk only.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-21T06:19:09.269Z"
   },
   {
     "d": "2026-11-17",
@@ -3421,6 +3703,146 @@
     ],
     "auto": true,
     "added": "2026-11-20T19:51:56.165Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "TX",
+    "w": "Cameron County Commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "denied",
+    "ty": [
+      "tax"
+    ],
+    "t": "Cameron County commissioners block SpaceX's tax-break request for $24B data center, 3-2",
+    "b": "Commissioners declined to schedule a hearing on a 10-year, 100% property tax abatement for SpaceX's proposed Starbase data center and gas plant. SpaceX warned it may invest elsewhere. The project continues; the state air permit was granted Nov. 16 and a Starbase abatement hearing is set Dec. 9.",
+    "s": [
+      [
+        "MyRGV",
+        "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/"
+      ],
+      [
+        "Newsweek",
+        "https://www.newsweek.com/texas-county-blocks-tax-break-spacex-data-center-12733396"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Denies one project's abatement path; project itself proceeds.",
+    "pl": [
+      [
+        "Cameron County",
+        "county"
+      ],
+      [
+        "Starbase",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T06:19:06.897Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "TX",
+    "w": "TCEQ",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "permitting",
+      "water"
+    ],
+    "t": "Texas environmental regulator resumes data center permit reviews, ending Abbott's pause",
+    "b": "After the governor's office said ERCOT had finished gathering community-impact information, TCEQ returned to normal data center permit review. Public Citizen and FracTracker criticized the lack of transparency. ERCOT presents full audit findings to the PUC Dec. 10; governor-elect Hinojosa wants approvals paused.",
+    "s": [
+      [
+        "Texas Tribune via KPRC",
+        "https://www.click2houston.com/news/texas/2026/11/17/texas-regulators-are-resuming-environmental-permits-for-data-centers/"
+      ]
+    ],
+    "im": 2,
+    "ef": "fast",
+    "fo": 3,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Ends the state permit freeze, so approvals resume statewide.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-21T06:19:06.971Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "AL",
+    "w": "Opelika Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Opelika planners back data center-friendly overlay district for 519 acres despite 5,000-signature petition",
+    "b": "Opelika's planning commission recommended a Technology Overlay District and applying it to about 519 acres off I-85 and West Point Parkway. A petition against the rezoning had more than 5,000 signatures. The city council still holds its own hearing and vote.",
+    "s": [
+      [
+        "Opelika Observer",
+        "https://opelikaobserver.com/2026/11/19/opelika-residents-push-back-on-data-centers-as-commission-advances-technology-overlay-district/"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Advisory recommendation enabling data center siting; council vote pending.",
+    "pl": [
+      [
+        "Opelika",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T06:19:07.952Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "FL",
+    "w": "Hillsborough County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Hillsborough seats two new commissioners; one-year data center pause waits until next year",
+    "b": "Two new members joined the Hillsborough commission after the board put off its proposed one-year AI data center pause. Two public hearings are still needed, and any pause would likely take effect after Oct. 1. No projects are filed.",
+    "s": [
+      [
+        "FOX 13 Tampa Bay",
+        "https://www.fox13news.com/news/hillsborough-commission-swears-two-new-members-faces-major-changes-ahead"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed one-year pause not yet scheduled for hearings; no applications exist.",
+    "pl": [
+      [
+        "Hillsborough County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T06:19:09.422Z"
   },
   {
     "d": "2026-11-16",
@@ -5442,6 +5864,41 @@
     "added": "2026-11-19T06:41:01.006Z"
   },
   {
+    "d": "2026-11-12",
+    "j": "GA",
+    "w": "Marietta City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Marietta extends data center moratorium through the end of 2027",
+    "b": "Marietta's council voted unanimously to continue its pause on new data center applications for all of 2027, starting right after the current six-month pause ends Dec. 31. It also tabled a zoning code amendment on data centers.",
+    "s": [
+      [
+        "FOX 5 Atlanta",
+        "https://www.fox5atlanta.com/news/marietta-extends-data-center-moratorium-through-2027"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 2,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Unanimous vote extends a city pause by a year, effective Jan. 1.",
+    "pl": [
+      [
+        "Marietta",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T06:19:07.718Z"
+  },
+  {
     "d": "2026-11-11",
     "j": "US",
     "w": "Veterans for Public Lands",
@@ -7425,6 +7882,41 @@
     ],
     "auto": true,
     "added": "2026-11-18T20:19:42.908Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "CO",
+    "w": "Boulder County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Boulder County adopts data center rules capping unincorporated sites at 50 kilowatts",
+    "b": "Commissioners voted unanimously for a stricter cap than the 75 kilowatts staff proposed. The new code ends the county's summer moratorium and in practice bars large data centers in unincorporated areas.",
+    "s": [
+      [
+        "KUNC",
+        "https://www.kunc.org/news/2026-11-12/boulder-county-commissioners-ban-large-scale-data-centers-only-allowing-50-kilowatts-or-less"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Permanent size cap in force makes large data centers effectively prohibited",
+    "pl": [
+      [
+        "Boulder County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-21T06:19:10.289Z"
   },
   {
     "d": "2026-11-09",
