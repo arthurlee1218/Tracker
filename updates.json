@@ -521,6 +521,42 @@
     "added": "2026-11-16T21:52:36.304Z"
   },
   {
+    "d": "2026-11-25",
+    "j": "SD",
+    "w": "Rapid City Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting",
+      "water"
+    ],
+    "t": "Rapid City planners to weigh mayor's data center pause or interim rules Nov. 25",
+    "b": "The mayor offered a six-month permit pause or a stopgap ordinance covering water, power, noise and separation from homes. Planners take it up Nov. 25; the stopgap would need two council readings, with an estimated January start. The permanent ordinance returns Jan. 21.",
+    "s": [
+      [
+        "KOTA",
+        "https://www.kotatv.com/2026/11/13/rapid-city-mayor-seeks-data-center-safeguards-permanent-rules-face-delay/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed interim limits, not yet adopted, city scope",
+    "pl": [
+      [
+        "Rapid City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-22T19:20:11.216Z"
+  },
+  {
     "d": "2026-11-24",
     "j": "IA",
     "w": "Rock Valley Economic Development",
@@ -740,6 +776,41 @@
     ],
     "auto": true,
     "added": "2026-11-21T06:19:06.532Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "IA",
+    "w": "Marshalltown City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Marshalltown council to decide whether to extend data center moratorium expiring Nov. 23",
+    "b": "The city's temporary data center moratorium ends Nov. 23. The council deferred an extension decision to that meeting; the ordinance allows one extension of up to 60 days. Final reading of the new data center zoning ordinance is likely Dec. 21.",
+    "s": [
+      [
+        "Times Republican",
+        "https://www.timesrepublican.com/news/todays-news/2026/11/council-votes-down-emergency-response-community-benefit-amendments-for-data-centers/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Scheduled vote on extending a short city pause",
+    "pl": [
+      [
+        "Marshalltown",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-22T19:20:11.103Z"
   },
   {
     "d": "2026-11-21",
@@ -4317,6 +4388,35 @@
     "added": "2026-11-22T05:51:57.668Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "MA",
+    "w": "Gov. Healey",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting"
+    ],
+    "t": "Healey declines to take a side on Sutton data center, leaves it to town",
+    "b": "Asked about the proposed $16 billion Kraft-linked data center in Sutton, the governor said the decision belongs to the town's residents. This fits her September order requiring local approval before state permitting starts.",
+    "s": [
+      [
+        "State House News Service",
+        "https://www.statehousenews.com/news/executive/healey-leaving-big-data-center-decisions-up-to-small-town/article_4fa9d20b-f593-4d1b-be24-c45dfde5c8aa.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Governor takes no position; defers to local decision",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-22T19:20:12.365Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -5395,6 +5495,42 @@
     "added": "2026-11-22T05:51:58.539Z"
   },
   {
+    "d": "2026-11-16",
+    "j": "MA",
+    "w": "Sturbridge town meeting",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Sturbridge voters approve temporary data center moratorium 235-23",
+    "b": "A special town meeting backed a temporary moratorium on data centers while officials write zoning rules. The existing bylaws do not address them. The article states no end date, and the administrator called it a pause, not a ban.",
+    "s": [
+      [
+        "The Citizen Chronicle",
+        "https://thecitizenchronicle.substack.com/p/sturbridge-voters-approve-data-center"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Town-wide temporary moratorium in force, no stated length",
+    "pl": [
+      [
+        "Sturbridge",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-22T19:20:12.306Z",
+    "linkCheck": "blocked-by-site"
+  },
+  {
     "d": "2026-11-15",
     "j": "US",
     "w": "Rep. Maxine Dexter",
@@ -5709,6 +5845,70 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-19T06:41:00.598Z"
+  },
+  {
+    "d": "2026-11-13",
+    "j": "KS",
+    "w": "Gov.-elect Holscher",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Kansas governor-elect Holscher repeats plan to pause data center development, says not forever",
+    "b": "Days after winning, Holscher said she still wants a pause with guardrails so Kansas can negotiate from strength. No length or mechanism was given. She takes office Jan. 11 facing a Republican-majority Legislature.",
+    "s": [
+      [
+        "WIBW",
+        "https://www.wibw.com/2026/11/14/governor-elect-cindy-holscher-outlines-first-steps-ahead-swearing-in/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "d",
+    "iw": "Pledge for a pause; no mechanism yet",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-22T19:20:11.767Z"
+  },
+  {
+    "d": "2026-11-13",
+    "j": "NM",
+    "w": "Doña Ana County",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax",
+      "disclosure"
+    ],
+    "t": "Doña Ana County sends formal breach notice to Project Jupiter over missing jobs reports",
+    "b": "The county says the developers missed the Q3 jobs report due Oct. 31 and an April report, calling both material breaches. They have 30 days to cure. Without current reports they cannot receive state gross receipts tax disbursements.",
+    "s": [
+      [
+        "Las Cruces Sun-News via Yahoo News",
+        "https://www.yahoo.com/news/us/articles/project-jupiter-gets-30-days-100624790.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Formal breach notice could cut tax disbursements to one project if unresolved.",
+    "pl": [
+      [
+        "Doña Ana County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-22T19:20:12.441Z"
   },
   {
     "d": "2026-11-12",
@@ -6737,6 +6937,36 @@
     ],
     "auto": true,
     "added": "2026-11-17T07:13:54.907Z"
+  },
+  {
+    "d": "2026-11-11",
+    "j": "US",
+    "w": "Interior Department (Burgum)",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Interior's 2026-2030 strategic plan ties public-land development to data center supply needs",
+    "b": "Interior's new strategic plan says remaining federal lands will supply energy, minerals and building materials for data centers, via expanded resource inventories. It names no specific data center sites. Critics say it also moves toward shrinking the federal estate.",
+    "s": [
+      [
+        "Field & Stream",
+        "https://fieldandstream.com/stories/conservation/public-lands-and-waters/interior-plan-prioritizes-public-land-sell-offs"
+      ]
+    ],
+    "im": 1,
+    "ef": "fast",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "i",
+    "iw": "Plan to open federal land resources for data center demand; no sites named",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-22T19:20:10.823Z"
   },
   {
     "d": "2026-11-10",
