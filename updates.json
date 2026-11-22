@@ -243,6 +243,41 @@
     "added": "2026-11-13T01:00:35.626Z"
   },
   {
+    "d": "2026-12-08",
+    "j": "DE",
+    "w": "New Castle County Council candidates",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "New Castle County Council District 10 special election candidates split on data center moratorium",
+    "b": "Ahead of the Dec. 8 special election, most Democratic candidates for District 10 back a data center moratorium, varying on scope and length; Jack Wehmeyer opposes one. Party officials were to pick a single Democratic nominee.",
+    "s": [
+      [
+        "Spotlight Delaware",
+        "https://spotlightdelaware.org/2026/11/20/democrats-talk-reassessments-data-centers-in-advance-of-new-castle-county-special-election/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Candidate pledges for a county moratorium; talk only, special election pending",
+    "pl": [
+      [
+        "New Castle County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-22T05:51:59.256Z"
+  },
+  {
     "d": "2026-12-07",
     "j": "NC",
     "w": "Fayetteville City Council",
@@ -484,6 +519,40 @@
     ],
     "auto": true,
     "added": "2026-11-16T21:52:36.304Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "IA",
+    "w": "Rock Valley Economic Development",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Rock Valley, Iowa, holds public meeting on PathOne edge data center in business park",
+    "b": "Rock Valley's economic development group is exploring a PathOne edge data center on its business park land. No incentives would be offered, and its board must approve any land sale. A public meeting is set for Nov. 24.",
+    "s": [
+      [
+        "KTIV / Dakota News Now",
+        "https://www.dakotanewsnow.com/2026/11/19/rock-valley-ia-exploring-data-center-sets-public-meeting/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Early exploration and a public meeting; no binding action yet",
+    "pl": [
+      [
+        "Rock Valley",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-22T05:51:58.779Z"
   },
   {
     "d": "2026-11-23",
@@ -869,6 +938,45 @@
     ],
     "auto": true,
     "added": "2026-11-21T18:58:05.397Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "OH",
+    "w": "Champion Township trustees",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Champion Township, Ohio, trustees adopt three-month data center moratorium",
+    "b": "Trustees unanimously passed a three-month pause so zoning officials can finish data center rules. The township shares the former Copperweld Steel site, a possible data center location, with neighboring Warren Township. No project has been proposed. Exact vote date was not stated; article dated Nov. 20.",
+    "s": [
+      [
+        "WFMJ",
+        "https://www.wfmj.com/news/local-news/champion-township-enacts-three-month-moratorium-on-data-centers/article_afa0b68d-29d1-4886-bf91-54b4f1517c56.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Three-month pause on data centers in one township",
+    "pl": [
+      [
+        "Champion Township",
+        "township"
+      ],
+      [
+        "Warren Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-22T05:51:57.339Z"
   },
   {
     "d": "2026-11-19",
@@ -1675,6 +1783,36 @@
     "added": "2026-11-21T18:58:03.733Z"
   },
   {
+    "d": "2026-11-19",
+    "j": "US",
+    "w": "Sen. Mike Rounds",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Rounds votes no on permitting bill, says it shifts data center fights from local to federal control",
+    "b": "Republican Sen. Mike Rounds opposed the 62-33 Senate bill, arguing it weakens state and local authority and lets developers move stalled energy-project disputes, including data centers, to federal regulators after 12 months. Thune voted yes.",
+    "s": [
+      [
+        "South Dakota Standard",
+        "https://www.sdstandardnow.com/home/rounds-thune-split-on-permitting-reform-bill-that-trump-supports"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "i",
+    "iw": "Statement backing local control against a bill that could preempt local data center decisions",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-22T05:51:57.106Z"
+  },
+  {
     "d": "2026-11-18",
     "j": "TN",
     "w": "Shelby County Commission",
@@ -2372,6 +2510,66 @@
     ],
     "auto": true,
     "added": "2026-11-21T18:58:05.774Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "OH",
+    "w": "Leaked Republican bill",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Leaked Ohio bill would widen eminent domain to power-siting certificate holders, alarming land experts",
+    "b": "A draft bill leaked to WCPO would let holders of state power-siting certificates use eminent domain and treat some facilities as public utilities. Legal experts say it could enable land seizures serving data centers. Sponsors are unnamed; no vote has occurred.",
+    "s": [
+      [
+        "Yahoo News (WCPO report)",
+        "https://www.yahoo.com/news/politics/articles/leaked-ohio-bill-could-allow-153000747.html"
+      ]
+    ],
+    "im": 1,
+    "ef": "fast",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "i",
+    "iw": "Draft would ease land access for power projects serving data centers; unsponsored leak",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-22T05:51:58.073Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "LA",
+    "w": "Opponents of Entergy's Meta plan",
+    "lv": "state",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "siting",
+      "cost"
+    ],
+    "t": "Protesters rally outside Louisiana regulators' meeting against seven Meta gas plants",
+    "b": "Residents and advocacy groups gathered at the Public Service Commission's monthly meeting in Baton Rouge urging rejection of Entergy's plan for seven gas plants serving Meta's Richland Parish campus, citing customer costs and air pollution. No vote was taken; one is expected next month.",
+    "s": [
+      [
+        "Red River Radio",
+        "https://www.redriverradio.org/news/2026-11-19/protestors-oppose-construction-of-7-gas-plants-for-meta-data-center"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 4,
+    "du": "p",
+    "rl": "i",
+    "iw": "Protest urging rejection of utility power plants for a data center campus",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-22T05:51:59.309Z"
   },
   {
     "d": "2026-11-17",
@@ -4081,6 +4279,44 @@
     "added": "2026-11-21T18:58:06.658Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "IN",
+    "w": "St. Joseph County Plan Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "St. Joseph County plan panel recommends against hyperscale data center ban and Granger rezoning",
+    "b": "The plan commission unanimously recommended against a ban on future hyperscale data centers in unincorporated areas and against rezoning three Douglas Road properties near the Microsoft development in Granger. Both proposals now go to the county council, which decides next.",
+    "s": [
+      [
+        "WNDU",
+        "https://www.wndu.com/2026/11/17/st-joseph-county-plan-commission-recommends-against-rezoning-data-center-ban/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed countywide hyperscale ban, with unfavorable panel recommendation, still pending",
+    "pl": [
+      [
+        "St. Joseph County",
+        "county"
+      ],
+      [
+        "Granger",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-22T05:51:57.668Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -5097,6 +5333,66 @@
     ],
     "auto": true,
     "added": "2026-11-21T18:58:06.978Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "US",
+    "w": "NERC",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "permitting",
+      "siting"
+    ],
+    "t": "NERC asks FERC to approve first reliability standards for data centers and other big computing loads",
+    "b": "NERC filed three proposed standards covering interconnection studies, operations data and protection coordination for sites of 50 MW or more at 100 kV or above. It asked FERC to act quickly. Nothing binds developers until FERC approves.",
+    "s": [
+      [
+        "American Public Power Association",
+        "https://www.publicpower.org/periodical/article/nerc-seeks-ferc-approval-proposed-reliability-standards-tied-integration-computational-loads"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding grid-connection standards proposed nationwide; not yet approved",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-22T05:51:56.755Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "OH",
+    "w": "Ohio legislative leaders",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "Ohio GOP leaders keep HB 646 tax-break cut open for lame duck, Acton backs conditional pause",
+    "b": "Senate President McColley says everything is on the table and Speaker Huffman calls HB 646 a good bill needing tuning. It would halve new sales tax breaks but spare existing contracts. Nothing is scheduled. Governor-elect Acton backs a conditional moratorium.",
+    "s": [
+      [
+        "Ohio Capital Journal",
+        "https://www.yahoo.com/news/politics/articles/ohio-lawmakers-pass-data-center-090040281.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed halving of new data center sales tax breaks, not yet scheduled",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-22T05:51:58.539Z"
   },
   {
     "d": "2026-11-15",
@@ -8260,6 +8556,41 @@
     ],
     "auto": true,
     "added": "2026-11-21T06:19:10.289Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "AK",
+    "w": "FNSB Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Fairbanks borough planning commission backs 18-month pause on large data center permits",
+    "b": "The commission voted to recommend the mayor's proposed data center permit moratorium, lengthening it from 12 to 18 months and giving staff 10 months to study. The Assembly votes next, likely Jan. 14. Military base projects likely fall outside it.",
+    "s": [
+      [
+        "Alaska's News Source",
+        "https://www.alaskasnewssource.com/2026/11/17/fnsb-planning-commission-recommends-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed 18-month permit pause awaiting Assembly vote",
+    "pl": [
+      [
+        "Fairbanks North Star Borough",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-22T05:52:00.014Z"
   },
   {
     "d": "2026-11-09",
