@@ -813,6 +813,76 @@
     "added": "2026-11-22T19:20:11.103Z"
   },
   {
+    "d": "2026-11-23",
+    "j": "IN",
+    "w": "Warrick County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Warrick County commissioners adopt data center overlay ordinance after tabling it two weeks earlier",
+    "b": "Commissioners approved an ordinance creating a floating data center overlay district. It approves no project; each proposal needs public zoning review and must disclose infrastructure demands and safeguards. A 180-day moratorium on applications stays in effect through Feb. 7. The plan commission had recommended against it.",
+    "s": [
+      [
+        "14 News (WFIE)",
+        "https://www.14news.com/2026/11/23/commissioners-vote-warrick-co-data-center-ordinance/"
+      ]
+    ],
+    "im": -2,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding county zoning rules with per-project review; moratorium continues",
+    "pl": [
+      [
+        "Warrick County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T23:42:24.207Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "VA",
+    "w": "Botetourt Circuit Court",
+    "lv": "local",
+    "k": "action",
+    "st": "denied",
+    "ty": [
+      "siting",
+      "disclosure"
+    ],
+    "t": "Judge voids Botetourt's Google data center deal over open-meetings violation, halts construction",
+    "b": "A substitute circuit judge ruled the county board broke Virginia's open-meetings law when it approved the Google developer agreement in June 2025. He voided those actions, ordered construction stopped and required a new, compliant public hearing. The county is weighing options.",
+    "s": [
+      [
+        "Cardinal News",
+        "https://cardinalnews.org/2026/11/23/judge-halts-google-data-center-construction-in-botetourt-county-orders-public-hearing/"
+      ]
+    ],
+    "im": 0,
+    "ef": "deny",
+    "fo": 3,
+    "rc": 1,
+    "du": "s",
+    "rl": "d",
+    "iw": "Court voids one project's approval and halts work until a new hearing",
+    "pl": [
+      [
+        "Botetourt County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T23:42:24.572Z"
+  },
+  {
     "d": "2026-11-21",
     "j": "NC",
     "w": "NC Senate District 24 race",
@@ -2023,6 +2093,45 @@
     "linkCheck": "blocked-by-site"
   },
   {
+    "d": "2026-11-19",
+    "j": "NM",
+    "w": "Lea County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Lea County approves $130 billion bonds for Google data center, rejects moratorium",
+    "b": "Commissioners approved industrial revenue bonds, a lease and three ordinances for Google's campus near Hobbs, with payments in lieu of taxes. They unanimously rejected a six-month moratorium sought by a petition with more than 800 signatures.",
+    "s": [
+      [
+        "Searchlight New Mexico",
+        "https://searchlightnm.org/lea-county-commission-oks-130-billion-deal-for-google-data-center/"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Final approval of one named project plus a rejected pause",
+    "pl": [
+      [
+        "Lea County",
+        "county"
+      ],
+      [
+        "Hobbs",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T23:42:25.096Z"
+  },
+  {
     "d": "2026-11-18",
     "j": "TN",
     "w": "Shelby County Commission",
@@ -2780,6 +2889,41 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-22T05:51:59.309Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "TN",
+    "w": "Shelby County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Shelby County sponsor withdraws data center moratorium as commission advances joint rules ordinance 5-0",
+    "b": "In committee, commissioners advanced an amended joint city-county data center ordinance 5-0 with five abstentions. The sponsor pulled her 12-month moratorium to await the Land Use Control Board vote, set for Dec. 3 or 6. A final commission vote could follow in December.",
+    "s": [
+      [
+        "Tri-State Defender",
+        "https://tri-statedefender.com/shelby-county-moves-forward-with-data-center-joint-ordinance-moratorium-vote-pushed-to-december/11/20/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting rules replace the withdrawn pause",
+    "pl": [
+      [
+        "Shelby County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T23:42:25.037Z"
   },
   {
     "d": "2026-11-17",
@@ -5700,6 +5844,40 @@
     "linkCheck": "blocked-by-site"
   },
   {
+    "d": "2026-11-16",
+    "j": "OK",
+    "w": "Broken Arrow City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Broken Arrow extends data center moratorium through June 2027",
+    "b": "The council unanimously extended its pause on accepting and approving new data center applications and permits to June 30, 2027. The June ordinance was due to expire Dec. 31.",
+    "s": [
+      [
+        "Broken Arrow Sentinel",
+        "https://basentinel.com/broken-arrow-extends-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "City-wide pause on new data center approvals, in force, extended",
+    "pl": [
+      [
+        "Broken Arrow",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T23:42:24.502Z"
+  },
+  {
     "d": "2026-11-15",
     "j": "US",
     "w": "Rep. Maxine Dexter",
@@ -6943,6 +7121,40 @@
     ],
     "auto": true,
     "added": "2026-11-23T06:39:50.454Z"
+  },
+  {
+    "d": "2026-11-12",
+    "j": "TN",
+    "w": "Rutherford County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Rutherford County commissioners unanimously adopt 12-month data center construction pause",
+    "b": "The county commission passed a one-year pause on data center construction, effective immediately and running to Nov. 12, 2027. It follows the planning commission's October recommendation. The county has no zoning rules for the facilities yet.",
+    "s": [
+      [
+        "Yahoo News (local report)",
+        "https://www.yahoo.com/news/articles/rutherford-county-approves-12-month-144149472.html"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Adopted county pause for 12 months",
+    "pl": [
+      [
+        "Rutherford County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T23:42:24.849Z"
   },
   {
     "d": "2026-11-11",
@@ -12834,6 +13046,41 @@
     "added": "2026-11-17T07:13:53.898Z"
   },
   {
+    "d": "2026-11-04",
+    "j": "PA",
+    "w": "East Cocalico supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "East Cocalico supervisors unanimously restrict data centers to light industrial conditional use",
+    "b": "Lancaster County township adopted an ordinance allowing data centers only as a conditional use in light industrial zones, with 250-foot residential and 500-foot sensitive-site setbacks, 15-acre minimum, water and power proof, and fire-response plans.",
+    "s": [
+      [
+        "LancasterOnline",
+        "https://lancasteronline.com/news/regional/east-cocalico-twp-supervisors-unanimously-approve-ordinance-restricting-data-centers/article_2914574a-ea39-4680-9db3-e5abd7b332fc.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding siting, setback, water and power conditions in one township",
+    "pl": [
+      [
+        "East Cocalico Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T23:42:24.422Z"
+  },
+  {
     "d": "2026-11-03",
     "j": "MO",
     "w": "Missouri voters",
@@ -17665,6 +17912,36 @@
     "auto": true,
     "added": "2026-11-23T06:39:50.261Z",
     "linkCheck": "blocked-by-site"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "AL",
+    "w": "Alabama PSC",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "cost",
+      "disclosure"
+    ],
+    "t": "Alabama PSC order sets review and disclosure rules for 150 MW-plus data center contracts",
+    "b": "The commission's order covers Alabama Power contracts with data-processing customers reserving 150 MW or more. It requires cost coverage, public disclosure of the customer and capacity, and confidential review of terms. Critics say it sets no firm minimums. The revised schedule took effect Nov. 23.",
+    "s": [
+      [
+        "The Daily Caller",
+        "https://dailycaller.com/2026/11/23/alabama-powers-data-center-deals-face-new-electricity-cost-rules/"
+      ]
+    ],
+    "im": -2,
+    "ef": "cost",
+    "fo": 3,
+    "rc": 4,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding cost-coverage and disclosure rules for the largest data center contracts",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-23T23:42:24.773Z"
   },
   {
     "d": "2026-11-02",
