@@ -1050,6 +1050,114 @@
     "added": "2026-11-22T05:51:57.339Z"
   },
   {
+    "d": "2026-11-20",
+    "j": "LA",
+    "w": "Louisiana Second Circuit",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Appeals court upholds Shreveport's permit for Amazon-linked data center park",
+    "b": "Louisiana's Second Circuit affirmed Shreveport's special use permit for a seven-building data center off Greenwood Road, rejecting three residents' challenge. The council had reversed a tied planning vote in December 2025. A traffic study is still required before building permits.",
+    "s": [
+      [
+        "KSLA",
+        "https://www.ksla.com/2026/11/20/appeals-court-upholds-shreveport-data-center-permit/"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Court upholds approval of one specific project",
+    "pl": [
+      [
+        "Shreveport",
+        "city"
+      ],
+      [
+        "Caddo Parish",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T06:39:51.425Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "AZ",
+    "w": "Cochise County board chair",
+    "lv": "local",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Cochise County chair says SpaceX answered concerns ahead of Dec. 9 data center vote",
+    "b": "Supervisors chair Frank Antenori said SpaceX pledged no groundwater use, $3.6 billion in grid upgrades and dark-sky compliance for its $50 billion campus. The Attorney General has asked the county to delay the Dec. 9 planning vote; no commissioner committed to a delay.",
+    "s": [
+      [
+        "azfamily",
+        "https://www.azfamily.com/2026/11/21/cochise-county-chair-reveals-what-spacex-promised-50-billion-data-center/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 0,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Official signals support for one project; vote still pending",
+    "pl": [
+      [
+        "Cochise County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T06:39:52.176Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "OR",
+    "w": "Washington County elections",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Washington County, Oregon chair race stays within 699 votes, recount likely after Nov. 30 tally",
+    "b": "Moratorium-backing commissioner Fai leads Treece 49.69% to 49.38% in unofficial results. Oregon requires an automatic recount below a 0.2% margin; final tally is Nov. 30. The outcome shapes the county board's stance on data centers.",
+    "s": [
+      [
+        "OPB",
+        "https://www.opb.org/article/2026/11/20/washington-county-headed-for-recount/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Close race; leading candidate backs pausing data centers; unofficial count",
+    "pl": [
+      [
+        "Washington County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T06:39:52.696Z"
+  },
+  {
     "d": "2026-11-19",
     "j": "AR",
     "w": "Washington County Quorum Court",
@@ -1882,6 +1990,37 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-22T05:51:57.106Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "UT",
+    "w": "Utah Trust Lands board",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Utah Trust Lands board refuses to revisit Valar nuclear and data center lease",
+    "b": "Carbon County residents asked the board to reconsider its ground lease for Valar Atomics' reactor and data center campus. The agency said the signed lease is binding and cannot be reopened. Valar still needs local, state and federal permits.",
+    "s": [
+      [
+        "Utah News Dispatch via East Idaho News",
+        "https://www.eastidahonews.com/2026/11/as-plans-for-a-carbon-county-data-center-and-nuclear-reactors-advance-residents-push-to-be-heard/"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "State land lease for one campus stays in force despite resident request",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-23T06:39:51.979Z",
+    "linkCheck": "blocked-by-site"
   },
   {
     "d": "2026-11-18",
@@ -4417,6 +4556,36 @@
     "added": "2026-11-22T19:20:12.365Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "WV",
+    "w": "WV Public Service Commission",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "West Virginia regulators approve $2.48 billion Mon Power gas plant and solar projects",
+    "b": "The PSC approved a roughly 1,200 MW gas plant near Fort Martin plus solar arrays. Critics say it is meant for data center load and want costs kept off ratepayers; FirstEnergy says it will serve its customers. Rates are set later.",
+    "s": [
+      [
+        "WV MetroNews",
+        "https://wvmetronews.com/2026/11/19/construction-on-firstenergys-2-48-billion-natural-gas-plant-solar-projects-expected-to-start-next-year/"
+      ]
+    ],
+    "im": 1,
+    "ef": "help",
+    "fo": 3,
+    "rc": 4,
+    "du": "p",
+    "rl": "i",
+    "iw": "Plant approval tied by critics to data center demand; supplies power",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-23T06:39:51.826Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -6738,6 +6907,44 @@
     "added": "2026-11-21T18:58:05.662Z"
   },
   {
+    "d": "2026-11-12",
+    "j": "OH",
+    "w": "Prologis (developer)",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Prologis sues Trenton, Ohio, over voter-approved data center ban at Project Mila",
+    "b": "The developer filed a federal suit arguing the Nov. 3 charter amendment, passed by about 80% and barring facilities over 25 megawatts, cannot reach its permitted, partly built project. It seeks to have the ban declared unconstitutional as applied.",
+    "s": [
+      [
+        "WOSU Public Media",
+        "https://www.wosu.org/2026-11-13/developer-sues-trenton-over-voter-approved-data-center-ban"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Challenge to a city ban; outcome decides whether it binds a built project",
+    "pl": [
+      [
+        "Trenton",
+        "city"
+      ],
+      [
+        "Butler County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-23T06:39:50.454Z"
+  },
+  {
     "d": "2026-11-11",
     "j": "US",
     "w": "Veterans for Public Lands",
@@ -8821,6 +9028,36 @@
     ],
     "auto": true,
     "added": "2026-11-22T05:52:00.014Z"
+  },
+  {
+    "d": "2026-11-10",
+    "j": "SD",
+    "w": "SD Legislature Executive Board",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "disclosure"
+    ],
+    "t": "South Dakota lawmakers adopt hyperscale data center study memo over two no votes",
+    "b": "The Legislature's Executive Board adopted a staff report on hyperscale data centers, defined as 100 MW or more, by voice vote. Critics called it thin. Senate leader Karr called existing water, power and local-control rules major safeguards; further study is left to the next Legislature.",
+    "s": [
+      [
+        "South Dakota Public Broadcasting",
+        "https://www.sdpb.org/politics/2026-11-20/lawmakers-face-tightrope-walk-priorities-as-data-centers-prove-unpopular"
+      ]
+    ],
+    "im": -1,
+    "ef": "info",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Study memo only; leaders signal existing law is enough",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-23T06:39:51.080Z"
   },
   {
     "d": "2026-11-09",
@@ -17398,6 +17635,36 @@
     ],
     "auto": true,
     "added": "2026-11-17T07:13:54.555Z"
+  },
+  {
+    "d": "2026-11-03",
+    "j": "US",
+    "w": "Exelon at FERC",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost"
+    ],
+    "t": "Exelon asks FERC to change PJM's three-year-ahead capacity auction",
+    "b": "Exelon filed a complaint at FERC on Nov. 3 challenging PJM's three-year forward capacity auction. Consumer advocates cite it alongside the market monitor's warning that forecast data center load that never arrives could add $5 billion to $10 billion in costs.",
+    "s": [
+      [
+        "Utility Dive",
+        "https://www.utilitydive.com/news/ratepayer-advocates-pjm-market-monitor-capacity-auction/875165/"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 4,
+    "du": "m",
+    "rl": "i",
+    "iw": "Grid-market complaint pending; tied to data center load forecasts",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-23T06:39:50.261Z",
+    "linkCheck": "blocked-by-site"
   },
   {
     "d": "2026-11-02",
