@@ -172,6 +172,40 @@
     "added": "2026-11-16T21:52:36.619Z"
   },
   {
+    "d": "2026-12-10",
+    "j": "FL",
+    "w": "Tampa City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Tampa advances data center moratorium, with public hearings set for Dec. 10 and Jan. 7",
+    "b": "Council discussed a resolution directing staff to prepare a moratorium ordinance while the city reviews its comprehensive plan and codes for data center rules. Public hearings are set for Dec. 10 and Jan. 7. Length and scope were not reported.",
+    "s": [
+      [
+        "WMNF",
+        "https://www.wmnf.org/tampa-city-council-is-considering-a-moratorium-on-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed city pause, hearings scheduled, not yet adopted",
+    "pl": [
+      [
+        "Tampa",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T22:11:35.771Z"
+  },
+  {
     "d": "2026-12-09",
     "j": "PA",
     "w": "Hanover Township supervisors",
@@ -276,6 +310,41 @@
     ],
     "auto": true,
     "added": "2026-11-22T05:51:59.256Z"
+  },
+  {
+    "d": "2026-12-08",
+    "j": "ME",
+    "w": "Hollis voters",
+    "lv": "local",
+    "k": "action",
+    "st": "ballot",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Hollis, Maine voters to decide 180-day moratorium on data centers over 2,500 sq ft",
+    "b": "Article 2 on the Dec. 8 town ballot would pause new or expanded data centers with 2,500 square feet or more of data center area, including access roads and parking. The select board cut the threshold from 25,000 on Nov. 4. A simple majority passes it.",
+    "s": [
+      [
+        "Ballotpedia News",
+        "https://news.ballotpedia.org/2026/11/15/voters-have-decided-on-47-measures-related-to-data-centers-in-2026-in-december-they-will-consider-four-more/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Local ballot measure for a 180-day pause, not yet voted",
+    "pl": [
+      [
+        "Hollis",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T22:11:34.668Z"
   },
   {
     "d": "2026-12-07",
@@ -1165,6 +1234,145 @@
     "added": "2026-11-24T09:06:48.570Z"
   },
   {
+    "d": "2026-11-23",
+    "j": "MI",
+    "w": "Alpena Township board",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Alpena Township, Michigan, adopts one-year pause on data center applications",
+    "b": "The township board approved Ordinance 162 on a Monday vote, with all present members in favor. It halts accepting or processing data center applications for a year or until new zoning rules are adopted, while the zoning ordinance is reviewed.",
+    "s": [
+      [
+        "The Alpena News",
+        "https://www.thealpenanews.com/news/local-news/2026/11/alpena-township-approves-one-year-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Adopted one-year pause on data center applications in one township",
+    "pl": [
+      [
+        "Alpena Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T22:11:32.186Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "IA",
+    "w": "Marshalltown City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Marshalltown extends data center moratorium to Jan. 22 and advances outright ban",
+    "b": "The council voted 7-0 to extend its moratorium up to 60 days, through Jan. 22, 2027, after removing an early-end trigger 4-3. It also voted 4-3 on a first reading of an ordinance banning data centers in city limits; Gary Thompson switched sides.",
+    "s": [
+      [
+        "Times Republican",
+        "https://www.timesrepublican.com/news/todays-news/2026/11/marshalltown-city-council-extends-data-center-moratorium-narrowly-votes-to-advance-full-ban/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Extension is a short in-force pause; ban is only a first reading.",
+    "pl": [
+      [
+        "Marshalltown",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T22:11:32.535Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "PA",
+    "w": "Falls Township supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Falls Township, Bucks County, advertises draft data center zoning with noise and water rules",
+    "b": "Supervisors advertised a curative amendment making data centers a conditional use in one manufacturing district, with 2,000-foot noise setbacks, closed-loop cooling and impact studies. It would not touch the Amazon campus under construction. Discussion is set for Dec. 21, final vote expected in January.",
+    "s": [
+      [
+        "LevittownNow",
+        "https://levittownnow.com/2026/11/24/falls-twp-supervisors-unveil-proposed-restrictions-on-future-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting, noise and water conditions in one township",
+    "pl": [
+      [
+        "Falls Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T22:11:32.668Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "NC",
+    "w": "Chowan County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Chowan County, NC, adopts one-year pause on data center and crypto approvals, 3-2",
+    "b": "Commissioners voted 3-2 for a pause through Nov. 23, 2027 on rezonings, permits and building approvals for data centers and crypto mines in unincorporated areas. Edenton and projects with vested state approvals are exempt. Two members questioned the year-long length.",
+    "s": [
+      [
+        "Albemarle Observer",
+        "https://albemarleobserver.news/2026/11/24/chowan-commissioners-approve-one-year-moratorium-on-data-centers/"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "County-wide one-year freeze on approvals, in force immediately",
+    "pl": [
+      [
+        "Chowan County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T22:11:35.499Z"
+  },
+  {
     "d": "2026-11-21",
     "j": "NC",
     "w": "NC Senate District 24 race",
@@ -1543,6 +1751,36 @@
     ],
     "auto": true,
     "added": "2026-11-24T09:06:47.740Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "AK",
+    "w": "AIDEA board / governor-elect",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "AIDEA board adjourns without acting after governor-elect's freeze request; about $200M committed since October",
+    "b": "Alaska's economic development corporation has committed roughly $200 million since October, with up to $150 million more possible quickly. The board adjourned without acting after Kreiss-Tomkins asked for a freeze. A fifth meeting is set for early December, before he takes office Dec. 7.",
+    "s": [
+      [
+        "Alaska Beacon via The Alaska Current",
+        "https://thealaskacurrent.com/2026/11/23/aidea-alaska-kreiss-tomkins/"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 0,
+    "rc": 5,
+    "du": "m",
+    "rl": "i",
+    "iw": "State agency spending on projects tied to data center land push; incoming governor opposes",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-24T22:11:37.701Z"
   },
   {
     "d": "2026-11-19",
@@ -2447,6 +2685,36 @@
     ],
     "auto": true,
     "added": "2026-11-23T23:42:25.096Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "KY",
+    "w": "Kentucky legislators and Senate leaders",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "tax",
+      "siting"
+    ],
+    "t": "Kentucky lawmakers plan 2027 data center guardrails and tax-break repeal debate after election losses",
+    "b": "After more than six Republican legislators lost to challengers who attacked data center tax breaks, Rep. Bray plans a stronger HB 593 and repeal of the 50-year sales tax exemption is expected on the agenda. Senate President Stivers called good legislation highly likely.",
+    "s": [
+      [
+        "WKMS",
+        "https://www.wkms.org/2026-11-19/data-centers-loomed-large-in-local-elections-as-kentucky-lawmakers-eye-new-policies"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Planned bills adding rules and repealing a tax break; none filed yet",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-24T22:11:36.624Z"
   },
   {
     "d": "2026-11-18",
@@ -5149,6 +5417,99 @@
     ],
     "auto": true,
     "added": "2026-11-24T09:06:48.428Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "US",
+    "w": "Rasmussen Reports",
+    "lv": "federal",
+    "k": "politics",
+    "st": "poll",
+    "ty": [
+      "siting"
+    ],
+    "t": "Rasmussen: 57% of likely voters oppose a data center near home, up from 52% in July",
+    "b": "Rasmussen's Nov. 15-17 survey of 1,045 likely voters found 38% strongly opposed to a local data center and 35% in favor. Half want state and local governments to decide; 39% prefer national rules.",
+    "s": [
+      [
+        "Newsmax via Yahoo News",
+        "https://www.yahoo.com/news/us/articles/rasmussen-americans-sour-local-data-191349428.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Poll shows majority opposing nearby data centers; talk only",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-24T22:11:31.779Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "OH",
+    "w": "Ohio Senate committee",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax",
+      "cost"
+    ],
+    "t": "Ohio Senate holds first hearing on bill ending new data center sales tax breaks",
+    "b": "SB 374, sponsored by Sens. Blessing and Smith, would end new sales and use tax awards for data centers from Oct. 1, 2027. Sponsors expect reform eventually but cite industry lobbying; an earlier House bill, HB 646, died in June.",
+    "s": [
+      [
+        "Statehouse News Bureau",
+        "https://www.statenews.org/government-politics/2026-11-23/data-center-action-one-question-facing-ohio-lawmakers-during-lame-duck"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposal to end new sales tax breaks, introduced, in committee",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-24T22:11:32.275Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "AZ",
+    "w": "Arizona Corporation Commission",
+    "lv": "state",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "cost",
+      "disclosure"
+    ],
+    "t": "Arizona regulators approve Tucson Electric rate hike with cost studies for new data center loads",
+    "b": "The commission voted 4-1 to raise TEP revenue about 10%, effective Dec. 1. It ordered cost-of-service studies when large customers such as data centers connect, aiming to keep their costs off existing ratepayers. Attorney General Mayes criticized the outcome.",
+    "s": [
+      [
+        "Cronkite News / Calo News",
+        "https://www.calonews.com/arizona/arizona-commission-approves-tep-rate-hike-annual-increases-for-the-next-five-years/article_1dfc0b59-e7e4-4511-a5ac-94d5a0f7ced5.html"
+      ],
+      [
+        "Arizona Attorney General (press release via EIN Presswire)",
+        "https://www.einpresswire.com/article/957614906/attorney-general-mayes-calls-corporation-commission-s-green-light-for-tep-s-rate-hike-a-bad-deal-for-ratepayers"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 3,
+    "rc": 4,
+    "du": "p",
+    "rl": "i",
+    "iw": "Rate order adds large-load cost-study duty; mainly a utility rate case tied to data center demand.",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-24T22:11:37.303Z"
   },
   {
     "d": "2026-11-16",
