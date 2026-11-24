@@ -883,6 +883,288 @@
     "added": "2026-11-23T23:42:24.572Z"
   },
   {
+    "d": "2026-11-23",
+    "j": "IN",
+    "w": "Warrick County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Warrick County adopts data center overlay district ordinance, 2-0 with one abstention",
+    "b": "Commissioners approved a floating overlay district two weeks after tabling it. It approves no project; each must pass public zoning review and disclose infrastructure demands and safeguards. A separate 180-day moratorium on applications continues until Feb. 7.",
+    "s": [
+      [
+        "Yahoo News (Eyewitness News)",
+        "https://www.yahoo.com/news/articles/warrick-county-commissioners-vote-data-231650351.html"
+      ]
+    ],
+    "im": -2,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding review and disclosure conditions adopted county-wide",
+    "pl": [
+      [
+        "Warrick County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:47.801Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "PA",
+    "w": "PA DEP",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "water",
+      "permitting"
+    ],
+    "t": "DEP holds hearing on stormwater permits for Project Atlas data center",
+    "b": "Pennsylvania's environmental regulator took public testimony at Cedar Crest College on runoff and wetland permits for the hyperscale campus across from Parkland High School. Permits are undecided; the township still must approve its land development plan.",
+    "s": [
+      [
+        "WFMZ",
+        "https://www.wfmz.com/news/area/lehighvalley/lehigh-county/allentown-area/dep-holds-public-meeting-on-data-center-proposal-in-south-whitehall/article_b4de6289-e339-48b7-807a-fb8f3730a56e.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Permit review for one project; outcome undecided",
+    "pl": [
+      [
+        "South Whitehall Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:48.068Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "OK",
+    "w": "Piedmont City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Piedmont council delays Project Open Sky data center rezoning to Dec. 3, 3-2",
+    "b": "The council postponed first reading of Cloverleaf's rezoning for Project Open Sky and also pushed Beltline Energy's data center ordinance back to Dec. 3 while the attorney reviews amendments. Members raised cooling, water, sewer and noise concerns.",
+    "s": [
+      [
+        "KOKH Fox 25",
+        "https://okcfox.com/news/local/piedmont-delays-two-data-center-proposals-amid-utility-zoning-concerns-beltline-cloverleaf-project-open-sky-land-development-pud-rezoning-utilities-development"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Rezoning for a specific project still pending, delayed again",
+    "pl": [
+      [
+        "Piedmont",
+        "city"
+      ],
+      [
+        "Canadian County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:48.140Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "TN",
+    "w": "Shelby County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Shelby County commissioners pass first reading of data center rules on noise and water, 9-4",
+    "b": "The commission advanced an amendment to the Unified Development Code changing data center zoning, setting noise limits and water-use rules, reportedly including an aquifer ban. Two more readings remain.",
+    "s": [
+      [
+        "Action News 5",
+        "https://www.actionnews5.com/2026/11/24/shelby-county-commission-considers-data-center-regulations/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting, noise and water limits, first reading only",
+    "pl": [
+      [
+        "Shelby County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:48.157Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "TN",
+    "w": "Hickman County Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Hickman County commissioners scheduled to vote on one-year data center moratorium",
+    "b": "Commissioners had recommended a one-year pause on data center construction and permits and were set to take the final vote Nov. 23. The outcome was not reported when the cited article ran.",
+    "s": [
+      [
+        "WSMV",
+        "https://www.wsmv.com/2026/11/23/middle-tennessee-county-commissioners-vote-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Scheduled vote on a one-year pause; result unconfirmed",
+    "pl": [
+      [
+        "Hickman County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:48.334Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "VA",
+    "w": "Botetourt Circuit Court judge",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting",
+      "disclosure"
+    ],
+    "t": "Judge voids Botetourt's Google data center agreement vote, halts related construction",
+    "b": "A judge ruled the supervisors violated the state open-meetings law when they approved a Google performance agreement in June, declared the vote void and ordered related construction to stop. The county and Google are weighing options; no appeal announced.",
+    "s": [
+      [
+        "WSET",
+        "https://wset.com/news/local/judge-rules-botetourt-county-google-data-center-deal-violated-law-halts-construction-november-2026"
+      ]
+    ],
+    "im": -1,
+    "ef": "deny",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Court voids approval of one project and orders work halted",
+    "pl": [
+      [
+        "Botetourt County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:48.512Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "CO",
+    "w": "Aurora City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Aurora council unanimously passes data center moratorium through September 2027 as Vantage drops Trident site",
+    "b": "After two failed attempts, the council passed a temporary moratorium lasting through September 2027 while it writes rules. Coverage differs on whether vacant east-side land is exempt. Vantage said it will not build its proposed Trident campus near Green Valley Ranch.",
+    "s": [
+      [
+        "Denver Gazette",
+        "https://www.denvergazette.com/2026/11/23/vantage-drops-aurora-location-for-trident-data-center/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Citywide temporary pause in force, about ten months, aimed at data centers",
+    "pl": [
+      [
+        "Aurora",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:48.530Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "WY",
+    "w": "Cheyenne City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Cheyenne council advances construction rules, drops decibel limits that data center firms opposed",
+    "b": "The council advanced a substitute ordinance without enforceable decibel limits. Data centers must make no discernible noise at the property line or be treated as industrial uses. A separate ordinance would require special review for on-site power generation. Final adoption is expected in two weeks.",
+    "s": [
+      [
+        "Cap City News",
+        "https://capcity.news/community/city/2026/11/23/cheyenne-advances-construction-regulations-officially-removes-noise-rules-ahead-of-final-vote/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed siting and noise conditions, not yet finally adopted, city only",
+    "pl": [
+      [
+        "Cheyenne",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:48.570Z"
+  },
+  {
     "d": "2026-11-21",
     "j": "NC",
     "w": "NC Senate District 24 race",
@@ -1226,6 +1508,41 @@
     ],
     "auto": true,
     "added": "2026-11-23T06:39:52.696Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "MN",
+    "w": "Minneapolis City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Minneapolis council fails to override Frey veto of data center rules; moratorium lapses",
+    "b": "The council passed approval-based data center rules 7-6 on Nov. 12. Mayor Frey vetoed them Nov. 19, and the override got 7 of 9 needed votes. The moratorium expired Nov. 21, leaving existing zoning, which allows data centers in 10 of 15 districts.",
+    "s": [
+      [
+        "Spokesman-Recorder",
+        "https://spokesman-recorder.com/2026/11/22/minneapolis-data-center-moratorium-ends-veto-override-fails/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Rules and moratorium both ended; city falls back to permissive zoning",
+    "pl": [
+      [
+        "Minneapolis",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:47.740Z"
   },
   {
     "d": "2026-11-19",
@@ -2924,6 +3241,35 @@
     ],
     "auto": true,
     "added": "2026-11-23T23:42:25.037Z"
+  },
+  {
+    "d": "2026-11-18",
+    "j": "IA",
+    "w": "Iowa State Geologist",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "water"
+    ],
+    "t": "Iowa state geologist urges groundwater well network before more data centers arrive",
+    "b": "At the Iowa Nature Summit, State Geologist Keith Schilling said data centers have not yet hurt groundwater but warned against tapping deep aquifers. He backed a 92-well monitoring network costing about $3 million; a House bill to expand monitoring stalled last session.",
+    "s": [
+      [
+        "Times Republican",
+        "https://www.timesrepublican.com/news/todays-news/2026/11/iowa-geologist-groundwater-monitoring-needed-if-more-data-centers-are-coming/"
+      ]
+    ],
+    "im": 0,
+    "ef": "info",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Official urges monitoring and caution on water use; no binding action yet",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-24T09:06:48.040Z"
   },
   {
     "d": "2026-11-17",
@@ -4728,6 +5074,81 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-23T06:39:51.826Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "NY",
+    "w": "TeraWulf",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "disclosure"
+    ],
+    "t": "TeraWulf sues Lansing over records requests as town weighs data center ban",
+    "b": "The developer behind the Cayuga plant data center filed a court challenge against the town over refused records requests, days before the board's 3-2 ban vote that a landowner protest petition may block.",
+    "s": [
+      [
+        "The Ithaca Voice",
+        "https://ithacavoice.org/2026/11/lansings-data-center-ban-is-in-limbo/"
+      ]
+    ],
+    "im": 0,
+    "ef": "fast",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Developer litigation against town, pushing against a local ban",
+    "pl": [
+      [
+        "Lansing",
+        "township"
+      ],
+      [
+        "Tompkins County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:48.121Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "VA",
+    "w": "Spotsylvania supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Spotsylvania approves 555-acre Amazon-linked Crossroads data center campus 4-3 with 57 conditions",
+    "b": "In the county's first test of its special-use-permit rule, supervisors approved the Kettler campus with Amazon Web Services as end user. The approved plan cut to seven buildings, bars potable water, and sets large setbacks. Residents are exploring an appeal.",
+    "s": [
+      [
+        "Fredericksburg Free Press",
+        "https://www.fredericksburgfreepress.com/2026/11/18/despite-strong-opposition-spotsylvania-supervisors-approve-crossroads-data-center-campus/"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Approves one named campus, with binding conditions",
+    "pl": [
+      [
+        "Spotsylvania County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-24T09:06:48.428Z"
   },
   {
     "d": "2026-11-16",
