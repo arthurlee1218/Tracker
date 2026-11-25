@@ -277,6 +277,44 @@
     "added": "2026-11-13T01:00:35.626Z"
   },
   {
+    "d": "2026-12-09",
+    "j": "TX",
+    "w": "Starbase City Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax"
+    ],
+    "t": "Starbase to hear SpaceX's 10-year, 100% tax break for $24B data center Dec. 9",
+    "b": "Starbase's commission, where two of three members work for SpaceX, will take up a full 10-year property tax abatement for the $24 billion data center and gas plant, after Cameron County declined its own hearing.",
+    "s": [
+      [
+        "Newsweek via Yahoo News",
+        "https://www.yahoo.com/news/us/articles/elon-musks-spacex-data-centers-013332158.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 1,
+    "rc": 1,
+    "du": "l",
+    "rl": "d",
+    "iw": "Proposed full tax abatement for one project; scheduled, not adopted",
+    "pl": [
+      [
+        "Starbase",
+        "city"
+      ],
+      [
+        "Cameron County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T07:47:20.712Z"
+  },
+  {
     "d": "2026-12-08",
     "j": "DE",
     "w": "New Castle County Council candidates",
@@ -1371,6 +1409,180 @@
     ],
     "auto": true,
     "added": "2026-11-24T22:11:35.499Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "US",
+    "w": "Sen. Whitehouse (EPW Democrats)",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "Whitehouse urges House to pass Senate permitting bill that makes data centers pay grid costs",
+    "b": "Senate environment panel's top Democrat pressed the House to take up the 62-33 Senate bill, citing a Grid Strategies estimate that data centers would cover $55 billion in transmission costs over ten years. The bill has union and climate-group backing; the House has not scheduled a vote.",
+    "s": [
+      [
+        "Senate Environment and Public Works Committee (Democrats)",
+        "https://www.epw.senate.gov/press/dem/whitehouse-urges-swift-house-passage-of-permitting-reform-data-center-accountability-bill/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Push to pass ratepayer-cost rules for large data centers; not yet law",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-25T07:47:16.706Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "IA",
+    "w": "Estherville Planning and Zoning",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Estherville zoning panel unanimously adds low-frequency noise limits to data center ordinance",
+    "b": "After the council sent the draft back over noise worries near a school, the commission voted unanimously to add sound limits and an engineer's sound study. The amended ordinance returns to the council for a new reading and hearing; it is not yet adopted.",
+    "s": [
+      [
+        "KTIV",
+        "https://www.ktiv.com/2026/11/25/estherville-commission-recommends-noise-limits-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding noise conditions on data centers, not yet adopted",
+    "pl": [
+      [
+        "Estherville",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T07:47:18.469Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "AL",
+    "w": "Prichard City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Prichard extends data center moratorium one year; Edged Energy's Telegraph Road project not covered",
+    "b": "The council voted unanimously to extend its pause, giving the city time to study impacts and write rules. The mayor said the roughly $93 million Edged Energy project already held a building permit and is not covered, though it still needs a business license.",
+    "s": [
+      [
+        "NBC 15",
+        "https://mynbc15.com/news/local/struggling-communities-dont-need-more-struggles-prichard-residents-oppose-data-center"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "City-wide pause extended 12 months, with one project exempt",
+    "pl": [
+      [
+        "Prichard",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T07:47:20.981Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "WY",
+    "w": "Cheyenne City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Cheyenne data center standards ordinance dies for lack of a second",
+    "b": "A motion to approve the data center ordinance on second reading got no second, so it did not advance. It would have set noise, water and fire standards. A separate power generation ordinance moved ahead.",
+    "s": [
+      [
+        "ByteWire News",
+        "https://bytewire.news/cheyenne-city-council-approves-power-generation-rules-data-center-ordinance-fails/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding noise, water and fire standards failed",
+    "pl": [
+      [
+        "Cheyenne",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T07:47:21.110Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "WA",
+    "w": "Dallesport residents, Klickitat County",
+    "lv": "local",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Dallesport residents organize against proposed one-gigawatt data center campus, seek moratoria",
+    "b": "Residents of Dallesport learned through a records request that a landowner is marketing a nearly 300-acre site for up to 1 GW. No permit is filed. Organizers are writing commissioners and pushing local and statewide moratoria.",
+    "s": [
+      [
+        "KUOW",
+        "https://www.kuow.org/technology/2026-11-23/rural-washington-community-organizes-against-massive-data-center-proposal"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Residents seek a moratorium on a proposed campus; talk only",
+    "pl": [
+      [
+        "Dallesport",
+        "city"
+      ],
+      [
+        "Klickitat County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T07:47:21.688Z"
   },
   {
     "d": "2026-11-21",
@@ -3540,6 +3752,41 @@
     "added": "2026-11-24T09:06:48.040Z"
   },
   {
+    "d": "2026-11-18",
+    "j": "CT",
+    "w": "Colchester selectmen",
+    "lv": "local",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Colchester selectmen urge zoning commission to adopt data center moratorium",
+    "b": "Colchester's Board of Selectmen sent a letter asking Planning and Zoning to adopt a temporary pause, possibly a year, on new data centers, citing noise and water gaps in current rules. The commission can schedule a hearing at its next meeting.",
+    "s": [
+      [
+        "Hyperlocal Loop (citing NBC Connecticut)",
+        "https://hyperlocalloop.com/colchester-selectmen-push-for-one-year-moratorium-on-new-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Official request for a pause, not yet adopted",
+    "pl": [
+      [
+        "Colchester",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T07:47:18.968Z"
+  },
+  {
     "d": "2026-11-17",
     "j": "VA",
     "w": "Loudoun County",
@@ -5512,6 +5759,80 @@
     "added": "2026-11-24T22:11:37.303Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "IN",
+    "w": "Michigan City Common Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "permitting"
+    ],
+    "t": "Michigan City council approves data center pause that exempts Google's project under construction",
+    "b": "The council approved a temporary moratorium blocking permits and approvals for future data center projects. Google's campus, already under construction, is exempt, which drew protests from residents who wanted a broader pause. Vote tally and end date weren't reported.",
+    "s": [
+      [
+        "WSBT",
+        "https://wsbt.com/news/local/data-center-moratorium-passes-in-michigan-city"
+      ],
+      [
+        "95.3 MNC",
+        "https://www.953mnc.com/2026/11/18/michigan-city-leaders-temporarily-stop-data-center-development/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "City-wide pause on future projects; existing Google site exempt",
+    "pl": [
+      [
+        "Michigan City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T07:47:17.006Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "IN",
+    "w": "St. Joseph County Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "St. Joseph County council advances proposed ban on new hyperscale data centers after plan panel objects",
+    "b": "The county council moved a proposal to ban non-legacy hyperscale data centers forward the same day the Area Plan Commission unanimously opposed it. A December meeting will take public comment; no final vote date was given.",
+    "s": [
+      [
+        "WNDU",
+        "https://www.wndu.com/video/2026/11/18/st-joseph-county-council-advances-proposal-ban-non-legacy-hyper-scale-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed county ban on new hyperscale facilities, not yet adopted",
+    "pl": [
+      [
+        "St. Joseph County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T07:47:18.081Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -6658,6 +6979,40 @@
     ],
     "auto": true,
     "added": "2026-11-23T23:42:24.502Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "NY",
+    "w": "Cicero town board",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Cicero, NY board rejects year-long data center moratorium 4-1",
+    "b": "Cicero's town board voted 4-1 against a one-year pause. Councilors called it too vague, with no size threshold, and pointed to the state pause. One councilor expects a narrower proposal in January. The outgoing supervisor cast the only yes vote.",
+    "s": [
+      [
+        "Syracuse.com via GovTech",
+        "https://www.govtech.com/artificial-intelligence/new-york-town-rejects-data-center-moratorium-making-it-an-outlier"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Failed pause proposal; talk-level, direction is pause",
+    "pl": [
+      [
+        "Cicero",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T07:47:18.726Z"
   },
   {
     "d": "2026-11-15",
