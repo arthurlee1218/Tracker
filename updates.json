@@ -35,6 +35,40 @@
     "added": "2026-11-05T00:55:18.830Z"
   },
   {
+    "d": "2026-12-15",
+    "j": "IA",
+    "w": "Kossuth County supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Kossuth County sets Dec. 15 hearing on six-month data center moratorium",
+    "b": "After backing a six-month pause 3-2 on new data center construction, supervisors scheduled a public hearing for 9:30 a.m. Dec. 15 at the courthouse. Moratorium language must be published before the hearing.",
+    "s": [
+      [
+        "KLGA Algona Radio",
+        "https://algonaradio.com/2026/11/25/supervisors-set-public-hearing-for-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "Six-month county pause awaiting hearing and adoption",
+    "pl": [
+      [
+        "Kossuth County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T21:26:18.469Z"
+  },
+  {
     "d": "2026-12-14",
     "j": "OH",
     "w": "Twin Township trustees",
@@ -664,6 +698,41 @@
     "added": "2026-11-22T19:20:11.216Z"
   },
   {
+    "d": "2026-11-25",
+    "j": "SD",
+    "w": "Rapid City Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Rapid City planners reject six-month data center pause, advance stricter interim ordinance",
+    "b": "The planning commission voted 6-3 against a six-month pause on data center permits, then 8-1 for an alternate ordinance adding protections to current rules. It heads to council committee Dec. 2, with first reading Dec. 7.",
+    "s": [
+      [
+        "Rapid City Post",
+        "https://rapidcitypost.com/planning-commission-rejects-data-center-moratorium-advances-stricter-ordinance"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding limits advance; pause rejected; not yet adopted",
+    "pl": [
+      [
+        "Rapid City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T21:26:18.291Z"
+  },
+  {
     "d": "2026-11-24",
     "j": "IA",
     "w": "Rock Valley Economic Development",
@@ -696,6 +765,40 @@
     ],
     "auto": true,
     "added": "2026-11-22T05:51:58.779Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "AZ",
+    "w": "Cochise County supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Cochise supervisors answer AG's delay request on SpaceX data center, join Goldwater",
+    "b": "The board voted 3-0 in special session to send a letter replying to Attorney General Mayes's call to slow the SpaceX campus review. It also voted 3-0 to partner with the Goldwater Institute and sue over a records dispute with her office. Planning commission vote remains Dec. 9.",
+    "s": [
+      [
+        "GSM Global",
+        "https://gsmglobalnews.com/article/d20261124-sub6133-cochise1.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "County resists delay of a specific project's permit vote; still pending",
+    "pl": [
+      [
+        "Cochise County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T21:26:19.754Z"
   },
   {
     "d": "2026-11-23",
@@ -1585,6 +1688,76 @@
     "added": "2026-11-25T07:47:21.688Z"
   },
   {
+    "d": "2026-11-23",
+    "j": "SD",
+    "w": "Pennington County planners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Pennington County planners delay 20 MW data center permit review to January 25",
+    "b": "Planners voted unanimously to postpone a conditional use permit for Nodiac Development's 20 MW modular data center near Rapid City. The 60-acre parcel exceeds the county's size rule and needs platting, which the city can take up Jan. 19 at earliest.",
+    "s": [
+      [
+        "Rapid City Post",
+        "https://rapidcitypost.com/county-delays-vote-on-proposed-data-center-until-2027"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Procedural delay of one project permit; no decision yet",
+    "pl": [
+      [
+        "Pennington County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T21:26:18.559Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "GA",
+    "w": "Augusta Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Augusta planners recommend denying rezoning for 383-acre Nixon Technology Campus data center",
+    "b": "The planning commission voted 6-4 to recommend denial of the rezoning and special exception for a seven-building campus near the airport, against staff's earlier recommendation of approval. The Augusta Commission makes the final decision on Dec. 1.",
+    "s": [
+      [
+        "WRDW",
+        "https://www.wrdw.com/2026/11/23/planning-commission-hear-data-center-proposal-south-augusta-today/"
+      ]
+    ],
+    "im": 0,
+    "ef": "deny",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Non-binding recommendation to reject one project; commission votes Dec. 1",
+    "pl": [
+      [
+        "Augusta-Richmond County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T21:26:19.267Z"
+  },
+  {
     "d": "2026-11-21",
     "j": "NC",
     "w": "NC Senate District 24 race",
@@ -1993,6 +2166,37 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-24T22:11:37.701Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "US",
+    "w": "House Majority Leader Scalise",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting",
+      "disclosure"
+    ],
+    "t": "Scalise backs Senate permitting bill; House vote expected after Thanksgiving recess",
+    "b": "House Majority Leader Scalise endorsed the Senate-passed permitting package that makes large data centers pay grid costs. Speaker Johnson plans a two-thirds suspension vote first, then a regular rule if that fails. Any House change would send it back to the Senate.",
+    "s": [
+      [
+        "Holland & Knight",
+        "https://www.hklaw.com/en/insights/publications/2026/11/senate-passes-bipartisan-permitting-reform-package"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Bill adds grid-cost duties for big data centers; still awaiting House vote",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-25T21:26:17.976Z"
   },
   {
     "d": "2026-11-19",
@@ -2927,6 +3131,40 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-24T22:11:36.624Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "CO",
+    "w": "Elbert County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Elbert County commissioners hold off 10 days on rezoning for 540 MW data center",
+    "b": "After hearings Nov. 18 and 19 on rezoning a 5,672-acre ranch for a 540-megawatt data center with on-site power, commissioners paused the decision another 10 days. Developers had asked for a 90-day postponement, which the property's counsel opposed.",
+    "s": [
+      [
+        "Denver Gazette",
+        "https://www.denvergazette.com/2026/11/23/elbert-county-debates-massive-data-center-proposal-rachel-gabel/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Pending rezoning of one project; outcome undecided",
+    "pl": [
+      [
+        "Elbert County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T21:26:20.758Z"
   },
   {
     "d": "2026-11-18",
@@ -5831,6 +6069,41 @@
     ],
     "auto": true,
     "added": "2026-11-25T07:47:18.081Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "ME",
+    "w": "Paris special town meeting",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Paris, Maine voters unanimously approve 180-day data center moratorium",
+    "b": "Residents at a special town meeting ratified a 180-day pause on data center applications that the Select Board had set earlier. The Planning Board is to draft a permanent ordinance, which voters would later decide. The board may extend the pause if no ordinance is ready.",
+    "s": [
+      [
+        "Sun Journal",
+        "https://www.sunjournal.com/2026/11/18/paris-data-center-moratorium-unanimously-approved/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Adopted local 180-day pause on data center applications in one town",
+    "pl": [
+      [
+        "Paris",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-25T21:26:18.684Z"
   },
   {
     "d": "2026-11-16",
