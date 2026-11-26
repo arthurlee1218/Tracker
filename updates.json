@@ -802,6 +802,37 @@
     "added": "2026-11-26T07:36:09.569Z"
   },
   {
+    "d": "2026-12-01",
+    "j": "IL",
+    "w": "Illinois General Assembly",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "disclosure",
+      "water"
+    ],
+    "t": "Illinois lawmakers return Dec. 1-3 with POWER Act data center rules still unpassed",
+    "b": "No POWER Act vote came in the first veto-session week. Lawmakers reconvene for the final week Dec. 1 to 3. If nothing passes, regulation could be finalized in the early-January lame-duck session. The bill covers energy supply, water reporting and limits on NDAs.",
+    "s": [
+      [
+        "WAND-TV",
+        "https://www.wandtv.com/2026/11/26/veto-session-advocates-hope-lawmakers-pass-data-center-regulation-bears-stadium-reentry-housing-bills-next-week/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed statewide data center power, water and NDA rules, not yet passed",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-26T21:14:15.988Z"
+  },
+  {
     "d": "2026-11-30",
     "j": "OK",
     "w": "Nowata County commissioners",
@@ -834,6 +865,41 @@
     ],
     "auto": true,
     "added": "2026-11-16T21:52:36.304Z"
+  },
+  {
+    "d": "2026-11-30",
+    "j": "MO",
+    "w": "Springfield City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Springfield council to vote Nov. 30 on data center definitions based on megawatts",
+    "b": "After extending its pause to Feb. 24, 2027, Springfield's council held off on defining data centers in city code. The mayor's amendment defines the large-load category by megawatts, not square footage. The amended definitions return Nov. 30.",
+    "s": [
+      [
+        "KY3",
+        "https://www.ky3.com/2026/11/17/springfield-city-council-extends-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Definitions underpin future large-load rules; vote scheduled, not adopted.",
+    "pl": [
+      [
+        "Springfield",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T21:14:16.689Z"
   },
   {
     "d": "2026-11-25",
@@ -1111,6 +1177,109 @@
     ],
     "auto": true,
     "added": "2026-11-26T07:36:12.322Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "WI",
+    "w": "Ozaukee County judge",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "disclosure"
+    ],
+    "t": "Judge rules Port Washington violated open records law on data center documents",
+    "b": "An Ozaukee County judge found the city failed to properly answer a resident's request for data center records, which it ignored for nearly four months until she sued. He ordered a full search and awarded damages; attorney fees go to a January hearing.",
+    "s": [
+      [
+        "FOX6 Milwaukee",
+        "https://www.fox6now.com/news/port-washington-data-center-city-broke-open-records-law-judge-rules"
+      ]
+    ],
+    "im": -1,
+    "ef": "info",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Court enforces disclosure of city records on a data center project",
+    "pl": [
+      [
+        "Port Washington",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T21:14:15.891Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "IA",
+    "w": "Sioux City Planning Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water"
+    ],
+    "t": "Sioux City planners back data center rules on noise, setbacks and water use, 5-0",
+    "b": "Sioux City's Planning and Zoning Commission approved draft data center and crypto-mining rules covering noise, setbacks and water use, with two abstentions. It also recommended a site plan requirement. The City Council takes up the draft Dec. 7.",
+    "s": [
+      [
+        "KTIV",
+        "https://www.ktiv.com/2026/11/25/sioux-city-planning-zoning-commission-advances-rules-governing-future-data-center-projects/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding noise, setback and water rules proposed; council vote pending.",
+    "pl": [
+      [
+        "Sioux City",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T21:14:16.313Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "NJ",
+    "w": "Parsippany-Troy Hills council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting"
+    ],
+    "t": "Parsippany council bans data centers over 10 MW in all zones",
+    "b": "The township council voted 5-0 to adopt Ordinance 2026:43, prohibiting data centers with electrical capacity above 10 megawatts in every zoning district. The article does not state an effective date.",
+    "s": [
+      [
+        "Parsippany Focus",
+        "https://parsippanyfocus.com/parsippany-council-adopts-ban-on-large-scale-data-centers/"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Adopted township-wide prohibition on large data centers, no end date",
+    "pl": [
+      [
+        "Parsippany-Troy Hills",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T21:14:17.071Z"
   },
   {
     "d": "2026-11-23",
@@ -2262,6 +2431,75 @@
     ],
     "auto": true,
     "added": "2026-11-26T07:36:14.383Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "AR",
+    "w": "Federal judge Rudofsky",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Federal judge signals he may void Pulaski County data center ordinance",
+    "b": "After a 10-hour hearing on AVAIO's injunction request, Judge Rudofsky said a justice of the peace's texts to colleagues looked like an open-meetings violation and he would consider nullifying the ordinance. He aims to rule by Dec. 4.",
+    "s": [
+      [
+        "Arkansas Times",
+        "https://arktimes.com/arkansas-blog/2026/11/23/temporary-fate-of-pulaski-county-ordinance-restricting-data-centers-rests-with-judge"
+      ]
+    ],
+    "im": 0,
+    "ef": "help",
+    "fo": 0,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Court may strike county's data center rules; no ruling yet",
+    "pl": [
+      [
+        "Pulaski County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T21:14:19.031Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "GA",
+    "w": "Coweta probate judge",
+    "lv": "local",
+    "k": "action",
+    "st": "ballot",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Judge sets Jan. 12 Coweta vote to repeal Project Sail rezoning and ban data centers",
+    "b": "After a petition with 11,065 verified signatures, a probate judge ordered a special election on repealing the April rezoning for the $17 billion Project Sail campus and barring data centers in every zoning district countywide. Atlas's objection was rejected; litigation over the result is possible.",
+    "s": [
+      [
+        "Atlanta News First",
+        "https://www.atlantanewsfirst.com/2026/11/26/coweta-county-voters-decide-jan-12-17-billion-data-center-project/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Ballot to ban data centers countywide and repeal a rezoning; not yet voted",
+    "pl": [
+      [
+        "Coweta County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T21:14:19.090Z"
   },
   {
     "d": "2026-11-21",
@@ -7961,6 +8199,71 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-26T07:36:10.816Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "US",
+    "w": "PJM Interconnection",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "PJM asks FERC to approve data center transmission-cost and ride-through rules",
+    "b": "PJM filed two proposals at FERC: large loads of 50 MW or more would pay for transmission upgrades they require, and must stay connected during grid disturbances. PJM wants a ride-through ruling by Jan. 15, 2027 and a cost ruling within 120 days.",
+    "s": [
+      [
+        "Wisevoter",
+        "https://wisevoter.com/world/us/2026/11/26/pjm-asks-ferc-data-centers-pay-grid-upgrades"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 4,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding cost and ride-through duties on 50 MW+ loads in PJM territory",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-26T21:14:15.609Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "SC",
+    "w": "Spartanburg County Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Spartanburg council gives final approval to three data center agreements, advances three more",
+    "b": "Despite the county's year-long freeze on large projects, council finalized agreements for the South Pine Street, 430 Jones Road and CLT1 projects, and passed first reading on three more Tyger River sites of 50 to 65 MW, which need two more readings.",
+    "s": [
+      [
+        "WSPA/Fox Carolina",
+        "https://www.foxcarolina.com/2026/11/18/spartanburg-co-council-gives-final-approval-3-data-center-agreements-advances-3-more/"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Final approvals of specific projects despite a moratorium",
+    "pl": [
+      [
+        "Spartanburg County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T21:14:19.521Z"
   },
   {
     "d": "2026-11-15",
