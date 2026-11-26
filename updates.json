@@ -453,6 +453,76 @@
     "added": "2026-11-13T13:03:25.979Z"
   },
   {
+    "d": "2026-12-07",
+    "j": "MA",
+    "w": "Acton Town Meeting",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Acton voters to decide a data center moratorium at Dec. 7 special town meeting",
+    "b": "Article 2 would pause data center approvals while the town drafts permanent zoning. Planning Board held a hearing Nov. 17; length is unstated and some residents say a year is too short. Staff say data centers are currently allowed by right in industrial districts.",
+    "s": [
+      [
+        "ByteWire News",
+        "https://bytewire.news/acton-voters-to-decide-data-center-moratorium-at-dec-7-town-meeting-dpw-funding-at-dec-15-election/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed town-meeting moratorium, scheduled vote, length unstated",
+    "pl": [
+      [
+        "Acton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:12.592Z"
+  },
+  {
+    "d": "2026-12-07",
+    "j": "GA",
+    "w": "Talbot County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Talbot County, Georgia, sets Dec. 7 hearing on redone data center zoning rules",
+    "b": "The planning board approved a rewrite of data center zoning after a judge ruled in October that the county skipped required notices and hearings. Commissioners take it up at a public hearing Dec. 7. No company has applied.",
+    "s": [
+      [
+        "WLTZ",
+        "https://www.wltz.com/2026/11/24/talbot-county-planning-board-approves-amendment-rezoning-ordinance/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed county siting rules awaiting commissioners' vote.",
+    "pl": [
+      [
+        "Talbot County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:14.059Z"
+  },
+  {
     "d": "2026-12-03",
     "j": "CT",
     "w": "Cromwell Planning and Zoning",
@@ -520,6 +590,80 @@
     ],
     "auto": true,
     "added": "2026-11-11T13:02:04.275Z"
+  },
+  {
+    "d": "2026-12-03",
+    "j": "TX",
+    "w": "Austin City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "disclosure",
+      "permitting"
+    ],
+    "t": "Austin council to vote on first phase of data center rules Dec. 3",
+    "b": "Council takes up draft code amendments defining data centers and requiring business registration. Phase two, land-use zoning rules, is expected by May 2027. The step follows an Aug. 27 council resolution directing staff to draft the rules.",
+    "s": [
+      [
+        "City of Austin",
+        "https://www.austintexas.gov/development-services/building-connections/council-consider-first-phase-data-center-regulations"
+      ]
+    ],
+    "im": 0,
+    "ef": "info",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Definition and registration only; proposal stage, city-wide.",
+    "pl": [
+      [
+        "Austin",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:13.584Z"
+  },
+  {
+    "d": "2026-12-02",
+    "j": "HI",
+    "w": "Hawaii County Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Full Hawaii County Council to vote Dec. 2 on Bill 170 data center ban",
+    "b": "After a policy committee sent the amended bill forward, the full council is scheduled to take it up. It would prohibit permitting and building industrial-scale data centers, defined as 5 MW peak load or more, with carve-outs for some government, health and education uses.",
+    "s": [
+      [
+        "Hawaii News Now",
+        "https://www.hawaiinewsnow.com/2026/11/26/hawaii-lawmakers-discuss-ai-safeguards-county-weighs-data-center-ban/"
+      ],
+      [
+        "Hawaiʻi Public Radio",
+        "https://www.hawaiipublicradio.org/local-news/2026-11-25/hawaii-county-lawmakers-work-to-make-data-center-ban-airtight"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Countywide ban bill scheduled for full council vote; not yet adopted.",
+    "pl": [
+      [
+        "Hawaii County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:14.532Z"
   },
   {
     "d": "2026-12-01",
@@ -628,6 +772,36 @@
     "added": "2026-11-21T18:58:04.908Z"
   },
   {
+    "d": "2026-12-01",
+    "j": "US",
+    "w": "U.S. House",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "cost",
+      "permitting"
+    ],
+    "t": "House set to take up Senate permitting bill making data centers pay grid costs",
+    "b": "The Rules Committee meets Nov. 30 on the Senate-passed permitting package, with a floor vote expected the week of Nov. 30. Leaders must first win a procedural vote after absences shelved one last week. Some House Democrats oppose it unamended.",
+    "s": [
+      [
+        "Yahoo News (Roll Call)",
+        "https://www.yahoo.com/news/politics/articles/house-eyes-vote-energy-permitting-223400989.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Bill would make large data centers pay transmission costs; House vote scheduled",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-26T07:36:09.569Z"
+  },
+  {
     "d": "2026-11-30",
     "j": "OK",
     "w": "Nowata County commissioners",
@@ -733,6 +907,70 @@
     "added": "2026-11-25T21:26:18.291Z"
   },
   {
+    "d": "2026-11-25",
+    "j": "US",
+    "w": "Grid Strategies estimate",
+    "lv": "federal",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "cost"
+    ],
+    "t": "Analysts estimate Senate permitting bill would add $35 billion in data center transmission charges",
+    "b": "Grid Strategies calculates new data centers would pay about $55 billion in transmission charges over ten years under the Senate-passed bill, roughly $35 billion above current rules, calling it a rough estimate. FERC would have 90 days to rewrite its 1994 pricing policy.",
+    "s": [
+      [
+        "The Daily Caller",
+        "https://dailycaller.com/2026/11/25/data-centers-transmission-costs-baaja-grid-strategies-sheldon-whitehouse-shelley-moore-capito/"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Analysis of added grid charges on new data centers; not binding",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-26T07:36:09.892Z"
+  },
+  {
+    "d": "2026-11-25",
+    "j": "HI",
+    "w": "State Sen. Brandon Elefante",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "moratorium",
+      "water"
+    ],
+    "t": "Hawaii state senator backs county ban on large AI data centers",
+    "b": "At a joint House-Senate briefing on AI, Sen. Brandon Elefante said he supports Hawaii County's Bill 170, citing data centers' electricity and water use. A state tech agency official said hyperscale concerns matter less in Hawaii.",
+    "s": [
+      [
+        "Hawaii News Now",
+        "https://www.hawaiinewsnow.com/2026/11/26/hawaii-lawmakers-discuss-ai-safeguards-county-weighs-data-center-ban/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 0,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "State legislator voices support for a county ban; talk only.",
+    "pl": [
+      [
+        "Hawaii County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:15.122Z"
+  },
+  {
     "d": "2026-11-24",
     "j": "IA",
     "w": "Rock Valley Economic Development",
@@ -799,6 +1037,80 @@
     ],
     "auto": true,
     "added": "2026-11-25T21:26:19.754Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "IA",
+    "w": "Clinton City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Clinton, Iowa, adopts data center ordinance on third reading as QTS seeks 1,100 acres",
+    "b": "The council gave final approval to rules treating data centers as a principal use, with advance planning for utilities, water, stormwater, noise and roads and project-specific agreements. Amendments added council review of private setback agreements and air quality. QTS's proposed campus is not yet approved.",
+    "s": [
+      [
+        "WQAD via Yahoo News",
+        "https://www.yahoo.com/news/us/articles/clinton-iowa-city-council-adopts-021932145.html"
+      ],
+      [
+        "KWQC",
+        "https://www.kwqc.com/2026/11/25/clinton-city-council-amends-rules-future-data-center-proposals-after-marathon-meeting/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 3,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "City rules add binding planning and review conditions for data centers",
+    "pl": [
+      [
+        "Clinton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:11.794Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "MA",
+    "w": "Sutton Select Board",
+    "lv": "local",
+    "k": "action",
+    "st": "ballot",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Sutton sets Jan. 4 special town meeting on petitioned data center prohibition",
+    "b": "After residents filed about 350 signatures against Kraft Group's proposed 900 MW campus, the Select Board voted 5-0 to hold a special town meeting on January 4. Voters will decide a bylaw defining data centers and barring them.",
+    "s": [
+      [
+        "Worcester Telegram & Gazette (via Yahoo News)",
+        "https://www.yahoo.com/news/politics/articles/sutton-sets-town-meeting-date-180712402.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Scheduled town vote on barring data centers after a specific project proposal",
+    "pl": [
+      [
+        "Sutton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:12.322Z"
   },
   {
     "d": "2026-11-23",
@@ -1758,6 +2070,200 @@
     "added": "2026-11-25T21:26:19.267Z"
   },
   {
+    "d": "2026-11-23",
+    "j": "IL",
+    "w": "Village of Grayslake",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "permitting",
+      "siting"
+    ],
+    "t": "Grayslake issues permit for second T5 data center building while lawsuit pends",
+    "b": "The village issued a building permit for a 456,270-square-foot second building on the T5 campus. Residents' suit is pending, and a judge must rule on dismissal by Dec. 30.",
+    "s": [
+      [
+        "Lake and McHenry County Scanner",
+        "https://www.lakemchenryscanner.com/2026/11/25/grayslake-issues-permit-for-2nd-building-on-mega-data-center-campus-while-judge-weighs-residents-lawsuit-to-stop-it/"
+      ]
+    ],
+    "im": 1,
+    "ef": "approve",
+    "fo": 3,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Permit for one specific project in force",
+    "pl": [
+      [
+        "Grayslake",
+        "city"
+      ],
+      [
+        "Lake County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:11.050Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "OH",
+    "w": "Hancock County Board of Elections",
+    "lv": "local",
+    "k": "action",
+    "st": "ballot",
+    "ty": [
+      "siting"
+    ],
+    "t": "Allen Township data center rezoning referendum certified for May 2027 ballot",
+    "b": "Hancock County elections officials certified resident signatures forcing a vote on the planned unit development rezoning for a proposed 240-acre data center campus. The vote is May 4, 2027, and the project is on hold until then.",
+    "s": [
+      [
+        "Yahoo News (local report)",
+        "https://www.yahoo.com/news/us/articles/citizens-gather-signatures-put-data-022425086.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "deny",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Referendum could overturn rezoning for one campus; on ballot",
+    "pl": [
+      [
+        "Allen Township",
+        "township"
+      ],
+      [
+        "Hancock County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:11.192Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "IL",
+    "w": "Bloomington City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Bloomington extends data center moratorium to two years, unanimously",
+    "b": "The council extended its pause on data center proposals using more than 5 megawatts from 12 to 24 months, after voters backed a moratorium 78% in an advisory question. Planning staff keep drafting rules in case state law preempts home rule.",
+    "s": [
+      [
+        "WGLT",
+        "https://www.wglt.org/local-news/2026-11-24/bloomington-extends-data-center-moratorium-by-2-years"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Binding city pause for 24 months",
+    "pl": [
+      [
+        "Bloomington",
+        "city"
+      ],
+      [
+        "McLean County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:11.408Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "IL",
+    "w": "Quincy City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Quincy council passes 90-day data center moratorium 13-0, no project pending",
+    "b": "Aldermen waived three readings and voted to stop data center applications for 90 days while the city writes zoning, setback, noise and landscaping rules. The mayor said no applications had been received.",
+    "s": [
+      [
+        "Quincy Herald-Whig",
+        "https://whig.com/2026/11/23/city-council-locks-out-data-centers-for-90-days-to-craft-a-plan-to-deal-with-them/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Binding city pause of 90 days",
+    "pl": [
+      [
+        "Quincy",
+        "city"
+      ],
+      [
+        "Adams County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:11.649Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "NM",
+    "w": "NM Attorney General",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax",
+      "disclosure"
+    ],
+    "t": "New Mexico attorney general opens inquiry into Lea County's Google data center bond deal",
+    "b": "Days after Lea County approved up to $130 billion in industrial revenue bonds for Google's Project Rancho near Hobbs, the state Department of Justice requested records on the bonds, payments in lieu of taxes and any nondisclosure agreements. The county says it welcomes the review.",
+    "s": [
+      [
+        "Albuquerque Journal",
+        "https://www.abqjournal.com/news/ag-opens-inquiry-into-googles-planned-data-center-in-lea-county/3168116"
+      ]
+    ],
+    "im": 0,
+    "ef": "info",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Records request only; scrutiny of a specific project's incentives, no binding limit yet",
+    "pl": [
+      [
+        "Lea County",
+        "county"
+      ],
+      [
+        "Hobbs",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:14.383Z"
+  },
+  {
     "d": "2026-11-21",
     "j": "NC",
     "w": "NC Senate District 24 race",
@@ -2197,6 +2703,41 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-25T21:26:17.976Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "MO",
+    "w": "Eco Socialist Green Party petitioners",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "St. Louis activists launch petition to ban data centers above 30 MW",
+    "b": "An Eastern Missouri Green Party group began gathering the 30,000 signatures needed to put a citywide ban on data centers over 30 megawatts on the November 2027 ballot, citing a gap in rules for industrial zones. About 1,000 signatures were reported at launch.",
+    "s": [
+      [
+        "St. Louis Public Radio",
+        "https://www.stlpr.org/health-science-environment/2026-11-20/activists-launch-campaign-to-ban-hyperscale-data-centers-would-the-ban-hold-up-in-court"
+      ]
+    ],
+    "im": 0,
+    "ef": "ban",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Petition campaign for a permanent size-based ban, not yet on a ballot",
+    "pl": [
+      [
+        "St. Louis",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:12.081Z"
   },
   {
     "d": "2026-11-19",
@@ -3165,6 +3706,78 @@
     ],
     "auto": true,
     "added": "2026-11-25T21:26:20.758Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "IL",
+    "w": "Champaign County Board",
+    "lv": "local",
+    "k": "action",
+    "st": "ballot",
+    "ty": [
+      "siting"
+    ],
+    "t": "Champaign County board puts advisory hyperscale data center question on April 2027 ballot",
+    "b": "The board approved by voice vote a nonbinding question asking whether the county should support large or hyperscale data centers, defined as over 10 megawatts, in unincorporated areas. It goes on the April 6, 2027 ballot.",
+    "s": [
+      [
+        "SJO Daily",
+        "https://sjodaily.com/2026/11/22/champaign-county-voters-to-weigh-in-on-large-data-centers-in-april/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Advisory county ballot question on large data centers; direction unsettled, limit lean",
+    "pl": [
+      [
+        "Champaign County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:10.324Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "OH",
+    "w": "Trenton residents (Conserve Ohio)",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Trenton residents seek to join Prologis suit to defend voter-approved data center ban",
+    "b": "Residents' lawyers moved to intervene in Prologis's federal suit, arguing the city and developer share a common goal and cannot be trusted to defend the 25-megawatt ban. No ruling yet; construction continues at Project Mila.",
+    "s": [
+      [
+        "WOSU",
+        "https://www.wosu.org/2026-11-19/trenton-residents-intervene-to-protect-voter-approved-data-center-ban-after-developers-challenge"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Court fight over a voter-approved ban; outcome pending, so proposal-level force",
+    "pl": [
+      [
+        "Trenton",
+        "city"
+      ],
+      [
+        "Butler County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-26T07:36:10.557Z"
   },
   {
     "d": "2026-11-18",
@@ -6106,6 +6719,39 @@
     "added": "2026-11-25T21:26:18.684Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "US",
+    "w": "Stop Data Centers Coalition",
+    "lv": "federal",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Advocates and House Democrats rally at Capitol for national data center moratorium",
+    "b": "Rep. McGovern, Rep. Pingree and four incoming House Democrats joined a coalition rally outside the Capitol backing the AI Data Center Moratorium Act and criticizing the Senate permitting bill. Organizers planned to hand in petitions.",
+    "s": [
+      [
+        "Daily Hampshire Gazette",
+        "https://gazettenet.com/2026/11/17/rep-jim-mcgovern-rallies-at-u-s-capitol-for-national-ai-data-center-moratorium/"
+      ],
+      [
+        "Hill Heat",
+        "https://hillheat.com/events/2026/11/17/capitol-data-center-moratorium-rally"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 6,
+    "du": "m",
+    "rl": "d",
+    "iw": "Protest and pledge for a national construction pause; bill not advancing",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-26T07:36:09.981Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -7286,6 +7932,35 @@
     ],
     "auto": true,
     "added": "2026-11-25T07:47:18.726Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "IN",
+    "w": "Gov. Mike Braun",
+    "lv": "state",
+    "k": "politics",
+    "st": "statement",
+    "ty": [
+      "tax"
+    ],
+    "t": "Braun says data centers should not get local tax abatements",
+    "b": "The governor said he backs data center development but that projects should not receive local tax abatements and should enhance communities. The statement came as several Indiana cities rethink abatements, including Indianapolis, Kokomo and La Porte.",
+    "s": [
+      [
+        "Indiana Public Media",
+        "https://www.ipm.org/news/2026-11-20/several-indiana-cities-sour-on-local-tax-breaks-for-data-centers"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Governor opposes local tax breaks; talk only, no binding action",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-26T07:36:10.816Z"
   },
   {
     "d": "2026-11-15",
