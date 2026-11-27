@@ -1,5 +1,40 @@
 [
   {
+    "d": "2027-01-12",
+    "j": "WI",
+    "w": "Madison Common Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Madison council vote on hyperscale data center ban expected Jan. 12",
+    "b": "Madison's proposed ordinance, introduced Nov. 24, would cap data centers at 75,000 square feet, bar them from residential districts and restrict hyperscale sites. Committee reviews start Nov. 30. The council vote is expected Jan. 12, before the moratorium expires Jan. 24.",
+    "s": [
+      [
+        "WMTV",
+        "https://www.wmtv15news.com/2026/11/25/madison-moves-toward-hyperscale-data-center-ban-advocates-call-statewide-protections/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed city ordinance banning hyperscale data centers; scheduled vote.",
+    "pl": [
+      [
+        "Madison",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T07:32:19.708Z"
+  },
+  {
     "d": "2026-12-15",
     "j": "ND",
     "w": "Mandan voters",
@@ -1282,6 +1317,78 @@
     "added": "2026-11-26T21:14:17.071Z"
   },
   {
+    "d": "2026-11-24",
+    "j": "OH",
+    "w": "Piqua city commission",
+    "lv": "local",
+    "k": "politics",
+    "st": "campaign",
+    "ty": [
+      "siting"
+    ],
+    "t": "Piqua swears in three replacement commissioners after data center recall",
+    "b": "Three new Piqua commissioners took office after voters recalled the mayor, vice mayor and a commissioner over the Meta data center plans. Paul Simmons became mayor. Voters also passed a charter ban on large data centers whose effect on the Meta project is unclear.",
+    "s": [
+      [
+        "WHIO",
+        "https://www.whio.com/news/local/new-piqua-commissioners-mayor-sworn-after-recent-recalls/34P55T3KVNAABPXBUR6BZH42GI/"
+      ]
+    ],
+    "im": 0,
+    "ef": "limit",
+    "fo": 0,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "New commission seated by anti-data-center recall; direction is restrictive but talk-stage.",
+    "pl": [
+      [
+        "Piqua",
+        "city"
+      ],
+      [
+        "Miami County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T07:32:18.545Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "MI",
+    "w": "Oshtemo Township board",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Oshtemo Township advances extension of data center and storage moratoriums through 2027",
+    "b": "Oshtemo Township's board approved first readings on Nov. 24 of ordinances extending its moratoriums on commercial data centers and commercial energy storage through Dec. 31, 2027. Second readings are set for Dec. 8, so the extensions are not yet adopted.",
+    "s": [
+      [
+        "Public Media Network",
+        "https://publicmedianet.org/news/neighborhoods/oshtemo-township-moves-to-extend-data-center-and-energy-storage-moratoriums/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "Proposed township moratorium extension, first reading only; about 13 months.",
+    "pl": [
+      [
+        "Oshtemo Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T07:32:19.658Z"
+  },
+  {
     "d": "2026-11-23",
     "j": "NC",
     "w": "Chowan County, Edenton councils",
@@ -2502,6 +2609,42 @@
     "added": "2026-11-26T21:14:19.090Z"
   },
   {
+    "d": "2026-11-23",
+    "j": "IA",
+    "w": "Marshalltown City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Marshalltown council passes data center zoning ordinance on second reading 5-2, rejects floor-space cap",
+    "b": "The council voted 5-2 on second reading of a data center zoning ordinance limiting them to general industrial areas, and rejected 4-3 a cap of 75,000 square feet per building. Water, well and noise rules passed unanimously on third reading.",
+    "s": [
+      [
+        "Times Republican",
+        "https://www.timesrepublican.com/news/todays-news/2026/11/council-passes-second-reading-of-data-center-zoning-ordinance-votes-down-proposed-amendment/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Binding siting and water rules for data centers, not yet final",
+    "pl": [
+      [
+        "Marshalltown",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T07:32:20.095Z"
+  },
+  {
     "d": "2026-11-21",
     "j": "NC",
     "w": "NC Senate District 24 race",
@@ -2976,6 +3119,35 @@
     ],
     "auto": true,
     "added": "2026-11-26T07:36:12.081Z"
+  },
+  {
+    "d": "2026-11-20",
+    "j": "US",
+    "w": "U.S. Army",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Army solicits power and data center bids on land at nine bases",
+    "b": "The Army offered 25-year leases at nine installations for commercial power projects, preferring those paired with a data center. Data-center-only bids won't be considered. Backup power and net-neutral water are required. Proposals are due Jan. 18, 2027; no site is guaranteed a data center.",
+    "s": [
+      [
+        "Military.com",
+        "https://www.military.com/army-offers-land-at-9-bases-for-data-centers-as-veterans-public-land-pause"
+      ]
+    ],
+    "im": 2,
+    "ef": "fast",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Federal land offered to speed data center and power siting; solicitation only",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-27T07:32:18.005Z"
   },
   {
     "d": "2026-11-19",
@@ -6990,6 +7162,42 @@
     "added": "2026-11-26T07:36:09.981Z"
   },
   {
+    "d": "2026-11-17",
+    "j": "WY",
+    "w": "Sweetwater County commissioners",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "water",
+      "permitting"
+    ],
+    "t": "Sweetwater County opens comment on tiered data center zoning rules",
+    "b": "Commissioners voted unanimously to advance zoning language creating 'High-Intensity Computing Facilities'. Under 5 MW is allowed in industrial zones; larger tiers need conditional permits with water, power, road and noise standards plus reclamation. Comments due Jan. 4; hearing Jan. 19.",
+    "s": [
+      [
+        "Green River Star",
+        "https://www.greenriverstar.com/story/2026/11/25/county/county-opens-public-comment-on-proposed-data-center-regulations/14465.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding conditions on larger data centers; not yet adopted",
+    "pl": [
+      [
+        "Sweetwater County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T07:32:20.278Z"
+  },
+  {
     "d": "2026-11-16",
     "j": "NC",
     "w": "Pitt County commissioners",
@@ -8264,6 +8472,69 @@
     ],
     "auto": true,
     "added": "2026-11-26T21:14:19.521Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "US",
+    "w": "Sen. Gallego",
+    "lv": "federal",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Gallego files defense bill amendment barring private data centers on military bases",
+    "b": "Sen. Ruben Gallego submitted an amendment to the defense authorization bill that would bar new privately operated data centers on military installations, except those run for national security. It has not received a vote.",
+    "s": [
+      [
+        "Military.com",
+        "https://www.military.com/army-offers-land-at-9-bases-for-data-centers-as-veterans-public-land-pause"
+      ]
+    ],
+    "im": -2,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 6,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed amendment banning private data centers on bases; not yet voted",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-27T07:32:18.337Z"
+  },
+  {
+    "d": "2026-11-16",
+    "j": "IN",
+    "w": "Delaware County residents",
+    "lv": "local",
+    "k": "politics",
+    "st": "protest",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Delaware County, Indiana, residents ask commissioners for data center moratorium",
+    "b": "Residents asked Delaware County commissioners to adopt a one-to-five-year data center pause, noting the county has no ordinance, as the Academy of Model Aeronautics weighs selling land for an unnamed project. Commissioners did not respond directly.",
+    "s": [
+      [
+        "Indiana Public Radio",
+        "https://indianapublicradio.org/news/2026/11/delaware-county-residents-want-a-data-center-moratorium/"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Residents pushing for a county pause; no action taken.",
+    "pl": [
+      [
+        "Delaware County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T07:32:19.886Z"
   },
   {
     "d": "2026-11-15",
@@ -13397,6 +13668,41 @@
     ],
     "auto": true,
     "added": "2026-11-20T19:51:54.985Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "NJ",
+    "w": "Hopewell Township Committee",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Hopewell Township, NJ introduces ordinance explicitly prohibiting data centers in business and industrial zones",
+    "b": "The Township Committee introduced the ban on Nov. 9. It goes to the Planning Board, then a hearing and final vote possibly Dec. 7 or Dec. 21. Redevelopment areas under existing plans are excluded; the mayor says current code already bars them.",
+    "s": [
+      [
+        "Princeton Info",
+        "https://princetoninfo.com/business/south-brunswick-data-center-fuels-growing-regional-backlash/"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Introduced permanent townwide prohibition, not yet adopted",
+    "pl": [
+      [
+        "Hopewell Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T07:32:20.172Z"
   },
   {
     "d": "2026-11-08",
