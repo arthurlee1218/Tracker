@@ -35,6 +35,36 @@
     "added": "2026-11-27T07:32:19.708Z"
   },
   {
+    "d": "2026-12-16",
+    "j": "LA",
+    "w": "Louisiana Public Service Commission",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "cost"
+    ],
+    "t": "Louisiana regulators push Meta private-grid hearing to Dec. 16 in Shreveport",
+    "b": "At its Nov. 18 meeting the commission moved the hearing on private-use electrical networks, covering Meta's Richland Parish campus, to Dec. 16. Entergy seeks seven gas plants for the project. Reports differ on whether the final plant vote is the same day.",
+    "s": [
+      [
+        "The Inference",
+        "https://theinference.org/article/louisiana-defers-entergy-s-private-grid-hearing-for-meta-to-dec-16-as-a-12-9-billion-gas-plant-vote-nears"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 4,
+    "du": "p",
+    "rl": "i",
+    "iw": "Pending utility power approval for one named campus, tied to data center demand",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-27T20:58:16.630Z"
+  },
+  {
     "d": "2026-12-15",
     "j": "ND",
     "w": "Mandan voters",
@@ -868,6 +898,41 @@
     "added": "2026-11-26T21:14:15.988Z"
   },
   {
+    "d": "2026-12-01",
+    "j": "TN",
+    "w": "Metro Nashville",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Nashville's data center permit pause set to lapse Dec. 1 with no extension planned",
+    "b": "Metro's pause on considering new data center applications ends Dec. 1, and the mayor's office has no plan to extend it. DC Blox's zoo-adjacent project dispute continues at the zoning appeals board on Dec. 3 and in federal court.",
+    "s": [
+      [
+        "Nashville Banner",
+        "https://nashvillebanner.com/2026/11/25/nashville-data-center-moratorium-expiration-litigation/"
+      ]
+    ],
+    "im": -2,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "m",
+    "rl": "d",
+    "iw": "Local pause in force until it expires; new rules from July remain",
+    "pl": [
+      [
+        "Nashville-Davidson County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T20:58:17.423Z"
+  },
+  {
     "d": "2026-11-30",
     "j": "OK",
     "w": "Nowata County commissioners",
@@ -1070,6 +1135,35 @@
     ],
     "auto": true,
     "added": "2026-11-26T07:36:15.122Z"
+  },
+  {
+    "d": "2026-11-25",
+    "j": "US",
+    "w": "Kalshi traders",
+    "lv": "federal",
+    "k": "politics",
+    "st": "poll",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Kalshi traders put odds of four-plus state data center moratoriums this year at 57%",
+    "b": "Prediction-market odds that at least four states adopt data center moratoriums in 2026 rose to about 57% from 52% on Nov. 22, but are below the roughly 75% seen right after the midterms. New York is the only state with a pause so far.",
+    "s": [
+      [
+        "CNBC",
+        "https://www.cnbc.com/amp/2026/11/25/kalshi-traders-say-the-odds-of-states-imposing-data-center-moratoriums-is-more-likely-than-not.html"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 0,
+    "rc": 6,
+    "du": "m",
+    "rl": "d",
+    "iw": "Market sentiment favors state pauses; talk only, no binding action",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-27T20:58:15.280Z"
   },
   {
     "d": "2026-11-24",
@@ -1387,6 +1481,76 @@
     ],
     "auto": true,
     "added": "2026-11-27T07:32:19.658Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "OH",
+    "w": "Warren Township trustees",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Warren Township, Ohio, trustees adopt six-month data center zoning moratorium, 3-0",
+    "b": "Trustees voted 3-0 for a six-month pause on zoning applications for data centers while the zoning board drafts rules. No requests have been received. Neighboring Champion Township has a three-month pause, and both are working on matching rules for the former Copperweld Steel site.",
+    "s": [
+      [
+        "Tribune Chronicle",
+        "https://www.tribtoday.com/news/local-news/2026/11/warren-township-places-moratorium-on-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Binding six-month pause on data center zoning applications in one township.",
+    "pl": [
+      [
+        "Warren Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T20:58:16.095Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "NJ",
+    "w": "Randolph Township Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "moratorium"
+    ],
+    "t": "Randolph council unanimously introduces ordinance explicitly prohibiting data centers",
+    "b": "Randolph's council introduced Ordinance 28-26, which would expressly bar data centers, though they are already not permitted in any zone, and amend hyperscale and battery storage rules. Public hearing and final vote are set for Dec. 17.",
+    "s": [
+      [
+        "Randolph Patch",
+        "https://patch.com/new-jersey/randolph/randolph-advances-data-center-ban-proposal-what-residents-need-know"
+      ]
+    ],
+    "im": -1,
+    "ef": "ban",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed permanent township ban, introduced, final vote Dec. 17",
+    "pl": [
+      [
+        "Randolph Township",
+        "township"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T20:58:16.166Z"
   },
   {
     "d": "2026-11-23",
@@ -4188,6 +4352,36 @@
     ],
     "auto": true,
     "added": "2026-11-26T07:36:10.557Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "NJ",
+    "w": "NJ Assembly committee",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "disclosure",
+      "siting"
+    ],
+    "t": "NJ Assembly committee advances data center transparency and NDA limits bill",
+    "b": "An Assembly committee moved A2774/A5224 the week of Nov. 16. It would make large data center developers give planning boards resource-use and tax-incentive details, notify neighbors within five miles, and restrict nondisclosure agreements. Floor votes are not yet scheduled.",
+    "s": [
+      [
+        "ROI-NJ",
+        "https://www.roi-nj.com/2026/11/24/industry/energy-utilities/assembly-committee-advances-bill-to-address-transparency-on-data-center-development/"
+      ]
+    ],
+    "im": -1,
+    "ef": "info",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Disclosure and notice rules, committee stage only",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-27T20:58:16.264Z"
   },
   {
     "d": "2026-11-18",
@@ -7196,6 +7390,75 @@
     ],
     "auto": true,
     "added": "2026-11-27T07:32:20.278Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "KY",
+    "w": "Berea city council",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium"
+    ],
+    "t": "Berea, Kentucky council unanimously adopts one-year data center moratorium",
+    "b": "Berea's council voted unanimously for a one-year halt on accepting, processing or approving data center applications and permits, after residents raised water and power concerns. The pause gives the city time to decide how to treat data centers permanently.",
+    "s": [
+      [
+        "WYMT",
+        "https://www.wymt.com/2026/11/18/berea-unanimously-passes-data-center-moratorium/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 2,
+    "du": "m",
+    "rl": "d",
+    "iw": "City-wide one-year pause in force on data center applications",
+    "pl": [
+      [
+        "Berea",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T20:58:17.029Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "CA",
+    "w": "Dublin City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Dublin council directs staff to draft 45-day data center moratorium",
+    "b": "Dublin's council asked staff to return with a proposed 45-day moratorium on data centers after reviewing a zoning report. No vote on the pause itself has been taken and no return date was given.",
+    "s": [
+      [
+        "Dublin, CA Patch",
+        "https://patch.com/california/dublin/dublin-council-seeks-45-day-data-center-moratorium"
+      ]
+    ],
+    "im": 0,
+    "ef": "pause",
+    "fo": 1,
+    "rc": 2,
+    "du": "s",
+    "rl": "d",
+    "iw": "Proposed short city pause, not yet adopted",
+    "pl": [
+      [
+        "Dublin",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-27T20:58:17.528Z"
   },
   {
     "d": "2026-11-16",
@@ -13703,6 +13966,35 @@
     ],
     "auto": true,
     "added": "2026-11-27T07:32:20.172Z"
+  },
+  {
+    "d": "2026-11-09",
+    "j": "TX",
+    "w": "Rep. Trey Martinez Fischer",
+    "lv": "state",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "tax"
+    ],
+    "t": "Texas Democrat files bill to keep sales-tax break for already certified data centers",
+    "b": "House Bill 167 would repeal the data center sales tax exemption for uncertified projects but let projects certified before repeal keep their remaining benefits within current law. It was filed Nov. 9 ahead of the 2027 session.",
+    "s": [
+      [
+        "Daily Caller",
+        "https://dailycaller.com/2026/11/23/texas-lawmakers-data-center-tax-exemptions-existing-projects/"
+      ]
+    ],
+    "im": -1,
+    "ef": "cost",
+    "fo": 1,
+    "rc": 5,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposal repeals future tax break but grandfathers existing projects",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-27T20:58:16.881Z"
   },
   {
     "d": "2026-11-08",
