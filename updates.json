@@ -1166,6 +1166,35 @@
     "added": "2026-11-27T20:58:15.280Z"
   },
   {
+    "d": "2026-11-25",
+    "j": "US",
+    "w": "PJM board",
+    "lv": "federal",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "cost"
+    ],
+    "t": "PJM board refuses to delay December capacity auction over data center load",
+    "b": "Answering consumer advocates' Nov. 18 request, the board said only FERC could delay the auction, removing data center demand would leave the region short on reliability, and cost allocation belongs to retail regulators. It may delay the May auction for reforms.",
+    "s": [
+      [
+        "AIX Energy",
+        "https://www.aixenergy.io/who-buys-the-capacity/"
+      ]
+    ],
+    "im": 0,
+    "ef": "none",
+    "fo": 0,
+    "rc": 4,
+    "du": "s",
+    "rl": "i",
+    "iw": "Request to pull data center load from auction rejected; no change for developers",
+    "pl": [],
+    "auto": true,
+    "added": "2026-11-28T07:01:06.192Z"
+  },
+  {
     "d": "2026-11-24",
     "j": "IA",
     "w": "Rock Valley Economic Development",
@@ -1551,6 +1580,42 @@
     ],
     "auto": true,
     "added": "2026-11-27T20:58:16.166Z"
+  },
+  {
+    "d": "2026-11-24",
+    "j": "VA",
+    "w": "Shenandoah County supervisors",
+    "lv": "local",
+    "k": "action",
+    "st": "failed",
+    "ty": [
+      "siting",
+      "permitting",
+      "water"
+    ],
+    "t": "Shenandoah supervisors deadlock 3-3 on data center zoning rules but raise application fee to $15,000",
+    "b": "Supervisors tied 3-3 on data center zoning amendments, stalling them along with energy-facility and decommissioning changes, including a public-water connection provision. They did raise the application fee from $500 to $15,000 on a 4-2 vote. Amendments can return to planners Jan. 7 at earliest.",
+    "s": [
+      [
+        "Northern Virginia Daily",
+        "https://www.nvdaily.com/nvdaily/supervisors-split-over-public-water-for-data-centers/article_70c2b530-05c1-5aab-a359-07343a67297d.html"
+      ]
+    ],
+    "im": 0,
+    "ef": "cost",
+    "fo": 0,
+    "rc": 3,
+    "du": "p",
+    "rl": "d",
+    "iw": "Zoning rules failed on tie; only a higher application fee passed",
+    "pl": [
+      [
+        "Shenandoah County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-28T07:01:07.474Z"
   },
   {
     "d": "2026-11-23",
@@ -2807,6 +2872,109 @@
     ],
     "auto": true,
     "added": "2026-11-27T07:32:20.095Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "ND",
+    "w": "Wahpeton council committee",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Wahpeton committee backs letter of intent to sell city land to data center developer",
+    "b": "A Wahpeton council committee voted 4-0 to negotiate with Outlaw Ventures over 15.93 acres of Northside Industrial Park land priced at $350,000. The full council takes it up Dec. 7; a sale needs a special ordinance and a power, fiber and zoning feasibility review.",
+    "s": [
+      [
+        "Valley News Live",
+        "https://www.valleynewslive.com/2026/11/28/wahpeton-committee-recommends-negotiating-with-data-center-developer-over-city-land/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Committee backs negotiating a land sale for one project; not final",
+    "pl": [
+      [
+        "Wahpeton",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-28T07:01:06.725Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "SD",
+    "w": "Huron City Commission",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting"
+    ],
+    "t": "Huron hears pitch for 200 MW data center at Vantage Business Park",
+    "b": "Greater Huron Development presented a multi-phase campus of up to 200 MW on 93 acres to the city commission at a work session. A conditional purchase agreement was signed Nov. 20 and needs city approval. No vote was taken; public sessions are Dec. 1 and 2.",
+    "s": [
+      [
+        "Huron Plainsman",
+        "https://plainsman.com/2026/11/25/city-commission-meeting-attendees-hear-information-about-data-center-proposal/"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 1,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Early proposal for one project; no vote yet",
+    "pl": [
+      [
+        "Huron",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-28T07:01:07.058Z"
+  },
+  {
+    "d": "2026-11-23",
+    "j": "OR",
+    "w": "Salem City Council",
+    "lv": "local",
+    "k": "action",
+    "st": "pending",
+    "ty": [
+      "siting",
+      "permitting"
+    ],
+    "t": "Salem council unanimously advances interim data center rules after amending staff draft",
+    "b": "Salem councilors voted unanimously to move forward interim code rules covering sound, water, wastewater, backup power and size of data centers, after several amendments. Final adoption date and terms were not reported. The rules follow the city's moratorium.",
+    "s": [
+      [
+        "Salem Reporter",
+        "https://www.salemreporter.com/2026/11/24/city-meeting-councilors-disagree-on-certain-details-but-move-forward-on-regulating-data-centers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "limit",
+    "fo": 1,
+    "rc": 2,
+    "du": "p",
+    "rl": "d",
+    "iw": "Proposed binding siting and operating limits, not yet adopted",
+    "pl": [
+      [
+        "Salem",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-28T07:01:07.707Z"
   },
   {
     "d": "2026-11-21",
@@ -4382,6 +4550,41 @@
     "pl": [],
     "auto": true,
     "added": "2026-11-27T20:58:16.264Z"
+  },
+  {
+    "d": "2026-11-19",
+    "j": "IL",
+    "w": "Lee County Board",
+    "lv": "local",
+    "k": "action",
+    "st": "pause",
+    "ty": [
+      "moratorium",
+      "siting"
+    ],
+    "t": "Lee County, Illinois, extends data center pause to Feb. 25, citing possible state action",
+    "b": "The Lee County Board extended its temporary block on data center and other tech development proposals to Feb. 25, 2027, the day the 90-day pause would have expired. Officials cited possible state legislation affecting what local rules are needed. No applications had been filed.",
+    "s": [
+      [
+        "Shaw Local",
+        "https://www.shawlocal.com/sauk-valley/2026/11/28/lee-county-board-extends-data-center-moratorium-to-feb-25-while-it-watches-state-lawmakers/"
+      ]
+    ],
+    "im": -1,
+    "ef": "pause",
+    "fo": 3,
+    "rc": 3,
+    "du": "s",
+    "rl": "d",
+    "iw": "County-wide pause extended three months; no vote count reported",
+    "pl": [
+      [
+        "Lee County",
+        "county"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-28T07:01:06.398Z"
   },
   {
     "d": "2026-11-18",
@@ -7459,6 +7662,41 @@
     ],
     "auto": true,
     "added": "2026-11-27T20:58:17.528Z"
+  },
+  {
+    "d": "2026-11-17",
+    "j": "PA",
+    "w": "Olyphant Borough Council",
+    "lv": "local",
+    "k": "action",
+    "st": "in-force",
+    "ty": [
+      "siting",
+      "tax"
+    ],
+    "t": "Olyphant council settles developer's zoning suit 5-2, accepts $101 million benefits deal",
+    "b": "Council voted 5-2 to settle ERCOR Triboro's two zoning lawsuits, giving by-right zoning that skips a conditional use hearing, and to accept a $101 million community benefits agreement. Mid Valley School District is fighting it; a judge set a Dec. 7 hearing.",
+    "s": [
+      [
+        "WVIA",
+        "https://www.wvia.org/news/local/2026-11-24/lackawanna-county-judge-seeks-clarification-in-settlement-agreement-between-olyphant-and-data-center-developer"
+      ]
+    ],
+    "im": 0,
+    "ef": "approve",
+    "fo": 2,
+    "rc": 1,
+    "du": "p",
+    "rl": "d",
+    "iw": "Settlement clears one project's zoning path, pending court review",
+    "pl": [
+      [
+        "Olyphant",
+        "city"
+      ]
+    ],
+    "auto": true,
+    "added": "2026-11-28T07:01:07.187Z"
   },
   {
     "d": "2026-11-16",
